@@ -1,0 +1,5 @@
+enemy_id,name,hp,speed_px_s,reward_gold,leak_damage,is_boss,color_hex
+grunt,普通敌人,32,90,5,1,0,#F87171
+swift,迅捷敌人,22,145,6,1,0,#FB923C
+armor,重甲敌人,95,65,8,2,0,#64748B
+boss,元素首领,600,48,40,5,1,#E879F9

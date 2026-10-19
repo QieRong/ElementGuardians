@@ -1,0 +1,17 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://c24vi0i6gfqg3"
+
+[deps]
+
+files=["res://configs/csv/towers.name.translation", "res://configs/csv/towers.base.translation", "res://configs/csv/towers.attack.translation", "res://configs/csv/towers.range.translation", "res://configs/csv/towers.summon.translation", "res://configs/csv/towers.slow.translation", "res://configs/csv/towers.slow.translation", "res://configs/csv/towers.chain.translation", "res://configs/csv/towers.chain.translation", "res://configs/csv/towers.color.translation"]
+
+source_file="res://configs/csv/towers.csv"
+dest_files=["res://configs/csv/towers.name.translation", "res://configs/csv/towers.base.translation", "res://configs/csv/towers.attack.translation", "res://configs/csv/towers.range.translation", "res://configs/csv/towers.summon.translation", "res://configs/csv/towers.slow.translation", "res://configs/csv/towers.slow.translation", "res://configs/csv/towers.chain.translation", "res://configs/csv/towers.chain.translation", "res://configs/csv/towers.color.translation"]
+
+[params]
+
+compress=true
+delimiter=0

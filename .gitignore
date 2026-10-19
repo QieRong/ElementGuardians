@@ -1,0 +1,11 @@
+# Keep planning Excel and generated CSV tracked; do not ignore both.
+**/.godot/
+**/dist/
+**/build/
+**/temp/
+**/__pycache__/
+*.log
+*.pyc
+.env
+.env.*
+!.env.example

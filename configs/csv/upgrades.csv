@@ -1,0 +1,7 @@
+upgrade_id,name,effect_key,effect_value,max_stacks,description
+power,全军增幅,global_damage_bonus,0.1,2,全部守卫伤害+10%（与类型加成相加）
+speed,快速施法,attack_interval_scale,0.9,2,攻击间隔×0.90，最多2层
+fire_boost,烈焰精进,fire_damage_bonus,0.2,2,火焰守卫伤害+20%
+ice_slow,极寒禁锢,ice_slow_bonus,0.1,2,冰霜减速+10个百分点（上限60%）
+chain,连锁闪击,lightning_extra_targets,1,2,雷电每层额外增加1个连锁目标
+gold,战利品加成,kill_gold_bonus,2,2,每次击杀额外获得2金币

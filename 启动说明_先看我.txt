@@ -1,0 +1,21 @@
+元素守卫｜给 AI 开发工具的一整个项目启动包
+============================================
+
+1. 不用先新建 GitHub 仓库，也不要直接把 ZIP 当作 Godot 文件导入。
+2. 解压后打开本文件夹中的 README.md、AGENTS.md。
+3. 在 Windows PowerShell 中进入 ElementGuardians 目录：
+   python tools/verify_starter.py
+   如果安装了 Godot 4.4.1，可以运行：
+   .\RUN_FIRST.ps1 -GodotExe "E:\godot\Godot_v4.4.1-stable_win64_console.exe"
+   上面的 E:\\godot 是示例路径，替换成你自己真实安装位置。
+4. Godot 编辑器导入：ElementGuardians\godot\project.godot
+5. 将 prompts\01-FIRST-TURN.md 全文复制给 Codex/WorkBuddy，要求先审查并开始 Sprint 1。
+6. 请注意：ZIP 中的 Godot 代码只是“菜单 + 验证配置 + 战斗占位”骨架，
+   不是成品游戏；所有玩法仍需 AI 按 Sprint 开发。
+7. 数值只改 configs\ElementGuardians_策划数值配置.xlsx 的数据工作表；
+   修改后运行 python tools\sync_config.py。
+
+当前环境已检查：Python 静态配置及 XLSX→CSV 一致性 PASS；
+当前环境无 Godot 可执行文件，所以场景引擎解析和 GUI 操作未被实机验证。
+
+本项目用来应聘游戏策划；应明确区分你制定的规则/数值/验收与 AI 生成的代码。

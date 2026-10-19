@@ -1,0 +1,11 @@
+key,value,description
+board_cols,3,棋盘列数
+board_rows,3,棋盘行数
+max_tower_level,3,塔上限等级
+level2_damage_mult,1.75,二级伤害倍率
+level3_damage_mult,3,三级伤害倍率
+max_ice_slow_pct,0.6,最大减速比例
+lightning_chain_max_extra_targets,3,额外连锁目标上限
+design_width,720,竖屏设计宽度
+design_height,1280,竖屏设计高度
+gameplay_seed_default,20261018,默认固定随机种子（测试时可覆盖）

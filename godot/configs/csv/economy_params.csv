@@ -1,0 +1,5 @@
+key,value,description
+initial_gold,60,开局金币
+summon_cost,20,召唤费用，固定
+wave_clear_reward,20,每波完成奖励
+base_hp,10,基地初始生命

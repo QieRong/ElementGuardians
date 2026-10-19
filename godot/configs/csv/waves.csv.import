@@ -1,0 +1,17 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://bqj80uwotgiup"
+
+[deps]
+
+files=["res://configs/csv/waves.enemy.translation", "res://configs/csv/waves.count.translation", "res://configs/csv/waves.spawn.translation", "res://configs/csv/waves.delay.translation"]
+
+source_file="res://configs/csv/waves.csv"
+dest_files=["res://configs/csv/waves.enemy.translation", "res://configs/csv/waves.count.translation", "res://configs/csv/waves.spawn.translation", "res://configs/csv/waves.delay.translation"]
+
+[params]
+
+compress=true
+delimiter=0

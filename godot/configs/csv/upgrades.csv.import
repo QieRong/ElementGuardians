@@ -1,0 +1,17 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://dqgt4gt1ttor7"
+
+[deps]
+
+files=["res://configs/csv/upgrades.name.translation", "res://configs/csv/upgrades.effect.translation", "res://configs/csv/upgrades.effect.translation", "res://configs/csv/upgrades.max.translation", "res://configs/csv/upgrades.description.translation"]
+
+source_file="res://configs/csv/upgrades.csv"
+dest_files=["res://configs/csv/upgrades.name.translation", "res://configs/csv/upgrades.effect.translation", "res://configs/csv/upgrades.effect.translation", "res://configs/csv/upgrades.max.translation", "res://configs/csv/upgrades.description.translation"]
+
+[params]
+
+compress=true
+delimiter=0

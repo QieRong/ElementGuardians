@@ -1,0 +1,17 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://dddygwphlg5vc"
+
+[deps]
+
+files=["res://configs/csv/enemies.name.translation", "res://configs/csv/enemies.hp.translation", "res://configs/csv/enemies.speed.translation", "res://configs/csv/enemies.reward.translation", "res://configs/csv/enemies.leak.translation", "res://configs/csv/enemies.is.translation", "res://configs/csv/enemies.color.translation"]
+
+source_file="res://configs/csv/enemies.csv"
+dest_files=["res://configs/csv/enemies.name.translation", "res://configs/csv/enemies.hp.translation", "res://configs/csv/enemies.speed.translation", "res://configs/csv/enemies.reward.translation", "res://configs/csv/enemies.leak.translation", "res://configs/csv/enemies.is.translation", "res://configs/csv/enemies.color.translation"]
+
+[params]
+
+compress=true
+delimiter=0

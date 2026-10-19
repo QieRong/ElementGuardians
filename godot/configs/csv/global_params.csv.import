@@ -1,0 +1,17 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://kb5gkmashlgy"
+
+[deps]
+
+files=["res://configs/csv/global_params.value.translation", "res://configs/csv/global_params.description.translation"]
+
+source_file="res://configs/csv/global_params.csv"
+dest_files=["res://configs/csv/global_params.value.translation", "res://configs/csv/global_params.description.translation"]
+
+[params]
+
+compress=true
+delimiter=0

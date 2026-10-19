@@ -1,0 +1,4 @@
+tower_id,name,base_damage,attack_interval_s,range_px,summon_weight,slow_pct,slow_duration_s,chain_extra_targets,chain_damage_ratio,color_hex
+fire,火焰守卫,12,1,230,4,0,0,0,0,#F97316
+ice,冰霜守卫,8,1.2,235,3,0.2,1.5,0,0,#38BDF8
+lightning,雷电守卫,6,0.8,225,3,0,0,1,0.5,#A78BFA

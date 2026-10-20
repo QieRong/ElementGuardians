@@ -1,0 +1,15 @@
+.F
+======================================================================
+FAIL: test_overlapping_slots_are_rejected (__main__.MapGeometryTests.test_overlapping_slots_are_rejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\桌面\ElementGuardians\tools\test_check_map.py", line 13, in test_overlapping_slots_are_rejected
+    self.assertTrue(report["problems"], "overlapping slots were accepted")
+AssertionError: [] is not true : overlapping slots were accepted
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.051s
+
+FAILED (failures=1)
+
+EXIT=1

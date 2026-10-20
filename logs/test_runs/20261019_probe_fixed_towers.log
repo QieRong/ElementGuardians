@@ -1,0 +1,22 @@
+Godot Engine v4.4.1.stable.official.49a5bc7b6 - https://godotengine.org
+
+PROBE fixed_towers: combinations=72 wins=0
+  slots=[2, 4, 8] types=[0, 1, 2] victory=false hp=0 wave=5 time=161.6 kills=41 leaks=5 gold=365
+  slots=[0, 4, 7] types=[0, 1, 2] victory=false hp=0 wave=5 time=162.2 kills=41 leaks=5 gold=365
+  slots=[0, 4, 8] types=[0, 1, 2] victory=false hp=0 wave=5 time=163.6 kills=42 leaks=5 gold=373
+  slots=[0, 3, 8] types=[0, 1, 2] victory=false hp=0 wave=5 time=164.0 kills=42 leaks=5 gold=373
+  slots=[0, 4, 7] types=[2, 0, 1] victory=false hp=0 wave=5 time=165.5 kills=41 leaks=5 gold=365
+  slots=[1, 6, 7] types=[0, 2, 1] victory=false hp=0 wave=5 time=166.2 kills=42 leaks=5 gold=373
+  slots=[1, 4, 8] types=[1, 0, 2] victory=false hp=0 wave=5 time=166.4 kills=41 leaks=5 gold=365
+  slots=[0, 4, 7] types=[1, 0, 2] victory=false hp=0 wave=5 time=166.7 kills=42 leaks=5 gold=373
+  slots=[1, 4, 8] types=[0, 2, 1] victory=false hp=0 wave=5 time=167.0 kills=42 leaks=5 gold=373
+  slots=[2, 4, 8] types=[0, 2, 1] victory=false hp=0 wave=5 time=167.2 kills=42 leaks=5 gold=373
+  slots=[1, 6, 7] types=[2, 0, 1] victory=false hp=0 wave=5 time=167.3 kills=42 leaks=5 gold=373
+  slots=[0, 4, 8] types=[1, 0, 2] victory=false hp=0 wave=5 time=167.8 kills=42 leaks=5 gold=373
+BEST slots=[2, 4, 8] types=[0, 1, 2] hp=0 time=161.6 kills=41 leaks=5
+  WAVE 1 spawned=6 kills=6 leaks=0 gold=60->110 hp=10->10 reward=20 duration=19.7
+  WAVE 2 spawned=9 kills=9 leaks=0 gold=110->177 hp=10->10 reward=20 duration=28.1
+  WAVE 3 spawned=10 kills=10 leaks=0 gold=177->251 hp=10->10 reward=20 duration=27.5
+  WAVE 4 spawned=10 kills=6 leaks=4 gold=251->301 hp=10->2 reward=20 duration=42.7
+  WAVE 5 spawned=12 kills=10 leaks=1 gold=301->301 hp=2->2 reward=0 duration=0.0
+EXIT=0

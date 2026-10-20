@@ -1,0 +1,8 @@
+Godot Engine v4.4.1.stable.official.49a5bc7b6 - https://godotengine.org
+
+PASS map-load
+FAIL D006-approved-width
+FAIL D006-no-slot-overlap
+PASS D006-lv1-baseline
+FAIL map-level-to-damage
+MAP SUMMARY: PASS=2 FAIL=3 SKIP=0

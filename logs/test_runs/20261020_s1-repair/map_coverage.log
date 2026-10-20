@@ -1,0 +1,17 @@
+MAP CHECK: PASS
+map=D006-A path_length=2470.0px samples=1236
+slot,center,nearest_px,coverage_pct(range_px)
+0,280x530,90.0,24.3%(225)
+1,360x530,90.0,16.7%(225)
+2,440x530,90.0,17.0%(225)
+3,280x620,180.0,29.0%(225)
+4,360x620,180.0,20.7%(225)
+5,440x620,180.0,20.7%(225)
+6,280x710,100.0,24.4%(225)
+7,360x710,100.0,16.3%(225)
+8,440x710,100.0,16.3%(225)
+fixed towers:
+  fire slot=2 range=230 coverage=17.6%
+  ice slot=4 range=235 coverage=23.5%
+  lightning slot=8 range=225 coverage=16.3%
+union coverage=35.4%

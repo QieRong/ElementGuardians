@@ -1,0 +1,26 @@
+COMMAND=['E:\\godot\\Godot_v4.4.1-stable_win64.exe', '--log-file', 'D:\\桌面\\ElementGuardians\\logs\\test_runs\\20261020_s1-repair\\final_repairs.engine.log', '--headless', '--path', 'godot', '--script', 'res://tests/test_battle_repairs.gd']
+CWD=D:\桌面\ElementGuardians
+Godot Engine v4.4.1.stable.official.49a5bc7b6 - https://godotengine.org
+
+PASS ENM-01-death-once
+PASS ENM-01-dead-cannot-leak
+PASS ENM-01-resolved
+PASS ENM-02-leak-once
+PASS ECO-04-no-leaked-kill-gold
+PASS ENM-02-resolved
+PASS SES-02-immediate-result
+PASS SES-02-stop-same-tick
+PASS SES-02-stop-spawner
+PASS SES-02-late-events-no-effect
+RESTART BEGIN seed=12345
+PASS RES-01-preserve-placement
+PASS RES-01-reset-ledger
+PASS RES-01-preserve-seed
+PASS RES-01-clear-runtime
+PASS RES-01-repeat
+RESTART END
+REPAIR SUMMARY: PASS=15 FAIL=0 SKIP=0
+
+EXIT=0 LIMIT=NONE PEAK_PRIVATE_BYTES=36335616
+STDIO=logs\test_runs\20261020_s1-repair\final_repairs.stdio.log
+HARNESS=PASS SUMMARY_FOUND=True

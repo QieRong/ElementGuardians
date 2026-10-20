@@ -1,0 +1,7 @@
+DOCS: 19 files | tests defined=36 referenced=36
+DOC CHECK: FAIL
+DOC-MANIFEST FAIL: MANIFEST ��ϣ����: AGENTS.md
+DOC-MANIFEST FAIL: MANIFEST ��ϣ����: tracking/CHANGELOG.md
+DOC-MANIFEST FAIL: MANIFEST ��ϣ����: tracking/DECISIONS.md
+
+EXIT=1

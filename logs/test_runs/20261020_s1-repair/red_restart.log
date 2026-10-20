@@ -1,0 +1,8 @@
+COMMAND=['E:\\godot\\Godot_v4.4.1-stable_win64.exe', '--headless', '--path', 'godot', '--script', 'res://tests/test_battle_repairs.gd', '--', '--case=restart']
+CWD=D:\桌面\ElementGuardians
+Godot Engine v4.4.1.stable.official.49a5bc7b6 - https://godotengine.org
+
+RESTART BEGIN seed=12345
+
+EXIT=1 LIMIT=MEMORY_LIMIT PEAK_PRIVATE_BYTES=270020608
+HARNESS=FAIL SUMMARY_FOUND=False

@@ -1,0 +1,20 @@
+Godot Engine v4.4.1.stable.official.49a5bc7b6 - https://godotengine.org
+
+PROBE fixed_towers: combinations=9 wins=6
+  slots=[2, 4, 8] types=["fire", "ice", "lightning"] level=3 victory=true hp=10 wave=6 time=151.1 kills=59 leaks=0 gold=563
+  slots=[0, 4, 8] types=["fire", "fire", "fire"] level=2 victory=true hp=10 wave=6 time=166.6 kills=59 leaks=0 gold=563
+  slots=[2, 4, 6] types=["lightning", "lightning", "lightning"] level=2 victory=true hp=5 wave=6 time=179.3 kills=58 leaks=1 gold=523
+  slots=[0, 4, 8] types=["fire", "ice", "lightning"] level=2 victory=true hp=5 wave=6 time=187.3 kills=58 leaks=1 gold=523
+  slots=[2, 4, 8] types=["fire", "ice", "lightning"] level=2 victory=true hp=5 wave=6 time=194.2 kills=58 leaks=1 gold=523
+  slots=[0, 7, 8] types=["fire", "ice", "lightning"] level=2 victory=true hp=3 wave=6 time=210.8 kills=57 leaks=2 gold=515
+  slots=[2, 4, 8] types=["fire", "ice", "lightning"] level=1 victory=false hp=0 wave=5 time=161.6 kills=41 leaks=5 gold=365
+  slots=[2, 4, 6] types=["lightning", "lightning", "lightning"] level=1 victory=false hp=0 wave=6 time=200.4 kills=51 leaks=5 gold=447
+  slots=[0, 4, 8] types=["fire", "fire", "fire"] level=1 victory=false hp=-1 wave=6 time=204.9 kills=55 leaks=4 gold=479
+BEST slots=[2, 4, 8] types=["fire", "ice", "lightning"] level=3 hp=10 time=151.1 kills=59 leaks=0
+  WAVE 1 spawned=6 kills=6 leaks=0 gold=60->110 hp=10->10 reward=20 duration=14.7
+  WAVE 2 spawned=9 kills=9 leaks=0 gold=110->177 hp=10->10 reward=20 duration=15.4
+  WAVE 3 spawned=10 kills=10 leaks=0 gold=177->251 hp=10->10 reward=20 duration=15.4
+  WAVE 4 spawned=10 kills=10 leaks=0 gold=251->333 hp=10->10 reward=20 duration=33.4
+  WAVE 5 spawned=12 kills=12 leaks=0 gold=333->433 hp=10->10 reward=20 duration=23.0
+  WAVE 6 spawned=12 kills=12 leaks=0 gold=433->563 hp=10->10 reward=20 duration=49.2
+EXIT=0

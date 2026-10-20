@@ -1,0 +1,14 @@
+COMMAND=['E:\\godot\\Godot_v4.4.1-stable_win64.exe', '--log-file', 'D:\\桌面\\ElementGuardians\\logs\\test_runs\\20261020_s1-repair\\red_map.engine.log', '--headless', '--path', 'godot', '--script', 'res://tests/test_map_contract.gd']
+CWD=D:\桌面\ElementGuardians
+Godot Engine v4.4.1.stable.official.49a5bc7b6 - https://godotengine.org
+
+PASS map-load
+FAIL D006-approved-width
+FAIL D006-no-slot-overlap
+PASS D006-lv1-baseline
+FAIL map-level-to-damage
+MAP SUMMARY: PASS=2 FAIL=3 SKIP=0
+
+EXIT=1 LIMIT=NONE PEAK_PRIVATE_BYTES=36589568
+STDIO=logs\test_runs\20261020_s1-repair\red_map.stdio.log
+HARNESS=FAIL SUMMARY_FOUND=False

@@ -1,0 +1,30 @@
+{
+  "font_files": [
+    {
+      "path": "output\\visuals\\sources\\fonts\\NotoSansKR-preview.ttf",
+      "bytes": 84320,
+      "sha256": "fc0d9caa111511340f3c93c9dc4ab44e3778f8ef3258d6a0b86e2ce62dc519da",
+      "glyphs": 357,
+      "copyright": [
+        "(c) 2014-2021 Adobe (http://www.adobe.com/), with Reserved Font Name 'Source'."
+      ],
+      "license": [
+        "http://scripts.sil.org/OFL"
+      ]
+    },
+    {
+      "path": "output\\visuals\\sources\\fonts\\NotoSansSC-preview.ttf",
+      "bytes": 90176,
+      "sha256": "3e8836a3a1df081050a5f85a37ddc1c94e58399e2fb4f07440e21d45c508fce5",
+      "glyphs": 359,
+      "copyright": [
+        "(c) 2014-2021 Adobe (http://www.adobe.com/), with Reserved Font Name 'Source'."
+      ],
+      "license": [
+        "http://scripts.sil.org/OFL"
+      ]
+    }
+  ],
+  "missing_characters": [],
+  "status": "PASS"
+}

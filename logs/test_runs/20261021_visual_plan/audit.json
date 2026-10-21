@@ -1,0 +1,115 @@
+{
+  "head": "7f33b36b3528d572db22788a06d171ada506bf47",
+  "branch": "master",
+  "checks": [
+    {
+      "name": "package_links",
+      "status": "PASS",
+      "errors": [],
+      "details": {
+        "documents": 6,
+        "local_links": 29
+      }
+    },
+    {
+      "name": "geometry_and_display_bound",
+      "status": "PASS",
+      "errors": [],
+      "details": {
+        "slots": 9,
+        "path_points": 7,
+        "rectangles_in_canvas": 20,
+        "gold_bound": 799,
+        "note": "document coordinates only; no font or rendering verification"
+      }
+    },
+    {
+      "name": "asset_metadata",
+      "status": "PASS",
+      "errors": [],
+      "details": {
+        "assets": 58,
+        "note": "file metadata only, not image quality"
+      }
+    },
+    {
+      "name": "scope_preservation",
+      "status": "PASS",
+      "errors": [],
+      "details": {
+        "preserved_existing_files": 259,
+        "allowed_documents": 6
+      }
+    }
+  ],
+  "commands": [
+    {
+      "name": "sync",
+      "args": [
+        "python",
+        "-X",
+        "utf8",
+        "tools/sync_config.py",
+        "--check"
+      ],
+      "exit": 0,
+      "status": "PASS"
+    },
+    {
+      "name": "config",
+      "args": [
+        "python",
+        "-X",
+        "utf8",
+        "tools/validate_config.py"
+      ],
+      "exit": 0,
+      "status": "PASS"
+    },
+    {
+      "name": "docs",
+      "args": [
+        "python",
+        "-X",
+        "utf8",
+        "tools/check_docs.py"
+      ],
+      "exit": 1,
+      "status": "FAIL"
+    }
+  ],
+  "skip": [
+    {
+      "name": "Godot parse",
+      "reason": "documentation planning only"
+    },
+    {
+      "name": "GUI flow",
+      "reason": "documentation planning only"
+    },
+    {
+      "name": "performance",
+      "reason": "documentation planning only"
+    }
+  ],
+  "document_hashes": {
+    "docs/superpowers/plans/2026-10-20-menu-battle-visuals.md": "4ace6a3ea2d16624bf88f1a3409a924fddb5efe68d7d0d642cf9bf0d255663ca",
+    "docs/visuals/2026-10-20/00-BRIEF.md": "e67f8f95c5dd4682fc971e98762e6e159ecb05a258c58045d96800b5ad91dcbf",
+    "docs/visuals/2026-10-20/01-VISUAL-SYSTEM.md": "ca0c2ca1c13413e0aee932f99c1738bfad42032adc9514dc98054513cac29eff",
+    "docs/visuals/2026-10-20/02-SCREEN-SPECS.md": "dd3e89762ace51ce7e5887536f5d6e54d1baf64b4f0fafb12c6b604c16879247",
+    "docs/visuals/2026-10-20/03-ASSET-COMPONENTS.md": "904aaacf0ff8af01e2130a43f727a4024b27111e363f5a14b6cec426312745e3",
+    "docs/visuals/2026-10-20/04-REVIEW.md": "ace8caca0ae7113a80f9b8666e1a398652876001c950c9f45829a83f127788f3"
+  },
+  "counts": {
+    "PASS": 6,
+    "FAIL": 1,
+    "SKIP": 3
+  },
+  "finalization": {
+    "document_and_report_links": 31,
+    "broken_links": [],
+    "unexpected_existing_changes": [],
+    "report_sha256": "0da82874c816ad96c0c0099232d85cd8c01f96d0d03a70662b64a5a2bc7c8d2d",
+    "note": "Final text and report checked after status update; configuration and engine files unchanged since recorded command runs."
+  }
+}

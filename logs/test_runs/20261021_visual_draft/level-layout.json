@@ -1,0 +1,326 @@
+{
+  "bounds": [
+    {
+      "text": "Lv1",
+      "overflow": false
+    },
+    {
+      "text": "Lv2",
+      "overflow": false
+    },
+    {
+      "text": "1 / 6",
+      "overflow": false
+    },
+    {
+      "text": "10 / 10",
+      "overflow": false
+    },
+    {
+      "text": "0",
+      "overflow": false
+    },
+    {
+      "text": "准备中",
+      "overflow": false
+    },
+    {
+      "text": "敌人入口",
+      "overflow": false
+    },
+    {
+      "text": "守卫基地",
+      "overflow": false
+    },
+    {
+      "text": "召唤 -20",
+      "overflow": false
+    },
+    {
+      "text": "取消选择",
+      "overflow": false
+    },
+    {
+      "text": "开始第 1 波",
+      "overflow": false
+    },
+    {
+      "text": "不同等级不可合成",
+      "overflow": false
+    }
+  ],
+  "slots": [
+    {
+      "id": 0,
+      "x": 242,
+      "y": 492,
+      "w": 76,
+      "h": 76
+    },
+    {
+      "id": 1,
+      "x": 322,
+      "y": 492,
+      "w": 76,
+      "h": 76
+    },
+    {
+      "id": 2,
+      "x": 402,
+      "y": 492,
+      "w": 76,
+      "h": 76
+    },
+    {
+      "id": 3,
+      "x": 242,
+      "y": 582,
+      "w": 76,
+      "h": 76
+    },
+    {
+      "id": 4,
+      "x": 322,
+      "y": 582,
+      "w": 76,
+      "h": 76
+    },
+    {
+      "id": 5,
+      "x": 402,
+      "y": 582,
+      "w": 76,
+      "h": 76
+    },
+    {
+      "id": 6,
+      "x": 242,
+      "y": 672,
+      "w": 76,
+      "h": 76
+    },
+    {
+      "id": 7,
+      "x": 322,
+      "y": 672,
+      "w": 76,
+      "h": 76
+    },
+    {
+      "id": 8,
+      "x": 402,
+      "y": 672,
+      "w": 76,
+      "h": 76
+    }
+  ],
+  "route": "80,190 640,190 640,440 80,440 80,810 640,810 640,980",
+  "map": {
+    "map_id": "D006-A",
+    "name": "单 S 形外缘路径",
+    "status": "confirmed-2026-10-20",
+    "design_size": [
+      720,
+      1280
+    ],
+    "battlefield": {
+      "x": 0,
+      "y": 120,
+      "w": 720,
+      "h": 960
+    },
+    "path": [
+      [
+        80,
+        190
+      ],
+      [
+        640,
+        190
+      ],
+      [
+        640,
+        440
+      ],
+      [
+        80,
+        440
+      ],
+      [
+        80,
+        810
+      ],
+      [
+        640,
+        810
+      ],
+      [
+        640,
+        980
+      ]
+    ],
+    "entry": {
+      "x": 80,
+      "y": 190
+    },
+    "base": {
+      "x": 640,
+      "y": 980
+    },
+    "slot_size": 76,
+    "slots": [
+      {
+        "index": 0,
+        "col": 0,
+        "row": 0,
+        "center": [
+          280,
+          530
+        ],
+        "size": 76
+      },
+      {
+        "index": 1,
+        "col": 1,
+        "row": 0,
+        "center": [
+          360,
+          530
+        ],
+        "size": 76
+      },
+      {
+        "index": 2,
+        "col": 2,
+        "row": 0,
+        "center": [
+          440,
+          530
+        ],
+        "size": 76
+      },
+      {
+        "index": 3,
+        "col": 0,
+        "row": 1,
+        "center": [
+          280,
+          620
+        ],
+        "size": 76
+      },
+      {
+        "index": 4,
+        "col": 1,
+        "row": 1,
+        "center": [
+          360,
+          620
+        ],
+        "size": 76
+      },
+      {
+        "index": 5,
+        "col": 2,
+        "row": 1,
+        "center": [
+          440,
+          620
+        ],
+        "size": 76
+      },
+      {
+        "index": 6,
+        "col": 0,
+        "row": 2,
+        "center": [
+          280,
+          710
+        ],
+        "size": 76
+      },
+      {
+        "index": 7,
+        "col": 1,
+        "row": 2,
+        "center": [
+          360,
+          710
+        ],
+        "size": 76
+      },
+      {
+        "index": 8,
+        "col": 2,
+        "row": 2,
+        "center": [
+          440,
+          710
+        ],
+        "size": 76
+      }
+    ],
+    "fixed_towers": [
+      {
+        "slot": 5,
+        "type_id": "fire",
+        "level": 1,
+        "label": "诊断夹具 Lv1"
+      },
+      {
+        "slot": 4,
+        "type_id": "ice",
+        "level": 1,
+        "label": "诊断夹具 Lv1"
+      },
+      {
+        "slot": 3,
+        "type_id": "lightning",
+        "level": 1,
+        "label": "诊断夹具 Lv1"
+      }
+    ],
+    "note": "路径上带 y=440，下带 y=810；9 格中心 y=530/620/710，格子均避开路径并覆盖两条横向路径带。",
+    "fixed_tower_note": "仅 Sprint 1 诊断模式使用；正式对局开局 0 塔、60 金币、Lv1。"
+  },
+  "images": [
+    {
+      "src": "../../../game_asserts/09_背景场景/战斗场景_竖屏裁剪.png",
+      "ok": true
+    },
+    {
+      "src": "../../../game_asserts/01_角色守卫/火焰守卫.png",
+      "ok": true
+    },
+    {
+      "src": "../../../game_asserts/01_角色守卫/火焰守卫.png",
+      "ok": true
+    }
+  ],
+  "fonts": [
+    {
+      "family": "EGNoto",
+      "status": "loaded"
+    },
+    {
+      "family": "EGNotoKR",
+      "status": "unloaded"
+    }
+  ],
+  "text": "0\nLv1\nLv2\n3\n4\n5\n6\n7\n8\n波次\n1 / 6\n基地\n10 / 10\n金币\n0\n准备中\n敌人入口\n守卫基地\n召唤 -20\n取消选择\n开始第 1 波\n不同等级不可合成\n视觉稿 v01 · 非运行截图",
+  "sample": {
+    "gold": 0,
+    "selected": 1,
+    "feedback": "不同等级不可合成",
+    "occupants": {
+      "1": [
+        "fire",
+        1
+      ],
+      "2": [
+        "fire",
+        2
+      ]
+    }
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "bounds": [
+    {
+      "text": "元素守卫",
+      "overflow": false
+    },
+    {
+      "text": "ELEMENT GUARDIANS",
+      "overflow": false
+    },
+    {
+      "text": "开始游戏",
+      "overflow": false
+    },
+    {
+      "text": "退出游戏",
+      "overflow": false
+    },
+    {
+      "text": "单机原型 · AI 协作制作",
+      "overflow": false
+    }
+  ],
+  "slots": [],
+  "images": [
+    {
+      "src": "../../../game_asserts/09_背景场景/主菜单_竖屏裁剪.png",
+      "ok": true
+    }
+  ],
+  "fonts": [
+    {
+      "family": "EGNoto",
+      "status": "loaded"
+    },
+    {
+      "family": "EGNotoKR",
+      "status": "unloaded"
+    }
+  ],
+  "text": "◎ 简体中文\n元素守卫\n\nELEMENT GUARDIANS\n\n开始游戏\n退出游戏\n\n单机原型 · AI 协作制作\n\n视觉稿 v01 · 非运行截图"
+}

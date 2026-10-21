@@ -1,0 +1,28 @@
+ M MANIFEST.sha256
+ M README.md
+ M docs/00-START-HERE.md
+ M docs/04-LEVELS.md
+ M docs/06-UI-UX.md
+ M docs/07-ASSETS.md
+ M docs/11-RISKS-DECISIONS.md
+ M docs/17-DESIGN-COVERAGE.md
+ M godot/data/map_default.json
+ M godot/project.godot
+ M godot/scenes/main.tscn
+ M godot/scripts/battle/battle_core.gd
+ M godot/tests/test_battle_repairs.gd
+ M godot/tests/test_map_contract.gd
+ M godot/tests/test_six_wave_baseline.gd
+ M tracking/CHANGELOG.md
+ M tracking/DECISIONS.md
+?? docs/maps/D008-REVIEW.md
+?? docs/maps/D008-map-A-approved-76.png
+?? docs/superpowers/
+?? docs/visuals/
+?? logs/test_runs/20261020_d009/
+?? logs/test_runs/20261020_s1-repair/prechange.zip
+?? logs/test_runs/20261020_visual_plan/
+?? logs/test_runs/20261020_w5-diagnosis/
+?? logs/test_runs/20261021_visual_draft/
+?? logs/test_runs/20261021_visual_plan/
+?? output/

@@ -1,0 +1,1613 @@
+{
+  "counts": {
+    "PASS": 30,
+    "FAIL": 9
+  },
+  "checks": [
+    {
+      "id": "menu-text",
+      "status": "PASS",
+      "detail": [
+        {
+          "text": "元素守卫",
+          "overflow": false
+        },
+        {
+          "text": "ELEMENT GUARDIANS",
+          "overflow": false
+        },
+        {
+          "text": "单机原型 · AI 协作制作",
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "id": "menu-assets",
+      "status": "PASS",
+      "detail": [
+        {
+          "src": "../../../game_asserts/09_背景场景/主菜单_竖屏裁剪.png",
+          "ok": true
+        }
+      ]
+    },
+    {
+      "id": "combat-text",
+      "status": "FAIL",
+      "detail": [
+        {
+          "text": "Lv1",
+          "overflow": true
+        },
+        {
+          "text": "Lv1",
+          "overflow": true
+        },
+        {
+          "text": "Lv1",
+          "overflow": true
+        },
+        {
+          "text": "1 / 6",
+          "overflow": false
+        },
+        {
+          "text": "10 / 10",
+          "overflow": false
+        },
+        {
+          "text": "0",
+          "overflow": false
+        },
+        {
+          "text": "战斗中",
+          "overflow": false
+        },
+        {
+          "text": "敌人入口",
+          "overflow": false
+        },
+        {
+          "text": "守卫基地",
+          "overflow": false
+        },
+        {
+          "text": "本波进行中",
+          "overflow": false
+        },
+        {
+          "text": "战斗中不可召唤或合成",
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "id": "combat-assets",
+      "status": "PASS",
+      "detail": [
+        {
+          "src": "../../../game_asserts/09_背景场景/战斗场景_竖屏裁剪.png",
+          "ok": true
+        },
+        {
+          "src": "../../../game_asserts/01_角色守卫/雷霆守卫.png",
+          "ok": true
+        },
+        {
+          "src": "../../../game_asserts/01_角色守卫/冰霜守卫.png",
+          "ok": true
+        },
+        {
+          "src": "../../../game_asserts/01_角色守卫/火焰守卫.png",
+          "ok": true
+        },
+        {
+          "src": "../../../game_asserts/02_敌人怪物/窥视蛛机.png",
+          "ok": true
+        },
+        {
+          "src": "../../../game_asserts/02_敌人怪物/窥视蛛机.png",
+          "ok": true
+        },
+        {
+          "src": "../../../game_asserts/02_敌人怪物/窥视蛛机.png",
+          "ok": true
+        }
+      ]
+    },
+    {
+      "id": "combat-geometry",
+      "status": "PASS",
+      "detail": {
+        "slots": [
+          {
+            "id": 0,
+            "x": 242,
+            "y": 492,
+            "w": 76,
+            "h": 76
+          },
+          {
+            "id": 1,
+            "x": 322,
+            "y": 492,
+            "w": 76,
+            "h": 76
+          },
+          {
+            "id": 2,
+            "x": 402,
+            "y": 492,
+            "w": 76,
+            "h": 76
+          },
+          {
+            "id": 3,
+            "x": 242,
+            "y": 582,
+            "w": 76,
+            "h": 76
+          },
+          {
+            "id": 4,
+            "x": 322,
+            "y": 582,
+            "w": 76,
+            "h": 76
+          },
+          {
+            "id": 5,
+            "x": 402,
+            "y": 582,
+            "w": 76,
+            "h": 76
+          },
+          {
+            "id": 6,
+            "x": 242,
+            "y": 672,
+            "w": 76,
+            "h": 76
+          },
+          {
+            "id": 7,
+            "x": 322,
+            "y": 672,
+            "w": 76,
+            "h": 76
+          },
+          {
+            "id": 8,
+            "x": 402,
+            "y": 672,
+            "w": 76,
+            "h": 76
+          }
+        ],
+        "route": "80,190 640,190 640,440 80,440 80,810 640,810 640,980"
+      }
+    },
+    {
+      "id": "combat-contract",
+      "status": "PASS",
+      "detail": {
+        "gold": 0,
+        "phase": "战斗中",
+        "occupants": {
+          "3": [
+            "lightning",
+            1
+          ],
+          "4": [
+            "ice",
+            1
+          ],
+          "5": [
+            "fire",
+            1
+          ]
+        },
+        "feedback": "战斗中不可召唤或合成",
+        "locked": true
+      }
+    },
+    {
+      "id": "initial-text",
+      "status": "PASS",
+      "detail": [
+        {
+          "text": "1 / 6",
+          "overflow": false
+        },
+        {
+          "text": "10 / 10",
+          "overflow": false
+        },
+        {
+          "text": "60",
+          "overflow": false
+        },
+        {
+          "text": "准备中",
+          "overflow": false
+        },
+        {
+          "text": "敌人入口",
+          "overflow": false
+        },
+        {
+          "text": "守卫基地",
+          "overflow": false
+        },
+        {
+          "text": "请先选择空格",
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "id": "initial-assets",
+      "status": "PASS",
+      "detail": [
+        {
+          "src": "../../../game_asserts/09_背景场景/战斗场景_竖屏裁剪.png",
+          "ok": true
+        }
+      ]
+    },
+    {
+      "id": "initial-geometry",
+      "status": "PASS",
+      "detail": {
+        "slots": [
+          {
+            "id": 0,
+            "x": 242,
+            "y": 492,
+            "w": 76,
+            "h": 76
+          },
+          {
+            "id": 1,
+            "x": 322,
+            "y": 492,
+            "w": 76,
+            "h": 76
+          },
+          {
+            "id": 2,
+            "x": 402,
+            "y": 492,
+            "w": 76,
+            "h": 76
+          },
+          {
+            "id": 3,
+            "x": 242,
+            "y": 582,
+            "w": 76,
+            "h": 76
+          },
+          {
+            "id": 4,
+            "x": 322,
+            "y": 582,
+            "w": 76,
+            "h": 76
+          },
+          {
+            "id": 5,
+            "x": 402,
+            "y": 582,
+            "w": 76,
+            "h": 76
+          },
+          {
+            "id": 6,
+            "x": 242,
+            "y": 672,
+            "w": 76,
+            "h": 76
+          },
+          {
+            "id": 7,
+            "x": 322,
+            "y": 672,
+            "w": 76,
+            "h": 76
+          },
+          {
+            "id": 8,
+            "x": 402,
+            "y": 672,
+            "w": 76,
+            "h": 76
+          }
+        ],
+        "route": "80,190 640,190 640,440 80,440 80,810 640,810 640,980"
+      }
+    },
+    {
+      "id": "initial-contract",
+      "status": "PASS",
+      "detail": {
+        "gold": 60,
+        "feedback": "请先选择空格",
+        "occupants": {}
+      }
+    },
+    {
+      "id": "selected-text",
+      "status": "PASS",
+      "detail": [
+        {
+          "text": "1 / 6",
+          "overflow": false
+        },
+        {
+          "text": "10 / 10",
+          "overflow": false
+        },
+        {
+          "text": "60",
+          "overflow": false
+        },
+        {
+          "text": "准备中",
+          "overflow": false
+        },
+        {
+          "text": "敌人入口",
+          "overflow": false
+        },
+        {
+          "text": "守卫基地",
+          "overflow": false
+        },
+        {
+          "text": "已选择4号格 · 召唤花费20金币",
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "id": "selected-assets",
+      "status": "PASS",
+      "detail": [
+        {
+          "src": "../../../game_asserts/09_背景场景/战斗场景_竖屏裁剪.png",
+          "ok": true
+        }
+      ]
+    },
+    {
+      "id": "selected-geometry",
+      "status": "PASS",
+      "detail": {
+        "slots": [
+          {
+            "id": 0,
+            "x": 242,
+            "y": 492,
+            "w": 76,
+            "h": 76
+          },
+          {
+            "id": 1,
+            "x": 322,
+            "y": 492,
+            "w": 76,
+            "h": 76
+          },
+          {
+            "id": 2,
+            "x": 402,
+            "y": 492,
+            "w": 76,
+            "h": 76
+          },
+          {
+            "id": 3,
+            "x": 242,
+            "y": 582,
+            "w": 76,
+            "h": 76
+          },
+          {
+            "id": 4,
+            "x": 322,
+            "y": 582,
+            "w": 76,
+            "h": 76
+          },
+          {
+            "id": 5,
+            "x": 402,
+            "y": 582,
+            "w": 76,
+            "h": 76
+          },
+          {
+            "id": 6,
+            "x": 242,
+            "y": 672,
+            "w": 76,
+            "h": 76
+          },
+          {
+            "id": 7,
+            "x": 322,
+            "y": 672,
+            "w": 76,
+            "h": 76
+          },
+          {
+            "id": 8,
+            "x": 402,
+            "y": 672,
+            "w": 76,
+            "h": 76
+          }
+        ],
+        "route": "80,190 640,190 640,440 80,440 80,810 640,810 640,980"
+      }
+    },
+    {
+      "id": "poor-text",
+      "status": "PASS",
+      "detail": [
+        {
+          "text": "1 / 6",
+          "overflow": false
+        },
+        {
+          "text": "10 / 10",
+          "overflow": false
+        },
+        {
+          "text": "19",
+          "overflow": false
+        },
+        {
+          "text": "准备中",
+          "overflow": false
+        },
+        {
+          "text": "敌人入口",
+          "overflow": false
+        },
+        {
+          "text": "守卫基地",
+          "overflow": false
+        },
+        {
+          "text": "金币不足，召唤需要20金币",
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "id": "poor-assets",
+      "status": "PASS",
+      "detail": [
+        {
+          "src": "../../../game_asserts/09_背景场景/战斗场景_竖屏裁剪.png",
+          "ok": true
+        }
+      ]
+    },
+    {
+      "id": "poor-geometry",
+      "status": "PASS",
+      "detail": {
+        "slots": [
+          {
+            "id": 0,
+            "x": 242,
+            "y": 492,
+            "w": 76,
+            "h": 76
+          },
+          {
+            "id": 1,
+            "x": 322,
+            "y": 492,
+            "w": 76,
+            "h": 76
+          },
+          {
+            "id": 2,
+            "x": 402,
+            "y": 492,
+            "w": 76,
+            "h": 76
+          },
+          {
+            "id": 3,
+            "x": 242,
+            "y": 582,
+            "w": 76,
+            "h": 76
+          },
+          {
+            "id": 4,
+            "x": 322,
+            "y": 582,
+            "w": 76,
+            "h": 76
+          },
+          {
+            "id": 5,
+            "x": 402,
+            "y": 582,
+            "w": 76,
+            "h": 76
+          },
+          {
+            "id": 6,
+            "x": 242,
+            "y": 672,
+            "w": 76,
+            "h": 76
+          },
+          {
+            "id": 7,
+            "x": 322,
+            "y": 672,
+            "w": 76,
+            "h": 76
+          },
+          {
+            "id": 8,
+            "x": 402,
+            "y": 672,
+            "w": 76,
+            "h": 76
+          }
+        ],
+        "route": "80,190 640,190 640,440 80,440 80,810 640,810 640,980"
+      }
+    },
+    {
+      "id": "merge-text",
+      "status": "FAIL",
+      "detail": [
+        {
+          "text": "Lv1",
+          "overflow": true
+        },
+        {
+          "text": "Lv1",
+          "overflow": true
+        },
+        {
+          "text": "1 / 6",
+          "overflow": false
+        },
+        {
+          "text": "10 / 10",
+          "overflow": false
+        },
+        {
+          "text": "0",
+          "overflow": false
+        },
+        {
+          "text": "准备中",
+          "overflow": false
+        },
+        {
+          "text": "敌人入口",
+          "overflow": false
+        },
+        {
+          "text": "守卫基地",
+          "overflow": false
+        },
+        {
+          "text": "已选源格1，点击同类同级目标完成合成",
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "id": "merge-assets",
+      "status": "PASS",
+      "detail": [
+        {
+          "src": "../../../game_asserts/09_背景场景/战斗场景_竖屏裁剪.png",
+          "ok": true
+        },
+        {
+          "src": "../../../game_asserts/01_角色守卫/火焰守卫.png",
+          "ok": true
+        },
+        {
+          "src": "../../../game_asserts/01_角色守卫/火焰守卫.png",
+          "ok": true
+        }
+      ]
+    },
+    {
+      "id": "merge-geometry",
+      "status": "PASS",
+      "detail": {
+        "slots": [
+          {
+            "id": 0,
+            "x": 242,
+            "y": 492,
+            "w": 76,
+            "h": 76
+          },
+          {
+            "id": 1,
+            "x": 322,
+            "y": 492,
+            "w": 76,
+            "h": 76
+          },
+          {
+            "id": 2,
+            "x": 402,
+            "y": 492,
+            "w": 76,
+            "h": 76
+          },
+          {
+            "id": 3,
+            "x": 242,
+            "y": 582,
+            "w": 76,
+            "h": 76
+          },
+          {
+            "id": 4,
+            "x": 322,
+            "y": 582,
+            "w": 76,
+            "h": 76
+          },
+          {
+            "id": 5,
+            "x": 402,
+            "y": 582,
+            "w": 76,
+            "h": 76
+          },
+          {
+            "id": 6,
+            "x": 242,
+            "y": 672,
+            "w": 76,
+            "h": 76
+          },
+          {
+            "id": 7,
+            "x": 322,
+            "y": 672,
+            "w": 76,
+            "h": 76
+          },
+          {
+            "id": 8,
+            "x": 402,
+            "y": 672,
+            "w": 76,
+            "h": 76
+          }
+        ],
+        "route": "80,190 640,190 640,440 80,440 80,810 640,810 640,980"
+      }
+    },
+    {
+      "id": "merged-text",
+      "status": "FAIL",
+      "detail": [
+        {
+          "text": "Lv2",
+          "overflow": true
+        },
+        {
+          "text": "1 / 6",
+          "overflow": false
+        },
+        {
+          "text": "10 / 10",
+          "overflow": false
+        },
+        {
+          "text": "0",
+          "overflow": false
+        },
+        {
+          "text": "准备中",
+          "overflow": false
+        },
+        {
+          "text": "敌人入口",
+          "overflow": false
+        },
+        {
+          "text": "守卫基地",
+          "overflow": false
+        },
+        {
+          "text": "合成成功：目标守卫升至Lv2",
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "id": "merged-assets",
+      "status": "PASS",
+      "detail": [
+        {
+          "src": "../../../game_asserts/09_背景场景/战斗场景_竖屏裁剪.png",
+          "ok": true
+        },
+        {
+          "src": "../../../game_asserts/01_角色守卫/火焰守卫.png",
+          "ok": true
+        }
+      ]
+    },
+    {
+      "id": "merged-geometry",
+      "status": "PASS",
+      "detail": {
+        "slots": [
+          {
+            "id": 0,
+            "x": 242,
+            "y": 492,
+            "w": 76,
+            "h": 76
+          },
+          {
+            "id": 1,
+            "x": 322,
+            "y": 492,
+            "w": 76,
+            "h": 76
+          },
+          {
+            "id": 2,
+            "x": 402,
+            "y": 492,
+            "w": 76,
+            "h": 76
+          },
+          {
+            "id": 3,
+            "x": 242,
+            "y": 582,
+            "w": 76,
+            "h": 76
+          },
+          {
+            "id": 4,
+            "x": 322,
+            "y": 582,
+            "w": 76,
+            "h": 76
+          },
+          {
+            "id": 5,
+            "x": 402,
+            "y": 582,
+            "w": 76,
+            "h": 76
+          },
+          {
+            "id": 6,
+            "x": 242,
+            "y": 672,
+            "w": 76,
+            "h": 76
+          },
+          {
+            "id": 7,
+            "x": 322,
+            "y": 672,
+            "w": 76,
+            "h": 76
+          },
+          {
+            "id": 8,
+            "x": 402,
+            "y": 672,
+            "w": 76,
+            "h": 76
+          }
+        ],
+        "route": "80,190 640,190 640,440 80,440 80,810 640,810 640,980"
+      }
+    },
+    {
+      "id": "type-text",
+      "status": "FAIL",
+      "detail": [
+        {
+          "text": "Lv1",
+          "overflow": true
+        },
+        {
+          "text": "Lv1",
+          "overflow": true
+        },
+        {
+          "text": "1 / 6",
+          "overflow": false
+        },
+        {
+          "text": "10 / 10",
+          "overflow": false
+        },
+        {
+          "text": "0",
+          "overflow": false
+        },
+        {
+          "text": "准备中",
+          "overflow": false
+        },
+        {
+          "text": "敌人入口",
+          "overflow": false
+        },
+        {
+          "text": "守卫基地",
+          "overflow": false
+        },
+        {
+          "text": "不同类型不可合成",
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "id": "type-assets",
+      "status": "PASS",
+      "detail": [
+        {
+          "src": "../../../game_asserts/09_背景场景/战斗场景_竖屏裁剪.png",
+          "ok": true
+        },
+        {
+          "src": "../../../game_asserts/01_角色守卫/火焰守卫.png",
+          "ok": true
+        },
+        {
+          "src": "../../../game_asserts/01_角色守卫/冰霜守卫.png",
+          "ok": true
+        }
+      ]
+    },
+    {
+      "id": "type-geometry",
+      "status": "PASS",
+      "detail": {
+        "slots": [
+          {
+            "id": 0,
+            "x": 242,
+            "y": 492,
+            "w": 76,
+            "h": 76
+          },
+          {
+            "id": 1,
+            "x": 322,
+            "y": 492,
+            "w": 76,
+            "h": 76
+          },
+          {
+            "id": 2,
+            "x": 402,
+            "y": 492,
+            "w": 76,
+            "h": 76
+          },
+          {
+            "id": 3,
+            "x": 242,
+            "y": 582,
+            "w": 76,
+            "h": 76
+          },
+          {
+            "id": 4,
+            "x": 322,
+            "y": 582,
+            "w": 76,
+            "h": 76
+          },
+          {
+            "id": 5,
+            "x": 402,
+            "y": 582,
+            "w": 76,
+            "h": 76
+          },
+          {
+            "id": 6,
+            "x": 242,
+            "y": 672,
+            "w": 76,
+            "h": 76
+          },
+          {
+            "id": 7,
+            "x": 322,
+            "y": 672,
+            "w": 76,
+            "h": 76
+          },
+          {
+            "id": 8,
+            "x": 402,
+            "y": 672,
+            "w": 76,
+            "h": 76
+          }
+        ],
+        "route": "80,190 640,190 640,440 80,440 80,810 640,810 640,980"
+      }
+    },
+    {
+      "id": "level-text",
+      "status": "FAIL",
+      "detail": [
+        {
+          "text": "Lv1",
+          "overflow": true
+        },
+        {
+          "text": "Lv2",
+          "overflow": true
+        },
+        {
+          "text": "1 / 6",
+          "overflow": false
+        },
+        {
+          "text": "10 / 10",
+          "overflow": false
+        },
+        {
+          "text": "0",
+          "overflow": false
+        },
+        {
+          "text": "准备中",
+          "overflow": false
+        },
+        {
+          "text": "敌人入口",
+          "overflow": false
+        },
+        {
+          "text": "守卫基地",
+          "overflow": false
+        },
+        {
+          "text": "不同等级不可合成",
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "id": "level-assets",
+      "status": "PASS",
+      "detail": [
+        {
+          "src": "../../../game_asserts/09_背景场景/战斗场景_竖屏裁剪.png",
+          "ok": true
+        },
+        {
+          "src": "../../../game_asserts/01_角色守卫/火焰守卫.png",
+          "ok": true
+        },
+        {
+          "src": "../../../game_asserts/01_角色守卫/火焰守卫.png",
+          "ok": true
+        }
+      ]
+    },
+    {
+      "id": "level-geometry",
+      "status": "PASS",
+      "detail": {
+        "slots": [
+          {
+            "id": 0,
+            "x": 242,
+            "y": 492,
+            "w": 76,
+            "h": 76
+          },
+          {
+            "id": 1,
+            "x": 322,
+            "y": 492,
+            "w": 76,
+            "h": 76
+          },
+          {
+            "id": 2,
+            "x": 402,
+            "y": 492,
+            "w": 76,
+            "h": 76
+          },
+          {
+            "id": 3,
+            "x": 242,
+            "y": 582,
+            "w": 76,
+            "h": 76
+          },
+          {
+            "id": 4,
+            "x": 322,
+            "y": 582,
+            "w": 76,
+            "h": 76
+          },
+          {
+            "id": 5,
+            "x": 402,
+            "y": 582,
+            "w": 76,
+            "h": 76
+          },
+          {
+            "id": 6,
+            "x": 242,
+            "y": 672,
+            "w": 76,
+            "h": 76
+          },
+          {
+            "id": 7,
+            "x": 322,
+            "y": 672,
+            "w": 76,
+            "h": 76
+          },
+          {
+            "id": 8,
+            "x": 402,
+            "y": 672,
+            "w": 76,
+            "h": 76
+          }
+        ],
+        "route": "80,190 640,190 640,440 80,440 80,810 640,810 640,980"
+      }
+    },
+    {
+      "id": "max-text",
+      "status": "FAIL",
+      "detail": [
+        {
+          "text": "Lv3",
+          "overflow": true
+        },
+        {
+          "text": "Lv3",
+          "overflow": true
+        },
+        {
+          "text": "1 / 6",
+          "overflow": false
+        },
+        {
+          "text": "10 / 10",
+          "overflow": false
+        },
+        {
+          "text": "0",
+          "overflow": false
+        },
+        {
+          "text": "准备中",
+          "overflow": false
+        },
+        {
+          "text": "敌人入口",
+          "overflow": false
+        },
+        {
+          "text": "守卫基地",
+          "overflow": false
+        },
+        {
+          "text": "已到满级",
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "id": "max-assets",
+      "status": "PASS",
+      "detail": [
+        {
+          "src": "../../../game_asserts/09_背景场景/战斗场景_竖屏裁剪.png",
+          "ok": true
+        },
+        {
+          "src": "../../../game_asserts/01_角色守卫/火焰守卫.png",
+          "ok": true
+        },
+        {
+          "src": "../../../game_asserts/01_角色守卫/火焰守卫.png",
+          "ok": true
+        }
+      ]
+    },
+    {
+      "id": "max-geometry",
+      "status": "PASS",
+      "detail": {
+        "slots": [
+          {
+            "id": 0,
+            "x": 242,
+            "y": 492,
+            "w": 76,
+            "h": 76
+          },
+          {
+            "id": 1,
+            "x": 322,
+            "y": 492,
+            "w": 76,
+            "h": 76
+          },
+          {
+            "id": 2,
+            "x": 402,
+            "y": 492,
+            "w": 76,
+            "h": 76
+          },
+          {
+            "id": 3,
+            "x": 242,
+            "y": 582,
+            "w": 76,
+            "h": 76
+          },
+          {
+            "id": 4,
+            "x": 322,
+            "y": 582,
+            "w": 76,
+            "h": 76
+          },
+          {
+            "id": 5,
+            "x": 402,
+            "y": 582,
+            "w": 76,
+            "h": 76
+          },
+          {
+            "id": 6,
+            "x": 242,
+            "y": 672,
+            "w": 76,
+            "h": 76
+          },
+          {
+            "id": 7,
+            "x": 322,
+            "y": 672,
+            "w": 76,
+            "h": 76
+          },
+          {
+            "id": 8,
+            "x": 402,
+            "y": 672,
+            "w": 76,
+            "h": 76
+          }
+        ],
+        "route": "80,190 640,190 640,440 80,440 80,810 640,810 640,980"
+      }
+    },
+    {
+      "id": "occupied-text",
+      "status": "FAIL",
+      "detail": [
+        {
+          "text": "Lv1",
+          "overflow": true
+        },
+        {
+          "text": "1 / 6",
+          "overflow": false
+        },
+        {
+          "text": "10 / 10",
+          "overflow": false
+        },
+        {
+          "text": "60",
+          "overflow": false
+        },
+        {
+          "text": "准备中",
+          "overflow": false
+        },
+        {
+          "text": "敌人入口",
+          "overflow": false
+        },
+        {
+          "text": "守卫基地",
+          "overflow": false
+        },
+        {
+          "text": "格子已有守卫，请选择空格",
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "id": "occupied-assets",
+      "status": "PASS",
+      "detail": [
+        {
+          "src": "../../../game_asserts/09_背景场景/战斗场景_竖屏裁剪.png",
+          "ok": true
+        },
+        {
+          "src": "../../../game_asserts/01_角色守卫/冰霜守卫.png",
+          "ok": true
+        }
+      ]
+    },
+    {
+      "id": "occupied-geometry",
+      "status": "PASS",
+      "detail": {
+        "slots": [
+          {
+            "id": 0,
+            "x": 242,
+            "y": 492,
+            "w": 76,
+            "h": 76
+          },
+          {
+            "id": 1,
+            "x": 322,
+            "y": 492,
+            "w": 76,
+            "h": 76
+          },
+          {
+            "id": 2,
+            "x": 402,
+            "y": 492,
+            "w": 76,
+            "h": 76
+          },
+          {
+            "id": 3,
+            "x": 242,
+            "y": 582,
+            "w": 76,
+            "h": 76
+          },
+          {
+            "id": 4,
+            "x": 322,
+            "y": 582,
+            "w": 76,
+            "h": 76
+          },
+          {
+            "id": 5,
+            "x": 402,
+            "y": 582,
+            "w": 76,
+            "h": 76
+          },
+          {
+            "id": 6,
+            "x": 242,
+            "y": 672,
+            "w": 76,
+            "h": 76
+          },
+          {
+            "id": 7,
+            "x": 322,
+            "y": 672,
+            "w": 76,
+            "h": 76
+          },
+          {
+            "id": 8,
+            "x": 402,
+            "y": 672,
+            "w": 76,
+            "h": 76
+          }
+        ],
+        "route": "80,190 640,190 640,440 80,440 80,810 640,810 640,980"
+      }
+    },
+    {
+      "id": "full-text",
+      "status": "FAIL",
+      "detail": [
+        {
+          "text": "Lv1",
+          "overflow": true
+        },
+        {
+          "text": "Lv1",
+          "overflow": true
+        },
+        {
+          "text": "Lv1",
+          "overflow": true
+        },
+        {
+          "text": "Lv1",
+          "overflow": true
+        },
+        {
+          "text": "Lv1",
+          "overflow": true
+        },
+        {
+          "text": "Lv1",
+          "overflow": true
+        },
+        {
+          "text": "Lv1",
+          "overflow": true
+        },
+        {
+          "text": "Lv1",
+          "overflow": true
+        },
+        {
+          "text": "Lv1",
+          "overflow": true
+        },
+        {
+          "text": "1 / 6",
+          "overflow": false
+        },
+        {
+          "text": "10 / 10",
+          "overflow": false
+        },
+        {
+          "text": "60",
+          "overflow": false
+        },
+        {
+          "text": "准备中",
+          "overflow": false
+        },
+        {
+          "text": "敌人入口",
+          "overflow": false
+        },
+        {
+          "text": "守卫基地",
+          "overflow": false
+        },
+        {
+          "text": "棋盘已满，合成可腾出空格",
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "id": "full-assets",
+      "status": "PASS",
+      "detail": [
+        {
+          "src": "../../../game_asserts/09_背景场景/战斗场景_竖屏裁剪.png",
+          "ok": true
+        },
+        {
+          "src": "../../../game_asserts/01_角色守卫/火焰守卫.png",
+          "ok": true
+        },
+        {
+          "src": "../../../game_asserts/01_角色守卫/冰霜守卫.png",
+          "ok": true
+        },
+        {
+          "src": "../../../game_asserts/01_角色守卫/雷霆守卫.png",
+          "ok": true
+        },
+        {
+          "src": "../../../game_asserts/01_角色守卫/火焰守卫.png",
+          "ok": true
+        },
+        {
+          "src": "../../../game_asserts/01_角色守卫/冰霜守卫.png",
+          "ok": true
+        },
+        {
+          "src": "../../../game_asserts/01_角色守卫/雷霆守卫.png",
+          "ok": true
+        },
+        {
+          "src": "../../../game_asserts/01_角色守卫/火焰守卫.png",
+          "ok": true
+        },
+        {
+          "src": "../../../game_asserts/01_角色守卫/冰霜守卫.png",
+          "ok": true
+        },
+        {
+          "src": "../../../game_asserts/01_角色守卫/雷霆守卫.png",
+          "ok": true
+        }
+      ]
+    },
+    {
+      "id": "full-geometry",
+      "status": "PASS",
+      "detail": {
+        "slots": [
+          {
+            "id": 0,
+            "x": 242,
+            "y": 492,
+            "w": 76,
+            "h": 76
+          },
+          {
+            "id": 1,
+            "x": 322,
+            "y": 492,
+            "w": 76,
+            "h": 76
+          },
+          {
+            "id": 2,
+            "x": 402,
+            "y": 492,
+            "w": 76,
+            "h": 76
+          },
+          {
+            "id": 3,
+            "x": 242,
+            "y": 582,
+            "w": 76,
+            "h": 76
+          },
+          {
+            "id": 4,
+            "x": 322,
+            "y": 582,
+            "w": 76,
+            "h": 76
+          },
+          {
+            "id": 5,
+            "x": 402,
+            "y": 582,
+            "w": 76,
+            "h": 76
+          },
+          {
+            "id": 6,
+            "x": 242,
+            "y": 672,
+            "w": 76,
+            "h": 76
+          },
+          {
+            "id": 7,
+            "x": 322,
+            "y": 672,
+            "w": 76,
+            "h": 76
+          },
+          {
+            "id": 8,
+            "x": 402,
+            "y": 672,
+            "w": 76,
+            "h": 76
+          }
+        ],
+        "route": "80,190 640,190 640,440 80,440 80,810 640,810 640,980"
+      }
+    },
+    {
+      "id": "inspection-text",
+      "status": "FAIL",
+      "detail": [
+        {
+          "text": "Lv1",
+          "overflow": true
+        },
+        {
+          "text": "Lv1",
+          "overflow": true
+        },
+        {
+          "text": "Lv1",
+          "overflow": true
+        },
+        {
+          "text": "Lv1",
+          "overflow": true
+        },
+        {
+          "text": "Lv1",
+          "overflow": true
+        },
+        {
+          "text": "Lv1",
+          "overflow": true
+        },
+        {
+          "text": "金币 0",
+          "overflow": false
+        },
+        {
+          "text": "金币 19",
+          "overflow": false
+        },
+        {
+          "text": "金币 60",
+          "overflow": false
+        },
+        {
+          "text": "金币 799",
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "id": "inspection-assets",
+      "status": "PASS",
+      "detail": [
+        {
+          "src": "../../../game_asserts/01_角色守卫/火焰守卫.png",
+          "ok": true
+        },
+        {
+          "src": "../../../game_asserts/01_角色守卫/火焰守卫.png",
+          "ok": true
+        },
+        {
+          "src": "../../../game_asserts/01_角色守卫/冰霜守卫.png",
+          "ok": true
+        },
+        {
+          "src": "../../../game_asserts/01_角色守卫/冰霜守卫.png",
+          "ok": true
+        },
+        {
+          "src": "../../../game_asserts/01_角色守卫/雷霆守卫.png",
+          "ok": true
+        },
+        {
+          "src": "../../../game_asserts/01_角色守卫/雷霆守卫.png",
+          "ok": true
+        }
+      ]
+    }
+  ]
+}

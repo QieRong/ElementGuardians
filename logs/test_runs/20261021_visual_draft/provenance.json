@@ -1,0 +1,404 @@
+{
+  "checks": {
+    "preexisting_files_unchanged": true,
+    "changed_preexisting_files": [],
+    "map_snapshot_matches": true,
+    "asset_sources_match": true
+  },
+  "source_assets": [
+    {
+      "id": "001",
+      "path": "game_asserts\\01_角色守卫\\火焰守卫.png",
+      "source_sha256": "c65db68b6e12e3c490a15ee3845294786e354cf553c1cb50ff691242633231fd",
+      "manifest_match": true,
+      "display": "60x48 center display window; source 640x640 scaled104x104; offset(-22,-13), ice y=-15/lightning y=-12"
+    },
+    {
+      "id": "002",
+      "path": "game_asserts\\01_角色守卫\\冰霜守卫.png",
+      "source_sha256": "e929541cb62ead838033c4a71b02ec7b015ea306ece8eca2c1693b8f870c3291",
+      "manifest_match": true,
+      "display": "60x48 center display window; source 640x640 scaled104x104; offset(-22,-13), ice y=-15/lightning y=-12"
+    },
+    {
+      "id": "003",
+      "path": "game_asserts\\01_角色守卫\\雷霆守卫.png",
+      "source_sha256": "7ce58297ffbac01e051b265784622caac1f1e567b864d2c8ba938a647216a384",
+      "manifest_match": true,
+      "display": "60x48 center display window; source 640x640 scaled104x104; offset(-22,-13), ice y=-15/lightning y=-12"
+    },
+    {
+      "id": "005",
+      "path": "game_asserts\\02_敌人怪物\\窥视蛛机.png",
+      "source_sha256": "b40a48aa3564b1a58a5fb0ddc6335bda3bb19598ec997eb83c22f19d9ec220e3",
+      "manifest_match": true,
+      "display": "60x60 contain"
+    },
+    {
+      "id": "056",
+      "path": "game_asserts\\09_背景场景\\战斗场景_竖屏裁剪.png",
+      "source_sha256": "f43f4dd2e35afbd78ad489baad010b39024a9fb2688d29fd303d6b8a9c36ef68",
+      "manifest_match": true,
+      "display": "background cover"
+    },
+    {
+      "id": "058",
+      "path": "game_asserts\\09_背景场景\\主菜单_竖屏裁剪.png",
+      "source_sha256": "ecace35677b734cbcb4c24db22d033ee82f9b0f9c8b3253d580c57ca979ca944",
+      "manifest_match": true,
+      "display": "background cover"
+    }
+  ],
+  "map_source": "godot/data/map_default.json",
+  "map_sha256": "fd13fa7603929c2f456f82fb780e2807d08bd238157484525a3a8a6844822fcd",
+  "output_files": [
+    {
+      "path": "output\\visuals\\battle-v01.png",
+      "sha256": "8bd06e06c7ddd2eb38ac76d9fced51297cdb6a4b9c467b62d1ec23578bd83c4a",
+      "bytes": 440838
+    },
+    {
+      "path": "output\\visuals\\menu-v01.png",
+      "sha256": "93bc5cf3193bd6142dd7f7b92ccdddbc8d8bdf624cc9842ae7f07dc0bb0d1980",
+      "bytes": 1073557
+    },
+    {
+      "path": "output\\visuals\\README.md",
+      "sha256": "02e9aeb263fd2e14b01f84abc8c0453095cc47c1c23f629d56bc4db472a3e56d",
+      "bytes": 2646
+    },
+    {
+      "path": "output\\visuals\\previews\\combat-075.png",
+      "sha256": "cc22748008cb1aac8ec578653c7e22467b8d39b0987733aefd7068cef9b8b31e",
+      "bytes": 291752
+    },
+    {
+      "path": "output\\visuals\\previews\\full-075.png",
+      "sha256": "b92494ab8e84284a6946ffa3cefc656e33a4d9d67d61520c10900ba384426349",
+      "bytes": 310420
+    },
+    {
+      "path": "output\\visuals\\previews\\initial-075.png",
+      "sha256": "1e45df8d9071487c67db4a1d69cf735aeb504e41721d28d0761e0511856b2c74",
+      "bytes": 270345
+    },
+    {
+      "path": "output\\visuals\\previews\\language-320x568.png",
+      "sha256": "b69b047b6581ebb6597b018bb37945a428ec504ca37a6b3d48ee12a059170c8f",
+      "bytes": 60502
+    },
+    {
+      "path": "output\\visuals\\previews\\language-360x640.png",
+      "sha256": "b746cfd98a90ff862dc05862084f79d008e992ff93ab0c63a1d4593bfe996d82",
+      "bytes": 89062
+    },
+    {
+      "path": "output\\visuals\\previews\\language-390x844.png",
+      "sha256": "9eae64e4bf7a41f66960ed6868d4a079f3c8451830dbd93d9f50b793cbd81eb5",
+      "bytes": 156333
+    },
+    {
+      "path": "output\\visuals\\previews\\language-412x915.png",
+      "sha256": "e792994dcf8c41008dcede328938e4b69d75487e080a94f299d38f712209fcb7",
+      "bytes": 201919
+    },
+    {
+      "path": "output\\visuals\\previews\\language-430x932.png",
+      "sha256": "05c8fe2fd28a3621b1619cccf0be9272934d4c0813a9d1e4f2896ebe89f20b50",
+      "bytes": 208834
+    },
+    {
+      "path": "output\\visuals\\previews\\level-075.png",
+      "sha256": "069989d7753efe20c4a0ce633d4af4c0ce6d4b00ad053e267fe105630852affa",
+      "bytes": 280493
+    },
+    {
+      "path": "output\\visuals\\previews\\max-075.png",
+      "sha256": "fc2ebc720b80bfd44dcab1c326ffce6fe3bce403f9f09acf150ee0512f6e7136",
+      "bytes": 279953
+    },
+    {
+      "path": "output\\visuals\\previews\\menu-075.png",
+      "sha256": "b7fae4340939a02504369ce0f7a6250fdb27cbf701ba70f03ecf4af409d165a6",
+      "bytes": 676397
+    },
+    {
+      "path": "output\\visuals\\previews\\merge-075.png",
+      "sha256": "c1f71ffcb9ed9fe0139ad7eedd5f2cdc836c3150b6ca02fcdefedf060ed69d6b",
+      "bytes": 281978
+    },
+    {
+      "path": "output\\visuals\\previews\\merged-075.png",
+      "sha256": "df3dea05136d9f3f06dc7a68b6c4f3fc5c6fe0d5ba15497e515e1a9986d15b22",
+      "bytes": 276271
+    },
+    {
+      "path": "output\\visuals\\previews\\mobile-battle-320x568.png",
+      "sha256": "3ac843c8f798236dc18b2c82696bef68033f79eab013222d2045e94749463248",
+      "bytes": 86253
+    },
+    {
+      "path": "output\\visuals\\previews\\mobile-battle-360x640.png",
+      "sha256": "8cbb5ce49bb5112370bafee4ea52e8e7f12b013cbefeb3b95393ca0fd8a83c88",
+      "bytes": 113672
+    },
+    {
+      "path": "output\\visuals\\previews\\mobile-battle-390x844.png",
+      "sha256": "891d33f9e929391ae3d0c8e4ebc095153418318b85f2dcf6855fa0e941c2ddef",
+      "bytes": 173732
+    },
+    {
+      "path": "output\\visuals\\previews\\mobile-battle-412x915.png",
+      "sha256": "7d3ba7f92bf6a34c3945bfc8c1a9b27d26b3ac5f05f875edd029a63d78baa779",
+      "bytes": 189072
+    },
+    {
+      "path": "output\\visuals\\previews\\mobile-battle-430x932.png",
+      "sha256": "cf0716149fdf2d3b8a5902f5530d4647b1c33ac7982d51e0a09923061609e52a",
+      "bytes": 200092
+    },
+    {
+      "path": "output\\visuals\\previews\\mobile-battle-en.png",
+      "sha256": "ba2f587d0ed0c6b8efc6e4ca83fb5c6c52ae61b7d92ba88cf9508548b08fb3c0",
+      "bytes": 173456
+    },
+    {
+      "path": "output\\visuals\\previews\\mobile-battle-ja.png",
+      "sha256": "7a06e0115a3ffd432cc0f3cc1fc561cb286c81014d1c92ccddac29b8ed3bf7a6",
+      "bytes": 175374
+    },
+    {
+      "path": "output\\visuals\\previews\\mobile-battle-ko.png",
+      "sha256": "b2a14240b855fb3990471b859afca641c306fdba898e7da89b2ab6764aa112cc",
+      "bytes": 171283
+    },
+    {
+      "path": "output\\visuals\\previews\\mobile-battle-ru.png",
+      "sha256": "29d28b8995cb27feab1d0e01c55bdc14e750a98bfe0b932418c9e778b9a53596",
+      "bytes": 174146
+    },
+    {
+      "path": "output\\visuals\\previews\\mobile-battle-zh-Hans.png",
+      "sha256": "891d33f9e929391ae3d0c8e4ebc095153418318b85f2dcf6855fa0e941c2ddef",
+      "bytes": 173732
+    },
+    {
+      "path": "output\\visuals\\previews\\mobile-battle-zh-Hant.png",
+      "sha256": "74f19bb8e7e56cd019cdb3e571e362659b4962af3946bb19e56ee5f76268e797",
+      "bytes": 174650
+    },
+    {
+      "path": "output\\visuals\\previews\\mobile-menu-320x568.png",
+      "sha256": "5d2926a84c4ad93bb3c5c65a9b99e12e2fc6870b35250eb8c2165340c57d6b28",
+      "bytes": 249178
+    },
+    {
+      "path": "output\\visuals\\previews\\mobile-menu-360x640.png",
+      "sha256": "7f808fb2bfa3bd8d61851d60fbec48b45e5ab19888d78faaf7044fc9fcbf38c3",
+      "bytes": 316302
+    },
+    {
+      "path": "output\\visuals\\previews\\mobile-menu-390x844.png",
+      "sha256": "78fed48999a92a459791c73a287fe4ee670ea6d8f619671904fb029f185cc554",
+      "bytes": 434005
+    },
+    {
+      "path": "output\\visuals\\previews\\mobile-menu-412x915.png",
+      "sha256": "9103bf3c1e08f97a5ec5d584dea3186ea0f9124ec54ce512153acd57040eed26",
+      "bytes": 493640
+    },
+    {
+      "path": "output\\visuals\\previews\\mobile-menu-430x932.png",
+      "sha256": "f1ac013995fbf5270040f83ac7410c53eaf5d9dc198e41eb2903662927e8ddfe",
+      "bytes": 518217
+    },
+    {
+      "path": "output\\visuals\\previews\\mobile-menu-en.png",
+      "sha256": "fba9522a1725f9ee5a5e0b1836bd3864a448429c60acbd649e86a58c4f37b31e",
+      "bytes": 437155
+    },
+    {
+      "path": "output\\visuals\\previews\\mobile-menu-ja.png",
+      "sha256": "1600e7419dd48921097a4e5876e835fd12a63491a5cd605a94cb899ffc103e52",
+      "bytes": 416309
+    },
+    {
+      "path": "output\\visuals\\previews\\mobile-menu-ko.png",
+      "sha256": "b10eea48eb409fed87f25bb4ce711f60c2b783d872809920641fd7b086dd3340",
+      "bytes": 432834
+    },
+    {
+      "path": "output\\visuals\\previews\\mobile-menu-ru.png",
+      "sha256": "c094c39a8d1f371b4dfa5b436bf44ca80a3f3d96b2369ada1836589a3cad76fa",
+      "bytes": 435937
+    },
+    {
+      "path": "output\\visuals\\previews\\mobile-menu-zh-Hans.png",
+      "sha256": "78fed48999a92a459791c73a287fe4ee670ea6d8f619671904fb029f185cc554",
+      "bytes": 434005
+    },
+    {
+      "path": "output\\visuals\\previews\\mobile-menu-zh-Hant.png",
+      "sha256": "bd88df6925e6872c70dd6f009fe75c0c487341f04ff0a7d62fb0a87b656a187f",
+      "bytes": 435629
+    },
+    {
+      "path": "output\\visuals\\previews\\occupied-075.png",
+      "sha256": "928f9fb8d8dc3969af75818f09a8073e667ef6498317f4d02a731eabe6ad4641",
+      "bytes": 276364
+    },
+    {
+      "path": "output\\visuals\\previews\\poor-075.png",
+      "sha256": "d5092304845f0be9d27911eb86022e8e5931c64546d0dfdaaf3d75b6b5882cb8",
+      "bytes": 271072
+    },
+    {
+      "path": "output\\visuals\\previews\\selected-075.png",
+      "sha256": "132a2698aa34d8b885f79765025fac409483e1cdf22dcf64e00d421994081d1e",
+      "bytes": 272596
+    },
+    {
+      "path": "output\\visuals\\previews\\type-075.png",
+      "sha256": "cb0a28505e1fc247b6b219a56b21c135a0f5b399bcd5bacad9ed10797111180c",
+      "bytes": 280277
+    },
+    {
+      "path": "output\\visuals\\sources\\layout.js",
+      "sha256": "f199aaa75fd799aa0e5a6097b606e90cc80bdac4ce73f33b004435345ca0314e",
+      "bytes": 8961
+    },
+    {
+      "path": "output\\visuals\\sources\\map.snapshot.json",
+      "sha256": "fd13fa7603929c2f456f82fb780e2807d08bd238157484525a3a8a6844822fcd",
+      "bytes": 2532
+    },
+    {
+      "path": "output\\visuals\\sources\\mobile.css",
+      "sha256": "2956178d97931f703001d5a4e90aee82582a76df8f4b6651988f7bdd7f68282c",
+      "bytes": 6051
+    },
+    {
+      "path": "output\\visuals\\sources\\mobile.html",
+      "sha256": "29d7ce5685882e6023526e61fc2f8b7879339aae73e33cf61ce3a7a7423050ac",
+      "bytes": 1553
+    },
+    {
+      "path": "output\\visuals\\sources\\mobile.js",
+      "sha256": "9313793e4bcf3c0f0f32fefa498ea770fc322f0750129c9d0dbb9744ac5711f7",
+      "bytes": 4897
+    },
+    {
+      "path": "output\\visuals\\sources\\render.cjs",
+      "sha256": "23baba677211a56be84b9d7642bd4aa9e4fd6c7382f975191724cbba2eb6441d",
+      "bytes": 11197
+    },
+    {
+      "path": "output\\visuals\\sources\\ui.css",
+      "sha256": "557a9f455d2e674d730738fd5a983319cff1a15237d33c5202cf12a7de2203c5",
+      "bytes": 8657
+    },
+    {
+      "path": "output\\visuals\\sources\\ui.html",
+      "sha256": "95b23898c94d1a35380fd9745adc53c21cbd77fb1b910ed4a2733deaace973d4",
+      "bytes": 331
+    },
+    {
+      "path": "output\\visuals\\states\\full.png",
+      "sha256": "acb547512e4adc33d385799fed9674e8dfac0ac29507cc1522d779c246062cc6",
+      "bytes": 479666
+    },
+    {
+      "path": "output\\visuals\\states\\initial.png",
+      "sha256": "1bc6126d21f8ebf4ae288fc13c85bc478d495ed44be42fd4aabe2ff452a6af7a",
+      "bytes": 407881
+    },
+    {
+      "path": "output\\visuals\\states\\inspection-grayscale.png",
+      "sha256": "0279a3cc44de74f28dc4216987c23a7a9aa0bbea05aba9bde53d6bc3cbcd9d1f",
+      "bytes": 121759
+    },
+    {
+      "path": "output\\visuals\\states\\inspection.png",
+      "sha256": "e6d62c27b4a5111fae046bbe389746abc4abc26d35286a7f216041f4b33acc34",
+      "bytes": 141117
+    },
+    {
+      "path": "output\\visuals\\states\\level.png",
+      "sha256": "1c1cc90ad47d152212a51a314afb7b0e20064e80883754f95b8dd6e29ef0bc42",
+      "bytes": 424790
+    },
+    {
+      "path": "output\\visuals\\states\\max.png",
+      "sha256": "ed8df6b8f1c07b50d1a3ab05d141318fa68e13b865a02c2cfce8d1825f554937",
+      "bytes": 423883
+    },
+    {
+      "path": "output\\visuals\\states\\merge.png",
+      "sha256": "43386c844f75d7f0f324b52d4cd31e67539a8729dbc018a39dae7dc8441d8280",
+      "bytes": 428181
+    },
+    {
+      "path": "output\\visuals\\states\\merged.png",
+      "sha256": "e0bb1dfdbb45363f89bb909f3b9e33040e3241eea80810f95091a2450ca72167",
+      "bytes": 418950
+    },
+    {
+      "path": "output\\visuals\\states\\occupied.png",
+      "sha256": "c511ebcb0f655f59ae0b3956d7bf7bd9cb82002ad0957c3aaf741781d9d96310",
+      "bytes": 418351
+    },
+    {
+      "path": "output\\visuals\\states\\poor.png",
+      "sha256": "dd0d7c281ec4f31d9701c34eb690a52bcee62dd301aa2b3ac71971bb4ccf022f",
+      "bytes": 409641
+    },
+    {
+      "path": "output\\visuals\\states\\selected.png",
+      "sha256": "f2f8eb940d0301644277ebcd9ba7c328c9f6831f914309e330672b14ebbc992e",
+      "bytes": 410752
+    },
+    {
+      "path": "output\\visuals\\states\\type.png",
+      "sha256": "4aaec40f11ca708effef78b30244ad36c573333b280a156a0b0ced3f7ca09d2c",
+      "bytes": 426350
+    },
+    {
+      "path": "output\\visuals\\sources\\fonts\\FONT-NOTICE.md",
+      "sha256": "3c2a1058d18b9e5302956cfd540d484c599b8000ef9b0de0201e4a8538c62884",
+      "bytes": 912
+    },
+    {
+      "path": "output\\visuals\\sources\\fonts\\NotoSansKR-preview.css",
+      "sha256": "da70deaa01504be971703406bf6ee063e4aa88472ebc8cf7694c873a2a6476ac",
+      "bytes": 1591
+    },
+    {
+      "path": "output\\visuals\\sources\\fonts\\NotoSansKR-preview.ttf",
+      "sha256": "fc0d9caa111511340f3c93c9dc4ab44e3778f8ef3258d6a0b86e2ce62dc519da",
+      "bytes": 84320
+    },
+    {
+      "path": "output\\visuals\\sources\\fonts\\NotoSansSC-preview.css",
+      "sha256": "b60d43142d0fbf5060f5c78f9c786ef9379421e7bb3e22a9c1667839140504f0",
+      "bytes": 1591
+    },
+    {
+      "path": "output\\visuals\\sources\\fonts\\NotoSansSC-preview.ttf",
+      "sha256": "3e8836a3a1df081050a5f85a37ddc1c94e58399e2fb4f07440e21d45c508fce5",
+      "bytes": 90176
+    },
+    {
+      "path": "output\\visuals\\sources\\fonts\\OFL.txt",
+      "sha256": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2",
+      "bytes": 4301
+    },
+    {
+      "path": "output\\visuals\\sources\\fonts\\SOURCE.json",
+      "sha256": "478d22b64ebad4afdda0d42eb334d7e784282db72f2e250916aee54af5fb77cf",
+      "bytes": 9755
+    }
+  ],
+  "image_generation_calls": 0,
+  "prompt": null,
+  "font_scope": "official Google Fonts preview subsets; see fonts/SOURCE.json and font-audit.json"
+}

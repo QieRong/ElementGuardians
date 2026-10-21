@@ -1,0 +1,4640 @@
+{
+  "counts": {
+    "PASS": 97,
+    "FAIL": 18
+  },
+  "checks": [
+    {
+      "id": "menu-text",
+      "status": "PASS",
+      "detail": [
+        {
+          "text": "元素守卫",
+          "overflow": false
+        },
+        {
+          "text": "ELEMENT GUARDIANS",
+          "overflow": false
+        },
+        {
+          "text": "开始游戏",
+          "overflow": false
+        },
+        {
+          "text": "退出游戏",
+          "overflow": false
+        },
+        {
+          "text": "单机原型 · AI 协作制作",
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "id": "menu-assets",
+      "status": "PASS",
+      "detail": [
+        {
+          "src": "../../../game_asserts/09_背景场景/主菜单_竖屏裁剪.png",
+          "ok": true
+        }
+      ]
+    },
+    {
+      "id": "combat-text",
+      "status": "PASS",
+      "detail": [
+        {
+          "text": "Lv1",
+          "overflow": false
+        },
+        {
+          "text": "Lv1",
+          "overflow": false
+        },
+        {
+          "text": "Lv1",
+          "overflow": false
+        },
+        {
+          "text": "1 / 6",
+          "overflow": false
+        },
+        {
+          "text": "10 / 10",
+          "overflow": false
+        },
+        {
+          "text": "0",
+          "overflow": false
+        },
+        {
+          "text": "战斗中",
+          "overflow": false
+        },
+        {
+          "text": "敌人入口",
+          "overflow": false
+        },
+        {
+          "text": "守卫基地",
+          "overflow": false
+        },
+        {
+          "text": "召唤 -20",
+          "overflow": false
+        },
+        {
+          "text": "取消选择",
+          "overflow": false
+        },
+        {
+          "text": "本波进行中",
+          "overflow": false
+        },
+        {
+          "text": "战斗中不可召唤或合成",
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "id": "combat-assets",
+      "status": "PASS",
+      "detail": [
+        {
+          "src": "../../../game_asserts/09_背景场景/战斗场景_竖屏裁剪.png",
+          "ok": true
+        },
+        {
+          "src": "../../../game_asserts/01_角色守卫/雷霆守卫.png",
+          "ok": true
+        },
+        {
+          "src": "../../../game_asserts/01_角色守卫/冰霜守卫.png",
+          "ok": true
+        },
+        {
+          "src": "../../../game_asserts/01_角色守卫/火焰守卫.png",
+          "ok": true
+        },
+        {
+          "src": "../../../game_asserts/02_敌人怪物/窥视蛛机.png",
+          "ok": true
+        },
+        {
+          "src": "../../../game_asserts/02_敌人怪物/窥视蛛机.png",
+          "ok": true
+        },
+        {
+          "src": "../../../game_asserts/02_敌人怪物/窥视蛛机.png",
+          "ok": true
+        }
+      ]
+    },
+    {
+      "id": "combat-geometry",
+      "status": "PASS",
+      "detail": {
+        "slots": [
+          {
+            "id": 0,
+            "x": 242,
+            "y": 492,
+            "w": 76,
+            "h": 76
+          },
+          {
+            "id": 1,
+            "x": 322,
+            "y": 492,
+            "w": 76,
+            "h": 76
+          },
+          {
+            "id": 2,
+            "x": 402,
+            "y": 492,
+            "w": 76,
+            "h": 76
+          },
+          {
+            "id": 3,
+            "x": 242,
+            "y": 582,
+            "w": 76,
+            "h": 76
+          },
+          {
+            "id": 4,
+            "x": 322,
+            "y": 582,
+            "w": 76,
+            "h": 76
+          },
+          {
+            "id": 5,
+            "x": 402,
+            "y": 582,
+            "w": 76,
+            "h": 76
+          },
+          {
+            "id": 6,
+            "x": 242,
+            "y": 672,
+            "w": 76,
+            "h": 76
+          },
+          {
+            "id": 7,
+            "x": 322,
+            "y": 672,
+            "w": 76,
+            "h": 76
+          },
+          {
+            "id": 8,
+            "x": 402,
+            "y": 672,
+            "w": 76,
+            "h": 76
+          }
+        ],
+        "route": "80,190 640,190 640,440 80,440 80,810 640,810 640,980"
+      }
+    },
+    {
+      "id": "combat-contract",
+      "status": "PASS",
+      "detail": {
+        "gold": 0,
+        "phase": "战斗中",
+        "occupants": {
+          "3": [
+            "lightning",
+            1
+          ],
+          "4": [
+            "ice",
+            1
+          ],
+          "5": [
+            "fire",
+            1
+          ]
+        },
+        "feedback": "战斗中不可召唤或合成",
+        "locked": true
+      }
+    },
+    {
+      "id": "initial-text",
+      "status": "PASS",
+      "detail": [
+        {
+          "text": "1 / 6",
+          "overflow": false
+        },
+        {
+          "text": "10 / 10",
+          "overflow": false
+        },
+        {
+          "text": "60",
+          "overflow": false
+        },
+        {
+          "text": "准备中",
+          "overflow": false
+        },
+        {
+          "text": "敌人入口",
+          "overflow": false
+        },
+        {
+          "text": "守卫基地",
+          "overflow": false
+        },
+        {
+          "text": "召唤 -20",
+          "overflow": false
+        },
+        {
+          "text": "取消选择",
+          "overflow": false
+        },
+        {
+          "text": "开始第 1 波",
+          "overflow": false
+        },
+        {
+          "text": "请先选择空格",
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "id": "initial-assets",
+      "status": "PASS",
+      "detail": [
+        {
+          "src": "../../../game_asserts/09_背景场景/战斗场景_竖屏裁剪.png",
+          "ok": true
+        }
+      ]
+    },
+    {
+      "id": "initial-geometry",
+      "status": "PASS",
+      "detail": {
+        "slots": [
+          {
+            "id": 0,
+            "x": 242,
+            "y": 492,
+            "w": 76,
+            "h": 76
+          },
+          {
+            "id": 1,
+            "x": 322,
+            "y": 492,
+            "w": 76,
+            "h": 76
+          },
+          {
+            "id": 2,
+            "x": 402,
+            "y": 492,
+            "w": 76,
+            "h": 76
+          },
+          {
+            "id": 3,
+            "x": 242,
+            "y": 582,
+            "w": 76,
+            "h": 76
+          },
+          {
+            "id": 4,
+            "x": 322,
+            "y": 582,
+            "w": 76,
+            "h": 76
+          },
+          {
+            "id": 5,
+            "x": 402,
+            "y": 582,
+            "w": 76,
+            "h": 76
+          },
+          {
+            "id": 6,
+            "x": 242,
+            "y": 672,
+            "w": 76,
+            "h": 76
+          },
+          {
+            "id": 7,
+            "x": 322,
+            "y": 672,
+            "w": 76,
+            "h": 76
+          },
+          {
+            "id": 8,
+            "x": 402,
+            "y": 672,
+            "w": 76,
+            "h": 76
+          }
+        ],
+        "route": "80,190 640,190 640,440 80,440 80,810 640,810 640,980"
+      }
+    },
+    {
+      "id": "initial-contract",
+      "status": "PASS",
+      "detail": {
+        "gold": 60,
+        "feedback": "请先选择空格",
+        "occupants": {}
+      }
+    },
+    {
+      "id": "selected-text",
+      "status": "PASS",
+      "detail": [
+        {
+          "text": "1 / 6",
+          "overflow": false
+        },
+        {
+          "text": "10 / 10",
+          "overflow": false
+        },
+        {
+          "text": "60",
+          "overflow": false
+        },
+        {
+          "text": "准备中",
+          "overflow": false
+        },
+        {
+          "text": "敌人入口",
+          "overflow": false
+        },
+        {
+          "text": "守卫基地",
+          "overflow": false
+        },
+        {
+          "text": "召唤 -20",
+          "overflow": false
+        },
+        {
+          "text": "取消选择",
+          "overflow": false
+        },
+        {
+          "text": "开始第 1 波",
+          "overflow": false
+        },
+        {
+          "text": "已选择4号格 · 召唤花费20金币",
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "id": "selected-assets",
+      "status": "PASS",
+      "detail": [
+        {
+          "src": "../../../game_asserts/09_背景场景/战斗场景_竖屏裁剪.png",
+          "ok": true
+        }
+      ]
+    },
+    {
+      "id": "selected-geometry",
+      "status": "PASS",
+      "detail": {
+        "slots": [
+          {
+            "id": 0,
+            "x": 242,
+            "y": 492,
+            "w": 76,
+            "h": 76
+          },
+          {
+            "id": 1,
+            "x": 322,
+            "y": 492,
+            "w": 76,
+            "h": 76
+          },
+          {
+            "id": 2,
+            "x": 402,
+            "y": 492,
+            "w": 76,
+            "h": 76
+          },
+          {
+            "id": 3,
+            "x": 242,
+            "y": 582,
+            "w": 76,
+            "h": 76
+          },
+          {
+            "id": 4,
+            "x": 322,
+            "y": 582,
+            "w": 76,
+            "h": 76
+          },
+          {
+            "id": 5,
+            "x": 402,
+            "y": 582,
+            "w": 76,
+            "h": 76
+          },
+          {
+            "id": 6,
+            "x": 242,
+            "y": 672,
+            "w": 76,
+            "h": 76
+          },
+          {
+            "id": 7,
+            "x": 322,
+            "y": 672,
+            "w": 76,
+            "h": 76
+          },
+          {
+            "id": 8,
+            "x": 402,
+            "y": 672,
+            "w": 76,
+            "h": 76
+          }
+        ],
+        "route": "80,190 640,190 640,440 80,440 80,810 640,810 640,980"
+      }
+    },
+    {
+      "id": "poor-text",
+      "status": "PASS",
+      "detail": [
+        {
+          "text": "1 / 6",
+          "overflow": false
+        },
+        {
+          "text": "10 / 10",
+          "overflow": false
+        },
+        {
+          "text": "19",
+          "overflow": false
+        },
+        {
+          "text": "准备中",
+          "overflow": false
+        },
+        {
+          "text": "敌人入口",
+          "overflow": false
+        },
+        {
+          "text": "守卫基地",
+          "overflow": false
+        },
+        {
+          "text": "召唤 -20",
+          "overflow": false
+        },
+        {
+          "text": "取消选择",
+          "overflow": false
+        },
+        {
+          "text": "开始第 1 波",
+          "overflow": false
+        },
+        {
+          "text": "金币不足，召唤需要20金币",
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "id": "poor-assets",
+      "status": "PASS",
+      "detail": [
+        {
+          "src": "../../../game_asserts/09_背景场景/战斗场景_竖屏裁剪.png",
+          "ok": true
+        }
+      ]
+    },
+    {
+      "id": "poor-geometry",
+      "status": "PASS",
+      "detail": {
+        "slots": [
+          {
+            "id": 0,
+            "x": 242,
+            "y": 492,
+            "w": 76,
+            "h": 76
+          },
+          {
+            "id": 1,
+            "x": 322,
+            "y": 492,
+            "w": 76,
+            "h": 76
+          },
+          {
+            "id": 2,
+            "x": 402,
+            "y": 492,
+            "w": 76,
+            "h": 76
+          },
+          {
+            "id": 3,
+            "x": 242,
+            "y": 582,
+            "w": 76,
+            "h": 76
+          },
+          {
+            "id": 4,
+            "x": 322,
+            "y": 582,
+            "w": 76,
+            "h": 76
+          },
+          {
+            "id": 5,
+            "x": 402,
+            "y": 582,
+            "w": 76,
+            "h": 76
+          },
+          {
+            "id": 6,
+            "x": 242,
+            "y": 672,
+            "w": 76,
+            "h": 76
+          },
+          {
+            "id": 7,
+            "x": 322,
+            "y": 672,
+            "w": 76,
+            "h": 76
+          },
+          {
+            "id": 8,
+            "x": 402,
+            "y": 672,
+            "w": 76,
+            "h": 76
+          }
+        ],
+        "route": "80,190 640,190 640,440 80,440 80,810 640,810 640,980"
+      }
+    },
+    {
+      "id": "merge-text",
+      "status": "PASS",
+      "detail": [
+        {
+          "text": "Lv1",
+          "overflow": false
+        },
+        {
+          "text": "Lv1",
+          "overflow": false
+        },
+        {
+          "text": "1 / 6",
+          "overflow": false
+        },
+        {
+          "text": "10 / 10",
+          "overflow": false
+        },
+        {
+          "text": "0",
+          "overflow": false
+        },
+        {
+          "text": "准备中",
+          "overflow": false
+        },
+        {
+          "text": "敌人入口",
+          "overflow": false
+        },
+        {
+          "text": "守卫基地",
+          "overflow": false
+        },
+        {
+          "text": "召唤 -20",
+          "overflow": false
+        },
+        {
+          "text": "取消选择",
+          "overflow": false
+        },
+        {
+          "text": "开始第 1 波",
+          "overflow": false
+        },
+        {
+          "text": "已选源格1，点击同类同级目标完成合成",
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "id": "merge-assets",
+      "status": "PASS",
+      "detail": [
+        {
+          "src": "../../../game_asserts/09_背景场景/战斗场景_竖屏裁剪.png",
+          "ok": true
+        },
+        {
+          "src": "../../../game_asserts/01_角色守卫/火焰守卫.png",
+          "ok": true
+        },
+        {
+          "src": "../../../game_asserts/01_角色守卫/火焰守卫.png",
+          "ok": true
+        }
+      ]
+    },
+    {
+      "id": "merge-geometry",
+      "status": "PASS",
+      "detail": {
+        "slots": [
+          {
+            "id": 0,
+            "x": 242,
+            "y": 492,
+            "w": 76,
+            "h": 76
+          },
+          {
+            "id": 1,
+            "x": 322,
+            "y": 492,
+            "w": 76,
+            "h": 76
+          },
+          {
+            "id": 2,
+            "x": 402,
+            "y": 492,
+            "w": 76,
+            "h": 76
+          },
+          {
+            "id": 3,
+            "x": 242,
+            "y": 582,
+            "w": 76,
+            "h": 76
+          },
+          {
+            "id": 4,
+            "x": 322,
+            "y": 582,
+            "w": 76,
+            "h": 76
+          },
+          {
+            "id": 5,
+            "x": 402,
+            "y": 582,
+            "w": 76,
+            "h": 76
+          },
+          {
+            "id": 6,
+            "x": 242,
+            "y": 672,
+            "w": 76,
+            "h": 76
+          },
+          {
+            "id": 7,
+            "x": 322,
+            "y": 672,
+            "w": 76,
+            "h": 76
+          },
+          {
+            "id": 8,
+            "x": 402,
+            "y": 672,
+            "w": 76,
+            "h": 76
+          }
+        ],
+        "route": "80,190 640,190 640,440 80,440 80,810 640,810 640,980"
+      }
+    },
+    {
+      "id": "merged-text",
+      "status": "PASS",
+      "detail": [
+        {
+          "text": "Lv2",
+          "overflow": false
+        },
+        {
+          "text": "1 / 6",
+          "overflow": false
+        },
+        {
+          "text": "10 / 10",
+          "overflow": false
+        },
+        {
+          "text": "0",
+          "overflow": false
+        },
+        {
+          "text": "准备中",
+          "overflow": false
+        },
+        {
+          "text": "敌人入口",
+          "overflow": false
+        },
+        {
+          "text": "守卫基地",
+          "overflow": false
+        },
+        {
+          "text": "召唤 -20",
+          "overflow": false
+        },
+        {
+          "text": "取消选择",
+          "overflow": false
+        },
+        {
+          "text": "开始第 1 波",
+          "overflow": false
+        },
+        {
+          "text": "合成成功：目标守卫升至Lv2",
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "id": "merged-assets",
+      "status": "PASS",
+      "detail": [
+        {
+          "src": "../../../game_asserts/09_背景场景/战斗场景_竖屏裁剪.png",
+          "ok": true
+        },
+        {
+          "src": "../../../game_asserts/01_角色守卫/火焰守卫.png",
+          "ok": true
+        }
+      ]
+    },
+    {
+      "id": "merged-geometry",
+      "status": "PASS",
+      "detail": {
+        "slots": [
+          {
+            "id": 0,
+            "x": 242,
+            "y": 492,
+            "w": 76,
+            "h": 76
+          },
+          {
+            "id": 1,
+            "x": 322,
+            "y": 492,
+            "w": 76,
+            "h": 76
+          },
+          {
+            "id": 2,
+            "x": 402,
+            "y": 492,
+            "w": 76,
+            "h": 76
+          },
+          {
+            "id": 3,
+            "x": 242,
+            "y": 582,
+            "w": 76,
+            "h": 76
+          },
+          {
+            "id": 4,
+            "x": 322,
+            "y": 582,
+            "w": 76,
+            "h": 76
+          },
+          {
+            "id": 5,
+            "x": 402,
+            "y": 582,
+            "w": 76,
+            "h": 76
+          },
+          {
+            "id": 6,
+            "x": 242,
+            "y": 672,
+            "w": 76,
+            "h": 76
+          },
+          {
+            "id": 7,
+            "x": 322,
+            "y": 672,
+            "w": 76,
+            "h": 76
+          },
+          {
+            "id": 8,
+            "x": 402,
+            "y": 672,
+            "w": 76,
+            "h": 76
+          }
+        ],
+        "route": "80,190 640,190 640,440 80,440 80,810 640,810 640,980"
+      }
+    },
+    {
+      "id": "type-text",
+      "status": "PASS",
+      "detail": [
+        {
+          "text": "Lv1",
+          "overflow": false
+        },
+        {
+          "text": "Lv1",
+          "overflow": false
+        },
+        {
+          "text": "1 / 6",
+          "overflow": false
+        },
+        {
+          "text": "10 / 10",
+          "overflow": false
+        },
+        {
+          "text": "0",
+          "overflow": false
+        },
+        {
+          "text": "准备中",
+          "overflow": false
+        },
+        {
+          "text": "敌人入口",
+          "overflow": false
+        },
+        {
+          "text": "守卫基地",
+          "overflow": false
+        },
+        {
+          "text": "召唤 -20",
+          "overflow": false
+        },
+        {
+          "text": "取消选择",
+          "overflow": false
+        },
+        {
+          "text": "开始第 1 波",
+          "overflow": false
+        },
+        {
+          "text": "不同类型不可合成",
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "id": "type-assets",
+      "status": "PASS",
+      "detail": [
+        {
+          "src": "../../../game_asserts/09_背景场景/战斗场景_竖屏裁剪.png",
+          "ok": true
+        },
+        {
+          "src": "../../../game_asserts/01_角色守卫/火焰守卫.png",
+          "ok": true
+        },
+        {
+          "src": "../../../game_asserts/01_角色守卫/冰霜守卫.png",
+          "ok": true
+        }
+      ]
+    },
+    {
+      "id": "type-geometry",
+      "status": "PASS",
+      "detail": {
+        "slots": [
+          {
+            "id": 0,
+            "x": 242,
+            "y": 492,
+            "w": 76,
+            "h": 76
+          },
+          {
+            "id": 1,
+            "x": 322,
+            "y": 492,
+            "w": 76,
+            "h": 76
+          },
+          {
+            "id": 2,
+            "x": 402,
+            "y": 492,
+            "w": 76,
+            "h": 76
+          },
+          {
+            "id": 3,
+            "x": 242,
+            "y": 582,
+            "w": 76,
+            "h": 76
+          },
+          {
+            "id": 4,
+            "x": 322,
+            "y": 582,
+            "w": 76,
+            "h": 76
+          },
+          {
+            "id": 5,
+            "x": 402,
+            "y": 582,
+            "w": 76,
+            "h": 76
+          },
+          {
+            "id": 6,
+            "x": 242,
+            "y": 672,
+            "w": 76,
+            "h": 76
+          },
+          {
+            "id": 7,
+            "x": 322,
+            "y": 672,
+            "w": 76,
+            "h": 76
+          },
+          {
+            "id": 8,
+            "x": 402,
+            "y": 672,
+            "w": 76,
+            "h": 76
+          }
+        ],
+        "route": "80,190 640,190 640,440 80,440 80,810 640,810 640,980"
+      }
+    },
+    {
+      "id": "level-text",
+      "status": "PASS",
+      "detail": [
+        {
+          "text": "Lv1",
+          "overflow": false
+        },
+        {
+          "text": "Lv2",
+          "overflow": false
+        },
+        {
+          "text": "1 / 6",
+          "overflow": false
+        },
+        {
+          "text": "10 / 10",
+          "overflow": false
+        },
+        {
+          "text": "0",
+          "overflow": false
+        },
+        {
+          "text": "准备中",
+          "overflow": false
+        },
+        {
+          "text": "敌人入口",
+          "overflow": false
+        },
+        {
+          "text": "守卫基地",
+          "overflow": false
+        },
+        {
+          "text": "召唤 -20",
+          "overflow": false
+        },
+        {
+          "text": "取消选择",
+          "overflow": false
+        },
+        {
+          "text": "开始第 1 波",
+          "overflow": false
+        },
+        {
+          "text": "不同等级不可合成",
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "id": "level-assets",
+      "status": "PASS",
+      "detail": [
+        {
+          "src": "../../../game_asserts/09_背景场景/战斗场景_竖屏裁剪.png",
+          "ok": true
+        },
+        {
+          "src": "../../../game_asserts/01_角色守卫/火焰守卫.png",
+          "ok": true
+        },
+        {
+          "src": "../../../game_asserts/01_角色守卫/火焰守卫.png",
+          "ok": true
+        }
+      ]
+    },
+    {
+      "id": "level-geometry",
+      "status": "PASS",
+      "detail": {
+        "slots": [
+          {
+            "id": 0,
+            "x": 242,
+            "y": 492,
+            "w": 76,
+            "h": 76
+          },
+          {
+            "id": 1,
+            "x": 322,
+            "y": 492,
+            "w": 76,
+            "h": 76
+          },
+          {
+            "id": 2,
+            "x": 402,
+            "y": 492,
+            "w": 76,
+            "h": 76
+          },
+          {
+            "id": 3,
+            "x": 242,
+            "y": 582,
+            "w": 76,
+            "h": 76
+          },
+          {
+            "id": 4,
+            "x": 322,
+            "y": 582,
+            "w": 76,
+            "h": 76
+          },
+          {
+            "id": 5,
+            "x": 402,
+            "y": 582,
+            "w": 76,
+            "h": 76
+          },
+          {
+            "id": 6,
+            "x": 242,
+            "y": 672,
+            "w": 76,
+            "h": 76
+          },
+          {
+            "id": 7,
+            "x": 322,
+            "y": 672,
+            "w": 76,
+            "h": 76
+          },
+          {
+            "id": 8,
+            "x": 402,
+            "y": 672,
+            "w": 76,
+            "h": 76
+          }
+        ],
+        "route": "80,190 640,190 640,440 80,440 80,810 640,810 640,980"
+      }
+    },
+    {
+      "id": "max-text",
+      "status": "PASS",
+      "detail": [
+        {
+          "text": "Lv3",
+          "overflow": false
+        },
+        {
+          "text": "Lv3",
+          "overflow": false
+        },
+        {
+          "text": "1 / 6",
+          "overflow": false
+        },
+        {
+          "text": "10 / 10",
+          "overflow": false
+        },
+        {
+          "text": "0",
+          "overflow": false
+        },
+        {
+          "text": "准备中",
+          "overflow": false
+        },
+        {
+          "text": "敌人入口",
+          "overflow": false
+        },
+        {
+          "text": "守卫基地",
+          "overflow": false
+        },
+        {
+          "text": "召唤 -20",
+          "overflow": false
+        },
+        {
+          "text": "取消选择",
+          "overflow": false
+        },
+        {
+          "text": "开始第 1 波",
+          "overflow": false
+        },
+        {
+          "text": "已到满级",
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "id": "max-assets",
+      "status": "PASS",
+      "detail": [
+        {
+          "src": "../../../game_asserts/09_背景场景/战斗场景_竖屏裁剪.png",
+          "ok": true
+        },
+        {
+          "src": "../../../game_asserts/01_角色守卫/火焰守卫.png",
+          "ok": true
+        },
+        {
+          "src": "../../../game_asserts/01_角色守卫/火焰守卫.png",
+          "ok": true
+        }
+      ]
+    },
+    {
+      "id": "max-geometry",
+      "status": "PASS",
+      "detail": {
+        "slots": [
+          {
+            "id": 0,
+            "x": 242,
+            "y": 492,
+            "w": 76,
+            "h": 76
+          },
+          {
+            "id": 1,
+            "x": 322,
+            "y": 492,
+            "w": 76,
+            "h": 76
+          },
+          {
+            "id": 2,
+            "x": 402,
+            "y": 492,
+            "w": 76,
+            "h": 76
+          },
+          {
+            "id": 3,
+            "x": 242,
+            "y": 582,
+            "w": 76,
+            "h": 76
+          },
+          {
+            "id": 4,
+            "x": 322,
+            "y": 582,
+            "w": 76,
+            "h": 76
+          },
+          {
+            "id": 5,
+            "x": 402,
+            "y": 582,
+            "w": 76,
+            "h": 76
+          },
+          {
+            "id": 6,
+            "x": 242,
+            "y": 672,
+            "w": 76,
+            "h": 76
+          },
+          {
+            "id": 7,
+            "x": 322,
+            "y": 672,
+            "w": 76,
+            "h": 76
+          },
+          {
+            "id": 8,
+            "x": 402,
+            "y": 672,
+            "w": 76,
+            "h": 76
+          }
+        ],
+        "route": "80,190 640,190 640,440 80,440 80,810 640,810 640,980"
+      }
+    },
+    {
+      "id": "occupied-text",
+      "status": "PASS",
+      "detail": [
+        {
+          "text": "Lv1",
+          "overflow": false
+        },
+        {
+          "text": "1 / 6",
+          "overflow": false
+        },
+        {
+          "text": "10 / 10",
+          "overflow": false
+        },
+        {
+          "text": "60",
+          "overflow": false
+        },
+        {
+          "text": "准备中",
+          "overflow": false
+        },
+        {
+          "text": "敌人入口",
+          "overflow": false
+        },
+        {
+          "text": "守卫基地",
+          "overflow": false
+        },
+        {
+          "text": "召唤 -20",
+          "overflow": false
+        },
+        {
+          "text": "取消选择",
+          "overflow": false
+        },
+        {
+          "text": "开始第 1 波",
+          "overflow": false
+        },
+        {
+          "text": "格子已有守卫，请选择空格",
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "id": "occupied-assets",
+      "status": "PASS",
+      "detail": [
+        {
+          "src": "../../../game_asserts/09_背景场景/战斗场景_竖屏裁剪.png",
+          "ok": true
+        },
+        {
+          "src": "../../../game_asserts/01_角色守卫/冰霜守卫.png",
+          "ok": true
+        }
+      ]
+    },
+    {
+      "id": "occupied-geometry",
+      "status": "PASS",
+      "detail": {
+        "slots": [
+          {
+            "id": 0,
+            "x": 242,
+            "y": 492,
+            "w": 76,
+            "h": 76
+          },
+          {
+            "id": 1,
+            "x": 322,
+            "y": 492,
+            "w": 76,
+            "h": 76
+          },
+          {
+            "id": 2,
+            "x": 402,
+            "y": 492,
+            "w": 76,
+            "h": 76
+          },
+          {
+            "id": 3,
+            "x": 242,
+            "y": 582,
+            "w": 76,
+            "h": 76
+          },
+          {
+            "id": 4,
+            "x": 322,
+            "y": 582,
+            "w": 76,
+            "h": 76
+          },
+          {
+            "id": 5,
+            "x": 402,
+            "y": 582,
+            "w": 76,
+            "h": 76
+          },
+          {
+            "id": 6,
+            "x": 242,
+            "y": 672,
+            "w": 76,
+            "h": 76
+          },
+          {
+            "id": 7,
+            "x": 322,
+            "y": 672,
+            "w": 76,
+            "h": 76
+          },
+          {
+            "id": 8,
+            "x": 402,
+            "y": 672,
+            "w": 76,
+            "h": 76
+          }
+        ],
+        "route": "80,190 640,190 640,440 80,440 80,810 640,810 640,980"
+      }
+    },
+    {
+      "id": "full-text",
+      "status": "PASS",
+      "detail": [
+        {
+          "text": "Lv1",
+          "overflow": false
+        },
+        {
+          "text": "Lv1",
+          "overflow": false
+        },
+        {
+          "text": "Lv1",
+          "overflow": false
+        },
+        {
+          "text": "Lv1",
+          "overflow": false
+        },
+        {
+          "text": "Lv1",
+          "overflow": false
+        },
+        {
+          "text": "Lv1",
+          "overflow": false
+        },
+        {
+          "text": "Lv1",
+          "overflow": false
+        },
+        {
+          "text": "Lv1",
+          "overflow": false
+        },
+        {
+          "text": "Lv1",
+          "overflow": false
+        },
+        {
+          "text": "1 / 6",
+          "overflow": false
+        },
+        {
+          "text": "10 / 10",
+          "overflow": false
+        },
+        {
+          "text": "60",
+          "overflow": false
+        },
+        {
+          "text": "准备中",
+          "overflow": false
+        },
+        {
+          "text": "敌人入口",
+          "overflow": false
+        },
+        {
+          "text": "守卫基地",
+          "overflow": false
+        },
+        {
+          "text": "召唤 -20",
+          "overflow": false
+        },
+        {
+          "text": "取消选择",
+          "overflow": false
+        },
+        {
+          "text": "开始第 1 波",
+          "overflow": false
+        },
+        {
+          "text": "棋盘已满，合成可腾出空格",
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "id": "full-assets",
+      "status": "PASS",
+      "detail": [
+        {
+          "src": "../../../game_asserts/09_背景场景/战斗场景_竖屏裁剪.png",
+          "ok": true
+        },
+        {
+          "src": "../../../game_asserts/01_角色守卫/火焰守卫.png",
+          "ok": true
+        },
+        {
+          "src": "../../../game_asserts/01_角色守卫/冰霜守卫.png",
+          "ok": true
+        },
+        {
+          "src": "../../../game_asserts/01_角色守卫/雷霆守卫.png",
+          "ok": true
+        },
+        {
+          "src": "../../../game_asserts/01_角色守卫/火焰守卫.png",
+          "ok": true
+        },
+        {
+          "src": "../../../game_asserts/01_角色守卫/冰霜守卫.png",
+          "ok": true
+        },
+        {
+          "src": "../../../game_asserts/01_角色守卫/雷霆守卫.png",
+          "ok": true
+        },
+        {
+          "src": "../../../game_asserts/01_角色守卫/火焰守卫.png",
+          "ok": true
+        },
+        {
+          "src": "../../../game_asserts/01_角色守卫/冰霜守卫.png",
+          "ok": true
+        },
+        {
+          "src": "../../../game_asserts/01_角色守卫/雷霆守卫.png",
+          "ok": true
+        }
+      ]
+    },
+    {
+      "id": "full-geometry",
+      "status": "PASS",
+      "detail": {
+        "slots": [
+          {
+            "id": 0,
+            "x": 242,
+            "y": 492,
+            "w": 76,
+            "h": 76
+          },
+          {
+            "id": 1,
+            "x": 322,
+            "y": 492,
+            "w": 76,
+            "h": 76
+          },
+          {
+            "id": 2,
+            "x": 402,
+            "y": 492,
+            "w": 76,
+            "h": 76
+          },
+          {
+            "id": 3,
+            "x": 242,
+            "y": 582,
+            "w": 76,
+            "h": 76
+          },
+          {
+            "id": 4,
+            "x": 322,
+            "y": 582,
+            "w": 76,
+            "h": 76
+          },
+          {
+            "id": 5,
+            "x": 402,
+            "y": 582,
+            "w": 76,
+            "h": 76
+          },
+          {
+            "id": 6,
+            "x": 242,
+            "y": 672,
+            "w": 76,
+            "h": 76
+          },
+          {
+            "id": 7,
+            "x": 322,
+            "y": 672,
+            "w": 76,
+            "h": 76
+          },
+          {
+            "id": 8,
+            "x": 402,
+            "y": 672,
+            "w": 76,
+            "h": 76
+          }
+        ],
+        "route": "80,190 640,190 640,440 80,440 80,810 640,810 640,980"
+      }
+    },
+    {
+      "id": "inspection-text",
+      "status": "PASS",
+      "detail": [
+        {
+          "text": "Lv1",
+          "overflow": false
+        },
+        {
+          "text": "Lv1",
+          "overflow": false
+        },
+        {
+          "text": "Lv1",
+          "overflow": false
+        },
+        {
+          "text": "Lv1",
+          "overflow": false
+        },
+        {
+          "text": "Lv1",
+          "overflow": false
+        },
+        {
+          "text": "Lv1",
+          "overflow": false
+        },
+        {
+          "text": "开始游戏",
+          "overflow": false
+        },
+        {
+          "text": "开始游戏",
+          "overflow": false
+        },
+        {
+          "text": "开始游戏",
+          "overflow": false
+        },
+        {
+          "text": "召唤 -20",
+          "overflow": false
+        },
+        {
+          "text": "金币 0",
+          "overflow": false
+        },
+        {
+          "text": "金币 19",
+          "overflow": false
+        },
+        {
+          "text": "金币 60",
+          "overflow": false
+        },
+        {
+          "text": "金币 799",
+          "overflow": false
+        }
+      ]
+    },
+    {
+      "id": "inspection-assets",
+      "status": "PASS",
+      "detail": [
+        {
+          "src": "../../../game_asserts/01_角色守卫/火焰守卫.png",
+          "ok": true
+        },
+        {
+          "src": "../../../game_asserts/01_角色守卫/火焰守卫.png",
+          "ok": true
+        },
+        {
+          "src": "../../../game_asserts/01_角色守卫/冰霜守卫.png",
+          "ok": true
+        },
+        {
+          "src": "../../../game_asserts/01_角色守卫/冰霜守卫.png",
+          "ok": true
+        },
+        {
+          "src": "../../../game_asserts/01_角色守卫/雷霆守卫.png",
+          "ok": true
+        },
+        {
+          "src": "../../../game_asserts/01_角色守卫/雷霆守卫.png",
+          "ok": true
+        }
+      ]
+    },
+    {
+      "id": "phone-320-zh-Hans",
+      "status": "PASS",
+      "detail": {
+        "locale": "zh-Hans",
+        "lang": "zh-Hans",
+        "size": {
+          "w": 320,
+          "h": 568,
+          "top": 0,
+          "bottom": 0
+        },
+        "targets": [
+          {
+            "x": 168,
+            "y": 8,
+            "w": 136,
+            "h": 48,
+            "text": "◎简体中文"
+          },
+          {
+            "x": 32,
+            "y": 400.8125,
+            "w": 256,
+            "h": 48,
+            "text": "开始游戏"
+          },
+          {
+            "x": 51.203125,
+            "y": 460.8125,
+            "w": 217.59375,
+            "h": 48,
+            "text": "退出游戏"
+          }
+        ],
+        "font": [
+          "loaded",
+          "loaded"
+        ],
+        "noHorizontalScroll": true,
+        "title": {
+          "x": 16,
+          "y": 136.4375,
+          "w": 288,
+          "h": 55,
+          "text": "元素守卫"
+        },
+        "credit": {
+          "x": 96.546875,
+          "y": 530.8125,
+          "w": 126.890625,
+          "h": 19.1875,
+          "text": "单机原型 · AI 协作制作"
+        }
+      }
+    },
+    {
+      "id": "phone-320-zh-Hant",
+      "status": "PASS",
+      "detail": {
+        "locale": "zh-Hant",
+        "lang": "zh-Hant",
+        "size": {
+          "w": 320,
+          "h": 568,
+          "top": 0,
+          "bottom": 0
+        },
+        "targets": [
+          {
+            "x": 168,
+            "y": 8,
+            "w": 136,
+            "h": 48,
+            "text": "◎繁體中文"
+          },
+          {
+            "x": 32,
+            "y": 400.8125,
+            "w": 256,
+            "h": 48,
+            "text": "開始遊戲"
+          },
+          {
+            "x": 51.203125,
+            "y": 460.8125,
+            "w": 217.59375,
+            "h": 48,
+            "text": "離開遊戲"
+          }
+        ],
+        "font": [
+          "loaded",
+          "loaded"
+        ],
+        "noHorizontalScroll": true,
+        "title": {
+          "x": 16,
+          "y": 136.4375,
+          "w": 288,
+          "h": 55,
+          "text": "元素守衛"
+        },
+        "credit": {
+          "x": 96.546875,
+          "y": 530.8125,
+          "w": 126.890625,
+          "h": 19.1875,
+          "text": "單機原型 · AI 協作製作"
+        }
+      }
+    },
+    {
+      "id": "phone-320-en",
+      "status": "PASS",
+      "detail": {
+        "locale": "en",
+        "lang": "en",
+        "size": {
+          "w": 320,
+          "h": 568,
+          "top": 0,
+          "bottom": 0
+        },
+        "targets": [
+          {
+            "x": 168,
+            "y": 8,
+            "w": 136,
+            "h": 48,
+            "text": "◎English"
+          },
+          {
+            "x": 32,
+            "y": 381.625,
+            "w": 256,
+            "h": 48,
+            "text": "Start game"
+          },
+          {
+            "x": 51.203125,
+            "y": 441.625,
+            "w": 217.59375,
+            "h": 48,
+            "text": "Exit game"
+          }
+        ],
+        "font": [
+          "loaded",
+          "loaded"
+        ],
+        "noHorizontalScroll": true,
+        "title": {
+          "x": 16,
+          "y": 135.46875,
+          "w": 288,
+          "h": 97,
+          "text": "Element Guardians"
+        },
+        "credit": {
+          "x": 32,
+          "y": 511.625,
+          "w": 256,
+          "h": 38.375,
+          "text": "Single-player prototype · Made with AI assistance"
+        }
+      }
+    },
+    {
+      "id": "phone-320-ko",
+      "status": "PASS",
+      "detail": {
+        "locale": "ko",
+        "lang": "ko",
+        "size": {
+          "w": 320,
+          "h": 568,
+          "top": 0,
+          "bottom": 0
+        },
+        "targets": [
+          {
+            "x": 168,
+            "y": 8,
+            "w": 136,
+            "h": 48,
+            "text": "◎한국어"
+          },
+          {
+            "x": 32,
+            "y": 400.8125,
+            "w": 256,
+            "h": 48,
+            "text": "게임 시작"
+          },
+          {
+            "x": 51.203125,
+            "y": 460.8125,
+            "w": 217.59375,
+            "h": 48,
+            "text": "게임 종료"
+          }
+        ],
+        "font": [
+          "loaded",
+          "loaded"
+        ],
+        "noHorizontalScroll": true,
+        "title": {
+          "x": 16,
+          "y": 136.4375,
+          "w": 288,
+          "h": 55,
+          "text": "엘리먼트 가디언즈"
+        },
+        "credit": {
+          "x": 63.25,
+          "y": 530.8125,
+          "w": 193.5,
+          "h": 19.1875,
+          "text": "싱글 플레이 프로토타입 · AI 제작 지원"
+        }
+      }
+    },
+    {
+      "id": "phone-320-ja",
+      "status": "PASS",
+      "detail": {
+        "locale": "ja",
+        "lang": "ja",
+        "size": {
+          "w": 320,
+          "h": 568,
+          "top": 0,
+          "bottom": 0
+        },
+        "targets": [
+          {
+            "x": 168,
+            "y": 8,
+            "w": 136,
+            "h": 48,
+            "text": "◎日本語"
+          },
+          {
+            "x": 32,
+            "y": 400.8125,
+            "w": 256,
+            "h": 48,
+            "text": "ゲーム開始"
+          },
+          {
+            "x": 51.203125,
+            "y": 460.8125,
+            "w": 217.59375,
+            "h": 48,
+            "text": "ゲーム終了"
+          }
+        ],
+        "font": [
+          "loaded",
+          "loaded"
+        ],
+        "noHorizontalScroll": true,
+        "title": {
+          "x": 16,
+          "y": 136.4375,
+          "w": 288,
+          "h": 97,
+          "text": "エレメント\nガーディアンズ"
+        },
+        "credit": {
+          "x": 61.890625,
+          "y": 530.8125,
+          "w": 196.203125,
+          "h": 19.1875,
+          "text": "シングルプレイ試作版 · AI制作支援"
+        }
+      }
+    },
+    {
+      "id": "phone-320-ru",
+      "status": "PASS",
+      "detail": {
+        "locale": "ru",
+        "lang": "ru",
+        "size": {
+          "w": 320,
+          "h": 568,
+          "top": 0,
+          "bottom": 0
+        },
+        "targets": [
+          {
+            "x": 168,
+            "y": 8,
+            "w": 136,
+            "h": 48,
+            "text": "◎Русский"
+          },
+          {
+            "x": 32,
+            "y": 381.625,
+            "w": 256,
+            "h": 48,
+            "text": "Начать игру"
+          },
+          {
+            "x": 51.203125,
+            "y": 441.625,
+            "w": 217.59375,
+            "h": 48,
+            "text": "Выйти из игры"
+          }
+        ],
+        "font": [
+          "loaded",
+          "loaded"
+        ],
+        "noHorizontalScroll": true,
+        "title": {
+          "x": 16,
+          "y": 135.46875,
+          "w": 288,
+          "h": 55,
+          "text": "Стражи стихий"
+        },
+        "credit": {
+          "x": 32,
+          "y": 511.625,
+          "w": 256,
+          "h": 38.375,
+          "text": "Однопользовательский прототип · С помощью ИИ"
+        }
+      }
+    },
+    {
+      "id": "phone-320-cancel",
+      "status": "PASS",
+      "detail": "Close discards draft selection"
+    },
+    {
+      "id": "phone-320-sheet",
+      "status": "PASS",
+      "detail": {
+        "y": 106,
+        "h": 462,
+        "rows": [
+          {
+            "h": 48,
+            "w": 286,
+            "text": "简体中文"
+          },
+          {
+            "h": 48,
+            "w": 286,
+            "text": "繁體中文"
+          },
+          {
+            "h": 48,
+            "w": 286,
+            "text": "English"
+          },
+          {
+            "h": 48,
+            "w": 286,
+            "text": "한국어"
+          },
+          {
+            "h": 48,
+            "w": 286,
+            "text": "日本語"
+          },
+          {
+            "h": 48,
+            "w": 286,
+            "text": "Русский✓"
+          }
+        ]
+      }
+    },
+    {
+      "id": "phone-320-battle-controls",
+      "status": "PASS",
+      "detail": {
+        "buttons": [
+          {
+            "w": 87.5,
+            "h": 52,
+            "overflow": false
+          },
+          {
+            "w": 87.5,
+            "h": 52,
+            "overflow": false
+          },
+          {
+            "w": 105,
+            "h": 52,
+            "overflow": false
+          }
+        ],
+        "scroll": 320,
+        "view": 320
+      }
+    },
+    {
+      "id": "phone-320-battle-zh-Hans",
+      "status": "PASS",
+      "detail": {
+        "bottom": 568,
+        "text": "召唤 −20\n取消选择\n开始第 1 波\n\n请先选择空格",
+        "buttons": [
+          {
+            "w": 86,
+            "h": 50,
+            "sw": 86,
+            "sh": 50
+          },
+          {
+            "w": 86,
+            "h": 50,
+            "sw": 86,
+            "sh": 50
+          },
+          {
+            "w": 103,
+            "h": 50,
+            "sw": 103,
+            "sh": 50
+          }
+        ]
+      }
+    },
+    {
+      "id": "phone-320-battle-zh-Hant",
+      "status": "PASS",
+      "detail": {
+        "bottom": 568,
+        "text": "召喚 −20\n取消選擇\n開始第 1 波\n\n請先選擇空格",
+        "buttons": [
+          {
+            "w": 86,
+            "h": 50,
+            "sw": 86,
+            "sh": 50
+          },
+          {
+            "w": 86,
+            "h": 50,
+            "sw": 86,
+            "sh": 50
+          },
+          {
+            "w": 103,
+            "h": 50,
+            "sw": 103,
+            "sh": 50
+          }
+        ]
+      }
+    },
+    {
+      "id": "phone-320-battle-en",
+      "status": "PASS",
+      "detail": {
+        "bottom": 568,
+        "text": "Summon −20\nDeselect\nStart wave 1\n\nSelect an empty slot first",
+        "buttons": [
+          {
+            "w": 86,
+            "h": 54,
+            "sw": 86,
+            "sh": 54
+          },
+          {
+            "w": 86,
+            "h": 54,
+            "sw": 86,
+            "sh": 54
+          },
+          {
+            "w": 103,
+            "h": 54,
+            "sw": 103,
+            "sh": 54
+          }
+        ]
+      }
+    },
+    {
+      "id": "phone-320-battle-ko",
+      "status": "PASS",
+      "detail": {
+        "bottom": 568,
+        "text": "소환 −20\n선택 취소\n1 웨이브 시작\n\n먼저 빈 칸을 선택하세요",
+        "buttons": [
+          {
+            "w": 86,
+            "h": 50,
+            "sw": 86,
+            "sh": 50
+          },
+          {
+            "w": 86,
+            "h": 50,
+            "sw": 86,
+            "sh": 50
+          },
+          {
+            "w": 103,
+            "h": 50,
+            "sw": 103,
+            "sh": 50
+          }
+        ]
+      }
+    },
+    {
+      "id": "phone-320-battle-ja",
+      "status": "PASS",
+      "detail": {
+        "bottom": 568,
+        "text": "召喚 −20\n選択解除\n第1ウェーブ開始\n\n先に空きマスを選択してください",
+        "buttons": [
+          {
+            "w": 86,
+            "h": 54,
+            "sw": 86,
+            "sh": 54
+          },
+          {
+            "w": 86,
+            "h": 54,
+            "sw": 86,
+            "sh": 54
+          },
+          {
+            "w": 103,
+            "h": 54,
+            "sw": 103,
+            "sh": 54
+          }
+        ]
+      }
+    },
+    {
+      "id": "phone-320-battle-ru",
+      "status": "PASS",
+      "detail": {
+        "bottom": 568,
+        "text": "Призыв −20\nСнять выбор\nНачать волну 1\n\nСначала выберите пустую ячейку",
+        "buttons": [
+          {
+            "w": 86,
+            "h": 54,
+            "sw": 86,
+            "sh": 54
+          },
+          {
+            "w": 86,
+            "h": 54,
+            "sw": 86,
+            "sh": 54
+          },
+          {
+            "w": 103,
+            "h": 54,
+            "sw": 103,
+            "sh": 54
+          }
+        ]
+      }
+    },
+    {
+      "id": "phone-360-zh-Hans",
+      "status": "PASS",
+      "detail": {
+        "locale": "zh-Hans",
+        "lang": "zh-Hans",
+        "size": {
+          "w": 360,
+          "h": 640,
+          "top": 0,
+          "bottom": 0
+        },
+        "targets": [
+          {
+            "x": 208,
+            "y": 8,
+            "w": 136,
+            "h": 48,
+            "text": "◎简体中文"
+          },
+          {
+            "x": 32,
+            "y": 472.8125,
+            "w": 296,
+            "h": 48,
+            "text": "开始游戏"
+          },
+          {
+            "x": 54.203125,
+            "y": 532.8125,
+            "w": 251.59375,
+            "h": 48,
+            "text": "退出游戏"
+          }
+        ],
+        "font": [
+          "loaded",
+          "loaded"
+        ],
+        "noHorizontalScroll": true,
+        "title": {
+          "x": 16,
+          "y": 140.03125,
+          "w": 328,
+          "h": 55,
+          "text": "元素守卫"
+        },
+        "credit": {
+          "x": 116.546875,
+          "y": 602.8125,
+          "w": 126.890625,
+          "h": 19.1875,
+          "text": "单机原型 · AI 协作制作"
+        }
+      }
+    },
+    {
+      "id": "phone-360-zh-Hant",
+      "status": "PASS",
+      "detail": {
+        "locale": "zh-Hant",
+        "lang": "zh-Hant",
+        "size": {
+          "w": 360,
+          "h": 640,
+          "top": 0,
+          "bottom": 0
+        },
+        "targets": [
+          {
+            "x": 208,
+            "y": 8,
+            "w": 136,
+            "h": 48,
+            "text": "◎繁體中文"
+          },
+          {
+            "x": 32,
+            "y": 472.8125,
+            "w": 296,
+            "h": 48,
+            "text": "開始遊戲"
+          },
+          {
+            "x": 54.203125,
+            "y": 532.8125,
+            "w": 251.59375,
+            "h": 48,
+            "text": "離開遊戲"
+          }
+        ],
+        "font": [
+          "loaded",
+          "loaded"
+        ],
+        "noHorizontalScroll": true,
+        "title": {
+          "x": 16,
+          "y": 140.03125,
+          "w": 328,
+          "h": 55,
+          "text": "元素守衛"
+        },
+        "credit": {
+          "x": 116.546875,
+          "y": 602.8125,
+          "w": 126.890625,
+          "h": 19.1875,
+          "text": "單機原型 · AI 協作製作"
+        }
+      }
+    },
+    {
+      "id": "phone-360-en",
+      "status": "PASS",
+      "detail": {
+        "locale": "en",
+        "lang": "en",
+        "size": {
+          "w": 360,
+          "h": 640,
+          "top": 0,
+          "bottom": 0
+        },
+        "targets": [
+          {
+            "x": 208,
+            "y": 8,
+            "w": 136,
+            "h": 48,
+            "text": "◎English"
+          },
+          {
+            "x": 32,
+            "y": 472.8125,
+            "w": 296,
+            "h": 48,
+            "text": "Start game"
+          },
+          {
+            "x": 54.203125,
+            "y": 532.8125,
+            "w": 251.59375,
+            "h": 48,
+            "text": "Exit game"
+          }
+        ],
+        "font": [
+          "loaded",
+          "loaded"
+        ],
+        "noHorizontalScroll": true,
+        "title": {
+          "x": 16,
+          "y": 140.03125,
+          "w": 328,
+          "h": 55,
+          "text": "Element Guardians"
+        },
+        "credit": {
+          "x": 39.671875,
+          "y": 602.8125,
+          "w": 280.640625,
+          "h": 19.1875,
+          "text": "Single-player prototype · Made with AI assistance"
+        }
+      }
+    },
+    {
+      "id": "phone-360-ko",
+      "status": "PASS",
+      "detail": {
+        "locale": "ko",
+        "lang": "ko",
+        "size": {
+          "w": 360,
+          "h": 640,
+          "top": 0,
+          "bottom": 0
+        },
+        "targets": [
+          {
+            "x": 208,
+            "y": 8,
+            "w": 136,
+            "h": 48,
+            "text": "◎한국어"
+          },
+          {
+            "x": 32,
+            "y": 472.8125,
+            "w": 296,
+            "h": 48,
+            "text": "게임 시작"
+          },
+          {
+            "x": 54.203125,
+            "y": 532.8125,
+            "w": 251.59375,
+            "h": 48,
+            "text": "게임 종료"
+          }
+        ],
+        "font": [
+          "loaded",
+          "loaded"
+        ],
+        "noHorizontalScroll": true,
+        "title": {
+          "x": 16,
+          "y": 140.03125,
+          "w": 328,
+          "h": 55,
+          "text": "엘리먼트 가디언즈"
+        },
+        "credit": {
+          "x": 83.25,
+          "y": 602.8125,
+          "w": 193.5,
+          "h": 19.1875,
+          "text": "싱글 플레이 프로토타입 · AI 제작 지원"
+        }
+      }
+    },
+    {
+      "id": "phone-360-ja",
+      "status": "PASS",
+      "detail": {
+        "locale": "ja",
+        "lang": "ja",
+        "size": {
+          "w": 360,
+          "h": 640,
+          "top": 0,
+          "bottom": 0
+        },
+        "targets": [
+          {
+            "x": 208,
+            "y": 8,
+            "w": 136,
+            "h": 48,
+            "text": "◎日本語"
+          },
+          {
+            "x": 32,
+            "y": 472.8125,
+            "w": 296,
+            "h": 48,
+            "text": "ゲーム開始"
+          },
+          {
+            "x": 54.203125,
+            "y": 532.8125,
+            "w": 251.59375,
+            "h": 48,
+            "text": "ゲーム終了"
+          }
+        ],
+        "font": [
+          "loaded",
+          "loaded"
+        ],
+        "noHorizontalScroll": true,
+        "title": {
+          "x": 16,
+          "y": 140.03125,
+          "w": 328,
+          "h": 97,
+          "text": "エレメント\nガーディアンズ"
+        },
+        "credit": {
+          "x": 81.890625,
+          "y": 602.8125,
+          "w": 196.203125,
+          "h": 19.1875,
+          "text": "シングルプレイ試作版 · AI制作支援"
+        }
+      }
+    },
+    {
+      "id": "phone-360-ru",
+      "status": "PASS",
+      "detail": {
+        "locale": "ru",
+        "lang": "ru",
+        "size": {
+          "w": 360,
+          "h": 640,
+          "top": 0,
+          "bottom": 0
+        },
+        "targets": [
+          {
+            "x": 208,
+            "y": 8,
+            "w": 136,
+            "h": 48,
+            "text": "◎Русский"
+          },
+          {
+            "x": 32,
+            "y": 453.625,
+            "w": 296,
+            "h": 48,
+            "text": "Начать игру"
+          },
+          {
+            "x": 54.203125,
+            "y": 513.625,
+            "w": 251.59375,
+            "h": 48,
+            "text": "Выйти из игры"
+          }
+        ],
+        "font": [
+          "loaded",
+          "loaded"
+        ],
+        "noHorizontalScroll": true,
+        "title": {
+          "x": 16,
+          "y": 139.078125,
+          "w": 328,
+          "h": 55,
+          "text": "Стражи стихий"
+        },
+        "credit": {
+          "x": 32,
+          "y": 583.625,
+          "w": 296,
+          "h": 38.375,
+          "text": "Однопользовательский прототип · С помощью ИИ"
+        }
+      }
+    },
+    {
+      "id": "phone-360-cancel",
+      "status": "PASS",
+      "detail": "Close discards draft selection"
+    },
+    {
+      "id": "phone-360-sheet",
+      "status": "PASS",
+      "detail": {
+        "y": 178,
+        "h": 462,
+        "rows": [
+          {
+            "h": 48,
+            "w": 326,
+            "text": "简体中文"
+          },
+          {
+            "h": 48,
+            "w": 326,
+            "text": "繁體中文"
+          },
+          {
+            "h": 48,
+            "w": 326,
+            "text": "English"
+          },
+          {
+            "h": 48,
+            "w": 326,
+            "text": "한국어"
+          },
+          {
+            "h": 48,
+            "w": 326,
+            "text": "日本語"
+          },
+          {
+            "h": 48,
+            "w": 326,
+            "text": "Русский✓"
+          }
+        ]
+      }
+    },
+    {
+      "id": "phone-360-battle-controls",
+      "status": "PASS",
+      "detail": {
+        "buttons": [
+          {
+            "w": 100,
+            "h": 52,
+            "overflow": false
+          },
+          {
+            "w": 100,
+            "h": 52,
+            "overflow": false
+          },
+          {
+            "w": 120,
+            "h": 52,
+            "overflow": false
+          }
+        ],
+        "scroll": 360,
+        "view": 360
+      }
+    },
+    {
+      "id": "phone-360-battle-zh-Hans",
+      "status": "PASS",
+      "detail": {
+        "bottom": 640,
+        "text": "召唤 −20\n取消选择\n开始第 1 波\n\n请先选择空格",
+        "buttons": [
+          {
+            "w": 98,
+            "h": 50,
+            "sw": 98,
+            "sh": 50
+          },
+          {
+            "w": 98,
+            "h": 50,
+            "sw": 98,
+            "sh": 50
+          },
+          {
+            "w": 118,
+            "h": 50,
+            "sw": 118,
+            "sh": 50
+          }
+        ]
+      }
+    },
+    {
+      "id": "phone-360-battle-zh-Hant",
+      "status": "PASS",
+      "detail": {
+        "bottom": 640,
+        "text": "召喚 −20\n取消選擇\n開始第 1 波\n\n請先選擇空格",
+        "buttons": [
+          {
+            "w": 98,
+            "h": 50,
+            "sw": 98,
+            "sh": 50
+          },
+          {
+            "w": 98,
+            "h": 50,
+            "sw": 98,
+            "sh": 50
+          },
+          {
+            "w": 118,
+            "h": 50,
+            "sw": 118,
+            "sh": 50
+          }
+        ]
+      }
+    },
+    {
+      "id": "phone-360-battle-en",
+      "status": "PASS",
+      "detail": {
+        "bottom": 640,
+        "text": "Summon −20\nDeselect\nStart wave 1\n\nSelect an empty slot first",
+        "buttons": [
+          {
+            "w": 98,
+            "h": 50,
+            "sw": 98,
+            "sh": 50
+          },
+          {
+            "w": 98,
+            "h": 50,
+            "sw": 98,
+            "sh": 50
+          },
+          {
+            "w": 118,
+            "h": 50,
+            "sw": 118,
+            "sh": 50
+          }
+        ]
+      }
+    },
+    {
+      "id": "phone-360-battle-ko",
+      "status": "PASS",
+      "detail": {
+        "bottom": 640,
+        "text": "소환 −20\n선택 취소\n1 웨이브 시작\n\n먼저 빈 칸을 선택하세요",
+        "buttons": [
+          {
+            "w": 98,
+            "h": 50,
+            "sw": 98,
+            "sh": 50
+          },
+          {
+            "w": 98,
+            "h": 50,
+            "sw": 98,
+            "sh": 50
+          },
+          {
+            "w": 118,
+            "h": 50,
+            "sw": 118,
+            "sh": 50
+          }
+        ]
+      }
+    },
+    {
+      "id": "phone-360-battle-ja",
+      "status": "PASS",
+      "detail": {
+        "bottom": 640,
+        "text": "召喚 −20\n選択解除\n第1ウェーブ開始\n\n先に空きマスを選択してください",
+        "buttons": [
+          {
+            "w": 98,
+            "h": 50,
+            "sw": 98,
+            "sh": 50
+          },
+          {
+            "w": 98,
+            "h": 50,
+            "sw": 98,
+            "sh": 50
+          },
+          {
+            "w": 118,
+            "h": 50,
+            "sw": 118,
+            "sh": 50
+          }
+        ]
+      }
+    },
+    {
+      "id": "phone-360-battle-ru",
+      "status": "PASS",
+      "detail": {
+        "bottom": 640,
+        "text": "Призыв −20\nСнять выбор\nНачать волну 1\n\nСначала выберите пустую ячейку",
+        "buttons": [
+          {
+            "w": 98,
+            "h": 50,
+            "sw": 98,
+            "sh": 50
+          },
+          {
+            "w": 98,
+            "h": 50,
+            "sw": 98,
+            "sh": 50
+          },
+          {
+            "w": 118,
+            "h": 50,
+            "sw": 118,
+            "sh": 50
+          }
+        ]
+      }
+    },
+    {
+      "id": "phone-390-zh-Hans",
+      "status": "PASS",
+      "detail": {
+        "locale": "zh-Hans",
+        "lang": "zh-Hans",
+        "size": {
+          "w": 390,
+          "h": 844,
+          "top": 47,
+          "bottom": 34
+        },
+        "targets": [
+          {
+            "x": 238,
+            "y": 55,
+            "w": 136,
+            "h": 48,
+            "text": "◎简体中文"
+          },
+          {
+            "x": 32,
+            "y": 642.8125,
+            "w": 326,
+            "h": 48,
+            "text": "开始游戏"
+          },
+          {
+            "x": 56.453125,
+            "y": 702.8125,
+            "w": 277.09375,
+            "h": 48,
+            "text": "退出游戏"
+          }
+        ],
+        "font": [
+          "loaded",
+          "loaded"
+        ],
+        "noHorizontalScroll": true,
+        "title": {
+          "x": 16,
+          "y": 193.1875,
+          "w": 358,
+          "h": 56.875,
+          "text": "元素守卫"
+        },
+        "credit": {
+          "x": 131.546875,
+          "y": 772.8125,
+          "w": 126.890625,
+          "h": 19.1875,
+          "text": "单机原型 · AI 协作制作"
+        }
+      }
+    },
+    {
+      "id": "phone-390-zh-Hant",
+      "status": "PASS",
+      "detail": {
+        "locale": "zh-Hant",
+        "lang": "zh-Hant",
+        "size": {
+          "w": 390,
+          "h": 844,
+          "top": 47,
+          "bottom": 34
+        },
+        "targets": [
+          {
+            "x": 238,
+            "y": 55,
+            "w": 136,
+            "h": 48,
+            "text": "◎繁體中文"
+          },
+          {
+            "x": 32,
+            "y": 642.8125,
+            "w": 326,
+            "h": 48,
+            "text": "開始遊戲"
+          },
+          {
+            "x": 56.453125,
+            "y": 702.8125,
+            "w": 277.09375,
+            "h": 48,
+            "text": "離開遊戲"
+          }
+        ],
+        "font": [
+          "loaded",
+          "loaded"
+        ],
+        "noHorizontalScroll": true,
+        "title": {
+          "x": 16,
+          "y": 193.1875,
+          "w": 358,
+          "h": 56.875,
+          "text": "元素守衛"
+        },
+        "credit": {
+          "x": 131.546875,
+          "y": 772.8125,
+          "w": 126.890625,
+          "h": 19.1875,
+          "text": "單機原型 · AI 協作製作"
+        }
+      }
+    },
+    {
+      "id": "phone-390-en",
+      "status": "PASS",
+      "detail": {
+        "locale": "en",
+        "lang": "en",
+        "size": {
+          "w": 390,
+          "h": 844,
+          "top": 47,
+          "bottom": 34
+        },
+        "targets": [
+          {
+            "x": 238,
+            "y": 55,
+            "w": 136,
+            "h": 48,
+            "text": "◎English"
+          },
+          {
+            "x": 32,
+            "y": 642.8125,
+            "w": 326,
+            "h": 48,
+            "text": "Start game"
+          },
+          {
+            "x": 56.453125,
+            "y": 702.8125,
+            "w": 277.09375,
+            "h": 48,
+            "text": "Exit game"
+          }
+        ],
+        "font": [
+          "loaded",
+          "loaded"
+        ],
+        "noHorizontalScroll": true,
+        "title": {
+          "x": 16,
+          "y": 193.1875,
+          "w": 358,
+          "h": 56.875,
+          "text": "Element Guardians"
+        },
+        "credit": {
+          "x": 54.671875,
+          "y": 772.8125,
+          "w": 280.640625,
+          "h": 19.1875,
+          "text": "Single-player prototype · Made with AI assistance"
+        }
+      }
+    },
+    {
+      "id": "phone-390-ko",
+      "status": "PASS",
+      "detail": {
+        "locale": "ko",
+        "lang": "ko",
+        "size": {
+          "w": 390,
+          "h": 844,
+          "top": 47,
+          "bottom": 34
+        },
+        "targets": [
+          {
+            "x": 238,
+            "y": 55,
+            "w": 136,
+            "h": 48,
+            "text": "◎한국어"
+          },
+          {
+            "x": 32,
+            "y": 642.8125,
+            "w": 326,
+            "h": 48,
+            "text": "게임 시작"
+          },
+          {
+            "x": 56.453125,
+            "y": 702.8125,
+            "w": 277.09375,
+            "h": 48,
+            "text": "게임 종료"
+          }
+        ],
+        "font": [
+          "loaded",
+          "loaded"
+        ],
+        "noHorizontalScroll": true,
+        "title": {
+          "x": 16,
+          "y": 193.1875,
+          "w": 358,
+          "h": 56.875,
+          "text": "엘리먼트 가디언즈"
+        },
+        "credit": {
+          "x": 98.25,
+          "y": 772.8125,
+          "w": 193.5,
+          "h": 19.1875,
+          "text": "싱글 플레이 프로토타입 · AI 제작 지원"
+        }
+      }
+    },
+    {
+      "id": "phone-390-ja",
+      "status": "PASS",
+      "detail": {
+        "locale": "ja",
+        "lang": "ja",
+        "size": {
+          "w": 390,
+          "h": 844,
+          "top": 47,
+          "bottom": 34
+        },
+        "targets": [
+          {
+            "x": 238,
+            "y": 55,
+            "w": 136,
+            "h": 48,
+            "text": "◎日本語"
+          },
+          {
+            "x": 32,
+            "y": 642.8125,
+            "w": 326,
+            "h": 48,
+            "text": "ゲーム開始"
+          },
+          {
+            "x": 56.453125,
+            "y": 702.8125,
+            "w": 277.09375,
+            "h": 48,
+            "text": "ゲーム終了"
+          }
+        ],
+        "font": [
+          "loaded",
+          "loaded"
+        ],
+        "noHorizontalScroll": true,
+        "title": {
+          "x": 16,
+          "y": 193.1875,
+          "w": 358,
+          "h": 100.75,
+          "text": "エレメント\nガーディアンズ"
+        },
+        "credit": {
+          "x": 96.890625,
+          "y": 772.8125,
+          "w": 196.203125,
+          "h": 19.1875,
+          "text": "シングルプレイ試作版 · AI制作支援"
+        }
+      }
+    },
+    {
+      "id": "phone-390-ru",
+      "status": "PASS",
+      "detail": {
+        "locale": "ru",
+        "lang": "ru",
+        "size": {
+          "w": 390,
+          "h": 844,
+          "top": 47,
+          "bottom": 34
+        },
+        "targets": [
+          {
+            "x": 238,
+            "y": 55,
+            "w": 136,
+            "h": 48,
+            "text": "◎Русский"
+          },
+          {
+            "x": 32,
+            "y": 642.8125,
+            "w": 326,
+            "h": 48,
+            "text": "Начать игру"
+          },
+          {
+            "x": 56.453125,
+            "y": 702.8125,
+            "w": 277.09375,
+            "h": 48,
+            "text": "Выйти из игры"
+          }
+        ],
+        "font": [
+          "loaded",
+          "loaded"
+        ],
+        "noHorizontalScroll": true,
+        "title": {
+          "x": 16,
+          "y": 193.1875,
+          "w": 358,
+          "h": 56.875,
+          "text": "Стражи стихий"
+        },
+        "credit": {
+          "x": 43.1875,
+          "y": 772.8125,
+          "w": 303.625,
+          "h": 19.1875,
+          "text": "Однопользовательский прототип · С помощью ИИ"
+        }
+      }
+    },
+    {
+      "id": "phone-390-cancel",
+      "status": "PASS",
+      "detail": "Close discards draft selection"
+    },
+    {
+      "id": "phone-390-sheet",
+      "status": "PASS",
+      "detail": {
+        "y": 348,
+        "h": 496,
+        "rows": [
+          {
+            "h": 48,
+            "w": 356,
+            "text": "简体中文"
+          },
+          {
+            "h": 48,
+            "w": 356,
+            "text": "繁體中文"
+          },
+          {
+            "h": 48,
+            "w": 356,
+            "text": "English"
+          },
+          {
+            "h": 48,
+            "w": 356,
+            "text": "한국어"
+          },
+          {
+            "h": 48,
+            "w": 356,
+            "text": "日本語"
+          },
+          {
+            "h": 48,
+            "w": 356,
+            "text": "Русский✓"
+          }
+        ]
+      }
+    },
+    {
+      "id": "phone-390-battle-controls",
+      "status": "PASS",
+      "detail": {
+        "buttons": [
+          {
+            "w": 109.375,
+            "h": 52,
+            "overflow": false
+          },
+          {
+            "w": 109.375,
+            "h": 52,
+            "overflow": false
+          },
+          {
+            "w": 131.25,
+            "h": 52,
+            "overflow": false
+          }
+        ],
+        "scroll": 390,
+        "view": 390
+      }
+    },
+    {
+      "id": "phone-390-battle-zh-Hans",
+      "status": "FAIL",
+      "detail": {
+        "bottom": 844,
+        "text": "召唤 −20\n取消选择\n开始第 1 波\n\n请先选择空格",
+        "buttons": [
+          {
+            "w": 107,
+            "h": 50,
+            "sw": 107,
+            "sh": 50
+          },
+          {
+            "w": 107,
+            "h": 50,
+            "sw": 107,
+            "sh": 50
+          },
+          {
+            "w": 129,
+            "h": 50,
+            "sw": 129,
+            "sh": 50
+          }
+        ]
+      }
+    },
+    {
+      "id": "phone-390-battle-zh-Hant",
+      "status": "FAIL",
+      "detail": {
+        "bottom": 844,
+        "text": "召喚 −20\n取消選擇\n開始第 1 波\n\n請先選擇空格",
+        "buttons": [
+          {
+            "w": 107,
+            "h": 50,
+            "sw": 107,
+            "sh": 50
+          },
+          {
+            "w": 107,
+            "h": 50,
+            "sw": 107,
+            "sh": 50
+          },
+          {
+            "w": 129,
+            "h": 50,
+            "sw": 129,
+            "sh": 50
+          }
+        ]
+      }
+    },
+    {
+      "id": "phone-390-battle-en",
+      "status": "FAIL",
+      "detail": {
+        "bottom": 844,
+        "text": "Summon −20\nDeselect\nStart wave 1\n\nSelect an empty slot first",
+        "buttons": [
+          {
+            "w": 107,
+            "h": 50,
+            "sw": 107,
+            "sh": 50
+          },
+          {
+            "w": 107,
+            "h": 50,
+            "sw": 107,
+            "sh": 50
+          },
+          {
+            "w": 129,
+            "h": 50,
+            "sw": 129,
+            "sh": 50
+          }
+        ]
+      }
+    },
+    {
+      "id": "phone-390-battle-ko",
+      "status": "FAIL",
+      "detail": {
+        "bottom": 844,
+        "text": "소환 −20\n선택 취소\n1 웨이브 시작\n\n먼저 빈 칸을 선택하세요",
+        "buttons": [
+          {
+            "w": 107,
+            "h": 50,
+            "sw": 107,
+            "sh": 50
+          },
+          {
+            "w": 107,
+            "h": 50,
+            "sw": 107,
+            "sh": 50
+          },
+          {
+            "w": 129,
+            "h": 50,
+            "sw": 129,
+            "sh": 50
+          }
+        ]
+      }
+    },
+    {
+      "id": "phone-390-battle-ja",
+      "status": "FAIL",
+      "detail": {
+        "bottom": 844,
+        "text": "召喚 −20\n選択解除\n第1ウェーブ開始\n\n先に空きマスを選択してください",
+        "buttons": [
+          {
+            "w": 107,
+            "h": 50,
+            "sw": 107,
+            "sh": 50
+          },
+          {
+            "w": 107,
+            "h": 50,
+            "sw": 107,
+            "sh": 50
+          },
+          {
+            "w": 129,
+            "h": 50,
+            "sw": 129,
+            "sh": 50
+          }
+        ]
+      }
+    },
+    {
+      "id": "phone-390-battle-ru",
+      "status": "FAIL",
+      "detail": {
+        "bottom": 844,
+        "text": "Призыв −20\nСнять выбор\nНачать волну 1\n\nСначала выберите пустую ячейку",
+        "buttons": [
+          {
+            "w": 107,
+            "h": 50,
+            "sw": 107,
+            "sh": 50
+          },
+          {
+            "w": 107,
+            "h": 50,
+            "sw": 107,
+            "sh": 50
+          },
+          {
+            "w": 129,
+            "h": 50,
+            "sw": 129,
+            "sh": 50
+          }
+        ]
+      }
+    },
+    {
+      "id": "phone-430-zh-Hans",
+      "status": "PASS",
+      "detail": {
+        "locale": "zh-Hans",
+        "lang": "zh-Hans",
+        "size": {
+          "w": 430,
+          "h": 932,
+          "top": 44,
+          "bottom": 34
+        },
+        "targets": [
+          {
+            "x": 278,
+            "y": 52,
+            "w": 136,
+            "h": 48,
+            "text": "◎简体中文"
+          },
+          {
+            "x": 32,
+            "y": 730.8125,
+            "w": 366,
+            "h": 48,
+            "text": "开始游戏"
+          },
+          {
+            "x": 59.453125,
+            "y": 790.8125,
+            "w": 311.09375,
+            "h": 48,
+            "text": "退出游戏"
+          }
+        ],
+        "font": [
+          "loaded",
+          "loaded"
+        ],
+        "noHorizontalScroll": true,
+        "title": {
+          "x": 16,
+          "y": 194.734375,
+          "w": 398,
+          "h": 61.375,
+          "text": "元素守卫"
+        },
+        "credit": {
+          "x": 151.546875,
+          "y": 860.8125,
+          "w": 126.890625,
+          "h": 19.1875,
+          "text": "单机原型 · AI 协作制作"
+        }
+      }
+    },
+    {
+      "id": "phone-430-zh-Hant",
+      "status": "PASS",
+      "detail": {
+        "locale": "zh-Hant",
+        "lang": "zh-Hant",
+        "size": {
+          "w": 430,
+          "h": 932,
+          "top": 44,
+          "bottom": 34
+        },
+        "targets": [
+          {
+            "x": 278,
+            "y": 52,
+            "w": 136,
+            "h": 48,
+            "text": "◎繁體中文"
+          },
+          {
+            "x": 32,
+            "y": 730.8125,
+            "w": 366,
+            "h": 48,
+            "text": "開始遊戲"
+          },
+          {
+            "x": 59.453125,
+            "y": 790.8125,
+            "w": 311.09375,
+            "h": 48,
+            "text": "離開遊戲"
+          }
+        ],
+        "font": [
+          "loaded",
+          "loaded"
+        ],
+        "noHorizontalScroll": true,
+        "title": {
+          "x": 16,
+          "y": 194.734375,
+          "w": 398,
+          "h": 61.375,
+          "text": "元素守衛"
+        },
+        "credit": {
+          "x": 151.546875,
+          "y": 860.8125,
+          "w": 126.890625,
+          "h": 19.1875,
+          "text": "單機原型 · AI 協作製作"
+        }
+      }
+    },
+    {
+      "id": "phone-430-en",
+      "status": "PASS",
+      "detail": {
+        "locale": "en",
+        "lang": "en",
+        "size": {
+          "w": 430,
+          "h": 932,
+          "top": 44,
+          "bottom": 34
+        },
+        "targets": [
+          {
+            "x": 278,
+            "y": 52,
+            "w": 136,
+            "h": 48,
+            "text": "◎English"
+          },
+          {
+            "x": 32,
+            "y": 730.8125,
+            "w": 366,
+            "h": 48,
+            "text": "Start game"
+          },
+          {
+            "x": 59.453125,
+            "y": 790.8125,
+            "w": 311.09375,
+            "h": 48,
+            "text": "Exit game"
+          }
+        ],
+        "font": [
+          "loaded",
+          "loaded"
+        ],
+        "noHorizontalScroll": true,
+        "title": {
+          "x": 16,
+          "y": 194.734375,
+          "w": 398,
+          "h": 61.375,
+          "text": "Element Guardians"
+        },
+        "credit": {
+          "x": 74.671875,
+          "y": 860.8125,
+          "w": 280.640625,
+          "h": 19.1875,
+          "text": "Single-player prototype · Made with AI assistance"
+        }
+      }
+    },
+    {
+      "id": "phone-430-ko",
+      "status": "PASS",
+      "detail": {
+        "locale": "ko",
+        "lang": "ko",
+        "size": {
+          "w": 430,
+          "h": 932,
+          "top": 44,
+          "bottom": 34
+        },
+        "targets": [
+          {
+            "x": 278,
+            "y": 52,
+            "w": 136,
+            "h": 48,
+            "text": "◎한국어"
+          },
+          {
+            "x": 32,
+            "y": 730.8125,
+            "w": 366,
+            "h": 48,
+            "text": "게임 시작"
+          },
+          {
+            "x": 59.453125,
+            "y": 790.8125,
+            "w": 311.09375,
+            "h": 48,
+            "text": "게임 종료"
+          }
+        ],
+        "font": [
+          "loaded",
+          "loaded"
+        ],
+        "noHorizontalScroll": true,
+        "title": {
+          "x": 16,
+          "y": 194.734375,
+          "w": 398,
+          "h": 61.375,
+          "text": "엘리먼트 가디언즈"
+        },
+        "credit": {
+          "x": 118.25,
+          "y": 860.8125,
+          "w": 193.5,
+          "h": 19.1875,
+          "text": "싱글 플레이 프로토타입 · AI 제작 지원"
+        }
+      }
+    },
+    {
+      "id": "phone-430-ja",
+      "status": "PASS",
+      "detail": {
+        "locale": "ja",
+        "lang": "ja",
+        "size": {
+          "w": 430,
+          "h": 932,
+          "top": 44,
+          "bottom": 34
+        },
+        "targets": [
+          {
+            "x": 278,
+            "y": 52,
+            "w": 136,
+            "h": 48,
+            "text": "◎日本語"
+          },
+          {
+            "x": 32,
+            "y": 730.8125,
+            "w": 366,
+            "h": 48,
+            "text": "ゲーム開始"
+          },
+          {
+            "x": 59.453125,
+            "y": 790.8125,
+            "w": 311.09375,
+            "h": 48,
+            "text": "ゲーム終了"
+          }
+        ],
+        "font": [
+          "loaded",
+          "loaded"
+        ],
+        "noHorizontalScroll": true,
+        "title": {
+          "x": 16,
+          "y": 194.734375,
+          "w": 398,
+          "h": 109.75,
+          "text": "エレメント\nガーディアンズ"
+        },
+        "credit": {
+          "x": 116.890625,
+          "y": 860.8125,
+          "w": 196.203125,
+          "h": 19.1875,
+          "text": "シングルプレイ試作版 · AI制作支援"
+        }
+      }
+    },
+    {
+      "id": "phone-430-ru",
+      "status": "PASS",
+      "detail": {
+        "locale": "ru",
+        "lang": "ru",
+        "size": {
+          "w": 430,
+          "h": 932,
+          "top": 44,
+          "bottom": 34
+        },
+        "targets": [
+          {
+            "x": 278,
+            "y": 52,
+            "w": 136,
+            "h": 48,
+            "text": "◎Русский"
+          },
+          {
+            "x": 32,
+            "y": 730.8125,
+            "w": 366,
+            "h": 48,
+            "text": "Начать игру"
+          },
+          {
+            "x": 59.453125,
+            "y": 790.8125,
+            "w": 311.09375,
+            "h": 48,
+            "text": "Выйти из игры"
+          }
+        ],
+        "font": [
+          "loaded",
+          "loaded"
+        ],
+        "noHorizontalScroll": true,
+        "title": {
+          "x": 16,
+          "y": 194.734375,
+          "w": 398,
+          "h": 61.375,
+          "text": "Стражи стихий"
+        },
+        "credit": {
+          "x": 63.1875,
+          "y": 860.8125,
+          "w": 303.625,
+          "h": 19.1875,
+          "text": "Однопользовательский прототип · С помощью ИИ"
+        }
+      }
+    },
+    {
+      "id": "phone-430-cancel",
+      "status": "PASS",
+      "detail": "Close discards draft selection"
+    },
+    {
+      "id": "phone-430-sheet",
+      "status": "PASS",
+      "detail": {
+        "y": 436,
+        "h": 496,
+        "rows": [
+          {
+            "h": 48,
+            "w": 396,
+            "text": "简体中文"
+          },
+          {
+            "h": 48,
+            "w": 396,
+            "text": "繁體中文"
+          },
+          {
+            "h": 48,
+            "w": 396,
+            "text": "English"
+          },
+          {
+            "h": 48,
+            "w": 396,
+            "text": "한국어"
+          },
+          {
+            "h": 48,
+            "w": 396,
+            "text": "日本語"
+          },
+          {
+            "h": 48,
+            "w": 396,
+            "text": "Русский✓"
+          }
+        ]
+      }
+    },
+    {
+      "id": "phone-430-battle-controls",
+      "status": "PASS",
+      "detail": {
+        "buttons": [
+          {
+            "w": 121.875,
+            "h": 52,
+            "overflow": false
+          },
+          {
+            "w": 121.875,
+            "h": 52,
+            "overflow": false
+          },
+          {
+            "w": 146.25,
+            "h": 52,
+            "overflow": false
+          }
+        ],
+        "scroll": 430,
+        "view": 430
+      }
+    },
+    {
+      "id": "phone-430-battle-zh-Hans",
+      "status": "FAIL",
+      "detail": {
+        "bottom": 932,
+        "text": "召唤 −20\n取消选择\n开始第 1 波\n\n请先选择空格",
+        "buttons": [
+          {
+            "w": 120,
+            "h": 50,
+            "sw": 120,
+            "sh": 50
+          },
+          {
+            "w": 120,
+            "h": 50,
+            "sw": 120,
+            "sh": 50
+          },
+          {
+            "w": 144,
+            "h": 50,
+            "sw": 144,
+            "sh": 50
+          }
+        ]
+      }
+    },
+    {
+      "id": "phone-430-battle-zh-Hant",
+      "status": "FAIL",
+      "detail": {
+        "bottom": 932,
+        "text": "召喚 −20\n取消選擇\n開始第 1 波\n\n請先選擇空格",
+        "buttons": [
+          {
+            "w": 120,
+            "h": 50,
+            "sw": 120,
+            "sh": 50
+          },
+          {
+            "w": 120,
+            "h": 50,
+            "sw": 120,
+            "sh": 50
+          },
+          {
+            "w": 144,
+            "h": 50,
+            "sw": 144,
+            "sh": 50
+          }
+        ]
+      }
+    },
+    {
+      "id": "phone-430-battle-en",
+      "status": "FAIL",
+      "detail": {
+        "bottom": 932,
+        "text": "Summon −20\nDeselect\nStart wave 1\n\nSelect an empty slot first",
+        "buttons": [
+          {
+            "w": 120,
+            "h": 50,
+            "sw": 120,
+            "sh": 50
+          },
+          {
+            "w": 120,
+            "h": 50,
+            "sw": 120,
+            "sh": 50
+          },
+          {
+            "w": 144,
+            "h": 50,
+            "sw": 144,
+            "sh": 50
+          }
+        ]
+      }
+    },
+    {
+      "id": "phone-430-battle-ko",
+      "status": "FAIL",
+      "detail": {
+        "bottom": 932,
+        "text": "소환 −20\n선택 취소\n1 웨이브 시작\n\n먼저 빈 칸을 선택하세요",
+        "buttons": [
+          {
+            "w": 120,
+            "h": 50,
+            "sw": 120,
+            "sh": 50
+          },
+          {
+            "w": 120,
+            "h": 50,
+            "sw": 120,
+            "sh": 50
+          },
+          {
+            "w": 144,
+            "h": 50,
+            "sw": 144,
+            "sh": 50
+          }
+        ]
+      }
+    },
+    {
+      "id": "phone-430-battle-ja",
+      "status": "FAIL",
+      "detail": {
+        "bottom": 932,
+        "text": "召喚 −20\n選択解除\n第1ウェーブ開始\n\n先に空きマスを選択してください",
+        "buttons": [
+          {
+            "w": 120,
+            "h": 50,
+            "sw": 120,
+            "sh": 50
+          },
+          {
+            "w": 120,
+            "h": 50,
+            "sw": 120,
+            "sh": 50
+          },
+          {
+            "w": 144,
+            "h": 50,
+            "sw": 144,
+            "sh": 50
+          }
+        ]
+      }
+    },
+    {
+      "id": "phone-430-battle-ru",
+      "status": "FAIL",
+      "detail": {
+        "bottom": 932,
+        "text": "Призыв −20\nСнять выбор\nНачать волну 1\n\nСначала выберите пустую ячейку",
+        "buttons": [
+          {
+            "w": 120,
+            "h": 50,
+            "sw": 120,
+            "sh": 50
+          },
+          {
+            "w": 120,
+            "h": 50,
+            "sw": 120,
+            "sh": 50
+          },
+          {
+            "w": 144,
+            "h": 50,
+            "sw": 144,
+            "sh": 50
+          }
+        ]
+      }
+    },
+    {
+      "id": "phone-412-zh-Hans",
+      "status": "PASS",
+      "detail": {
+        "locale": "zh-Hans",
+        "lang": "zh-Hans",
+        "size": {
+          "w": 412,
+          "h": 915,
+          "top": 24,
+          "bottom": 24
+        },
+        "targets": [
+          {
+            "x": 260,
+            "y": 32,
+            "w": 136,
+            "h": 48,
+            "text": "◎简体中文"
+          },
+          {
+            "x": 32,
+            "y": 723.8125,
+            "w": 348,
+            "h": 48,
+            "text": "开始游戏"
+          },
+          {
+            "x": 58.09375,
+            "y": 783.8125,
+            "w": 295.796875,
+            "h": 48,
+            "text": "退出游戏"
+          }
+        ],
+        "font": [
+          "loaded",
+          "loaded"
+        ],
+        "noHorizontalScroll": true,
+        "title": {
+          "x": 16,
+          "y": 175.390625,
+          "w": 380,
+          "h": 59.359375,
+          "text": "元素守卫"
+        },
+        "credit": {
+          "x": 142.546875,
+          "y": 853.8125,
+          "w": 126.890625,
+          "h": 19.1875,
+          "text": "单机原型 · AI 协作制作"
+        }
+      }
+    },
+    {
+      "id": "phone-412-zh-Hant",
+      "status": "PASS",
+      "detail": {
+        "locale": "zh-Hant",
+        "lang": "zh-Hant",
+        "size": {
+          "w": 412,
+          "h": 915,
+          "top": 24,
+          "bottom": 24
+        },
+        "targets": [
+          {
+            "x": 260,
+            "y": 32,
+            "w": 136,
+            "h": 48,
+            "text": "◎繁體中文"
+          },
+          {
+            "x": 32,
+            "y": 723.8125,
+            "w": 348,
+            "h": 48,
+            "text": "開始遊戲"
+          },
+          {
+            "x": 58.09375,
+            "y": 783.8125,
+            "w": 295.796875,
+            "h": 48,
+            "text": "離開遊戲"
+          }
+        ],
+        "font": [
+          "loaded",
+          "loaded"
+        ],
+        "noHorizontalScroll": true,
+        "title": {
+          "x": 16,
+          "y": 175.390625,
+          "w": 380,
+          "h": 59.359375,
+          "text": "元素守衛"
+        },
+        "credit": {
+          "x": 142.546875,
+          "y": 853.8125,
+          "w": 126.890625,
+          "h": 19.1875,
+          "text": "單機原型 · AI 協作製作"
+        }
+      }
+    },
+    {
+      "id": "phone-412-en",
+      "status": "PASS",
+      "detail": {
+        "locale": "en",
+        "lang": "en",
+        "size": {
+          "w": 412,
+          "h": 915,
+          "top": 24,
+          "bottom": 24
+        },
+        "targets": [
+          {
+            "x": 260,
+            "y": 32,
+            "w": 136,
+            "h": 48,
+            "text": "◎English"
+          },
+          {
+            "x": 32,
+            "y": 723.8125,
+            "w": 348,
+            "h": 48,
+            "text": "Start game"
+          },
+          {
+            "x": 58.09375,
+            "y": 783.8125,
+            "w": 295.796875,
+            "h": 48,
+            "text": "Exit game"
+          }
+        ],
+        "font": [
+          "loaded",
+          "loaded"
+        ],
+        "noHorizontalScroll": true,
+        "title": {
+          "x": 16,
+          "y": 175.390625,
+          "w": 380,
+          "h": 59.359375,
+          "text": "Element Guardians"
+        },
+        "credit": {
+          "x": 65.671875,
+          "y": 853.8125,
+          "w": 280.640625,
+          "h": 19.1875,
+          "text": "Single-player prototype · Made with AI assistance"
+        }
+      }
+    },
+    {
+      "id": "phone-412-ko",
+      "status": "PASS",
+      "detail": {
+        "locale": "ko",
+        "lang": "ko",
+        "size": {
+          "w": 412,
+          "h": 915,
+          "top": 24,
+          "bottom": 24
+        },
+        "targets": [
+          {
+            "x": 260,
+            "y": 32,
+            "w": 136,
+            "h": 48,
+            "text": "◎한국어"
+          },
+          {
+            "x": 32,
+            "y": 723.8125,
+            "w": 348,
+            "h": 48,
+            "text": "게임 시작"
+          },
+          {
+            "x": 58.09375,
+            "y": 783.8125,
+            "w": 295.796875,
+            "h": 48,
+            "text": "게임 종료"
+          }
+        ],
+        "font": [
+          "loaded",
+          "loaded"
+        ],
+        "noHorizontalScroll": true,
+        "title": {
+          "x": 16,
+          "y": 175.390625,
+          "w": 380,
+          "h": 59.359375,
+          "text": "엘리먼트 가디언즈"
+        },
+        "credit": {
+          "x": 109.25,
+          "y": 853.8125,
+          "w": 193.5,
+          "h": 19.1875,
+          "text": "싱글 플레이 프로토타입 · AI 제작 지원"
+        }
+      }
+    },
+    {
+      "id": "phone-412-ja",
+      "status": "PASS",
+      "detail": {
+        "locale": "ja",
+        "lang": "ja",
+        "size": {
+          "w": 412,
+          "h": 915,
+          "top": 24,
+          "bottom": 24
+        },
+        "targets": [
+          {
+            "x": 260,
+            "y": 32,
+            "w": 136,
+            "h": 48,
+            "text": "◎日本語"
+          },
+          {
+            "x": 32,
+            "y": 723.8125,
+            "w": 348,
+            "h": 48,
+            "text": "ゲーム開始"
+          },
+          {
+            "x": 58.09375,
+            "y": 783.8125,
+            "w": 295.796875,
+            "h": 48,
+            "text": "ゲーム終了"
+          }
+        ],
+        "font": [
+          "loaded",
+          "loaded"
+        ],
+        "noHorizontalScroll": true,
+        "title": {
+          "x": 16,
+          "y": 175.390625,
+          "w": 380,
+          "h": 105.71875,
+          "text": "エレメント\nガーディアンズ"
+        },
+        "credit": {
+          "x": 107.890625,
+          "y": 853.8125,
+          "w": 196.203125,
+          "h": 19.1875,
+          "text": "シングルプレイ試作版 · AI制作支援"
+        }
+      }
+    },
+    {
+      "id": "phone-412-ru",
+      "status": "PASS",
+      "detail": {
+        "locale": "ru",
+        "lang": "ru",
+        "size": {
+          "w": 412,
+          "h": 915,
+          "top": 24,
+          "bottom": 24
+        },
+        "targets": [
+          {
+            "x": 260,
+            "y": 32,
+            "w": 136,
+            "h": 48,
+            "text": "◎Русский"
+          },
+          {
+            "x": 32,
+            "y": 723.8125,
+            "w": 348,
+            "h": 48,
+            "text": "Начать игру"
+          },
+          {
+            "x": 58.09375,
+            "y": 783.8125,
+            "w": 295.796875,
+            "h": 48,
+            "text": "Выйти из игры"
+          }
+        ],
+        "font": [
+          "loaded",
+          "loaded"
+        ],
+        "noHorizontalScroll": true,
+        "title": {
+          "x": 16,
+          "y": 175.390625,
+          "w": 380,
+          "h": 59.359375,
+          "text": "Стражи стихий"
+        },
+        "credit": {
+          "x": 54.1875,
+          "y": 853.8125,
+          "w": 303.625,
+          "h": 19.1875,
+          "text": "Однопользовательский прототип · С помощью ИИ"
+        }
+      }
+    },
+    {
+      "id": "phone-412-cancel",
+      "status": "PASS",
+      "detail": "Close discards draft selection"
+    },
+    {
+      "id": "phone-412-sheet",
+      "status": "PASS",
+      "detail": {
+        "y": 429,
+        "h": 486,
+        "rows": [
+          {
+            "h": 48,
+            "w": 378,
+            "text": "简体中文"
+          },
+          {
+            "h": 48,
+            "w": 378,
+            "text": "繁體中文"
+          },
+          {
+            "h": 48,
+            "w": 378,
+            "text": "English"
+          },
+          {
+            "h": 48,
+            "w": 378,
+            "text": "한국어"
+          },
+          {
+            "h": 48,
+            "w": 378,
+            "text": "日本語"
+          },
+          {
+            "h": 48,
+            "w": 378,
+            "text": "Русский✓"
+          }
+        ]
+      }
+    },
+    {
+      "id": "phone-412-battle-controls",
+      "status": "PASS",
+      "detail": {
+        "buttons": [
+          {
+            "w": 116.25,
+            "h": 52,
+            "overflow": false
+          },
+          {
+            "w": 116.25,
+            "h": 52,
+            "overflow": false
+          },
+          {
+            "w": 139.5,
+            "h": 52,
+            "overflow": false
+          }
+        ],
+        "scroll": 412,
+        "view": 412
+      }
+    },
+    {
+      "id": "phone-412-battle-zh-Hans",
+      "status": "FAIL",
+      "detail": {
+        "bottom": 915,
+        "text": "召唤 −20\n取消选择\n开始第 1 波\n\n请先选择空格",
+        "buttons": [
+          {
+            "w": 114,
+            "h": 50,
+            "sw": 114,
+            "sh": 50
+          },
+          {
+            "w": 114,
+            "h": 50,
+            "sw": 114,
+            "sh": 50
+          },
+          {
+            "w": 138,
+            "h": 50,
+            "sw": 138,
+            "sh": 50
+          }
+        ]
+      }
+    },
+    {
+      "id": "phone-412-battle-zh-Hant",
+      "status": "FAIL",
+      "detail": {
+        "bottom": 915,
+        "text": "召喚 −20\n取消選擇\n開始第 1 波\n\n請先選擇空格",
+        "buttons": [
+          {
+            "w": 114,
+            "h": 50,
+            "sw": 114,
+            "sh": 50
+          },
+          {
+            "w": 114,
+            "h": 50,
+            "sw": 114,
+            "sh": 50
+          },
+          {
+            "w": 138,
+            "h": 50,
+            "sw": 138,
+            "sh": 50
+          }
+        ]
+      }
+    },
+    {
+      "id": "phone-412-battle-en",
+      "status": "FAIL",
+      "detail": {
+        "bottom": 915,
+        "text": "Summon −20\nDeselect\nStart wave 1\n\nSelect an empty slot first",
+        "buttons": [
+          {
+            "w": 114,
+            "h": 50,
+            "sw": 114,
+            "sh": 50
+          },
+          {
+            "w": 114,
+            "h": 50,
+            "sw": 114,
+            "sh": 50
+          },
+          {
+            "w": 138,
+            "h": 50,
+            "sw": 138,
+            "sh": 50
+          }
+        ]
+      }
+    },
+    {
+      "id": "phone-412-battle-ko",
+      "status": "FAIL",
+      "detail": {
+        "bottom": 915,
+        "text": "소환 −20\n선택 취소\n1 웨이브 시작\n\n먼저 빈 칸을 선택하세요",
+        "buttons": [
+          {
+            "w": 114,
+            "h": 50,
+            "sw": 114,
+            "sh": 50
+          },
+          {
+            "w": 114,
+            "h": 50,
+            "sw": 114,
+            "sh": 50
+          },
+          {
+            "w": 138,
+            "h": 50,
+            "sw": 138,
+            "sh": 50
+          }
+        ]
+      }
+    },
+    {
+      "id": "phone-412-battle-ja",
+      "status": "FAIL",
+      "detail": {
+        "bottom": 915,
+        "text": "召喚 −20\n選択解除\n第1ウェーブ開始\n\n先に空きマスを選択してください",
+        "buttons": [
+          {
+            "w": 114,
+            "h": 50,
+            "sw": 114,
+            "sh": 50
+          },
+          {
+            "w": 114,
+            "h": 50,
+            "sw": 114,
+            "sh": 50
+          },
+          {
+            "w": 138,
+            "h": 50,
+            "sw": 138,
+            "sh": 50
+          }
+        ]
+      }
+    },
+    {
+      "id": "phone-412-battle-ru",
+      "status": "FAIL",
+      "detail": {
+        "bottom": 915,
+        "text": "Призыв −20\nСнять выбор\nНачать волну 1\n\nСначала выберите пустую ячейку",
+        "buttons": [
+          {
+            "w": 114,
+            "h": 50,
+            "sw": 114,
+            "sh": 50
+          },
+          {
+            "w": 114,
+            "h": 50,
+            "sw": 114,
+            "sh": 50
+          },
+          {
+            "w": 138,
+            "h": 50,
+            "sw": 138,
+            "sh": 50
+          }
+        ]
+      }
+    },
+    {
+      "id": "language-persistence",
+      "status": "PASS",
+      "detail": "Applied language survives reload"
+    }
+  ]
+}

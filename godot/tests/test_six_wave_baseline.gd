@@ -23,7 +23,7 @@ func _initialize() -> void:
 			print("BASELINE WAVE %d spawned=%d kills=%d leaks=%d unprocessed=%d hp=%d gold=%d reward=%d elapsed=%.2f" % [
 				row["wave"], row["spawned"], row["kills"], row["leaks"],
 				int(row["spawned"]) - int(row["kills"]) - int(row["leaks"]),
-				core.base_hp, core.gold, row["wave_clear_reward"], core.wave_elapsed if core.finished else float(row["duration_s"])])
+				row["hp_end"], row["gold_end"], row["wave_clear_reward"], row["duration_s"]])
 			if not core.finished:
 				core.start_wave()
 	var count := 0

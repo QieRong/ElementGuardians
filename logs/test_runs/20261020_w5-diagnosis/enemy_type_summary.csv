@@ -1,0 +1,10 @@
+wave,enemy_type,count,kills,leaks,cleanup,nominal_damage,effective_damage,remaining_hp
+1,grunt,6,6,0,0,208.0,192.0,0.0
+2,grunt,7,7,0,0,242.0,224.0,0.0
+2,swift,2,2,0,0,56.0,44.0,0.0
+3,grunt,6,6,0,0,206.0,192.0,0.0
+3,swift,4,4,0,0,104.0,88.0,0.0
+4,armor,4,0,4,0,255.0,255.0,125.0
+4,grunt,6,6,0,0,199.0,192.0,0.0
+5,armor,4,2,1,1,287.0,275.0,105.0
+5,swift,8,8,0,0,207.0,176.0,0.0

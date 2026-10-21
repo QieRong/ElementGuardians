@@ -1,0 +1,101 @@
+[
+  {
+    "wave": 1,
+    "enemy_type": "grunt",
+    "count": 6,
+    "kills": 6,
+    "leaks": 0,
+    "cleanup": 0,
+    "nominal_damage": 208.0,
+    "effective_damage": 192.0,
+    "remaining_hp": 0.0
+  },
+  {
+    "wave": 2,
+    "enemy_type": "grunt",
+    "count": 7,
+    "kills": 7,
+    "leaks": 0,
+    "cleanup": 0,
+    "nominal_damage": 242.0,
+    "effective_damage": 224.0,
+    "remaining_hp": 0.0
+  },
+  {
+    "wave": 2,
+    "enemy_type": "swift",
+    "count": 2,
+    "kills": 2,
+    "leaks": 0,
+    "cleanup": 0,
+    "nominal_damage": 56.0,
+    "effective_damage": 44.0,
+    "remaining_hp": 0.0
+  },
+  {
+    "wave": 3,
+    "enemy_type": "grunt",
+    "count": 6,
+    "kills": 6,
+    "leaks": 0,
+    "cleanup": 0,
+    "nominal_damage": 206.0,
+    "effective_damage": 192.0,
+    "remaining_hp": 0.0
+  },
+  {
+    "wave": 3,
+    "enemy_type": "swift",
+    "count": 4,
+    "kills": 4,
+    "leaks": 0,
+    "cleanup": 0,
+    "nominal_damage": 104.0,
+    "effective_damage": 88.0,
+    "remaining_hp": 0.0
+  },
+  {
+    "wave": 4,
+    "enemy_type": "armor",
+    "count": 4,
+    "kills": 0,
+    "leaks": 4,
+    "cleanup": 0,
+    "nominal_damage": 255.0,
+    "effective_damage": 255.0,
+    "remaining_hp": 125.0
+  },
+  {
+    "wave": 4,
+    "enemy_type": "grunt",
+    "count": 6,
+    "kills": 6,
+    "leaks": 0,
+    "cleanup": 0,
+    "nominal_damage": 199.0,
+    "effective_damage": 192.0,
+    "remaining_hp": 0.0
+  },
+  {
+    "wave": 5,
+    "enemy_type": "armor",
+    "count": 4,
+    "kills": 2,
+    "leaks": 1,
+    "cleanup": 1,
+    "nominal_damage": 287.0,
+    "effective_damage": 275.0,
+    "remaining_hp": 105.0
+  },
+  {
+    "wave": 5,
+    "enemy_type": "swift",
+    "count": 8,
+    "kills": 8,
+    "leaks": 0,
+    "cleanup": 0,
+    "nominal_damage": 207.0,
+    "effective_damage": 176.0,
+    "remaining_hp": 0.0
+  }
+]

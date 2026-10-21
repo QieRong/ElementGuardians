@@ -1,0 +1,4648 @@
+{
+	"runs": [
+		{
+			"combat_log": [
+				"   0.00 | PREP wave=1 gold=60 hp=10 towers=3 seed=20261018",
+				"   0.00 | COMBAT wave=1 start gold=60 hp=10 enemies=6",
+				"  10.45 | KILL 普通敌人 gold=5 total_gold=65",
+				"  11.70 | KILL 普通敌人 gold=5 total_gold=70",
+				"  13.70 | KILL 普通敌人 gold=5 total_gold=75",
+				"  15.70 | KILL 普通敌人 gold=5 total_gold=80",
+				"  17.70 | KILL 普通敌人 gold=5 total_gold=85",
+				"  19.70 | KILL 普通敌人 gold=5 total_gold=90",
+				"  19.70 | WAVE CLEAR wave=1 reward=20 gold=110 hp=10",
+				"  19.70 | COMBAT wave=2 start gold=110 hp=10 enemies=9",
+				"  29.05 | KILL 迅捷敌人 gold=6 total_gold=116",
+				"  31.05 | KILL 迅捷敌人 gold=6 total_gold=122",
+				"  33.05 | KILL 普通敌人 gold=5 total_gold=127",
+				"  42.10 | KILL 普通敌人 gold=5 total_gold=132",
+				"  43.05 | KILL 普通敌人 gold=5 total_gold=137",
+				"  44.20 | KILL 普通敌人 gold=5 total_gold=142",
+				"  45.40 | KILL 普通敌人 gold=5 total_gold=147",
+				"  46.60 | KILL 普通敌人 gold=5 total_gold=152",
+				"  47.80 | KILL 普通敌人 gold=5 total_gold=157",
+				"  47.80 | WAVE CLEAR wave=2 reward=20 gold=177 hp=10",
+				"  47.80 | COMBAT wave=3 start gold=177 hp=10 enemies=10",
+				"  56.15 | KILL 迅捷敌人 gold=6 total_gold=183",
+				"  58.10 | KILL 迅捷敌人 gold=6 total_gold=189",
+				"  59.15 | KILL 迅捷敌人 gold=6 total_gold=195",
+				"  60.50 | KILL 迅捷敌人 gold=6 total_gold=201",
+				"  69.70 | KILL 普通敌人 gold=5 total_gold=206",
+				"  70.50 | KILL 普通敌人 gold=5 total_gold=211",
+				"  72.30 | KILL 普通敌人 gold=5 total_gold=216",
+				"  73.70 | KILL 普通敌人 gold=5 total_gold=221",
+				"  74.50 | KILL 普通敌人 gold=5 total_gold=226",
+				"  75.30 | KILL 普通敌人 gold=5 total_gold=231",
+				"  75.30 | WAVE CLEAR wave=3 reward=20 gold=251 hp=10",
+				"  75.30 | COMBAT wave=4 start gold=251 hp=10 enemies=10",
+				"  87.70 | KILL 普通敌人 gold=5 total_gold=256",
+				"  88.95 | KILL 普通敌人 gold=5 total_gold=261",
+				"  90.95 | KILL 普通敌人 gold=5 total_gold=266",
+				"  92.95 | KILL 普通敌人 gold=5 total_gold=271",
+				" 103.55 | KILL 普通敌人 gold=5 total_gold=276",
+				" 105.95 | KILL 普通敌人 gold=5 total_gold=281",
+				" 114.70 | LEAK 重甲敌人 dmg=2 hp=8",
+				" 114.85 | LEAK 重甲敌人 dmg=2 hp=6",
+				" 116.70 | LEAK 重甲敌人 dmg=2 hp=4",
+				" 118.00 | LEAK 重甲敌人 dmg=2 hp=2",
+				" 118.00 | WAVE CLEAR wave=4 reward=20 gold=301 hp=2",
+				" 118.00 | COMBAT wave=5 start gold=301 hp=2 enemies=12",
+				" 124.40 | KILL 迅捷敌人 gold=6 total_gold=307",
+				" 126.25 | KILL 迅捷敌人 gold=6 total_gold=313",
+				" 127.40 | KILL 迅捷敌人 gold=6 total_gold=319",
+				" 128.65 | KILL 迅捷敌人 gold=6 total_gold=325",
+				" 134.70 | KILL 迅捷敌人 gold=6 total_gold=331",
+				" 135.90 | KILL 迅捷敌人 gold=6 total_gold=337",
+				" 136.05 | KILL 迅捷敌人 gold=6 total_gold=343",
+				" 136.85 | KILL 迅捷敌人 gold=6 total_gold=349",
+				" 139.00 | KILL 重甲敌人 gold=8 total_gold=357",
+				" 155.00 | KILL 重甲敌人 gold=8 total_gold=365",
+				" 161.55 | LEAK 重甲敌人 dmg=2 hp=0",
+				" 161.55 | RESULT victory=false wave=5 gold=365 hp=0 time=161.6"
+			],
+			"dt": 0.05,
+			"enemies": [
+				{
+					"damage": {
+						"fire@2": 24.0,
+						"ice@4": 8.0
+					},
+					"effective_damage": {
+						"fire@2": 24.0,
+						"ice@4": 8.0
+					},
+					"end_s": 10.45,
+					"first_hit_s": 8.74999999999999,
+					"hits": {
+						"fire@2": 2,
+						"ice@4": 1
+					},
+					"hp_initial": 32.0,
+					"hp_remaining": 0.0,
+					"id": 1,
+					"last_hit_progress": 940.5,
+					"last_hit_s": 10.45,
+					"outcome": "kill",
+					"spawn_s": 0.05,
+					"type": "grunt",
+					"wave": 1
+				},
+				{
+					"damage": {
+						"fire@2": 24.0,
+						"ice@4": 8.0
+					},
+					"effective_damage": {
+						"fire@2": 24.0,
+						"ice@4": 8.0
+					},
+					"end_s": 11.7,
+					"first_hit_s": 10.7,
+					"hits": {
+						"fire@2": 2,
+						"ice@4": 1
+					},
+					"hp_initial": 32.0,
+					"hp_remaining": 0.0,
+					"id": 2,
+					"last_hit_progress": 947.7,
+					"last_hit_s": 11.7,
+					"outcome": "kill",
+					"spawn_s": 1.2,
+					"type": "grunt",
+					"wave": 1
+				},
+				{
+					"damage": {
+						"fire@2": 24.0,
+						"ice@4": 8.0
+					},
+					"effective_damage": {
+						"fire@2": 24.0,
+						"ice@4": 8.0
+					},
+					"end_s": 13.7000000000001,
+					"first_hit_s": 12.7,
+					"hits": {
+						"fire@2": 2,
+						"ice@4": 1
+					},
+					"hp_initial": 32.0,
+					"hp_remaining": 0.0,
+					"id": 3,
+					"last_hit_progress": 1005.3,
+					"last_hit_s": 13.7000000000001,
+					"outcome": "kill",
+					"spawn_s": 2.4,
+					"type": "grunt",
+					"wave": 1
+				},
+				{
+					"damage": {
+						"fire@2": 24.0,
+						"ice@4": 16.0
+					},
+					"effective_damage": {
+						"fire@2": 16.0,
+						"ice@4": 16.0
+					},
+					"end_s": 15.7000000000001,
+					"first_hit_s": 14.0000000000001,
+					"hits": {
+						"fire@2": 2,
+						"ice@4": 2
+					},
+					"hp_initial": 32.0,
+					"hp_remaining": 0.0,
+					"id": 4,
+					"last_hit_progress": 1062.9,
+					"last_hit_s": 15.7000000000001,
+					"outcome": "kill",
+					"spawn_s": 3.6,
+					"type": "grunt",
+					"wave": 1
+				},
+				{
+					"damage": {
+						"fire@2": 24.0,
+						"ice@4": 16.0
+					},
+					"effective_damage": {
+						"fire@2": 16.0,
+						"ice@4": 16.0
+					},
+					"end_s": 17.7000000000001,
+					"first_hit_s": 16.4000000000001,
+					"hits": {
+						"fire@2": 2,
+						"ice@4": 2
+					},
+					"hp_initial": 32.0,
+					"hp_remaining": 0.0,
+					"id": 5,
+					"last_hit_progress": 1142.1,
+					"last_hit_s": 17.7000000000001,
+					"outcome": "kill",
+					"spawn_s": 4.79999999999999,
+					"type": "grunt",
+					"wave": 1
+				},
+				{
+					"damage": {
+						"fire@2": 24.0,
+						"ice@4": 8.0
+					},
+					"effective_damage": {
+						"fire@2": 24.0,
+						"ice@4": 8.0
+					},
+					"end_s": 19.7000000000001,
+					"first_hit_s": 18.7000000000001,
+					"hits": {
+						"fire@2": 2,
+						"ice@4": 1
+					},
+					"hp_initial": 32.0,
+					"hp_remaining": 0.0,
+					"id": 6,
+					"last_hit_progress": 1221.3,
+					"last_hit_s": 19.7000000000001,
+					"outcome": "kill",
+					"spawn_s": 5.99999999999999,
+					"type": "grunt",
+					"wave": 1
+				},
+				{
+					"damage": {
+						"fire@2": 24.0,
+						"ice@4": 16.0
+					},
+					"effective_damage": {
+						"fire@2": 16.0,
+						"ice@4": 16.0
+					},
+					"end_s": 13.3500000000001,
+					"first_hit_s": 11.45,
+					"hits": {
+						"fire@2": 2,
+						"ice@4": 2
+					},
+					"hp_initial": 32.0,
+					"hp_remaining": 0.0,
+					"id": 7,
+					"last_hit_progress": 1167.3,
+					"last_hit_s": 13.3500000000001,
+					"outcome": "kill",
+					"spawn_s": 0.05,
+					"type": "grunt",
+					"wave": 2
+				},
+				{
+					"damage": {
+						"fire@2": 12.0,
+						"ice@4": 16.0,
+						"lightning@8": 6.0
+					},
+					"effective_damage": {
+						"fire@2": 12.0,
+						"ice@4": 16.0,
+						"lightning@8": 4.0
+					},
+					"end_s": 22.4000000000002,
+					"first_hit_s": 13.8500000000001,
+					"hits": {
+						"fire@2": 1,
+						"ice@4": 2,
+						"lightning@8": 1
+					},
+					"hp_initial": 32.0,
+					"hp_remaining": 0.0,
+					"id": 8,
+					"last_hit_progress": 1899.9,
+					"last_hit_s": 22.4000000000002,
+					"outcome": "kill",
+					"spawn_s": 1.0,
+					"type": "grunt",
+					"wave": 2
+				},
+				{
+					"damage": {
+						"fire@2": 12.0,
+						"ice@4": 16.0,
+						"lightning@8": 6.0
+					},
+					"effective_damage": {
+						"fire@2": 12.0,
+						"ice@4": 16.0,
+						"lightning@8": 4.0
+					},
+					"end_s": 23.3500000000002,
+					"first_hit_s": 15.0500000000001,
+					"hits": {
+						"fire@2": 1,
+						"ice@4": 2,
+						"lightning@8": 1
+					},
+					"hp_initial": 32.0,
+					"hp_remaining": 0.0,
+					"id": 9,
+					"last_hit_progress": 1899.0,
+					"last_hit_s": 23.3500000000002,
+					"outcome": "kill",
+					"spawn_s": 2.0,
+					"type": "grunt",
+					"wave": 2
+				},
+				{
+					"damage": {
+						"fire@2": 12.0,
+						"ice@4": 16.0,
+						"lightning@8": 6.0
+					},
+					"effective_damage": {
+						"fire@2": 12.0,
+						"ice@4": 14.0,
+						"lightning@8": 6.0
+					},
+					"end_s": 24.5000000000002,
+					"first_hit_s": 16.2500000000001,
+					"hits": {
+						"fire@2": 1,
+						"ice@4": 2,
+						"lightning@8": 1
+					},
+					"hp_initial": 32.0,
+					"hp_remaining": 0.0,
+					"id": 10,
+					"last_hit_progress": 1913.4,
+					"last_hit_s": 24.5000000000002,
+					"outcome": "kill",
+					"spawn_s": 3.0,
+					"type": "grunt",
+					"wave": 2
+				},
+				{
+					"damage": {
+						"fire@2": 24.0
+					},
+					"effective_damage": {
+						"fire@2": 22.0
+					},
+					"end_s": 9.35,
+					"first_hit_s": 8.39999999999998,
+					"hits": {
+						"fire@2": 2
+					},
+					"hp_initial": 22.0,
+					"hp_remaining": 0.0,
+					"id": 11,
+					"last_hit_progress": 928.0,
+					"last_hit_s": 9.35,
+					"outcome": "kill",
+					"spawn_s": 3.0,
+					"type": "swift",
+					"wave": 2
+				},
+				{
+					"damage": {
+						"fire@2": 24.0,
+						"ice@4": 8.0
+					},
+					"effective_damage": {
+						"fire@2": 14.0,
+						"ice@4": 8.0
+					},
+					"end_s": 11.35,
+					"first_hit_s": 10.3,
+					"hits": {
+						"fire@2": 2,
+						"ice@4": 1
+					},
+					"hp_initial": 22.0,
+					"hp_remaining": 0.0,
+					"id": 12,
+					"last_hit_progress": 1064.3,
+					"last_hit_s": 11.35,
+					"outcome": "kill",
+					"spawn_s": 3.84999999999999,
+					"type": "swift",
+					"wave": 2
+				},
+				{
+					"damage": {
+						"fire@2": 12.0,
+						"ice@4": 16.0,
+						"lightning@8": 6.0
+					},
+					"effective_damage": {
+						"fire@2": 12.0,
+						"ice@4": 14.0,
+						"lightning@8": 6.0
+					},
+					"end_s": 25.7000000000002,
+					"first_hit_s": 17.3500000000001,
+					"hits": {
+						"fire@2": 1,
+						"ice@4": 2,
+						"lightning@8": 1
+					},
+					"hp_initial": 32.0,
+					"hp_remaining": 0.0,
+					"id": 13,
+					"last_hit_progress": 1931.4,
+					"last_hit_s": 25.7000000000002,
+					"outcome": "kill",
+					"spawn_s": 3.99999999999999,
+					"type": "grunt",
+					"wave": 2
+				},
+				{
+					"damage": {
+						"fire@2": 12.0,
+						"ice@4": 16.0,
+						"lightning@8": 6.0
+					},
+					"effective_damage": {
+						"fire@2": 12.0,
+						"ice@4": 14.0,
+						"lightning@8": 6.0
+					},
+					"end_s": 26.9000000000002,
+					"first_hit_s": 18.3500000000001,
+					"hits": {
+						"fire@2": 1,
+						"ice@4": 2,
+						"lightning@8": 1
+					},
+					"hp_initial": 32.0,
+					"hp_remaining": 0.0,
+					"id": 14,
+					"last_hit_progress": 1949.4,
+					"last_hit_s": 26.9000000000002,
+					"outcome": "kill",
+					"spawn_s": 4.99999999999999,
+					"type": "grunt",
+					"wave": 2
+				},
+				{
+					"damage": {
+						"fire@2": 12.0,
+						"ice@4": 8.0,
+						"lightning@8": 12.0
+					},
+					"effective_damage": {
+						"fire@2": 12.0,
+						"ice@4": 8.0,
+						"lightning@8": 12.0
+					},
+					"end_s": 28.1000000000003,
+					"first_hit_s": 19.3500000000001,
+					"hits": {
+						"fire@2": 1,
+						"ice@4": 1,
+						"lightning@8": 2
+					},
+					"hp_initial": 32.0,
+					"hp_remaining": 0.0,
+					"id": 15,
+					"last_hit_progress": 1993.5,
+					"last_hit_s": 28.1000000000003,
+					"outcome": "kill",
+					"spawn_s": 5.99999999999999,
+					"type": "grunt",
+					"wave": 2
+				},
+				{
+					"damage": {
+						"fire@2": 12.0,
+						"ice@4": 8.0,
+						"lightning@8": 12.0
+					},
+					"effective_damage": {
+						"fire@2": 12.0,
+						"ice@4": 8.0,
+						"lightning@8": 12.0
+					},
+					"end_s": 21.9000000000002,
+					"first_hit_s": 13.3500000000001,
+					"hits": {
+						"fire@2": 1,
+						"ice@4": 1,
+						"lightning@8": 2
+					},
+					"hp_initial": 32.0,
+					"hp_remaining": 0.0,
+					"id": 16,
+					"last_hit_progress": 1953.9,
+					"last_hit_s": 21.9000000000002,
+					"outcome": "kill",
+					"spawn_s": 0.05,
+					"type": "grunt",
+					"wave": 3
+				},
+				{
+					"damage": {
+						"fire@2": 12.0,
+						"ice@4": 16.0,
+						"lightning@8": 6.0
+					},
+					"effective_damage": {
+						"fire@2": 12.0,
+						"ice@4": 16.0,
+						"lightning@8": 4.0
+					},
+					"end_s": 22.7000000000002,
+					"first_hit_s": 13.9000000000001,
+					"hits": {
+						"fire@2": 1,
+						"ice@4": 2,
+						"lightning@8": 1
+					},
+					"hp_initial": 32.0,
+					"hp_remaining": 0.0,
+					"id": 17,
+					"last_hit_progress": 1934.1,
+					"last_hit_s": 22.7000000000002,
+					"outcome": "kill",
+					"spawn_s": 0.85,
+					"type": "grunt",
+					"wave": 3
+				},
+				{
+					"damage": {
+						"ice@4": 24.0,
+						"lightning@8": 12.0
+					},
+					"effective_damage": {
+						"ice@4": 20.0,
+						"lightning@8": 12.0
+					},
+					"end_s": 24.5000000000002,
+					"first_hit_s": 15.1000000000001,
+					"hits": {
+						"ice@4": 3,
+						"lightning@8": 2
+					},
+					"hp_initial": 32.0,
+					"hp_remaining": 0.0,
+					"id": 18,
+					"last_hit_progress": 2008.8,
+					"last_hit_s": 24.5000000000002,
+					"outcome": "kill",
+					"spawn_s": 1.7,
+					"type": "grunt",
+					"wave": 3
+				},
+				{
+					"damage": {
+						"fire@2": 24.0
+					},
+					"effective_damage": {
+						"fire@2": 22.0
+					},
+					"end_s": 8.34999999999998,
+					"first_hit_s": 7.39999999999998,
+					"hits": {
+						"fire@2": 2
+					},
+					"hp_initial": 22.0,
+					"hp_remaining": 0.0,
+					"id": 19,
+					"last_hit_progress": 928.0,
+					"last_hit_s": 8.34999999999998,
+					"outcome": "kill",
+					"spawn_s": 2.0,
+					"type": "swift",
+					"wave": 3
+				},
+				{
+					"damage": {
+						"fire@2": 12.0,
+						"ice@4": 8.0,
+						"lightning@8": 12.0,
+						"lightning@8-chain": 3.0
+					},
+					"effective_damage": {
+						"fire@2": 12.0,
+						"ice@4": 8.0,
+						"lightning@8": 9.0,
+						"lightning@8-chain": 3.0
+					},
+					"end_s": 25.9000000000002,
+					"first_hit_s": 15.3500000000001,
+					"hits": {
+						"fire@2": 1,
+						"ice@4": 1,
+						"lightning@8": 2,
+						"lightning@8-chain": 1
+					},
+					"hp_initial": 32.0,
+					"hp_remaining": 0.0,
+					"id": 20,
+					"last_hit_progress": 2102.4,
+					"last_hit_s": 25.9000000000002,
+					"outcome": "kill",
+					"spawn_s": 2.55,
+					"type": "grunt",
+					"wave": 3
+				},
+				{
+					"damage": {
+						"fire@2": 12.0,
+						"ice@4": 16.0
+					},
+					"effective_damage": {
+						"fire@2": 12.0,
+						"ice@4": 10.0
+					},
+					"end_s": 10.3,
+					"first_hit_s": 9.15,
+					"hits": {
+						"fire@2": 1,
+						"ice@4": 2
+					},
+					"hp_initial": 22.0,
+					"hp_remaining": 0.0,
+					"id": 21,
+					"last_hit_progress": 1075.9,
+					"last_hit_s": 10.3,
+					"outcome": "kill",
+					"spawn_s": 2.7,
+					"type": "swift",
+					"wave": 3
+				},
+				{
+					"damage": {
+						"fire@2": 12.0,
+						"ice@4": 8.0,
+						"lightning@8": 6.0,
+						"lightning@8-chain": 6.0
+					},
+					"effective_damage": {
+						"fire@2": 12.0,
+						"ice@4": 8.0,
+						"lightning@8": 6.0,
+						"lightning@8-chain": 6.0
+					},
+					"end_s": 26.7000000000002,
+					"first_hit_s": 16.3000000000001,
+					"hits": {
+						"fire@2": 1,
+						"ice@4": 1,
+						"lightning@8": 1,
+						"lightning@8-chain": 2
+					},
+					"hp_initial": 32.0,
+					"hp_remaining": 0.0,
+					"id": 22,
+					"last_hit_progress": 2075.4,
+					"last_hit_s": 26.7000000000002,
+					"outcome": "kill",
+					"spawn_s": 3.4,
+					"type": "grunt",
+					"wave": 3
+				},
+				{
+					"damage": {
+						"fire@2": 24.0
+					},
+					"effective_damage": {
+						"fire@2": 22.0
+					},
+					"end_s": 11.35,
+					"first_hit_s": 10.35,
+					"hits": {
+						"fire@2": 2
+					},
+					"hp_initial": 22.0,
+					"hp_remaining": 0.0,
+					"id": 23,
+					"last_hit_progress": 1160.0,
+					"last_hit_s": 11.35,
+					"outcome": "kill",
+					"spawn_s": 3.4,
+					"type": "swift",
+					"wave": 3
+				},
+				{
+					"damage": {
+						"fire@2": 12.0,
+						"ice@4": 16.0
+					},
+					"effective_damage": {
+						"fire@2": 12.0,
+						"ice@4": 10.0
+					},
+					"end_s": 12.7,
+					"first_hit_s": 11.5,
+					"hits": {
+						"fire@2": 1,
+						"ice@4": 2
+					},
+					"hp_initial": 22.0,
+					"hp_remaining": 0.0,
+					"id": 24,
+					"last_hit_progress": 1219.45,
+					"last_hit_s": 12.7,
+					"outcome": "kill",
+					"spawn_s": 4.09999999999999,
+					"type": "swift",
+					"wave": 3
+				},
+				{
+					"damage": {
+						"fire@2": 12.0,
+						"ice@4": 16.0,
+						"lightning@8": 6.0,
+						"lightning@8-chain": 3.0
+					},
+					"effective_damage": {
+						"fire@2": 12.0,
+						"ice@4": 16.0,
+						"lightning@8": 1.0,
+						"lightning@8-chain": 3.0
+					},
+					"end_s": 27.5000000000003,
+					"first_hit_s": 17.3500000000001,
+					"hits": {
+						"fire@2": 1,
+						"ice@4": 2,
+						"lightning@8": 1,
+						"lightning@8-chain": 1
+					},
+					"hp_initial": 32.0,
+					"hp_remaining": 0.0,
+					"id": 25,
+					"last_hit_progress": 2060.1,
+					"last_hit_s": 27.5000000000003,
+					"outcome": "kill",
+					"spawn_s": 4.24999999999999,
+					"type": "grunt",
+					"wave": 3
+				},
+				{
+					"damage": {
+						"fire@2": 12.0,
+						"ice@4": 40.0,
+						"lightning@8": 36.0,
+						"lightning@8-chain": 6.0
+					},
+					"effective_damage": {
+						"fire@2": 12.0,
+						"ice@4": 40.0,
+						"lightning@8": 36.0,
+						"lightning@8-chain": 6.0
+					},
+					"end_s": 39.3999999999999,
+					"first_hit_s": 15.9500000000001,
+					"hits": {
+						"fire@2": 1,
+						"ice@4": 5,
+						"lightning@8": 6,
+						"lightning@8-chain": 2
+					},
+					"hp_initial": 95.0,
+					"hp_remaining": 1.0,
+					"id": 26,
+					"last_hit_progress": 2268.49999999999,
+					"last_hit_s": 36.2500000000001,
+					"outcome": "leak",
+					"spawn_s": 0.05,
+					"type": "armor",
+					"wave": 4
+				},
+				{
+					"damage": {
+						"fire@2": 12.0,
+						"ice@4": 8.0,
+						"lightning@8": 6.0,
+						"lightning@8-chain": 18.0
+					},
+					"effective_damage": {
+						"fire@2": 12.0,
+						"ice@4": 8.0,
+						"lightning@8": 6.0,
+						"lightning@8-chain": 18.0
+					},
+					"end_s": 39.5499999999999,
+					"first_hit_s": 19.6500000000001,
+					"hits": {
+						"fire@2": 1,
+						"ice@4": 1,
+						"lightning@8": 1,
+						"lightning@8-chain": 6
+					},
+					"hp_initial": 95.0,
+					"hp_remaining": 51.0,
+					"id": 27,
+					"last_hit_progress": 2256.15,
+					"last_hit_s": 36.2500000000001,
+					"outcome": "leak",
+					"spawn_s": 1.3,
+					"type": "armor",
+					"wave": 4
+				},
+				{
+					"damage": {
+						"fire@2": 24.0,
+						"ice@4": 8.0
+					},
+					"effective_damage": {
+						"fire@2": 24.0,
+						"ice@4": 8.0
+					},
+					"end_s": 12.4,
+					"first_hit_s": 10.7,
+					"hits": {
+						"fire@2": 2,
+						"ice@4": 1
+					},
+					"hp_initial": 32.0,
+					"hp_remaining": 0.0,
+					"id": 28,
+					"last_hit_progress": 940.5,
+					"last_hit_s": 12.4,
+					"outcome": "kill",
+					"spawn_s": 2.0,
+					"type": "grunt",
+					"wave": 4
+				},
+				{
+					"damage": {
+						"fire@2": 12.0,
+						"ice@4": 24.0,
+						"lightning@8": 18.0
+					},
+					"effective_damage": {
+						"fire@2": 12.0,
+						"ice@4": 24.0,
+						"lightning@8": 18.0
+					},
+					"end_s": 41.3999999999998,
+					"first_hit_s": 20.6500000000002,
+					"hits": {
+						"fire@2": 1,
+						"ice@4": 3,
+						"lightning@8": 3
+					},
+					"hp_initial": 95.0,
+					"hp_remaining": 41.0,
+					"id": 29,
+					"last_hit_progress": 2293.19999999999,
+					"last_hit_s": 38.6499999999999,
+					"outcome": "leak",
+					"spawn_s": 2.6,
+					"type": "armor",
+					"wave": 4
+				},
+				{
+					"damage": {
+						"fire@2": 24.0,
+						"ice@4": 8.0
+					},
+					"effective_damage": {
+						"fire@2": 24.0,
+						"ice@4": 8.0
+					},
+					"end_s": 13.6500000000001,
+					"first_hit_s": 12.65,
+					"hits": {
+						"fire@2": 2,
+						"ice@4": 1
+					},
+					"hp_initial": 32.0,
+					"hp_remaining": 0.0,
+					"id": 30,
+					"last_hit_progress": 970.2,
+					"last_hit_s": 13.6500000000001,
+					"outcome": "kill",
+					"spawn_s": 2.9,
+					"type": "grunt",
+					"wave": 4
+				},
+				{
+					"damage": {
+						"fire@2": 24.0,
+						"ice@4": 8.0
+					},
+					"effective_damage": {
+						"fire@2": 24.0,
+						"ice@4": 8.0
+					},
+					"end_s": 15.6500000000001,
+					"first_hit_s": 14.6500000000001,
+					"hits": {
+						"fire@2": 2,
+						"ice@4": 1
+					},
+					"hp_initial": 32.0,
+					"hp_remaining": 0.0,
+					"id": 31,
+					"last_hit_progress": 1054.8,
+					"last_hit_s": 15.6500000000001,
+					"outcome": "kill",
+					"spawn_s": 3.79999999999999,
+					"type": "grunt",
+					"wave": 4
+				},
+				{
+					"damage": {
+						"fire@2": 24.0,
+						"ice@4": 24.0,
+						"lightning@8": 6.0,
+						"lightning@8-chain": 9.0
+					},
+					"effective_damage": {
+						"fire@2": 24.0,
+						"ice@4": 24.0,
+						"lightning@8": 6.0,
+						"lightning@8-chain": 9.0
+					},
+					"end_s": 42.6999999999997,
+					"first_hit_s": 21.6500000000002,
+					"hits": {
+						"fire@2": 2,
+						"ice@4": 3,
+						"lightning@8": 1,
+						"lightning@8-chain": 3
+					},
+					"hp_initial": 95.0,
+					"hp_remaining": 32.0,
+					"id": 32,
+					"last_hit_progress": 2260.69999999999,
+					"last_hit_s": 39.4499999999999,
+					"outcome": "leak",
+					"spawn_s": 3.89999999999999,
+					"type": "armor",
+					"wave": 4
+				},
+				{
+					"damage": {
+						"fire@2": 24.0,
+						"ice@4": 8.0
+					},
+					"effective_damage": {
+						"fire@2": 24.0,
+						"ice@4": 8.0
+					},
+					"end_s": 17.6500000000001,
+					"first_hit_s": 16.6500000000001,
+					"hits": {
+						"fire@2": 2,
+						"ice@4": 1
+					},
+					"hp_initial": 32.0,
+					"hp_remaining": 0.0,
+					"id": 33,
+					"last_hit_progress": 1161.0,
+					"last_hit_s": 17.6500000000001,
+					"outcome": "kill",
+					"spawn_s": 4.69999999999999,
+					"type": "grunt",
+					"wave": 4
+				},
+				{
+					"damage": {
+						"ice@4": 16.0,
+						"lightning@8": 18.0
+					},
+					"effective_damage": {
+						"ice@4": 16.0,
+						"lightning@8": 16.0
+					},
+					"end_s": 28.2500000000003,
+					"first_hit_s": 26.5000000000002,
+					"hits": {
+						"ice@4": 2,
+						"lightning@8": 3
+					},
+					"hp_initial": 32.0,
+					"hp_remaining": 0.0,
+					"id": 34,
+					"last_hit_progress": 2011.5,
+					"last_hit_s": 28.2500000000003,
+					"outcome": "kill",
+					"spawn_s": 5.59999999999999,
+					"type": "grunt",
+					"wave": 4
+				},
+				{
+					"damage": {
+						"ice@4": 16.0,
+						"lightning@8": 18.0,
+						"lightning@8-chain": 3.0
+					},
+					"effective_damage": {
+						"ice@4": 16.0,
+						"lightning@8": 13.0,
+						"lightning@8-chain": 3.0
+					},
+					"end_s": 30.6500000000003,
+					"first_hit_s": 28.2500000000003,
+					"hits": {
+						"ice@4": 2,
+						"lightning@8": 3,
+						"lightning@8-chain": 1
+					},
+					"hp_initial": 32.0,
+					"hp_remaining": 0.0,
+					"id": 35,
+					"last_hit_progress": 2145.6,
+					"last_hit_s": 30.6500000000003,
+					"outcome": "kill",
+					"spawn_s": 6.49999999999998,
+					"type": "grunt",
+					"wave": 4
+				},
+				{
+					"damage": {
+						"fire@2": 24.0
+					},
+					"effective_damage": {
+						"fire@2": 22.0
+					},
+					"end_s": 6.39999999999999,
+					"first_hit_s": 5.44999999999999,
+					"hits": {
+						"fire@2": 2
+					},
+					"hp_initial": 22.0,
+					"hp_remaining": 0.0,
+					"id": 36,
+					"last_hit_progress": 928.0,
+					"last_hit_s": 6.39999999999999,
+					"outcome": "kill",
+					"spawn_s": 0.05,
+					"type": "swift",
+					"wave": 5
+				},
+				{
+					"damage": {
+						"fire@2": 12.0,
+						"ice@4": 16.0
+					},
+					"effective_damage": {
+						"fire@2": 12.0,
+						"ice@4": 10.0
+					},
+					"end_s": 8.24999999999998,
+					"first_hit_s": 7.09999999999998,
+					"hits": {
+						"fire@2": 1,
+						"ice@4": 2
+					},
+					"hp_initial": 22.0,
+					"hp_remaining": 0.0,
+					"id": 37,
+					"last_hit_progress": 1075.9,
+					"last_hit_s": 8.24999999999998,
+					"outcome": "kill",
+					"spawn_s": 0.65,
+					"type": "swift",
+					"wave": 5
+				},
+				{
+					"damage": {
+						"fire@2": 24.0
+					},
+					"effective_damage": {
+						"fire@2": 22.0
+					},
+					"end_s": 9.4,
+					"first_hit_s": 8.39999999999998,
+					"hits": {
+						"fire@2": 2
+					},
+					"hp_initial": 22.0,
+					"hp_remaining": 0.0,
+					"id": 38,
+					"last_hit_progress": 1181.75,
+					"last_hit_s": 9.4,
+					"outcome": "kill",
+					"spawn_s": 1.3,
+					"type": "swift",
+					"wave": 5
+				},
+				{
+					"damage": {
+						"fire@2": 12.0,
+						"ice@4": 16.0
+					},
+					"effective_damage": {
+						"fire@2": 12.0,
+						"ice@4": 10.0
+					},
+					"end_s": 10.65,
+					"first_hit_s": 9.45,
+					"hits": {
+						"fire@2": 1,
+						"ice@4": 2
+					},
+					"hp_initial": 22.0,
+					"hp_remaining": 0.0,
+					"id": 39,
+					"last_hit_progress": 1233.95,
+					"last_hit_s": 10.65,
+					"outcome": "kill",
+					"spawn_s": 1.95,
+					"type": "swift",
+					"wave": 5
+				},
+				{
+					"damage": {
+						"ice@4": 16.0,
+						"lightning@8": 12.0
+					},
+					"effective_damage": {
+						"ice@4": 10.0,
+						"lightning@8": 12.0
+					},
+					"end_s": 16.7000000000001,
+					"first_hit_s": 15.5500000000001,
+					"hits": {
+						"ice@4": 2,
+						"lightning@8": 2
+					},
+					"hp_initial": 22.0,
+					"hp_remaining": 0.0,
+					"id": 40,
+					"last_hit_progress": 2018.4,
+					"last_hit_s": 16.7000000000001,
+					"outcome": "kill",
+					"spawn_s": 2.6,
+					"type": "swift",
+					"wave": 5
+				},
+				{
+					"damage": {
+						"fire@2": 84.0,
+						"ice@4": 16.0
+					},
+					"effective_damage": {
+						"fire@2": 79.0,
+						"ice@4": 16.0
+					},
+					"end_s": 21.0000000000002,
+					"first_hit_s": 15.0500000000001,
+					"hits": {
+						"fire@2": 7,
+						"ice@4": 2
+					},
+					"hp_initial": 95.0,
+					"hp_remaining": 0.0,
+					"id": 41,
+					"last_hit_progress": 1148.55,
+					"last_hit_s": 21.0000000000002,
+					"outcome": "kill",
+					"spawn_s": 3.0,
+					"type": "armor",
+					"wave": 5
+				},
+				{
+					"damage": {
+						"fire@2": 12.0,
+						"ice@4": 8.0,
+						"lightning@8": 6.0,
+						"lightning@8-chain": 3.0
+					},
+					"effective_damage": {
+						"fire@2": 12.0,
+						"ice@4": 1.0,
+						"lightning@8": 6.0,
+						"lightning@8-chain": 3.0
+					},
+					"end_s": 17.9000000000001,
+					"first_hit_s": 11.4,
+					"hits": {
+						"fire@2": 1,
+						"ice@4": 1,
+						"lightning@8": 1,
+						"lightning@8-chain": 1
+					},
+					"hp_initial": 22.0,
+					"hp_remaining": 0.0,
+					"id": 42,
+					"last_hit_progress": 2131.5,
+					"last_hit_s": 17.9000000000001,
+					"outcome": "kill",
+					"spawn_s": 3.25,
+					"type": "swift",
+					"wave": 5
+				},
+				{
+					"damage": {
+						"ice@4": 8.0,
+						"lightning@8": 12.0,
+						"lightning@8-chain": 3.0
+					},
+					"effective_damage": {
+						"ice@4": 8.0,
+						"lightning@8": 11.0,
+						"lightning@8-chain": 3.0
+					},
+					"end_s": 18.8500000000001,
+					"first_hit_s": 11.85,
+					"hits": {
+						"ice@4": 1,
+						"lightning@8": 2,
+						"lightning@8-chain": 1
+					},
+					"hp_initial": 22.0,
+					"hp_remaining": 0.0,
+					"id": 43,
+					"last_hit_progress": 2132.95,
+					"last_hit_s": 18.8500000000001,
+					"outcome": "kill",
+					"spawn_s": 3.89999999999999,
+					"type": "swift",
+					"wave": 5
+				},
+				{
+					"damage": {
+						"fire@2": 24.0,
+						"ice@4": 48.0,
+						"lightning@8": 30.0
+					},
+					"effective_damage": {
+						"fire@2": 24.0,
+						"ice@4": 41.0,
+						"lightning@8": 30.0
+					},
+					"end_s": 37.0,
+					"first_hit_s": 21.5000000000002,
+					"hits": {
+						"fire@2": 2,
+						"ice@4": 6,
+						"lightning@8": 5
+					},
+					"hp_initial": 95.0,
+					"hp_remaining": 0.0,
+					"id": 44,
+					"last_hit_progress": 2067.64999999999,
+					"last_hit_s": 37.0,
+					"outcome": "kill",
+					"spawn_s": 3.99999999999999,
+					"type": "armor",
+					"wave": 5
+				},
+				{
+					"damage": {
+						"fire@2": 12.0,
+						"ice@4": 8.0,
+						"lightning@8-chain": 3.0
+					},
+					"effective_damage": {
+						"fire@2": 12.0,
+						"ice@4": 8.0,
+						"lightning@8-chain": 2.0
+					},
+					"end_s": 18.0500000000001,
+					"first_hit_s": 12.4,
+					"hits": {
+						"fire@2": 1,
+						"ice@4": 1,
+						"lightning@8-chain": 1
+					},
+					"hp_initial": 22.0,
+					"hp_remaining": 0.0,
+					"id": 45,
+					"last_hit_progress": 1922.7,
+					"last_hit_s": 18.0500000000001,
+					"outcome": "kill",
+					"spawn_s": 4.54999999999999,
+					"type": "swift",
+					"wave": 5
+				},
+				{
+					"damage": {
+						"ice@4": 16.0,
+						"lightning@8": 30.0,
+						"lightning@8-chain": 12.0
+					},
+					"effective_damage": {
+						"ice@4": 16.0,
+						"lightning@8": 30.0,
+						"lightning@8-chain": 12.0
+					},
+					"end_s": 43.5499999999997,
+					"first_hit_s": 23.9000000000002,
+					"hits": {
+						"ice@4": 2,
+						"lightning@8": 5,
+						"lightning@8-chain": 4
+					},
+					"hp_initial": 95.0,
+					"hp_remaining": 37.0,
+					"id": 46,
+					"last_hit_progress": 2299.04999999999,
+					"last_hit_s": 40.8999999999998,
+					"outcome": "leak",
+					"spawn_s": 4.99999999999999,
+					"type": "armor",
+					"wave": 5
+				},
+				{
+					"damage": {
+						"fire@2": 12.0,
+						"lightning@8-chain": 15.0
+					},
+					"effective_damage": {
+						"fire@2": 12.0,
+						"lightning@8-chain": 15.0
+					},
+					"end_s": 43.5499999999997,
+					"first_hit_s": 24.0000000000002,
+					"hits": {
+						"fire@2": 1,
+						"lightning@8-chain": 5
+					},
+					"hp_initial": 95.0,
+					"hp_remaining": 68.0,
+					"id": 47,
+					"last_hit_progress": 2271.75,
+					"last_hit_s": 40.8999999999998,
+					"outcome": "terminal_cleanup",
+					"progress_end": 2444.0,
+					"spawn_s": 5.99999999999999,
+					"type": "armor",
+					"wave": 5
+				}
+			],
+			"gold": 365,
+			"hp": 0,
+			"peak_alive": {
+				"1": 6,
+				"2": 9,
+				"3": 10,
+				"4": 10,
+				"5": 12
+			},
+			"seconds": 161.550000000002,
+			"seed": 20261018,
+			"stats": {
+				"board_occupancy_pct": 33.3,
+				"damage_dealt": 1764.0,
+				"gold_earned": 305,
+				"gold_spent": 0,
+				"highest_level": 1,
+				"kills": 41,
+				"leaks": 5,
+				"merges": 0,
+				"summons": 0,
+				"tower_count": 3,
+				"wave_rewards": 80
+			},
+			"ticks": 3231,
+			"tower_output": [
+				{
+					"damage": 144.0,
+					"effective": 128.0,
+					"hits": 12,
+					"tower": "fire@2",
+					"wave": 1
+				},
+				{
+					"damage": 64.0,
+					"effective": 64.0,
+					"hits": 8,
+					"tower": "ice@4",
+					"wave": 1
+				},
+				{
+					"damage": 144.0,
+					"effective": 124.0,
+					"hits": 12,
+					"tower": "fire@2",
+					"wave": 2
+				},
+				{
+					"damage": 112.0,
+					"effective": 106.0,
+					"hits": 14,
+					"tower": "ice@4",
+					"wave": 2
+				},
+				{
+					"damage": 42.0,
+					"effective": 38.0,
+					"hits": 7,
+					"tower": "lightning@8",
+					"wave": 2
+				},
+				{
+					"damage": 132.0,
+					"effective": 128.0,
+					"hits": 11,
+					"tower": "fire@2",
+					"wave": 3
+				},
+				{
+					"damage": 112.0,
+					"effective": 96.0,
+					"hits": 14,
+					"tower": "ice@4",
+					"wave": 3
+				},
+				{
+					"damage": 54.0,
+					"effective": 44.0,
+					"hits": 9,
+					"tower": "lightning@8",
+					"wave": 3
+				},
+				{
+					"damage": 12.0,
+					"effective": 12.0,
+					"hits": 4,
+					"tower": "lightning@8-chain",
+					"wave": 3
+				},
+				{
+					"damage": 156.0,
+					"effective": 156.0,
+					"hits": 13,
+					"tower": "fire@2",
+					"wave": 4
+				},
+				{
+					"damage": 160.0,
+					"effective": 160.0,
+					"hits": 20,
+					"tower": "ice@4",
+					"wave": 4
+				},
+				{
+					"damage": 102.0,
+					"effective": 95.0,
+					"hits": 17,
+					"tower": "lightning@8",
+					"wave": 4
+				},
+				{
+					"damage": 36.0,
+					"effective": 36.0,
+					"hits": 12,
+					"tower": "lightning@8-chain",
+					"wave": 4
+				},
+				{
+					"damage": 216.0,
+					"effective": 207.0,
+					"hits": 18,
+					"tower": "fire@2",
+					"wave": 5
+				},
+				{
+					"damage": 152.0,
+					"effective": 120.0,
+					"hits": 19,
+					"tower": "ice@4",
+					"wave": 5
+				},
+				{
+					"damage": 90.0,
+					"effective": 89.0,
+					"hits": 15,
+					"tower": "lightning@8",
+					"wave": 5
+				},
+				{
+					"damage": 36.0,
+					"effective": 35.0,
+					"hits": 12,
+					"tower": "lightning@8-chain",
+					"wave": 5
+				}
+			],
+			"victory": false,
+			"wave": 5,
+			"wave_stats": [
+				{
+					"board_occupancy_pct": 33.3,
+					"damage_dealt": 208.0,
+					"duration_s": 19.7000000000001,
+					"gold_end": 110,
+					"gold_start": 60,
+					"hp_end": 10,
+					"hp_start": 10,
+					"kills": 6,
+					"leaks": 0,
+					"merges": 0,
+					"spawned": 6,
+					"summons": 0,
+					"tower_count": 3,
+					"wave": 1,
+					"wave_clear_reward": 20
+				},
+				{
+					"board_occupancy_pct": 33.3,
+					"damage_dealt": 298.0,
+					"duration_s": 28.1000000000003,
+					"gold_end": 177,
+					"gold_start": 110,
+					"hp_end": 10,
+					"hp_start": 10,
+					"kills": 9,
+					"leaks": 0,
+					"merges": 0,
+					"spawned": 9,
+					"summons": 0,
+					"tower_count": 3,
+					"wave": 2,
+					"wave_clear_reward": 20
+				},
+				{
+					"board_occupancy_pct": 33.3,
+					"damage_dealt": 310.0,
+					"duration_s": 27.5000000000003,
+					"gold_end": 251,
+					"gold_start": 177,
+					"hp_end": 10,
+					"hp_start": 10,
+					"kills": 10,
+					"leaks": 0,
+					"merges": 0,
+					"spawned": 10,
+					"summons": 0,
+					"tower_count": 3,
+					"wave": 3,
+					"wave_clear_reward": 20
+				},
+				{
+					"board_occupancy_pct": 33.3,
+					"damage_dealt": 454.0,
+					"duration_s": 42.6999999999997,
+					"gold_end": 301,
+					"gold_start": 251,
+					"hp_end": 2,
+					"hp_start": 10,
+					"kills": 6,
+					"leaks": 4,
+					"merges": 0,
+					"spawned": 10,
+					"summons": 0,
+					"tower_count": 3,
+					"wave": 4,
+					"wave_clear_reward": 20
+				},
+				{
+					"board_occupancy_pct": 33.3,
+					"damage_dealt": 494.0,
+					"duration_s": 43.5499999999997,
+					"gold_end": 365,
+					"gold_start": 301,
+					"hp_end": 0,
+					"hp_start": 2,
+					"kills": 10,
+					"leaks": 1,
+					"merges": 0,
+					"spawned": 12,
+					"summons": 0,
+					"tower_count": 3,
+					"wave": 5,
+					"wave_clear_reward": 0
+				}
+			]
+		},
+		{
+			"combat_log": [
+				"   0.00 | PREP wave=1 gold=60 hp=10 towers=3 seed=20261018",
+				"   0.00 | COMBAT wave=1 start gold=60 hp=10 enemies=6",
+				"  10.43 | KILL 普通敌人 gold=5 total_gold=65",
+				"  11.73 | KILL 普通敌人 gold=5 total_gold=70",
+				"  13.73 | KILL 普通敌人 gold=5 total_gold=75",
+				"  15.73 | KILL 普通敌人 gold=5 total_gold=80",
+				"  17.73 | KILL 普通敌人 gold=5 total_gold=85",
+				"  19.73 | KILL 普通敌人 gold=5 total_gold=90",
+				"  19.73 | WAVE CLEAR wave=1 reward=20 gold=110 hp=10",
+				"  19.73 | COMBAT wave=2 start gold=110 hp=10 enemies=9",
+				"  29.13 | KILL 迅捷敌人 gold=6 total_gold=116",
+				"  31.13 | KILL 迅捷敌人 gold=6 total_gold=122",
+				"  33.13 | KILL 普通敌人 gold=5 total_gold=127",
+				"  42.17 | KILL 普通敌人 gold=5 total_gold=132",
+				"  43.12 | KILL 普通敌人 gold=5 total_gold=137",
+				"  44.32 | KILL 普通敌人 gold=5 total_gold=142",
+				"  45.52 | KILL 普通敌人 gold=5 total_gold=147",
+				"  46.72 | KILL 普通敌人 gold=5 total_gold=152",
+				"  47.92 | KILL 普通敌人 gold=5 total_gold=157",
+				"  47.92 | WAVE CLEAR wave=2 reward=20 gold=177 hp=10",
+				"  47.92 | COMBAT wave=3 start gold=177 hp=10 enemies=10",
+				"  56.32 | KILL 迅捷敌人 gold=6 total_gold=183",
+				"  58.27 | KILL 迅捷敌人 gold=6 total_gold=189",
+				"  59.32 | KILL 迅捷敌人 gold=6 total_gold=195",
+				"  60.67 | KILL 迅捷敌人 gold=6 total_gold=201",
+				"  69.85 | KILL 普通敌人 gold=5 total_gold=206",
+				"  70.65 | KILL 普通敌人 gold=5 total_gold=211",
+				"  72.42 | KILL 普通敌人 gold=5 total_gold=216",
+				"  73.85 | KILL 普通敌人 gold=5 total_gold=221",
+				"  74.65 | KILL 普通敌人 gold=5 total_gold=226",
+				"  75.45 | KILL 普通敌人 gold=5 total_gold=231",
+				"  75.45 | WAVE CLEAR wave=3 reward=20 gold=251 hp=10",
+				"  75.45 | COMBAT wave=4 start gold=251 hp=10 enemies=10",
+				"  87.87 | KILL 普通敌人 gold=5 total_gold=256",
+				"  89.17 | KILL 普通敌人 gold=5 total_gold=261",
+				"  91.17 | KILL 普通敌人 gold=5 total_gold=266",
+				"  93.17 | KILL 普通敌人 gold=5 total_gold=271",
+				" 103.77 | KILL 普通敌人 gold=5 total_gold=276",
+				" 106.17 | KILL 普通敌人 gold=5 total_gold=281",
+				" 114.83 | LEAK 重甲敌人 dmg=2 hp=8",
+				" 115.03 | LEAK 重甲敌人 dmg=2 hp=6",
+				" 116.88 | LEAK 重甲敌人 dmg=2 hp=4",
+				" 118.18 | LEAK 重甲敌人 dmg=2 hp=2",
+				" 118.18 | WAVE CLEAR wave=4 reward=20 gold=301 hp=2",
+				" 118.18 | COMBAT wave=5 start gold=301 hp=2 enemies=12",
+				" 124.60 | KILL 迅捷敌人 gold=6 total_gold=307",
+				" 126.48 | KILL 迅捷敌人 gold=6 total_gold=313",
+				" 127.60 | KILL 迅捷敌人 gold=6 total_gold=319",
+				" 128.88 | KILL 迅捷敌人 gold=6 total_gold=325",
+				" 134.93 | KILL 迅捷敌人 gold=6 total_gold=331",
+				" 136.13 | KILL 迅捷敌人 gold=6 total_gold=337",
+				" 137.08 | KILL 迅捷敌人 gold=6 total_gold=343",
+				" 137.33 | KILL 迅捷敌人 gold=6 total_gold=349",
+				" 139.73 | KILL 重甲敌人 gold=8 total_gold=357",
+				" 156.20 | KILL 重甲敌人 gold=8 total_gold=365",
+				" 161.48 | LEAK 重甲敌人 dmg=2 hp=0",
+				" 161.48 | RESULT victory=false wave=5 gold=365 hp=0 time=161.5"
+			],
+			"dt": 0.0166666666666667,
+			"enemies": [
+				{
+					"damage": {
+						"fire@2": 24.0,
+						"ice@4": 8.0
+					},
+					"effective_damage": {
+						"fire@2": 24.0,
+						"ice@4": 8.0
+					},
+					"end_s": 10.4333333333334,
+					"first_hit_s": 8.75000000000001,
+					"hits": {
+						"fire@2": 2,
+						"ice@4": 1
+					},
+					"hp_initial": 32.0,
+					"hp_remaining": 0.0,
+					"id": 1,
+					"last_hit_progress": 939.0,
+					"last_hit_s": 10.4333333333334,
+					"outcome": "kill",
+					"spawn_s": 0.0166666666666667,
+					"type": "grunt",
+					"wave": 1
+				},
+				{
+					"damage": {
+						"fire@2": 24.0,
+						"ice@4": 8.0
+					},
+					"effective_damage": {
+						"fire@2": 24.0,
+						"ice@4": 8.0
+					},
+					"end_s": 11.7333333333335,
+					"first_hit_s": 10.7333333333334,
+					"hits": {
+						"fire@2": 2,
+						"ice@4": 1
+					},
+					"hp_initial": 32.0,
+					"hp_remaining": 0.0,
+					"id": 2,
+					"last_hit_progress": 947.4,
+					"last_hit_s": 11.7333333333335,
+					"outcome": "kill",
+					"spawn_s": 1.2,
+					"type": "grunt",
+					"wave": 1
+				},
+				{
+					"damage": {
+						"fire@2": 24.0,
+						"ice@4": 8.0
+					},
+					"effective_damage": {
+						"fire@2": 24.0,
+						"ice@4": 8.0
+					},
+					"end_s": 13.7333333333336,
+					"first_hit_s": 12.7333333333335,
+					"hits": {
+						"fire@2": 2,
+						"ice@4": 1
+					},
+					"hp_initial": 32.0,
+					"hp_remaining": 0.0,
+					"id": 3,
+					"last_hit_progress": 1005.0,
+					"last_hit_s": 13.7333333333336,
+					"outcome": "kill",
+					"spawn_s": 2.4,
+					"type": "grunt",
+					"wave": 1
+				},
+				{
+					"damage": {
+						"fire@2": 24.0,
+						"ice@4": 16.0
+					},
+					"effective_damage": {
+						"fire@2": 16.0,
+						"ice@4": 16.0
+					},
+					"end_s": 15.7333333333337,
+					"first_hit_s": 14.0166666666669,
+					"hits": {
+						"fire@2": 2,
+						"ice@4": 2
+					},
+					"hp_initial": 32.0,
+					"hp_remaining": 0.0,
+					"id": 4,
+					"last_hit_progress": 1062.6,
+					"last_hit_s": 15.7333333333337,
+					"outcome": "kill",
+					"spawn_s": 3.59999999999999,
+					"type": "grunt",
+					"wave": 1
+				},
+				{
+					"damage": {
+						"fire@2": 24.0,
+						"ice@4": 16.0
+					},
+					"effective_damage": {
+						"fire@2": 16.0,
+						"ice@4": 16.0
+					},
+					"end_s": 17.7333333333336,
+					"first_hit_s": 16.416666666667,
+					"hits": {
+						"fire@2": 2,
+						"ice@4": 2
+					},
+					"hp_initial": 32.0,
+					"hp_remaining": 0.0,
+					"id": 5,
+					"last_hit_progress": 1141.8,
+					"last_hit_s": 17.7333333333336,
+					"outcome": "kill",
+					"spawn_s": 4.79999999999999,
+					"type": "grunt",
+					"wave": 1
+				},
+				{
+					"damage": {
+						"fire@2": 24.0,
+						"ice@4": 8.0
+					},
+					"effective_damage": {
+						"fire@2": 24.0,
+						"ice@4": 8.0
+					},
+					"end_s": 19.7333333333335,
+					"first_hit_s": 18.7333333333336,
+					"hits": {
+						"fire@2": 2,
+						"ice@4": 1
+					},
+					"hp_initial": 32.0,
+					"hp_remaining": 0.0,
+					"id": 6,
+					"last_hit_progress": 1221.0,
+					"last_hit_s": 19.7333333333335,
+					"outcome": "kill",
+					"spawn_s": 5.99999999999998,
+					"type": "grunt",
+					"wave": 1
+				},
+				{
+					"damage": {
+						"fire@2": 24.0,
+						"ice@4": 16.0
+					},
+					"effective_damage": {
+						"fire@2": 16.0,
+						"ice@4": 16.0
+					},
+					"end_s": 13.4000000000002,
+					"first_hit_s": 11.5000000000002,
+					"hits": {
+						"fire@2": 2,
+						"ice@4": 2
+					},
+					"hp_initial": 32.0,
+					"hp_remaining": 0.0,
+					"id": 7,
+					"last_hit_progress": 1171.80000000001,
+					"last_hit_s": 13.4000000000002,
+					"outcome": "kill",
+					"spawn_s": 0.0166666666666667,
+					"type": "grunt",
+					"wave": 2
+				},
+				{
+					"damage": {
+						"fire@2": 12.0,
+						"ice@4": 16.0,
+						"lightning@8": 6.0
+					},
+					"effective_damage": {
+						"fire@2": 12.0,
+						"ice@4": 16.0,
+						"lightning@8": 4.0
+					},
+					"end_s": 22.4333333333333,
+					"first_hit_s": 13.9000000000003,
+					"hits": {
+						"fire@2": 1,
+						"ice@4": 2,
+						"lightning@8": 1
+					},
+					"hp_initial": 32.0,
+					"hp_remaining": 0.0,
+					"id": 8,
+					"last_hit_progress": 1899.3,
+					"last_hit_s": 22.4333333333333,
+					"outcome": "kill",
+					"spawn_s": 1.0,
+					"type": "grunt",
+					"wave": 2
+				},
+				{
+					"damage": {
+						"fire@2": 12.0,
+						"ice@4": 16.0,
+						"lightning@8": 6.0
+					},
+					"effective_damage": {
+						"fire@2": 12.0,
+						"ice@4": 16.0,
+						"lightning@8": 4.0
+					},
+					"end_s": 23.3833333333333,
+					"first_hit_s": 15.1000000000003,
+					"hits": {
+						"fire@2": 1,
+						"ice@4": 2,
+						"lightning@8": 1
+					},
+					"hp_initial": 32.0,
+					"hp_remaining": 0.0,
+					"id": 9,
+					"last_hit_progress": 1899.0,
+					"last_hit_s": 23.3833333333333,
+					"outcome": "kill",
+					"spawn_s": 2.0,
+					"type": "grunt",
+					"wave": 2
+				},
+				{
+					"damage": {
+						"fire@2": 12.0,
+						"ice@4": 16.0,
+						"lightning@8": 6.0
+					},
+					"effective_damage": {
+						"fire@2": 12.0,
+						"ice@4": 14.0,
+						"lightning@8": 6.0
+					},
+					"end_s": 24.5833333333332,
+					"first_hit_s": 16.3000000000004,
+					"hits": {
+						"fire@2": 1,
+						"ice@4": 2,
+						"lightning@8": 1
+					},
+					"hp_initial": 32.0,
+					"hp_remaining": 0.0,
+					"id": 10,
+					"last_hit_progress": 1917.0,
+					"last_hit_s": 24.5833333333332,
+					"outcome": "kill",
+					"spawn_s": 2.99999999999999,
+					"type": "grunt",
+					"wave": 2
+				},
+				{
+					"damage": {
+						"fire@2": 24.0
+					},
+					"effective_damage": {
+						"fire@2": 22.0
+					},
+					"end_s": 9.40000000000005,
+					"first_hit_s": 8.41666666666666,
+					"hits": {
+						"fire@2": 2
+					},
+					"hp_initial": 22.0,
+					"hp_remaining": 0.0,
+					"id": 11,
+					"last_hit_progress": 930.416666666662,
+					"last_hit_s": 9.40000000000005,
+					"outcome": "kill",
+					"spawn_s": 2.99999999999999,
+					"type": "swift",
+					"wave": 2
+				},
+				{
+					"damage": {
+						"fire@2": 24.0,
+						"ice@4": 8.0
+					},
+					"effective_damage": {
+						"fire@2": 14.0,
+						"ice@4": 8.0
+					},
+					"end_s": 11.4000000000001,
+					"first_hit_s": 10.3166666666668,
+					"hits": {
+						"fire@2": 2,
+						"ice@4": 1
+					},
+					"hp_initial": 22.0,
+					"hp_remaining": 0.0,
+					"id": 12,
+					"last_hit_progress": 1065.74999999999,
+					"last_hit_s": 11.4000000000001,
+					"outcome": "kill",
+					"spawn_s": 3.84999999999999,
+					"type": "swift",
+					"wave": 2
+				},
+				{
+					"damage": {
+						"fire@2": 12.0,
+						"ice@4": 16.0,
+						"lightning@8": 6.0
+					},
+					"effective_damage": {
+						"fire@2": 12.0,
+						"ice@4": 14.0,
+						"lightning@8": 6.0
+					},
+					"end_s": 25.7833333333332,
+					"first_hit_s": 17.4000000000003,
+					"hits": {
+						"fire@2": 1,
+						"ice@4": 2,
+						"lightning@8": 1
+					},
+					"hp_initial": 32.0,
+					"hp_remaining": 0.0,
+					"id": 13,
+					"last_hit_progress": 1935.0,
+					"last_hit_s": 25.7833333333332,
+					"outcome": "kill",
+					"spawn_s": 3.99999999999999,
+					"type": "grunt",
+					"wave": 2
+				},
+				{
+					"damage": {
+						"fire@2": 12.0,
+						"ice@4": 16.0,
+						"lightning@8": 6.0
+					},
+					"effective_damage": {
+						"fire@2": 12.0,
+						"ice@4": 14.0,
+						"lightning@8": 6.0
+					},
+					"end_s": 26.9833333333331,
+					"first_hit_s": 18.4000000000002,
+					"hits": {
+						"fire@2": 1,
+						"ice@4": 2,
+						"lightning@8": 1
+					},
+					"hp_initial": 32.0,
+					"hp_remaining": 0.0,
+					"id": 14,
+					"last_hit_progress": 1953.0,
+					"last_hit_s": 26.9833333333331,
+					"outcome": "kill",
+					"spawn_s": 4.99999999999999,
+					"type": "grunt",
+					"wave": 2
+				},
+				{
+					"damage": {
+						"fire@2": 12.0,
+						"ice@4": 8.0,
+						"lightning@8": 12.0
+					},
+					"effective_damage": {
+						"fire@2": 12.0,
+						"ice@4": 8.0,
+						"lightning@8": 12.0
+					},
+					"end_s": 28.183333333333,
+					"first_hit_s": 19.4000000000002,
+					"hits": {
+						"fire@2": 1,
+						"ice@4": 1,
+						"lightning@8": 2
+					},
+					"hp_initial": 32.0,
+					"hp_remaining": 0.0,
+					"id": 15,
+					"last_hit_progress": 1998.0,
+					"last_hit_s": 28.183333333333,
+					"outcome": "kill",
+					"spawn_s": 5.99999999999998,
+					"type": "grunt",
+					"wave": 2
+				},
+				{
+					"damage": {
+						"fire@2": 12.0,
+						"ice@4": 8.0,
+						"lightning@8": 12.0
+					},
+					"effective_damage": {
+						"fire@2": 12.0,
+						"ice@4": 8.0,
+						"lightning@8": 12.0
+					},
+					"end_s": 21.9333333333334,
+					"first_hit_s": 13.4000000000002,
+					"hits": {
+						"fire@2": 1,
+						"ice@4": 1,
+						"lightning@8": 2
+					},
+					"hp_initial": 32.0,
+					"hp_remaining": 0.0,
+					"id": 16,
+					"last_hit_progress": 1955.7,
+					"last_hit_s": 21.9333333333334,
+					"outcome": "kill",
+					"spawn_s": 0.0166666666666667,
+					"type": "grunt",
+					"wave": 3
+				},
+				{
+					"damage": {
+						"fire@2": 12.0,
+						"ice@4": 16.0,
+						"lightning@8": 6.0
+					},
+					"effective_damage": {
+						"fire@2": 12.0,
+						"ice@4": 16.0,
+						"lightning@8": 4.0
+					},
+					"end_s": 22.7333333333333,
+					"first_hit_s": 13.9500000000003,
+					"hits": {
+						"fire@2": 1,
+						"ice@4": 2,
+						"lightning@8": 1
+					},
+					"hp_initial": 32.0,
+					"hp_remaining": 0.0,
+					"id": 17,
+					"last_hit_progress": 1932.60000000001,
+					"last_hit_s": 22.7333333333333,
+					"outcome": "kill",
+					"spawn_s": 0.850000000000001,
+					"type": "grunt",
+					"wave": 3
+				},
+				{
+					"damage": {
+						"ice@4": 24.0,
+						"lightning@8": 12.0
+					},
+					"effective_damage": {
+						"ice@4": 20.0,
+						"lightning@8": 12.0
+					},
+					"end_s": 24.4999999999999,
+					"first_hit_s": 15.1500000000003,
+					"hits": {
+						"ice@4": 3,
+						"lightning@8": 2
+					},
+					"hp_initial": 32.0,
+					"hp_remaining": 0.0,
+					"id": 18,
+					"last_hit_progress": 2004.90000000001,
+					"last_hit_s": 24.4999999999999,
+					"outcome": "kill",
+					"spawn_s": 1.7,
+					"type": "grunt",
+					"wave": 3
+				},
+				{
+					"damage": {
+						"fire@2": 24.0
+					},
+					"effective_damage": {
+						"fire@2": 22.0
+					},
+					"end_s": 8.4,
+					"first_hit_s": 7.41666666666665,
+					"hits": {
+						"fire@2": 2
+					},
+					"hp_initial": 22.0,
+					"hp_remaining": 0.0,
+					"id": 19,
+					"last_hit_progress": 930.416666666662,
+					"last_hit_s": 8.4,
+					"outcome": "kill",
+					"spawn_s": 2.0,
+					"type": "swift",
+					"wave": 3
+				},
+				{
+					"damage": {
+						"fire@2": 12.0,
+						"ice@4": 8.0,
+						"lightning@8": 12.0,
+						"lightning@8-chain": 3.0
+					},
+					"effective_damage": {
+						"fire@2": 12.0,
+						"ice@4": 8.0,
+						"lightning@8": 9.0,
+						"lightning@8-chain": 3.0
+					},
+					"end_s": 25.9333333333331,
+					"first_hit_s": 15.4000000000003,
+					"hits": {
+						"fire@2": 1,
+						"ice@4": 1,
+						"lightning@8": 2,
+						"lightning@8-chain": 1
+					},
+					"hp_initial": 32.0,
+					"hp_remaining": 0.0,
+					"id": 20,
+					"last_hit_progress": 2101.8,
+					"last_hit_s": 25.9333333333331,
+					"outcome": "kill",
+					"spawn_s": 2.55,
+					"type": "grunt",
+					"wave": 3
+				},
+				{
+					"damage": {
+						"fire@2": 12.0,
+						"ice@4": 16.0
+					},
+					"effective_damage": {
+						"fire@2": 12.0,
+						"ice@4": 10.0
+					},
+					"end_s": 10.3500000000001,
+					"first_hit_s": 9.1666666666667,
+					"hits": {
+						"fire@2": 1,
+						"ice@4": 2
+					},
+					"hp_initial": 22.0,
+					"hp_remaining": 0.0,
+					"id": 21,
+					"last_hit_progress": 1077.34999999999,
+					"last_hit_s": 10.3500000000001,
+					"outcome": "kill",
+					"spawn_s": 2.7,
+					"type": "swift",
+					"wave": 3
+				},
+				{
+					"damage": {
+						"fire@2": 12.0,
+						"ice@4": 8.0,
+						"lightning@8": 6.0,
+						"lightning@8-chain": 6.0
+					},
+					"effective_damage": {
+						"fire@2": 12.0,
+						"ice@4": 8.0,
+						"lightning@8": 6.0,
+						"lightning@8-chain": 6.0
+					},
+					"end_s": 26.7333333333331,
+					"first_hit_s": 16.3500000000004,
+					"hits": {
+						"fire@2": 1,
+						"ice@4": 1,
+						"lightning@8": 1,
+						"lightning@8-chain": 2
+					},
+					"hp_initial": 32.0,
+					"hp_remaining": 0.0,
+					"id": 22,
+					"last_hit_progress": 2074.5,
+					"last_hit_s": 26.7333333333331,
+					"outcome": "kill",
+					"spawn_s": 3.39999999999999,
+					"type": "grunt",
+					"wave": 3
+				},
+				{
+					"damage": {
+						"fire@2": 24.0
+					},
+					"effective_damage": {
+						"fire@2": 22.0
+					},
+					"end_s": 11.4000000000001,
+					"first_hit_s": 10.4000000000001,
+					"hits": {
+						"fire@2": 2
+					},
+					"hp_initial": 22.0,
+					"hp_remaining": 0.0,
+					"id": 23,
+					"last_hit_progress": 1162.41666666666,
+					"last_hit_s": 11.4000000000001,
+					"outcome": "kill",
+					"spawn_s": 3.39999999999999,
+					"type": "swift",
+					"wave": 3
+				},
+				{
+					"damage": {
+						"fire@2": 12.0,
+						"ice@4": 16.0
+					},
+					"effective_damage": {
+						"fire@2": 12.0,
+						"ice@4": 10.0
+					},
+					"end_s": 12.7500000000002,
+					"first_hit_s": 11.5500000000002,
+					"hits": {
+						"fire@2": 1,
+						"ice@4": 2
+					},
+					"hp_initial": 22.0,
+					"hp_remaining": 0.0,
+					"id": 24,
+					"last_hit_progress": 1221.86666666667,
+					"last_hit_s": 12.7500000000002,
+					"outcome": "kill",
+					"spawn_s": 4.09999999999999,
+					"type": "swift",
+					"wave": 3
+				},
+				{
+					"damage": {
+						"fire@2": 12.0,
+						"ice@4": 16.0,
+						"lightning@8": 6.0,
+						"lightning@8-chain": 3.0
+					},
+					"effective_damage": {
+						"fire@2": 12.0,
+						"ice@4": 16.0,
+						"lightning@8": 1.0,
+						"lightning@8-chain": 3.0
+					},
+					"end_s": 27.5333333333331,
+					"first_hit_s": 17.4000000000003,
+					"hits": {
+						"fire@2": 1,
+						"ice@4": 2,
+						"lightning@8": 1,
+						"lightning@8-chain": 1
+					},
+					"hp_initial": 32.0,
+					"hp_remaining": 0.0,
+					"id": 25,
+					"last_hit_progress": 2058.6,
+					"last_hit_s": 27.5333333333331,
+					"outcome": "kill",
+					"spawn_s": 4.24999999999999,
+					"type": "grunt",
+					"wave": 3
+				},
+				{
+					"damage": {
+						"fire@2": 12.0,
+						"ice@4": 40.0,
+						"lightning@8": 36.0,
+						"lightning@8-chain": 6.0
+					},
+					"effective_damage": {
+						"fire@2": 12.0,
+						"ice@4": 40.0,
+						"lightning@8": 36.0,
+						"lightning@8-chain": 6.0
+					},
+					"end_s": 39.3833333333324,
+					"first_hit_s": 16.0000000000004,
+					"hits": {
+						"fire@2": 1,
+						"ice@4": 5,
+						"lightning@8": 6,
+						"lightning@8-chain": 2
+					},
+					"hp_initial": 95.0,
+					"hp_remaining": 1.0,
+					"id": 26,
+					"last_hit_progress": 2270.88333333329,
+					"last_hit_s": 36.3166666666659,
+					"outcome": "leak",
+					"spawn_s": 0.0166666666666667,
+					"type": "armor",
+					"wave": 4
+				},
+				{
+					"damage": {
+						"fire@2": 12.0,
+						"ice@4": 8.0,
+						"lightning@8": 6.0,
+						"lightning@8-chain": 18.0
+					},
+					"effective_damage": {
+						"fire@2": 12.0,
+						"ice@4": 8.0,
+						"lightning@8": 6.0,
+						"lightning@8-chain": 18.0
+					},
+					"end_s": 39.5833333333324,
+					"first_hit_s": 19.7166666666668,
+					"hits": {
+						"fire@2": 1,
+						"ice@4": 1,
+						"lightning@8": 1,
+						"lightning@8-chain": 6
+					},
+					"hp_initial": 95.0,
+					"hp_remaining": 51.0,
+					"id": 27,
+					"last_hit_progress": 2257.66666666664,
+					"last_hit_s": 36.3166666666659,
+					"outcome": "leak",
+					"spawn_s": 1.3,
+					"type": "armor",
+					"wave": 4
+				},
+				{
+					"damage": {
+						"fire@2": 24.0,
+						"ice@4": 8.0
+					},
+					"effective_damage": {
+						"fire@2": 24.0,
+						"ice@4": 8.0
+					},
+					"end_s": 12.4166666666669,
+					"first_hit_s": 10.7333333333334,
+					"hits": {
+						"fire@2": 2,
+						"ice@4": 1
+					},
+					"hp_initial": 32.0,
+					"hp_remaining": 0.0,
+					"id": 28,
+					"last_hit_progress": 939.0,
+					"last_hit_s": 12.4166666666669,
+					"outcome": "kill",
+					"spawn_s": 2.0,
+					"type": "grunt",
+					"wave": 4
+				},
+				{
+					"damage": {
+						"fire@2": 12.0,
+						"ice@4": 24.0,
+						"lightning@8": 18.0
+					},
+					"effective_damage": {
+						"fire@2": 12.0,
+						"ice@4": 24.0,
+						"lightning@8": 18.0
+					},
+					"end_s": 41.4333333333323,
+					"first_hit_s": 20.7166666666668,
+					"hits": {
+						"fire@2": 1,
+						"ice@4": 3,
+						"lightning@8": 3
+					},
+					"hp_initial": 95.0,
+					"hp_remaining": 41.0,
+					"id": 29,
+					"last_hit_progress": 2294.06666666664,
+					"last_hit_s": 38.7166666666658,
+					"outcome": "leak",
+					"spawn_s": 2.6,
+					"type": "armor",
+					"wave": 4
+				},
+				{
+					"damage": {
+						"fire@2": 24.0,
+						"ice@4": 8.0
+					},
+					"effective_damage": {
+						"fire@2": 24.0,
+						"ice@4": 8.0
+					},
+					"end_s": 13.7166666666669,
+					"first_hit_s": 12.7166666666669,
+					"hits": {
+						"fire@2": 2,
+						"ice@4": 1
+					},
+					"hp_initial": 32.0,
+					"hp_remaining": 0.0,
+					"id": 30,
+					"last_hit_progress": 972.9,
+					"last_hit_s": 13.7166666666669,
+					"outcome": "kill",
+					"spawn_s": 2.89999999999999,
+					"type": "grunt",
+					"wave": 4
+				},
+				{
+					"damage": {
+						"fire@2": 24.0,
+						"ice@4": 8.0
+					},
+					"effective_damage": {
+						"fire@2": 24.0,
+						"ice@4": 8.0
+					},
+					"end_s": 15.716666666667,
+					"first_hit_s": 14.716666666667,
+					"hits": {
+						"fire@2": 2,
+						"ice@4": 1
+					},
+					"hp_initial": 32.0,
+					"hp_remaining": 0.0,
+					"id": 31,
+					"last_hit_progress": 1057.5,
+					"last_hit_s": 15.716666666667,
+					"outcome": "kill",
+					"spawn_s": 3.79999999999999,
+					"type": "grunt",
+					"wave": 4
+				},
+				{
+					"damage": {
+						"fire@2": 24.0,
+						"ice@4": 24.0,
+						"lightning@8": 6.0,
+						"lightning@8-chain": 9.0
+					},
+					"effective_damage": {
+						"fire@2": 24.0,
+						"ice@4": 24.0,
+						"lightning@8": 6.0,
+						"lightning@8-chain": 9.0
+					},
+					"end_s": 42.7333333333322,
+					"first_hit_s": 21.7166666666667,
+					"hits": {
+						"fire@2": 2,
+						"ice@4": 3,
+						"lightning@8": 1,
+						"lightning@8-chain": 3
+					},
+					"hp_initial": 95.0,
+					"hp_remaining": 32.0,
+					"id": 32,
+					"last_hit_progress": 2261.56666666663,
+					"last_hit_s": 39.5166666666657,
+					"outcome": "leak",
+					"spawn_s": 3.89999999999999,
+					"type": "armor",
+					"wave": 4
+				},
+				{
+					"damage": {
+						"fire@2": 24.0,
+						"ice@4": 8.0
+					},
+					"effective_damage": {
+						"fire@2": 24.0,
+						"ice@4": 8.0
+					},
+					"end_s": 17.7166666666669,
+					"first_hit_s": 16.716666666667,
+					"hits": {
+						"fire@2": 2,
+						"ice@4": 1
+					},
+					"hp_initial": 32.0,
+					"hp_remaining": 0.0,
+					"id": 33,
+					"last_hit_progress": 1163.7,
+					"last_hit_s": 17.7166666666669,
+					"outcome": "kill",
+					"spawn_s": 4.69999999999999,
+					"type": "grunt",
+					"wave": 4
+				},
+				{
+					"damage": {
+						"ice@4": 16.0,
+						"lightning@8": 18.0
+					},
+					"effective_damage": {
+						"ice@4": 16.0,
+						"lightning@8": 16.0
+					},
+					"end_s": 28.3166666666663,
+					"first_hit_s": 26.4999999999998,
+					"hits": {
+						"ice@4": 2,
+						"lightning@8": 3
+					},
+					"hp_initial": 32.0,
+					"hp_remaining": 0.0,
+					"id": 34,
+					"last_hit_progress": 2013.30000000001,
+					"last_hit_s": 28.3166666666663,
+					"outcome": "kill",
+					"spawn_s": 5.59999999999999,
+					"type": "grunt",
+					"wave": 4
+				},
+				{
+					"damage": {
+						"ice@4": 16.0,
+						"lightning@8": 18.0,
+						"lightning@8-chain": 3.0
+					},
+					"effective_damage": {
+						"ice@4": 16.0,
+						"lightning@8": 13.0,
+						"lightning@8-chain": 3.0
+					},
+					"end_s": 30.7166666666662,
+					"first_hit_s": 28.3166666666663,
+					"hits": {
+						"ice@4": 2,
+						"lightning@8": 3,
+						"lightning@8-chain": 1
+					},
+					"hp_initial": 32.0,
+					"hp_remaining": 0.0,
+					"id": 35,
+					"last_hit_progress": 2147.99999999999,
+					"last_hit_s": 30.7166666666662,
+					"outcome": "kill",
+					"spawn_s": 6.49999999999998,
+					"type": "grunt",
+					"wave": 4
+				},
+				{
+					"damage": {
+						"fire@2": 24.0
+					},
+					"effective_damage": {
+						"fire@2": 22.0
+					},
+					"end_s": 6.41666666666665,
+					"first_hit_s": 5.43333333333332,
+					"hits": {
+						"fire@2": 2
+					},
+					"hp_initial": 22.0,
+					"hp_remaining": 0.0,
+					"id": 36,
+					"last_hit_progress": 930.416666666662,
+					"last_hit_s": 6.41666666666665,
+					"outcome": "kill",
+					"spawn_s": 0.0166666666666667,
+					"type": "swift",
+					"wave": 5
+				},
+				{
+					"damage": {
+						"fire@2": 12.0,
+						"ice@4": 16.0
+					},
+					"effective_damage": {
+						"fire@2": 12.0,
+						"ice@4": 10.0
+					},
+					"end_s": 8.29999999999999,
+					"first_hit_s": 7.11666666666665,
+					"hits": {
+						"fire@2": 1,
+						"ice@4": 2
+					},
+					"hp_initial": 22.0,
+					"hp_remaining": 0.0,
+					"id": 37,
+					"last_hit_progress": 1077.34999999999,
+					"last_hit_s": 8.29999999999999,
+					"outcome": "kill",
+					"spawn_s": 0.65,
+					"type": "swift",
+					"wave": 5
+				},
+				{
+					"damage": {
+						"fire@2": 24.0
+					},
+					"effective_damage": {
+						"fire@2": 22.0
+					},
+					"end_s": 9.41666666666671,
+					"first_hit_s": 8.41666666666666,
+					"hits": {
+						"fire@2": 2
+					},
+					"hp_initial": 22.0,
+					"hp_remaining": 0.0,
+					"id": 38,
+					"last_hit_progress": 1179.33333333333,
+					"last_hit_s": 9.41666666666671,
+					"outcome": "kill",
+					"spawn_s": 1.3,
+					"type": "swift",
+					"wave": 5
+				},
+				{
+					"damage": {
+						"fire@2": 12.0,
+						"ice@4": 16.0
+					},
+					"effective_damage": {
+						"fire@2": 12.0,
+						"ice@4": 10.0
+					},
+					"end_s": 10.7000000000001,
+					"first_hit_s": 9.50000000000005,
+					"hits": {
+						"fire@2": 1,
+						"ice@4": 2
+					},
+					"hp_initial": 22.0,
+					"hp_remaining": 0.0,
+					"id": 39,
+					"last_hit_progress": 1236.36666666667,
+					"last_hit_s": 10.7000000000001,
+					"outcome": "kill",
+					"spawn_s": 1.95,
+					"type": "swift",
+					"wave": 5
+				},
+				{
+					"damage": {
+						"ice@4": 16.0,
+						"lightning@8": 12.0
+					},
+					"effective_damage": {
+						"ice@4": 10.0,
+						"lightning@8": 12.0
+					},
+					"end_s": 16.7500000000003,
+					"first_hit_s": 15.566666666667,
+					"hits": {
+						"ice@4": 2,
+						"lightning@8": 2
+					},
+					"hp_initial": 22.0,
+					"hp_remaining": 0.0,
+					"id": 40,
+					"last_hit_progress": 2019.85000000002,
+					"last_hit_s": 16.7500000000003,
+					"outcome": "kill",
+					"spawn_s": 2.6,
+					"type": "swift",
+					"wave": 5
+				},
+				{
+					"damage": {
+						"fire@2": 84.0,
+						"ice@4": 16.0
+					},
+					"effective_damage": {
+						"fire@2": 84.0,
+						"ice@4": 11.0
+					},
+					"end_s": 21.5500000000001,
+					"first_hit_s": 15.0833333333337,
+					"hits": {
+						"fire@2": 7,
+						"ice@4": 2
+					},
+					"hp_initial": 95.0,
+					"hp_remaining": 0.0,
+					"id": 41,
+					"last_hit_progress": 1191.23333333333,
+					"last_hit_s": 21.5500000000001,
+					"outcome": "kill",
+					"spawn_s": 2.99999999999999,
+					"type": "armor",
+					"wave": 5
+				},
+				{
+					"damage": {
+						"fire@2": 12.0,
+						"ice@4": 8.0,
+						"lightning@8": 6.0,
+						"lightning@8-chain": 3.0
+					},
+					"effective_damage": {
+						"fire@2": 12.0,
+						"ice@4": 1.0,
+						"lightning@8": 6.0,
+						"lightning@8-chain": 3.0
+					},
+					"end_s": 17.9500000000003,
+					"first_hit_s": 11.4166666666668,
+					"hits": {
+						"fire@2": 1,
+						"ice@4": 1,
+						"lightning@8": 1,
+						"lightning@8-chain": 1
+					},
+					"hp_initial": 22.0,
+					"hp_remaining": 0.0,
+					"id": 42,
+					"last_hit_progress": 2133.91666666669,
+					"last_hit_s": 17.9500000000003,
+					"outcome": "kill",
+					"spawn_s": 3.24999999999999,
+					"type": "swift",
+					"wave": 5
+				},
+				{
+					"damage": {
+						"ice@4": 8.0,
+						"lightning@8": 12.0,
+						"lightning@8-chain": 3.0
+					},
+					"effective_damage": {
+						"ice@4": 8.0,
+						"lightning@8": 11.0,
+						"lightning@8-chain": 3.0
+					},
+					"end_s": 18.9000000000002,
+					"first_hit_s": 11.9000000000002,
+					"hits": {
+						"ice@4": 1,
+						"lightning@8": 2,
+						"lightning@8-chain": 1
+					},
+					"hp_initial": 22.0,
+					"hp_remaining": 0.0,
+					"id": 43,
+					"last_hit_progress": 2133.91666666669,
+					"last_hit_s": 18.9000000000002,
+					"outcome": "kill",
+					"spawn_s": 3.89999999999999,
+					"type": "swift",
+					"wave": 5
+				},
+				{
+					"damage": {
+						"fire@2": 12.0,
+						"ice@4": 48.0,
+						"lightning@8": 36.0
+					},
+					"effective_damage": {
+						"fire@2": 12.0,
+						"ice@4": 47.0,
+						"lightning@8": 36.0
+					},
+					"end_s": 38.0166666666658,
+					"first_hit_s": 22.0666666666667,
+					"hits": {
+						"fire@2": 1,
+						"ice@4": 6,
+						"lightning@8": 6
+					},
+					"hp_initial": 95.0,
+					"hp_remaining": 0.0,
+					"id": 44,
+					"last_hit_progress": 2130.48333333327,
+					"last_hit_s": 38.0166666666658,
+					"outcome": "kill",
+					"spawn_s": 3.99999999999999,
+					"type": "armor",
+					"wave": 5
+				},
+				{
+					"damage": {
+						"fire@2": 12.0,
+						"ice@4": 8.0,
+						"lightning@8-chain": 6.0
+					},
+					"effective_damage": {
+						"fire@2": 12.0,
+						"ice@4": 4.0,
+						"lightning@8-chain": 6.0
+					},
+					"end_s": 19.1500000000002,
+					"first_hit_s": 12.4166666666669,
+					"hits": {
+						"fire@2": 1,
+						"ice@4": 1,
+						"lightning@8-chain": 2
+					},
+					"hp_initial": 22.0,
+					"hp_remaining": 0.0,
+					"id": 45,
+					"last_hit_progress": 2119.41666666669,
+					"last_hit_s": 19.1500000000002,
+					"outcome": "kill",
+					"spawn_s": 4.54999999999999,
+					"type": "swift",
+					"wave": 5
+				},
+				{
+					"damage": {
+						"fire@2": 12.0,
+						"ice@4": 8.0,
+						"lightning@8": 18.0,
+						"lightning@8-chain": 12.0
+					},
+					"effective_damage": {
+						"fire@2": 12.0,
+						"ice@4": 8.0,
+						"lightning@8": 18.0,
+						"lightning@8-chain": 12.0
+					},
+					"end_s": 43.2999999999988,
+					"first_hit_s": 23.0666666666666,
+					"hits": {
+						"fire@2": 1,
+						"ice@4": 1,
+						"lightning@8": 3,
+						"lightning@8-chain": 4
+					},
+					"hp_initial": 95.0,
+					"hp_remaining": 45.0,
+					"id": 46,
+					"last_hit_progress": 2253.3333333333,
+					"last_hit_s": 39.949999999999,
+					"outcome": "leak",
+					"spawn_s": 4.99999999999999,
+					"type": "armor",
+					"wave": 5
+				},
+				{
+					"damage": {
+						"fire@2": 12.0,
+						"lightning@8": 6.0,
+						"lightning@8-chain": 9.0
+					},
+					"effective_damage": {
+						"fire@2": 12.0,
+						"lightning@8": 6.0,
+						"lightning@8-chain": 9.0
+					},
+					"end_s": 43.2999999999988,
+					"first_hit_s": 24.0666666666666,
+					"hits": {
+						"fire@2": 1,
+						"lightning@8": 1,
+						"lightning@8-chain": 3
+					},
+					"hp_initial": 95.0,
+					"hp_remaining": 68.0,
+					"id": 47,
+					"last_hit_progress": 2259.83333333331,
+					"last_hit_s": 40.749999999999,
+					"outcome": "terminal_cleanup",
+					"progress_end": 2425.58333333333,
+					"spawn_s": 5.99999999999998,
+					"type": "armor",
+					"wave": 5
+				}
+			],
+			"gold": 365,
+			"hp": 0,
+			"peak_alive": {
+				"1": 6,
+				"2": 9,
+				"3": 10,
+				"4": 10,
+				"5": 12
+			},
+			"seconds": 161.483333333354,
+			"seed": 20261018,
+			"stats": {
+				"board_occupancy_pct": 33.3,
+				"damage_dealt": 1753.0,
+				"gold_earned": 305,
+				"gold_spent": 0,
+				"highest_level": 1,
+				"kills": 41,
+				"leaks": 5,
+				"merges": 0,
+				"summons": 0,
+				"tower_count": 3,
+				"wave_rewards": 80
+			},
+			"ticks": 9689,
+			"tower_output": [
+				{
+					"damage": 144.0,
+					"effective": 128.0,
+					"hits": 12,
+					"tower": "fire@2",
+					"wave": 1
+				},
+				{
+					"damage": 64.0,
+					"effective": 64.0,
+					"hits": 8,
+					"tower": "ice@4",
+					"wave": 1
+				},
+				{
+					"damage": 144.0,
+					"effective": 124.0,
+					"hits": 12,
+					"tower": "fire@2",
+					"wave": 2
+				},
+				{
+					"damage": 112.0,
+					"effective": 106.0,
+					"hits": 14,
+					"tower": "ice@4",
+					"wave": 2
+				},
+				{
+					"damage": 42.0,
+					"effective": 38.0,
+					"hits": 7,
+					"tower": "lightning@8",
+					"wave": 2
+				},
+				{
+					"damage": 132.0,
+					"effective": 128.0,
+					"hits": 11,
+					"tower": "fire@2",
+					"wave": 3
+				},
+				{
+					"damage": 112.0,
+					"effective": 96.0,
+					"hits": 14,
+					"tower": "ice@4",
+					"wave": 3
+				},
+				{
+					"damage": 54.0,
+					"effective": 44.0,
+					"hits": 9,
+					"tower": "lightning@8",
+					"wave": 3
+				},
+				{
+					"damage": 12.0,
+					"effective": 12.0,
+					"hits": 4,
+					"tower": "lightning@8-chain",
+					"wave": 3
+				},
+				{
+					"damage": 156.0,
+					"effective": 156.0,
+					"hits": 13,
+					"tower": "fire@2",
+					"wave": 4
+				},
+				{
+					"damage": 160.0,
+					"effective": 160.0,
+					"hits": 20,
+					"tower": "ice@4",
+					"wave": 4
+				},
+				{
+					"damage": 102.0,
+					"effective": 95.0,
+					"hits": 17,
+					"tower": "lightning@8",
+					"wave": 4
+				},
+				{
+					"damage": 36.0,
+					"effective": 36.0,
+					"hits": 12,
+					"tower": "lightning@8-chain",
+					"wave": 4
+				},
+				{
+					"damage": 216.0,
+					"effective": 212.0,
+					"hits": 18,
+					"tower": "fire@2",
+					"wave": 5
+				},
+				{
+					"damage": 144.0,
+					"effective": 109.0,
+					"hits": 18,
+					"tower": "ice@4",
+					"wave": 5
+				},
+				{
+					"damage": 90.0,
+					"effective": 89.0,
+					"hits": 15,
+					"tower": "lightning@8",
+					"wave": 5
+				},
+				{
+					"damage": 33.0,
+					"effective": 33.0,
+					"hits": 11,
+					"tower": "lightning@8-chain",
+					"wave": 5
+				}
+			],
+			"victory": false,
+			"wave": 5,
+			"wave_stats": [
+				{
+					"board_occupancy_pct": 33.3,
+					"damage_dealt": 208.0,
+					"duration_s": 19.7333333333335,
+					"gold_end": 110,
+					"gold_start": 60,
+					"hp_end": 10,
+					"hp_start": 10,
+					"kills": 6,
+					"leaks": 0,
+					"merges": 0,
+					"spawned": 6,
+					"summons": 0,
+					"tower_count": 3,
+					"wave": 1,
+					"wave_clear_reward": 20
+				},
+				{
+					"board_occupancy_pct": 33.3,
+					"damage_dealt": 298.0,
+					"duration_s": 28.183333333333,
+					"gold_end": 177,
+					"gold_start": 110,
+					"hp_end": 10,
+					"hp_start": 10,
+					"kills": 9,
+					"leaks": 0,
+					"merges": 0,
+					"spawned": 9,
+					"summons": 0,
+					"tower_count": 3,
+					"wave": 2,
+					"wave_clear_reward": 20
+				},
+				{
+					"board_occupancy_pct": 33.3,
+					"damage_dealt": 310.0,
+					"duration_s": 27.5333333333331,
+					"gold_end": 251,
+					"gold_start": 177,
+					"hp_end": 10,
+					"hp_start": 10,
+					"kills": 10,
+					"leaks": 0,
+					"merges": 0,
+					"spawned": 10,
+					"summons": 0,
+					"tower_count": 3,
+					"wave": 3,
+					"wave_clear_reward": 20
+				},
+				{
+					"board_occupancy_pct": 33.3,
+					"damage_dealt": 454.0,
+					"duration_s": 42.7333333333322,
+					"gold_end": 301,
+					"gold_start": 251,
+					"hp_end": 2,
+					"hp_start": 10,
+					"kills": 6,
+					"leaks": 4,
+					"merges": 0,
+					"spawned": 10,
+					"summons": 0,
+					"tower_count": 3,
+					"wave": 4,
+					"wave_clear_reward": 20
+				},
+				{
+					"board_occupancy_pct": 33.3,
+					"damage_dealt": 483.0,
+					"duration_s": 43.2999999999988,
+					"gold_end": 365,
+					"gold_start": 301,
+					"hp_end": 0,
+					"hp_start": 2,
+					"kills": 10,
+					"leaks": 1,
+					"merges": 0,
+					"spawned": 12,
+					"summons": 0,
+					"tower_count": 3,
+					"wave": 5,
+					"wave_clear_reward": 0
+				}
+			]
+		},
+		{
+			"combat_log": [
+				"   0.00 | PREP wave=1 gold=60 hp=10 towers=3 seed=20261018",
+				"   0.00 | COMBAT wave=1 start gold=60 hp=10 enemies=6",
+				"  10.44 | KILL 普通敌人 gold=5 total_gold=65",
+				"  11.73 | KILL 普通敌人 gold=5 total_gold=70",
+				"  13.73 | KILL 普通敌人 gold=5 total_gold=75",
+				"  15.73 | KILL 普通敌人 gold=5 total_gold=80",
+				"  17.73 | KILL 普通敌人 gold=5 total_gold=85",
+				"  19.73 | KILL 普通敌人 gold=5 total_gold=90",
+				"  19.73 | WAVE CLEAR wave=1 reward=20 gold=110 hp=10",
+				"  19.73 | COMBAT wave=2 start gold=110 hp=10 enemies=9",
+				"  29.14 | KILL 迅捷敌人 gold=6 total_gold=116",
+				"  31.14 | KILL 迅捷敌人 gold=6 total_gold=122",
+				"  33.14 | KILL 普通敌人 gold=5 total_gold=127",
+				"  42.16 | KILL 普通敌人 gold=5 total_gold=132",
+				"  43.12 | KILL 普通敌人 gold=5 total_gold=137",
+				"  44.32 | KILL 普通敌人 gold=5 total_gold=142",
+				"  45.52 | KILL 普通敌人 gold=5 total_gold=147",
+				"  46.72 | KILL 普通敌人 gold=5 total_gold=152",
+				"  47.92 | KILL 普通敌人 gold=5 total_gold=157",
+				"  47.92 | WAVE CLEAR wave=2 reward=20 gold=177 hp=10",
+				"  47.92 | COMBAT wave=3 start gold=177 hp=10 enemies=10",
+				"  56.33 | KILL 迅捷敌人 gold=6 total_gold=183",
+				"  58.28 | KILL 迅捷敌人 gold=6 total_gold=189",
+				"  59.33 | KILL 迅捷敌人 gold=6 total_gold=195",
+				"  60.68 | KILL 迅捷敌人 gold=6 total_gold=201",
+				"  69.85 | KILL 普通敌人 gold=5 total_gold=206",
+				"  70.65 | KILL 普通敌人 gold=5 total_gold=211",
+				"  72.42 | KILL 普通敌人 gold=5 total_gold=216",
+				"  73.85 | KILL 普通敌人 gold=5 total_gold=221",
+				"  74.65 | KILL 普通敌人 gold=5 total_gold=226",
+				"  75.45 | KILL 普通敌人 gold=5 total_gold=231",
+				"  75.45 | WAVE CLEAR wave=3 reward=20 gold=251 hp=10",
+				"  75.45 | COMBAT wave=4 start gold=251 hp=10 enemies=10",
+				"  87.88 | KILL 普通敌人 gold=5 total_gold=256",
+				"  89.17 | KILL 普通敌人 gold=5 total_gold=261",
+				"  91.17 | KILL 普通敌人 gold=5 total_gold=266",
+				"  93.17 | KILL 普通敌人 gold=5 total_gold=271",
+				" 103.77 | KILL 普通敌人 gold=5 total_gold=276",
+				" 106.17 | KILL 普通敌人 gold=5 total_gold=281",
+				" 114.83 | LEAK 重甲敌人 dmg=2 hp=8",
+				" 115.04 | LEAK 重甲敌人 dmg=2 hp=6",
+				" 116.88 | LEAK 重甲敌人 dmg=2 hp=4",
+				" 118.18 | LEAK 重甲敌人 dmg=2 hp=2",
+				" 118.18 | WAVE CLEAR wave=4 reward=20 gold=301 hp=2",
+				" 118.18 | COMBAT wave=5 start gold=301 hp=2 enemies=12",
+				" 124.60 | KILL 迅捷敌人 gold=6 total_gold=307",
+				" 126.49 | KILL 迅捷敌人 gold=6 total_gold=313",
+				" 127.60 | KILL 迅捷敌人 gold=6 total_gold=319",
+				" 128.89 | KILL 迅捷敌人 gold=6 total_gold=325",
+				" 134.94 | KILL 迅捷敌人 gold=6 total_gold=331",
+				" 136.14 | KILL 迅捷敌人 gold=6 total_gold=337",
+				" 137.09 | KILL 迅捷敌人 gold=6 total_gold=343",
+				" 137.34 | KILL 迅捷敌人 gold=6 total_gold=349",
+				" 139.74 | KILL 重甲敌人 gold=8 total_gold=357",
+				" 156.21 | KILL 重甲敌人 gold=8 total_gold=365",
+				" 161.47 | LEAK 重甲敌人 dmg=2 hp=0",
+				" 161.47 | RESULT victory=false wave=5 gold=365 hp=0 time=161.5"
+			],
+			"dt": 0.01,
+			"enemies": [
+				{
+					"damage": {
+						"fire@2": 24.0,
+						"ice@4": 8.0
+					},
+					"effective_damage": {
+						"fire@2": 24.0,
+						"ice@4": 8.0
+					},
+					"end_s": 10.4399999999998,
+					"first_hit_s": 8.73999999999986,
+					"hits": {
+						"fire@2": 2,
+						"ice@4": 1
+					},
+					"hp_initial": 32.0,
+					"hp_remaining": 0.0,
+					"id": 1,
+					"last_hit_progress": 939.599999999984,
+					"last_hit_s": 10.4399999999998,
+					"outcome": "kill",
+					"spawn_s": 0.01,
+					"type": "grunt",
+					"wave": 1
+				},
+				{
+					"damage": {
+						"fire@2": 24.0,
+						"ice@4": 8.0
+					},
+					"effective_damage": {
+						"fire@2": 24.0,
+						"ice@4": 8.0
+					},
+					"end_s": 11.7299999999998,
+					"first_hit_s": 10.7299999999998,
+					"hits": {
+						"fire@2": 2,
+						"ice@4": 1
+					},
+					"hp_initial": 32.0,
+					"hp_remaining": 0.0,
+					"id": 2,
+					"last_hit_progress": 946.799999999984,
+					"last_hit_s": 11.7299999999998,
+					"outcome": "kill",
+					"spawn_s": 1.2,
+					"type": "grunt",
+					"wave": 1
+				},
+				{
+					"damage": {
+						"fire@2": 24.0,
+						"ice@4": 8.0
+					},
+					"effective_damage": {
+						"fire@2": 24.0,
+						"ice@4": 8.0
+					},
+					"end_s": 13.7299999999998,
+					"first_hit_s": 12.7299999999998,
+					"hits": {
+						"fire@2": 2,
+						"ice@4": 1
+					},
+					"hp_initial": 32.0,
+					"hp_remaining": 0.0,
+					"id": 3,
+					"last_hit_progress": 1004.39999999999,
+					"last_hit_s": 13.7299999999998,
+					"outcome": "kill",
+					"spawn_s": 2.39999999999999,
+					"type": "grunt",
+					"wave": 1
+				},
+				{
+					"damage": {
+						"fire@2": 24.0,
+						"ice@4": 16.0
+					},
+					"effective_damage": {
+						"fire@2": 16.0,
+						"ice@4": 16.0
+					},
+					"end_s": 15.7299999999997,
+					"first_hit_s": 14.0299999999997,
+					"hits": {
+						"fire@2": 2,
+						"ice@4": 2
+					},
+					"hp_initial": 32.0,
+					"hp_remaining": 0.0,
+					"id": 4,
+					"last_hit_progress": 1061.99999999999,
+					"last_hit_s": 15.7299999999997,
+					"outcome": "kill",
+					"spawn_s": 3.59999999999997,
+					"type": "grunt",
+					"wave": 1
+				},
+				{
+					"damage": {
+						"fire@2": 24.0,
+						"ice@4": 16.0
+					},
+					"effective_damage": {
+						"fire@2": 16.0,
+						"ice@4": 16.0
+					},
+					"end_s": 17.73,
+					"first_hit_s": 16.4299999999998,
+					"hits": {
+						"fire@2": 2,
+						"ice@4": 2
+					},
+					"hp_initial": 32.0,
+					"hp_remaining": 0.0,
+					"id": 5,
+					"last_hit_progress": 1141.19999999999,
+					"last_hit_s": 17.73,
+					"outcome": "kill",
+					"spawn_s": 4.79999999999994,
+					"type": "grunt",
+					"wave": 1
+				},
+				{
+					"damage": {
+						"fire@2": 24.0,
+						"ice@4": 8.0
+					},
+					"effective_damage": {
+						"fire@2": 24.0,
+						"ice@4": 8.0
+					},
+					"end_s": 19.7300000000003,
+					"first_hit_s": 18.7300000000001,
+					"hits": {
+						"fire@2": 2,
+						"ice@4": 1
+					},
+					"hp_initial": 32.0,
+					"hp_remaining": 0.0,
+					"id": 6,
+					"last_hit_progress": 1220.4,
+					"last_hit_s": 19.7300000000003,
+					"outcome": "kill",
+					"spawn_s": 5.99999999999992,
+					"type": "grunt",
+					"wave": 1
+				},
+				{
+					"damage": {
+						"fire@2": 24.0,
+						"ice@4": 16.0
+					},
+					"effective_damage": {
+						"fire@2": 16.0,
+						"ice@4": 16.0
+					},
+					"end_s": 13.4099999999998,
+					"first_hit_s": 11.5099999999998,
+					"hits": {
+						"fire@2": 2,
+						"ice@4": 2
+					},
+					"hp_initial": 32.0,
+					"hp_remaining": 0.0,
+					"id": 7,
+					"last_hit_progress": 1172.69999999999,
+					"last_hit_s": 13.4099999999998,
+					"outcome": "kill",
+					"spawn_s": 0.01,
+					"type": "grunt",
+					"wave": 2
+				},
+				{
+					"damage": {
+						"fire@2": 12.0,
+						"ice@4": 16.0,
+						"lightning@8": 6.0
+					},
+					"effective_damage": {
+						"fire@2": 12.0,
+						"ice@4": 16.0,
+						"lightning@8": 4.0
+					},
+					"end_s": 22.4300000000007,
+					"first_hit_s": 13.9099999999997,
+					"hits": {
+						"fire@2": 1,
+						"ice@4": 2,
+						"lightning@8": 1
+					},
+					"hp_initial": 32.0,
+					"hp_remaining": 0.0,
+					"id": 8,
+					"last_hit_progress": 1898.64000000006,
+					"last_hit_s": 22.4300000000007,
+					"outcome": "kill",
+					"spawn_s": 1.0,
+					"type": "grunt",
+					"wave": 2
+				},
+				{
+					"damage": {
+						"fire@2": 12.0,
+						"ice@4": 16.0,
+						"lightning@8": 6.0
+					},
+					"effective_damage": {
+						"fire@2": 12.0,
+						"ice@4": 16.0,
+						"lightning@8": 4.0
+					},
+					"end_s": 23.3900000000009,
+					"first_hit_s": 15.1099999999997,
+					"hits": {
+						"fire@2": 1,
+						"ice@4": 2,
+						"lightning@8": 1
+					},
+					"hp_initial": 32.0,
+					"hp_remaining": 0.0,
+					"id": 9,
+					"last_hit_progress": 1899.18000000006,
+					"last_hit_s": 23.3900000000009,
+					"outcome": "kill",
+					"spawn_s": 2.0,
+					"type": "grunt",
+					"wave": 2
+				},
+				{
+					"damage": {
+						"fire@2": 12.0,
+						"ice@4": 16.0,
+						"lightning@8": 6.0
+					},
+					"effective_damage": {
+						"fire@2": 12.0,
+						"ice@4": 14.0,
+						"lightning@8": 6.0
+					},
+					"end_s": 24.590000000001,
+					"first_hit_s": 16.3099999999998,
+					"hits": {
+						"fire@2": 1,
+						"ice@4": 2,
+						"lightning@8": 1
+					},
+					"hp_initial": 32.0,
+					"hp_remaining": 0.0,
+					"id": 10,
+					"last_hit_progress": 1917.18000000007,
+					"last_hit_s": 24.590000000001,
+					"outcome": "kill",
+					"spawn_s": 2.99999999999998,
+					"type": "grunt",
+					"wave": 2
+				},
+				{
+					"damage": {
+						"fire@2": 24.0
+					},
+					"effective_damage": {
+						"fire@2": 22.0
+					},
+					"end_s": 9.40999999999984,
+					"first_hit_s": 8.41999999999986,
+					"hits": {
+						"fire@2": 2
+					},
+					"hp_initial": 22.0,
+					"hp_remaining": 0.0,
+					"id": 11,
+					"last_hit_progress": 930.90000000001,
+					"last_hit_s": 9.40999999999984,
+					"outcome": "kill",
+					"spawn_s": 2.99999999999998,
+					"type": "swift",
+					"wave": 2
+				},
+				{
+					"damage": {
+						"fire@2": 24.0,
+						"ice@4": 8.0
+					},
+					"effective_damage": {
+						"fire@2": 14.0,
+						"ice@4": 8.0
+					},
+					"end_s": 11.4099999999998,
+					"first_hit_s": 10.3199999999998,
+					"hits": {
+						"fire@2": 2,
+						"ice@4": 1
+					},
+					"hp_initial": 22.0,
+					"hp_remaining": 0.0,
+					"id": 12,
+					"last_hit_progress": 1066.04000000001,
+					"last_hit_s": 11.4099999999998,
+					"outcome": "kill",
+					"spawn_s": 3.84999999999996,
+					"type": "swift",
+					"wave": 2
+				},
+				{
+					"damage": {
+						"fire@2": 12.0,
+						"ice@4": 16.0,
+						"lightning@8": 6.0
+					},
+					"effective_damage": {
+						"fire@2": 12.0,
+						"ice@4": 14.0,
+						"lightning@8": 6.0
+					},
+					"end_s": 25.7900000000012,
+					"first_hit_s": 17.4099999999999,
+					"hits": {
+						"fire@2": 1,
+						"ice@4": 2,
+						"lightning@8": 1
+					},
+					"hp_initial": 32.0,
+					"hp_remaining": 0.0,
+					"id": 13,
+					"last_hit_progress": 1935.18000000007,
+					"last_hit_s": 25.7900000000012,
+					"outcome": "kill",
+					"spawn_s": 3.99999999999996,
+					"type": "grunt",
+					"wave": 2
+				},
+				{
+					"damage": {
+						"fire@2": 12.0,
+						"ice@4": 16.0,
+						"lightning@8": 6.0
+					},
+					"effective_damage": {
+						"fire@2": 12.0,
+						"ice@4": 14.0,
+						"lightning@8": 6.0
+					},
+					"end_s": 26.9900000000014,
+					"first_hit_s": 18.4100000000001,
+					"hits": {
+						"fire@2": 1,
+						"ice@4": 2,
+						"lightning@8": 1
+					},
+					"hp_initial": 32.0,
+					"hp_remaining": 0.0,
+					"id": 14,
+					"last_hit_progress": 1953.18000000007,
+					"last_hit_s": 26.9900000000014,
+					"outcome": "kill",
+					"spawn_s": 4.99999999999994,
+					"type": "grunt",
+					"wave": 2
+				},
+				{
+					"damage": {
+						"fire@2": 12.0,
+						"ice@4": 8.0,
+						"lightning@8": 12.0
+					},
+					"effective_damage": {
+						"fire@2": 12.0,
+						"ice@4": 8.0,
+						"lightning@8": 12.0
+					},
+					"end_s": 28.1900000000016,
+					"first_hit_s": 19.4100000000002,
+					"hits": {
+						"fire@2": 1,
+						"ice@4": 1,
+						"lightning@8": 2
+					},
+					"hp_initial": 32.0,
+					"hp_remaining": 0.0,
+					"id": 15,
+					"last_hit_progress": 1998.00000000008,
+					"last_hit_s": 28.1900000000016,
+					"outcome": "kill",
+					"spawn_s": 5.99999999999992,
+					"type": "grunt",
+					"wave": 2
+				},
+				{
+					"damage": {
+						"fire@2": 12.0,
+						"ice@4": 8.0,
+						"lightning@8": 12.0
+					},
+					"effective_damage": {
+						"fire@2": 12.0,
+						"ice@4": 8.0,
+						"lightning@8": 12.0
+					},
+					"end_s": 21.9300000000006,
+					"first_hit_s": 13.4099999999998,
+					"hits": {
+						"fire@2": 1,
+						"ice@4": 1,
+						"lightning@8": 2
+					},
+					"hp_initial": 32.0,
+					"hp_remaining": 0.0,
+					"id": 16,
+					"last_hit_progress": 1955.34000000007,
+					"last_hit_s": 21.9300000000006,
+					"outcome": "kill",
+					"spawn_s": 0.01,
+					"type": "grunt",
+					"wave": 3
+				},
+				{
+					"damage": {
+						"fire@2": 12.0,
+						"ice@4": 16.0,
+						"lightning@8": 6.0
+					},
+					"effective_damage": {
+						"fire@2": 12.0,
+						"ice@4": 16.0,
+						"lightning@8": 4.0
+					},
+					"end_s": 22.7300000000008,
+					"first_hit_s": 13.9599999999997,
+					"hits": {
+						"fire@2": 1,
+						"ice@4": 2,
+						"lightning@8": 1
+					},
+					"hp_initial": 32.0,
+					"hp_remaining": 0.0,
+					"id": 17,
+					"last_hit_progress": 1931.94000000006,
+					"last_hit_s": 22.7300000000008,
+					"outcome": "kill",
+					"spawn_s": 0.850000000000001,
+					"type": "grunt",
+					"wave": 3
+				},
+				{
+					"damage": {
+						"ice@4": 24.0,
+						"lightning@8": 12.0
+					},
+					"effective_damage": {
+						"ice@4": 20.0,
+						"lightning@8": 12.0
+					},
+					"end_s": 24.500000000001,
+					"first_hit_s": 15.1599999999997,
+					"hits": {
+						"ice@4": 3,
+						"lightning@8": 2
+					},
+					"hp_initial": 32.0,
+					"hp_remaining": 0.0,
+					"id": 18,
+					"last_hit_progress": 2004.48000000007,
+					"last_hit_s": 24.500000000001,
+					"outcome": "kill",
+					"spawn_s": 1.7,
+					"type": "grunt",
+					"wave": 3
+				},
+				{
+					"damage": {
+						"fire@2": 24.0
+					},
+					"effective_damage": {
+						"fire@2": 22.0
+					},
+					"end_s": 8.40999999999987,
+					"first_hit_s": 7.41999999999989,
+					"hits": {
+						"fire@2": 2
+					},
+					"hp_initial": 22.0,
+					"hp_remaining": 0.0,
+					"id": 19,
+					"last_hit_progress": 930.90000000001,
+					"last_hit_s": 8.40999999999987,
+					"outcome": "kill",
+					"spawn_s": 2.0,
+					"type": "swift",
+					"wave": 3
+				},
+				{
+					"damage": {
+						"fire@2": 12.0,
+						"ice@4": 8.0,
+						"lightning@8": 12.0,
+						"lightning@8-chain": 3.0
+					},
+					"effective_damage": {
+						"fire@2": 12.0,
+						"ice@4": 8.0,
+						"lightning@8": 9.0,
+						"lightning@8-chain": 3.0
+					},
+					"end_s": 25.9300000000013,
+					"first_hit_s": 15.4099999999997,
+					"hits": {
+						"fire@2": 1,
+						"ice@4": 1,
+						"lightning@8": 2,
+						"lightning@8-chain": 1
+					},
+					"hp_initial": 32.0,
+					"hp_remaining": 0.0,
+					"id": 20,
+					"last_hit_progress": 2100.96000000008,
+					"last_hit_s": 25.9300000000013,
+					"outcome": "kill",
+					"spawn_s": 2.54999999999999,
+					"type": "grunt",
+					"wave": 3
+				},
+				{
+					"damage": {
+						"fire@2": 12.0,
+						"ice@4": 16.0
+					},
+					"effective_damage": {
+						"fire@2": 12.0,
+						"ice@4": 10.0
+					},
+					"end_s": 10.3599999999998,
+					"first_hit_s": 9.16999999999985,
+					"hits": {
+						"fire@2": 1,
+						"ice@4": 2
+					},
+					"hp_initial": 22.0,
+					"hp_remaining": 0.0,
+					"id": 21,
+					"last_hit_progress": 1077.64000000001,
+					"last_hit_s": 10.3599999999998,
+					"outcome": "kill",
+					"spawn_s": 2.69999999999999,
+					"type": "swift",
+					"wave": 3
+				},
+				{
+					"damage": {
+						"fire@2": 12.0,
+						"ice@4": 8.0,
+						"lightning@8": 6.0,
+						"lightning@8-chain": 6.0
+					},
+					"effective_damage": {
+						"fire@2": 12.0,
+						"ice@4": 8.0,
+						"lightning@8": 6.0,
+						"lightning@8-chain": 6.0
+					},
+					"end_s": 26.7300000000014,
+					"first_hit_s": 16.3599999999998,
+					"hits": {
+						"fire@2": 1,
+						"ice@4": 1,
+						"lightning@8": 1,
+						"lightning@8-chain": 2
+					},
+					"hp_initial": 32.0,
+					"hp_remaining": 0.0,
+					"id": 22,
+					"last_hit_progress": 2073.78000000008,
+					"last_hit_s": 26.7300000000014,
+					"outcome": "kill",
+					"spawn_s": 3.39999999999997,
+					"type": "grunt",
+					"wave": 3
+				},
+				{
+					"damage": {
+						"fire@2": 24.0
+					},
+					"effective_damage": {
+						"fire@2": 22.0
+					},
+					"end_s": 11.4099999999998,
+					"first_hit_s": 10.4099999999998,
+					"hits": {
+						"fire@2": 2
+					},
+					"hp_initial": 22.0,
+					"hp_remaining": 0.0,
+					"id": 23,
+					"last_hit_progress": 1162.90000000002,
+					"last_hit_s": 11.4099999999998,
+					"outcome": "kill",
+					"spawn_s": 3.39999999999997,
+					"type": "swift",
+					"wave": 3
+				},
+				{
+					"damage": {
+						"fire@2": 12.0,
+						"ice@4": 16.0
+					},
+					"effective_damage": {
+						"fire@2": 12.0,
+						"ice@4": 10.0
+					},
+					"end_s": 12.7599999999998,
+					"first_hit_s": 11.5599999999998,
+					"hits": {
+						"fire@2": 1,
+						"ice@4": 2
+					},
+					"hp_initial": 22.0,
+					"hp_remaining": 0.0,
+					"id": 24,
+					"last_hit_progress": 1222.35000000002,
+					"last_hit_s": 12.7599999999998,
+					"outcome": "kill",
+					"spawn_s": 4.09999999999996,
+					"type": "swift",
+					"wave": 3
+				},
+				{
+					"damage": {
+						"fire@2": 12.0,
+						"ice@4": 16.0,
+						"lightning@8": 6.0,
+						"lightning@8-chain": 3.0
+					},
+					"effective_damage": {
+						"fire@2": 12.0,
+						"ice@4": 16.0,
+						"lightning@8": 1.0,
+						"lightning@8-chain": 3.0
+					},
+					"end_s": 27.5300000000015,
+					"first_hit_s": 17.4099999999999,
+					"hits": {
+						"fire@2": 1,
+						"ice@4": 2,
+						"lightning@8": 1,
+						"lightning@8-chain": 1
+					},
+					"hp_initial": 32.0,
+					"hp_remaining": 0.0,
+					"id": 25,
+					"last_hit_progress": 2057.94000000007,
+					"last_hit_s": 27.5300000000015,
+					"outcome": "kill",
+					"spawn_s": 4.24999999999995,
+					"type": "grunt",
+					"wave": 3
+				},
+				{
+					"damage": {
+						"fire@2": 12.0,
+						"ice@4": 40.0,
+						"lightning@8": 36.0,
+						"lightning@8-chain": 6.0
+					},
+					"effective_damage": {
+						"fire@2": 12.0,
+						"ice@4": 40.0,
+						"lightning@8": 36.0,
+						"lightning@8-chain": 6.0
+					},
+					"end_s": 39.3800000000007,
+					"first_hit_s": 16.0199999999997,
+					"hits": {
+						"fire@2": 1,
+						"ice@4": 5,
+						"lightning@8": 6,
+						"lightning@8-chain": 2
+					},
+					"hp_initial": 95.0,
+					"hp_remaining": 1.0,
+					"id": 26,
+					"last_hit_progress": 2271.49000000009,
+					"last_hit_s": 36.3200000000013,
+					"outcome": "leak",
+					"spawn_s": 0.01,
+					"type": "armor",
+					"wave": 4
+				},
+				{
+					"damage": {
+						"fire@2": 12.0,
+						"ice@4": 8.0,
+						"lightning@8": 6.0,
+						"lightning@8-chain": 18.0
+					},
+					"effective_damage": {
+						"fire@2": 12.0,
+						"ice@4": 8.0,
+						"lightning@8": 6.0,
+						"lightning@8-chain": 18.0
+					},
+					"end_s": 39.5900000000007,
+					"first_hit_s": 19.7200000000003,
+					"hits": {
+						"fire@2": 1,
+						"ice@4": 1,
+						"lightning@8": 1,
+						"lightning@8-chain": 6
+					},
+					"hp_initial": 95.0,
+					"hp_remaining": 51.0,
+					"id": 27,
+					"last_hit_progress": 2257.58000000013,
+					"last_hit_s": 36.3200000000013,
+					"outcome": "leak",
+					"spawn_s": 1.3,
+					"type": "armor",
+					"wave": 4
+				},
+				{
+					"damage": {
+						"fire@2": 24.0,
+						"ice@4": 8.0
+					},
+					"effective_damage": {
+						"fire@2": 24.0,
+						"ice@4": 8.0
+					},
+					"end_s": 12.4299999999998,
+					"first_hit_s": 10.7299999999998,
+					"hits": {
+						"fire@2": 2,
+						"ice@4": 1
+					},
+					"hp_initial": 32.0,
+					"hp_remaining": 0.0,
+					"id": 28,
+					"last_hit_progress": 939.599999999984,
+					"last_hit_s": 12.4299999999998,
+					"outcome": "kill",
+					"spawn_s": 2.0,
+					"type": "grunt",
+					"wave": 4
+				},
+				{
+					"damage": {
+						"fire@2": 12.0,
+						"ice@4": 24.0,
+						"lightning@8": 18.0
+					},
+					"effective_damage": {
+						"fire@2": 12.0,
+						"ice@4": 24.0,
+						"lightning@8": 18.0
+					},
+					"end_s": 41.4300000000003,
+					"first_hit_s": 20.7200000000004,
+					"hits": {
+						"fire@2": 1,
+						"ice@4": 3,
+						"lightning@8": 3
+					},
+					"hp_initial": 95.0,
+					"hp_remaining": 41.0,
+					"id": 29,
+					"last_hit_progress": 2294.11000000011,
+					"last_hit_s": 38.7200000000009,
+					"outcome": "leak",
+					"spawn_s": 2.59999999999999,
+					"type": "armor",
+					"wave": 4
+				},
+				{
+					"damage": {
+						"fire@2": 24.0,
+						"ice@4": 8.0
+					},
+					"effective_damage": {
+						"fire@2": 24.0,
+						"ice@4": 8.0
+					},
+					"end_s": 13.7199999999998,
+					"first_hit_s": 12.7199999999998,
+					"hits": {
+						"fire@2": 2,
+						"ice@4": 1
+					},
+					"hp_initial": 32.0,
+					"hp_remaining": 0.0,
+					"id": 30,
+					"last_hit_progress": 972.899999999983,
+					"last_hit_s": 13.7199999999998,
+					"outcome": "kill",
+					"spawn_s": 2.89999999999998,
+					"type": "grunt",
+					"wave": 4
+				},
+				{
+					"damage": {
+						"fire@2": 24.0,
+						"ice@4": 8.0
+					},
+					"effective_damage": {
+						"fire@2": 24.0,
+						"ice@4": 8.0
+					},
+					"end_s": 15.7199999999997,
+					"first_hit_s": 14.7199999999997,
+					"hits": {
+						"fire@2": 2,
+						"ice@4": 1
+					},
+					"hp_initial": 32.0,
+					"hp_remaining": 0.0,
+					"id": 31,
+					"last_hit_progress": 1057.49999999999,
+					"last_hit_s": 15.7199999999997,
+					"outcome": "kill",
+					"spawn_s": 3.79999999999996,
+					"type": "grunt",
+					"wave": 4
+				},
+				{
+					"damage": {
+						"fire@2": 24.0,
+						"ice@4": 24.0,
+						"lightning@8": 6.0,
+						"lightning@8-chain": 9.0
+					},
+					"effective_damage": {
+						"fire@2": 24.0,
+						"ice@4": 24.0,
+						"lightning@8": 6.0,
+						"lightning@8-chain": 9.0
+					},
+					"end_s": 42.7300000000001,
+					"first_hit_s": 21.7200000000006,
+					"hits": {
+						"fire@2": 2,
+						"ice@4": 3,
+						"lightning@8": 1,
+						"lightning@8-chain": 3
+					},
+					"hp_initial": 95.0,
+					"hp_remaining": 32.0,
+					"id": 32,
+					"last_hit_progress": 2261.61000000011,
+					"last_hit_s": 39.5200000000007,
+					"outcome": "leak",
+					"spawn_s": 3.89999999999996,
+					"type": "armor",
+					"wave": 4
+				},
+				{
+					"damage": {
+						"fire@2": 24.0,
+						"ice@4": 8.0
+					},
+					"effective_damage": {
+						"fire@2": 24.0,
+						"ice@4": 8.0
+					},
+					"end_s": 17.72,
+					"first_hit_s": 16.7199999999998,
+					"hits": {
+						"fire@2": 2,
+						"ice@4": 1
+					},
+					"hp_initial": 32.0,
+					"hp_remaining": 0.0,
+					"id": 33,
+					"last_hit_progress": 1163.69999999999,
+					"last_hit_s": 17.72,
+					"outcome": "kill",
+					"spawn_s": 4.69999999999994,
+					"type": "grunt",
+					"wave": 4
+				},
+				{
+					"damage": {
+						"ice@4": 16.0,
+						"lightning@8": 18.0
+					},
+					"effective_damage": {
+						"ice@4": 16.0,
+						"lightning@8": 16.0
+					},
+					"end_s": 28.3200000000016,
+					"first_hit_s": 26.5000000000013,
+					"hits": {
+						"ice@4": 2,
+						"lightning@8": 3
+					},
+					"hp_initial": 32.0,
+					"hp_remaining": 0.0,
+					"id": 34,
+					"last_hit_progress": 2012.94000000007,
+					"last_hit_s": 28.3200000000016,
+					"outcome": "kill",
+					"spawn_s": 5.59999999999993,
+					"type": "grunt",
+					"wave": 4
+				},
+				{
+					"damage": {
+						"ice@4": 16.0,
+						"lightning@8": 18.0,
+						"lightning@8-chain": 3.0
+					},
+					"effective_damage": {
+						"ice@4": 16.0,
+						"lightning@8": 13.0,
+						"lightning@8-chain": 3.0
+					},
+					"end_s": 30.720000000002,
+					"first_hit_s": 28.3200000000016,
+					"hits": {
+						"ice@4": 2,
+						"lightning@8": 3,
+						"lightning@8-chain": 1
+					},
+					"hp_initial": 32.0,
+					"hp_remaining": 0.0,
+					"id": 35,
+					"last_hit_progress": 2147.76000000006,
+					"last_hit_s": 30.720000000002,
+					"outcome": "kill",
+					"spawn_s": 6.49999999999991,
+					"type": "grunt",
+					"wave": 4
+				},
+				{
+					"damage": {
+						"fire@2": 24.0
+					},
+					"effective_damage": {
+						"fire@2": 22.0
+					},
+					"end_s": 6.41999999999991,
+					"first_hit_s": 5.42999999999993,
+					"hits": {
+						"fire@2": 2
+					},
+					"hp_initial": 22.0,
+					"hp_remaining": 0.0,
+					"id": 36,
+					"last_hit_progress": 930.90000000001,
+					"last_hit_s": 6.41999999999991,
+					"outcome": "kill",
+					"spawn_s": 0.01,
+					"type": "swift",
+					"wave": 5
+				},
+				{
+					"damage": {
+						"fire@2": 12.0,
+						"ice@4": 16.0
+					},
+					"effective_damage": {
+						"fire@2": 12.0,
+						"ice@4": 10.0
+					},
+					"end_s": 8.30999999999987,
+					"first_hit_s": 7.11999999999989,
+					"hits": {
+						"fire@2": 1,
+						"ice@4": 2
+					},
+					"hp_initial": 22.0,
+					"hp_remaining": 0.0,
+					"id": 37,
+					"last_hit_progress": 1077.64000000001,
+					"last_hit_s": 8.30999999999987,
+					"outcome": "kill",
+					"spawn_s": 0.65,
+					"type": "swift",
+					"wave": 5
+				},
+				{
+					"damage": {
+						"fire@2": 24.0
+					},
+					"effective_damage": {
+						"fire@2": 22.0
+					},
+					"end_s": 9.41999999999984,
+					"first_hit_s": 8.41999999999986,
+					"hits": {
+						"fire@2": 2
+					},
+					"hp_initial": 22.0,
+					"hp_remaining": 0.0,
+					"id": 38,
+					"last_hit_progress": 1178.85000000002,
+					"last_hit_s": 9.41999999999984,
+					"outcome": "kill",
+					"spawn_s": 1.3,
+					"type": "swift",
+					"wave": 5
+				},
+				{
+					"damage": {
+						"fire@2": 12.0,
+						"ice@4": 16.0
+					},
+					"effective_damage": {
+						"fire@2": 12.0,
+						"ice@4": 10.0
+					},
+					"end_s": 10.7099999999998,
+					"first_hit_s": 9.50999999999984,
+					"hits": {
+						"fire@2": 1,
+						"ice@4": 2
+					},
+					"hp_initial": 22.0,
+					"hp_remaining": 0.0,
+					"id": 39,
+					"last_hit_progress": 1236.85000000003,
+					"last_hit_s": 10.7099999999998,
+					"outcome": "kill",
+					"spawn_s": 1.95,
+					"type": "swift",
+					"wave": 5
+				},
+				{
+					"damage": {
+						"ice@4": 16.0,
+						"lightning@8": 12.0
+					},
+					"effective_damage": {
+						"ice@4": 10.0,
+						"lightning@8": 12.0
+					},
+					"end_s": 16.7599999999998,
+					"first_hit_s": 15.5699999999997,
+					"hits": {
+						"ice@4": 2,
+						"lightning@8": 2
+					},
+					"hp_initial": 22.0,
+					"hp_remaining": 0.0,
+					"id": 40,
+					"last_hit_progress": 2020.14000000005,
+					"last_hit_s": 16.7599999999998,
+					"outcome": "kill",
+					"spawn_s": 2.59999999999999,
+					"type": "swift",
+					"wave": 5
+				},
+				{
+					"damage": {
+						"fire@2": 84.0,
+						"ice@4": 16.0
+					},
+					"effective_damage": {
+						"fire@2": 84.0,
+						"ice@4": 11.0
+					},
+					"end_s": 21.5600000000006,
+					"first_hit_s": 15.0899999999997,
+					"hits": {
+						"fire@2": 7,
+						"ice@4": 2
+					},
+					"hp_initial": 95.0,
+					"hp_remaining": 0.0,
+					"id": 41,
+					"last_hit_progress": 1191.44999999999,
+					"last_hit_s": 21.5600000000006,
+					"outcome": "kill",
+					"spawn_s": 2.99999999999998,
+					"type": "armor",
+					"wave": 5
+				},
+				{
+					"damage": {
+						"fire@2": 12.0,
+						"ice@4": 8.0,
+						"lightning@8": 6.0,
+						"lightning@8-chain": 3.0
+					},
+					"effective_damage": {
+						"fire@2": 12.0,
+						"ice@4": 1.0,
+						"lightning@8": 6.0,
+						"lightning@8-chain": 3.0
+					},
+					"end_s": 17.96,
+					"first_hit_s": 11.4199999999998,
+					"hits": {
+						"fire@2": 1,
+						"ice@4": 1,
+						"lightning@8": 1,
+						"lightning@8-chain": 1
+					},
+					"hp_initial": 22.0,
+					"hp_remaining": 0.0,
+					"id": 42,
+					"last_hit_progress": 2134.40000000003,
+					"last_hit_s": 17.96,
+					"outcome": "kill",
+					"spawn_s": 3.24999999999997,
+					"type": "swift",
+					"wave": 5
+				},
+				{
+					"damage": {
+						"ice@4": 8.0,
+						"lightning@8": 12.0,
+						"lightning@8-chain": 3.0
+					},
+					"effective_damage": {
+						"ice@4": 8.0,
+						"lightning@8": 11.0,
+						"lightning@8-chain": 3.0
+					},
+					"end_s": 18.9100000000002,
+					"first_hit_s": 11.9099999999998,
+					"hits": {
+						"ice@4": 1,
+						"lightning@8": 2,
+						"lightning@8-chain": 1
+					},
+					"hp_initial": 22.0,
+					"hp_remaining": 0.0,
+					"id": 43,
+					"last_hit_progress": 2134.69000000004,
+					"last_hit_s": 18.9100000000002,
+					"outcome": "kill",
+					"spawn_s": 3.89999999999996,
+					"type": "swift",
+					"wave": 5
+				},
+				{
+					"damage": {
+						"fire@2": 12.0,
+						"ice@4": 48.0,
+						"lightning@8": 36.0
+					},
+					"effective_damage": {
+						"fire@2": 12.0,
+						"ice@4": 47.0,
+						"lightning@8": 36.0
+					},
+					"end_s": 38.030000000001,
+					"first_hit_s": 22.0800000000007,
+					"hits": {
+						"fire@2": 1,
+						"ice@4": 6,
+						"lightning@8": 6
+					},
+					"hp_initial": 95.0,
+					"hp_remaining": 0.0,
+					"id": 44,
+					"last_hit_progress": 2130.96000000007,
+					"last_hit_s": 38.030000000001,
+					"outcome": "kill",
+					"spawn_s": 3.99999999999996,
+					"type": "armor",
+					"wave": 5
+				},
+				{
+					"damage": {
+						"fire@2": 12.0,
+						"ice@4": 8.0,
+						"lightning@8-chain": 6.0
+					},
+					"effective_damage": {
+						"fire@2": 12.0,
+						"ice@4": 4.0,
+						"lightning@8-chain": 6.0
+					},
+					"end_s": 19.1600000000002,
+					"first_hit_s": 12.4199999999998,
+					"hits": {
+						"fire@2": 1,
+						"ice@4": 1,
+						"lightning@8-chain": 2
+					},
+					"hp_initial": 22.0,
+					"hp_remaining": 0.0,
+					"id": 45,
+					"last_hit_progress": 2119.90000000004,
+					"last_hit_s": 19.1600000000002,
+					"outcome": "kill",
+					"spawn_s": 4.54999999999995,
+					"type": "swift",
+					"wave": 5
+				},
+				{
+					"damage": {
+						"fire@2": 12.0,
+						"ice@4": 8.0,
+						"lightning@8": 18.0,
+						"lightning@8-chain": 12.0
+					},
+					"effective_damage": {
+						"fire@2": 12.0,
+						"ice@4": 8.0,
+						"lightning@8": 18.0,
+						"lightning@8-chain": 12.0
+					},
+					"end_s": 43.29,
+					"first_hit_s": 23.0800000000008,
+					"hits": {
+						"fire@2": 1,
+						"ice@4": 1,
+						"lightning@8": 3,
+						"lightning@8-chain": 4
+					},
+					"hp_initial": 95.0,
+					"hp_remaining": 45.0,
+					"id": 46,
+					"last_hit_progress": 2253.03000000013,
+					"last_hit_s": 39.9500000000006,
+					"outcome": "leak",
+					"spawn_s": 4.99999999999994,
+					"type": "armor",
+					"wave": 5
+				},
+				{
+					"damage": {
+						"fire@2": 12.0,
+						"lightning@8": 6.0,
+						"lightning@8-chain": 9.0
+					},
+					"effective_damage": {
+						"fire@2": 12.0,
+						"lightning@8": 6.0,
+						"lightning@8-chain": 9.0
+					},
+					"end_s": 43.29,
+					"first_hit_s": 24.080000000001,
+					"hits": {
+						"fire@2": 1,
+						"lightning@8": 1,
+						"lightning@8-chain": 3
+					},
+					"hp_initial": 95.0,
+					"hp_remaining": 68.0,
+					"id": 47,
+					"last_hit_progress": 2259.40000000015,
+					"last_hit_s": 40.7500000000005,
+					"outcome": "terminal_cleanup",
+					"progress_end": 2424.50000000017,
+					"spawn_s": 5.99999999999992,
+					"type": "armor",
+					"wave": 5
+				}
+			],
+			"gold": 365,
+			"hp": 0,
+			"peak_alive": {
+				"1": 6,
+				"2": 9,
+				"3": 10,
+				"4": 10,
+				"5": 12
+			},
+			"seconds": 161.469999999998,
+			"seed": 20261018,
+			"stats": {
+				"board_occupancy_pct": 33.3,
+				"damage_dealt": 1753.0,
+				"gold_earned": 305,
+				"gold_spent": 0,
+				"highest_level": 1,
+				"kills": 41,
+				"leaks": 5,
+				"merges": 0,
+				"summons": 0,
+				"tower_count": 3,
+				"wave_rewards": 80
+			},
+			"ticks": 16147,
+			"tower_output": [
+				{
+					"damage": 144.0,
+					"effective": 128.0,
+					"hits": 12,
+					"tower": "fire@2",
+					"wave": 1
+				},
+				{
+					"damage": 64.0,
+					"effective": 64.0,
+					"hits": 8,
+					"tower": "ice@4",
+					"wave": 1
+				},
+				{
+					"damage": 144.0,
+					"effective": 124.0,
+					"hits": 12,
+					"tower": "fire@2",
+					"wave": 2
+				},
+				{
+					"damage": 112.0,
+					"effective": 106.0,
+					"hits": 14,
+					"tower": "ice@4",
+					"wave": 2
+				},
+				{
+					"damage": 42.0,
+					"effective": 38.0,
+					"hits": 7,
+					"tower": "lightning@8",
+					"wave": 2
+				},
+				{
+					"damage": 132.0,
+					"effective": 128.0,
+					"hits": 11,
+					"tower": "fire@2",
+					"wave": 3
+				},
+				{
+					"damage": 112.0,
+					"effective": 96.0,
+					"hits": 14,
+					"tower": "ice@4",
+					"wave": 3
+				},
+				{
+					"damage": 54.0,
+					"effective": 44.0,
+					"hits": 9,
+					"tower": "lightning@8",
+					"wave": 3
+				},
+				{
+					"damage": 12.0,
+					"effective": 12.0,
+					"hits": 4,
+					"tower": "lightning@8-chain",
+					"wave": 3
+				},
+				{
+					"damage": 156.0,
+					"effective": 156.0,
+					"hits": 13,
+					"tower": "fire@2",
+					"wave": 4
+				},
+				{
+					"damage": 160.0,
+					"effective": 160.0,
+					"hits": 20,
+					"tower": "ice@4",
+					"wave": 4
+				},
+				{
+					"damage": 102.0,
+					"effective": 95.0,
+					"hits": 17,
+					"tower": "lightning@8",
+					"wave": 4
+				},
+				{
+					"damage": 36.0,
+					"effective": 36.0,
+					"hits": 12,
+					"tower": "lightning@8-chain",
+					"wave": 4
+				},
+				{
+					"damage": 216.0,
+					"effective": 212.0,
+					"hits": 18,
+					"tower": "fire@2",
+					"wave": 5
+				},
+				{
+					"damage": 144.0,
+					"effective": 109.0,
+					"hits": 18,
+					"tower": "ice@4",
+					"wave": 5
+				},
+				{
+					"damage": 90.0,
+					"effective": 89.0,
+					"hits": 15,
+					"tower": "lightning@8",
+					"wave": 5
+				},
+				{
+					"damage": 33.0,
+					"effective": 33.0,
+					"hits": 11,
+					"tower": "lightning@8-chain",
+					"wave": 5
+				}
+			],
+			"victory": false,
+			"wave": 5,
+			"wave_stats": [
+				{
+					"board_occupancy_pct": 33.3,
+					"damage_dealt": 208.0,
+					"duration_s": 19.7300000000003,
+					"gold_end": 110,
+					"gold_start": 60,
+					"hp_end": 10,
+					"hp_start": 10,
+					"kills": 6,
+					"leaks": 0,
+					"merges": 0,
+					"spawned": 6,
+					"summons": 0,
+					"tower_count": 3,
+					"wave": 1,
+					"wave_clear_reward": 20
+				},
+				{
+					"board_occupancy_pct": 33.3,
+					"damage_dealt": 298.0,
+					"duration_s": 28.1900000000016,
+					"gold_end": 177,
+					"gold_start": 110,
+					"hp_end": 10,
+					"hp_start": 10,
+					"kills": 9,
+					"leaks": 0,
+					"merges": 0,
+					"spawned": 9,
+					"summons": 0,
+					"tower_count": 3,
+					"wave": 2,
+					"wave_clear_reward": 20
+				},
+				{
+					"board_occupancy_pct": 33.3,
+					"damage_dealt": 310.0,
+					"duration_s": 27.5300000000015,
+					"gold_end": 251,
+					"gold_start": 177,
+					"hp_end": 10,
+					"hp_start": 10,
+					"kills": 10,
+					"leaks": 0,
+					"merges": 0,
+					"spawned": 10,
+					"summons": 0,
+					"tower_count": 3,
+					"wave": 3,
+					"wave_clear_reward": 20
+				},
+				{
+					"board_occupancy_pct": 33.3,
+					"damage_dealt": 454.0,
+					"duration_s": 42.7300000000001,
+					"gold_end": 301,
+					"gold_start": 251,
+					"hp_end": 2,
+					"hp_start": 10,
+					"kills": 6,
+					"leaks": 4,
+					"merges": 0,
+					"spawned": 10,
+					"summons": 0,
+					"tower_count": 3,
+					"wave": 4,
+					"wave_clear_reward": 20
+				},
+				{
+					"board_occupancy_pct": 33.3,
+					"damage_dealt": 483.0,
+					"duration_s": 43.29,
+					"gold_end": 365,
+					"gold_start": 301,
+					"hp_end": 0,
+					"hp_start": 2,
+					"kills": 10,
+					"leaks": 1,
+					"merges": 0,
+					"spawned": 12,
+					"summons": 0,
+					"tower_count": 3,
+					"wave": 5,
+					"wave_clear_reward": 0
+				}
+			]
+		}
+	]
+}

@@ -23,6 +23,10 @@ func _initialize() -> void:
 	for tower in core.towers:
 		level1 = level1 and int(tower["level"]) == 1
 	check("D006-lv1-baseline", level1)
+	var approved_slots := core.towers.size() == 3
+	if approved_slots:
+		approved_slots = int(core.towers[0]["slot"]) == 5 and int(core.towers[1]["slot"]) == 4 and int(core.towers[2]["slot"]) == 3
+	check("D008-approved-fixed-towers", approved_slots)
 	# A separate input fixture catches the loader silently dropping declared levels.
 	var data: Dictionary = JSON.parse_string(FileAccess.get_file_as_string(BattleMap.DEFAULT_PATH))
 	data["fixed_towers"][0]["level"] = 2

@@ -1,0 +1,13 @@
+PASS wave-ledger dt=0.050000
+PASS damage-hp-conservation dt=0.050000
+PASS run-ledger dt=0.050000
+PASS same-defeat-outcome dt=0.050000
+PASS wave-ledger dt=0.016667
+PASS damage-hp-conservation dt=0.016667
+PASS run-ledger dt=0.016667
+PASS same-defeat-outcome dt=0.016667
+PASS wave-ledger dt=0.010000
+PASS damage-hp-conservation dt=0.010000
+PASS run-ledger dt=0.010000
+PASS same-defeat-outcome dt=0.010000
+ANALYSIS SUMMARY: PASS=12 FAIL=0 SKIP=0

@@ -1,13 +1,22 @@
-; Element Guardians — Godot 4.4.1 starter skeleton; gameplay is NOT implemented.
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
 config_version=5
 
 [application]
+
 config/name="Element Guardians｜元素守卫（骨架）"
+config/description="2D tower defense planning starter. Gameplay not implemented."
 run/main_scene="res://scenes/main.tscn"
 config/features=PackedStringArray("4.4", "GL Compatibility")
-config/description="2D tower defense planning starter. Gameplay not implemented."
 
 [display]
+
 window/size/viewport_width=720
 window/size/viewport_height=1280
 window/size/window_width_override=540
@@ -15,7 +24,6 @@ window/size/window_height_override=960
 window/stretch/mode="canvas_items"
 
 [rendering]
+
 renderer/rendering_method="gl_compatibility"
 renderer/rendering_method.mobile="gl_compatibility"
-textures/default_filters/use_nearest_mipmap_filter=false
-

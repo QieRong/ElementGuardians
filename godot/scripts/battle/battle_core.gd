@@ -316,6 +316,11 @@ func _check_wave_end() -> void:
 func _finish(is_victory: bool) -> void:
 	if finished:
 		return
+	if not is_victory and state == STATE_COMBAT and not wave_stats.is_empty():
+		var current: Dictionary = wave_stats[wave_stats.size() - 1]
+		current["gold_end"] = gold
+		current["hp_end"] = base_hp
+		current["duration_s"] = wave_elapsed
 	finished = true
 	victory = is_victory
 	state = STATE_RESULT

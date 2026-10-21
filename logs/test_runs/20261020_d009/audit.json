@@ -1,0 +1,26 @@
+{
+  "head": "7f33b36",
+  "branch": "master",
+  "scope": "UI style documentation D009",
+  "commands": [
+    {
+      "name": "sync_check",
+      "exit": 0
+    },
+    {
+      "name": "validate_config",
+      "exit": 0
+    },
+    {
+      "name": "check_docs",
+      "exit": 1
+    }
+  ],
+  "manifest_mismatches": [
+    "godot/project.godot",
+    "godot/scenes/main.tscn"
+  ],
+  "only_preexisting_manifest_mismatches": true,
+  "gameplay_config_changed": false,
+  "gui_verified": false
+}

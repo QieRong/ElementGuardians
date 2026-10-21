@@ -1,0 +1,12 @@
+{
+  "tracked_files_checked": 233,
+  "tracked_file_changes_during_diagnosis": [],
+  "minimum_changed_tower_positions_among_winners": 2,
+  "matrix_cases": 504,
+  "matrix_wins": 17,
+  "engine": "E:/godot/Godot_v4.4.1-stable_win64_console.exe",
+  "version": "4.4.1.stable.official.49a5bc7b6",
+  "branch": "master",
+  "commit": "7f33b36",
+  "working_tree_has_prior_uncommitted_repairs": true
+}

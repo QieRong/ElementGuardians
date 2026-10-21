@@ -1,0 +1,14 @@
+COMMAND=['E:\\godot\\Godot_v4.4.1-stable_win64.exe', '--log-file', 'D:\\桌面\\ElementGuardians\\logs\\test_runs\\20261020_w5-diagnosis\\placement_sweep.engine.log', '--headless', '--path', 'godot', '--script', 'D:/桌面/ElementGuardians/logs/test_runs/20261020_w5-diagnosis/probe_placements.gd']
+CWD=D:\桌面\ElementGuardians
+Godot Engine v4.4.1.stable.official.49a5bc7b6 - https://godotengine.org
+
+PASS load-approved-data
+PASS frozen-matrix-504
+PLACEMENT PROGRESS 100/504
+PLACEMENT PROGRESS 200/504
+PLACEMENT PROGRESS 300/504
+PLACEMENT PROGRESS 400/504
+
+EXIT=1 LIMIT=TIMEOUT PEAK_PRIVATE_BYTES=41172992
+STDIO=logs\test_runs\20261020_w5-diagnosis\placement_sweep.stdio.log
+HARNESS=FAIL SUMMARY_FOUND=False

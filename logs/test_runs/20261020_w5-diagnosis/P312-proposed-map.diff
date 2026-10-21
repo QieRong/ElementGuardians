@@ -1,0 +1,20 @@
+--- a/godot/data/map_default.json
++++ b/godot/data/map_default.json
+@@ -145,7 +145,7 @@
+   ],
+   "fixed_towers": [
+     {
+-      "slot": 2,
++      "slot": 5,
+       "type_id": "fire",
+       "level": 1,
+       "label": "诊断夹具 Lv1"
+@@ -157,7 +157,7 @@
+       "label": "诊断夹具 Lv1"
+     },
+     {
+-      "slot": 8,
++      "slot": 3,
+       "type_id": "lightning",
+       "level": 1,
+       "label": "诊断夹具 Lv1"

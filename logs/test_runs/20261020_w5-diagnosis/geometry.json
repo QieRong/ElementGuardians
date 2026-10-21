@@ -1,0 +1,71 @@
+{
+  "path_length_px": 2470.0,
+  "towers": [
+    {
+      "type": "fire",
+      "slot": 2,
+      "radius": 230.0,
+      "intervals_progress_px": [
+        [
+          786.4218330839946,
+          810.0
+        ],
+        [
+          810.0,
+          1221.6601048851671
+        ]
+      ],
+      "covered_px": 435.2382718011726,
+      "coverage_pct": 17.620982664015084,
+      "unmodified_armor_exposure_seconds": 6.695973412325732
+    },
+    {
+      "type": "ice",
+      "slot": 4,
+      "radius": 235.0,
+      "intervals_progress_px": [
+        [
+          938.9205507026187,
+          1241.0794492973814
+        ],
+        [
+          1881.7068331406067,
+          2158.2931668593933
+        ]
+      ],
+      "covered_px": 578.7452323135493,
+      "coverage_pct": 23.43098106532588,
+      "unmodified_armor_exposure_seconds": 8.903772804823836
+    },
+    {
+      "type": "lightning",
+      "slot": 8,
+      "radius": 225.0,
+      "intervals_progress_px": [
+        [
+          1898.4435562925362,
+          2300.0
+        ],
+        [
+          2300.0,
+          2303.0776406404416
+        ]
+      ],
+      "covered_px": 404.6340843479054,
+      "coverage_pct": 16.38194673473301,
+      "unmodified_armor_exposure_seconds": 6.2251397591985445
+    }
+  ],
+  "union_intervals": [
+    [
+      786.4218330839946,
+      1241.0794492973814
+    ],
+    [
+      1881.7068331406067,
+      2303.0776406404416
+    ]
+  ],
+  "union_px": 876.0284237132217,
+  "final_uncovered_px": 166.9223593595584
+}

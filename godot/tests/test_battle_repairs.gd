@@ -22,9 +22,11 @@ func _initialize() -> void:
 		test_settlement()
 	if selected in ["all", "fatal"]:
 		test_fatal_leak()
+	if selected in ["all", "failed_wave_stats"]:
+		test_failed_wave_stats()
 	if selected in ["all", "restart"]:
 		test_restart()
-	if selected not in ["all", "settlement", "fatal", "restart"]:
+	if selected not in ["all", "settlement", "fatal", "failed_wave_stats", "restart"]:
 		check("known-case", false)
 	finish()
 
@@ -73,6 +75,32 @@ func test_fatal_leak() -> void:
 	core._damage_enemy(pending, 100.0)
 	core._on_leak(fatal)
 	check("SES-02-late-events-no-effect", core.gold == 60 and core.base_hp == 0 and int(core.stats["kills"]) == 0)
+
+func test_failed_wave_stats() -> void:
+	var core := new_core()
+	core.restart()
+	core.base_hp = 1
+	core.start_wave()
+	core.towers.clear()
+	core.tick(0.05)
+	var first: Dictionary = core.enemies[0]
+	core._damage_enemy(first, 100.0)
+	core.tick(2.4)
+	var fatal: Dictionary = core.enemies[0]
+	fatal["progress"] = map.path_length
+	core.tick(0.05)
+	var row: Dictionary = core.wave_stats.back()
+	print("FAILED WAVE STATS wave=%d start_gold=%d end_gold=%d start_hp=%d end_hp=%d duration=%.2f spawned=%d kills=%d leaks=%d" % [
+		row["wave"], row["gold_start"], row["gold_end"], row["hp_start"], row["hp_end"],
+		row["duration_s"], row["spawned"], row["kills"], row["leaks"]])
+	check("WAV-failed-end-snapshot",
+		core.finished and not core.victory and int(row["hp_start"]) == 1 and int(row["hp_end"]) == 0
+		and int(row["gold_start"]) == 60 and int(row["gold_end"]) == 65
+		and float(row["duration_s"]) > 2.4 and is_equal_approx(float(row["duration_s"]), core.wave_elapsed))
+	check("WAV-failed-accounting",
+		int(row["spawned"]) == 3 and int(row["kills"]) == 1 and int(row["leaks"]) == 1
+		and int(row["spawned"]) - int(row["kills"]) - int(row["leaks"]) == 1
+		and int(row["wave_clear_reward"]) == 0 and core.enemies.is_empty())
 
 func test_restart() -> void:
 	var core := BattleCore.new()

@@ -1,0 +1,130 @@
+{
+  "path_length": 2470.0,
+  "samples": 1236,
+  "slots": [
+    {
+      "index": 0,
+      "center": [
+        280,
+        530
+      ],
+      "nearest": 90.0,
+      "coverage": 24.271844660194176,
+      "range": 225.0
+    },
+    {
+      "index": 1,
+      "center": [
+        360,
+        530
+      ],
+      "nearest": 90.0,
+      "coverage": 16.74757281553398,
+      "range": 225.0
+    },
+    {
+      "index": 2,
+      "center": [
+        440,
+        530
+      ],
+      "nearest": 90.0,
+      "coverage": 16.990291262135923,
+      "range": 225.0
+    },
+    {
+      "index": 3,
+      "center": [
+        280,
+        620
+      ],
+      "nearest": 180.0,
+      "coverage": 29.045307443365697,
+      "range": 225.0
+    },
+    {
+      "index": 4,
+      "center": [
+        360,
+        620
+      ],
+      "nearest": 180.0,
+      "coverage": 20.71197411003236,
+      "range": 225.0
+    },
+    {
+      "index": 5,
+      "center": [
+        440,
+        620
+      ],
+      "nearest": 180.0,
+      "coverage": 20.71197411003236,
+      "range": 225.0
+    },
+    {
+      "index": 6,
+      "center": [
+        280,
+        710
+      ],
+      "nearest": 100.0,
+      "coverage": 24.433656957928804,
+      "range": 225.0
+    },
+    {
+      "index": 7,
+      "center": [
+        360,
+        710
+      ],
+      "nearest": 100.0,
+      "coverage": 16.262135922330096,
+      "range": 225.0
+    },
+    {
+      "index": 8,
+      "center": [
+        440,
+        710
+      ],
+      "nearest": 100.0,
+      "coverage": 16.34304207119741,
+      "range": 225.0
+    }
+  ],
+  "fixed": [
+    {
+      "type_id": "fire",
+      "slot": 5,
+      "center": [
+        440,
+        620
+      ],
+      "range": 230.0,
+      "coverage": 22.006472491909385
+    },
+    {
+      "type_id": "ice",
+      "slot": 4,
+      "center": [
+        360,
+        620
+      ],
+      "range": 235.0,
+      "coverage": 23.462783171521036
+    },
+    {
+      "type_id": "lightning",
+      "slot": 3,
+      "center": [
+        280,
+        620
+      ],
+      "range": 225.0,
+      "coverage": 29.045307443365697
+    }
+  ],
+  "union": 42.637540453074436,
+  "problems": []
+}

@@ -1,0 +1,3026 @@
+[
+  {
+    "id": "P001",
+    "fire": 0,
+    "ice": 1,
+    "lightning": 2
+  },
+  {
+    "id": "P002",
+    "fire": 0,
+    "ice": 1,
+    "lightning": 3
+  },
+  {
+    "id": "P003",
+    "fire": 0,
+    "ice": 1,
+    "lightning": 4
+  },
+  {
+    "id": "P004",
+    "fire": 0,
+    "ice": 1,
+    "lightning": 5
+  },
+  {
+    "id": "P005",
+    "fire": 0,
+    "ice": 1,
+    "lightning": 6
+  },
+  {
+    "id": "P006",
+    "fire": 0,
+    "ice": 1,
+    "lightning": 7
+  },
+  {
+    "id": "P007",
+    "fire": 0,
+    "ice": 1,
+    "lightning": 8
+  },
+  {
+    "id": "P008",
+    "fire": 0,
+    "ice": 2,
+    "lightning": 1
+  },
+  {
+    "id": "P009",
+    "fire": 0,
+    "ice": 2,
+    "lightning": 3
+  },
+  {
+    "id": "P010",
+    "fire": 0,
+    "ice": 2,
+    "lightning": 4
+  },
+  {
+    "id": "P011",
+    "fire": 0,
+    "ice": 2,
+    "lightning": 5
+  },
+  {
+    "id": "P012",
+    "fire": 0,
+    "ice": 2,
+    "lightning": 6
+  },
+  {
+    "id": "P013",
+    "fire": 0,
+    "ice": 2,
+    "lightning": 7
+  },
+  {
+    "id": "P014",
+    "fire": 0,
+    "ice": 2,
+    "lightning": 8
+  },
+  {
+    "id": "P015",
+    "fire": 0,
+    "ice": 3,
+    "lightning": 1
+  },
+  {
+    "id": "P016",
+    "fire": 0,
+    "ice": 3,
+    "lightning": 2
+  },
+  {
+    "id": "P017",
+    "fire": 0,
+    "ice": 3,
+    "lightning": 4
+  },
+  {
+    "id": "P018",
+    "fire": 0,
+    "ice": 3,
+    "lightning": 5
+  },
+  {
+    "id": "P019",
+    "fire": 0,
+    "ice": 3,
+    "lightning": 6
+  },
+  {
+    "id": "P020",
+    "fire": 0,
+    "ice": 3,
+    "lightning": 7
+  },
+  {
+    "id": "P021",
+    "fire": 0,
+    "ice": 3,
+    "lightning": 8
+  },
+  {
+    "id": "P022",
+    "fire": 0,
+    "ice": 4,
+    "lightning": 1
+  },
+  {
+    "id": "P023",
+    "fire": 0,
+    "ice": 4,
+    "lightning": 2
+  },
+  {
+    "id": "P024",
+    "fire": 0,
+    "ice": 4,
+    "lightning": 3
+  },
+  {
+    "id": "P025",
+    "fire": 0,
+    "ice": 4,
+    "lightning": 5
+  },
+  {
+    "id": "P026",
+    "fire": 0,
+    "ice": 4,
+    "lightning": 6
+  },
+  {
+    "id": "P027",
+    "fire": 0,
+    "ice": 4,
+    "lightning": 7
+  },
+  {
+    "id": "P028",
+    "fire": 0,
+    "ice": 4,
+    "lightning": 8
+  },
+  {
+    "id": "P029",
+    "fire": 0,
+    "ice": 5,
+    "lightning": 1
+  },
+  {
+    "id": "P030",
+    "fire": 0,
+    "ice": 5,
+    "lightning": 2
+  },
+  {
+    "id": "P031",
+    "fire": 0,
+    "ice": 5,
+    "lightning": 3
+  },
+  {
+    "id": "P032",
+    "fire": 0,
+    "ice": 5,
+    "lightning": 4
+  },
+  {
+    "id": "P033",
+    "fire": 0,
+    "ice": 5,
+    "lightning": 6
+  },
+  {
+    "id": "P034",
+    "fire": 0,
+    "ice": 5,
+    "lightning": 7
+  },
+  {
+    "id": "P035",
+    "fire": 0,
+    "ice": 5,
+    "lightning": 8
+  },
+  {
+    "id": "P036",
+    "fire": 0,
+    "ice": 6,
+    "lightning": 1
+  },
+  {
+    "id": "P037",
+    "fire": 0,
+    "ice": 6,
+    "lightning": 2
+  },
+  {
+    "id": "P038",
+    "fire": 0,
+    "ice": 6,
+    "lightning": 3
+  },
+  {
+    "id": "P039",
+    "fire": 0,
+    "ice": 6,
+    "lightning": 4
+  },
+  {
+    "id": "P040",
+    "fire": 0,
+    "ice": 6,
+    "lightning": 5
+  },
+  {
+    "id": "P041",
+    "fire": 0,
+    "ice": 6,
+    "lightning": 7
+  },
+  {
+    "id": "P042",
+    "fire": 0,
+    "ice": 6,
+    "lightning": 8
+  },
+  {
+    "id": "P043",
+    "fire": 0,
+    "ice": 7,
+    "lightning": 1
+  },
+  {
+    "id": "P044",
+    "fire": 0,
+    "ice": 7,
+    "lightning": 2
+  },
+  {
+    "id": "P045",
+    "fire": 0,
+    "ice": 7,
+    "lightning": 3
+  },
+  {
+    "id": "P046",
+    "fire": 0,
+    "ice": 7,
+    "lightning": 4
+  },
+  {
+    "id": "P047",
+    "fire": 0,
+    "ice": 7,
+    "lightning": 5
+  },
+  {
+    "id": "P048",
+    "fire": 0,
+    "ice": 7,
+    "lightning": 6
+  },
+  {
+    "id": "P049",
+    "fire": 0,
+    "ice": 7,
+    "lightning": 8
+  },
+  {
+    "id": "P050",
+    "fire": 0,
+    "ice": 8,
+    "lightning": 1
+  },
+  {
+    "id": "P051",
+    "fire": 0,
+    "ice": 8,
+    "lightning": 2
+  },
+  {
+    "id": "P052",
+    "fire": 0,
+    "ice": 8,
+    "lightning": 3
+  },
+  {
+    "id": "P053",
+    "fire": 0,
+    "ice": 8,
+    "lightning": 4
+  },
+  {
+    "id": "P054",
+    "fire": 0,
+    "ice": 8,
+    "lightning": 5
+  },
+  {
+    "id": "P055",
+    "fire": 0,
+    "ice": 8,
+    "lightning": 6
+  },
+  {
+    "id": "P056",
+    "fire": 0,
+    "ice": 8,
+    "lightning": 7
+  },
+  {
+    "id": "P057",
+    "fire": 1,
+    "ice": 0,
+    "lightning": 2
+  },
+  {
+    "id": "P058",
+    "fire": 1,
+    "ice": 0,
+    "lightning": 3
+  },
+  {
+    "id": "P059",
+    "fire": 1,
+    "ice": 0,
+    "lightning": 4
+  },
+  {
+    "id": "P060",
+    "fire": 1,
+    "ice": 0,
+    "lightning": 5
+  },
+  {
+    "id": "P061",
+    "fire": 1,
+    "ice": 0,
+    "lightning": 6
+  },
+  {
+    "id": "P062",
+    "fire": 1,
+    "ice": 0,
+    "lightning": 7
+  },
+  {
+    "id": "P063",
+    "fire": 1,
+    "ice": 0,
+    "lightning": 8
+  },
+  {
+    "id": "P064",
+    "fire": 1,
+    "ice": 2,
+    "lightning": 0
+  },
+  {
+    "id": "P065",
+    "fire": 1,
+    "ice": 2,
+    "lightning": 3
+  },
+  {
+    "id": "P066",
+    "fire": 1,
+    "ice": 2,
+    "lightning": 4
+  },
+  {
+    "id": "P067",
+    "fire": 1,
+    "ice": 2,
+    "lightning": 5
+  },
+  {
+    "id": "P068",
+    "fire": 1,
+    "ice": 2,
+    "lightning": 6
+  },
+  {
+    "id": "P069",
+    "fire": 1,
+    "ice": 2,
+    "lightning": 7
+  },
+  {
+    "id": "P070",
+    "fire": 1,
+    "ice": 2,
+    "lightning": 8
+  },
+  {
+    "id": "P071",
+    "fire": 1,
+    "ice": 3,
+    "lightning": 0
+  },
+  {
+    "id": "P072",
+    "fire": 1,
+    "ice": 3,
+    "lightning": 2
+  },
+  {
+    "id": "P073",
+    "fire": 1,
+    "ice": 3,
+    "lightning": 4
+  },
+  {
+    "id": "P074",
+    "fire": 1,
+    "ice": 3,
+    "lightning": 5
+  },
+  {
+    "id": "P075",
+    "fire": 1,
+    "ice": 3,
+    "lightning": 6
+  },
+  {
+    "id": "P076",
+    "fire": 1,
+    "ice": 3,
+    "lightning": 7
+  },
+  {
+    "id": "P077",
+    "fire": 1,
+    "ice": 3,
+    "lightning": 8
+  },
+  {
+    "id": "P078",
+    "fire": 1,
+    "ice": 4,
+    "lightning": 0
+  },
+  {
+    "id": "P079",
+    "fire": 1,
+    "ice": 4,
+    "lightning": 2
+  },
+  {
+    "id": "P080",
+    "fire": 1,
+    "ice": 4,
+    "lightning": 3
+  },
+  {
+    "id": "P081",
+    "fire": 1,
+    "ice": 4,
+    "lightning": 5
+  },
+  {
+    "id": "P082",
+    "fire": 1,
+    "ice": 4,
+    "lightning": 6
+  },
+  {
+    "id": "P083",
+    "fire": 1,
+    "ice": 4,
+    "lightning": 7
+  },
+  {
+    "id": "P084",
+    "fire": 1,
+    "ice": 4,
+    "lightning": 8
+  },
+  {
+    "id": "P085",
+    "fire": 1,
+    "ice": 5,
+    "lightning": 0
+  },
+  {
+    "id": "P086",
+    "fire": 1,
+    "ice": 5,
+    "lightning": 2
+  },
+  {
+    "id": "P087",
+    "fire": 1,
+    "ice": 5,
+    "lightning": 3
+  },
+  {
+    "id": "P088",
+    "fire": 1,
+    "ice": 5,
+    "lightning": 4
+  },
+  {
+    "id": "P089",
+    "fire": 1,
+    "ice": 5,
+    "lightning": 6
+  },
+  {
+    "id": "P090",
+    "fire": 1,
+    "ice": 5,
+    "lightning": 7
+  },
+  {
+    "id": "P091",
+    "fire": 1,
+    "ice": 5,
+    "lightning": 8
+  },
+  {
+    "id": "P092",
+    "fire": 1,
+    "ice": 6,
+    "lightning": 0
+  },
+  {
+    "id": "P093",
+    "fire": 1,
+    "ice": 6,
+    "lightning": 2
+  },
+  {
+    "id": "P094",
+    "fire": 1,
+    "ice": 6,
+    "lightning": 3
+  },
+  {
+    "id": "P095",
+    "fire": 1,
+    "ice": 6,
+    "lightning": 4
+  },
+  {
+    "id": "P096",
+    "fire": 1,
+    "ice": 6,
+    "lightning": 5
+  },
+  {
+    "id": "P097",
+    "fire": 1,
+    "ice": 6,
+    "lightning": 7
+  },
+  {
+    "id": "P098",
+    "fire": 1,
+    "ice": 6,
+    "lightning": 8
+  },
+  {
+    "id": "P099",
+    "fire": 1,
+    "ice": 7,
+    "lightning": 0
+  },
+  {
+    "id": "P100",
+    "fire": 1,
+    "ice": 7,
+    "lightning": 2
+  },
+  {
+    "id": "P101",
+    "fire": 1,
+    "ice": 7,
+    "lightning": 3
+  },
+  {
+    "id": "P102",
+    "fire": 1,
+    "ice": 7,
+    "lightning": 4
+  },
+  {
+    "id": "P103",
+    "fire": 1,
+    "ice": 7,
+    "lightning": 5
+  },
+  {
+    "id": "P104",
+    "fire": 1,
+    "ice": 7,
+    "lightning": 6
+  },
+  {
+    "id": "P105",
+    "fire": 1,
+    "ice": 7,
+    "lightning": 8
+  },
+  {
+    "id": "P106",
+    "fire": 1,
+    "ice": 8,
+    "lightning": 0
+  },
+  {
+    "id": "P107",
+    "fire": 1,
+    "ice": 8,
+    "lightning": 2
+  },
+  {
+    "id": "P108",
+    "fire": 1,
+    "ice": 8,
+    "lightning": 3
+  },
+  {
+    "id": "P109",
+    "fire": 1,
+    "ice": 8,
+    "lightning": 4
+  },
+  {
+    "id": "P110",
+    "fire": 1,
+    "ice": 8,
+    "lightning": 5
+  },
+  {
+    "id": "P111",
+    "fire": 1,
+    "ice": 8,
+    "lightning": 6
+  },
+  {
+    "id": "P112",
+    "fire": 1,
+    "ice": 8,
+    "lightning": 7
+  },
+  {
+    "id": "P113",
+    "fire": 2,
+    "ice": 0,
+    "lightning": 1
+  },
+  {
+    "id": "P114",
+    "fire": 2,
+    "ice": 0,
+    "lightning": 3
+  },
+  {
+    "id": "P115",
+    "fire": 2,
+    "ice": 0,
+    "lightning": 4
+  },
+  {
+    "id": "P116",
+    "fire": 2,
+    "ice": 0,
+    "lightning": 5
+  },
+  {
+    "id": "P117",
+    "fire": 2,
+    "ice": 0,
+    "lightning": 6
+  },
+  {
+    "id": "P118",
+    "fire": 2,
+    "ice": 0,
+    "lightning": 7
+  },
+  {
+    "id": "P119",
+    "fire": 2,
+    "ice": 0,
+    "lightning": 8
+  },
+  {
+    "id": "P120",
+    "fire": 2,
+    "ice": 1,
+    "lightning": 0
+  },
+  {
+    "id": "P121",
+    "fire": 2,
+    "ice": 1,
+    "lightning": 3
+  },
+  {
+    "id": "P122",
+    "fire": 2,
+    "ice": 1,
+    "lightning": 4
+  },
+  {
+    "id": "P123",
+    "fire": 2,
+    "ice": 1,
+    "lightning": 5
+  },
+  {
+    "id": "P124",
+    "fire": 2,
+    "ice": 1,
+    "lightning": 6
+  },
+  {
+    "id": "P125",
+    "fire": 2,
+    "ice": 1,
+    "lightning": 7
+  },
+  {
+    "id": "P126",
+    "fire": 2,
+    "ice": 1,
+    "lightning": 8
+  },
+  {
+    "id": "P127",
+    "fire": 2,
+    "ice": 3,
+    "lightning": 0
+  },
+  {
+    "id": "P128",
+    "fire": 2,
+    "ice": 3,
+    "lightning": 1
+  },
+  {
+    "id": "P129",
+    "fire": 2,
+    "ice": 3,
+    "lightning": 4
+  },
+  {
+    "id": "P130",
+    "fire": 2,
+    "ice": 3,
+    "lightning": 5
+  },
+  {
+    "id": "P131",
+    "fire": 2,
+    "ice": 3,
+    "lightning": 6
+  },
+  {
+    "id": "P132",
+    "fire": 2,
+    "ice": 3,
+    "lightning": 7
+  },
+  {
+    "id": "P133",
+    "fire": 2,
+    "ice": 3,
+    "lightning": 8
+  },
+  {
+    "id": "P134",
+    "fire": 2,
+    "ice": 4,
+    "lightning": 0
+  },
+  {
+    "id": "P135",
+    "fire": 2,
+    "ice": 4,
+    "lightning": 1
+  },
+  {
+    "id": "P136",
+    "fire": 2,
+    "ice": 4,
+    "lightning": 3
+  },
+  {
+    "id": "P137",
+    "fire": 2,
+    "ice": 4,
+    "lightning": 5
+  },
+  {
+    "id": "P138",
+    "fire": 2,
+    "ice": 4,
+    "lightning": 6
+  },
+  {
+    "id": "P139",
+    "fire": 2,
+    "ice": 4,
+    "lightning": 7
+  },
+  {
+    "id": "P140",
+    "fire": 2,
+    "ice": 4,
+    "lightning": 8
+  },
+  {
+    "id": "P141",
+    "fire": 2,
+    "ice": 5,
+    "lightning": 0
+  },
+  {
+    "id": "P142",
+    "fire": 2,
+    "ice": 5,
+    "lightning": 1
+  },
+  {
+    "id": "P143",
+    "fire": 2,
+    "ice": 5,
+    "lightning": 3
+  },
+  {
+    "id": "P144",
+    "fire": 2,
+    "ice": 5,
+    "lightning": 4
+  },
+  {
+    "id": "P145",
+    "fire": 2,
+    "ice": 5,
+    "lightning": 6
+  },
+  {
+    "id": "P146",
+    "fire": 2,
+    "ice": 5,
+    "lightning": 7
+  },
+  {
+    "id": "P147",
+    "fire": 2,
+    "ice": 5,
+    "lightning": 8
+  },
+  {
+    "id": "P148",
+    "fire": 2,
+    "ice": 6,
+    "lightning": 0
+  },
+  {
+    "id": "P149",
+    "fire": 2,
+    "ice": 6,
+    "lightning": 1
+  },
+  {
+    "id": "P150",
+    "fire": 2,
+    "ice": 6,
+    "lightning": 3
+  },
+  {
+    "id": "P151",
+    "fire": 2,
+    "ice": 6,
+    "lightning": 4
+  },
+  {
+    "id": "P152",
+    "fire": 2,
+    "ice": 6,
+    "lightning": 5
+  },
+  {
+    "id": "P153",
+    "fire": 2,
+    "ice": 6,
+    "lightning": 7
+  },
+  {
+    "id": "P154",
+    "fire": 2,
+    "ice": 6,
+    "lightning": 8
+  },
+  {
+    "id": "P155",
+    "fire": 2,
+    "ice": 7,
+    "lightning": 0
+  },
+  {
+    "id": "P156",
+    "fire": 2,
+    "ice": 7,
+    "lightning": 1
+  },
+  {
+    "id": "P157",
+    "fire": 2,
+    "ice": 7,
+    "lightning": 3
+  },
+  {
+    "id": "P158",
+    "fire": 2,
+    "ice": 7,
+    "lightning": 4
+  },
+  {
+    "id": "P159",
+    "fire": 2,
+    "ice": 7,
+    "lightning": 5
+  },
+  {
+    "id": "P160",
+    "fire": 2,
+    "ice": 7,
+    "lightning": 6
+  },
+  {
+    "id": "P161",
+    "fire": 2,
+    "ice": 7,
+    "lightning": 8
+  },
+  {
+    "id": "P162",
+    "fire": 2,
+    "ice": 8,
+    "lightning": 0
+  },
+  {
+    "id": "P163",
+    "fire": 2,
+    "ice": 8,
+    "lightning": 1
+  },
+  {
+    "id": "P164",
+    "fire": 2,
+    "ice": 8,
+    "lightning": 3
+  },
+  {
+    "id": "P165",
+    "fire": 2,
+    "ice": 8,
+    "lightning": 4
+  },
+  {
+    "id": "P166",
+    "fire": 2,
+    "ice": 8,
+    "lightning": 5
+  },
+  {
+    "id": "P167",
+    "fire": 2,
+    "ice": 8,
+    "lightning": 6
+  },
+  {
+    "id": "P168",
+    "fire": 2,
+    "ice": 8,
+    "lightning": 7
+  },
+  {
+    "id": "P169",
+    "fire": 3,
+    "ice": 0,
+    "lightning": 1
+  },
+  {
+    "id": "P170",
+    "fire": 3,
+    "ice": 0,
+    "lightning": 2
+  },
+  {
+    "id": "P171",
+    "fire": 3,
+    "ice": 0,
+    "lightning": 4
+  },
+  {
+    "id": "P172",
+    "fire": 3,
+    "ice": 0,
+    "lightning": 5
+  },
+  {
+    "id": "P173",
+    "fire": 3,
+    "ice": 0,
+    "lightning": 6
+  },
+  {
+    "id": "P174",
+    "fire": 3,
+    "ice": 0,
+    "lightning": 7
+  },
+  {
+    "id": "P175",
+    "fire": 3,
+    "ice": 0,
+    "lightning": 8
+  },
+  {
+    "id": "P176",
+    "fire": 3,
+    "ice": 1,
+    "lightning": 0
+  },
+  {
+    "id": "P177",
+    "fire": 3,
+    "ice": 1,
+    "lightning": 2
+  },
+  {
+    "id": "P178",
+    "fire": 3,
+    "ice": 1,
+    "lightning": 4
+  },
+  {
+    "id": "P179",
+    "fire": 3,
+    "ice": 1,
+    "lightning": 5
+  },
+  {
+    "id": "P180",
+    "fire": 3,
+    "ice": 1,
+    "lightning": 6
+  },
+  {
+    "id": "P181",
+    "fire": 3,
+    "ice": 1,
+    "lightning": 7
+  },
+  {
+    "id": "P182",
+    "fire": 3,
+    "ice": 1,
+    "lightning": 8
+  },
+  {
+    "id": "P183",
+    "fire": 3,
+    "ice": 2,
+    "lightning": 0
+  },
+  {
+    "id": "P184",
+    "fire": 3,
+    "ice": 2,
+    "lightning": 1
+  },
+  {
+    "id": "P185",
+    "fire": 3,
+    "ice": 2,
+    "lightning": 4
+  },
+  {
+    "id": "P186",
+    "fire": 3,
+    "ice": 2,
+    "lightning": 5
+  },
+  {
+    "id": "P187",
+    "fire": 3,
+    "ice": 2,
+    "lightning": 6
+  },
+  {
+    "id": "P188",
+    "fire": 3,
+    "ice": 2,
+    "lightning": 7
+  },
+  {
+    "id": "P189",
+    "fire": 3,
+    "ice": 2,
+    "lightning": 8
+  },
+  {
+    "id": "P190",
+    "fire": 3,
+    "ice": 4,
+    "lightning": 0
+  },
+  {
+    "id": "P191",
+    "fire": 3,
+    "ice": 4,
+    "lightning": 1
+  },
+  {
+    "id": "P192",
+    "fire": 3,
+    "ice": 4,
+    "lightning": 2
+  },
+  {
+    "id": "P193",
+    "fire": 3,
+    "ice": 4,
+    "lightning": 5
+  },
+  {
+    "id": "P194",
+    "fire": 3,
+    "ice": 4,
+    "lightning": 6
+  },
+  {
+    "id": "P195",
+    "fire": 3,
+    "ice": 4,
+    "lightning": 7
+  },
+  {
+    "id": "P196",
+    "fire": 3,
+    "ice": 4,
+    "lightning": 8
+  },
+  {
+    "id": "P197",
+    "fire": 3,
+    "ice": 5,
+    "lightning": 0
+  },
+  {
+    "id": "P198",
+    "fire": 3,
+    "ice": 5,
+    "lightning": 1
+  },
+  {
+    "id": "P199",
+    "fire": 3,
+    "ice": 5,
+    "lightning": 2
+  },
+  {
+    "id": "P200",
+    "fire": 3,
+    "ice": 5,
+    "lightning": 4
+  },
+  {
+    "id": "P201",
+    "fire": 3,
+    "ice": 5,
+    "lightning": 6
+  },
+  {
+    "id": "P202",
+    "fire": 3,
+    "ice": 5,
+    "lightning": 7
+  },
+  {
+    "id": "P203",
+    "fire": 3,
+    "ice": 5,
+    "lightning": 8
+  },
+  {
+    "id": "P204",
+    "fire": 3,
+    "ice": 6,
+    "lightning": 0
+  },
+  {
+    "id": "P205",
+    "fire": 3,
+    "ice": 6,
+    "lightning": 1
+  },
+  {
+    "id": "P206",
+    "fire": 3,
+    "ice": 6,
+    "lightning": 2
+  },
+  {
+    "id": "P207",
+    "fire": 3,
+    "ice": 6,
+    "lightning": 4
+  },
+  {
+    "id": "P208",
+    "fire": 3,
+    "ice": 6,
+    "lightning": 5
+  },
+  {
+    "id": "P209",
+    "fire": 3,
+    "ice": 6,
+    "lightning": 7
+  },
+  {
+    "id": "P210",
+    "fire": 3,
+    "ice": 6,
+    "lightning": 8
+  },
+  {
+    "id": "P211",
+    "fire": 3,
+    "ice": 7,
+    "lightning": 0
+  },
+  {
+    "id": "P212",
+    "fire": 3,
+    "ice": 7,
+    "lightning": 1
+  },
+  {
+    "id": "P213",
+    "fire": 3,
+    "ice": 7,
+    "lightning": 2
+  },
+  {
+    "id": "P214",
+    "fire": 3,
+    "ice": 7,
+    "lightning": 4
+  },
+  {
+    "id": "P215",
+    "fire": 3,
+    "ice": 7,
+    "lightning": 5
+  },
+  {
+    "id": "P216",
+    "fire": 3,
+    "ice": 7,
+    "lightning": 6
+  },
+  {
+    "id": "P217",
+    "fire": 3,
+    "ice": 7,
+    "lightning": 8
+  },
+  {
+    "id": "P218",
+    "fire": 3,
+    "ice": 8,
+    "lightning": 0
+  },
+  {
+    "id": "P219",
+    "fire": 3,
+    "ice": 8,
+    "lightning": 1
+  },
+  {
+    "id": "P220",
+    "fire": 3,
+    "ice": 8,
+    "lightning": 2
+  },
+  {
+    "id": "P221",
+    "fire": 3,
+    "ice": 8,
+    "lightning": 4
+  },
+  {
+    "id": "P222",
+    "fire": 3,
+    "ice": 8,
+    "lightning": 5
+  },
+  {
+    "id": "P223",
+    "fire": 3,
+    "ice": 8,
+    "lightning": 6
+  },
+  {
+    "id": "P224",
+    "fire": 3,
+    "ice": 8,
+    "lightning": 7
+  },
+  {
+    "id": "P225",
+    "fire": 4,
+    "ice": 0,
+    "lightning": 1
+  },
+  {
+    "id": "P226",
+    "fire": 4,
+    "ice": 0,
+    "lightning": 2
+  },
+  {
+    "id": "P227",
+    "fire": 4,
+    "ice": 0,
+    "lightning": 3
+  },
+  {
+    "id": "P228",
+    "fire": 4,
+    "ice": 0,
+    "lightning": 5
+  },
+  {
+    "id": "P229",
+    "fire": 4,
+    "ice": 0,
+    "lightning": 6
+  },
+  {
+    "id": "P230",
+    "fire": 4,
+    "ice": 0,
+    "lightning": 7
+  },
+  {
+    "id": "P231",
+    "fire": 4,
+    "ice": 0,
+    "lightning": 8
+  },
+  {
+    "id": "P232",
+    "fire": 4,
+    "ice": 1,
+    "lightning": 0
+  },
+  {
+    "id": "P233",
+    "fire": 4,
+    "ice": 1,
+    "lightning": 2
+  },
+  {
+    "id": "P234",
+    "fire": 4,
+    "ice": 1,
+    "lightning": 3
+  },
+  {
+    "id": "P235",
+    "fire": 4,
+    "ice": 1,
+    "lightning": 5
+  },
+  {
+    "id": "P236",
+    "fire": 4,
+    "ice": 1,
+    "lightning": 6
+  },
+  {
+    "id": "P237",
+    "fire": 4,
+    "ice": 1,
+    "lightning": 7
+  },
+  {
+    "id": "P238",
+    "fire": 4,
+    "ice": 1,
+    "lightning": 8
+  },
+  {
+    "id": "P239",
+    "fire": 4,
+    "ice": 2,
+    "lightning": 0
+  },
+  {
+    "id": "P240",
+    "fire": 4,
+    "ice": 2,
+    "lightning": 1
+  },
+  {
+    "id": "P241",
+    "fire": 4,
+    "ice": 2,
+    "lightning": 3
+  },
+  {
+    "id": "P242",
+    "fire": 4,
+    "ice": 2,
+    "lightning": 5
+  },
+  {
+    "id": "P243",
+    "fire": 4,
+    "ice": 2,
+    "lightning": 6
+  },
+  {
+    "id": "P244",
+    "fire": 4,
+    "ice": 2,
+    "lightning": 7
+  },
+  {
+    "id": "P245",
+    "fire": 4,
+    "ice": 2,
+    "lightning": 8
+  },
+  {
+    "id": "P246",
+    "fire": 4,
+    "ice": 3,
+    "lightning": 0
+  },
+  {
+    "id": "P247",
+    "fire": 4,
+    "ice": 3,
+    "lightning": 1
+  },
+  {
+    "id": "P248",
+    "fire": 4,
+    "ice": 3,
+    "lightning": 2
+  },
+  {
+    "id": "P249",
+    "fire": 4,
+    "ice": 3,
+    "lightning": 5
+  },
+  {
+    "id": "P250",
+    "fire": 4,
+    "ice": 3,
+    "lightning": 6
+  },
+  {
+    "id": "P251",
+    "fire": 4,
+    "ice": 3,
+    "lightning": 7
+  },
+  {
+    "id": "P252",
+    "fire": 4,
+    "ice": 3,
+    "lightning": 8
+  },
+  {
+    "id": "P253",
+    "fire": 4,
+    "ice": 5,
+    "lightning": 0
+  },
+  {
+    "id": "P254",
+    "fire": 4,
+    "ice": 5,
+    "lightning": 1
+  },
+  {
+    "id": "P255",
+    "fire": 4,
+    "ice": 5,
+    "lightning": 2
+  },
+  {
+    "id": "P256",
+    "fire": 4,
+    "ice": 5,
+    "lightning": 3
+  },
+  {
+    "id": "P257",
+    "fire": 4,
+    "ice": 5,
+    "lightning": 6
+  },
+  {
+    "id": "P258",
+    "fire": 4,
+    "ice": 5,
+    "lightning": 7
+  },
+  {
+    "id": "P259",
+    "fire": 4,
+    "ice": 5,
+    "lightning": 8
+  },
+  {
+    "id": "P260",
+    "fire": 4,
+    "ice": 6,
+    "lightning": 0
+  },
+  {
+    "id": "P261",
+    "fire": 4,
+    "ice": 6,
+    "lightning": 1
+  },
+  {
+    "id": "P262",
+    "fire": 4,
+    "ice": 6,
+    "lightning": 2
+  },
+  {
+    "id": "P263",
+    "fire": 4,
+    "ice": 6,
+    "lightning": 3
+  },
+  {
+    "id": "P264",
+    "fire": 4,
+    "ice": 6,
+    "lightning": 5
+  },
+  {
+    "id": "P265",
+    "fire": 4,
+    "ice": 6,
+    "lightning": 7
+  },
+  {
+    "id": "P266",
+    "fire": 4,
+    "ice": 6,
+    "lightning": 8
+  },
+  {
+    "id": "P267",
+    "fire": 4,
+    "ice": 7,
+    "lightning": 0
+  },
+  {
+    "id": "P268",
+    "fire": 4,
+    "ice": 7,
+    "lightning": 1
+  },
+  {
+    "id": "P269",
+    "fire": 4,
+    "ice": 7,
+    "lightning": 2
+  },
+  {
+    "id": "P270",
+    "fire": 4,
+    "ice": 7,
+    "lightning": 3
+  },
+  {
+    "id": "P271",
+    "fire": 4,
+    "ice": 7,
+    "lightning": 5
+  },
+  {
+    "id": "P272",
+    "fire": 4,
+    "ice": 7,
+    "lightning": 6
+  },
+  {
+    "id": "P273",
+    "fire": 4,
+    "ice": 7,
+    "lightning": 8
+  },
+  {
+    "id": "P274",
+    "fire": 4,
+    "ice": 8,
+    "lightning": 0
+  },
+  {
+    "id": "P275",
+    "fire": 4,
+    "ice": 8,
+    "lightning": 1
+  },
+  {
+    "id": "P276",
+    "fire": 4,
+    "ice": 8,
+    "lightning": 2
+  },
+  {
+    "id": "P277",
+    "fire": 4,
+    "ice": 8,
+    "lightning": 3
+  },
+  {
+    "id": "P278",
+    "fire": 4,
+    "ice": 8,
+    "lightning": 5
+  },
+  {
+    "id": "P279",
+    "fire": 4,
+    "ice": 8,
+    "lightning": 6
+  },
+  {
+    "id": "P280",
+    "fire": 4,
+    "ice": 8,
+    "lightning": 7
+  },
+  {
+    "id": "P281",
+    "fire": 5,
+    "ice": 0,
+    "lightning": 1
+  },
+  {
+    "id": "P282",
+    "fire": 5,
+    "ice": 0,
+    "lightning": 2
+  },
+  {
+    "id": "P283",
+    "fire": 5,
+    "ice": 0,
+    "lightning": 3
+  },
+  {
+    "id": "P284",
+    "fire": 5,
+    "ice": 0,
+    "lightning": 4
+  },
+  {
+    "id": "P285",
+    "fire": 5,
+    "ice": 0,
+    "lightning": 6
+  },
+  {
+    "id": "P286",
+    "fire": 5,
+    "ice": 0,
+    "lightning": 7
+  },
+  {
+    "id": "P287",
+    "fire": 5,
+    "ice": 0,
+    "lightning": 8
+  },
+  {
+    "id": "P288",
+    "fire": 5,
+    "ice": 1,
+    "lightning": 0
+  },
+  {
+    "id": "P289",
+    "fire": 5,
+    "ice": 1,
+    "lightning": 2
+  },
+  {
+    "id": "P290",
+    "fire": 5,
+    "ice": 1,
+    "lightning": 3
+  },
+  {
+    "id": "P291",
+    "fire": 5,
+    "ice": 1,
+    "lightning": 4
+  },
+  {
+    "id": "P292",
+    "fire": 5,
+    "ice": 1,
+    "lightning": 6
+  },
+  {
+    "id": "P293",
+    "fire": 5,
+    "ice": 1,
+    "lightning": 7
+  },
+  {
+    "id": "P294",
+    "fire": 5,
+    "ice": 1,
+    "lightning": 8
+  },
+  {
+    "id": "P295",
+    "fire": 5,
+    "ice": 2,
+    "lightning": 0
+  },
+  {
+    "id": "P296",
+    "fire": 5,
+    "ice": 2,
+    "lightning": 1
+  },
+  {
+    "id": "P297",
+    "fire": 5,
+    "ice": 2,
+    "lightning": 3
+  },
+  {
+    "id": "P298",
+    "fire": 5,
+    "ice": 2,
+    "lightning": 4
+  },
+  {
+    "id": "P299",
+    "fire": 5,
+    "ice": 2,
+    "lightning": 6
+  },
+  {
+    "id": "P300",
+    "fire": 5,
+    "ice": 2,
+    "lightning": 7
+  },
+  {
+    "id": "P301",
+    "fire": 5,
+    "ice": 2,
+    "lightning": 8
+  },
+  {
+    "id": "P302",
+    "fire": 5,
+    "ice": 3,
+    "lightning": 0
+  },
+  {
+    "id": "P303",
+    "fire": 5,
+    "ice": 3,
+    "lightning": 1
+  },
+  {
+    "id": "P304",
+    "fire": 5,
+    "ice": 3,
+    "lightning": 2
+  },
+  {
+    "id": "P305",
+    "fire": 5,
+    "ice": 3,
+    "lightning": 4
+  },
+  {
+    "id": "P306",
+    "fire": 5,
+    "ice": 3,
+    "lightning": 6
+  },
+  {
+    "id": "P307",
+    "fire": 5,
+    "ice": 3,
+    "lightning": 7
+  },
+  {
+    "id": "P308",
+    "fire": 5,
+    "ice": 3,
+    "lightning": 8
+  },
+  {
+    "id": "P309",
+    "fire": 5,
+    "ice": 4,
+    "lightning": 0
+  },
+  {
+    "id": "P310",
+    "fire": 5,
+    "ice": 4,
+    "lightning": 1
+  },
+  {
+    "id": "P311",
+    "fire": 5,
+    "ice": 4,
+    "lightning": 2
+  },
+  {
+    "id": "P312",
+    "fire": 5,
+    "ice": 4,
+    "lightning": 3
+  },
+  {
+    "id": "P313",
+    "fire": 5,
+    "ice": 4,
+    "lightning": 6
+  },
+  {
+    "id": "P314",
+    "fire": 5,
+    "ice": 4,
+    "lightning": 7
+  },
+  {
+    "id": "P315",
+    "fire": 5,
+    "ice": 4,
+    "lightning": 8
+  },
+  {
+    "id": "P316",
+    "fire": 5,
+    "ice": 6,
+    "lightning": 0
+  },
+  {
+    "id": "P317",
+    "fire": 5,
+    "ice": 6,
+    "lightning": 1
+  },
+  {
+    "id": "P318",
+    "fire": 5,
+    "ice": 6,
+    "lightning": 2
+  },
+  {
+    "id": "P319",
+    "fire": 5,
+    "ice": 6,
+    "lightning": 3
+  },
+  {
+    "id": "P320",
+    "fire": 5,
+    "ice": 6,
+    "lightning": 4
+  },
+  {
+    "id": "P321",
+    "fire": 5,
+    "ice": 6,
+    "lightning": 7
+  },
+  {
+    "id": "P322",
+    "fire": 5,
+    "ice": 6,
+    "lightning": 8
+  },
+  {
+    "id": "P323",
+    "fire": 5,
+    "ice": 7,
+    "lightning": 0
+  },
+  {
+    "id": "P324",
+    "fire": 5,
+    "ice": 7,
+    "lightning": 1
+  },
+  {
+    "id": "P325",
+    "fire": 5,
+    "ice": 7,
+    "lightning": 2
+  },
+  {
+    "id": "P326",
+    "fire": 5,
+    "ice": 7,
+    "lightning": 3
+  },
+  {
+    "id": "P327",
+    "fire": 5,
+    "ice": 7,
+    "lightning": 4
+  },
+  {
+    "id": "P328",
+    "fire": 5,
+    "ice": 7,
+    "lightning": 6
+  },
+  {
+    "id": "P329",
+    "fire": 5,
+    "ice": 7,
+    "lightning": 8
+  },
+  {
+    "id": "P330",
+    "fire": 5,
+    "ice": 8,
+    "lightning": 0
+  },
+  {
+    "id": "P331",
+    "fire": 5,
+    "ice": 8,
+    "lightning": 1
+  },
+  {
+    "id": "P332",
+    "fire": 5,
+    "ice": 8,
+    "lightning": 2
+  },
+  {
+    "id": "P333",
+    "fire": 5,
+    "ice": 8,
+    "lightning": 3
+  },
+  {
+    "id": "P334",
+    "fire": 5,
+    "ice": 8,
+    "lightning": 4
+  },
+  {
+    "id": "P335",
+    "fire": 5,
+    "ice": 8,
+    "lightning": 6
+  },
+  {
+    "id": "P336",
+    "fire": 5,
+    "ice": 8,
+    "lightning": 7
+  },
+  {
+    "id": "P337",
+    "fire": 6,
+    "ice": 0,
+    "lightning": 1
+  },
+  {
+    "id": "P338",
+    "fire": 6,
+    "ice": 0,
+    "lightning": 2
+  },
+  {
+    "id": "P339",
+    "fire": 6,
+    "ice": 0,
+    "lightning": 3
+  },
+  {
+    "id": "P340",
+    "fire": 6,
+    "ice": 0,
+    "lightning": 4
+  },
+  {
+    "id": "P341",
+    "fire": 6,
+    "ice": 0,
+    "lightning": 5
+  },
+  {
+    "id": "P342",
+    "fire": 6,
+    "ice": 0,
+    "lightning": 7
+  },
+  {
+    "id": "P343",
+    "fire": 6,
+    "ice": 0,
+    "lightning": 8
+  },
+  {
+    "id": "P344",
+    "fire": 6,
+    "ice": 1,
+    "lightning": 0
+  },
+  {
+    "id": "P345",
+    "fire": 6,
+    "ice": 1,
+    "lightning": 2
+  },
+  {
+    "id": "P346",
+    "fire": 6,
+    "ice": 1,
+    "lightning": 3
+  },
+  {
+    "id": "P347",
+    "fire": 6,
+    "ice": 1,
+    "lightning": 4
+  },
+  {
+    "id": "P348",
+    "fire": 6,
+    "ice": 1,
+    "lightning": 5
+  },
+  {
+    "id": "P349",
+    "fire": 6,
+    "ice": 1,
+    "lightning": 7
+  },
+  {
+    "id": "P350",
+    "fire": 6,
+    "ice": 1,
+    "lightning": 8
+  },
+  {
+    "id": "P351",
+    "fire": 6,
+    "ice": 2,
+    "lightning": 0
+  },
+  {
+    "id": "P352",
+    "fire": 6,
+    "ice": 2,
+    "lightning": 1
+  },
+  {
+    "id": "P353",
+    "fire": 6,
+    "ice": 2,
+    "lightning": 3
+  },
+  {
+    "id": "P354",
+    "fire": 6,
+    "ice": 2,
+    "lightning": 4
+  },
+  {
+    "id": "P355",
+    "fire": 6,
+    "ice": 2,
+    "lightning": 5
+  },
+  {
+    "id": "P356",
+    "fire": 6,
+    "ice": 2,
+    "lightning": 7
+  },
+  {
+    "id": "P357",
+    "fire": 6,
+    "ice": 2,
+    "lightning": 8
+  },
+  {
+    "id": "P358",
+    "fire": 6,
+    "ice": 3,
+    "lightning": 0
+  },
+  {
+    "id": "P359",
+    "fire": 6,
+    "ice": 3,
+    "lightning": 1
+  },
+  {
+    "id": "P360",
+    "fire": 6,
+    "ice": 3,
+    "lightning": 2
+  },
+  {
+    "id": "P361",
+    "fire": 6,
+    "ice": 3,
+    "lightning": 4
+  },
+  {
+    "id": "P362",
+    "fire": 6,
+    "ice": 3,
+    "lightning": 5
+  },
+  {
+    "id": "P363",
+    "fire": 6,
+    "ice": 3,
+    "lightning": 7
+  },
+  {
+    "id": "P364",
+    "fire": 6,
+    "ice": 3,
+    "lightning": 8
+  },
+  {
+    "id": "P365",
+    "fire": 6,
+    "ice": 4,
+    "lightning": 0
+  },
+  {
+    "id": "P366",
+    "fire": 6,
+    "ice": 4,
+    "lightning": 1
+  },
+  {
+    "id": "P367",
+    "fire": 6,
+    "ice": 4,
+    "lightning": 2
+  },
+  {
+    "id": "P368",
+    "fire": 6,
+    "ice": 4,
+    "lightning": 3
+  },
+  {
+    "id": "P369",
+    "fire": 6,
+    "ice": 4,
+    "lightning": 5
+  },
+  {
+    "id": "P370",
+    "fire": 6,
+    "ice": 4,
+    "lightning": 7
+  },
+  {
+    "id": "P371",
+    "fire": 6,
+    "ice": 4,
+    "lightning": 8
+  },
+  {
+    "id": "P372",
+    "fire": 6,
+    "ice": 5,
+    "lightning": 0
+  },
+  {
+    "id": "P373",
+    "fire": 6,
+    "ice": 5,
+    "lightning": 1
+  },
+  {
+    "id": "P374",
+    "fire": 6,
+    "ice": 5,
+    "lightning": 2
+  },
+  {
+    "id": "P375",
+    "fire": 6,
+    "ice": 5,
+    "lightning": 3
+  },
+  {
+    "id": "P376",
+    "fire": 6,
+    "ice": 5,
+    "lightning": 4
+  },
+  {
+    "id": "P377",
+    "fire": 6,
+    "ice": 5,
+    "lightning": 7
+  },
+  {
+    "id": "P378",
+    "fire": 6,
+    "ice": 5,
+    "lightning": 8
+  },
+  {
+    "id": "P379",
+    "fire": 6,
+    "ice": 7,
+    "lightning": 0
+  },
+  {
+    "id": "P380",
+    "fire": 6,
+    "ice": 7,
+    "lightning": 1
+  },
+  {
+    "id": "P381",
+    "fire": 6,
+    "ice": 7,
+    "lightning": 2
+  },
+  {
+    "id": "P382",
+    "fire": 6,
+    "ice": 7,
+    "lightning": 3
+  },
+  {
+    "id": "P383",
+    "fire": 6,
+    "ice": 7,
+    "lightning": 4
+  },
+  {
+    "id": "P384",
+    "fire": 6,
+    "ice": 7,
+    "lightning": 5
+  },
+  {
+    "id": "P385",
+    "fire": 6,
+    "ice": 7,
+    "lightning": 8
+  },
+  {
+    "id": "P386",
+    "fire": 6,
+    "ice": 8,
+    "lightning": 0
+  },
+  {
+    "id": "P387",
+    "fire": 6,
+    "ice": 8,
+    "lightning": 1
+  },
+  {
+    "id": "P388",
+    "fire": 6,
+    "ice": 8,
+    "lightning": 2
+  },
+  {
+    "id": "P389",
+    "fire": 6,
+    "ice": 8,
+    "lightning": 3
+  },
+  {
+    "id": "P390",
+    "fire": 6,
+    "ice": 8,
+    "lightning": 4
+  },
+  {
+    "id": "P391",
+    "fire": 6,
+    "ice": 8,
+    "lightning": 5
+  },
+  {
+    "id": "P392",
+    "fire": 6,
+    "ice": 8,
+    "lightning": 7
+  },
+  {
+    "id": "P393",
+    "fire": 7,
+    "ice": 0,
+    "lightning": 1
+  },
+  {
+    "id": "P394",
+    "fire": 7,
+    "ice": 0,
+    "lightning": 2
+  },
+  {
+    "id": "P395",
+    "fire": 7,
+    "ice": 0,
+    "lightning": 3
+  },
+  {
+    "id": "P396",
+    "fire": 7,
+    "ice": 0,
+    "lightning": 4
+  },
+  {
+    "id": "P397",
+    "fire": 7,
+    "ice": 0,
+    "lightning": 5
+  },
+  {
+    "id": "P398",
+    "fire": 7,
+    "ice": 0,
+    "lightning": 6
+  },
+  {
+    "id": "P399",
+    "fire": 7,
+    "ice": 0,
+    "lightning": 8
+  },
+  {
+    "id": "P400",
+    "fire": 7,
+    "ice": 1,
+    "lightning": 0
+  },
+  {
+    "id": "P401",
+    "fire": 7,
+    "ice": 1,
+    "lightning": 2
+  },
+  {
+    "id": "P402",
+    "fire": 7,
+    "ice": 1,
+    "lightning": 3
+  },
+  {
+    "id": "P403",
+    "fire": 7,
+    "ice": 1,
+    "lightning": 4
+  },
+  {
+    "id": "P404",
+    "fire": 7,
+    "ice": 1,
+    "lightning": 5
+  },
+  {
+    "id": "P405",
+    "fire": 7,
+    "ice": 1,
+    "lightning": 6
+  },
+  {
+    "id": "P406",
+    "fire": 7,
+    "ice": 1,
+    "lightning": 8
+  },
+  {
+    "id": "P407",
+    "fire": 7,
+    "ice": 2,
+    "lightning": 0
+  },
+  {
+    "id": "P408",
+    "fire": 7,
+    "ice": 2,
+    "lightning": 1
+  },
+  {
+    "id": "P409",
+    "fire": 7,
+    "ice": 2,
+    "lightning": 3
+  },
+  {
+    "id": "P410",
+    "fire": 7,
+    "ice": 2,
+    "lightning": 4
+  },
+  {
+    "id": "P411",
+    "fire": 7,
+    "ice": 2,
+    "lightning": 5
+  },
+  {
+    "id": "P412",
+    "fire": 7,
+    "ice": 2,
+    "lightning": 6
+  },
+  {
+    "id": "P413",
+    "fire": 7,
+    "ice": 2,
+    "lightning": 8
+  },
+  {
+    "id": "P414",
+    "fire": 7,
+    "ice": 3,
+    "lightning": 0
+  },
+  {
+    "id": "P415",
+    "fire": 7,
+    "ice": 3,
+    "lightning": 1
+  },
+  {
+    "id": "P416",
+    "fire": 7,
+    "ice": 3,
+    "lightning": 2
+  },
+  {
+    "id": "P417",
+    "fire": 7,
+    "ice": 3,
+    "lightning": 4
+  },
+  {
+    "id": "P418",
+    "fire": 7,
+    "ice": 3,
+    "lightning": 5
+  },
+  {
+    "id": "P419",
+    "fire": 7,
+    "ice": 3,
+    "lightning": 6
+  },
+  {
+    "id": "P420",
+    "fire": 7,
+    "ice": 3,
+    "lightning": 8
+  },
+  {
+    "id": "P421",
+    "fire": 7,
+    "ice": 4,
+    "lightning": 0
+  },
+  {
+    "id": "P422",
+    "fire": 7,
+    "ice": 4,
+    "lightning": 1
+  },
+  {
+    "id": "P423",
+    "fire": 7,
+    "ice": 4,
+    "lightning": 2
+  },
+  {
+    "id": "P424",
+    "fire": 7,
+    "ice": 4,
+    "lightning": 3
+  },
+  {
+    "id": "P425",
+    "fire": 7,
+    "ice": 4,
+    "lightning": 5
+  },
+  {
+    "id": "P426",
+    "fire": 7,
+    "ice": 4,
+    "lightning": 6
+  },
+  {
+    "id": "P427",
+    "fire": 7,
+    "ice": 4,
+    "lightning": 8
+  },
+  {
+    "id": "P428",
+    "fire": 7,
+    "ice": 5,
+    "lightning": 0
+  },
+  {
+    "id": "P429",
+    "fire": 7,
+    "ice": 5,
+    "lightning": 1
+  },
+  {
+    "id": "P430",
+    "fire": 7,
+    "ice": 5,
+    "lightning": 2
+  },
+  {
+    "id": "P431",
+    "fire": 7,
+    "ice": 5,
+    "lightning": 3
+  },
+  {
+    "id": "P432",
+    "fire": 7,
+    "ice": 5,
+    "lightning": 4
+  },
+  {
+    "id": "P433",
+    "fire": 7,
+    "ice": 5,
+    "lightning": 6
+  },
+  {
+    "id": "P434",
+    "fire": 7,
+    "ice": 5,
+    "lightning": 8
+  },
+  {
+    "id": "P435",
+    "fire": 7,
+    "ice": 6,
+    "lightning": 0
+  },
+  {
+    "id": "P436",
+    "fire": 7,
+    "ice": 6,
+    "lightning": 1
+  },
+  {
+    "id": "P437",
+    "fire": 7,
+    "ice": 6,
+    "lightning": 2
+  },
+  {
+    "id": "P438",
+    "fire": 7,
+    "ice": 6,
+    "lightning": 3
+  },
+  {
+    "id": "P439",
+    "fire": 7,
+    "ice": 6,
+    "lightning": 4
+  },
+  {
+    "id": "P440",
+    "fire": 7,
+    "ice": 6,
+    "lightning": 5
+  },
+  {
+    "id": "P441",
+    "fire": 7,
+    "ice": 6,
+    "lightning": 8
+  },
+  {
+    "id": "P442",
+    "fire": 7,
+    "ice": 8,
+    "lightning": 0
+  },
+  {
+    "id": "P443",
+    "fire": 7,
+    "ice": 8,
+    "lightning": 1
+  },
+  {
+    "id": "P444",
+    "fire": 7,
+    "ice": 8,
+    "lightning": 2
+  },
+  {
+    "id": "P445",
+    "fire": 7,
+    "ice": 8,
+    "lightning": 3
+  },
+  {
+    "id": "P446",
+    "fire": 7,
+    "ice": 8,
+    "lightning": 4
+  },
+  {
+    "id": "P447",
+    "fire": 7,
+    "ice": 8,
+    "lightning": 5
+  },
+  {
+    "id": "P448",
+    "fire": 7,
+    "ice": 8,
+    "lightning": 6
+  },
+  {
+    "id": "P449",
+    "fire": 8,
+    "ice": 0,
+    "lightning": 1
+  },
+  {
+    "id": "P450",
+    "fire": 8,
+    "ice": 0,
+    "lightning": 2
+  },
+  {
+    "id": "P451",
+    "fire": 8,
+    "ice": 0,
+    "lightning": 3
+  },
+  {
+    "id": "P452",
+    "fire": 8,
+    "ice": 0,
+    "lightning": 4
+  },
+  {
+    "id": "P453",
+    "fire": 8,
+    "ice": 0,
+    "lightning": 5
+  },
+  {
+    "id": "P454",
+    "fire": 8,
+    "ice": 0,
+    "lightning": 6
+  },
+  {
+    "id": "P455",
+    "fire": 8,
+    "ice": 0,
+    "lightning": 7
+  },
+  {
+    "id": "P456",
+    "fire": 8,
+    "ice": 1,
+    "lightning": 0
+  },
+  {
+    "id": "P457",
+    "fire": 8,
+    "ice": 1,
+    "lightning": 2
+  },
+  {
+    "id": "P458",
+    "fire": 8,
+    "ice": 1,
+    "lightning": 3
+  },
+  {
+    "id": "P459",
+    "fire": 8,
+    "ice": 1,
+    "lightning": 4
+  },
+  {
+    "id": "P460",
+    "fire": 8,
+    "ice": 1,
+    "lightning": 5
+  },
+  {
+    "id": "P461",
+    "fire": 8,
+    "ice": 1,
+    "lightning": 6
+  },
+  {
+    "id": "P462",
+    "fire": 8,
+    "ice": 1,
+    "lightning": 7
+  },
+  {
+    "id": "P463",
+    "fire": 8,
+    "ice": 2,
+    "lightning": 0
+  },
+  {
+    "id": "P464",
+    "fire": 8,
+    "ice": 2,
+    "lightning": 1
+  },
+  {
+    "id": "P465",
+    "fire": 8,
+    "ice": 2,
+    "lightning": 3
+  },
+  {
+    "id": "P466",
+    "fire": 8,
+    "ice": 2,
+    "lightning": 4
+  },
+  {
+    "id": "P467",
+    "fire": 8,
+    "ice": 2,
+    "lightning": 5
+  },
+  {
+    "id": "P468",
+    "fire": 8,
+    "ice": 2,
+    "lightning": 6
+  },
+  {
+    "id": "P469",
+    "fire": 8,
+    "ice": 2,
+    "lightning": 7
+  },
+  {
+    "id": "P470",
+    "fire": 8,
+    "ice": 3,
+    "lightning": 0
+  },
+  {
+    "id": "P471",
+    "fire": 8,
+    "ice": 3,
+    "lightning": 1
+  },
+  {
+    "id": "P472",
+    "fire": 8,
+    "ice": 3,
+    "lightning": 2
+  },
+  {
+    "id": "P473",
+    "fire": 8,
+    "ice": 3,
+    "lightning": 4
+  },
+  {
+    "id": "P474",
+    "fire": 8,
+    "ice": 3,
+    "lightning": 5
+  },
+  {
+    "id": "P475",
+    "fire": 8,
+    "ice": 3,
+    "lightning": 6
+  },
+  {
+    "id": "P476",
+    "fire": 8,
+    "ice": 3,
+    "lightning": 7
+  },
+  {
+    "id": "P477",
+    "fire": 8,
+    "ice": 4,
+    "lightning": 0
+  },
+  {
+    "id": "P478",
+    "fire": 8,
+    "ice": 4,
+    "lightning": 1
+  },
+  {
+    "id": "P479",
+    "fire": 8,
+    "ice": 4,
+    "lightning": 2
+  },
+  {
+    "id": "P480",
+    "fire": 8,
+    "ice": 4,
+    "lightning": 3
+  },
+  {
+    "id": "P481",
+    "fire": 8,
+    "ice": 4,
+    "lightning": 5
+  },
+  {
+    "id": "P482",
+    "fire": 8,
+    "ice": 4,
+    "lightning": 6
+  },
+  {
+    "id": "P483",
+    "fire": 8,
+    "ice": 4,
+    "lightning": 7
+  },
+  {
+    "id": "P484",
+    "fire": 8,
+    "ice": 5,
+    "lightning": 0
+  },
+  {
+    "id": "P485",
+    "fire": 8,
+    "ice": 5,
+    "lightning": 1
+  },
+  {
+    "id": "P486",
+    "fire": 8,
+    "ice": 5,
+    "lightning": 2
+  },
+  {
+    "id": "P487",
+    "fire": 8,
+    "ice": 5,
+    "lightning": 3
+  },
+  {
+    "id": "P488",
+    "fire": 8,
+    "ice": 5,
+    "lightning": 4
+  },
+  {
+    "id": "P489",
+    "fire": 8,
+    "ice": 5,
+    "lightning": 6
+  },
+  {
+    "id": "P490",
+    "fire": 8,
+    "ice": 5,
+    "lightning": 7
+  },
+  {
+    "id": "P491",
+    "fire": 8,
+    "ice": 6,
+    "lightning": 0
+  },
+  {
+    "id": "P492",
+    "fire": 8,
+    "ice": 6,
+    "lightning": 1
+  },
+  {
+    "id": "P493",
+    "fire": 8,
+    "ice": 6,
+    "lightning": 2
+  },
+  {
+    "id": "P494",
+    "fire": 8,
+    "ice": 6,
+    "lightning": 3
+  },
+  {
+    "id": "P495",
+    "fire": 8,
+    "ice": 6,
+    "lightning": 4
+  },
+  {
+    "id": "P496",
+    "fire": 8,
+    "ice": 6,
+    "lightning": 5
+  },
+  {
+    "id": "P497",
+    "fire": 8,
+    "ice": 6,
+    "lightning": 7
+  },
+  {
+    "id": "P498",
+    "fire": 8,
+    "ice": 7,
+    "lightning": 0
+  },
+  {
+    "id": "P499",
+    "fire": 8,
+    "ice": 7,
+    "lightning": 1
+  },
+  {
+    "id": "P500",
+    "fire": 8,
+    "ice": 7,
+    "lightning": 2
+  },
+  {
+    "id": "P501",
+    "fire": 8,
+    "ice": 7,
+    "lightning": 3
+  },
+  {
+    "id": "P502",
+    "fire": 8,
+    "ice": 7,
+    "lightning": 4
+  },
+  {
+    "id": "P503",
+    "fire": 8,
+    "ice": 7,
+    "lightning": 5
+  },
+  {
+    "id": "P504",
+    "fire": 8,
+    "ice": 7,
+    "lightning": 6
+  }
+]

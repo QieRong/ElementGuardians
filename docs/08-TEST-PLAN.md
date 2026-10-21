@@ -70,6 +70,9 @@ Sprint 1 完成后必须满足 `SES-01, WAV-01, WAV-02, WAV-03, ENM-01, ENM-02, 
 | 层级 | 现状 | 证据 |
 |---|---|---|
 | L0 配置 | PASS（6 表同步、跨表校验通过） | `python tools/sync_config.py --check`、`python tools/validate_config.py` 输出 |
-| L1 引擎解析/逻辑 | 未执行 | 本机 Godot 路径待确认；战斗逻辑尚未实现 |
-| L2 GUI 全流程 | 未执行 | 无实机截图与日志 |
-| 文档一致性 | 新增 `tools/check_docs.py`，待运行 | 运行后记录输出 |
+| L1 引擎解析/逻辑 | 2026-10-21正常权限复测通过；核心21、修复17、地图6、六波基线1、六波回放31条断言通过 | logs/test_runs/20261021_budget_closeout/；历史沙箱错误/崩溃证据保留，不能据此声称根因彻底修复 |
+| L2 自动渲染诊断 | 720×1280和540×960离屏渲染分别71 PASS；含六波、真实受伤/减速、Boss、胜败和重开 | final-render-10/、final-render-075/；仅自动夹具，非鼠标操作验收 |
+| L2 GUI 全流程 | 未执行、未实机验收 | 正常菜单仍进入占位页；正式UI、召唤/合成/强化未接入 |
+| 文档一致性 | FAIL：保留project.godot/main.tscn两项历史MANIFEST失配；只同步本轮实际变更哈希 | logs/test_runs/20261021_budget_closeout/docs-final.log |
+
+新增诊断命令见godot/README.md和tools/verify_runtime.py。自动诊断允许暂时跳过强化的边界不变；5个seed的六波回放验证当前固定三塔夹具，不是随机召唤/强化或真人测试。D010三张曲线/斜向/环绕地图尚未实现，不能算入本轮地图通过数。

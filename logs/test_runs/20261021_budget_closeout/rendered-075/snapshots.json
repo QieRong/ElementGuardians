@@ -1,0 +1,302 @@
+{
+	"scope": "Automated rendered fixtures, not human acceptance",
+	"snapshots": [
+		{
+			"enemies": 0,
+			"file": "01-prep.png",
+			"gold": 60,
+			"hp": 10,
+			"size": [
+				421,
+				749
+			],
+			"state": "PREP",
+			"stats": {
+				"board_occupancy_pct": 33.3,
+				"damage_dealt": 0.0,
+				"gold_earned": 0,
+				"gold_spent": 0,
+				"highest_level": 1,
+				"kills": 0,
+				"leaks": 0,
+				"merges": 0,
+				"summons": 0,
+				"tower_count": 3,
+				"wave_rewards": 0
+			},
+			"time": 0.0,
+			"towers": 3,
+			"wave": 1
+		},
+		{
+			"enemies": 1,
+			"file": "wave-1.png",
+			"gold": 60,
+			"hp": 10,
+			"size": [
+				421,
+				749
+			],
+			"state": "COMBAT",
+			"stats": {
+				"board_occupancy_pct": 33.3,
+				"damage_dealt": 0.0,
+				"gold_earned": 0,
+				"gold_spent": 0,
+				"highest_level": 1,
+				"kills": 0,
+				"leaks": 0,
+				"merges": 0,
+				"summons": 0,
+				"tower_count": 3,
+				"wave_rewards": 0
+			},
+			"time": 0.05,
+			"towers": 3,
+			"wave": 1
+		},
+		{
+			"enemies": 1,
+			"file": "wave-2.png",
+			"gold": 110,
+			"hp": 10,
+			"size": [
+				421,
+				749
+			],
+			"state": "COMBAT",
+			"stats": {
+				"board_occupancy_pct": 33.3,
+				"damage_dealt": 206.0,
+				"gold_earned": 50,
+				"gold_spent": 0,
+				"highest_level": 1,
+				"kills": 6,
+				"leaks": 0,
+				"merges": 0,
+				"summons": 0,
+				"tower_count": 3,
+				"wave_rewards": 20
+			},
+			"time": 18.6500000000001,
+			"towers": 3,
+			"wave": 2
+		},
+		{
+			"enemies": 1,
+			"file": "wave-3.png",
+			"gold": 177,
+			"hp": 10,
+			"size": [
+				421,
+				749
+			],
+			"state": "COMBAT",
+			"stats": {
+				"board_occupancy_pct": 33.3,
+				"damage_dealt": 506.0,
+				"gold_earned": 117,
+				"gold_spent": 0,
+				"highest_level": 1,
+				"kills": 15,
+				"leaks": 0,
+				"merges": 0,
+				"summons": 0,
+				"tower_count": 3,
+				"wave_rewards": 40
+			},
+			"time": 40.0499999999999,
+			"towers": 3,
+			"wave": 3
+		},
+		{
+			"enemies": 1,
+			"file": "wave-4.png",
+			"gold": 251,
+			"hp": 10,
+			"size": [
+				421,
+				749
+			],
+			"state": "COMBAT",
+			"stats": {
+				"board_occupancy_pct": 33.3,
+				"damage_dealt": 816.0,
+				"gold_earned": 191,
+				"gold_spent": 0,
+				"highest_level": 1,
+				"kills": 25,
+				"leaks": 0,
+				"merges": 0,
+				"summons": 0,
+				"tower_count": 3,
+				"wave_rewards": 60
+			},
+			"time": 64.4999999999985,
+			"towers": 3,
+			"wave": 4
+		},
+		{
+			"enemies": 1,
+			"file": "wave-5.png",
+			"gold": 333,
+			"hp": 10,
+			"size": [
+				421,
+				749
+			],
+			"state": "COMBAT",
+			"stats": {
+				"board_occupancy_pct": 33.3,
+				"damage_dealt": 1408.0,
+				"gold_earned": 273,
+				"gold_spent": 0,
+				"highest_level": 1,
+				"kills": 35,
+				"leaks": 0,
+				"merges": 0,
+				"summons": 0,
+				"tower_count": 3,
+				"wave_rewards": 80
+			},
+			"time": 101.799999999996,
+			"towers": 3,
+			"wave": 5
+		},
+		{
+			"enemies": 1,
+			"file": "wave-6.png",
+			"gold": 433,
+			"hp": 10,
+			"size": [
+				421,
+				749
+			],
+			"state": "COMBAT",
+			"stats": {
+				"board_occupancy_pct": 33.3,
+				"damage_dealt": 2009.0,
+				"gold_earned": 373,
+				"gold_spent": 0,
+				"highest_level": 1,
+				"kills": 47,
+				"leaks": 0,
+				"merges": 0,
+				"summons": 0,
+				"tower_count": 3,
+				"wave_rewards": 100
+			},
+			"time": 139.499999999997,
+			"towers": 3,
+			"wave": 6
+		},
+		{
+			"enemies": 12,
+			"file": "boss-wave-6.png",
+			"gold": 433,
+			"hp": 10,
+			"size": [
+				421,
+				749
+			],
+			"state": "COMBAT",
+			"stats": {
+				"board_occupancy_pct": 33.3,
+				"damage_dealt": 2009.0,
+				"gold_earned": 373,
+				"gold_spent": 0,
+				"highest_level": 1,
+				"kills": 47,
+				"leaks": 0,
+				"merges": 0,
+				"summons": 0,
+				"tower_count": 3,
+				"wave_rewards": 100
+			},
+			"time": 145.449999999999,
+			"towers": 3,
+			"wave": 6
+		},
+		{
+			"enemies": 0,
+			"file": "02-victory.png",
+			"gold": 523,
+			"hp": 5,
+			"size": [
+				421,
+				749
+			],
+			"state": "RESULT",
+			"stats": {
+				"board_occupancy_pct": 33.3,
+				"damage_dealt": 3043.0,
+				"gold_earned": 463,
+				"gold_spent": 0,
+				"highest_level": 1,
+				"kills": 58,
+				"leaks": 1,
+				"merges": 0,
+				"summons": 0,
+				"tower_count": 3,
+				"wave_rewards": 120
+			},
+			"time": 199.600000000011,
+			"towers": 3,
+			"wave": 6
+		},
+		{
+			"enemies": 0,
+			"file": "03-restarted.png",
+			"gold": 60,
+			"hp": 10,
+			"size": [
+				421,
+				749
+			],
+			"state": "PREP",
+			"stats": {
+				"board_occupancy_pct": 33.3,
+				"damage_dealt": 0.0,
+				"gold_earned": 0,
+				"gold_spent": 0,
+				"highest_level": 1,
+				"kills": 0,
+				"leaks": 0,
+				"merges": 0,
+				"summons": 0,
+				"tower_count": 3,
+				"wave_rewards": 0
+			},
+			"time": 0.0,
+			"towers": 3,
+			"wave": 1
+		},
+		{
+			"enemies": 0,
+			"file": "04-legacy-defeat.png",
+			"gold": 365,
+			"hp": 0,
+			"size": [
+				421,
+				749
+			],
+			"state": "RESULT",
+			"stats": {
+				"board_occupancy_pct": 33.3,
+				"damage_dealt": 1764.0,
+				"gold_earned": 305,
+				"gold_spent": 0,
+				"highest_level": 1,
+				"kills": 41,
+				"leaks": 5,
+				"merges": 0,
+				"summons": 0,
+				"tower_count": 3,
+				"wave_rewards": 80
+			},
+			"time": 161.550000000002,
+			"towers": 3,
+			"wave": 5
+		}
+	]
+}

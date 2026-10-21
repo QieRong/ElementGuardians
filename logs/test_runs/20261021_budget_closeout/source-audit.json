@@ -1,0 +1,40 @@
+{
+  "base_commit": "0f71527f5024cc1ed9acaa998dab9b140fc91739",
+  "modified_tracked_files": [
+    "AGENTS.md",
+    "MANIFEST.sha256",
+    "NEXT_SESSION_PROMPT.md",
+    "README.md",
+    "docs/08-TEST-PLAN.md",
+    "docs/visuals/2026-10-21-MOBILE-LANGUAGE.md",
+    "godot/README.md",
+    "output/visuals/README.md",
+    "output/visuals/sources/fonts/FONT-NOTICE.md",
+    "output/visuals/sources/mobile.css",
+    "output/visuals/sources/mobile.html",
+    "output/visuals/sources/mobile.js",
+    "tracking/CHANGELOG.md",
+    "tracking/DECISIONS.md"
+  ],
+  "unexpected_changes": [],
+  "production_godot_map_and_config_unchanged": true,
+  "preserved_manifest_failures": [
+    "godot/project.godot",
+    "godot/scenes/main.tscn"
+  ],
+  "new_source_line_counts": {
+    "godot/scripts/battle/battle_debug_canvas.gd": 54,
+    "godot/tests/test_battle_visual.gd": 171,
+    "godot/tests/test_six_wave_replay.gd": 76,
+    "tools/verify_runtime.py": 104,
+    "output/visuals/sources/render-mobile.cjs": 133
+  },
+  "scope": "Original tracked-file bytes checked against HEAD; debug sources are new files, not production gameplay changes.",
+  "new_source_sha256": {
+    "godot/scripts/battle/battle_debug_canvas.gd": "e1dc232eaab89a7b0b7823856e225a39e24022649810ad263ee5d608200f060a",
+    "godot/tests/test_battle_visual.gd": "86125af30b2fba5321f3407b3ca597bb64c7abc258c7340528f237b84d895b8b",
+    "godot/tests/test_six_wave_replay.gd": "1aca7204abc482d3fdc654431dafaa753daeb7a42db3a5192af1c83a5b6f3fb3",
+    "tools/verify_runtime.py": "94ec9b727a56b95d5ffdb9f01c978388f821f2252d5fa272e1cacfb911c4bdd6",
+    "output/visuals/sources/render-mobile.cjs": "fce8d0b91bb425ffa50ba33851266cebc417b44f04bcaa7cb4890816069bb8fa"
+  }
+}

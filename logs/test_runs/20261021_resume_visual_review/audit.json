@@ -1,0 +1,175 @@
+{
+  "date": "2026-10-21",
+  "timezone": "Asia/Shanghai",
+  "baseline": "0f71527f5024cc1ed9acaa998dab9b140fc91739",
+  "checks": [
+    {
+      "name": "local_remote_identity",
+      "status": "PASS",
+      "detail": {
+        "branch": "master",
+        "head": "0f71527f5024cc1ed9acaa998dab9b140fc91739",
+        "tree": "d3a27a329c7138aec216d2d356f6cefe4f8b0a5b",
+        "remote_master": "0f71527f5024cc1ed9acaa998dab9b140fc91739",
+        "remote_evidence": "Direct git ls-remote origin refs/heads/master succeeded twice in this turn; Python child retry also succeeded. One earlier attempt exited 128 without retained stderr; cause unknown."
+      }
+    },
+    {
+      "name": "initial_worktree_clean",
+      "status": "PASS",
+      "detail": {
+        "git_status_short": ""
+      }
+    },
+    {
+      "name": "tracked_file_bytes",
+      "status": "PASS",
+      "detail": {
+        "files": 419,
+        "mismatches": [],
+        "method": "Raw working bytes hashed as Git blob and compared with HEAD tree"
+      }
+    },
+    {
+      "name": "map_snapshot_bytes",
+      "status": "PASS",
+      "detail": {
+        "map_sha256": "fd13fa7603929c2f456f82fb780e2807d08bd238157484525a3a8a6844822fcd",
+        "snapshot_sha256": "fd13fa7603929c2f456f82fb780e2807d08bd238157484525a3a8a6844822fcd"
+      }
+    },
+    {
+      "name": "config_sync",
+      "status": "PASS",
+      "detail": {
+        "command": [
+          "E:\\PyCharm\\Python\\python.exe",
+          "-X",
+          "utf8",
+          "tools/sync_config.py",
+          "--check"
+        ],
+        "exit_code": 0,
+        "log": "sync.log"
+      }
+    },
+    {
+      "name": "config_validate",
+      "status": "PASS",
+      "detail": {
+        "command": [
+          "E:\\PyCharm\\Python\\python.exe",
+          "-X",
+          "utf8",
+          "tools/validate_config.py"
+        ],
+        "exit_code": 0,
+        "log": "config.log"
+      }
+    },
+    {
+      "name": "docs_gate",
+      "status": "FAIL",
+      "detail": {
+        "command": [
+          "E:\\PyCharm\\Python\\python.exe",
+          "-X",
+          "utf8",
+          "tools/check_docs.py"
+        ],
+        "exit_code": 1,
+        "log": "docs.log"
+      }
+    },
+    {
+      "name": "live_preview_boundary",
+      "status": "PASS",
+      "detail": {
+        "method": "CUA read-only DOM observation in this turn; recorded result",
+        "viewport": {
+          "width": 1280,
+          "height": 720
+        },
+        "available_map": {
+          "width": 720,
+          "height": 468
+        },
+        "rendered_map": {
+          "width": 351,
+          "height": 468,
+          "scale": 0.4875
+        },
+        "slot_css_px": 37.05,
+        "iframe_pointer_events": "none",
+        "actions": [
+          {
+            "text": "召唤 −20",
+            "disabled": true,
+            "height": 52
+          },
+          {
+            "text": "取消选择",
+            "disabled": true,
+            "height": 52
+          },
+          {
+            "text": "开始第 1 波",
+            "disabled": false,
+            "height": 52
+          }
+        ],
+        "interpretation": "Read-only preview; mobile.js has no begin gameplay handler"
+      }
+    },
+    {
+      "name": "small_screen_slot_48px",
+      "status": "FAIL",
+      "detail": {
+        "method": "Analytical upper bound from existing CSS/JS, not a fresh five-viewport browser run",
+        "formula": "slot=76*min(availableWidth/720,availableHeight/960); availableWidth<=viewportWidth",
+        "required_min_css_px": 48,
+        "upper_bounds": [
+          {
+            "viewport_width": 320,
+            "slot_css_px_upper_bound": 33.7778
+          },
+          {
+            "viewport_width": 360,
+            "slot_css_px_upper_bound": 38.0
+          },
+          {
+            "viewport_width": 390,
+            "slot_css_px_upper_bound": 41.1667
+          },
+          {
+            "viewport_width": 430,
+            "slot_css_px_upper_bound": 45.3889
+          },
+          {
+            "viewport_width": 412,
+            "slot_css_px_upper_bound": 43.4889
+          }
+        ],
+        "proposal": "Not implemented; current touch usability remains FAIL"
+      }
+    }
+  ],
+  "summary": {
+    "PASS": 7,
+    "FAIL": 2,
+    "SKIP": 5
+  },
+  "skips": [
+    "Godot parse and logic regression; no engine started",
+    "Complete gameplay GUI acceptance",
+    "Physical mobile touch and gestures",
+    "Low-end performance",
+    "Native-language review"
+  ],
+  "engine_metadata": {
+    "path": "E:/godot/Godot_v4.4.1-stable_win64.exe",
+    "FileVersion": "4.4.1",
+    "engine_launched": false
+  },
+  "scope": "Audit and pending proposal only"
+}

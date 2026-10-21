@@ -1,0 +1,2 @@
+{"command": ["E:\\PyCharm\\Python\\python.exe", "-X", "utf8", "D:\\桌面\\ElementGuardians\\tools\\sync_config.py", "--check"], "cwd": "D:\\桌面\\ElementGuardians"}
+CSV SYNC: PASS | 6 tables match Excel master in both config directories

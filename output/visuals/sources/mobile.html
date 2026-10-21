@@ -2,14 +2,15 @@
 <html lang="zh-Hans">
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>元素守卫 · 手机与语言选择设计</title>
-<link rel="stylesheet" href="mobile.css">
+<link rel="stylesheet" href="mobile.css?v=20261021-3">
 <body>
 <div id="app" class="phone-menu">
- <header><span class="prototype">视觉稿 · 非运行截图</span><button id="language" aria-haspopup="dialog"><span aria-hidden="true">◎</span><span id="current-language"></span></button></header>
+ <header id="menu-header"><span class="prototype">视觉稿 · 非运行截图</span><button id="language" aria-haspopup="dialog"><span aria-hidden="true">◎</span><span id="current-language"></span></button></header>
  <main id="menu-main"><div class="brand"><div class="emblem" aria-hidden="true">◈</div><h1 id="game-title"></h1><p>ELEMENT GUARDIANS</p></div></main>
  <section class="menu-actions"><button id="start" class="primary" data-label="start"></button><button id="quit" data-label="quit"></button><p id="credit"></p></section>
- <div id="battle-ui" hidden><div id="mobile-hud"></div><main id="map-viewport"><div id="map-clip"><iframe title="只读战场示意" tabindex="-1" src="ui.html?page=battle&state=initial"></iframe></div></main><section id="mobile-actions"></section></div>
+ <div id="battle-ui" hidden><div id="mobile-hud"></div><main id="map-viewport" aria-label="只读战场示意"><span class="battle-proof">视觉稿 · 非运行截图</span><div id="map-clip"><iframe title="只读战场示意" tabindex="-1" aria-hidden="true" inert src="ui.html?page=battle&state=initial"></iframe></div></main><section id="mobile-actions"></section></div>
+ <div id="feedback-toast" role="status" aria-live="polite" aria-atomic="true"><span></span></div>
 </div>
 <dialog id="language-sheet" aria-labelledby="sheet-title"><div class="sheet-top"><span class="grab" aria-hidden="true"></span><div class="sheet-heading"><h2 id="sheet-title">语言 / Language</h2><button id="close-language" aria-label="关闭 / Close">×</button></div></div><div id="language-options" role="radiogroup" aria-label="Language"></div><footer><button id="apply-language" class="primary"></button></footer></dialog>
-<script src="mobile.js"></script>
+<script src="mobile.js?v=20261021-3"></script>
 </body></html>

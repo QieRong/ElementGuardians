@@ -1,0 +1,4 @@
+COMMAND: E:\PyCharm\Python\python.exe -X utf8 tools/validate_config.py
+CONFIG VALIDATION: PASS | tables=6, tower_types=3, enemy_types=4, wave_rows=12, wave1_enemies=6, wave6_enemies=12, upgrade_cards=6
+
+EXIT=0

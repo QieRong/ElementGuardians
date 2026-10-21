@@ -1,0 +1,31 @@
+{
+  "status": "FAIL",
+  "reason": "Unchanged 76px logic slots remain below 48 CSS px; PREP enlarged interaction is pending, not implemented",
+  "measurements": [
+    {
+      "viewport": "320x568",
+      "slot_css_px": 33.77777777777778,
+      "minimum_css_px": 48
+    },
+    {
+      "viewport": "360x640",
+      "slot_css_px": 38,
+      "minimum_css_px": 48
+    },
+    {
+      "viewport": "390x844",
+      "slot_css_px": 41.166666666666664,
+      "minimum_css_px": 48
+    },
+    {
+      "viewport": "430x932",
+      "slot_css_px": 45.388888888888886,
+      "minimum_css_px": 48
+    },
+    {
+      "viewport": "412x915",
+      "slot_css_px": 43.48888888888889,
+      "minimum_css_px": 48
+    }
+  ]
+}

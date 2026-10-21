@@ -1,0 +1,14 @@
+{
+  "counts": {
+    "PASS": 5,
+    "FAIL": 0
+  },
+  "checks": {
+    "wrong_engine_rejected": "PASS",
+    "no_godot_tests_with_wrong_engine": "PASS",
+    "no_double_cr_in_new_command_logs": "PASS",
+    "runtime_refuses_overwrite_and_preserves_hashes": "PASS",
+    "mobile_refuses_overwrite_and_preserves_hashes": "PASS"
+  },
+  "scope": "Negative probes intentionally return nonzero. Their expected rejection is verified; they are not gameplay failures."
+}

@@ -1,0 +1,16 @@
+{
+  "browser": {
+    "PASS": 224,
+    "FAIL": 0
+  },
+  "other": {
+    "PASS": 6,
+    "FAIL": 2
+  },
+  "total": {
+    "PASS": 230,
+    "FAIL": 2,
+    "SKIP": 5
+  },
+  "aggregation": "Browser assertions plus grouped config/syntax/font/preservation/docs/touch checks. Not gameplay acceptance; historical runs excluded."
+}

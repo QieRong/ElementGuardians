@@ -1,0 +1,53 @@
+{
+  "checks": [
+    {
+      "id": "sync",
+      "status": "PASS",
+      "exit_code": 0,
+      "log": "sync.log"
+    },
+    {
+      "id": "config",
+      "status": "PASS",
+      "exit_code": 0,
+      "log": "config.log"
+    },
+    {
+      "id": "docs",
+      "status": "FAIL",
+      "exit_code": 1,
+      "log": "docs.log"
+    },
+    {
+      "id": "syntax-mobile.js",
+      "status": "PASS",
+      "exit_code": 0,
+      "output": ""
+    },
+    {
+      "id": "syntax-render-mobile.cjs",
+      "status": "PASS",
+      "exit_code": 0,
+      "output": ""
+    },
+    {
+      "id": "original-file-preservation",
+      "status": "PASS",
+      "tracked_files": 419,
+      "intended_modified": [
+        "AGENTS.md",
+        "MANIFEST.sha256",
+        "docs/visuals/2026-10-21-MOBILE-LANGUAGE.md",
+        "output/visuals/README.md",
+        "output/visuals/sources/fonts/FONT-NOTICE.md",
+        "output/visuals/sources/mobile.css",
+        "output/visuals/sources/mobile.html",
+        "output/visuals/sources/mobile.js",
+        "tracking/CHANGELOG.md"
+      ],
+      "unchanged": 410,
+      "unexpected": [],
+      "scope": "Map, XLSX/CSV, original fonts, Godot scripts/scenes/project and old screenshots/evidence all byte-matched HEAD"
+    }
+  ]
+}

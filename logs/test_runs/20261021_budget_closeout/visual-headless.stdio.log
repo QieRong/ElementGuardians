@@ -1,0 +1,16 @@
+Godot Engine v4.4.1.stable.official.49a5bc7b6 - https://godotengine.org
+
+PASS VISUAL-load-config-map
+PASS VISUAL-initial-diagnostic-fixture
+PASS VISUAL-start-first-wave
+PASS VISUAL-reject-combat-double-start
+PASS VISUAL-all-six-waves-observed
+PASS VISUAL-real-six-wave-victory
+PASS VISUAL-exact-baseline-accounting
+PASS VISUAL-result-reject-start
+PASS VISUAL-result-freezes-simulation
+PASS VISUAL-restart-resets-state
+PASS VISUAL-restart-preserves-fixture-seed
+PASS VISUAL-legacy-defeat-retained
+PASS VISUAL-defeat-freezes-simulation
+VISUAL SUMMARY: PASS=13 FAIL=0 SKIP=1 COMPLETE

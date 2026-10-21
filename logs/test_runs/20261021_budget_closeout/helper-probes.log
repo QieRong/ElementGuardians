@@ -1,0 +1,23 @@
+FAIL engine-version: exit=0 log=D:\桌面\ElementGuardians\logs\test_runs\20261021_budget_closeout\wrong-version-probe\engine-version.command.log
+PASS sync: exit=0 log=D:\桌面\ElementGuardians\logs\test_runs\20261021_budget_closeout\wrong-version-probe\sync.command.log
+PASS config: exit=0 log=D:\桌面\ElementGuardians\logs\test_runs\20261021_budget_closeout\wrong-version-probe\config.command.log
+FAIL docs: exit=1 log=D:\桌面\ElementGuardians\logs\test_runs\20261021_budget_closeout\wrong-version-probe\docs.command.log
+PASS map-geometry: exit=0 log=D:\桌面\ElementGuardians\logs\test_runs\20261021_budget_closeout\wrong-version-probe\map-geometry.command.log
+{"counts": {"PASS": 3, "FAIL": 2, "SKIP": 1}, "evidence": "D:\\桌面\\ElementGuardians\\logs\\test_runs\\20261021_budget_closeout\\wrong-version-probe"}
+
+REUSE REFUSAL
+usage: verify_runtime.py [-h] --godot-exe GODOT_EXE
+                         [--evidence-dir EVIDENCE_DIR] [--render]
+verify_runtime.py: error: refusing to overwrite evidence: D:\����\ElementGuardians\logs\test_runs\20261021_budget_closeout\wrong-version-probe
+
+MOBILE REFUSAL
+Error: Refusing to overwrite evidence: D:\桌面\ElementGuardians\logs\test_runs\20261021_budget_closeout\mobile
+    at D:\桌面\ElementGuardians\output\visuals\sources\render-mobile.cjs:41:71
+    at Object.<anonymous> (D:\桌面\ElementGuardians\output\visuals\sources\render-mobile.cjs:133:3)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47

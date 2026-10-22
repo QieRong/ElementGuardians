@@ -1,0 +1,5 @@
+{
+  "command": "git -c core.whitespace=cr-at-eol diff --check -- . :(exclude)logs",
+  "exit_code": 0,
+  "output": ""
+}

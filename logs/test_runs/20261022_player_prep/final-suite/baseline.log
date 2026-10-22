@@ -1,0 +1,17 @@
+COMMAND=['E:\\godot\\Godot_v4.4.1-stable_win64.exe', '--log-file', 'D:\\桌面\\ElementGuardians\\logs\\test_runs\\20261022_player_prep\\final-suite\\baseline.engine.log', '--headless', '--path', 'godot', '--script', 'res://tests/test_six_wave_baseline.gd']
+CWD=D:\桌面\ElementGuardians
+Godot Engine v4.4.1.stable.official.49a5bc7b6 - https://godotengine.org
+
+BASELINE BEGIN seed=20261018 dt=0.05 map=D006-A towers=[{ "slot": 5, "type_id": "fire", "level": 1 }, { "slot": 4, "type_id": "ice", "level": 1 }, { "slot": 3, "type_id": "lightning", "level": 1 }]
+BASELINE WAVE 1 spawned=6 kills=6 leaks=0 unprocessed=0 hp=10 gold=110 reward=20 elapsed=18.60
+BASELINE WAVE 2 spawned=9 kills=9 leaks=0 unprocessed=0 hp=10 gold=177 reward=20 elapsed=21.40
+BASELINE WAVE 3 spawned=10 kills=10 leaks=0 unprocessed=0 hp=10 gold=251 reward=20 elapsed=24.45
+BASELINE WAVE 4 spawned=10 kills=10 leaks=0 unprocessed=0 hp=10 gold=333 reward=20 elapsed=37.30
+BASELINE WAVE 5 spawned=12 kills=12 leaks=0 unprocessed=0 hp=10 gold=433 reward=20 elapsed=37.70
+BASELINE WAVE 6 spawned=12 kills=11 leaks=1 unprocessed=0 hp=5 gold=523 reward=20 elapsed=60.15
+BASELINE RESULT seed=20261018 victory=true wave=6 hp=5 generated=59 kills=58 leaks=1 gold=523 seconds=199.60
+BASELINE SUMMARY: PASS=1 FAIL=0 SKIP=0
+
+EXIT=0 LIMIT=NONE PEAK_PRIVATE_BYTES=36605952
+STDIO=D:\桌面\ElementGuardians\logs\test_runs\20261022_player_prep\final-suite\baseline.stdio.log
+HARNESS=PASS SUMMARY_FOUND=True

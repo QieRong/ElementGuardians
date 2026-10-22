@@ -1,0 +1,41 @@
+COMMAND=['E:\\godot\\Godot_v4.4.1-stable_win64.exe', '--log-file', 'D:\\桌面\\ElementGuardians\\logs\\test_runs\\20261022_player_prep\\view-green-second.engine.log', '--headless', '--path', 'godot', '--script', 'res://tests/test_player_view.gd']
+CWD=D:\桌面\ElementGuardians
+Godot Engine v4.4.1.stable.official.49a5bc7b6 - https://godotengine.org
+
+PASS PLAYERVIEW-player-scene-available
+PASS PLAYERVIEW-supported-scale
+SCRIPT ERROR: Parse Error: Invalid argument for "draw_texture_rect_region()" function: argument 1 should be "Texture2D" but is "Rect2".
+   at: GDScript::reload (res://scripts/ui/paper_unit.gd:24)
+SCRIPT ERROR: Parse Error: Invalid argument for "draw_texture_rect_region()" function: argument 2 should be "Rect2" but is "Texture2D".
+   at: GDScript::reload (res://scripts/ui/paper_unit.gd:24)
+SCRIPT ERROR: Compile Error: Failed to compile depended scripts.
+   at: GDScript::reload (res://scripts/ui/board_slot.gd:0)
+SCRIPT ERROR: Parse Error: Invalid argument for "draw_texture_rect_region()" function: argument 1 should be "Texture2D" but is "Rect2".
+   at: GDScript::reload (res://scripts/ui/paper_unit.gd:24)
+SCRIPT ERROR: Parse Error: Invalid argument for "draw_texture_rect_region()" function: argument 2 should be "Rect2" but is "Texture2D".
+   at: GDScript::reload (res://scripts/ui/paper_unit.gd:24)
+SCRIPT ERROR: Compile Error: Failed to compile depended scripts.
+   at: GDScript::reload (res://scripts/ui/player_field.gd:0)
+SCRIPT ERROR: Compile Error: Failed to compile depended scripts.
+   at: GDScript::reload (res://scripts/player/battle_view.gd:0)
+ERROR: Failed to load script "res://scripts/player/battle_view.gd" with error "Compilation failed".
+   at: load (modules/gdscript/gdscript.cpp:3022)
+PASS PLAYERVIEW-controls-built
+PASS PLAYERVIEW-real-empty-player-start
+PASS PLAYERVIEW-no-diagnostic-canvas
+PASS PLAYERVIEW-selection-has-real-owner
+ERROR: The object does not have any 'meta' values with the key 'color_fx'.
+   at: get_meta (core/object/object.cpp:1054)
+SCRIPT ERROR: Invalid call. Nonexistent function 'new' in base 'GDScript'.
+   at: show_tower (res://scripts/ui/board_slot.gd:29)
+ERROR: The object does not have any 'meta' values with the key 'fade_fx'.
+   at: get_meta (core/object/object.cpp:1054)
+PASS PLAYERVIEW-actual-summon-consumes-20
+SCRIPT ERROR: Invalid access to property or key 'scale' on a base object of type 'Nil'.
+   at: _run (res://tests/test_player_view.gd:58)
+ERROR: The object does not have any 'meta' values with the key 'fade_fx'.
+   at: get_meta (core/object/object.cpp:1054)
+
+EXIT=1 LIMIT=TIMEOUT PEAK_PRIVATE_BYTES=110534656
+STDIO=logs\test_runs\20261022_player_prep\view-green-second.stdio.log
+HARNESS=FAIL SUMMARY_FOUND=False

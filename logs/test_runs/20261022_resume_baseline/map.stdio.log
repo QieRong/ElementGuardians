@@ -1,0 +1,11 @@
+Godot Engine v4.4.1.stable.official.49a5bc7b6 - https://godotengine.org
+
+ERROR: Failed to read the root certificate store.
+   at: get_system_ca_certificates (platform/windows/os_windows.cpp:2289)
+PASS map-load
+PASS D006-approved-width
+PASS D006-no-slot-overlap
+PASS D006-lv1-baseline
+PASS D008-approved-fixed-towers
+FAIL map-fixture-write
+MAP SUMMARY: PASS=5 FAIL=1 SKIP=0

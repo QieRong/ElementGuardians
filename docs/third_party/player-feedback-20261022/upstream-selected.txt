@@ -1,0 +1,47 @@
+685: func spawn_in(node: Node2D, dur: float = 0.3) -> Tween:
+686: 	if not _is_valid(node):
+687: 		return null
+688: 	node.scale = Vector2.ZERO
+689: 	node.modulate.a = 0.0
+690: 	var t = _new_tween(node)
+691: 	t.parallel().tween_property(node, "scale", Vector2.ONE, dur).set_trans(Tween.TRANS_BACK).set_ease(Tween.EASE_OUT)
+692: 	t.parallel().tween_property(node, "modulate:a", 1.0, dur)
+693: 	return t
+
+255: func pop_scale(node: Node2D, factor: float = 1.3, dur: float = 0.15) -> Tween:
+256: 	if not _is_valid(node):
+257: 		return null
+258: 	
+259: 	# Uccidi il vecchio Tween prima di partire
+260: 	if _pop_tweens.has(node) and is_instance_valid(_pop_tweens[node]):
+261: 		_pop_tweens[node].kill()
+262: 	
+263: 	var s = node.scale
+264: 	var t = _new_tween(node)
+265: 	_pop_tweens[node] = t  # registra il nuovo
+266: 	
+267: 	t.tween_property(node, "scale", s * factor, dur).set_trans(Tween.TRANS_BACK).set_ease(Tween.EASE_OUT)
+268: 	t.tween_property(node, "scale", s, dur).set_trans(Tween.TRANS_BACK).set_ease(Tween.EASE_IN)
+269: 	
+270: 	# Pulizia a fine animazione
+271: 	t.finished.connect(func():
+272: 		if _pop_tweens.get(node) == t:
+273: 			_pop_tweens.erase(node)
+274: 	)
+275: 	
+276: 	return t
+
+235: func color_flash(node: CanvasItem, color: Color = Color.RED, dur: float = 0.15) -> Tween:
+236: 	if not _is_valid(node):
+237: 		return null
+238: 	var original = node.modulate
+239: 	var t = _new_tween(node)
+240: 	t.tween_property(node, "modulate", color, dur * 0.5)
+241: 	t.tween_property(node, "modulate", original, dur * 0.5)
+242: 	return t
+
+202: func show_canvas(node: CanvasItem, dur: float = 0.3) -> PropertyTweener:
+203: 	return fade(node, node.modulate.a, 1.0, dur)
+
+199: func hide_canvas(node: CanvasItem, dur: float = 0.3) -> PropertyTweener:
+200: 	return fade(node, node.modulate.a, 0.0, dur)    # "from" is ignored but kept for API compatibility

@@ -1,12 +1,14 @@
 ## Sprint 1 战斗核心：可 headless 快进的纯逻辑，不依赖场景树。
-## 状态：PREP -> COMBAT -> PREP ... -> RESULT；UPGRADE 在 Sprint 1 明确跳过。
+## 诊断模式保留PREP循环；玩家模式波末停在UPGRADE，不自动跳过。
 class_name BattleCore
 extends RefCounted
 
 const STATE_PREP := "PREP"
 const STATE_COMBAT := "COMBAT"
 const STATE_RESULT := "RESULT"
+const STATE_UPGRADE := "UPGRADE"
 const MAX_WAVE := 6
+signal combat_event(data: Dictionary)
 
 var config: BattleConfig
 var map: BattleMap
@@ -30,10 +32,14 @@ var stats: Dictionary = {}
 
 var _initial_fixed: Array[Dictionary] = []
 var _next_enemy_id := 1
+var _player_mode: bool = false
+var _recorded_summons: int = 0
+var _recorded_merges: int = 0
 
-func setup(p_config: BattleConfig, p_map: BattleMap, fixed_towers: Array = [], p_seed: int = 20261018) -> void:
+func setup(p_config: BattleConfig, p_map: BattleMap, fixed_towers: Variant = null, p_seed: int = 20261018) -> void:
 	# restart() passes our saved array; copy before clearing any runtime data.
-	var chosen: Array = fixed_towers.duplicate(true)
+	var chosen: Array = p_map.fixed_towers.duplicate(true) if fixed_towers == null else (fixed_towers as Array).duplicate(true)
+	_player_mode = false
 	config = p_config
 	map = p_map
 	seed_value = p_seed
@@ -52,6 +58,8 @@ func setup(p_config: BattleConfig, p_map: BattleMap, fixed_towers: Array = [], p
 	wave_stats.clear()
 	combat_log.clear()
 	_next_enemy_id = 1
+	_recorded_summons = 0
+	_recorded_merges = 0
 	stats = {
 		"kills": 0, "leaks": 0, "damage_dealt": 0.0,
 		"gold_earned": 0, "gold_spent": 0, "wave_rewards": 0,
@@ -59,13 +67,15 @@ func setup(p_config: BattleConfig, p_map: BattleMap, fixed_towers: Array = [], p
 		"tower_count": 0, "board_occupancy_pct": 0.0,
 	}
 	_initial_fixed.clear()
-	if chosen.is_empty():
-		for item in map.fixed_towers:
-			chosen.append(item)
 	for item in chosen:
 		_initial_fixed.append({"slot": int(item["slot"]), "type_id": String(item["type_id"]), "level": int(item.get("level", 1))})
 	_build_fixed_towers(chosen)
 	_log("PREP wave=1 gold=%d hp=%d towers=%d seed=%d" % [gold, base_hp, towers.size(), seed_value])
+
+func setup_player(p_config: BattleConfig, p_map: BattleMap, p_seed: int) -> void:
+	setup(p_config, p_map, [], p_seed)
+	_player_mode = true
+	_log("PLAYER empty-board seed=%d map_id=%s" % [p_seed, map.map_id])
 
 func _build_fixed_towers(chosen: Array) -> void:
 	for item in chosen:
@@ -100,7 +110,10 @@ func _build_fixed_towers(chosen: Array) -> void:
 	stats["board_occupancy_pct"] = round(100.0 * float(towers.size()) / 9.0 * 10.0) / 10.0
 
 func restart() -> void:
-	setup(config, map, _initial_fixed, seed_value)
+	if _player_mode:
+		setup_player(config, map, seed_value)
+	else:
+		setup(config, map, _initial_fixed, seed_value)
 
 func start_wave() -> bool:
 	if state != STATE_PREP or finished:
@@ -132,8 +145,11 @@ func start_wave() -> bool:
 		"wave_clear_reward": 0,
 		"tower_count": towers.size(),
 		"board_occupancy_pct": stats["board_occupancy_pct"],
-		"summons": 0, "merges": 0,
+		"summons": int(stats["summons"]) - _recorded_summons,
+		"merges": int(stats["merges"]) - _recorded_merges,
 	})
+	_recorded_summons = int(stats["summons"])
+	_recorded_merges = int(stats["merges"])
 	_log("COMBAT wave=%d start gold=%d hp=%d enemies=%d" % [wave_index, gold, base_hp, wave_total(wave_index)])
 	return true
 
@@ -216,6 +232,7 @@ func _on_leak(enemy: Dictionary) -> void:
 		wave_stats[wave_stats.size() - 1]["leaks"] = int(wave_stats[wave_stats.size() - 1]["leaks"]) + 1
 	enemies.erase(enemy)
 	_log("LEAK %s dmg=%d hp=%d" % [String(enemy["name"]), int(enemy["leak_damage"]), base_hp])
+	combat_event.emit({"kind": "leak", "hp": base_hp, "enemy_id": int(enemy["id"]), "position": map.base})
 	if base_hp <= 0:
 		_finish(false)
 
@@ -236,6 +253,7 @@ func _update_towers(dt: float) -> void:
 func _attack(tower: Dictionary, enemy: Dictionary) -> void:
 	var damage := float(tower["damage"])
 	var died := _damage_enemy(enemy, damage)
+	combat_event.emit({"kind": "attack", "slot": int(tower["slot"]), "type_id": String(tower["type_id"]), "from": tower["position"], "to": map.position_at(float(enemy["progress"])), "enemy_id": int(enemy["id"])})
 	if not died and float(tower["slow_pct"]) > 0.0:
 		var candidate := minf(float(config.global_params.get("max_ice_slow_pct", 0.6)), float(tower["slow_pct"]))
 		enemy["slow_pct"] = maxf(float(enemy["slow_pct"]), candidate)
@@ -254,6 +272,7 @@ func _damage_enemy(enemy: Dictionary, amount: float) -> bool:
 		return false
 	var damage := maxf(0.0, amount)
 	enemy["hp"] = float(enemy["hp"]) - damage
+	combat_event.emit({"kind": "damage", "enemy_id": int(enemy["id"]), "position": map.position_at(float(enemy["progress"])), "hp": float(enemy["hp"])})
 	stats["damage_dealt"] = float(stats["damage_dealt"]) + damage
 	if not wave_stats.is_empty():
 		wave_stats[wave_stats.size() - 1]["damage_dealt"] = float(wave_stats[wave_stats.size() - 1]["damage_dealt"]) + damage
@@ -310,7 +329,7 @@ func _check_wave_end() -> void:
 	else:
 		wave_index += 1
 		wave_elapsed = 0.0
-		state = STATE_PREP
+		state = STATE_UPGRADE if _player_mode else STATE_PREP
 		spawn_queues.clear()
 
 func _finish(is_victory: bool) -> void:

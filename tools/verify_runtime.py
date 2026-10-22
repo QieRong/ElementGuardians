@@ -22,6 +22,9 @@ SCRIPTS = [
     ("baseline", "test_six_wave_baseline.gd", r"BASELINE SUMMARY: PASS=1 FAIL=0 SKIP=0"),
     ("replay", "test_six_wave_replay.gd", r"REPLAY SUMMARY: PASS=31 FAIL=0 SKIP=0 COMPLETE"),
     ("visual-headless", "test_battle_visual.gd", r"VISUAL SUMMARY: PASS=\d+ FAIL=0 SKIP=1 COMPLETE"),
+    ("player-menu", "test_player_menu.gd", r"MENU SUMMARY: PASS=\d+ FAIL=0 SKIP=1 COMPLETE"),
+    ("player-prep", "test_player_prep.gd", r"PREP SUMMARY: PASS=\d+ FAIL=0 SKIP=0 COMPLETE"),
+    ("player-view", "test_player_view.gd", r"PLAYERVIEW SUMMARY: PASS=\d+ FAIL=0 SKIP=1 COMPLETE"),
 ]
 
 
@@ -90,6 +93,14 @@ def main() -> int:
                 godot(name, ["--path", "godot", "--script", "res://tests/test_battle_visual.gd", "--",
                              f"--render-scale={scale}", f"--capture-dir={evidence / name}"],
                       r"VISUAL SUMMARY: PASS=\d+ FAIL=0 SKIP=0 COMPLETE", memory=1024)
+                menu_name = "menu-render-" + scale.replace(".", "")
+                godot(menu_name, ["--path", "godot", "--script", "res://tests/test_player_menu.gd", "--",
+                                 f"--render-scale={scale}", f"--capture-dir={evidence / menu_name}"],
+                      r"MENU SUMMARY: PASS=\d+ FAIL=0 SKIP=0 COMPLETE", memory=768)
+                player_name = "player-render-" + scale.replace(".", "")
+                godot(player_name, ["--path", "godot", "--script", "res://tests/test_player_view.gd", "--",
+                                   f"--render-scale={scale}", f"--capture-dir={evidence / player_name}"],
+                      r"PLAYERVIEW SUMMARY: PASS=\d+ FAIL=0 SKIP=0 COMPLETE", memory=768)
     else:
         rows.append({"id": "godot-gates", "status": "SKIP", "reason": "Godot version not verified as the locked 4.4.1 build"})
     counts = {status: sum(row["status"] == status for row in rows) for status in ("PASS", "FAIL", "SKIP")}

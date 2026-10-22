@@ -4,7 +4,9 @@
 - L0：配置 `sync_config.py --check` + `validate_config.py` PASS。
 - L1：Godot headless 导入解析、自动化逻辑断言 PASS（代理实现后）。
 - L2：Windows 图形界面实机从菜单到结算全流程演示、截图与录像 PASS。
-**本准备包仅能在当前环境执行 L0；如果本机没有 Godot，L1/L2 必须记 SKIP，不许写 PASS。**
+**当前已能执行L0、L1及自动图形输入/渲染；L2完整六波真人演示仍未验收。** 本机锁定Godot4.4.1，其他环境没有引擎时须记SKIP。
+
+2026-10-22新增 `godot/tests/test_player_prep.gd` 与 `godot/tests/test_player_view.gd`（仓库根目录）：空棋盘与默认诊断夹具区分、金币19/20/60、满盘/非法格、81组合合成矩阵、战斗禁操作、五seed重放且失败不消耗随机数、首波UPGRADE冻结与重开。真实Viewport输入触发召唤/合成/攻击/漏怪/资源/错误反馈，并检查中间动效、提示消失、减少动画与旧特效清理。菜单测试进入真实玩家页，不再以占位页当作完成。最终计数与红绿证据见 `logs/test_runs/20261022_player_prep/REPORT.md`（仓库根目录）。这些不等于完整强化随机重放、性能或真人验收。
 
 ## 2. 关键测试用例（状态机和交易）
 | ID | 操作/前提 | 预期 | 优先级 |

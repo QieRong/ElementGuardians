@@ -3,7 +3,13 @@
 ## 工程选择
 Godot 4.4.1、GDScript、Control UI + Node2D 游戏对象（或全 Node2D 战场加独立 CanvasLayer HUD，代理选其一并记录）；720×1280、viewport stretch `canvas_items`。单机 Windows，鼠标模拟触摸。引擎版本切换需用户批准。
 
-## 建议目录（尚未实现的文件为设计目标，不得当作现有事实）
+## 2026-10-22 当前接入
+
+正常菜单进入 `godot/scenes/player_battle.tscn`。`godot/scripts/player/player_session.gd`负责命令、选格、金币事务及独立显式seed召唤流；同目录board_controller.gd负责九格与合成。`godot/scripts/battle/battle_core.gd`仍是战斗时间/波次/HP/奖励真值。UI的battle_view.gd只调用会话命令，player_field.gd从真实状态构建角色、敌人与反馈，不复制模拟逻辑。路径均相对仓库根目录。
+
+BattleCore.setup的fixed_towers省略/null表示原诊断夹具，显式[]表示空棋盘；setup_player与restart保留玩家模式。玩家第1–5波结束进入UPGRADE，诊断测试仍可独立自动推进。当前玩家UI只开放首波，没有实现强化选择或继续下一波。旧诊断调用明确传null，测试断言与数值不变。信号使用具名回调避免RefCounted闭包引用环；UI Tween绑定节点，重开清理旧视觉对象，不影响战斗计时。
+
+## 原建议目录（以下未实现的文件仍为设计目标，当前以实际接入说明为准）
 ```
 godot/
   project.godot

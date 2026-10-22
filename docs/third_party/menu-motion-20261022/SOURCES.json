@@ -1,0 +1,72 @@
+{
+  "accessed_on": "2026-10-22 Asia/Shanghai",
+  "motion": {
+    "repository": "https://github.com/Rp-ics/Godot-Engine-GlobalTweens",
+    "commit": "22d9679185a700513c44136bfc79578d4fc20a45",
+    "file": "GlobalTweens.gd",
+    "sha256": "d77cc23afc824dc51cb749670753e541cba1b2f166c37eaf4534a1ad3019533a",
+    "license": "MIT",
+    "selected_functions": [
+      "button_hover",
+      "button_unhover",
+      "button_press",
+      "show_canvas",
+      "_new_tween"
+    ],
+    "changes": [
+      "Only selected effects adapted; no plugin or autoload installation",
+      "Visual draw scale instead of Control.scale preserves hit rectangle",
+      "Hold/release/cancel mapping follows Motion press gesture guide",
+      "Existing Tween replaced on every state change",
+      "Reduced motion bypasses transforms; no gameplay timing changes"
+    ]
+  },
+  "gesture_references": [
+    "https://motion.dev/docs/press",
+    "https://motion.dev/docs/react-accessibility"
+  ],
+  "rejected": [
+    {
+      "url": "https://github.com/kobeDevStuff/Godot-UI-Tutorial/blob/main/scripts/animated_button.gd",
+      "reason": "offset_transform_enabled/offset_transform_scale not available in locked Godot 4.4.1"
+    }
+  ],
+  "lucide": {
+    "commit": "20aef31db93fe4d9f398dbb15b120d99c48eef95",
+    "license": "ISC plus Feather-derived MIT notices in upstream LICENSE",
+    "icons": [
+      {
+        "name": "play",
+        "source_url": "https://raw.githubusercontent.com/lucide-icons/lucide/20aef31db93fe4d9f398dbb15b120d99c48eef95/icons/play.svg",
+        "source_sha256": "d7c34786135922a92b6896f6c2384ceeb0346afbf6041dc79982011411409833",
+        "runtime_path": "godot/assets/icons/lucide/play.svg",
+        "runtime_sha256": "0775bdac2c2e91262211e431f6c4e763ee1b783f46c5657e51de737d6eb0180e",
+        "adaptation": "currentColor replaced by white for Godot texture tinting; geometry unchanged"
+      },
+      {
+        "name": "log-out",
+        "source_url": "https://raw.githubusercontent.com/lucide-icons/lucide/20aef31db93fe4d9f398dbb15b120d99c48eef95/icons/log-out.svg",
+        "source_sha256": "f24b5b45c05a3acc346af8095408f6ba197ff58ea1641a4f2cb25a9702d2c0ac",
+        "runtime_path": "godot/assets/icons/lucide/log-out.svg",
+        "runtime_sha256": "93b1a486dd2d4e75b39c04fc4bc802fe4c58151644c49bca60cc227eb8bcd828",
+        "adaptation": "currentColor replaced by white for Godot texture tinting; geometry unchanged"
+      },
+      {
+        "name": "arrow-left",
+        "source_url": "https://raw.githubusercontent.com/lucide-icons/lucide/20aef31db93fe4d9f398dbb15b120d99c48eef95/icons/arrow-left.svg",
+        "source_sha256": "c5f4b88076108eb1a0d95336e1aa7e7bb1419a3a92af96f6247d88cd3456f933",
+        "runtime_path": "godot/assets/icons/lucide/arrow-left.svg",
+        "runtime_sha256": "cb6ef515bcf52b5866347d927b9e40c6fb3f22eb1394c2e8dadb65bc42459377",
+        "adaptation": "currentColor replaced by white for Godot texture tinting; geometry unchanged"
+      },
+      {
+        "name": "list-checks",
+        "source_url": "https://raw.githubusercontent.com/lucide-icons/lucide/20aef31db93fe4d9f398dbb15b120d99c48eef95/icons/list-checks.svg",
+        "source_sha256": "08d26ab05aaf724222c4c0cd5a19d5eae753b2a5fff0eb2d81759dde11bac6b6",
+        "runtime_path": "godot/assets/icons/lucide/list-checks.svg",
+        "runtime_sha256": "2d6e37981bf4a331e35f31adf4f17c0807f1861493d3dad19bbec95836d0db0a",
+        "adaptation": "currentColor replaced by white for Godot texture tinting; geometry unchanged"
+      }
+    ]
+  }
+}

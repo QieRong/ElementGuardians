@@ -1,0 +1,33 @@
+171: func _new_tween(target: Node) -> Tween:
+172: 	if not _is_valid(target):
+173: 		return null
+174: 	return target.create_tween().set_trans(Tween.TRANS_SINE).set_ease(Tween.EASE_IN_OUT)
+
+193: func fade(node: CanvasItem, from: float, to: float, dur: float = 0.4) -> PropertyTweener:
+194: 	if not _is_valid(node):
+195: 		return null
+196: 	# No forced modulate – start tween from whatever alpha the node already has
+197: 	return _new_tween(node).tween_property(node, "modulate:a", to, dur)
+
+202: func show_canvas(node: CanvasItem, dur: float = 0.3) -> PropertyTweener:
+203: 	return fade(node, node.modulate.a, 1.0, dur)
+
+1165: func button_hover(btn: Control, scale_factor: float = 1.1, dur: float = 0.12) -> Tween:
+1166: 	if not _is_valid(btn):
+1167: 		return null
+1168: 	var t = _new_tween(btn)
+1169: 	t.tween_property(btn, "scale", Vector2.ONE * scale_factor, dur).set_trans(Tween.TRANS_BACK).set_ease(Tween.EASE_OUT)
+1170: 	return t
+
+1173: func button_unhover(btn: Control, dur: float = 0.1) -> PropertyTweener:
+1174: 	if not _is_valid(btn):
+1175: 		return null
+1176: 	return _new_tween(btn).tween_property(btn, "scale", Vector2.ONE, dur)
+
+1179: func button_press(btn: Control, dur: float = 0.08) -> Tween:
+1180: 	if not _is_valid(btn):
+1181: 		return null
+1182: 	var t = _new_tween(btn)
+1183: 	t.tween_property(btn, "scale", Vector2.ONE * 0.9, dur)
+1184: 	t.tween_property(btn, "scale", Vector2.ONE, dur)
+1185: 	return t

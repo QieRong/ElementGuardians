@@ -1,0 +1,18 @@
+{"command": ["E:\\PyCharm\\Python\\python.exe", "D:\\桌面\\ElementGuardians\\tools\\run_godot_check.py", "--godot-exe", "E:\\godot\\Godot_v4.4.1-stable_win64_console.exe", "--log", "D:\\桌面\\ElementGuardians\\logs\\test_runs\\20261022_resume_baseline\\map.log", "--timeout", "90", "--memory-mb", "512", "--require", "MAP SUMMARY: PASS=6 FAIL=0 SKIP=0", "--", "--headless", "--path", "godot", "--script", "res://tests/test_map_contract.gd"], "cwd": "D:\\桌面\\ElementGuardians"}
+COMMAND=['E:\\godot\\Godot_v4.4.1-stable_win64.exe', '--log-file', 'D:\\桌面\\ElementGuardians\\logs\\test_runs\\20261022_resume_baseline\\map.engine.log', '--headless', '--path', 'godot', '--script', 'res://tests/test_map_contract.gd']
+CWD=D:\桌面\ElementGuardians
+Godot Engine v4.4.1.stable.official.49a5bc7b6 - https://godotengine.org
+
+ERROR: Failed to read the root certificate store.
+   at: get_system_ca_certificates (platform/windows/os_windows.cpp:2289)
+PASS map-load
+PASS D006-approved-width
+PASS D006-no-slot-overlap
+PASS D006-lv1-baseline
+PASS D008-approved-fixed-towers
+FAIL map-fixture-write
+MAP SUMMARY: PASS=5 FAIL=1 SKIP=0
+
+EXIT=1 LIMIT=NONE PEAK_PRIVATE_BYTES=39014400
+STDIO=D:\桌面\ElementGuardians\logs\test_runs\20261022_resume_baseline\map.stdio.log
+HARNESS=FAIL SUMMARY_FOUND=False LOG=D:\桌面\ElementGuardians\logs\test_runs\20261022_resume_baseline\map.log

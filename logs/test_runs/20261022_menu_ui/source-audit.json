@@ -1,0 +1,94 @@
+{
+  "checks": [
+    {
+      "id": "battle-core-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "maps-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "xlsx-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "design-csv-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "runtime-csv-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "html-preview-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "godot/project.godot-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "godot/scenes/main.tscn-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "godot/scenes/battle.tscn-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "lucide-play-sha256",
+      "status": "PASS"
+    },
+    {
+      "id": "lucide-log-out-sha256",
+      "status": "PASS"
+    },
+    {
+      "id": "lucide-arrow-left-sha256",
+      "status": "PASS"
+    },
+    {
+      "id": "lucide-list-checks-sha256",
+      "status": "PASS"
+    },
+    {
+      "id": "scripts-under-400-lines",
+      "status": "PASS"
+    },
+    {
+      "id": "godot/assets/backgrounds/menu_058.png-unchanged-copy",
+      "status": "PASS"
+    },
+    {
+      "id": "godot/assets/backgrounds/battle_056.png-unchanged-copy",
+      "status": "PASS"
+    }
+  ],
+  "counts": {
+    "PASS": 16,
+    "FAIL": 0
+  },
+  "motion_source": {
+    "repository": "https://github.com/Rp-ics/Godot-Engine-GlobalTweens",
+    "commit": "22d9679185a700513c44136bfc79578d4fc20a45",
+    "file": "GlobalTweens.gd",
+    "sha256": "d77cc23afc824dc51cb749670753e541cba1b2f166c37eaf4534a1ad3019533a",
+    "license": "MIT",
+    "selected_functions": [
+      "button_hover",
+      "button_unhover",
+      "button_press",
+      "show_canvas",
+      "_new_tween"
+    ],
+    "changes": [
+      "Only selected effects adapted; no plugin or autoload installation",
+      "Visual draw scale instead of Control.scale preserves hit rectangle",
+      "Hold/release/cancel mapping follows Motion press gesture guide",
+      "Existing Tween replaced on every state change",
+      "Reduced motion bypasses transforms; no gameplay timing changes"
+    ]
+  },
+  "git_head": "f4786b6ae5e3b52c1c0fdd7accd3f6e3bbb435df"
+}

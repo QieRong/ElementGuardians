@@ -1,0 +1,75 @@
+{
+  "lucide_commit": "20aef31db93fe4d9f398dbb15b120d99c48eef95",
+  "icons": [
+    {
+      "name": "plus",
+      "url": "https://raw.githubusercontent.com/lucide-icons/lucide/20aef31db93fe4d9f398dbb15b120d99c48eef95/icons/plus.svg",
+      "source_sha256": "7f6af73bf1ff6c4bca3f18351c8d1bdec6749c0c2530c4de5da85d520c21df17",
+      "runtime_sha256": "d5a479b9933d38487cba3502ac12197a533b40e9c2ca48c59849b0657d533419",
+      "runtime_path": "godot/assets/icons/lucide/plus.svg"
+    },
+    {
+      "name": "coins",
+      "url": "https://raw.githubusercontent.com/lucide-icons/lucide/20aef31db93fe4d9f398dbb15b120d99c48eef95/icons/coins.svg",
+      "source_sha256": "bcfec9236fd10d0aadbf90951f61dd31ec7cedc72dd38d2639f95c2b8437b9f1",
+      "runtime_sha256": "7b6b960a45a7b469da396bc323fa34ba6da8cf1152a6791b09b5097c5a5fa540",
+      "runtime_path": "godot/assets/icons/lucide/coins.svg"
+    },
+    {
+      "name": "heart",
+      "url": "https://raw.githubusercontent.com/lucide-icons/lucide/20aef31db93fe4d9f398dbb15b120d99c48eef95/icons/heart.svg",
+      "source_sha256": "70af5f30be9fcb500b852556b38dcdf8c04a4ba81fd262534fb0336bd39b3b52",
+      "runtime_sha256": "7464a88985741da310e15c5ff0bc713ff723e287f158b882c91a09fdd3b9b9e2",
+      "runtime_path": "godot/assets/icons/lucide/heart.svg"
+    },
+    {
+      "name": "x",
+      "url": "https://raw.githubusercontent.com/lucide-icons/lucide/20aef31db93fe4d9f398dbb15b120d99c48eef95/icons/x.svg",
+      "source_sha256": "4a9cdab38fbb96162e7dace28e33f4ca0e49d8963a6162abc3d4691b7d675117",
+      "runtime_sha256": "f2a1ec38b3d91bfb6abd9a838ebde05723148701f17ff7fb66b3c377a904b7bb",
+      "runtime_path": "godot/assets/icons/lucide/x.svg"
+    },
+    {
+      "name": "chevron-right",
+      "url": "https://raw.githubusercontent.com/lucide-icons/lucide/20aef31db93fe4d9f398dbb15b120d99c48eef95/icons/chevron-right.svg",
+      "source_sha256": "2758143d7b2434e4aa7307dfd34405c87909ff4052f21b5f3f40d45224b4f19b",
+      "runtime_sha256": "d3060f86f9bfd57cd392f5d5dff917ced4948e083cb1da535062515050d5f663",
+      "runtime_path": "godot/assets/icons/lucide/chevron-right.svg"
+    },
+    {
+      "name": "rotate-ccw",
+      "url": "https://raw.githubusercontent.com/lucide-icons/lucide/20aef31db93fe4d9f398dbb15b120d99c48eef95/icons/rotate-ccw.svg",
+      "source_sha256": "622685386ab4017eabfde01cd74550a20b1924df233b353f73b6b155371f2afd",
+      "runtime_sha256": "75e29bf7c1ffdd2f4617c83ea5b01fc42bd1da27e4dede536afa33580466b360",
+      "runtime_path": "godot/assets/icons/lucide/rotate-ccw.svg"
+    }
+  ],
+  "art_ids": [
+    "001",
+    "002",
+    "003",
+    "005"
+  ],
+  "guardian_regions": {
+    "fire": [
+      135.384615,
+      80,
+      369.230769,
+      295.384615
+    ],
+    "ice": [
+      135.384615,
+      92.307692,
+      369.230769,
+      295.384615
+    ],
+    "lightning": [
+      135.384615,
+      73.846154,
+      369.230769,
+      295.384615
+    ]
+  },
+  "art_permission": "Existing pack notice only; independent public-distribution clearance pending",
+  "omitted_icon": "waves does not exist at pinned Lucide commit; use text label instead"
+}

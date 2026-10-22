@@ -1,0 +1,24 @@
+{"command": ["E:\\PyCharm\\Python\\python.exe", "-X", "utf8", "D:\\桌面\\ElementGuardians\\tools\\check_docs.py"], "cwd": "D:\\桌面\\ElementGuardians"}
+DOCS: 19 files | tests defined=36 referenced=36
+DOC CHECK: FAIL
+DOC-MANIFEST FAIL: MANIFEST 哈希不符: README.md
+DOC-MANIFEST FAIL: MANIFEST 哈希不符: docs/00-START-HERE.md
+DOC-MANIFEST FAIL: MANIFEST 哈希不符: docs/05-ARCHITECTURE.md
+DOC-MANIFEST FAIL: MANIFEST 哈希不符: docs/06-UI-UX.md
+DOC-MANIFEST FAIL: MANIFEST 哈希不符: docs/07-ASSETS.md
+DOC-MANIFEST FAIL: MANIFEST 哈希不符: docs/08-TEST-PLAN.md
+DOC-MANIFEST FAIL: MANIFEST 哈希不符: godot/README.md
+DOC-MANIFEST FAIL: MANIFEST 哈希不符: godot/project.godot
+DOC-MANIFEST FAIL: MANIFEST 哈希不符: godot/scenes/main.tscn
+DOC-MANIFEST FAIL: MANIFEST 哈希不符: godot/scripts/main.gd
+DOC-MANIFEST FAIL: MANIFEST 哈希不符: tracking/ASSET_LICENSES.csv
+DOC-MANIFEST FAIL: MANIFEST 哈希不符: tracking/CHANGELOG.md
+DOC-MANIFEST FAIL: MANIFEST 哈希不符: tracking/DECISIONS.md
+DOC-MANIFEST FAIL: MANIFEST 哈希不符: godot/scripts/battle/battle_core.gd
+DOC-MANIFEST FAIL: MANIFEST 哈希不符: godot/tests/test_battle_core.gd
+DOC-MANIFEST FAIL: MANIFEST 哈希不符: godot/tests/test_six_wave_baseline.gd
+DOC-MANIFEST FAIL: MANIFEST 哈希不符: NEXT_SESSION_PROMPT.md
+DOC-MANIFEST FAIL: MANIFEST 哈希不符: godot/tests/test_six_wave_replay.gd
+DOC-MANIFEST FAIL: MANIFEST 哈希不符: tools/verify_runtime.py
+DOC-MANIFEST FAIL: MANIFEST 哈希不符: godot/assets/ASSET-NOTICE.md
+DOC-MANIFEST FAIL: MANIFEST 哈希不符: godot/tests/test_player_menu.gd

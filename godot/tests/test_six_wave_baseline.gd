@@ -11,7 +11,7 @@ func _initialize() -> void:
 		return
 	var core := BattleCore.new()
 	var seed_value := int(config.global_params["gameplay_seed_default"])
-	core.setup(config, map, [], seed_value)
+	core.setup(config, map, null, seed_value)
 	print("BASELINE BEGIN seed=%d dt=0.05 map=%s towers=%s" % [seed_value, map.map_id, str(map.fixed_towers)])
 	core.start_wave()
 	var ticks := 0

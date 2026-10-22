@@ -1,0 +1,153 @@
+{
+  "complete": true,
+  "counts": {
+    "PASS": 20,
+    "FAIL": 1,
+    "SKIP": 0
+  },
+  "kind": "latest checks consolidated; not one fresh full-suite run",
+  "initial_suite_counts": {
+    "PASS": 18,
+    "FAIL": 3,
+    "SKIP": 0
+  },
+  "checks": [
+    {
+      "id": "engine-version",
+      "status": "PASS",
+      "exit_code": 0,
+      "log": "final-suite/engine-version.command.log"
+    },
+    {
+      "id": "sync",
+      "status": "PASS",
+      "exit_code": 0,
+      "log": "final-suite/sync.command.log"
+    },
+    {
+      "id": "config",
+      "status": "PASS",
+      "exit_code": 0,
+      "log": "final-suite/config.command.log"
+    },
+    {
+      "id": "docs",
+      "status": "FAIL",
+      "exit_code": 1,
+      "log": "final-docs.log",
+      "remaining_failures": [
+        "godot/project.godot",
+        "godot/scenes/main.tscn"
+      ],
+      "note": "manifest update completed after initial suite docs check; original log preserved"
+    },
+    {
+      "id": "map-geometry",
+      "status": "PASS",
+      "exit_code": 0,
+      "log": "final-suite/map-geometry.command.log"
+    },
+    {
+      "id": "parse",
+      "status": "PASS",
+      "exit_code": 0,
+      "log": "final-suite/parse.command.log"
+    },
+    {
+      "id": "core",
+      "status": "PASS",
+      "exit_code": 0,
+      "log": "final-suite/core.command.log"
+    },
+    {
+      "id": "repairs",
+      "status": "PASS",
+      "exit_code": 0,
+      "log": "final-suite/repairs.command.log"
+    },
+    {
+      "id": "map",
+      "status": "PASS",
+      "exit_code": 0,
+      "log": "final-suite/map.command.log"
+    },
+    {
+      "id": "baseline",
+      "status": "PASS",
+      "exit_code": 0,
+      "log": "final-suite/baseline.command.log"
+    },
+    {
+      "id": "replay",
+      "status": "PASS",
+      "exit_code": 0,
+      "log": "final-suite/replay.command.log"
+    },
+    {
+      "id": "visual-headless",
+      "status": "PASS",
+      "exit_code": 0,
+      "log": "final-suite/visual-headless.command.log"
+    },
+    {
+      "id": "player-menu",
+      "status": "PASS",
+      "exit_code": 0,
+      "log": "final-suite/player-menu.command.log"
+    },
+    {
+      "id": "player-prep",
+      "status": "PASS",
+      "exit_code": 0,
+      "log": "final-suite/player-prep.command.log"
+    },
+    {
+      "id": "player-view",
+      "status": "PASS",
+      "exit_code": 0,
+      "log": "final-view-headless.log",
+      "initial_status": "PASS",
+      "rerun_reason": "observe actual event Tween at deterministic intermediate point; unchanged visible >1 criterion"
+    },
+    {
+      "id": "render-10",
+      "status": "PASS",
+      "exit_code": 0,
+      "log": "final-suite/render-10.command.log"
+    },
+    {
+      "id": "menu-render-10",
+      "status": "PASS",
+      "exit_code": 0,
+      "log": "final-suite/menu-render-10.command.log"
+    },
+    {
+      "id": "player-render-10",
+      "status": "PASS",
+      "exit_code": 0,
+      "log": "final-render-10.log",
+      "initial_status": "FAIL",
+      "rerun_reason": "observe actual event Tween at deterministic intermediate point; unchanged visible >1 criterion"
+    },
+    {
+      "id": "render-075",
+      "status": "PASS",
+      "exit_code": 0,
+      "log": "final-suite/render-075.command.log"
+    },
+    {
+      "id": "menu-render-075",
+      "status": "PASS",
+      "exit_code": 0,
+      "log": "final-suite/menu-render-075.command.log"
+    },
+    {
+      "id": "player-render-075",
+      "status": "PASS",
+      "exit_code": 0,
+      "log": "final-render-075.log",
+      "initial_status": "FAIL",
+      "rerun_reason": "observe actual event Tween at deterministic intermediate point; unchanged visible >1 criterion"
+    }
+  ]
+}

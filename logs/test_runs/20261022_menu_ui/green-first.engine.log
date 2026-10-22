@@ -1,0 +1,106 @@
+Godot Engine v4.4.1.stable.official.49a5bc7b6 - https://godotengine.org
+
+PASS MENU-supported-scale
+PASS MENU-paper-background-integrated
+PASS MENU-player-controls-available
+PASS MENU-entry-remains-immediately-usable
+FAIL MENU-initial-keyboard-focus
+PASS MENU-button-target-at-both-scales
+SCRIPT ERROR: Cannot call method 'get_viewport' on a null value.
+   at: _move (res://tests/test_player_menu.gd:134)
+FAIL MENU-hover-actually-animates
+SCRIPT ERROR: Cannot call method 'get_viewport' on a null value.
+   at: _mouse (res://tests/test_player_menu.gd:141)
+FAIL MENU-press-feedback-in-progress
+PASS MENU-motion-keeps-hit-target-fixed
+SCRIPT ERROR: Cannot call method 'get_viewport' on a null value.
+   at: _move (res://tests/test_player_menu.gd:134)
+SCRIPT ERROR: Cannot call method 'get_viewport' on a null value.
+   at: _mouse (res://tests/test_player_menu.gd:141)
+FAIL MENU-cancel-does-not-navigate
+PASS MENU-cancel-restores-button
+SCRIPT ERROR: Cannot call method 'get_viewport' on a null value.
+   at: _move (res://tests/test_player_menu.gd:134)
+SCRIPT ERROR: Cannot call method 'get_viewport' on a null value.
+   at: _move (res://tests/test_player_menu.gd:134)
+SCRIPT ERROR: Cannot call method 'get_viewport' on a null value.
+   at: _move (res://tests/test_player_menu.gd:134)
+SCRIPT ERROR: Cannot call method 'get_viewport' on a null value.
+   at: _move (res://tests/test_player_menu.gd:134)
+SCRIPT ERROR: Cannot call method 'get_viewport' on a null value.
+   at: _move (res://tests/test_player_menu.gd:134)
+SCRIPT ERROR: Cannot call method 'get_viewport' on a null value.
+   at: _move (res://tests/test_player_menu.gd:134)
+SCRIPT ERROR: Cannot call method 'get_viewport' on a null value.
+   at: _move (res://tests/test_player_menu.gd:134)
+SCRIPT ERROR: Cannot call method 'get_viewport' on a null value.
+   at: _move (res://tests/test_player_menu.gd:134)
+SCRIPT ERROR: Cannot call method 'get_viewport' on a null value.
+   at: _move (res://tests/test_player_menu.gd:134)
+SCRIPT ERROR: Cannot call method 'get_viewport' on a null value.
+   at: _move (res://tests/test_player_menu.gd:134)
+SCRIPT ERROR: Cannot call method 'get_viewport' on a null value.
+   at: _move (res://tests/test_player_menu.gd:134)
+SCRIPT ERROR: Cannot call method 'get_viewport' on a null value.
+   at: _move (res://tests/test_player_menu.gd:134)
+SCRIPT ERROR: Cannot call method 'get_viewport' on a null value.
+   at: _move (res://tests/test_player_menu.gd:134)
+SCRIPT ERROR: Cannot call method 'get_viewport' on a null value.
+   at: _move (res://tests/test_player_menu.gd:134)
+SCRIPT ERROR: Cannot call method 'get_viewport' on a null value.
+   at: _move (res://tests/test_player_menu.gd:134)
+SCRIPT ERROR: Cannot call method 'get_viewport' on a null value.
+   at: _move (res://tests/test_player_menu.gd:134)
+SCRIPT ERROR: Cannot call method 'get_viewport' on a null value.
+   at: _move (res://tests/test_player_menu.gd:134)
+SCRIPT ERROR: Cannot call method 'get_viewport' on a null value.
+   at: _move (res://tests/test_player_menu.gd:134)
+SCRIPT ERROR: Cannot call method 'get_viewport' on a null value.
+   at: _move (res://tests/test_player_menu.gd:134)
+SCRIPT ERROR: Cannot call method 'get_viewport' on a null value.
+   at: _move (res://tests/test_player_menu.gd:134)
+SCRIPT ERROR: Cannot call method 'get_viewport' on a null value.
+   at: _move (res://tests/test_player_menu.gd:134)
+SCRIPT ERROR: Cannot call method 'get_viewport' on a null value.
+   at: _move (res://tests/test_player_menu.gd:134)
+SCRIPT ERROR: Cannot call method 'get_viewport' on a null value.
+   at: _move (res://tests/test_player_menu.gd:134)
+SCRIPT ERROR: Cannot call method 'get_viewport' on a null value.
+   at: _move (res://tests/test_player_menu.gd:134)
+PASS MENU-rapid-hover-settles
+SCRIPT ERROR: Cannot call method 'get_viewport' on a null value.
+   at: _move (res://tests/test_player_menu.gd:134)
+SCRIPT ERROR: Cannot call method 'get_viewport' on a null value.
+   at: _mouse (res://tests/test_player_menu.gd:141)
+SCRIPT ERROR: Cannot call method 'get_viewport' on a null value.
+   at: _mouse (res://tests/test_player_menu.gd:141)
+FAIL MENU-existing-config-check-preserved
+SCRIPT ERROR: Cannot call method 'get_viewport' on a null value.
+   at: _move (res://tests/test_player_menu.gd:134)
+SCRIPT ERROR: Cannot call method 'get_viewport' on a null value.
+   at: _mouse (res://tests/test_player_menu.gd:141)
+SCRIPT ERROR: Cannot call method 'get_viewport' on a null value.
+   at: _mouse (res://tests/test_player_menu.gd:141)
+FAIL MENU-reduced-motion-enabled
+SCRIPT ERROR: Cannot call method 'get_viewport' on a null value.
+   at: _move (res://tests/test_player_menu.gd:134)
+SCRIPT ERROR: Cannot call method 'get_viewport' on a null value.
+   at: _mouse (res://tests/test_player_menu.gd:141)
+PASS MENU-reduced-press-has-no-moving-face
+SCRIPT ERROR: Cannot call method 'get_viewport' on a null value.
+   at: _move (res://tests/test_player_menu.gd:134)
+SCRIPT ERROR: Cannot call method 'get_viewport' on a null value.
+   at: _mouse (res://tests/test_player_menu.gd:141)
+SCRIPT ERROR: Cannot call method 'get_viewport' on a null value.
+   at: _move (res://tests/test_player_menu.gd:134)
+SCRIPT ERROR: Cannot call method 'get_viewport' on a null value.
+   at: _mouse (res://tests/test_player_menu.gd:141)
+SCRIPT ERROR: Cannot call method 'get_viewport' on a null value.
+   at: _mouse (res://tests/test_player_menu.gd:141)
+FAIL MENU-reduced-motion-reversible
+SCRIPT ERROR: Cannot call method 'get_viewport' on a null value.
+   at: _key (res://tests/test_player_menu.gd:152)
+SCRIPT ERROR: Cannot call method 'get_viewport' on a null value.
+   at: _key (res://tests/test_player_menu.gd:152)
+FAIL MENU-keyboard-enters-preview
+MENU SUMMARY: PASS=9 FAIL=8 SKIP=1 COMPLETE

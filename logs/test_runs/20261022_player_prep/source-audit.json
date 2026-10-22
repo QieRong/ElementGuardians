@@ -1,0 +1,1290 @@
+{
+  "PASS": 253,
+  "FAIL": 0,
+  "checks": [
+    {
+      "path": "configs/ElementGuardians_策划数值配置.xlsx",
+      "status": "PASS",
+      "sha256": "ea798cd0693effcc3544eaa59ce9394c4fb26e5a00858229e61cf80a21f80b95"
+    },
+    {
+      "path": "configs/SCHEMA.md",
+      "status": "PASS",
+      "sha256": "c0a6f1cc6a7d7809aae3ff66d5bf2da40fc1c6661d18dc87fbeea79273cdecb6"
+    },
+    {
+      "path": "configs/csv/economy_params.csv",
+      "status": "PASS",
+      "sha256": "d05a9994fd0f112f3c151257ab0a73ae4d3aa05d4cd9bc5f04613a253f18a084"
+    },
+    {
+      "path": "configs/csv/enemies.csv",
+      "status": "PASS",
+      "sha256": "ef496b1d0704b604fc5df938f8d3d0d7560a628787e8f073fee872d1a673f57b"
+    },
+    {
+      "path": "configs/csv/global_params.csv",
+      "status": "PASS",
+      "sha256": "30369ae003aceafa1745d5f049ce90a496fe71602d8e48513490cfc25718e83f"
+    },
+    {
+      "path": "configs/csv/towers.csv",
+      "status": "PASS",
+      "sha256": "cbe0e2278fc0efdb524d9f66eaef6d3c9629432b481eee862b3e1de1fa84012e"
+    },
+    {
+      "path": "configs/csv/upgrades.csv",
+      "status": "PASS",
+      "sha256": "26f7ae0c8b552e3b52a4e667c1434f39ee25e46585a5311f1ecf3aa596c74b03"
+    },
+    {
+      "path": "configs/csv/waves.csv",
+      "status": "PASS",
+      "sha256": "96a0aaa53480ec1d2e6dc77169c7da5ab9957ed1206c6312734c161cd6d5ec9e"
+    },
+    {
+      "path": "game_asserts/01_角色守卫/冰霜守卫.png",
+      "status": "PASS",
+      "sha256": "e929541cb62ead838033c4a71b02ec7b015ea306ece8eca2c1693b8f870c3291"
+    },
+    {
+      "path": "game_asserts/01_角色守卫/火焰守卫.png",
+      "status": "PASS",
+      "sha256": "c65db68b6e12e3c490a15ee3845294786e354cf553c1cb50ff691242633231fd"
+    },
+    {
+      "path": "game_asserts/01_角色守卫/虚空守卫_预留.png",
+      "status": "PASS",
+      "sha256": "af8278de91b0d2a6655f88c0b363d7548167cff29de6784545bca0175cd133a2"
+    },
+    {
+      "path": "game_asserts/01_角色守卫/雷霆守卫.png",
+      "status": "PASS",
+      "sha256": "7ce58297ffbac01e051b265784622caac1f1e567b864d2c8ba938a647216a384"
+    },
+    {
+      "path": "game_asserts/02_敌人怪物/游魂灯灵.png",
+      "status": "PASS",
+      "sha256": "1123e701cbb13485f7c9b329efc66195eb07a11f5c48aa3643ae0e57b7efed58"
+    },
+    {
+      "path": "game_asserts/02_敌人怪物/窥视蛛机.png",
+      "status": "PASS",
+      "sha256": "b40a48aa3564b1a58a5fb0ddc6335bda3bb19598ec997eb83c22f19d9ec220e3"
+    },
+    {
+      "path": "game_asserts/02_敌人怪物/缝合甲兽.png",
+      "status": "PASS",
+      "sha256": "6dd2a3044c78068b0ef0846f2cba0e74b8965c1a51c7b70d377a73b70e30e916"
+    },
+    {
+      "path": "game_asserts/02_敌人怪物/腐化祭坛_Boss候选.png",
+      "status": "PASS",
+      "sha256": "3f27e5760fae74b818e88f015c3ceea0527879eb2a08825dfa730ae09a37264a"
+    },
+    {
+      "path": "game_asserts/03_元素状态/冰元素.png",
+      "status": "PASS",
+      "sha256": "4584c05bd62bab2503d488170ff765037c4d42fb2140a3bf64e4cd2c7ff09999"
+    },
+    {
+      "path": "game_asserts/03_元素状态/升级.png",
+      "status": "PASS",
+      "sha256": "7c8eddfdf800a9c76063a260f5a47c5e830c1cbf2190c31d844223ed58fb0b52"
+    },
+    {
+      "path": "game_asserts/03_元素状态/召唤.png",
+      "status": "PASS",
+      "sha256": "142f266c956eeecd9988c7eaf555deddcf72fcc5e1a2f473addb96da6e2e914f"
+    },
+    {
+      "path": "game_asserts/03_元素状态/火元素.png",
+      "status": "PASS",
+      "sha256": "c8c48ed588195068c0f9b20b2a4878e8e7d14a3a5b1819ce119e67ac7403c604"
+    },
+    {
+      "path": "game_asserts/03_元素状态/生命.png",
+      "status": "PASS",
+      "sha256": "00917b798e29a2e50d108d0cdd5c4425eba7a9ce3d4fad7b1aa463a60c68c6de"
+    },
+    {
+      "path": "game_asserts/03_元素状态/能量.png",
+      "status": "PASS",
+      "sha256": "4edbcc93cca020973103f474dfc4c1143abd21bda4abbd5e443d839cde6e490c"
+    },
+    {
+      "path": "game_asserts/03_元素状态/虚空元素.png",
+      "status": "PASS",
+      "sha256": "a4dfdb8c045deec898c35bee3bb33e292a2fbe0993cc182e02c189a88a7c9cba"
+    },
+    {
+      "path": "game_asserts/03_元素状态/雷元素.png",
+      "status": "PASS",
+      "sha256": "ea326ec6177eb4355b8e2f11fa90c98b93a408a217f65fe573f9cc9f6b8e788b"
+    },
+    {
+      "path": "game_asserts/04_功能按钮/关闭.png",
+      "status": "PASS",
+      "sha256": "e08de78d018933bee6f88754ac4e179329546da07434836714369d705d47769a"
+    },
+    {
+      "path": "game_asserts/04_功能按钮/召唤.png",
+      "status": "PASS",
+      "sha256": "8fe029742ad9ca249af3fc550037d1747654ba8c6daa0a7ebd7ede3e1c9a09d4"
+    },
+    {
+      "path": "game_asserts/04_功能按钮/合成.png",
+      "status": "PASS",
+      "sha256": "cfab7b24f074f005eed795378955341272f8a1fd791a35581f2ce5eaf56d6dc4"
+    },
+    {
+      "path": "game_asserts/04_功能按钮/开始.png",
+      "status": "PASS",
+      "sha256": "c44e19e7f54f4de5987b92109fd40bbfd38c89970b8144c3cc3600a021cbf856"
+    },
+    {
+      "path": "game_asserts/04_功能按钮/暂停.png",
+      "status": "PASS",
+      "sha256": "7a1afd0cee25a2f476016ba203a5aaf8b87d90eaf2fbc76893c3fc9523269751"
+    },
+    {
+      "path": "game_asserts/04_功能按钮/继续_快进图形.png",
+      "status": "PASS",
+      "sha256": "84e7447a2af7419daaf97bb5d5b3de746336940bf724635f11551369d188a5a3"
+    },
+    {
+      "path": "game_asserts/04_功能按钮/设置.png",
+      "status": "PASS",
+      "sha256": "dfc52f78c4a6a67580a23e4011e440236c14a567a9343d164c4a175387adff5c"
+    },
+    {
+      "path": "game_asserts/04_功能按钮/重新开始.png",
+      "status": "PASS",
+      "sha256": "9511ada7397fd9b272ce0eaef3630a4bab63c0b565b7b919c8d8c7ce87ca3f1e"
+    },
+    {
+      "path": "game_asserts/05_棋盘地块/冰川地块.png",
+      "status": "PASS",
+      "sha256": "c770f18940e1f932e1de0e2e11ecae598d0d5cc1c07915a91e7e7d80963f6756"
+    },
+    {
+      "path": "game_asserts/05_棋盘地块/可合成地块.png",
+      "status": "PASS",
+      "sha256": "e2caf3518d94b7bf19dfb2471c71c7f1044ee85e71ff4a92a84f9019758cffb1"
+    },
+    {
+      "path": "game_asserts/05_棋盘地块/普通石板地块.png",
+      "status": "PASS",
+      "sha256": "77674850756c7072a46a714bfc0e703bd59c266c486fe4b4582d468f9d283ac5"
+    },
+    {
+      "path": "game_asserts/05_棋盘地块/熔岩地块.png",
+      "status": "PASS",
+      "sha256": "0d238a07214d3aa8e612fe54923b42bae17380a84a1615077ea9a00fea6eab0f"
+    },
+    {
+      "path": "game_asserts/05_棋盘地块/苔藓地块.png",
+      "status": "PASS",
+      "sha256": "c33f25e09b406871abd9e2d2c911e8f9842d2eeac98c144611ac4227ada8f092"
+    },
+    {
+      "path": "game_asserts/05_棋盘地块/虚空地块.png",
+      "status": "PASS",
+      "sha256": "fbbcfda28ad7f4385f28c1a9c57ff0913604d63108893a61ca2cdbc3f081623d"
+    },
+    {
+      "path": "game_asserts/05_棋盘地块/选中高亮地块.png",
+      "status": "PASS",
+      "sha256": "a876b5276ed396d0ec2b90f3580fe43d7edef516779e985634397dd3afc61ff5"
+    },
+    {
+      "path": "game_asserts/05_棋盘地块/锁定地块.png",
+      "status": "PASS",
+      "sha256": "adc59fbdd8eacd105b24af7c52d478eabe2d00894099884e2be2be794013c072"
+    },
+    {
+      "path": "game_asserts/06_战斗特效/冰霜爆发.png",
+      "status": "PASS",
+      "sha256": "ad2dddadff6795e8650f32912b1e5e9afb94050fdd5882a82c01477bc62731ba"
+    },
+    {
+      "path": "game_asserts/06_战斗特效/升级光柱.png",
+      "status": "PASS",
+      "sha256": "3a7ad02432e6a5393dc40559c16abed8e30ee8c92358f3779a030d72f5d1b09f"
+    },
+    {
+      "path": "game_asserts/06_战斗特效/召唤法阵.png",
+      "status": "PASS",
+      "sha256": "62d78fa0ef4064c046af346c90f2f0f8649183507e512595b43f133d6f217e6a"
+    },
+    {
+      "path": "game_asserts/06_战斗特效/护盾结界.png",
+      "status": "PASS",
+      "sha256": "a479cbd1981ad360970fbefb60a73f2986e47aba40cd0ab141df01ac4225f3e0"
+    },
+    {
+      "path": "game_asserts/06_战斗特效/攻击命中.png",
+      "status": "PASS",
+      "sha256": "5a3a10cbb156b41df7bd0dd71f0315a745455630083f439517d3dfa200b52d09"
+    },
+    {
+      "path": "game_asserts/06_战斗特效/火焰爆发.png",
+      "status": "PASS",
+      "sha256": "c29190b8f9f5e5f8ffc39248a528823379b95749a12f3995dac902ab059ac585"
+    },
+    {
+      "path": "game_asserts/06_战斗特效/虚空爆发.png",
+      "status": "PASS",
+      "sha256": "86f0e9c95a6e1d59f9ce69d6fd09a524e2dd1f482a35889c9db64a3c0979dafb"
+    },
+    {
+      "path": "game_asserts/06_战斗特效/雷霆爆发.png",
+      "status": "PASS",
+      "sha256": "7b73b1e550156a50346d5d779b438cf64bb91721dd5a7d81f559ef7c77acffad"
+    },
+    {
+      "path": "game_asserts/07_角色头像/头像_冰霜守卫概念.png",
+      "status": "PASS",
+      "sha256": "2cd44e143ed1fbf26875d368160d11fceb4a0248c364f72dd1cd4b45e46d7335"
+    },
+    {
+      "path": "game_asserts/07_角色头像/头像_晶核构造体.png",
+      "status": "PASS",
+      "sha256": "f4d7248315d4f501efc76f3cad06f8ee7bcd18f22566a0dd93d94243dad990f5"
+    },
+    {
+      "path": "game_asserts/07_角色头像/头像_火焰守卫概念.png",
+      "status": "PASS",
+      "sha256": "349cedac3069fa7f395016c8773bc9fc5e653f1cee1055b03bf17798c7973d84"
+    },
+    {
+      "path": "game_asserts/07_角色头像/头像_火焰异兽.png",
+      "status": "PASS",
+      "sha256": "bb4885229cb221e7ffb763e1a7a20fb72c627ee66978680473d4c12544112cb1"
+    },
+    {
+      "path": "game_asserts/07_角色头像/头像_电光异兽.png",
+      "status": "PASS",
+      "sha256": "13641f5f1d8efb5f02c11bc7784b8bf4cd5f04d49043c557bb20e3e9b3e46ced"
+    },
+    {
+      "path": "game_asserts/07_角色头像/头像_自然守卫概念_预留.png",
+      "status": "PASS",
+      "sha256": "d589cccb24ca485aa3f698080a24e8db61ef45df6573057ca4ffda0ce530b8b1"
+    },
+    {
+      "path": "game_asserts/07_角色头像/头像_虚空守卫概念.png",
+      "status": "PASS",
+      "sha256": "38f5d2304e8bfdeff71c6c0611026b3f9b198cb08b6d21287e20c0b080c1d14f"
+    },
+    {
+      "path": "game_asserts/07_角色头像/头像_虚空异兽.png",
+      "status": "PASS",
+      "sha256": "db43fff9750d3ff892297af4ad16d9093e026c1fab150aa0fae7bda18e593676"
+    },
+    {
+      "path": "game_asserts/08_界面面板/大型弹窗边框.png",
+      "status": "PASS",
+      "sha256": "5023e9d821c54961d906638cdf69cdc5c0f77515e28368a93c4da89fa6196660"
+    },
+    {
+      "path": "game_asserts/08_界面面板/失败结算横幅.png",
+      "status": "PASS",
+      "sha256": "75649c688da402537f3da628de8015614036213a03ef363c26d809dde4c176e6"
+    },
+    {
+      "path": "game_asserts/08_界面面板/标题与关卡横幅.png",
+      "status": "PASS",
+      "sha256": "88a7155a0a6a43a3c252cb1c6fb27af72a9415923e45eabeb2e60558b2b3a1d3"
+    },
+    {
+      "path": "game_asserts/08_界面面板/横向信息面板.png",
+      "status": "PASS",
+      "sha256": "f02fb9c8246071f50c5d5d8aeef6226fa01e21c419bee311be59c3ee3531137d"
+    },
+    {
+      "path": "game_asserts/08_界面面板/状态栏底板.png",
+      "status": "PASS",
+      "sha256": "b1fb8556610d40b800db4f32eb5cdbbbb5c5f73ab64eef99fb3dc962d2bdee9a"
+    },
+    {
+      "path": "game_asserts/08_界面面板/胜利结算横幅.png",
+      "status": "PASS",
+      "sha256": "e63f5532671b71c426382b6cb435a81f017230b5043d1306be2cbff60afdbd74"
+    },
+    {
+      "path": "game_asserts/09_背景场景/主菜单_横屏.png",
+      "status": "PASS",
+      "sha256": "f56e950a2da8bdb8490f26cc3ec33da50a7801e42d2a80cdd832bdbea3c98659"
+    },
+    {
+      "path": "game_asserts/09_背景场景/主菜单_竖屏裁剪.png",
+      "status": "PASS",
+      "sha256": "ecace35677b734cbcb4c24db22d033ee82f9b0f9c8b3253d580c57ca979ca944"
+    },
+    {
+      "path": "game_asserts/09_背景场景/战斗场景_横屏.png",
+      "status": "PASS",
+      "sha256": "245ea3b8f9089f34f825525a15a946b5de29fad82d9e2996014c068ebcb345e1"
+    },
+    {
+      "path": "game_asserts/09_背景场景/战斗场景_竖屏裁剪.png",
+      "status": "PASS",
+      "sha256": "f43f4dd2e35afbd78ad489baad010b39024a9fb2688d29fd303d6b8a9c36ef68"
+    },
+    {
+      "path": "game_asserts/10_说明文件/AI_接入与验收提示词.md",
+      "status": "PASS",
+      "sha256": "c1c4d2b9652d437f65bd5ed76cdb56258e2db4225d3ff706dbe55a3ce85b4ce7"
+    },
+    {
+      "path": "game_asserts/10_说明文件/README_中文使用说明.md",
+      "status": "PASS",
+      "sha256": "07fb40a541aef6a88c38d57a080053a9bbd6d54efb0ba813e4ec7e216aa45a5c"
+    },
+    {
+      "path": "game_asserts/10_说明文件/独立素材清单.json",
+      "status": "PASS",
+      "sha256": "5bc07ca9aae497627601517b67d734e4e3f0f14c0bd75fab77203a7efdb364e3"
+    },
+    {
+      "path": "game_asserts/10_说明文件/资源校验报告.txt",
+      "status": "PASS",
+      "sha256": "3b4696ba4e27a5d2cb320513bf5e44a49195bd757023c9ee02638d2fbedd1e0f"
+    },
+    {
+      "path": "godot/configs/csv/economy_params.csv",
+      "status": "PASS",
+      "sha256": "d05a9994fd0f112f3c151257ab0a73ae4d3aa05d4cd9bc5f04613a253f18a084"
+    },
+    {
+      "path": "godot/configs/csv/economy_params.csv.import",
+      "status": "PASS",
+      "sha256": "788016a47414dd6ba438483a86ce7a780f79aa0bc0e43ad1a2dddfe086d875e2"
+    },
+    {
+      "path": "godot/configs/csv/economy_params.description.translation",
+      "status": "PASS",
+      "sha256": "5d637a95660e1401f032f51c40ea81dfcd6a6bb5b32a6d30dcef6470540becc5"
+    },
+    {
+      "path": "godot/configs/csv/economy_params.value.translation",
+      "status": "PASS",
+      "sha256": "a9a84a8492742078ef0c5b359de47ae42ca26119c3634d6bc1ed1979eeb5e0a5"
+    },
+    {
+      "path": "godot/configs/csv/enemies.color.translation",
+      "status": "PASS",
+      "sha256": "79371e475491931a94e329bc34fca06b856baca875495a85ccae8fc6fc3802c9"
+    },
+    {
+      "path": "godot/configs/csv/enemies.csv",
+      "status": "PASS",
+      "sha256": "ef496b1d0704b604fc5df938f8d3d0d7560a628787e8f073fee872d1a673f57b"
+    },
+    {
+      "path": "godot/configs/csv/enemies.csv.import",
+      "status": "PASS",
+      "sha256": "60f4df2e73dc192eab53d160fa2e9502514765d37e984b6edb7b14160a60c5be"
+    },
+    {
+      "path": "godot/configs/csv/enemies.hp.translation",
+      "status": "PASS",
+      "sha256": "51447401474d4af0a0f5e4bc8023b2de924c0ec80cb324f105bb5cf0af071738"
+    },
+    {
+      "path": "godot/configs/csv/enemies.is.translation",
+      "status": "PASS",
+      "sha256": "5dd0665d16821bc8a5c0960fef248e3bd09cb00d892819159f1820d04c335c01"
+    },
+    {
+      "path": "godot/configs/csv/enemies.leak.translation",
+      "status": "PASS",
+      "sha256": "24a3974c3fac9eaf0bc4438f5fb0325529bc0ff3e08852608012be05e92fe19c"
+    },
+    {
+      "path": "godot/configs/csv/enemies.name.translation",
+      "status": "PASS",
+      "sha256": "34557f57b3cbe54765db8e5f185b863a124c94d10455d795b02b32536d5e3955"
+    },
+    {
+      "path": "godot/configs/csv/enemies.reward.translation",
+      "status": "PASS",
+      "sha256": "86606bccfa0604c05632e765cbc26b7090c1124e9fe973bc51df2eeed1826d47"
+    },
+    {
+      "path": "godot/configs/csv/enemies.speed.translation",
+      "status": "PASS",
+      "sha256": "755feb3becdfe5bb77a5f08bc1fae81d41f8c39d7c7839206b607bccc0b24839"
+    },
+    {
+      "path": "godot/configs/csv/global_params.csv",
+      "status": "PASS",
+      "sha256": "30369ae003aceafa1745d5f049ce90a496fe71602d8e48513490cfc25718e83f"
+    },
+    {
+      "path": "godot/configs/csv/global_params.csv.import",
+      "status": "PASS",
+      "sha256": "b5eead6fbefceb8338f61463c5cda6d741833a59fbf0c5acd6a1588a02475822"
+    },
+    {
+      "path": "godot/configs/csv/global_params.description.translation",
+      "status": "PASS",
+      "sha256": "afa65cf76d96593d5379f0f923008d837ac4c1135c59ac624c17a792f2743804"
+    },
+    {
+      "path": "godot/configs/csv/global_params.value.translation",
+      "status": "PASS",
+      "sha256": "40c0f8a58c270245a286087892fe5232f0806c5b24ab43b19ef8c528d24e6b76"
+    },
+    {
+      "path": "godot/configs/csv/towers.attack.translation",
+      "status": "PASS",
+      "sha256": "ddacb3b304641870764386b762248f033953f2ad7a2291ace70f09c4981a2463"
+    },
+    {
+      "path": "godot/configs/csv/towers.base.translation",
+      "status": "PASS",
+      "sha256": "040a1d44911cde292dc0bda9074a8b3d0e04f675a4f749ec4e2fb686c3d09dbd"
+    },
+    {
+      "path": "godot/configs/csv/towers.chain.translation",
+      "status": "PASS",
+      "sha256": "5584ca0f7b8159fdc4f9b5a4ce322bad820cc861e8b80e74138f44a703ee4121"
+    },
+    {
+      "path": "godot/configs/csv/towers.color.translation",
+      "status": "PASS",
+      "sha256": "bb6f05c119c3eab94a6a59b45484ed00aaa21f36c0d886859b02975f2fbbbfa0"
+    },
+    {
+      "path": "godot/configs/csv/towers.csv",
+      "status": "PASS",
+      "sha256": "cbe0e2278fc0efdb524d9f66eaef6d3c9629432b481eee862b3e1de1fa84012e"
+    },
+    {
+      "path": "godot/configs/csv/towers.csv.import",
+      "status": "PASS",
+      "sha256": "98f770c992306cd34ac4f5d460fb53e2355f62934f6ab3fb9baee2e41d99ff75"
+    },
+    {
+      "path": "godot/configs/csv/towers.name.translation",
+      "status": "PASS",
+      "sha256": "d1237a4748c3e87e949891ad2b76663b2bba404eefe84e9ace5233f5ec15ed2f"
+    },
+    {
+      "path": "godot/configs/csv/towers.range.translation",
+      "status": "PASS",
+      "sha256": "de05d224cb0f7fd11295aa24dd01d1891d814a6e70b85901498e75152cf0804c"
+    },
+    {
+      "path": "godot/configs/csv/towers.slow.translation",
+      "status": "PASS",
+      "sha256": "b3aed3e6b92b400d294ddc1af8d87ac3831e4a65ad996a564fb765dd71014c46"
+    },
+    {
+      "path": "godot/configs/csv/towers.summon.translation",
+      "status": "PASS",
+      "sha256": "2b5b0751e1ae5583454ecf44775487792f5558481801d76d42c3d35105ea3aae"
+    },
+    {
+      "path": "godot/configs/csv/upgrades.csv",
+      "status": "PASS",
+      "sha256": "26f7ae0c8b552e3b52a4e667c1434f39ee25e46585a5311f1ecf3aa596c74b03"
+    },
+    {
+      "path": "godot/configs/csv/upgrades.csv.import",
+      "status": "PASS",
+      "sha256": "4854c2d98f91ab4656269f812eeb02a9db4935d0ba0e90b4b02a679713b61029"
+    },
+    {
+      "path": "godot/configs/csv/upgrades.description.translation",
+      "status": "PASS",
+      "sha256": "af99df001850251fb3ece2bc8e52e741dd0a8d31cd9594c2ca1d625179a4a8a4"
+    },
+    {
+      "path": "godot/configs/csv/upgrades.effect.translation",
+      "status": "PASS",
+      "sha256": "2b05591ae2175c239061d554f6576cc9d51026e0e59e053c82ce1581a9982663"
+    },
+    {
+      "path": "godot/configs/csv/upgrades.max.translation",
+      "status": "PASS",
+      "sha256": "fdf006bf102315d55aaab72d5b647b2165cbeb69277703930a97c26910eeac45"
+    },
+    {
+      "path": "godot/configs/csv/upgrades.name.translation",
+      "status": "PASS",
+      "sha256": "4ac4df33cbd04141c2344c72542650f62a31b84c11b857ac23e967c68bd34c37"
+    },
+    {
+      "path": "godot/configs/csv/waves.count.translation",
+      "status": "PASS",
+      "sha256": "c32192b887c14f91bf79e40a78b2c31cb6e0de7896bf1de4b36989c29cdda93c"
+    },
+    {
+      "path": "godot/configs/csv/waves.csv",
+      "status": "PASS",
+      "sha256": "96a0aaa53480ec1d2e6dc77169c7da5ab9957ed1206c6312734c161cd6d5ec9e"
+    },
+    {
+      "path": "godot/configs/csv/waves.csv.import",
+      "status": "PASS",
+      "sha256": "b2bdf46ff2a24d923eefda9ab0e5bab2ed078252e260cf9d14270b8073992d72"
+    },
+    {
+      "path": "godot/configs/csv/waves.delay.translation",
+      "status": "PASS",
+      "sha256": "cca1f20a5d79ce262d44c3bb7ef1de7bb9be8db5ed4ca472dff1c217dbdcd16b"
+    },
+    {
+      "path": "godot/configs/csv/waves.enemy.translation",
+      "status": "PASS",
+      "sha256": "0744b81834675e3b9e452285f804342a7fec0ed59d8e3151b2dc9a4fc1d0ae24"
+    },
+    {
+      "path": "godot/configs/csv/waves.spawn.translation",
+      "status": "PASS",
+      "sha256": "8d55dc8fc26c8965e2070eabe5316ea35de1ff9566173476b346a43b82bcff2e"
+    },
+    {
+      "path": "godot/data/map_default.json",
+      "status": "PASS",
+      "sha256": "fd13fa7603929c2f456f82fb780e2807d08bd238157484525a3a8a6844822fcd"
+    },
+    {
+      "path": "godot/project.godot",
+      "status": "PASS",
+      "sha256": "054d844dd334b4f6de10d666473a734fa6333d53fff52ee18e7bcd9f9edf8203"
+    },
+    {
+      "path": "godot/scenes/battle.tscn",
+      "status": "PASS",
+      "sha256": "a4745c929bd9bc6e8449367a35187aef692c319b335a59d465835365a3600732"
+    },
+    {
+      "path": "godot/scenes/main.tscn",
+      "status": "PASS",
+      "sha256": "145a917ab2a0795eb8f4f0157ca62687399ebf01963779b44cafc181c17c17d1"
+    },
+    {
+      "path": "output/visuals/README.md",
+      "status": "PASS",
+      "sha256": "4e6bcde85e0798fffc334679e0ce2ef1d351dd15104f1815cec7bd1699cf731a"
+    },
+    {
+      "path": "output/visuals/battle-v01.png",
+      "status": "PASS",
+      "sha256": "8bd06e06c7ddd2eb38ac76d9fced51297cdb6a4b9c467b62d1ec23578bd83c4a"
+    },
+    {
+      "path": "output/visuals/menu-v01.png",
+      "status": "PASS",
+      "sha256": "93bc5cf3193bd6142dd7f7b92ccdddbc8d8bdf624cc9842ae7f07dc0bb0d1980"
+    },
+    {
+      "path": "output/visuals/previews/combat-075.png",
+      "status": "PASS",
+      "sha256": "cc22748008cb1aac8ec578653c7e22467b8d39b0987733aefd7068cef9b8b31e"
+    },
+    {
+      "path": "output/visuals/previews/full-075.png",
+      "status": "PASS",
+      "sha256": "b92494ab8e84284a6946ffa3cefc656e33a4d9d67d61520c10900ba384426349"
+    },
+    {
+      "path": "output/visuals/previews/initial-075.png",
+      "status": "PASS",
+      "sha256": "1e45df8d9071487c67db4a1d69cf735aeb504e41721d28d0761e0511856b2c74"
+    },
+    {
+      "path": "output/visuals/previews/language-320x568.png",
+      "status": "PASS",
+      "sha256": "b69b047b6581ebb6597b018bb37945a428ec504ca37a6b3d48ee12a059170c8f"
+    },
+    {
+      "path": "output/visuals/previews/language-360x640.png",
+      "status": "PASS",
+      "sha256": "b746cfd98a90ff862dc05862084f79d008e992ff93ab0c63a1d4593bfe996d82"
+    },
+    {
+      "path": "output/visuals/previews/language-390x844.png",
+      "status": "PASS",
+      "sha256": "9eae64e4bf7a41f66960ed6868d4a079f3c8451830dbd93d9f50b793cbd81eb5"
+    },
+    {
+      "path": "output/visuals/previews/language-412x915.png",
+      "status": "PASS",
+      "sha256": "e792994dcf8c41008dcede328938e4b69d75487e080a94f299d38f712209fcb7"
+    },
+    {
+      "path": "output/visuals/previews/language-430x932.png",
+      "status": "PASS",
+      "sha256": "05c8fe2fd28a3621b1619cccf0be9272934d4c0813a9d1e4f2896ebe89f20b50"
+    },
+    {
+      "path": "output/visuals/previews/level-075.png",
+      "status": "PASS",
+      "sha256": "069989d7753efe20c4a0ce633d4af4c0ce6d4b00ad053e267fe105630852affa"
+    },
+    {
+      "path": "output/visuals/previews/max-075.png",
+      "status": "PASS",
+      "sha256": "fc2ebc720b80bfd44dcab1c326ffce6fe3bce403f9f09acf150ee0512f6e7136"
+    },
+    {
+      "path": "output/visuals/previews/menu-075.png",
+      "status": "PASS",
+      "sha256": "b7fae4340939a02504369ce0f7a6250fdb27cbf701ba70f03ecf4af409d165a6"
+    },
+    {
+      "path": "output/visuals/previews/merge-075.png",
+      "status": "PASS",
+      "sha256": "c1f71ffcb9ed9fe0139ad7eedd5f2cdc836c3150b6ca02fcdefedf060ed69d6b"
+    },
+    {
+      "path": "output/visuals/previews/merged-075.png",
+      "status": "PASS",
+      "sha256": "df3dea05136d9f3f06dc7a68b6c4f3fc5c6fe0d5ba15497e515e1a9986d15b22"
+    },
+    {
+      "path": "output/visuals/previews/mobile-battle-320x568.png",
+      "status": "PASS",
+      "sha256": "3ac843c8f798236dc18b2c82696bef68033f79eab013222d2045e94749463248"
+    },
+    {
+      "path": "output/visuals/previews/mobile-battle-360x640.png",
+      "status": "PASS",
+      "sha256": "8cbb5ce49bb5112370bafee4ea52e8e7f12b013cbefeb3b95393ca0fd8a83c88"
+    },
+    {
+      "path": "output/visuals/previews/mobile-battle-390x844.png",
+      "status": "PASS",
+      "sha256": "891d33f9e929391ae3d0c8e4ebc095153418318b85f2dcf6855fa0e941c2ddef"
+    },
+    {
+      "path": "output/visuals/previews/mobile-battle-412x915.png",
+      "status": "PASS",
+      "sha256": "7d3ba7f92bf6a34c3945bfc8c1a9b27d26b3ac5f05f875edd029a63d78baa779"
+    },
+    {
+      "path": "output/visuals/previews/mobile-battle-430x932.png",
+      "status": "PASS",
+      "sha256": "cf0716149fdf2d3b8a5902f5530d4647b1c33ac7982d51e0a09923061609e52a"
+    },
+    {
+      "path": "output/visuals/previews/mobile-battle-en.png",
+      "status": "PASS",
+      "sha256": "ba2f587d0ed0c6b8efc6e4ca83fb5c6c52ae61b7d92ba88cf9508548b08fb3c0"
+    },
+    {
+      "path": "output/visuals/previews/mobile-battle-ja.png",
+      "status": "PASS",
+      "sha256": "7a06e0115a3ffd432cc0f3cc1fc561cb286c81014d1c92ccddac29b8ed3bf7a6"
+    },
+    {
+      "path": "output/visuals/previews/mobile-battle-ko.png",
+      "status": "PASS",
+      "sha256": "b2a14240b855fb3990471b859afca641c306fdba898e7da89b2ab6764aa112cc"
+    },
+    {
+      "path": "output/visuals/previews/mobile-battle-ru.png",
+      "status": "PASS",
+      "sha256": "29d28b8995cb27feab1d0e01c55bdc14e750a98bfe0b932418c9e778b9a53596"
+    },
+    {
+      "path": "output/visuals/previews/mobile-battle-zh-Hans.png",
+      "status": "PASS",
+      "sha256": "891d33f9e929391ae3d0c8e4ebc095153418318b85f2dcf6855fa0e941c2ddef"
+    },
+    {
+      "path": "output/visuals/previews/mobile-battle-zh-Hant.png",
+      "status": "PASS",
+      "sha256": "74f19bb8e7e56cd019cdb3e571e362659b4962af3946bb19e56ee5f76268e797"
+    },
+    {
+      "path": "output/visuals/previews/mobile-menu-320x568.png",
+      "status": "PASS",
+      "sha256": "5d2926a84c4ad93bb3c5c65a9b99e12e2fc6870b35250eb8c2165340c57d6b28"
+    },
+    {
+      "path": "output/visuals/previews/mobile-menu-360x640.png",
+      "status": "PASS",
+      "sha256": "7f808fb2bfa3bd8d61851d60fbec48b45e5ab19888d78faaf7044fc9fcbf38c3"
+    },
+    {
+      "path": "output/visuals/previews/mobile-menu-390x844.png",
+      "status": "PASS",
+      "sha256": "78fed48999a92a459791c73a287fe4ee670ea6d8f619671904fb029f185cc554"
+    },
+    {
+      "path": "output/visuals/previews/mobile-menu-412x915.png",
+      "status": "PASS",
+      "sha256": "9103bf3c1e08f97a5ec5d584dea3186ea0f9124ec54ce512153acd57040eed26"
+    },
+    {
+      "path": "output/visuals/previews/mobile-menu-430x932.png",
+      "status": "PASS",
+      "sha256": "f1ac013995fbf5270040f83ac7410c53eaf5d9dc198e41eb2903662927e8ddfe"
+    },
+    {
+      "path": "output/visuals/previews/mobile-menu-en.png",
+      "status": "PASS",
+      "sha256": "fba9522a1725f9ee5a5e0b1836bd3864a448429c60acbd649e86a58c4f37b31e"
+    },
+    {
+      "path": "output/visuals/previews/mobile-menu-ja.png",
+      "status": "PASS",
+      "sha256": "1600e7419dd48921097a4e5876e835fd12a63491a5cd605a94cb899ffc103e52"
+    },
+    {
+      "path": "output/visuals/previews/mobile-menu-ko.png",
+      "status": "PASS",
+      "sha256": "b10eea48eb409fed87f25bb4ce711f60c2b783d872809920641fd7b086dd3340"
+    },
+    {
+      "path": "output/visuals/previews/mobile-menu-ru.png",
+      "status": "PASS",
+      "sha256": "c094c39a8d1f371b4dfa5b436bf44ca80a3f3d96b2369ada1836589a3cad76fa"
+    },
+    {
+      "path": "output/visuals/previews/mobile-menu-zh-Hans.png",
+      "status": "PASS",
+      "sha256": "78fed48999a92a459791c73a287fe4ee670ea6d8f619671904fb029f185cc554"
+    },
+    {
+      "path": "output/visuals/previews/mobile-menu-zh-Hant.png",
+      "status": "PASS",
+      "sha256": "bd88df6925e6872c70dd6f009fe75c0c487341f04ff0a7d62fb0a87b656a187f"
+    },
+    {
+      "path": "output/visuals/previews/occupied-075.png",
+      "status": "PASS",
+      "sha256": "928f9fb8d8dc3969af75818f09a8073e667ef6498317f4d02a731eabe6ad4641"
+    },
+    {
+      "path": "output/visuals/previews/poor-075.png",
+      "status": "PASS",
+      "sha256": "d5092304845f0be9d27911eb86022e8e5931c64546d0dfdaaf3d75b6b5882cb8"
+    },
+    {
+      "path": "output/visuals/previews/selected-075.png",
+      "status": "PASS",
+      "sha256": "132a2698aa34d8b885f79765025fac409483e1cdf22dcf64e00d421994081d1e"
+    },
+    {
+      "path": "output/visuals/previews/type-075.png",
+      "status": "PASS",
+      "sha256": "cb0a28505e1fc247b6b219a56b21c135a0f5b399bcd5bacad9ed10797111180c"
+    },
+    {
+      "path": "output/visuals/revisions/mobile-closeout/battle-320x568.png",
+      "status": "PASS",
+      "sha256": "457e98950daac65b78a78cc51edfaae809a25b945e96ffd20ff516f907effc6a"
+    },
+    {
+      "path": "output/visuals/revisions/mobile-closeout/battle-360x640.png",
+      "status": "PASS",
+      "sha256": "59b73eb1ba58b6b79111ad65fe929167f020c8022e5f82b5fdda54fdc0522ed8"
+    },
+    {
+      "path": "output/visuals/revisions/mobile-closeout/battle-390x844.png",
+      "status": "PASS",
+      "sha256": "51a8fea37fc5d8b9162eed08b79563a0c7752690f7525dc3bf9a77de511f8c30"
+    },
+    {
+      "path": "output/visuals/revisions/mobile-closeout/battle-412x915.png",
+      "status": "PASS",
+      "sha256": "50663d685a79d95f608596f03fd0f709381fd3c371345cd3104f21a9d4cadf26"
+    },
+    {
+      "path": "output/visuals/revisions/mobile-closeout/battle-430x932.png",
+      "status": "PASS",
+      "sha256": "319356c1a09bb1a55932e0d4c12188683d5063f77495f1e3084b111523a718ee"
+    },
+    {
+      "path": "output/visuals/revisions/mobile-closeout/battle-en.png",
+      "status": "PASS",
+      "sha256": "fc8ac4e967460b1778529d211dd5ec608b1b9e8c4c2c48393ec1211da15dd0a8"
+    },
+    {
+      "path": "output/visuals/revisions/mobile-closeout/battle-ja.png",
+      "status": "PASS",
+      "sha256": "7aec19e08dffbf8d2dd55eae63ffa063a64239166a5734554f44d9349d1b6330"
+    },
+    {
+      "path": "output/visuals/revisions/mobile-closeout/battle-ko.png",
+      "status": "PASS",
+      "sha256": "31d78aecc6190b7dc6e4a2ae819cbe04bf1d3dc92392596496f4445e6181b859"
+    },
+    {
+      "path": "output/visuals/revisions/mobile-closeout/battle-ru.png",
+      "status": "PASS",
+      "sha256": "a1a478dae36794bc8d4b2ecfa6c9cd786ce1d8f96951e424b1372e1f715e5ae0"
+    },
+    {
+      "path": "output/visuals/revisions/mobile-closeout/battle-zh-Hans.png",
+      "status": "PASS",
+      "sha256": "51a8fea37fc5d8b9162eed08b79563a0c7752690f7525dc3bf9a77de511f8c30"
+    },
+    {
+      "path": "output/visuals/revisions/mobile-closeout/battle-zh-Hant.png",
+      "status": "PASS",
+      "sha256": "2a89430b2ae41bdfad149e4d644f19b78690417716bf460327f9e4220227f27a"
+    },
+    {
+      "path": "output/visuals/revisions/mobile-closeout/menu-320x568.png",
+      "status": "PASS",
+      "sha256": "5d2926a84c4ad93bb3c5c65a9b99e12e2fc6870b35250eb8c2165340c57d6b28"
+    },
+    {
+      "path": "output/visuals/revisions/mobile-closeout/poor-toast-320x568.png",
+      "status": "PASS",
+      "sha256": "9641e3c1c4ad8cab97108f8cdcd69217a8b169d6648c86768e39101fb57f8f1a"
+    },
+    {
+      "path": "output/visuals/revisions/mobile-closeout/poor-toast-390x844.png",
+      "status": "PASS",
+      "sha256": "8cc687aab52547d416a7900bc5bcf4a75c89c5eca47289ae3a18b172ed5b8ee1"
+    },
+    {
+      "path": "output/visuals/revisions/mobile-closeout/toast-en.png",
+      "status": "PASS",
+      "sha256": "3fbfa2109e389e00b6571e495d911ca0c551c183fcdca3d8e858288a4f2e5369"
+    },
+    {
+      "path": "output/visuals/revisions/mobile-closeout/toast-ja.png",
+      "status": "PASS",
+      "sha256": "ea18b637822c487cdbea8671641f19dff620f43f6e2aa690f29a8ef148f1e181"
+    },
+    {
+      "path": "output/visuals/revisions/mobile-closeout/toast-ko.png",
+      "status": "PASS",
+      "sha256": "29cd4c4727f23d5d9466bee95c99d09e1fa80d39d207d73e4ca2ed80dc67b4c9"
+    },
+    {
+      "path": "output/visuals/revisions/mobile-closeout/toast-ru.png",
+      "status": "PASS",
+      "sha256": "c821c8ab415542b589714fbe952d54be90130b68c31c4bbcb455222760540927"
+    },
+    {
+      "path": "output/visuals/revisions/mobile-closeout/toast-zh-Hans.png",
+      "status": "PASS",
+      "sha256": "d63e4f731ffbdc299c987c97b8bc7a640314dfdb4be370565747c44e95abdd7c"
+    },
+    {
+      "path": "output/visuals/revisions/mobile-closeout/toast-zh-Hant.png",
+      "status": "PASS",
+      "sha256": "bd3e4667acc65761d86847134c4c2bb01e04e76a18d2d3fa18ce10e48f1917d4"
+    },
+    {
+      "path": "output/visuals/revisions/mobile-v02/battle-320x568.png",
+      "status": "PASS",
+      "sha256": "457e98950daac65b78a78cc51edfaae809a25b945e96ffd20ff516f907effc6a"
+    },
+    {
+      "path": "output/visuals/revisions/mobile-v02/battle-360x640.png",
+      "status": "PASS",
+      "sha256": "631c862427ec8651120f3bf01c55be79285dc8e4eb93b232761029c17bd47297"
+    },
+    {
+      "path": "output/visuals/revisions/mobile-v02/battle-390x844.png",
+      "status": "PASS",
+      "sha256": "51a8fea37fc5d8b9162eed08b79563a0c7752690f7525dc3bf9a77de511f8c30"
+    },
+    {
+      "path": "output/visuals/revisions/mobile-v02/battle-412x915.png",
+      "status": "PASS",
+      "sha256": "50663d685a79d95f608596f03fd0f709381fd3c371345cd3104f21a9d4cadf26"
+    },
+    {
+      "path": "output/visuals/revisions/mobile-v02/battle-430x932.png",
+      "status": "PASS",
+      "sha256": "319356c1a09bb1a55932e0d4c12188683d5063f77495f1e3084b111523a718ee"
+    },
+    {
+      "path": "output/visuals/revisions/mobile-v02/battle-en.png",
+      "status": "PASS",
+      "sha256": "fc8ac4e967460b1778529d211dd5ec608b1b9e8c4c2c48393ec1211da15dd0a8"
+    },
+    {
+      "path": "output/visuals/revisions/mobile-v02/battle-ja.png",
+      "status": "PASS",
+      "sha256": "7aec19e08dffbf8d2dd55eae63ffa063a64239166a5734554f44d9349d1b6330"
+    },
+    {
+      "path": "output/visuals/revisions/mobile-v02/battle-ko.png",
+      "status": "PASS",
+      "sha256": "31d78aecc6190b7dc6e4a2ae819cbe04bf1d3dc92392596496f4445e6181b859"
+    },
+    {
+      "path": "output/visuals/revisions/mobile-v02/battle-ru.png",
+      "status": "PASS",
+      "sha256": "a1a478dae36794bc8d4b2ecfa6c9cd786ce1d8f96951e424b1372e1f715e5ae0"
+    },
+    {
+      "path": "output/visuals/revisions/mobile-v02/battle-zh-Hans.png",
+      "status": "PASS",
+      "sha256": "51a8fea37fc5d8b9162eed08b79563a0c7752690f7525dc3bf9a77de511f8c30"
+    },
+    {
+      "path": "output/visuals/revisions/mobile-v02/battle-zh-Hant.png",
+      "status": "PASS",
+      "sha256": "2a89430b2ae41bdfad149e4d644f19b78690417716bf460327f9e4220227f27a"
+    },
+    {
+      "path": "output/visuals/revisions/mobile-v02/menu-320x568.png",
+      "status": "PASS",
+      "sha256": "5d2926a84c4ad93bb3c5c65a9b99e12e2fc6870b35250eb8c2165340c57d6b28"
+    },
+    {
+      "path": "output/visuals/revisions/mobile-v02/poor-toast-320x568.png",
+      "status": "PASS",
+      "sha256": "9641e3c1c4ad8cab97108f8cdcd69217a8b169d6648c86768e39101fb57f8f1a"
+    },
+    {
+      "path": "output/visuals/revisions/mobile-v02/poor-toast-390x844.png",
+      "status": "PASS",
+      "sha256": "8cc687aab52547d416a7900bc5bcf4a75c89c5eca47289ae3a18b172ed5b8ee1"
+    },
+    {
+      "path": "output/visuals/revisions/mobile-v02/toast-en.png",
+      "status": "PASS",
+      "sha256": "3fbfa2109e389e00b6571e495d911ca0c551c183fcdca3d8e858288a4f2e5369"
+    },
+    {
+      "path": "output/visuals/revisions/mobile-v02/toast-ja.png",
+      "status": "PASS",
+      "sha256": "ea18b637822c487cdbea8671641f19dff620f43f6e2aa690f29a8ef148f1e181"
+    },
+    {
+      "path": "output/visuals/revisions/mobile-v02/toast-ko.png",
+      "status": "PASS",
+      "sha256": "29cd4c4727f23d5d9466bee95c99d09e1fa80d39d207d73e4ca2ed80dc67b4c9"
+    },
+    {
+      "path": "output/visuals/revisions/mobile-v02/toast-ru.png",
+      "status": "PASS",
+      "sha256": "c821c8ab415542b589714fbe952d54be90130b68c31c4bbcb455222760540927"
+    },
+    {
+      "path": "output/visuals/revisions/mobile-v02/toast-zh-Hans.png",
+      "status": "PASS",
+      "sha256": "d63e4f731ffbdc299c987c97b8bc7a640314dfdb4be370565747c44e95abdd7c"
+    },
+    {
+      "path": "output/visuals/revisions/mobile-v02/toast-zh-Hant.png",
+      "status": "PASS",
+      "sha256": "bd3e4667acc65761d86847134c4c2bb01e04e76a18d2d3fa18ce10e48f1917d4"
+    },
+    {
+      "path": "output/visuals/sources/fonts/FEEDBACK-SOURCE.json",
+      "status": "PASS",
+      "sha256": "a3b6251ec405af569e30ce6dd9fc1cf64057305ff0877875e86b2c6e76e0b304"
+    },
+    {
+      "path": "output/visuals/sources/fonts/FONT-NOTICE.md",
+      "status": "PASS",
+      "sha256": "87a421d19c21011f45247663df2b834ddb5fcb8d945f134c6ff94f5bc0553aae"
+    },
+    {
+      "path": "output/visuals/sources/fonts/NotoSansKR-feedback.css",
+      "status": "PASS",
+      "sha256": "7509f5680020f04110ef16d5e6950b4c437ab5f6e2349ef013d4b40dbf5ac34a"
+    },
+    {
+      "path": "output/visuals/sources/fonts/NotoSansKR-feedback.ttf",
+      "status": "PASS",
+      "sha256": "b63530f346a83d24f1b968a7178b477cff65abee0042d2e868a3bae0410b2dde"
+    },
+    {
+      "path": "output/visuals/sources/fonts/NotoSansKR-preview.css",
+      "status": "PASS",
+      "sha256": "da70deaa01504be971703406bf6ee063e4aa88472ebc8cf7694c873a2a6476ac"
+    },
+    {
+      "path": "output/visuals/sources/fonts/NotoSansKR-preview.ttf",
+      "status": "PASS",
+      "sha256": "fc0d9caa111511340f3c93c9dc4ab44e3778f8ef3258d6a0b86e2ce62dc519da"
+    },
+    {
+      "path": "output/visuals/sources/fonts/NotoSansSC-feedback.css",
+      "status": "PASS",
+      "sha256": "8cf5ebfc068b1d4547b5fc7bf910168a7a73b62078881df1c72f710e7de0b02b"
+    },
+    {
+      "path": "output/visuals/sources/fonts/NotoSansSC-feedback.ttf",
+      "status": "PASS",
+      "sha256": "20b0446ceeaf9dcd8b864a9f5dd9ab9f908305692319e496b1ef04ed7f660747"
+    },
+    {
+      "path": "output/visuals/sources/fonts/NotoSansSC-preview.css",
+      "status": "PASS",
+      "sha256": "b60d43142d0fbf5060f5c78f9c786ef9379421e7bb3e22a9c1667839140504f0"
+    },
+    {
+      "path": "output/visuals/sources/fonts/NotoSansSC-preview.ttf",
+      "status": "PASS",
+      "sha256": "3e8836a3a1df081050a5f85a37ddc1c94e58399e2fb4f07440e21d45c508fce5"
+    },
+    {
+      "path": "output/visuals/sources/fonts/OFL.txt",
+      "status": "PASS",
+      "sha256": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2"
+    },
+    {
+      "path": "output/visuals/sources/fonts/SOURCE.json",
+      "status": "PASS",
+      "sha256": "478d22b64ebad4afdda0d42eb334d7e784282db72f2e250916aee54af5fb77cf"
+    },
+    {
+      "path": "output/visuals/sources/layout.js",
+      "status": "PASS",
+      "sha256": "f199aaa75fd799aa0e5a6097b606e90cc80bdac4ce73f33b004435345ca0314e"
+    },
+    {
+      "path": "output/visuals/sources/map.snapshot.json",
+      "status": "PASS",
+      "sha256": "fd13fa7603929c2f456f82fb780e2807d08bd238157484525a3a8a6844822fcd"
+    },
+    {
+      "path": "output/visuals/sources/mobile.css",
+      "status": "PASS",
+      "sha256": "d0fe22891d3277dba62b8860bcd6febda6debb5e5f4e568b7ad7c3b690313951"
+    },
+    {
+      "path": "output/visuals/sources/mobile.html",
+      "status": "PASS",
+      "sha256": "93a5d46979e9b66f45a536c8de06695e726f2c389535d2095416213aa085aefe"
+    },
+    {
+      "path": "output/visuals/sources/mobile.js",
+      "status": "PASS",
+      "sha256": "d03b15e7ef20d241d921be2b7b6801834de052b21550c57fc37b41bc8dbc0733"
+    },
+    {
+      "path": "output/visuals/sources/render-mobile.cjs",
+      "status": "PASS",
+      "sha256": "fce8d0b91bb425ffa50ba33851266cebc417b44f04bcaa7cb4890816069bb8fa"
+    },
+    {
+      "path": "output/visuals/sources/render.cjs",
+      "status": "PASS",
+      "sha256": "23baba677211a56be84b9d7642bd4aa9e4fd6c7382f975191724cbba2eb6441d"
+    },
+    {
+      "path": "output/visuals/sources/ui.css",
+      "status": "PASS",
+      "sha256": "557a9f455d2e674d730738fd5a983319cff1a15237d33c5202cf12a7de2203c5"
+    },
+    {
+      "path": "output/visuals/sources/ui.html",
+      "status": "PASS",
+      "sha256": "95b23898c94d1a35380fd9745adc53c21cbd77fb1b910ed4a2733deaace973d4"
+    },
+    {
+      "path": "output/visuals/states/full.png",
+      "status": "PASS",
+      "sha256": "acb547512e4adc33d385799fed9674e8dfac0ac29507cc1522d779c246062cc6"
+    },
+    {
+      "path": "output/visuals/states/initial.png",
+      "status": "PASS",
+      "sha256": "1bc6126d21f8ebf4ae288fc13c85bc478d495ed44be42fd4aabe2ff452a6af7a"
+    },
+    {
+      "path": "output/visuals/states/inspection-grayscale.png",
+      "status": "PASS",
+      "sha256": "0279a3cc44de74f28dc4216987c23a7a9aa0bbea05aba9bde53d6bc3cbcd9d1f"
+    },
+    {
+      "path": "output/visuals/states/inspection.png",
+      "status": "PASS",
+      "sha256": "e6d62c27b4a5111fae046bbe389746abc4abc26d35286a7f216041f4b33acc34"
+    },
+    {
+      "path": "output/visuals/states/level.png",
+      "status": "PASS",
+      "sha256": "1c1cc90ad47d152212a51a314afb7b0e20064e80883754f95b8dd6e29ef0bc42"
+    },
+    {
+      "path": "output/visuals/states/max.png",
+      "status": "PASS",
+      "sha256": "ed8df6b8f1c07b50d1a3ab05d141318fa68e13b865a02c2cfce8d1825f554937"
+    },
+    {
+      "path": "output/visuals/states/merge.png",
+      "status": "PASS",
+      "sha256": "43386c844f75d7f0f324b52d4cd31e67539a8729dbc018a39dae7dc8441d8280"
+    },
+    {
+      "path": "output/visuals/states/merged.png",
+      "status": "PASS",
+      "sha256": "e0bb1dfdbb45363f89bb909f3b9e33040e3241eea80810f95091a2450ca72167"
+    },
+    {
+      "path": "output/visuals/states/occupied.png",
+      "status": "PASS",
+      "sha256": "c511ebcb0f655f59ae0b3956d7bf7bd9cb82002ad0957c3aaf741781d9d96310"
+    },
+    {
+      "path": "output/visuals/states/poor.png",
+      "status": "PASS",
+      "sha256": "dd0d7c281ec4f31d9701c34eb690a52bcee62dd301aa2b3ac71971bb4ccf022f"
+    },
+    {
+      "path": "output/visuals/states/selected.png",
+      "status": "PASS",
+      "sha256": "f2f8eb940d0301644277ebcd9ba7c328c9f6831f914309e330672b14ebbc992e"
+    },
+    {
+      "path": "output/visuals/states/type.png",
+      "status": "PASS",
+      "sha256": "4aaec40f11ca708effef78b30244ad36c573333b280a156a0b0ced3f7ca09d2c"
+    },
+    {
+      "path": "godot/scripts/battle/battle_core.gd",
+      "gate": "max600lines",
+      "lines": 387,
+      "status": "PASS"
+    },
+    {
+      "path": "godot/scripts/battle_stub.gd",
+      "gate": "max600lines",
+      "lines": 37,
+      "status": "PASS"
+    },
+    {
+      "path": "godot/scripts/main.gd",
+      "gate": "max600lines",
+      "lines": 66,
+      "status": "PASS"
+    },
+    {
+      "path": "godot/scripts/player/battle_view.gd",
+      "gate": "max600lines",
+      "lines": 196,
+      "status": "PASS"
+    },
+    {
+      "path": "godot/scripts/player/board_controller.gd",
+      "gate": "max600lines",
+      "lines": 62,
+      "status": "PASS"
+    },
+    {
+      "path": "godot/scripts/player/player_session.gd",
+      "gate": "max600lines",
+      "lines": 115,
+      "status": "PASS"
+    },
+    {
+      "path": "godot/scripts/ui/board_slot.gd",
+      "gate": "max600lines",
+      "lines": 48,
+      "status": "PASS"
+    },
+    {
+      "path": "godot/scripts/ui/paper_button.gd",
+      "gate": "max600lines",
+      "lines": 97,
+      "status": "PASS"
+    },
+    {
+      "path": "godot/scripts/ui/paper_ui.gd",
+      "gate": "max600lines",
+      "lines": 107,
+      "status": "PASS"
+    },
+    {
+      "path": "godot/scripts/ui/paper_unit.gd",
+      "gate": "max600lines",
+      "lines": 26,
+      "status": "PASS"
+    },
+    {
+      "path": "godot/scripts/ui/player_field.gd",
+      "gate": "max600lines",
+      "lines": 96,
+      "status": "PASS"
+    },
+    {
+      "path": "godot/scripts/ui/sourced_battle_motion.gd",
+      "gate": "max600lines",
+      "lines": 51,
+      "status": "PASS"
+    },
+    {
+      "path": "godot/scripts/ui/sourced_menu_motion.gd",
+      "gate": "max600lines",
+      "lines": 26,
+      "status": "PASS"
+    },
+    {
+      "path": "godot/tests/test_battle_core.gd",
+      "gate": "max600lines",
+      "lines": 207,
+      "status": "PASS"
+    },
+    {
+      "path": "godot/tests/test_player_menu.gd",
+      "gate": "max600lines",
+      "lines": 220,
+      "status": "PASS"
+    },
+    {
+      "path": "godot/tests/test_player_prep.gd",
+      "gate": "max600lines",
+      "lines": 183,
+      "status": "PASS"
+    },
+    {
+      "path": "godot/tests/test_player_view.gd",
+      "gate": "max600lines",
+      "lines": 208,
+      "status": "PASS"
+    },
+    {
+      "path": "godot/tests/test_six_wave_baseline.gd",
+      "gate": "max600lines",
+      "lines": 37,
+      "status": "PASS"
+    },
+    {
+      "path": "godot/tests/test_six_wave_replay.gd",
+      "gate": "max600lines",
+      "lines": 76,
+      "status": "PASS"
+    },
+    {
+      "path": "godot/assets/icons/lucide/plus.svg",
+      "gate": "registered-icon-hash",
+      "status": "PASS"
+    },
+    {
+      "path": "godot/assets/icons/lucide/coins.svg",
+      "gate": "registered-icon-hash",
+      "status": "PASS"
+    },
+    {
+      "path": "godot/assets/icons/lucide/heart.svg",
+      "gate": "registered-icon-hash",
+      "status": "PASS"
+    },
+    {
+      "path": "godot/assets/icons/lucide/x.svg",
+      "gate": "registered-icon-hash",
+      "status": "PASS"
+    },
+    {
+      "path": "godot/assets/icons/lucide/chevron-right.svg",
+      "gate": "registered-icon-hash",
+      "status": "PASS"
+    },
+    {
+      "path": "godot/assets/icons/lucide/rotate-ccw.svg",
+      "gate": "registered-icon-hash",
+      "status": "PASS"
+    }
+  ]
+}

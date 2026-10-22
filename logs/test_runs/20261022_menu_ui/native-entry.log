@@ -1,0 +1,9 @@
+COMMAND=['E:\\godot\\Godot_v4.4.1-stable_win64.exe', '--log-file', 'D:\\桌面\\ElementGuardians\\logs\\test_runs\\20261022_menu_ui\\native-entry.engine.log', '--path', 'godot', '--quit-after', '180']
+CWD=D:\桌面\ElementGuardians
+Godot Engine v4.4.1.stable.official.49a5bc7b6 - https://godotengine.org
+OpenGL API 3.3.0 NVIDIA 516.54 - Compatibility - Using Device: NVIDIA - NVIDIA GeForce 920MX
+
+
+EXIT=0 LIMIT=NONE PEAK_PRIVATE_BYTES=204042240
+STDIO=logs\test_runs\20261022_menu_ui\native-entry.stdio.log
+HARNESS=PASS SUMMARY_FOUND=True

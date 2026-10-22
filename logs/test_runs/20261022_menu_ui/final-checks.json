@@ -1,0 +1,26 @@
+{
+  "docs": {
+    "exit_code": 1,
+    "output": "DOCS: 19 files | tests defined=36 referenced=36\r\nDOC CHECK: FAIL\r\nDOC-MANIFEST FAIL: MANIFEST 哈希不符: godot/project.godot\r\nDOC-MANIFEST FAIL: MANIFEST 哈希不符: godot/scenes/main.tscn\r\n"
+  },
+  "diff": {
+    "exit_code": 0,
+    "output": ""
+  },
+  "head": {
+    "exit_code": 0,
+    "output": "f4786b6ae5e3b52c1c0fdd7accd3f6e3bbb435df\n"
+  },
+  "branch": {
+    "exit_code": 0,
+    "output": "master\n"
+  },
+  "remote-master": {
+    "exit_code": 0,
+    "output": "f4786b6ae5e3b52c1c0fdd7accd3f6e3bbb435df\trefs/heads/master\n"
+  },
+  "status": {
+    "exit_code": 0,
+    "output": " M MANIFEST.sha256\n M NEXT_SESSION_PROMPT.md\n M README.md\n M docs/00-START-HERE.md\n M docs/06-UI-UX.md\n M docs/07-ASSETS.md\n M godot/README.md\n M godot/scripts/battle_stub.gd\n M godot/scripts/main.gd\n M tools/verify_runtime.py\n M tracking/ASSET_LICENSES.csv\n M tracking/CHANGELOG.md\n?? docs/third_party/\n?? godot/assets/\n?? godot/scripts/ui/\n?? godot/tests/test_player_menu.gd\n?? godot/tests/test_player_menu.gd.uid\n?? logs/test_runs/20261022_menu_ui/\n?? logs/test_runs/20261022_resume_baseline/\n?? logs/test_runs/20261022_resume_baseline_normal/\n"
+  }
+}

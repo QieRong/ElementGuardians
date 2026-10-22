@@ -1,0 +1,24 @@
+Godot Engine v4.4.1.stable.official.49a5bc7b6 - https://godotengine.org
+
+PASS PLAYERVIEW-player-scene-available
+PASS PLAYERVIEW-supported-scale
+PASS PLAYERVIEW-controls-built
+PASS PLAYERVIEW-real-empty-player-start
+PASS PLAYERVIEW-no-diagnostic-canvas
+PASS PLAYERVIEW-selection-has-real-owner
+PASS PLAYERVIEW-actual-summon-consumes-20
+PASS PLAYERVIEW-summon-motion-observed
+FAIL PLAYERVIEW-source-target-merge-real
+PASS PLAYERVIEW-third-summon-zero-gold
+PASS PLAYERVIEW-invalid-merge-keeps-state
+FAIL PLAYERVIEW-failure-feedback-visible
+PASS PLAYERVIEW-poor-button-disabled
+PASS PLAYERVIEW-disabled-click-no-side-effects
+PASS PLAYERVIEW-target-sizes
+PASS PLAYERVIEW-real-combat-and-disabled-actions
+FAIL PLAYERVIEW-real-combat-feedback
+PASS PLAYERVIEW-stops-at-unimplemented-upgrade
+PASS PLAYERVIEW-upgrade-frozen-no-auto-next-wave
+PASS PLAYERVIEW-reduced-summon-no-transform-motion
+PASS PLAYERVIEW-view-exit-releases-session
+PLAYERVIEW SUMMARY: PASS=18 FAIL=3 SKIP=1 COMPLETE

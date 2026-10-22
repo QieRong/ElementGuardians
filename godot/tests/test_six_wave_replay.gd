@@ -40,7 +40,7 @@ func _initialize() -> void:
 
 func _replay(cfg: BattleConfig, map: BattleMap, seed_value: int) -> TracedBattle:
 	var core := TracedBattle.new()
-	core.setup(cfg, map, [], seed_value)
+	core.setup(cfg, map, null, seed_value)
 	core.start_wave()
 	var ticks := 0
 	while not core.finished and ticks < 12000:

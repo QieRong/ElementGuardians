@@ -1,0 +1,14 @@
+COMMAND=['E:\\godot\\Godot_v4.4.1-stable_win64.exe', '--log-file', 'D:\\桌面\\ElementGuardians\\logs\\test_runs\\20261022_menu_ui\\red.engine.log', '--headless', '--path', 'godot', '--script', 'res://tests/test_player_menu.gd']
+CWD=D:\桌面\ElementGuardians
+Godot Engine v4.4.1.stable.official.49a5bc7b6 - https://godotengine.org
+
+PASS MENU-supported-scale
+ERROR: Condition "p_scene && p_scene->get_parent() != root" is true.
+   at: set_current_scene (scene/main/scene_tree.cpp:1502)
+FAIL MENU-paper-background-integrated
+FAIL MENU-player-controls-available
+MENU SUMMARY: PASS=1 FAIL=2 SKIP=1 COMPLETE
+
+EXIT=1 LIMIT=NONE PEAK_PRIVATE_BYTES=71188480
+STDIO=logs\test_runs\20261022_menu_ui\red.stdio.log
+HARNESS=FAIL SUMMARY_FOUND=False

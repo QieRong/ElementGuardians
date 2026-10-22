@@ -1,0 +1,8 @@
+COMMAND=['E:\\godot\\Godot_v4.4.1-stable_win64.exe', '--log-file', 'D:\\桌面\\ElementGuardians\\logs\\test_runs\\20261022_player_prep\\check-view.engine.log', '--headless', '--path', 'godot', '--check-only', '--script', 'res://scripts/player/battle_view.gd']
+CWD=D:\桌面\ElementGuardians
+Godot Engine v4.4.1.stable.official.49a5bc7b6 - https://godotengine.org
+
+
+EXIT=0 LIMIT=NONE PEAK_PRIVATE_BYTES=42209280
+STDIO=logs\test_runs\20261022_player_prep\check-view.stdio.log
+HARNESS=PASS SUMMARY_FOUND=True

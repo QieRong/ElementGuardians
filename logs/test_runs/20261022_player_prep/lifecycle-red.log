@@ -1,0 +1,12 @@
+COMMAND=['E:\\godot\\Godot_v4.4.1-stable_win64.exe', '--log-file', 'D:\\桌面\\ElementGuardians\\logs\\test_runs\\20261022_player_prep\\lifecycle-red.engine.log', '--headless', '--path', 'godot', '--script', 'res://tests/test_player_prep.gd']
+CWD=D:\桌面\ElementGuardians
+Godot Engine v4.4.1.stable.official.49a5bc7b6 - https://godotengine.org
+
+SCRIPT ERROR: Parse Error: The variable type is being inferred from a Variant value, so it will be typed as Variant. (Warning treated as error.)
+   at: GDScript::reload (res://tests/test_player_prep.gd:35)
+ERROR: Failed to load script "res://tests/test_player_prep.gd" with error "Parse error".
+   at: load (modules/gdscript/gdscript.cpp:3022)
+
+EXIT=1 LIMIT=NONE PEAK_PRIVATE_BYTES=33366016
+STDIO=logs\test_runs\20261022_player_prep\lifecycle-red.stdio.log
+HARNESS=FAIL SUMMARY_FOUND=False

@@ -42,7 +42,7 @@ func check(id: String, condition: bool, detail: String = "") -> void:
 
 func new_core() -> BattleCore:
 	var core := BattleCore.new()
-	core.setup(cfg, map, [], 20261018)
+	core.setup(cfg, map, null, 20261018)
 	return core
 
 func new_core_level1() -> BattleCore:

@@ -1,0 +1,14 @@
+COMMAND=['E:\\godot\\Godot_v4.4.1-stable_win64.exe', '--log-file', 'D:\\桌面\\ElementGuardians\\logs\\test_runs\\20261022_menu_ui\\sourced-red.engine.log', '--headless', '--path', 'godot', '--script', 'res://tests/test_player_menu.gd']
+CWD=D:\桌面\ElementGuardians
+Godot Engine v4.4.1.stable.official.49a5bc7b6 - https://godotengine.org
+
+PASS MENU-supported-scale
+PASS MENU-paper-background-integrated
+PASS MENU-player-controls-available
+FAIL MENU-sourced-motion-face-available
+FAIL MENU-lucide-functional-icon-available
+MENU SUMMARY: PASS=3 FAIL=2 SKIP=1 COMPLETE
+
+EXIT=1 LIMIT=NONE PEAK_PRIVATE_BYTES=110440448
+STDIO=logs\test_runs\20261022_menu_ui\sourced-red.stdio.log
+HARNESS=FAIL SUMMARY_FOUND=False

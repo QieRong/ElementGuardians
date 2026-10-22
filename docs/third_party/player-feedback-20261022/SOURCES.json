@@ -1,0 +1,20 @@
+{
+  "source": "https://raw.githubusercontent.com/Rp-ics/Godot-Engine-GlobalTweens/22d9679185a700513c44136bfc79578d4fc20a45/GlobalTweens.gd",
+  "sha256": "d77cc23afc824dc51cb749670753e541cba1b2f166c37eaf4534a1ad3019533a",
+  "license": "MIT",
+  "license_file": "godot/scripts/ui/LICENSE-GlobalTweens.txt",
+  "functions": [
+    "spawn_in",
+    "pop_scale",
+    "color_flash",
+    "show_canvas",
+    "hide_canvas"
+  ],
+  "adaptations": [
+    "Only presentation nodes animate; no gameplay timers or state changes",
+    "Control scale adapted for noninteractive unit visuals",
+    "Replace prior Tween to handle repeated triggers",
+    "Reduced-motion bypasses scale; feedback remains textual and colored"
+  ],
+  "approved_notice_duration": "docs/visuals/2026-10-21-MOBILE-LANGUAGE.md: transient nonmodal text feedback"
+}

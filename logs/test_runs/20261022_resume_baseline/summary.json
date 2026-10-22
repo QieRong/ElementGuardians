@@ -1,0 +1,95 @@
+{
+  "complete": true,
+  "counts": {
+    "PASS": 4,
+    "FAIL": 10,
+    "SKIP": 0
+  },
+  "checks": [
+    {
+      "id": "engine-version",
+      "status": "PASS",
+      "exit_code": 0,
+      "log": "engine-version.command.log"
+    },
+    {
+      "id": "sync",
+      "status": "PASS",
+      "exit_code": 0,
+      "log": "sync.command.log"
+    },
+    {
+      "id": "config",
+      "status": "PASS",
+      "exit_code": 0,
+      "log": "config.command.log"
+    },
+    {
+      "id": "docs",
+      "status": "FAIL",
+      "exit_code": 1,
+      "log": "docs.command.log"
+    },
+    {
+      "id": "map-geometry",
+      "status": "PASS",
+      "exit_code": 0,
+      "log": "map-geometry.command.log"
+    },
+    {
+      "id": "parse",
+      "status": "FAIL",
+      "exit_code": 1,
+      "log": "parse.command.log"
+    },
+    {
+      "id": "core",
+      "status": "FAIL",
+      "exit_code": 1,
+      "log": "core.command.log"
+    },
+    {
+      "id": "repairs",
+      "status": "FAIL",
+      "exit_code": 1,
+      "log": "repairs.command.log"
+    },
+    {
+      "id": "map",
+      "status": "FAIL",
+      "exit_code": 1,
+      "log": "map.command.log"
+    },
+    {
+      "id": "baseline",
+      "status": "FAIL",
+      "exit_code": 1,
+      "log": "baseline.command.log"
+    },
+    {
+      "id": "replay",
+      "status": "FAIL",
+      "exit_code": 1,
+      "log": "replay.command.log"
+    },
+    {
+      "id": "visual-headless",
+      "status": "FAIL",
+      "exit_code": 1,
+      "log": "visual-headless.command.log"
+    },
+    {
+      "id": "render-10",
+      "status": "FAIL",
+      "exit_code": 1,
+      "log": "render-10.command.log"
+    },
+    {
+      "id": "render-075",
+      "status": "FAIL",
+      "exit_code": 1,
+      "log": "render-075.command.log"
+    }
+  ],
+  "scope": "Grouped automated gates; individual assertions are in engine logs. No human, native phone, performance, or full player acceptance."
+}

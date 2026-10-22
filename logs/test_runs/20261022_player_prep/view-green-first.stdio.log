@@ -1,0 +1,28 @@
+Godot Engine v4.4.1.stable.official.49a5bc7b6 - https://godotengine.org
+
+PASS PLAYERVIEW-player-scene-available
+PASS PLAYERVIEW-supported-scale
+SCRIPT ERROR: Parse Error: Too few arguments for "draw_texture_rect()" call. Expected at least 3 but received 2.
+   at: GDScript::reload (res://scripts/ui/player_field.gd:87)
+SCRIPT ERROR: Compile Error: Failed to compile depended scripts.
+   at: GDScript::reload (res://scripts/player/battle_view.gd:0)
+ERROR: Failed to load script "res://scripts/player/battle_view.gd" with error "Compilation failed".
+   at: load (modules/gdscript/gdscript.cpp:3022)
+SCRIPT ERROR: Invalid call. Nonexistent function 'new' in base 'GDScript'.
+   at: _build (res://scripts/player/battle_view.gd:49)
+PASS PLAYERVIEW-real-empty-player-start
+PASS PLAYERVIEW-no-diagnostic-canvas
+ERROR: Node not found: "Field/Slot0" (relative to "/root/@SubViewport@2/PlayerBattle").
+   at: get_node (scene/main/node.cpp:1877)
+SCRIPT ERROR: Cannot call method 'get_global_rect' on a null value.
+   at: _click_slot (res://tests/test_player_view.gd:124)
+FAIL PLAYERVIEW-selection-has-real-owner
+ERROR: Node not found: "SummonButton" (relative to "/root/@SubViewport@2/PlayerBattle").
+   at: get_node (scene/main/node.cpp:1877)
+SCRIPT ERROR: Cannot call method 'get_global_rect' on a null value.
+   at: _click_button (res://tests/test_player_view.gd:127)
+FAIL PLAYERVIEW-actual-summon-consumes-20
+ERROR: Node not found: "Field/Slot0" (relative to "/root/@SubViewport@2/PlayerBattle").
+   at: get_node (scene/main/node.cpp:1877)
+SCRIPT ERROR: Cannot call method 'get' on a null value.
+   at: _run (res://tests/test_player_view.gd:53)

@@ -1,0 +1,29 @@
+COMMAND=['E:\\godot\\Godot_v4.4.1-stable_win64.exe', '--log-file', 'D:\\桌面\\ElementGuardians\\logs\\test_runs\\20261022_playtest_feedback\\final-suite\\repairs.engine.log', '--headless', '--path', 'godot', '--script', 'res://tests/test_battle_repairs.gd']
+CWD=D:\桌面\ElementGuardians
+Godot Engine v4.4.1.stable.official.49a5bc7b6 - https://godotengine.org
+
+PASS ENM-01-death-once
+PASS ENM-01-dead-cannot-leak
+PASS ENM-01-resolved
+PASS ENM-02-leak-once
+PASS ECO-04-no-leaked-kill-gold
+PASS ENM-02-resolved
+PASS SES-02-immediate-result
+PASS SES-02-stop-same-tick
+PASS SES-02-stop-spawner
+PASS SES-02-late-events-no-effect
+FAILED WAVE STATS wave=1 start_gold=60 end_gold=65 start_hp=1 end_hp=0 duration=2.50 spawned=3 kills=1 leaks=1
+PASS WAV-failed-end-snapshot
+PASS WAV-failed-accounting
+RESTART BEGIN seed=12345
+PASS RES-01-preserve-placement
+PASS RES-01-reset-ledger
+PASS RES-01-preserve-seed
+PASS RES-01-clear-runtime
+PASS RES-01-repeat
+RESTART END
+REPAIR SUMMARY: PASS=17 FAIL=0 SKIP=0
+
+EXIT=0 LIMIT=NONE PEAK_PRIVATE_BYTES=36814848
+STDIO=D:\桌面\ElementGuardians\logs\test_runs\20261022_playtest_feedback\final-suite\repairs.stdio.log
+HARNESS=PASS SUMMARY_FOUND=True

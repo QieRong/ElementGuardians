@@ -1,0 +1,75 @@
+Godot Engine v4.4.1.stable.official.49a5bc7b6 - https://godotengine.org
+
+ERROR: Failed to read the root certificate store.
+   at: get_system_ca_certificates (platform/windows/os_windows.cpp:2289)
+PASS MENU-supported-scale
+PASS MENU-early-settings-opens-from-real-input
+FAIL MENU-early-settings-parent-is-opaque
+PASS MENU-paper-background-integrated
+PASS MENU-player-controls-available
+PASS MENU-no-player-animation-switch
+PASS MENU-settings-is-icon-only-gear
+PASS MENU-animations-default-on
+PASS MENU-sourced-motion-face-available
+PASS MENU-lucide-functional-icon-available
+PASS MENU-entry-usable-during-transition
+PASS MENU-entry-remains-immediately-usable
+PASS MENU-initial-keyboard-focus
+PASS MENU-button-target-at-requested-scale
+PASS MENU-motion-button-target-at-requested-scale
+PASS MENU-tab-focus-order
+PASS MENU-button-captions-fit
+PASS MENU-hover-starts-at-rest
+MOTION TRACE hover_scale=1.09759228825569 target=1.1 input_rect=[P: (144.0, 876.0), S: (432.0, 102.0)]
+PASS MENU-hover-actually-animates
+MOTION TRACE press_scale=0.9 target=0.9 input_rect=[P: (144.0, 876.0), S: (432.0, 102.0)]
+PASS MENU-press-feedback-reaches-source-target
+PASS MENU-motion-keeps-hit-target-fixed
+PASS MENU-cancel-does-not-navigate
+PASS MENU-cancel-restores-button
+PASS MENU-rapid-hover-settles
+PASS MENU-existing-config-check-preserved
+PASS MENU-settings-opens-from-real-input
+PASS MENU-modal-blocks-background-actions
+PASS MENU-settings-opaque-from-first-frame
+PASS MENU-modal-does-not-start-game
+PASS MENU-six-real-language-options
+PASS MENU-settings-entrance-settles
+PASS MENU-language-selection-0
+PASS MENU-localized-menu-fits-0
+PASS MENU-settings-focus-contained-0
+PASS MENU-language-selection-1
+PASS MENU-localized-menu-fits-1
+PASS MENU-settings-focus-contained-1
+PASS MENU-language-selection-2
+PASS MENU-localized-menu-fits-2
+PASS MENU-settings-focus-contained-2
+PASS MENU-language-selection-3
+PASS MENU-localized-menu-fits-3
+PASS MENU-settings-focus-contained-3
+PASS MENU-language-selection-4
+PASS MENU-localized-menu-fits-4
+PASS MENU-settings-focus-contained-4
+PASS MENU-language-selection-5
+PASS MENU-localized-menu-fits-5
+PASS MENU-settings-focus-contained-5
+PASS MENU-menu-language-really-applied
+PASS MENU-sound-off-mutes-real-bus
+PASS MENU-muted-lucide-icon
+PASS MENU-muted-click-does-not-play
+PASS MENU-sound-on-from-real-input
+PASS MENU-settings-never-disables-animation
+PASS MENU-escape-closes-and-restores-focus
+PASS MENU-keyboard-enters-real-player-prep
+PASS MENU-player-entry-starts-empty
+PASS MENU-entry-discloses-upgrade-boundary
+PASS MENU-top-back-hover-feedback
+PASS MENU-top-back-press-feedback
+PASS MENU-top-back-stable-input-bounds
+PASS MENU-return-once-without-stale-animation
+PASS MENU-sound-preference-survives-return
+PASS MENU-done-restores-background-actions
+PASS MENU-language-survives-navigation
+PASS MENU-navigation-keeps-animation-on
+PASS MENU-return-focus-restored
+MENU SUMMARY: PASS=67 FAIL=1 SKIP=1 COMPLETE

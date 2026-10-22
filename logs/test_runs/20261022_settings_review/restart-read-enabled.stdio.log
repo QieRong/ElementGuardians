@@ -1,0 +1,12 @@
+Godot Engine v4.4.1.stable.official.49a5bc7b6 - https://godotengine.org
+
+PASS RESTART-isolated-user-directory
+PASS RESTART-production-persistence-path
+PASS RESTART-audio-in-tree
+PASS RESTART-second-language-restored
+PASS RESTART-restored-sound-enabled
+PASS RESTART-restored-audio-really-starts
+PASS RESTART-isolated-save-cleaned
+RESTART SUMMARY: PASS=7 FAIL=0 SKIP=0 COMPLETE
+WARNING: ObjectDB instances leaked at exit (run with --verbose for details).
+   at: cleanup (core/object/object.cpp:2378)

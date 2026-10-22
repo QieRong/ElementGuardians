@@ -1,0 +1,35 @@
+COMMAND=['E:\\godot\\Godot_v4.4.1-stable_win64.exe', '--log-file', 'D:\\桌面\\ElementGuardians\\logs\\test_runs\\20261022_player_settings\\final-suite\\player-settings.engine.log', '--headless', '--path', 'godot', '--script', 'res://tests/test_player_settings.gd']
+CWD=D:\桌面\ElementGuardians
+Godot Engine v4.4.1.stable.official.49a5bc7b6 - https://godotengine.org
+
+PASS SETTINGS-defaults
+PASS SETTINGS-tests-do-not-touch-player-save
+PASS SETTINGS-reject-invalid-language
+PASS SETTINGS-language-save
+PASS SETTINGS-real-file-readable
+PASS SETTINGS-only-approved-settings-persisted
+PASS SETTINGS-preferences-survive-reload
+PASS SETTINGS-invalid-fixture-written
+PASS SETTINGS-invalid-types-fall-back-safely
+PASS SETTINGS-temporary-save-cleaned
+PASS SETTINGS-pool-bounded
+PASS SETTINGS-real-pcm-data
+PASS SETTINGS-tone-is-not-silence
+PASS SETTINGS-dedicated-bus-routes-to-master
+PASS SETTINGS-muted-input-suppressed
+PASS SETTINGS-enabled-input-really-starts-voice
+PASS SETTINGS-rapid-input-bounded
+PASS SETTINGS-mute-stops-all-existing-voices
+PASS SETTINGS-all-locales-complete-and-format-safe
+PASS SETTINGS-real-ui-translation
+PASS SETTINGS-battle-captions-fit-zh-Hans
+PASS SETTINGS-battle-captions-fit-zh-Hant
+PASS SETTINGS-battle-captions-fit-en
+PASS SETTINGS-battle-captions-fit-ko
+PASS SETTINGS-battle-captions-fit-ja
+PASS SETTINGS-battle-captions-fit-ru
+SETTINGS SUMMARY: PASS=26 FAIL=0 SKIP=0 COMPLETE
+
+EXIT=0 LIMIT=NONE PEAK_PRIVATE_BYTES=150847488
+STDIO=D:\桌面\ElementGuardians\logs\test_runs\20261022_player_settings\final-suite\player-settings.stdio.log
+HARNESS=PASS SUMMARY_FOUND=True

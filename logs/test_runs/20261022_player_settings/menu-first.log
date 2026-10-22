@@ -1,0 +1,60 @@
+COMMAND=['E:\\godot\\Godot_v4.4.1-stable_win64.exe', '--log-file', 'D:\\桌面\\ElementGuardians\\logs\\test_runs\\20261022_player_settings\\menu-first.engine.log', '--headless', '--path', 'godot', '--script', 'res://tests/test_player_menu.gd']
+CWD=D:\桌面\ElementGuardians
+Godot Engine v4.4.1.stable.official.49a5bc7b6 - https://godotengine.org
+
+PASS MENU-supported-scale
+ERROR: Node not found: "Brand/VBoxContainer/Title" (relative to "/root/@SubViewport@2/MainMenu").
+   at: get_node (scene/main/node.cpp:1877)
+SCRIPT ERROR: Attempt to call function 'add_theme_font_size_override' in base 'null instance' on a null instance.
+   at: _refresh_language (res://scripts/main.gd:55)
+PASS MENU-paper-background-integrated
+PASS MENU-player-controls-available
+PASS MENU-no-player-animation-switch
+PASS MENU-animations-default-on
+PASS MENU-sourced-motion-face-available
+PASS MENU-lucide-functional-icon-available
+PASS MENU-entry-usable-during-transition
+PASS MENU-entry-remains-immediately-usable
+PASS MENU-initial-keyboard-focus
+PASS MENU-button-target-at-requested-scale
+PASS MENU-motion-button-target-at-requested-scale
+PASS MENU-tab-focus-order
+PASS MENU-button-captions-fit
+PASS MENU-hover-starts-at-rest
+MOTION TRACE hover_scale=1.09736013412476 target=1.1 input_rect=[P: (144.0, 876.0), S: (432.0, 102.0)]
+PASS MENU-hover-actually-animates
+MOTION TRACE press_scale=0.9009905405482 target=0.9 input_rect=[P: (144.0, 876.0), S: (432.0, 102.0)]
+PASS MENU-press-feedback-in-progress
+PASS MENU-motion-keeps-hit-target-fixed
+PASS MENU-cancel-does-not-navigate
+PASS MENU-cancel-restores-button
+PASS MENU-rapid-hover-settles
+PASS MENU-existing-config-check-preserved
+ERROR: Node not found: "Card/Control/Close" (relative to "/root/@SubViewport@2/MainMenu/PlayerSettings").
+   at: get_node (scene/main/node.cpp:1877)
+SCRIPT ERROR: Invalid assignment of property or key 'tooltip_text' with value of type 'String' on a base object of type 'null instance'.
+   at: refresh (res://scripts/ui/player_settings_panel.gd:57)
+ERROR: Node not found: "Card/Control/Close" (relative to "/root/@SubViewport@2/MainMenu/PlayerSettings").
+   at: get_node (scene/main/node.cpp:1877)
+SCRIPT ERROR: Cannot call method 'get_path_to' on a null value.
+   at: _ready (res://scripts/ui/player_settings_panel.gd:45)
+PASS MENU-settings-opens-from-real-input
+PASS MENU-modal-blocks-background-actions
+PASS MENU-modal-does-not-start-game
+PASS MENU-six-real-language-options
+ERROR: Node not found: "Brand/VBoxContainer/Title" (relative to "/root/@SubViewport@2/MainMenu").
+   at: get_node (scene/main/node.cpp:1877)
+SCRIPT ERROR: Attempt to call function 'add_theme_font_size_override' in base 'null instance' on a null instance.
+   at: _refresh_language (res://scripts/main.gd:55)
+ERROR: Node not found: "Card/Control/Close" (relative to "/root/@SubViewport@2/MainMenu/PlayerSettings").
+   at: get_node (scene/main/node.cpp:1877)
+SCRIPT ERROR: Invalid assignment of property or key 'tooltip_text' with value of type 'String' on a base object of type 'null instance'.
+   at: refresh (res://scripts/ui/player_settings_panel.gd:57)
+PASS MENU-language-selection-0
+PASS MENU-localized-menu-fits-0
+SCRIPT ERROR: Cannot call method 'is_ancestor_of' on a previously freed instance.
+   at: _run (res://tests/test_player_menu.gd:124)
+
+EXIT=1 LIMIT=TIMEOUT PEAK_PRIVATE_BYTES=147582976
+STDIO=logs\test_runs\20261022_player_settings\menu-first.stdio.log
+HARNESS=FAIL SUMMARY_FOUND=False

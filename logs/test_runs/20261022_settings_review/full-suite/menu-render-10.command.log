@@ -1,0 +1,67 @@
+{"command": ["E:\\PyCharm\\Python\\python.exe", "D:\\桌面\\ElementGuardians\\tools\\run_godot_check.py", "--godot-exe", "E:\\godot\\Godot_v4.4.1-stable_win64_console.exe", "--log", "D:\\桌面\\ElementGuardians\\logs\\test_runs\\20261022_settings_review\\full-suite\\menu-render-10.log", "--timeout", "90", "--memory-mb", "768", "--require", "MENU SUMMARY: PASS=\\d+ FAIL=0 SKIP=0 COMPLETE", "--", "--path", "godot", "--script", "res://tests/test_player_menu.gd", "--", "--render-scale=1.0", "--capture-dir=D:\\桌面\\ElementGuardians\\logs\\test_runs\\20261022_settings_review\\full-suite\\menu-render-10"], "cwd": "D:\\桌面\\ElementGuardians"}
+PASS MENU-language-selection-0
+PASS MENU-localized-menu-fits-0
+PASS MENU-settings-focus-contained-0
+PASS MENU-image-nonempty-03-language-zh-Hans
+PASS MENU-image-target-size-03-language-zh-Hans
+PASS MENU-image-write-03-language-zh-Hans
+PASS MENU-language-selection-1
+PASS MENU-localized-menu-fits-1
+PASS MENU-settings-focus-contained-1
+PASS MENU-image-nonempty-03-language-zh-Hant
+PASS MENU-image-target-size-03-language-zh-Hant
+PASS MENU-image-write-03-language-zh-Hant
+PASS MENU-language-selection-2
+PASS MENU-localized-menu-fits-2
+PASS MENU-settings-focus-contained-2
+PASS MENU-image-nonempty-03-language-en
+PASS MENU-image-target-size-03-language-en
+PASS MENU-image-write-03-language-en
+PASS MENU-language-selection-3
+PASS MENU-localized-menu-fits-3
+PASS MENU-settings-focus-contained-3
+PASS MENU-image-nonempty-03-language-ko
+PASS MENU-image-target-size-03-language-ko
+PASS MENU-image-write-03-language-ko
+PASS MENU-language-selection-4
+PASS MENU-localized-menu-fits-4
+PASS MENU-settings-focus-contained-4
+PASS MENU-image-nonempty-03-language-ja
+PASS MENU-image-target-size-03-language-ja
+PASS MENU-image-write-03-language-ja
+PASS MENU-language-selection-5
+PASS MENU-localized-menu-fits-5
+PASS MENU-settings-focus-contained-5
+PASS MENU-image-nonempty-03-language-ru
+PASS MENU-image-target-size-03-language-ru
+PASS MENU-image-write-03-language-ru
+PASS MENU-menu-language-really-applied
+PASS MENU-sound-off-mutes-real-bus
+PASS MENU-muted-lucide-icon
+PASS MENU-muted-click-does-not-play
+PASS MENU-sound-on-from-real-input
+PASS MENU-settings-never-disables-animation
+PASS MENU-escape-closes-and-restores-focus
+PASS MENU-keyboard-enters-real-player-prep
+PASS MENU-player-entry-starts-empty
+PASS MENU-entry-discloses-upgrade-boundary
+PASS MENU-image-nonempty-04-player-prep
+PASS MENU-image-target-size-04-player-prep
+PASS MENU-image-write-04-player-prep
+PASS MENU-top-back-hover-feedback
+PASS MENU-top-back-press-feedback
+PASS MENU-top-back-stable-input-bounds
+PASS MENU-return-once-without-stale-animation
+PASS MENU-sound-preference-survives-return
+PASS MENU-done-restores-background-actions
+PASS MENU-image-nonempty-05-menu-english
+PASS MENU-image-target-size-05-menu-english
+PASS MENU-image-write-05-menu-english
+PASS MENU-language-survives-navigation
+PASS MENU-navigation-keeps-animation-on
+PASS MENU-return-focus-restored
+MENU SUMMARY: PASS=107 FAIL=0 SKIP=0 COMPLETE
+
+EXIT=0 LIMIT=NONE PEAK_PRIVATE_BYTES=285851648
+STDIO=D:\桌面\ElementGuardians\logs\test_runs\20261022_settings_review\full-suite\menu-render-10.stdio.log
+HARNESS=PASS SUMMARY_FOUND=True LOG=D:\桌面\ElementGuardians\logs\test_runs\20261022_settings_review\full-suite\menu-render-10.log

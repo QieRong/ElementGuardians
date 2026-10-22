@@ -1,0 +1,119 @@
+COMMAND=['E:\\godot\\Godot_v4.4.1-stable_win64.exe', '--log-file', 'D:\\桌面\\ElementGuardians\\logs\\test_runs\\20261022_settings_review\\full-suite\\menu-render-10.engine.log', '--path', 'godot', '--script', 'res://tests/test_player_menu.gd', '--', '--render-scale=1.0', '--capture-dir=D:\\桌面\\ElementGuardians\\logs\\test_runs\\20261022_settings_review\\full-suite\\menu-render-10']
+CWD=D:\桌面\ElementGuardians
+Godot Engine v4.4.1.stable.official.49a5bc7b6 - https://godotengine.org
+OpenGL API 3.3.0 NVIDIA 516.54 - Compatibility - Using Device: NVIDIA - NVIDIA GeForce 920MX
+
+PASS MENU-supported-scale
+PASS MENU-renderer-required
+PASS MENU-fresh-evidence
+PASS MENU-create-evidence
+PASS MENU-early-settings-opens-from-real-input
+PASS MENU-early-settings-parent-is-opaque
+PASS MENU-image-nonempty-00-early-settings
+PASS MENU-image-target-size-00-early-settings
+PASS MENU-image-write-00-early-settings
+PASS MENU-paper-background-integrated
+PASS MENU-player-controls-available
+PASS MENU-no-player-animation-switch
+PASS MENU-settings-is-icon-only-gear
+PASS MENU-animations-default-on
+PASS MENU-sourced-motion-face-available
+PASS MENU-lucide-functional-icon-available
+PASS MENU-entry-usable-during-transition
+PASS MENU-entry-remains-immediately-usable
+PASS MENU-initial-keyboard-focus
+PASS MENU-button-target-at-requested-scale
+PASS MENU-motion-button-target-at-requested-scale
+PASS MENU-tab-focus-order
+PASS MENU-button-captions-fit
+PASS MENU-image-nonempty-01-menu
+PASS MENU-image-target-size-01-menu
+PASS MENU-image-write-01-menu
+PASS MENU-hover-starts-at-rest
+MOTION TRACE hover_scale=1.10413950681686 target=1.1 input_rect=[P: (144.0, 876.0), S: (432.0, 96.0)]
+PASS MENU-hover-actually-animates
+MOTION TRACE press_scale=0.9 target=0.9 input_rect=[P: (144.0, 876.0), S: (432.0, 96.0)]
+PASS MENU-press-feedback-reaches-source-target
+PASS MENU-motion-keeps-hit-target-fixed
+PASS MENU-image-nonempty-02-pressed
+PASS MENU-image-target-size-02-pressed
+PASS MENU-image-write-02-pressed
+PASS MENU-cancel-does-not-navigate
+PASS MENU-cancel-restores-button
+PASS MENU-rapid-hover-settles
+PASS MENU-existing-config-check-preserved
+PASS MENU-settings-opens-from-real-input
+PASS MENU-modal-blocks-background-actions
+PASS MENU-settings-opaque-from-first-frame
+PASS MENU-modal-does-not-start-game
+PASS MENU-six-real-language-options
+PASS MENU-settings-entrance-settles
+PASS MENU-image-nonempty-03-settings-zh
+PASS MENU-image-target-size-03-settings-zh
+PASS MENU-image-write-03-settings-zh
+PASS MENU-language-selection-0
+PASS MENU-localized-menu-fits-0
+PASS MENU-settings-focus-contained-0
+PASS MENU-image-nonempty-03-language-zh-Hans
+PASS MENU-image-target-size-03-language-zh-Hans
+PASS MENU-image-write-03-language-zh-Hans
+PASS MENU-language-selection-1
+PASS MENU-localized-menu-fits-1
+PASS MENU-settings-focus-contained-1
+PASS MENU-image-nonempty-03-language-zh-Hant
+PASS MENU-image-target-size-03-language-zh-Hant
+PASS MENU-image-write-03-language-zh-Hant
+PASS MENU-language-selection-2
+PASS MENU-localized-menu-fits-2
+PASS MENU-settings-focus-contained-2
+PASS MENU-image-nonempty-03-language-en
+PASS MENU-image-target-size-03-language-en
+PASS MENU-image-write-03-language-en
+PASS MENU-language-selection-3
+PASS MENU-localized-menu-fits-3
+PASS MENU-settings-focus-contained-3
+PASS MENU-image-nonempty-03-language-ko
+PASS MENU-image-target-size-03-language-ko
+PASS MENU-image-write-03-language-ko
+PASS MENU-language-selection-4
+PASS MENU-localized-menu-fits-4
+PASS MENU-settings-focus-contained-4
+PASS MENU-image-nonempty-03-language-ja
+PASS MENU-image-target-size-03-language-ja
+PASS MENU-image-write-03-language-ja
+PASS MENU-language-selection-5
+PASS MENU-localized-menu-fits-5
+PASS MENU-settings-focus-contained-5
+PASS MENU-image-nonempty-03-language-ru
+PASS MENU-image-target-size-03-language-ru
+PASS MENU-image-write-03-language-ru
+PASS MENU-menu-language-really-applied
+PASS MENU-sound-off-mutes-real-bus
+PASS MENU-muted-lucide-icon
+PASS MENU-muted-click-does-not-play
+PASS MENU-sound-on-from-real-input
+PASS MENU-settings-never-disables-animation
+PASS MENU-escape-closes-and-restores-focus
+PASS MENU-keyboard-enters-real-player-prep
+PASS MENU-player-entry-starts-empty
+PASS MENU-entry-discloses-upgrade-boundary
+PASS MENU-image-nonempty-04-player-prep
+PASS MENU-image-target-size-04-player-prep
+PASS MENU-image-write-04-player-prep
+PASS MENU-top-back-hover-feedback
+PASS MENU-top-back-press-feedback
+PASS MENU-top-back-stable-input-bounds
+PASS MENU-return-once-without-stale-animation
+PASS MENU-sound-preference-survives-return
+PASS MENU-done-restores-background-actions
+PASS MENU-image-nonempty-05-menu-english
+PASS MENU-image-target-size-05-menu-english
+PASS MENU-image-write-05-menu-english
+PASS MENU-language-survives-navigation
+PASS MENU-navigation-keeps-animation-on
+PASS MENU-return-focus-restored
+MENU SUMMARY: PASS=107 FAIL=0 SKIP=0 COMPLETE
+
+EXIT=0 LIMIT=NONE PEAK_PRIVATE_BYTES=285851648
+STDIO=D:\桌面\ElementGuardians\logs\test_runs\20261022_settings_review\full-suite\menu-render-10.stdio.log
+HARNESS=PASS SUMMARY_FOUND=True

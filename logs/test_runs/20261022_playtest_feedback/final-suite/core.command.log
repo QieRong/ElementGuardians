@@ -1,0 +1,31 @@
+{"command": ["E:\\PyCharm\\Python\\python.exe", "D:\\桌面\\ElementGuardians\\tools\\run_godot_check.py", "--godot-exe", "E:\\godot\\Godot_v4.4.1-stable_win64_console.exe", "--log", "D:\\桌面\\ElementGuardians\\logs\\test_runs\\20261022_playtest_feedback\\final-suite\\core.log", "--timeout", "90", "--memory-mb", "512", "--require", "TEST SUMMARY: PASS=21 FAIL=0", "--", "--headless", "--path", "godot", "--script", "res://tests/test_battle_core.gd"], "cwd": "D:\\桌面\\ElementGuardians"}
+COMMAND=['E:\\godot\\Godot_v4.4.1-stable_win64.exe', '--log-file', 'D:\\桌面\\ElementGuardians\\logs\\test_runs\\20261022_playtest_feedback\\final-suite\\core.engine.log', '--headless', '--path', 'godot', '--script', 'res://tests/test_battle_core.gd']
+CWD=D:\桌面\ElementGuardians
+Godot Engine v4.4.1.stable.official.49a5bc7b6 - https://godotengine.org
+
+PASS CONFIG-LOAD | 配置加载: []
+PASS MAP-LOAD | 地图加载: []
+PASS FIXTURE-INIT | state=PREP wave=1 gold=60 hp=10 towers=3
+PASS MAP-01 | path_length=2470.0 slots=9
+PASS SEED-STORED | seed=20261018；权重抽样尚未实现
+PASS WAV-01 | totals=[6, 9, 10, 10, 12, 12] sum=59
+PASS WAV-02 | wave6=12 boss=1
+PASS WAV-03a | spawned after 0.1s=1 state=COMBAT
+PASS WAV-03b | 敌人存活时不得结束波次: enemies=1
+PASS FIXTURE-WAVE1-TRANSITION | wave1 clear -> state=PREP wave=2 gold=80
+PASS ATK-01a | 火焰首击 32-12=20.0
+PASS ATK-01b | 第二击 20-12=8.0
+PASS ATK-01c | 三击击杀: enemies=0 kills=1 gold=65
+PASS ATK-02 | slow_pct=0.20 delta_progress=7.20 (期望 90*0.8*0.1=7.2)
+PASS ATK-03 | 主目标=26.0 连锁目标=29.0（期望 26/29）
+PASS ENM-01 | 击杀: kills=1 gold=65 earned=5
+PASS ENM-02 | 漏怪: leaks=1 hp=9 gold=60
+PASS SES-02 | HP<=0 立即失败并停止: state=RESULT victory=false hp=0 enemies=0
+PASS FIXTURE-WAVE6-TRANSITION | 第 6 波清空 -> 胜利: state=RESULT victory=true
+PASS FIXTURE-RESTART | 重开: state=PREP wave=1 gold=60 hp=10 towers=3 enemies=0
+PASS WAV-05-wave1 | seed=20261018；第一波实际出怪序列=[[1, "grunt", 0.05], [2, "grunt", 1.2], [3, "grunt", 2.4], [4, "grunt", 3.6], [5, "grunt", 4.8], [6, "grunt", 6.0]]；允许0.05秒帧误差
+TEST SUMMARY: PASS=21 FAIL=0
+
+EXIT=0 LIMIT=NONE PEAK_PRIVATE_BYTES=37261312
+STDIO=D:\桌面\ElementGuardians\logs\test_runs\20261022_playtest_feedback\final-suite\core.stdio.log
+HARNESS=PASS SUMMARY_FOUND=True LOG=D:\桌面\ElementGuardians\logs\test_runs\20261022_playtest_feedback\final-suite\core.log

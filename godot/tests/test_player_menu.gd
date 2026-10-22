@@ -1,5 +1,6 @@
 ## Exercises real controls and navigation; this is automated UI, not human acceptance.
 extends SceneTree
+const Preferences = preload("res://scripts/ui/player_preferences.gd")
 
 var passed: int = 0
 var failed: int = 0
@@ -10,6 +11,7 @@ var input_view: Viewport
 var menu: Control
 
 func _initialize() -> void:
+	set_meta("eg_settings_test_mode", true)
 	for arg in OS.get_cmdline_user_args():
 		if arg.begins_with("--capture-dir="):
 			capture_dir = arg.trim_prefix("--capture-dir=")
@@ -37,15 +39,35 @@ func _run() -> void:
 	menu = load("res://scenes/main.tscn").instantiate()
 	view.add_child(menu)
 	_embed(menu)
+	# Open before the menu entrance advances: modal opacity includes ancestors.
+	_click(menu.get_node("SettingsButton").get_global_rect().get_center())
+	var early_settings := menu.get_node_or_null("PlayerSettings") as Control
+	_check("early-settings-opens-from-real-input", early_settings != null)
+	if early_settings != null:
+		var early_card := early_settings.get_node("Card") as Control
+		_check("early-settings-parent-is-opaque", is_equal_approx(menu.modulate.a, 1.0) and early_card.modulate.a == 1.0)
+		await _snapshot("00-early-settings")
+		_click(early_settings.get_node("Card/Content/Close").get_global_rect().get_center())
+		await process_frame
+	# Keep the original entrance checks independent of the early-open scenario.
+	menu.queue_free()
+	await process_frame
+	menu = load("res://scenes/main.tscn").instantiate()
+	view.add_child(menu)
+	_embed(menu)
+	_check("fresh-menu-entrance-still-animated", menu.modulate.a == 0.0 and (menu.get("_entrance") as Tween).is_running())
 	await process_frame
 	await process_frame
 	_check("paper-background-integrated", menu.has_node("PaperBackground"))
 	var enter := menu.get_node_or_null("Actions/EnterButton") as Button
-	var motion := menu.get_node_or_null("MotionButton") as Button
+	var motion := menu.get_node_or_null("SettingsButton") as Button
 	_check("player-controls-available", enter != null and motion != null)
 	if enter == null or motion == null:
 		_finish()
 		return
+	_check("no-player-animation-switch", not menu.has_node("MotionButton"))
+	_check("settings-is-icon-only-gear", motion.text.is_empty() and motion.get("glyph").resource_path.ends_with("/settings.svg"))
+	_check("animations-default-on", not bool(get_meta("eg_reduce_motion", true)))
 	_check("sourced-motion-face-available", enter.get("visual_scale") != null)
 	_check("lucide-functional-icon-available", enter.get("glyph") is Texture2D)
 	if enter.get("visual_scale") == null or not enter.get("glyph") is Texture2D:
@@ -78,9 +100,12 @@ func _run() -> void:
 	_check("hover-actually-animates", float(enter.get("visual_scale")) > 1.0 and (enter.get("_motion") as Tween).is_running())
 	var hit_rect := enter.get_global_rect()
 	_mouse(enter.get_global_rect().get_center(), true)
-	await create_timer(0.07).timeout
+	# SceneTree timers resume before Tween processing; a cold render frame can
+	# therefore wake the timer before the 80ms press has actually advanced.
+	# Observe the bound animation itself, preserving the exact 0.9 target.
+	await (enter.get("_motion") as Tween).finished
 	print("MOTION TRACE press_scale=", enter.get("visual_scale"), " target=0.9 input_rect=", enter.get_global_rect())
-	_check("press-feedback-in-progress", float(enter.get("visual_scale")) < 1.0)
+	_check("press-feedback-reaches-source-target", is_equal_approx(float(enter.get("visual_scale")), 0.9))
 	_check("motion-keeps-hit-target-fixed", hit_rect == enter.get_global_rect())
 	await _snapshot("02-pressed")
 	# Release outside: cancels activation and must restore the face.
@@ -101,17 +126,47 @@ func _run() -> void:
 	_check("existing-config-check-preserved", "PASS" in String(menu.get_node("Status").text))
 	_click(motion.get_global_rect().get_center())
 	await process_frame
-	_check("reduced-motion-enabled", bool(get_meta("eg_reduce_motion", false)))
-	_move(enter.get_global_rect().get_center())
-	_mouse(enter.get_global_rect().get_center(), true)
-	print("MOTION TRACE reduced_scale=", enter.get("visual_scale"), " preference=", get_meta("eg_reduce_motion", false))
-	_check("reduced-press-has-no-moving-face", is_equal_approx(float(enter.get("visual_scale")), 1.0))
-	_move(Vector2(10, 600))
-	_mouse(Vector2(10, 600), false)
-	await _snapshot("03-reduced-motion")
-	# Turn motion back on, then navigate while the entry face is moving.
-	_click(motion.get_global_rect().get_center())
-	_check("reduced-motion-reversible", not bool(get_meta("eg_reduce_motion", true)))
+	var settings := menu.get_node_or_null("PlayerSettings") as Control
+	_check("settings-opens-from-real-input", settings != null)
+	if settings == null:
+		_finish()
+		return
+	_check("modal-blocks-background-actions", enter.disabled and motion.disabled)
+	var card := settings.get_node("Card") as PanelContainer
+	_check("settings-opaque-from-first-frame", card.modulate.a == 1.0 and (card.get_theme_stylebox("panel") as StyleBoxFlat).bg_color.a == 1.0)
+	_click(enter.get_global_rect().position + Vector2(8, 8))
+	_check("modal-does-not-start-game", current_scene == null)
+	var choices: Array = settings.get("choices")
+	_check("six-real-language-options", choices.size() == 6)
+	await create_timer(0.35).timeout
+	_check("settings-entrance-settles", is_equal_approx(float(settings.get_node("Card").modulate.a), 1.0))
+	await _snapshot("03-settings-zh")
+	for index in range(choices.size()):
+		_click(choices[index].get_global_rect().get_center())
+		await process_frame
+		_check("language-selection-" + str(index), Preferences.current(self).language == Preferences.LANGUAGES[index])
+		_check("localized-menu-fits-" + str(index), _copy_fits(menu))
+		_check("settings-focus-contained-" + str(index), view.gui_get_focus_owner() != null and settings.is_ancestor_of(view.gui_get_focus_owner()))
+		if not capture_dir.is_empty():
+			await _snapshot("03-language-" + Preferences.LANGUAGES[index])
+	_click(choices[2].get_global_rect().get_center())
+	_check("menu-language-really-applied", enter.text == "Prepare" and settings.get("title").text == "Language & sound")
+	var state := Preferences.current(self)
+	var sound: Button = settings.get("sound")
+	_click(sound.get_global_rect().get_center())
+	_check("sound-off-mutes-real-bus", not state.sound_enabled and AudioServer.is_bus_mute(AudioServer.get_bus_index("ElementGuardians_UI")))
+	_check("muted-lucide-icon", sound.get("glyph").resource_path.ends_with("/volume-x.svg"))
+	var count: int = state.audio.play_count
+	_click(choices[0].get_global_rect().get_center())
+	_check("muted-click-does-not-play", state.audio.play_count == count)
+	_click(sound.get_global_rect().get_center())
+	_check("sound-on-from-real-input", state.sound_enabled and state.audio.play_count > count and sound.get("glyph").resource_path.ends_with("/volume-2.svg"))
+	_click(sound.get_global_rect().get_center())
+	_check("settings-never-disables-animation", not bool(get_meta("eg_reduce_motion", true)))
+	_key(KEY_ESCAPE, true)
+	_key(KEY_ESCAPE, false)
+	await process_frame
+	_check("escape-closes-and-restores-focus", not menu.has_node("PlayerSettings") and motion.has_focus() and not enter.disabled)
 	_at_root(menu)
 	enter.grab_focus()
 	_key(KEY_ENTER, true)
@@ -131,7 +186,15 @@ func _run() -> void:
 	await _snapshot("04-player-prep")
 	_at_root(preview)
 	var back := preview.get_node("BackButton") as Button
-	_click(back.get_global_rect().get_center())
+	var back_bounds := back.get_global_rect()
+	_move(back_bounds.get_center())
+	await create_timer(0.15).timeout
+	_check("top-back-hover-feedback", float(back.get("visual_scale")) > 1.0)
+	_mouse(back_bounds.get_center(), true)
+	await create_timer(0.12).timeout
+	_check("top-back-press-feedback", float(back.get("visual_scale")) < 1.0)
+	_check("top-back-stable-input-bounds", back.get_global_rect() == back_bounds)
+	_mouse(back_bounds.get_center(), false)
 	# Repeated handler invocation before the deferred scene change must be ignored.
 	preview.call("_go_back")
 	await process_frame
@@ -140,20 +203,41 @@ func _run() -> void:
 	menu = current_scene
 	_embed(menu)
 	await process_frame
-	motion = menu.get_node("MotionButton") as Button
+	motion = menu.get_node("SettingsButton") as Button
+	_check("sound-preference-survives-return", not Preferences.current(self).sound_enabled)
 	_click(motion.get_global_rect().get_center())
-	_check("reduce-during-entry-finishes-fade", menu.modulate.a == 1.0)
+	await process_frame
+	settings = menu.get_node("PlayerSettings")
+	choices = settings.get("choices")
+	_click(choices[2].get_global_rect().get_center())
+	_click((settings.get("done") as Button).get_global_rect().get_center())
+	await process_frame
+	_check("done-restores-background-actions", not motion.disabled)
+	await _snapshot("05-menu-english")
 	_at_root(menu)
 	(menu.get_node("Actions/EnterButton") as Button).pressed.emit()
 	await process_frame
 	await process_frame
-	_check("reduced-preference-survives-navigation", bool(current_scene.get_node("BackButton").get("reduce_motion")))
+	_check("language-survives-navigation", current_scene.get_node("Label0").text == "Wave" and current_scene.get_node("StartButton").text == "Start wave 1")
+	_check("navigation-keeps-animation-on", not bool(current_scene.get_node("BackButton").get("reduce_motion")))
 	# Real PREP uses Esc to cancel selection; explicit Back returns to menu.
 	(current_scene.get_node("BackButton") as Button).pressed.emit()
 	await process_frame
 	await process_frame
-	_check("reduced-return-focus-restored", (current_scene.get_node("Actions/EnterButton") as Button).has_focus())
+	_check("return-focus-restored", (current_scene.get_node("Actions/EnterButton") as Button).has_focus())
 	_finish()
+
+func _copy_fits(owner: Node) -> bool:
+	for item in owner.find_children("*", "Control", true, false):
+		if item is Button or (item is Label and item.autowrap_mode == TextServer.AUTOWRAP_OFF):
+			var font: Font = item.get_theme_font("font")
+			var glyph_width: float = 0.0
+			if item is Button and item.get("glyph") != null:
+				glyph_width = item.get_theme_font_size("font_size") + (14 if not item.text.is_empty() else 0)
+			if font.get_string_size(item.text, HORIZONTAL_ALIGNMENT_LEFT, -1, item.get_theme_font_size("font_size")).x + glyph_width > item.size.x - (24 if item is Button else 0):
+				print("COPY OVERFLOW ", item.name, " ", item.text, " width=", item.size.x)
+				return false
+	return true
 
 func _embed(scene: Control) -> void:
 	if scene.get_parent() != view:

@@ -10,6 +10,7 @@ var screen: Control
 var player: RefCounted
 
 func _initialize() -> void:
+	set_meta("eg_settings_test_mode", true)
 	for arg in OS.get_cmdline_user_args():
 		if arg.begins_with("--capture-dir="):
 			capture_dir = arg.trim_prefix("--capture-dir=")
@@ -55,6 +56,11 @@ func _run() -> void:
 		_finish()
 		return
 	player = screen.get("session")
+	var back := screen.get_node("BackButton") as Button
+	_check("back-arrow-at-top-left", back.position.x < 32 and back.position.y < 32 and back.size.x >= 88 and back.size.y >= 88)
+	_check("back-arrow-only-with-label", back.text.is_empty() and back.tooltip_text == "返回主菜单" and back.get("glyph") != null)
+	_check("back-clear-of-wave", not back.get_global_rect().intersects((screen.get_node("Wave") as Control).get_global_rect()))
+	_check("back-clear-of-entry", not back.get_global_rect().intersects((screen.get_node("EntryLabel") as Control).get_global_rect()))
 	_check("real-empty-player-start", _core().towers.is_empty() and _core().gold == 60 and _core().base_hp == 10)
 	_check("no-diagnostic-canvas", screen.find_children("*", "BattleDebugCanvas", true, false).is_empty())
 	await _snapshot("01-empty-prep")
@@ -120,7 +126,16 @@ func _run() -> void:
 		screen.call("refresh")
 		if not enemy_seen and not _core().enemies.is_empty():
 			enemy_seen = true
+			var actor: Node2D = screen.get_node("Field").get("actors").values()[0]
+			_check("live-enemy-has-crawl-presentation", actor.has_method("apply_enemy"))
 			await _snapshot("05-live-enemies")
+			if actor.has_node("Artwork/Spider/Mesh"):
+				var mesh: Polygon2D = actor.get_node("Artwork/Spider/Mesh")
+				var previous_pose := mesh.polygon.duplicate()
+				player.tick(0.12)
+				screen.call("refresh")
+				_check("real-crawl-motion-observed", mesh.polygon != previous_pose)
+				await _snapshot("05b-crawl-midstride")
 		if not attacked and int(screen.get("attack_feedback_count")) > 0:
 			attacked = true
 			_check("attack-has-real-damage-and-visual", float(_core().stats["damage_dealt"]) > 0 and not screen.get_node("Field").find_children("*", "Line2D", true, false).is_empty())

@@ -1,0 +1,214 @@
+[
+  {
+    "path": "docs/third_party/enemy-crawl-20261022/ASSETS.json",
+    "sha256": "5213c4993ae37a53cd3d6770bfb45db80adf5fcc310e4a8ad4749c4324fc198e"
+  },
+  {
+    "path": "docs/third_party/enemy-crawl-20261022/SOURCES.json",
+    "sha256": "4edcfb1c876fbf24fa7c8b5944d46cb5a20c224166bc7c9146daaa22d7578b92"
+  },
+  {
+    "path": "docs/third_party/player-settings-20261022/SOURCES.json",
+    "sha256": "99ea323b3cf27b2ff3654f842f2f503297d0eb19489ca1b8a394ee1d99cf2d44"
+  },
+  {
+    "path": "docs/third_party/player-settings-20261022/check.upstream.svg",
+    "sha256": "7f33acc9a77a61659531044525fc008edebe215bf4dcf1c789c8674ad3277db0"
+  },
+  {
+    "path": "docs/third_party/player-settings-20261022/settings.upstream.svg",
+    "sha256": "0ae27fd0f81999229e3127ac96c5b32edfea448e291d509e76212b917551d66b"
+  },
+  {
+    "path": "docs/third_party/player-settings-20261022/volume-2.upstream.svg",
+    "sha256": "fb404f9c128a0579de67b399177631e5edb3502fdc247ceb30e8b15754b46071"
+  },
+  {
+    "path": "docs/third_party/player-settings-20261022/volume-x.upstream.svg",
+    "sha256": "f382e421b7aae01172989f2b749ee87e44c0c82c16970b13a9ad5a323b613be0"
+  },
+  {
+    "path": "godot/assets/enemies/armor_007.png",
+    "sha256": "6dd2a3044c78068b0ef0846f2cba0e74b8965c1a51c7b70d377a73b70e30e916"
+  },
+  {
+    "path": "godot/assets/enemies/armor_007.png.import",
+    "sha256": "1df545c92acca4d5a211a6b4dcfe6c386ce9317a742f22b888bb7c9043254a13"
+  },
+  {
+    "path": "godot/assets/enemies/swift_006.png",
+    "sha256": "1123e701cbb13485f7c9b329efc66195eb07a11f5c48aa3643ae0e57b7efed58"
+  },
+  {
+    "path": "godot/assets/enemies/swift_006.png.import",
+    "sha256": "16c7ff03b99c55bdd3dc54c92e3f41a0d3272e372364b93fe00c5e7eb7726331"
+  },
+  {
+    "path": "godot/assets/icons/lucide/check.svg",
+    "sha256": "56817073aa4f0108ee172853f21df0680d48a593ae701c57b2f56034cc1296cb"
+  },
+  {
+    "path": "godot/assets/icons/lucide/check.svg.import",
+    "sha256": "acb672e84fa4bd89bdb5e90bbd93f3330a3aef4488d14dfacd99f24c9991f89d"
+  },
+  {
+    "path": "godot/assets/icons/lucide/settings.svg",
+    "sha256": "22fd994e7a976c2d644e6b48c555576792ceaf31502fac9e34c9e24639abae24"
+  },
+  {
+    "path": "godot/assets/icons/lucide/settings.svg.import",
+    "sha256": "4fb2cf4379dadfaaa9bdde88c6d37cc99644c321010c817e91def4f3fba1c60b"
+  },
+  {
+    "path": "godot/assets/icons/lucide/volume-2.svg",
+    "sha256": "74f9f16db29b24d13ed7440bc70940ef6112398939c16e866559f5c0aad03448"
+  },
+  {
+    "path": "godot/assets/icons/lucide/volume-2.svg.import",
+    "sha256": "58d6f173d98b3d80007c3cdd2b6086db2a1fc9cfcd98a8548760433eb120f2d1"
+  },
+  {
+    "path": "godot/assets/icons/lucide/volume-x.svg",
+    "sha256": "8930bd03bec5e3886b003938b20a7055e9a9b2de46d721016e828c4a4040aa36"
+  },
+  {
+    "path": "godot/assets/icons/lucide/volume-x.svg.import",
+    "sha256": "da748c053871e3767b99f83479a4bf4cd21675170086822675bb56b5d346f619"
+  },
+  {
+    "path": "godot/data/ui_locales.json",
+    "sha256": "40bd9a29574168d327d060bad91dafd3a050595c98284f2b0dc4b9571a092e82"
+  },
+  {
+    "path": "godot/scripts/ui/paper_enemy.gd",
+    "sha256": "da16b46914a3d964b83adedd0b6add5011e989aaa0b6b008af1918ee3c73dde7"
+  },
+  {
+    "path": "godot/scripts/ui/paper_enemy.gd.uid",
+    "sha256": "f20185fae88ca05d1a9d0f6566c7af7424d4ef6d67f47a1e085d22bfc0312ebf"
+  },
+  {
+    "path": "godot/scripts/ui/paper_spider.gd",
+    "sha256": "b4678c157e2dd60703e438fcd2bb569ba43998f151d0e601248c14a31e7c5d81"
+  },
+  {
+    "path": "godot/scripts/ui/paper_spider.gd.uid",
+    "sha256": "97a851a04b76c84834a5097e0b379b5fd8f3b086cb1d375a1b88b163a37d0c54"
+  },
+  {
+    "path": "godot/scripts/ui/player_locale.gd",
+    "sha256": "8cd43e8ccd10fe8b350b36a69810aca0d11acd157b9447f09264a5ad081dc79c"
+  },
+  {
+    "path": "godot/scripts/ui/player_locale.gd.uid",
+    "sha256": "029e0cb7e3fe8032237674ac9108600622370c3a0e28b3d0fda18075c80ba093"
+  },
+  {
+    "path": "godot/scripts/ui/player_preferences.gd",
+    "sha256": "1ff049789106fd0f38f6a537d15ae4d0ce846fefc43e509b59c53c5073fbbb44"
+  },
+  {
+    "path": "godot/scripts/ui/player_preferences.gd.uid",
+    "sha256": "7f688a67b6782315a9aa340b975b968b54baacd3259e78b5096a340f3d99b88d"
+  },
+  {
+    "path": "godot/scripts/ui/player_settings_panel.gd",
+    "sha256": "2c8111ea131c16e133b801d99494bd6610dede95b194806b2badb9445c143af4"
+  },
+  {
+    "path": "godot/scripts/ui/player_settings_panel.gd.uid",
+    "sha256": "690bb6b4e4f499214b800c758b1ba2b50d9ab5f9879999a31d8710fee2d8a8ee"
+  },
+  {
+    "path": "godot/scripts/ui/ui_audio.gd",
+    "sha256": "cd4a562e2b55b029e95b46c8ef750bb42a83b45ceabbd51a1ace6d58ff88c4c9"
+  },
+  {
+    "path": "godot/scripts/ui/ui_audio.gd.uid",
+    "sha256": "e14660ce7e5f44b80999993357d3a3f4c11b03c90dab0451d4aec5df1746929b"
+  },
+  {
+    "path": "godot/tests/test_enemy_presentation.gd",
+    "sha256": "bbc7e154a08ee9f1942b8bd8c139c1ee22f529bcf428fa40c4eb6409fd70cb87"
+  },
+  {
+    "path": "godot/tests/test_enemy_presentation.gd.uid",
+    "sha256": "5bcfb8606fced257f661c40d6f2d09b36bbe883e0994f5d46aa588712232262a"
+  },
+  {
+    "path": "godot/tests/test_player_settings.gd",
+    "sha256": "c100115b78e96f3e32696630b78b77959ad26b1114a37c781cfa451438a8e78f"
+  },
+  {
+    "path": "godot/tests/test_player_settings.gd.uid",
+    "sha256": "6831604d89cdaf2bfcf28c978ba19fd4947170c6aa82e329cb24850fba81363d"
+  },
+  {
+    "path": "MANIFEST.sha256",
+    "sha256": "cb153d334bb22b9d8464b51b2ebe4866910f6919cd17b805c599c1d5bd17fcec"
+  },
+  {
+    "path": "NEXT_SESSION_PROMPT.md",
+    "sha256": "b5b8e0942e920e74434834f73f69e2edbde80f538f58c6a9343b8b9b3feed94b"
+  },
+  {
+    "path": "docs/06-UI-UX.md",
+    "sha256": "7f8db37bf9a10137e2bfc33b3ac919f4ea73175c4be3ce6c7404294c233b1738"
+  },
+  {
+    "path": "docs/07-ASSETS.md",
+    "sha256": "734ab5ed487d3d922df590ce71b02014b7cc617c90b451beae4e1155a0958829"
+  },
+  {
+    "path": "godot/README.md",
+    "sha256": "f9e0260aeed9e99e2a3486514deb6a47143c4af9d82949ad974fb377dc6153f1"
+  },
+  {
+    "path": "godot/assets/ASSET-NOTICE.md",
+    "sha256": "2aeccb2c30fec517e3f2f42a1eba65d5258e7409a4b07e24e0cefebfa79ef88d"
+  },
+  {
+    "path": "godot/scripts/main.gd",
+    "sha256": "635890b132790a0830c7982aaf46e2a32dfd10dfcc61917cb454fc4bf8937d19"
+  },
+  {
+    "path": "godot/scripts/player/battle_view.gd",
+    "sha256": "2e993f48b4806109a2eb8de0b974de0b7e0807fbbeb82d0a06a708dd9699cfd7"
+  },
+  {
+    "path": "godot/scripts/ui/paper_button.gd",
+    "sha256": "3224b18778f4c1444176a0c4b5b407daab42f610d438b1405be8962b4b712215"
+  },
+  {
+    "path": "godot/scripts/ui/paper_ui.gd",
+    "sha256": "e5567c5278e3d639a942bffc43afa5079f131ce1b00cef02de6ecfc04997d6e1"
+  },
+  {
+    "path": "godot/scripts/ui/player_field.gd",
+    "sha256": "848b24e18f0fedb922ab1691f2fd6a14756e1011c719eda882230a486009991c"
+  },
+  {
+    "path": "godot/tests/test_player_menu.gd",
+    "sha256": "53faee161198077fa3b8f94cab8cce538cb283cb28e48f5609c7c528b1f624ff"
+  },
+  {
+    "path": "godot/tests/test_player_view.gd",
+    "sha256": "cefeb2c252cc061d3113587fb9692c26541c8f4c0391cad9b3eae96c03e7b6ba"
+  },
+  {
+    "path": "tools/verify_runtime.py",
+    "sha256": "89bf29cdbcbdf26b007f6c70cc2e3d6b14e3c330849ea34348ac77fc421eaf1f"
+  },
+  {
+    "path": "tracking/ASSET_LICENSES.csv",
+    "sha256": "2fa2ac4c32c67774f83b2af57654d5bb1eaab6c5916ddc93cdd2245fd574a514"
+  },
+  {
+    "path": "tracking/CHANGELOG.md",
+    "sha256": "3a2a90237ae681ce290a721baca24597598b1cb07b0dd390a5c8e861218e0e75"
+  },
+  {
+    "path": "tracking/DECISIONS.md",
+    "sha256": "ce242d59637dbc8761dcac4cb6c40f82beb3abb294f104aaf3c4ac93fd6d952d"
+  }
+]

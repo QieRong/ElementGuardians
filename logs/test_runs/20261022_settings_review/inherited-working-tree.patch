@@ -1,0 +1,944 @@
+diff --git a/MANIFEST.sha256 b/MANIFEST.sha256
+index 9b81bd4..d6a31b5 100644
+--- a/MANIFEST.sha256
++++ b/MANIFEST.sha256
+@@ -18,8 +18,8 @@ a93bf0304621c86b1a6ee0bb43019cdb66c8f23d23d87ae7b9983f868e33ac17  docs/02-SYSTEM
+ 17a8fb2c96fbbc1a5b52d0cd5f256cfe66ca4156b34a1154e2e76aa305256ce5  docs/03-BALANCE.md
+ 4bd99f77f1d11365f0f53b538e23653ccff08df232b9c199b57b6053cb44737d  docs/04-LEVELS.md
+ 76ad1f6f1e01aa4d999196bf70d573c08009f9c0e0399ecaa9fda9cb82902889  docs/05-ARCHITECTURE.md
+-3bd60427e4eabfad07c5669de22a05bab9ff44dec295c7b43aa32116f947cecf  docs/06-UI-UX.md
+-3265f442dc239e5c43cf883f00ec41281d886931e0b8d1a508a9932cf5850d20  docs/07-ASSETS.md
++7f8db37bf9a10137e2bfc33b3ac919f4ea73175c4be3ce6c7404294c233b1738  docs/06-UI-UX.md
++734ab5ed487d3d922df590ce71b02014b7cc617c90b451beae4e1155a0958829  docs/07-ASSETS.md
+ f9685f6883a4aae780ec64ae2229e33cbc2c3f6bf3412aa84d9f686d3ed99407  docs/08-TEST-PLAN.md
+ 4399381e971adb25e0b36a788bb498ae499d4895788c31bdccc668d8f62993aa  docs/09-ROADMAP.md
+ 2ddb76bd00b5d41e8a8a5b00c6e62427ba56eac8d5447efa20f8761895f1ed9d  docs/10-DEFINITION-OF-DONE.md
+@@ -32,7 +32,7 @@ a8ec818bfc5e3eb9721eb1ab3d4837d2afe6a9c1286e168ad4d308b5b19d4c8d  docs/13-PORTFO
+ a7ca7d807b6069e0e12ddeee7ce9fa2f7a2af2ed48e394bac6542839f6c8493f  docs/17-DESIGN-COVERAGE.md
+ 7d6ca1b0fcbe2fb57fa497a507efa1b093161a6e816d46598a5f7ea109503104  docs/18-PLAYTEST-PROTOCOL.md
+ f048b471ee5c7a4494d569209bc4a3d65d30a01575712ef0da47e0570c28d3ba  godot/.gitignore
+-c20f23ebfc5b01348a4a3e031ab216edfc1034d1a844e3f7c1086e76ba3be2b4  godot/README.md
++f9e0260aeed9e99e2a3486514deb6a47143c4af9d82949ad974fb377dc6153f1  godot/README.md
+ d05a9994fd0f112f3c151257ab0a73ae4d3aa05d4cd9bc5f04613a253f18a084  godot/configs/csv/economy_params.csv
+ ef496b1d0704b604fc5df938f8d3d0d7560a628787e8f073fee872d1a673f57b  godot/configs/csv/enemies.csv
+ 30369ae003aceafa1745d5f049ce90a496fe71602d8e48513490cfc25718e83f  godot/configs/csv/global_params.csv
+@@ -44,7 +44,7 @@ a4745c929bd9bc6e8449367a35187aef692c319b335a59d465835365a3600732  godot/scenes/b
+ e9570bfba35556074ad5e33aa3ccc846412125f0af5ed674fce3a6aba4b74252  godot/scenes/main.tscn
+ 4a757184d8b97f91e0608140502d6296e61b585c64af508961781f57a9b9a0e2  godot/scripts/battle_stub.gd
+ 339145fef6256f45b99b3ef28bc38f8afa179489f3cc9f40314d0c48a55fce11  godot/scripts/config_loader.gd
+-952de643bf80be29ad5f3b2aa6859663ff6b9550e03f5b010f4d62496da19205  godot/scripts/main.gd
++635890b132790a0830c7982aaf46e2a32dfd10dfcc61917cb454fc4bf8937d19  godot/scripts/main.gd
+ 35ba9c239120d463aa8023aafebce7eeb31b43c6685bf22a45058f7735706e4d  prompts/01-FIRST-TURN.md
+ 11ccb32f210f670ee2ab6c32f6d06b5011bb43c6db19fbffbfb4c5c57998bc9d  prompts/02-SPRINT-1-战斗闭环.md
+ fe615564e4023cb50015d095a3e4a35e3af5c9fe67001caf671f025054334e7b  prompts/03-SPRINT-2-召唤合成.md
+@@ -57,9 +57,9 @@ a0accec1fea0aa835943cba64e26cbbc9bc33fe4fe56a6fc41c1470e9ccf44e4  prompts/06-SPR
+ 20228fcfe42af3ede45e2f9665d75ac4568eae4ec2f35987b68466f46b1e1400  tools/sync_config.py
+ 294481bbf409e2aea163a2af3162c2d4742f27a80a755f8376b049b439a2da0e  tools/validate_config.py
+ 60d9776f2483f0f11ad5e18bc6bcc853d24104237f32418b53a2a19d3c197ca5  tools/verify_starter.py
+-e6506d7fb41659fea7fb23a5d7dfca06eb894570da58d0ce1330099bb544ce79  tracking/ASSET_LICENSES.csv
+-95eab02ca732fba2b2eba6184b2e7b8c67947b74acfe27a24b76560551c798c9  tracking/CHANGELOG.md
+-160b8efd39547dbbe97c23c9b704df694820d51d4984d941f80753564dce37cb  tracking/DECISIONS.md
++2fa2ac4c32c67774f83b2af57654d5bb1eaab6c5916ddc93cdd2245fd574a514  tracking/ASSET_LICENSES.csv
++3a2a90237ae681ce290a721baca24597598b1cb07b0dd390a5c8e861218e0e75  tracking/CHANGELOG.md
++ce242d59637dbc8761dcac4cb6c40f82beb3abb294f104aaf3c4ac93fd6d952d  tracking/DECISIONS.md
+ 1ea20477bbc01c687d516f4d44f4fbb2832f851b1ad0d59c3a97007a06158601  tracking/TEST_LOG_TEMPLATE.md
+ c77b5355b1cfbb0ed21dc64b4dfa8a421f52aa6c01637577a81bc2929905a142  启动说明_先看我.txt
+ 9a261d781a796ba2d5c4b4a8ba1078acb7c87bcf9380a1e05130ba16ccf2d1ff  docs/maps/D006-REVIEW.md
+@@ -78,7 +78,7 @@ f4f618041f747149f95056647cba8b245e5fd8ead2560a26e4fe9e43c7095d0e  tools/run_godo
+ 5d8d0524e73471776606cebd380da21e4c1c41e2488223f9376dc55a8de07b3d  .gitattributes
+ 572c08623dea7cc37f32be4de31713c946de099beb072248bf224201fe674d53  docs/maps/D008-REVIEW.md
+ f6d3c8ff9f220a8c76b83e4289938df70db031b85945b52994853325f36d2cbf  docs/maps/D008-map-A-approved-76.png
+-262e89d66982eb62490cdcf6334559e5b0488f4087beac7fa03eb03c9a553131  NEXT_SESSION_PROMPT.md
++b5b8e0942e920e74434834f73f69e2edbde80f538f58c6a9343b8b9b3feed94b  NEXT_SESSION_PROMPT.md
+ 014dd0c62c88813bde246376ce5f6e0dccc8454c8ad1bcaa467323453311e00a  docs/maps/D010-THREE-MAP-DIRECTION.md
+ 8cc1521ee842a41eabe3e935db48fed6e6ef9129857cd941443476275906803d  docs/visuals/2026-10-21-MOBILE-LANGUAGE.md
+ e1dc232eaab89a7b0b7823856e225a39e24022649810ad263ee5d608200f060a  godot/scripts/battle/battle_debug_canvas.gd
+@@ -98,7 +98,7 @@ d0fe22891d3277dba62b8860bcd6febda6debb5e5f4e568b7ad7c3b690313951  output/visuals
+ 93a5d46979e9b66f45a536c8de06695e726f2c389535d2095416213aa085aefe  output/visuals/sources/mobile.html
+ d03b15e7ef20d241d921be2b7b6801834de052b21550c57fc37b41bc8dbc0733  output/visuals/sources/mobile.js
+ fce8d0b91bb425ffa50ba33851266cebc417b44f04bcaa7cb4890816069bb8fa  output/visuals/sources/render-mobile.cjs
+-be572a46bface55b1f9e6c92f1c26a51e01c6ecd1cf87f6e066c24d1cc81a690  tools/verify_runtime.py
++89bf29cdbcbdf26b007f6c70cc2e3d6b14e3c330849ea34348ac77fc421eaf1f  tools/verify_runtime.py
+ c678e225d3f990b54a816307eacae00f792b84a555a909c92bb945dfd17776da  docs/third_party/menu-motion-20261022/LICENSE-GlobalTweens.txt
+ 4e2018eb1da3b91868aff497ef17fa662dabe834b1a5fa4d60056bc47341bfac  docs/third_party/menu-motion-20261022/SOURCES.json
+ c5f4b88076108eb1a0d95336e1aa7e7bb1419a3a92af96f6247d88cd3456f933  docs/third_party/menu-motion-20261022/arrow-left.upstream.svg
+@@ -106,7 +106,7 @@ c5f4b88076108eb1a0d95336e1aa7e7bb1419a3a92af96f6247d88cd3456f933  docs/third_par
+ f24b5b45c05a3acc346af8095408f6ba197ff58ea1641a4f2cb25a9702d2c0ac  docs/third_party/menu-motion-20261022/log-out.upstream.svg
+ d7c34786135922a92b6896f6c2384ceeb0346afbf6041dc79982011411409833  docs/third_party/menu-motion-20261022/play.upstream.svg
+ 9b0256f7f3856e265d5775ef3c9dd52af99648da0c42fe3a3d54953ff20db438  docs/third_party/menu-motion-20261022/upstream-selected.txt
+-5bedf7eeb1f065503604b20c865dd213b956572d51d6df25e703cadf4c02ce77  godot/assets/ASSET-NOTICE.md
++2aeccb2c30fec517e3f2f42a1eba65d5258e7409a4b07e24e0cefebfa79ef88d  godot/assets/ASSET-NOTICE.md
+ f43f4dd2e35afbd78ad489baad010b39024a9fb2688d29fd303d6b8a9c36ef68  godot/assets/backgrounds/battle_056.png
+ f85c39c7e584f4bc63aa7b603a1e57c262b9d13a618658c91582871fb4c6f825  godot/assets/backgrounds/battle_056.png.import
+ ecace35677b734cbcb4c24db22d033ee82f9b0f9c8b3253d580c57ca979ca944  godot/assets/backgrounds/menu_058.png
+@@ -121,13 +121,13 @@ d6a5cbd2f9890e624bd80b0ca02ce2f76aad87061dcc824cc36db7e279ee7e4d  godot/assets/i
+ 0775bdac2c2e91262211e431f6c4e763ee1b783f46c5657e51de737d6eb0180e  godot/assets/icons/lucide/play.svg
+ 0dc83af61bcb45c219d472f8b1e86ae999233669e4ee95040d225df6fbeb4194  godot/assets/icons/lucide/play.svg.import
+ c678e225d3f990b54a816307eacae00f792b84a555a909c92bb945dfd17776da  godot/scripts/ui/LICENSE-GlobalTweens.txt
+-fdeabc3d791090cf3d2b2ecaaed2f617351432786ea434e07b11d9536952ab8c  godot/scripts/ui/paper_button.gd
++3224b18778f4c1444176a0c4b5b407daab42f610d438b1405be8962b4b712215  godot/scripts/ui/paper_button.gd
+ bded4ccfa118cd39c9628b89eb25d74327e400d80aea7c6d23cb9f3f7b4fb272  godot/scripts/ui/paper_button.gd.uid
+-2783da3ea4549138e2a8710a692b9d2eef51a4680660776beeea1b8473c7a07c  godot/scripts/ui/paper_ui.gd
++e5567c5278e3d639a942bffc43afa5079f131ce1b00cef02de6ecfc04997d6e1  godot/scripts/ui/paper_ui.gd
+ 6b891ed97073b62f80716913b6b739143dfb8ff88c94f3f0de63d25429e0927a  godot/scripts/ui/paper_ui.gd.uid
+ f4506a86c4634447c3ec104c03964377ad7558ccd566effe2ed879c1c7bd19e8  godot/scripts/ui/sourced_menu_motion.gd
+ 7455375adb2cfca4f15513b9e8aa1e500c672e6ea9c43227feff8421fe8f2147  godot/scripts/ui/sourced_menu_motion.gd.uid
+-1f5d36ba7f3815fa3e5f03d0d8a9c4c5534e5507041c4f27ac793d6086e92c72  godot/tests/test_player_menu.gd
++53faee161198077fa3b8f94cab8cce538cb283cb28e48f5609c7c528b1f624ff  godot/tests/test_player_menu.gd
+ 2c68eb0444569060f24b3eee5eccc83bfbe013c47300eb731b1f2201c48b5a61  godot/tests/test_player_menu.gd.uid
+ fc040538ce0306dc91bebc2b917a785f649926a5c141b4db51be3a0e2ac99c1a  docs/third_party/player-feedback-20261022/ASSETS.json
+ 40a800c6ef73f5a1bed25a54ff8c1133afeb8f25dd1266fb5f349e0cae8817c7  docs/third_party/player-feedback-20261022/SOURCES.json
+@@ -159,7 +159,7 @@ c94548b03dd818cf1e782532dad4bc3127b5f6ad704a76f89bc13df8359a1f12  godot/assets/i
+ f2a1ec38b3d91bfb6abd9a838ebde05723148701f17ff7fb66b3c377a904b7bb  godot/assets/icons/lucide/x.svg
+ 2a50ca1d38e6f325ea3036692621141013c03764bb7056ebda119cd5971d94d2  godot/assets/icons/lucide/x.svg.import
+ 822695433740e4f9c5db60f9cf9029bb757d717f62c0996b74c461a75059d48e  godot/scenes/player_battle.tscn
+-2b0c4c8db17f0145da62a5b5993b22a08fe8fb1b512049adde2d1a53b84db1f1  godot/scripts/player/battle_view.gd
++2e993f48b4806109a2eb8de0b974de0b7e0807fbbeb82d0a06a708dd9699cfd7  godot/scripts/player/battle_view.gd
+ f8f5a580e0b4a1d92faa16c924835127961ccd0a6185e5b53a997bf3770f6692  godot/scripts/player/battle_view.gd.uid
+ 2582485291cb2fc266d203d821aac99841bc5269fc340bcd24800ccb35a30524  godot/scripts/player/board_controller.gd
+ 4508031a55424e67919eb182b74fddc8078fb1bc659827dd4d05ad2bc31b082c  godot/scripts/player/board_controller.gd.uid
+@@ -169,11 +169,47 @@ de0b77e8c9cb5a223e113c38aabfbb7a7cacf649b58a040f9a3c377f36b8dd61  godot/scripts/
+ 98a88fb2404b922ae666e89884b4ea6c96c613acbe910729edbe2e72c059a781  godot/scripts/ui/board_slot.gd.uid
+ ce1976273b12f8a3111bcb959e46323ec85b5bbeadf56ccf4ed69531c927fd27  godot/scripts/ui/paper_unit.gd
+ f281ae95badda2f856cb1547fe689bbfe94abbdc4a3858a86d18139663ada51e  godot/scripts/ui/paper_unit.gd.uid
+-6da6d49b8b7a29ca6c4f3d01d6cc928711f3142e8d7d72e8dfe7157b106aa076  godot/scripts/ui/player_field.gd
++848b24e18f0fedb922ab1691f2fd6a14756e1011c719eda882230a486009991c  godot/scripts/ui/player_field.gd
+ bcb9fe852a27d0899170f0f9a99a5505a7032e3fde7cd28ac3755f4a4944cd5d  godot/scripts/ui/player_field.gd.uid
+ 370c42be076aa15cc5e8cc88a44e661cd7037aa8e0d244442dd96bc4856f2302  godot/scripts/ui/sourced_battle_motion.gd
+ 607d30befa6db4e6e01421ca30c8c9934effb2613095bd456d10338801249f4e  godot/scripts/ui/sourced_battle_motion.gd.uid
+ 89ae33697fa51d22d385aaecbb43e1a87df87cfb3194d93f06fd64887a625e87  godot/tests/test_player_prep.gd
+ d2a753241d773ff424393768b32cdecb9eaaf3713b4aeafef9629d667a92155e  godot/tests/test_player_prep.gd.uid
+-19207a31c645fe9a0b0cc5c89d92202bdc1e81ba81fc5ca132738df34c7905d4  godot/tests/test_player_view.gd
++cefeb2c252cc061d3113587fb9692c26541c8f4c0391cad9b3eae96c03e7b6ba  godot/tests/test_player_view.gd
+ 53add3e3ffc2ad9c78b923591ac36633f3f8b5e6df4b5761d165c9f46123c3b3  godot/tests/test_player_view.gd.uid
++da16b46914a3d964b83adedd0b6add5011e989aaa0b6b008af1918ee3c73dde7  godot/scripts/ui/paper_enemy.gd
++f20185fae88ca05d1a9d0f6566c7af7424d4ef6d67f47a1e085d22bfc0312ebf  godot/scripts/ui/paper_enemy.gd.uid
++b4678c157e2dd60703e438fcd2bb569ba43998f151d0e601248c14a31e7c5d81  godot/scripts/ui/paper_spider.gd
++97a851a04b76c84834a5097e0b379b5fd8f3b086cb1d375a1b88b163a37d0c54  godot/scripts/ui/paper_spider.gd.uid
++bbc7e154a08ee9f1942b8bd8c139c1ee22f529bcf428fa40c4eb6409fd70cb87  godot/tests/test_enemy_presentation.gd
++5bcfb8606fced257f661c40d6f2d09b36bbe883e0994f5d46aa588712232262a  godot/tests/test_enemy_presentation.gd.uid
++1123e701cbb13485f7c9b329efc66195eb07a11f5c48aa3643ae0e57b7efed58  godot/assets/enemies/swift_006.png
++16c7ff03b99c55bdd3dc54c92e3f41a0d3272e372364b93fe00c5e7eb7726331  godot/assets/enemies/swift_006.png.import
++6dd2a3044c78068b0ef0846f2cba0e74b8965c1a51c7b70d377a73b70e30e916  godot/assets/enemies/armor_007.png
++1df545c92acca4d5a211a6b4dcfe6c386ce9317a742f22b888bb7c9043254a13  godot/assets/enemies/armor_007.png.import
++5213c4993ae37a53cd3d6770bfb45db80adf5fcc310e4a8ad4749c4324fc198e  docs/third_party/enemy-crawl-20261022/ASSETS.json
++4edcfb1c876fbf24fa7c8b5944d46cb5a20c224166bc7c9146daaa22d7578b92  docs/third_party/enemy-crawl-20261022/SOURCES.json
++99ea323b3cf27b2ff3654f842f2f503297d0eb19489ca1b8a394ee1d99cf2d44  docs/third_party/player-settings-20261022/SOURCES.json
++7f33acc9a77a61659531044525fc008edebe215bf4dcf1c789c8674ad3277db0  docs/third_party/player-settings-20261022/check.upstream.svg
++0ae27fd0f81999229e3127ac96c5b32edfea448e291d509e76212b917551d66b  docs/third_party/player-settings-20261022/settings.upstream.svg
++fb404f9c128a0579de67b399177631e5edb3502fdc247ceb30e8b15754b46071  docs/third_party/player-settings-20261022/volume-2.upstream.svg
++f382e421b7aae01172989f2b749ee87e44c0c82c16970b13a9ad5a323b613be0  docs/third_party/player-settings-20261022/volume-x.upstream.svg
++56817073aa4f0108ee172853f21df0680d48a593ae701c57b2f56034cc1296cb  godot/assets/icons/lucide/check.svg
++acb672e84fa4bd89bdb5e90bbd93f3330a3aef4488d14dfacd99f24c9991f89d  godot/assets/icons/lucide/check.svg.import
++22fd994e7a976c2d644e6b48c555576792ceaf31502fac9e34c9e24639abae24  godot/assets/icons/lucide/settings.svg
++4fb2cf4379dadfaaa9bdde88c6d37cc99644c321010c817e91def4f3fba1c60b  godot/assets/icons/lucide/settings.svg.import
++74f9f16db29b24d13ed7440bc70940ef6112398939c16e866559f5c0aad03448  godot/assets/icons/lucide/volume-2.svg
++58d6f173d98b3d80007c3cdd2b6086db2a1fc9cfcd98a8548760433eb120f2d1  godot/assets/icons/lucide/volume-2.svg.import
++8930bd03bec5e3886b003938b20a7055e9a9b2de46d721016e828c4a4040aa36  godot/assets/icons/lucide/volume-x.svg
++da748c053871e3767b99f83479a4bf4cd21675170086822675bb56b5d346f619  godot/assets/icons/lucide/volume-x.svg.import
++40bd9a29574168d327d060bad91dafd3a050595c98284f2b0dc4b9571a092e82  godot/data/ui_locales.json
++8cd43e8ccd10fe8b350b36a69810aca0d11acd157b9447f09264a5ad081dc79c  godot/scripts/ui/player_locale.gd
++029e0cb7e3fe8032237674ac9108600622370c3a0e28b3d0fda18075c80ba093  godot/scripts/ui/player_locale.gd.uid
++1ff049789106fd0f38f6a537d15ae4d0ce846fefc43e509b59c53c5073fbbb44  godot/scripts/ui/player_preferences.gd
++7f688a67b6782315a9aa340b975b968b54baacd3259e78b5096a340f3d99b88d  godot/scripts/ui/player_preferences.gd.uid
++2c8111ea131c16e133b801d99494bd6610dede95b194806b2badb9445c143af4  godot/scripts/ui/player_settings_panel.gd
++690bb6b4e4f499214b800c758b1ba2b50d9ab5f9879999a31d8710fee2d8a8ee  godot/scripts/ui/player_settings_panel.gd.uid
++cd4a562e2b55b029e95b46c8ef750bb42a83b45ceabbd51a1ace6d58ff88c4c9  godot/scripts/ui/ui_audio.gd
++e14660ce7e5f44b80999993357d3a3f4c11b03c90dab0451d4aec5df1746929b  godot/scripts/ui/ui_audio.gd.uid
++c100115b78e96f3e32696630b78b77959ad26b1114a37c781cfa451438a8e78f  godot/tests/test_player_settings.gd
++6831604d89cdaf2bfcf28c978ba19fd4947170c6aa82e329cb24850fba81363d  godot/tests/test_player_settings.gd.uid
+diff --git a/NEXT_SESSION_PROMPT.md b/NEXT_SESSION_PROMPT.md
+index 50687a9..5d7521b 100644
+--- a/NEXT_SESSION_PROMPT.md
++++ b/NEXT_SESSION_PROMPT.md
+@@ -1,3 +1,32 @@
++# 暂停交接｜2026-10-22（最新、优先）
++
++用户要求“修正完这一个暂停，给交接文本新开对话”。已修不透明设置卡片，未再扩展功能；下一轮先读logs/test_runs/20261022_player_settings/REPORT.md与现场Git。
++
++- master / HEAD 4d2d03c10a7994dbd3c6de120f8d805798e163c8；返回/蜘蛛与本次设置均未提交、未推送，不要reset或大范围暂存。
++- 右上角Lucide齿轮；弹层实体深蓝不透底。六语言/真实按钮及选格声音可调并持久化；用户明确动画始终开启，不给玩家开关。
++- 原始完整23组：21PASS/2FAIL/0SKIP；720按压测试改按绑定Tween完成观测0.9源目标后100PASS/0FAIL，540102PASS/0FAIL；数量差是540多两条声音UI断言。偏好/音频/六语言战斗排版26PASS。未把旧整套摘要重写为绿，未重跑整套；历史MANIFEST两红仍保留。
++- 真人听感/翻译/低端/完整六波/EXE未验收；原规则、XLSX/CSV、地图、九格、RNG不改；首波UPGRADE仍冻结。下一步先让用户F5体验，再按用户新指示继续，不自行开工。
++
++# 最新设置补充｜2026-10-22（优先于下方历史说明；未提交/未推送）
++
++- D012用户确认：右上角Lucide齿轮，设置仅语言/声音；动画始终开启，不允许玩家开关。弹层为完全不透明深蓝纸层，无卡片/文字淡入，保留按钮动效。
++- Godot接入六语言菜单与首波玩家页，战斗继承；新增原创UI/选格轻音与4声部固定池、独立总线，默认有声。只有语言/声音写入user://player_settings.cfg；无音乐、战斗音包，真人听感/母语审校/低端未验收。
++- 配置、core、地图、76px九格、RNG、首波强化冻结不变；召唤/取消按钮为多语言略调宽。网页预览和字体子集不动，未安装MCP/第三方插件。
++- 最新测试/红绿/截图/风险见logs/test_runs/20261022_player_settings/REPORT.md；上轮试玩反馈修改仍保留、整体未提交。MANIFEST原project.godot/main.tscn两项历史红仍在。下方减少动画开关和Godot仅中文均为历史，不能恢复。
++
++# 最新补充｜2026-10-22 首次试玩反馈（本轮修改未提交、未推送）
++
++以下内容优先于下方历史交接。用户要求返回改为左上角波次旁的箭头，并希望怪物区分外形、有蜘蛛式爬行；用户这次未观察到漏怪，不等于漏怪逻辑不存在或整局验收通过。
++
++- 玩家返回改为HUD左上角Lucide箭头，88×88点击区、工具提示“返回主菜单”；波次避让，移除底部重复返回。现成GlobalTweens悬停/按下/焦点/减少动画保留。
++- 005普通蛛机用Polygon2D纹理网格和AnimationPlayer属性轨道做首版足部交替，按真实行进距离采样，随道路转向，血条独立保持正向；顶部路段血条置于下方避开阶段文字。不是逐腿骨骼或新方向图集，实际精细度仍待用户验收。
++- 006游魂灯灵/007缝合甲兽原图已映射swift/armor，仅显示层变化；首波仍只有原配置6只普通怪。未采用008 Boss候选。无数值、路线、九格或玩法变化，无新插件。
++- 来源/适配：docs/third_party/enemy-crawl-20261022；原始图片像素不改。新测试test_enemy_presentation.gd纳入verify_runtime.py。最终计数/红绿日志以logs/test_runs/20261022_playtest_feedback/REPORT.md及final-suite/summary.json为准，历史结果不冒充重跑。
++- 用户询问IvanMurzak Godot-MCP；核对作者要求.NET版Godot与.NET8 SDK，当前标准版不能直接编译；未安装它。现有Godot工具试连Transport closed，未声称已连通。Blender暂不用于本轮2D贴图网格动画。
++- 当前分支master；本轮没有提交/推送授权，不沿用上轮push许可。先现场检查Git，保留新变更，后续仍先真人确认当前切片，再接强化。原MANIFEST两项历史红、完整六波玩家流程/性能/EXE待验收边界不变。
++
++---
++
+ # 新对话交接｜2026-10-22 玩家布阵与首波收口
+ 
+ 请始终中文。在D:/桌面/ElementGuardians现场核对git status/log/branch及远端master；先读AGENTS、README、docs/00-START-HERE、09-ROADMAP、tracking/DECISIONS与最新logs/test_runs/20261022_player_prep/REPORT.md。不要把历史计数冒充当前重跑。
+diff --git a/docs/06-UI-UX.md b/docs/06-UI-UX.md
+index df25547..64ff266 100644
+--- a/docs/06-UI-UX.md
++++ b/docs/06-UI-UX.md
+@@ -12,19 +12,36 @@
+ 
+ ## 2026-10-22 菜单最小接入（已获本轮批准）
+ 
+-本节记录先行菜单切片；随后已接入D011真实布阵与首波，当前入口为“开始布阵”。058/056原背景按比例cover显示，按钮与标题层原生绘制。菜单保留配置检查、退出和减少动画。Godot仍只提供中文；六语言HTML设计预览保留，未将预览子集当完整字库。
++本节记录先行菜单切片；随后已接入D011真实布阵与首波，当前入口为“开始布阵”。058/056原背景按比例cover显示，按钮与标题层原生绘制。先行菜单曾提供减少动画、仅中文；这些设置已由下文最新设置规格取代。六语言HTML设计预览保留，未将预览子集当完整字库。
+ 
+-状态及反馈：功能图标仅使用Lucide，必须有文字标签；◈等游戏符号只作无交互装饰。动效必须先联网查找适配的现成实现并记录来源，不以临时发挥替代。当前选用GlobalTweens固定提交22d9679185a700513c44136bfc79578d4fc20a45的MIT实现：悬停120ms放大到1.1（BACK/OUT）；按下80ms收缩到0.9（SINE/IN_OUT），松开或取消恢复（点击区域不缩放）；键盘焦点有冰青内框；入场300ms淡入（SINE/IN_OUT）但不拦截输入；进入/返回立即导航，重复请求合并。移出释放取消操作；新反馈终止旧Tween；场景销毁清理Tween。减少动画时取消位移及入场渐变，保持即时颜色/边框；选择只在本次运行内跨页保留，不写系统设置。
++状态及反馈：功能图标仅使用Lucide，默认有文字标签；用户本轮明确要求左上角返回使用单独箭头，该控件以“返回主菜单”工具提示补充含义；◈等游戏符号只作无交互装饰。动效必须先联网查找适配的现成实现并记录来源，不以临时发挥替代。当前选用GlobalTweens固定提交22d9679185a700513c44136bfc79578d4fc20a45的MIT实现：悬停120ms放大到1.1（BACK/OUT）；按下80ms收缩到0.9（SINE/IN_OUT），松开或取消恢复（点击区域不缩放）；键盘焦点有冰青内框；入场300ms淡入（SINE/IN_OUT）但不拦截输入；进入/返回立即导航，重复请求合并。移出释放取消操作；新反馈终止旧Tween；场景销毁清理Tween。减少动画时取消位移及入场渐变，保持即时颜色/边框；选择只在本次运行内跨页保留，不写系统设置。
+ 
+ 自动输入验收覆盖悬停进度、按下、固定点击区域、取消、快速重复、Tab/Enter、配置读取、往返及减少动画。720×1280与540×960离屏视口不能替代物理鼠标/真人体验。来源、许可、固定提交及适配差异见 `docs/third_party/menu-motion-20261022/SOURCES.json`（仓库根目录）；只摘取函数，不装插件或改autoload。
+ 
++## 2026-10-22 设置收口（以本节覆盖先行动画开关方案）
++
++- 右上角为独立Lucide settings齿轮，88×88设计像素点击区、语言化工具提示；玩家确认动画始终开启，不允许开关。内部诊断的减少动画路径保留，不能重新暴露为玩家设置。
++- 弹层延续深蓝纸层、纸金描边、锈红选中态和冰青焦点框；卡片底色完全不透明，卡片/文字不淡入，不透出菜单文字。按钮继续复用已审阅GlobalTweens悬停/按压，输入区域不随视觉缩放。
++- 六语言沿用预览范围：简体中文、繁体中文、English、한국어、日本語、Русский；菜单和当前首波玩家页均接入，战斗继承菜单所选语言。UI文案位于godot/data/ui_locales.json，与CSV玩法真值独立；未声称母语审校。
++- 声音默认开启，当前实际内容是原创65ms轻量按钮/选格音，不含背景音乐和战斗音素材。关闭时停止现有语音并静音专用UI总线；开启后可听确认音。4个固定AudioStreamPlayer复用，满池丢弃多余提示，音频不调用玩法或随机数。
++- 语言/声音立即生效并写入user://player_settings.cfg，仅这两项；损坏/非法偏好回到中文/开启。弹层拦截底部操作、禁用背景按钮、Tab环留在弹层；Esc、关闭或完成返回齿轮焦点，不实现尚未授权的战斗暂停。
++- 多语言按钮按实际字体宽度适配至最小24设计像素；召唤/取消区微调为216/184宽，仍保持间隔与原棋盘/路线。SystemFont采用本机字体回退，没有新打包字体。
++- 验证范围与原始证据见logs/test_runs/20261022_player_settings/REPORT.md。720×1280/540×960离屏输入及存档/PCM/总线检查不等于真人视觉、听感或低端性能验收。素材来源见docs/third_party/player-settings-20261022/SOURCES.json；未安装插件。
++
+ ## D011｜真实布阵与首波切片（2026-10-22）
+ 
+-目的：玩家可以理解并实际操作原九格，不通过内部诊断画布游玩。PREP点击空格后召唤；已选守卫再点另一守卫尝试合成，取消按钮或Esc清空选择。召唤后新守卫保持选中。COMBAT禁用布阵；返回菜单位于底部，Esc不承担尚未实现的暂停功能。首波结束进入UPGRADE，明确提示“强化待接入”并只提供重新布阵或返回，不跳到第二波。
++目的：玩家可以理解并实际操作原九格，不通过内部诊断画布游玩。PREP点击空格后召唤；已选守卫再点另一守卫尝试合成，取消按钮或Esc清空选择。召唤后新守卫保持选中。COMBAT禁用布阵；返回菜单现位于左上角波次旁，Esc不承担尚未实现的暂停功能。首波结束进入UPGRADE，明确提示“强化待接入”并只提供重新布阵或返回，不跳到第二波。
+ 
+ 反馈绑定真实事件：选格使用边框及文字；召唤采用上游spawn_in（300ms BACK/OUT缩放并淡入）；合成/攻击采用pop_scale（150ms放大至1.3再150ms还原）；实际伤害触发color_flash，实际攻击端点绘制300ms渐隐光束；金币/HP先更新真实值再闪色；阶段/错误用非模态短提示，2秒后300ms渐隐。来源仍为同一固定GlobalTweens MIT提交，摘取与适配见 `docs/third_party/player-feedback-20261022/SOURCES.json`（仓库根目录）。不改玩法时间、随机序列或命中区域；重复触发替换同通道Tween，重开清除旧敌人与攻击线，减少动画跳过单位缩放与资源闪色，短提示即时隐藏，保留状态和文字；实体/光束退场仍采用300ms淡出。
+ 
+-沿用原76px格及D006路线，不实施待批准的手机棋盘放大。Godot短提示放在HUD下方的空白区（逻辑y276–392），不遮九格与路线；返回菜单移到底部，避免遮入口。此为当前玩家页针对真实操作的布局落实，HTML预览未改。强化选择、完整六波/胜败结算和暂停尚未接通；防守成功只代表首波。具体自动覆盖及红绿记录见最新报告。
++沿用原76px格及D006路线，不实施待批准的手机棋盘放大。Godot短提示放在HUD下方的空白区（逻辑y276–392），不遮九格与路线；本次试玩反馈后返回改至左上角HUD内，避开入口。此为当前玩家页针对真实操作的布局落实，HTML预览未改。强化选择、完整六波/胜败结算和暂停尚未接通；防守成功只代表首波。具体自动覆盖及红绿记录见最新报告。
++
++## 2026-10-22 首次试玩反馈修正
++
++- 返回入口改为HUD左上角88×88的Lucide箭头，波次栏向右避让；删除底部重复返回按钮。原悬停、按下、焦点、固定点击矩形及减少动画保留。底部仍只有召唤、取消、开波和首波范围说明。
++- 蛛机以Godot官方纸片动画/Polygon2D方法实现首版足部交替，步态读取真实行进距离，转弯只旋转立绘，血条保持正向；顶部路段血条置于怪物下方，避开波次状态文字。减少动画固定步态，不改变真实行进和受伤。
++- 原图005/006/007分别映射普通/迅捷/重甲；首波仍仅6只普通怪。单张图的网格变形不等于逐腿骨骼或完整多方向动画；Boss候选未采用。来源与适配见 `docs/third_party/enemy-crawl-20261022/SOURCES.json`。
++- 本轮反馈不改原地图、九格、塔/敌人数值或波次；自动InputEvent/离屏截图不能代替真人验收。
+ 
+ ## 竖屏线框目标 720×1280
+ ```
+diff --git a/docs/07-ASSETS.md b/docs/07-ASSETS.md
+index 04c299f..3d47b29 100644
+--- a/docs/07-ASSETS.md
++++ b/docs/07-ASSETS.md
+@@ -1,6 +1,6 @@
+ # 07｜素材制作清单与授权规范
+ 
+-正式视觉方向为纸雕秘仪风（D005 / D009），统一规范见 `06-UI-UX.md`。2026-10-22已接入058/056背景、001–003守卫与005普通怪，共6张原包PNG；原图字节不改，只通过显示区域裁切。其余52张尚未接入。HUD、纸层按钮与原地图道路原生绘制；功能图标仅Lucide，共10项，来源/许可/哈希均登记。最新角色裁切与图标记录位于 `docs/third_party/player-feedback-20261022/ASSETS.json`（仓库根目录）。
++正式视觉方向为纸雕秘仪风（D005 / D009），统一规范见 `06-UI-UX.md`。先行首波切片已接入058/056背景、001–003守卫与005普通怪，共6张原包PNG；原图字节不改，只通过显示区域裁切。本轮再接入006游魂灯灵和007缝合甲兽，分别映射swift/armor；共8张原包PNG，其余50张尚未接入。005增加只读纹理网格步态，原图像素未改；新登记见 `docs/third_party/enemy-crawl-20261022/ASSETS.json`。HUD、纸层按钮与原地图道路原生绘制；功能图标仅Lucide，共10项，来源/许可/哈希均登记。最新角色裁切与图标记录位于 `docs/third_party/player-feedback-20261022/ASSETS.json`（仓库根目录）。
+ 
+ ## P0 功能占位清单
+ | Asset ID | 用途 | 形式 | 需区分的元素 | 状态 |
+@@ -12,8 +12,8 @@
+ | TWR-ICE | 冰塔 | 原包002立绘 | 冰霜造型、文字等级 | 首波已接入 |
+ | TWR-LIGHT | 雷塔 | 原包003立绘 | 雷电造型、文字等级 | 首波已接入 |
+ | ENM-GRUNT | 普通怪 | 原包005立绘 | 原造型、真实HP条 | 首波已接入 |
+-| ENM-SWIFT | 迅捷怪 | 原包对应资产待接 | 待完整战场切片 | 待开发 |
+-| ENM-ARMOR | 重甲怪 | 原包对应资产待接 | 待完整战场切片 | 待开发 |
++| ENM-SWIFT | 迅捷怪 | 原包006游魂灯灵 | 区别于蛛机的冰青悬浮形态 | 显示映射已接入，首波无此类型 |
++| ENM-ARMOR | 重甲怪 | 原包007缝合甲兽 | 厚重黑蓝甲壳 | 显示映射已接入，首波无此类型 |
+ | ENM-BOSS | Boss | 具体资产待确认 | 不默认采用备选异兽 | 待开发 |
+ | FX-HIT | 真实攻击/受击 | 实际端点渐隐光束与上游闪色 | 对应元素 | 首波已接入 |
+ | AUDIO-HIT | 轻量命中音 | 自制/合规 CC0 | 不刺耳 | P1 |
+@@ -40,9 +40,9 @@
+ | 用途 | 包内资产（编号 名称 尺寸） | 状态 | 接入说明 |
+ |---|---|---|---|
+ | 主菜单背景 | 057 主菜单_横屏 1672×941 / 058 主菜单_竖屏裁剪 529×941 | 058已接入菜单；057未接入 | 720×1280 下用竖屏裁剪，等比缩放不拉伸 |
+-| 战斗背景 | 055 战斗场景_横屏 1672×941 / 056 战斗场景_竖屏裁剪 529×941 | 056仅接入占位说明页；055未接入 | 当前不绘制路线/棋盘，不代表玩家战场接入；后续背景不得暗示假路线 |
+-| 火/冰/雷守卫 | 001 火焰守卫 / 002 冰霜守卫 / 003 雷霆守卫（640×640） | 在包内，未接入 | 三张 640 图缩放到格子内；Lv2/Lv3 用等级角标，不新增贴图 |
+-| 普通/迅捷/重甲 | 005 窥视蛛机 / 006 游魂灯灵 / 007 缝合甲兽（640×640） | 在包内，未接入 | 名称与 CSV 的 grunt/swift/armor 对应关系需在 `ASSET_LICENSES.csv` 固定 |
++| 战斗背景 | 055 战斗场景_横屏 1672×941 / 056 战斗场景_竖屏裁剪 529×941 | 056已接入玩家首波；055未接入 | 原生道路/棋盘独立绘制，背景不暗示假路线 |
++| 火/冰/雷守卫 | 001 火焰守卫 / 002 冰霜守卫 / 003 雷霆守卫（640×640） | 001–003已接入 | 三张 640 图缩放到格子内；Lv2/Lv3 用等级角标，不新增贴图 |
++| 普通/迅捷/重甲 | 005 窥视蛛机 / 006 游魂灯灵 / 007 缝合甲兽（640×640） | 005–007显示映射已接入 | 首波仍只有grunt；名称与 CSV 的 grunt/swift/armor 对应关系已在 `ASSET_LICENSES.csv` 固定 |
+ | Boss | 008 腐化祭坛_Boss候选（640×640） | 在包内，未接入 | 标注为“候选”，采用即写入决策记录 |
+ | 棋盘格 | 025 普通石板 / 030 选中高亮 / 031 可合成 / 032 锁定（430×430） | 在包内，未接入 | 9 格统一底图 + 状态叠加；026–029 为元素地块备选，P0 不用 |
+ | 按钮 | 017 开始 / 021 召唤 / 022 合成 / 023 设置 / 024 关闭 / 020 重新开始 | 在包内，未接入 | 按钮图不含文字时由 UI 文本叠加；禁用态用调色+文案 |
+@@ -62,7 +62,7 @@
+ 5. 备选资产（004 虚空守卫、043 自然头像、044 虚空头像、008 Boss 候选、045–048 异兽头像、012 虚空元素、015 召唤图标、026–029 元素地块）**不计入 P0**；采用任一项都要先改规则文档与配置，不得只换图。
+ 
+ ## 许可与来源登记
+-- `tracking/ASSET_LICENSES.csv` 已登记本轮实际使用的058/056原图路径与哈希；其余56项尚未登记。原包未提供可独立核实的生成日期、prompt、模型或公开再分发授权；本轮注明来源文件时间而未伪造生成信息，独立相似性检索未执行。逐项接入时必须补齐可获得的信息：包版本 v2.0、生成方式（AI 生成）、生成/整理日期、原始说明文件路径、使用范围（面试 Demo/非商用）、是否可再分发、与竞品的相似性自查结论。
++- `tracking/ASSET_LICENSES.csv` 当前已登记8张原图路径与哈希（058/056、001–003、005–007）；其余50项尚未登记。原包未提供可独立核实的生成日期、prompt、模型或公开再分发授权；本轮注明来源文件时间而未伪造生成信息，独立相似性检索未执行。逐项接入时必须补齐可获得的信息：包版本 v2.0、生成方式（AI 生成）、生成/整理日期、原始说明文件路径、使用范围（面试 Demo/非商用）、是否可再分发、与竞品的相似性自查结论。
+ - README 已声明“生成式素材不等于零版权风险”；文档、作品集与面试讲述中不得写“无版权风险/完全原创无参考”。公开发行或商用前需独立做相似性检索与权利审查。
+ - 禁止把竞品截图、角色、UI 布局、数值表直接作为素材或改色件（见 `12-ORIGINALITY.md`）。
+ 
+diff --git a/godot/README.md b/godot/README.md
+index b9b342f..84681b3 100644
+--- a/godot/README.md
++++ b/godot/README.md
+@@ -1,6 +1,6 @@
+ # Godot 工程与战斗诊断（不是已完成游戏）
+ 
+-使用 **Godot 4.4.1** 导入 `project.godot`。正常入口为纸雕菜单→真实玩家PREP→首波COMBAT→“强化待接入”UPGRADE边界。0塔/60金币/10HP，点击空格后20金币召唤；先选源再点目标合成，取消按钮或Esc取消选择。召唤后新单位保持选中。COMBAT禁布阵，返回按钮退出本次试玩。不会自动跳过强化进入第二波。菜单保留6份CSV检查、键盘焦点与减少动画（运行内记忆）。Godot目前仅中文，六语言HTML预览未被删除。固定三塔六波诊断不接入菜单。
++使用 **Godot 4.4.1** 导入 `project.godot`。正常入口为纸雕菜单→真实玩家PREP→首波COMBAT→“强化待接入”UPGRADE边界。返回箭头位于左上角波次旁，悬停显示“返回主菜单”；底部不再重复返回。0塔/60金币/10HP，点击空格后20金币召唤；先选源再点目标合成，取消按钮或Esc取消选择。召唤后新单位保持选中。COMBAT禁布阵，返回按钮退出本次试玩。不会自动跳过强化进入第二波。菜单保留6份CSV检查和键盘焦点。右上角为Lucide齿轮；设置弹层采用完全不透明的深蓝纸层，提供简/繁中文、英语、韩语、日语、俄语和真实UI声音开关，立即生效并写入user://player_settings.cfg；战斗继承语言与声音。动画始终开启，不提供玩家开关。六语言HTML预览保留，翻译未做母语审校。固定三塔六波诊断不接入菜单。普通蛛机已有跟随真实路程的足部交替及转向；迅捷/重甲已使用006/007不同贴图，但首波配置仍只有普通怪。该步态为单张立绘网格变形首版，不是完整逐腿骨骼。内部测试仍可调用减少动画路径，正常玩家没有此选项。
+ 数据来源：`../configs/ElementGuardians_策划数值配置.xlsx`，运行时 `configs/csv/*.csv` 是 `python ../tools/sync_config.py` 同步的副本，不要单独手工修改。
+ 
+ 先阅读仓库根目录 `AGENTS.md` 与 `prompts/01-FIRST-TURN.md`。正式开局仍为0塔/60金币/10HP；诊断夹具采用D008固定火5/冰4/雷3、均Lv1，只有自动测试暂时跳过尚未实现的强化。
+@@ -49,6 +49,6 @@ python tools/run_godot_check.py --godot-exe E:/godot/Godot_v4.4.1-stable_win64_c
+ python tools/run_godot_check.py --godot-exe E:/godot/Godot_v4.4.1-stable_win64_console.exe --log logs/test_runs/新目录/menu.log --require 'MENU SUMMARY: PASS=\d+ FAIL=0 SKIP=1 COMPLETE' -- --headless --path godot --script res://tests/test_player_menu.gd
+ ```
+ 
+-渲染测试去掉headless，追加 `-- --render-scale=0.75 --capture-dir=<绝对新目录>`，最终摘要改为SKIP=0。菜单按下与悬停由真实InputEvent经过Viewport投递；固定点击矩形，只有纸面按上游方案缩放。中途减少动画会终止入场渐变，按钮即刻改变颜色和焦点边框；场景销毁自动取消绑定Tween，连续进入/返回只接受一次导航。
++渲染测试去掉headless，追加 `-- --render-scale=0.75 --capture-dir=<绝对新目录>`，最终摘要改为SKIP=0。菜单按下与悬停由真实InputEvent经过Viewport投递；固定点击矩形，只有纸面按上游方案缩放。设置弹层不淡入卡片及文字，按钮仍保留现成悬停/按压动效；场景销毁自动取消绑定Tween，连续进入/返回只接受一次导航。
+ 
+ 资产映射见tracking/ASSET_LICENSES.csv（仓库根目录）。使用SystemFont读取本机字体，没有打包系统商业字库；清洁环境中文显示未验收。完整报告见logs/test_runs/20261022_menu_ui/REPORT.md（仓库根目录）。
+diff --git a/godot/assets/ASSET-NOTICE.md b/godot/assets/ASSET-NOTICE.md
+index 2b224df..7254759 100644
+--- a/godot/assets/ASSET-NOTICE.md
++++ b/godot/assets/ASSET-NOTICE.md
+@@ -5,3 +5,7 @@ Backgrounds 058/056, guardians 001/002/003 and grunt 005 are copied unchanged fr
+ Buttons/panels are native Godot geometry recreating the approved menu direction. The UI uses a SystemFont to access installed Chinese fonts at runtime; no proprietary system font is copied or distributed. Clean-system font appearance and full game font coverage remain unverified.
+ 
+ Functional SVG icons are Lucide, pinned at 20aef31db93fe4d9f398dbb15b120d99c48eef95. See icons/lucide/LICENSE.txt for ISC and Feather-derived MIT notices. Only currentColor is replaced with white for Godot tinting; SVG geometry is unchanged. Original files, hashes and URLs are in docs/third_party/menu-motion-20261022 (repository root). The decorative diamond text is explicitly allowed by the user and has no action or status meaning.
++
++Swift 006 and armor 007 were copied byte-for-byte from the same repository pack on 2026-10-22; mapping and hashes: docs/third_party/enemy-crawl-20261022/ASSETS.json. Grunt 005 now uses a native Godot textured mesh; no source image pixels were changed. Native cutout/Animation track references and project-authored gait weights are recorded in SOURCES.json in that directory. No external artwork, addon or rig asset was downloaded. The first-wave roster and all enemy statistics are unchanged; candidate 008 is not adopted.
++
++设置新增Lucide settings、volume-2、volume-x、check四项，沿用固定提交及既有许可，正文/哈希见docs/third_party/player-settings-20261022/SOURCES.json。UI音为项目原创PCM轻音，无外部音频素材。
+diff --git a/godot/scripts/main.gd b/godot/scripts/main.gd
+index ddbcae0..56cfa31 100644
+--- a/godot/scripts/main.gd
++++ b/godot/scripts/main.gd
+@@ -2,19 +2,27 @@
+ extends Control
+ 
+ const Paper = preload("res://scripts/ui/paper_ui.gd")
++const Preferences = preload("res://scripts/ui/player_preferences.gd")
++const Locale = preload("res://scripts/ui/player_locale.gd")
++const SettingsPanel = preload("res://scripts/ui/player_settings_panel.gd")
+ var _status: Label
+-var _motion_button: Button
++var _settings_button: Button
++var _settings: Control
++var _preferences: RefCounted
+ var _leaving: bool = false
+ 
+ func _ready() -> void:
++	# Normal player entry always enables animations. No player setting is stored.
++	get_tree().set_meta("eg_reduce_motion", false)
++	_preferences = Preferences.current(get_tree())
+ 	Paper.apply_theme(self)
+ 	Paper.background(self, "res://assets/backgrounds/menu_058.png")
+ 	Paper.label(self, "PreviewBadge", "开发版 · 单波试玩", Rect2(24, 22, 340, 44), 22)
+-	_motion_button = Paper.button(self, "MotionButton", _motion_caption(), Rect2(440, 16, 256, 64), _toggle_motion, false, 24)
+-	_motion_button.tooltip_text = "减少动画时保留即时颜色与焦点反馈；本次运行内记住选择。"
++	_settings_button = Paper.button(self, "SettingsButton", "", Rect2(608, 16, 88, 88), _open_settings, false, 36, "settings")
+ 	Paper.label(self, "Emblem", "◈", Rect2(300, 86, 120, 72), 64)
+ 	var brand := Paper.panel(self, "Brand", Rect2(58, 170, 604, 174))
+ 	var titles := VBoxContainer.new()
++	titles.name = "Titles"
+ 	brand.add_child(titles)
+ 	titles.add_theme_constant_override("separation", 2)
+ 	var title := Paper.label(titles, "Title", "元 素 守 卫", Rect2(), 64)
+@@ -31,36 +39,53 @@ func _ready() -> void:
+ 	_status = Paper.label(self, "Status", "召唤、合成与首波可操作 · 强化待接入", Rect2(42, 1150, 636, 66), 24)
+ 	_status.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
+ 	Paper.label(self, "Credit", "单机原型 · AI 协作制作", Rect2(48, 1222, 624, 40), 22)
+-	var order: Array[Button] = [enter, get_node("Actions/QuitButton"), get_node("Actions/VerifyButton"), _motion_button]
++	var order: Array[Button] = [enter, get_node("Actions/QuitButton"), get_node("Actions/VerifyButton"), _settings_button]
+ 	for index in range(order.size()):
+ 		order[index].focus_next = order[index].get_path_to(order[(index + 1) % order.size()])
+ 		order[index].focus_previous = order[index].get_path_to(order[(index - 1 + order.size()) % order.size()])
+ 	enter.grab_focus()
++	_preferences.changed.connect(_refresh_language)
++	_refresh_language()
+ 	Paper.entrance(self)
+ 
+-func _motion_caption() -> String:
+-	return "减少动画：开" if bool(get_tree().get_meta("eg_reduce_motion", false)) else "减少动画：关"
++func _refresh_language() -> void:
++	Paper.refresh_text(self)
++	_settings_button.text = ""
++	_settings_button.tooltip_text = Locale.text(self, "语言与声音")
++	_settings_button.queue_redraw()
++	get_node("Brand/Titles/Title").add_theme_font_size_override("font_size", 64 if _preferences.language.begins_with("zh") else 38)
++	get_node("Credit").add_theme_font_size_override("font_size", 22 if _preferences.language.begins_with("zh") else 19)
+ 
+-func _toggle_motion() -> void:
+-	Paper.set_motion(self, not bool(get_tree().get_meta("eg_reduce_motion", false)))
+-	_motion_button.text = _motion_caption()
+-	_motion_button.queue_redraw()
++func _open_settings() -> void:
++	if is_instance_valid(_settings) or _leaving:
++		return
++	for button in [_settings_button, get_node("Actions/EnterButton"), get_node("Actions/QuitButton"), get_node("Actions/VerifyButton")]:
++		button.disabled = true
++	_settings = SettingsPanel.new()
++	_settings.closed.connect(_close_settings)
++	add_child(_settings)
++
++func _close_settings() -> void:
++	_settings = null
++	for button in [_settings_button, get_node("Actions/EnterButton"), get_node("Actions/QuitButton"), get_node("Actions/VerifyButton")]:
++		button.disabled = false
++	_settings_button.grab_focus()
+ 
+ func _on_verify_pressed() -> void:
+ 	var result := ConfigLoader.verify_all_tables()
+ 	if bool(result["ok"]):
+-		_status.text = "CSV读取：PASS（6张表）\n完整数值校验请运行 Python 检查"
++		_status.text = Locale.text(self, "CSV读取：PASS（6张表）\n完整数值校验请运行 Python 检查")
+ 	else:
+-		_status.text = "CSV读取：FAIL\n" + String(result["error"])
++		_status.text = Locale.text(self, "CSV读取：FAIL\n") + String(result["error"])
+ 
+ func _on_enter_pressed() -> void:
+-	if _leaving:
++	if _leaving or is_instance_valid(_settings):
+ 		return
+ 	_leaving = true
+ 	var error := get_tree().change_scene_to_file("res://scenes/player_battle.tscn")
+ 	if error != OK:
+ 		_leaving = false
+-		_status.text = "页面载入失败，请重试（%d）" % error
++		_status.text = Locale.text(self, "页面载入失败，请重试（%d）") % error
+ 
+ func _on_quit_pressed() -> void:
+ 	get_tree().quit()
+diff --git a/godot/scripts/player/battle_view.gd b/godot/scripts/player/battle_view.gd
+index c2805d8..a5bd0ed 100644
+--- a/godot/scripts/player/battle_view.gd
++++ b/godot/scripts/player/battle_view.gd
+@@ -5,6 +5,7 @@ const Player = preload("res://scripts/player/player_session.gd")
+ const Paper = preload("res://scripts/ui/paper_ui.gd")
+ const Field = preload("res://scripts/ui/player_field.gd")
+ const Fx = preload("res://scripts/ui/sourced_battle_motion.gd")
++const Locale = preload("res://scripts/ui/player_locale.gd")
+ var seed_value: int = -1
+ var session: RefCounted
+ var attack_feedback_count: int = 0
+@@ -52,20 +53,22 @@ func _build() -> void:
+ 	add_child(_field)
+ 	_field.size = Vector2(720, 1280)
+ 	Paper.panel(self, "Hud", Rect2(0, 0, 720, 116))
+-	for item in [["波次", 0], ["基地", 240], ["金币", 480]]:
++	var back := Paper.button(self, "BackButton", "", Rect2(16, 14, 88, 88), _go_back, false, 40, "arrow-left")
++	back.tooltip_text = _t("返回主菜单")
++	Paper.label(self, "Label0", "波次", Rect2(104, 16, 136, 30), 24)
++	for item in [["基地", 240], ["金币", 480]]:
+ 		Paper.label(self, "Label%d" % int(item[1]), item[0], Rect2(int(item[1]), 16, 240, 30), 24)
+-	_wave = Paper.label(self, "Wave", "", Rect2(0, 48, 240, 52), 32)
++	_wave = Paper.label(self, "Wave", "", Rect2(104, 48, 136, 52), 32)
+ 	_hp = Paper.label(self, "HP", "", Rect2(240, 48, 240, 52), 32)
+ 	_gold = Paper.label(self, "Gold", "", Rect2(480, 48, 240, 52), 32)
+-	_phase = Paper.label(self, "Phase", "准备中", Rect2(214, 122, 292, 40), 26)
+-	Paper.label(self, "EntryLabel", "敌人入口", Rect2(32, 126, 160, 36), 24)
++	_phase = Paper.label(self, "Phase", "准备中", Rect2(214, 120, 292, 34), 26)
++	Paper.label(self, "EntryLabel", "敌人入口", Rect2(32, 122, 160, 32), 24)
+ 	Paper.label(self, "BaseLabel", "守卫基地", Rect2(470, 1034, 210, 40), 24)
+ 	Paper.panel(self, "ActionPanel", Rect2(0, 1080, 720, 200))
+-	Paper.button(self, "BackButton", "返回", Rect2(24, 1200, 154, 64), _go_back, false, 24, "arrow-left")
+-	_summon = Paper.button(self, "SummonButton", "召唤 20", Rect2(24, 1100, 200, 80), _summon_pressed, true, 26, "plus")
+-	_cancel = Paper.button(self, "CancelButton", "取消选择", Rect2(240, 1100, 200, 80), _cancel_pressed, false, 26)
++	_summon = Paper.button(self, "SummonButton", "召唤 20", Rect2(24, 1100, 216, 80), _summon_pressed, true, 26, "plus")
++	_cancel = Paper.button(self, "CancelButton", "取消选择", Rect2(256, 1100, 184, 80), _cancel_pressed, false, 26)
+ 	_start = Paper.button(self, "StartButton", "开始第1波", Rect2(456, 1100, 240, 80), _start_pressed, true, 26, "play")
+-	Paper.label(self, "StageNotice", "单波试玩 · 强化尚未开放", Rect2(198, 1216, 498, 44), 22)
++	Paper.label(self, "StageNotice", "单波试玩 · 强化尚未开放", Rect2(24, 1216, 672, 44), 22)
+ 	# Use the gap between the two route bands; feedback must not cover the board.
+ 	_toast = Paper.panel(self, "Toast", Rect2(120, 276, 480, 116))
+ 	var message := Label.new()
+@@ -104,7 +107,7 @@ func refresh() -> void:
+ 	_gold.text = str(core.gold)
+ 	_hp.text = "%d / 10" % core.base_hp
+ 	_wave.text = "%d / 6" % (core.wave_index - 1 if core.state == "UPGRADE" else core.wave_index)
+-	_phase.text = {"PREP":"准备中", "COMBAT":"战斗中", "UPGRADE":"波次完成", "RESULT":"防守结束"}[core.state]
++	_phase.text = _t({"PREP":"准备中", "COMBAT":"战斗中", "UPGRADE":"波次完成", "RESULT":"防守结束"}[core.state])
+ 	if core.gold != _previous_gold:
+ 		Fx.flash(_gold, Color("#e58a4d") if core.gold < _previous_gold else Color("#8bcad1"), _reduced())
+ 	if core.base_hp != _previous_hp:
+@@ -113,23 +116,23 @@ func refresh() -> void:
+ 	_previous_hp = core.base_hp
+ 	var valid: Dictionary = session.board.validate_place(session.selected_slot)
+ 	_summon.disabled = not bool(valid["ok"]) or core.gold < int(core.config.economy["summon_cost"])
+-	_summon.tooltip_text = "金币不足" if core.gold < 20 else ("先选择空格" if session.selected_slot < 0 else "在所选空格召唤")
++	_summon.tooltip_text = _t("金币不足" if core.gold < 20 else ("先选择空格" if session.selected_slot < 0 else "在所选空格召唤"))
+ 	_cancel.disabled = core.state != "PREP" or session.selected_slot < 0
+ 	_start.disabled = core.state != "PREP"
+ 	_field.refresh()
+ 	_stage.visible = core.state == "UPGRADE" or core.state == "RESULT"
+ 	if core.state == "RESULT":
+-		_stage.get_node("Content/Title").text = "基地失守" if not core.victory else "防守成功"
+-		_stage.get_node("Content/Description").text = "击杀 %d · 漏怪 %d\n召唤 %d · 合成 %d\n用时 %.1f秒 · seed %d" % [core.stats["kills"], core.stats["leaks"], core.stats["summons"], core.stats["merges"], core.total_time, core.seed_value]
++		_stage.get_node("Content/Title").text = _t("基地失守" if not core.victory else "防守成功")
++		_stage.get_node("Content/Description").text = _t("击杀 %d · 漏怪 %d\n召唤 %d · 合成 %d\n用时 %.1f秒 · seed %d") % [core.stats["kills"], core.stats["leaks"], core.stats["summons"], core.stats["merges"], core.total_time, core.seed_value]
+ 
+ func _action(data: Dictionary) -> void:
+ 	refresh()
+ 	if data.has("message"):
+-		show_notice(String(data["message"]))
++		show_notice(_action_message(data))
+ 	elif data["kind"] == "select" and bool(data["ok"]):
+ 		var tower: Dictionary = session.board.tower_at(session.selected_slot)
+ 		if not tower.is_empty():
+-			show_notice("%s · Lv%d\n再点同类同级守卫可合成" % [session.core.config.towers[String(tower["type_id"])]["name"], tower["level"]])
++			show_notice(_t("%s · Lv%d\n再点同类同级守卫可合成") % [Locale.tower(self, String(tower["type_id"])), tower["level"]])
+ 	if data["kind"] == "merge" and bool(data["ok"]):
+ 		var unit: Node2D = _field.get_node("Slot%d" % int(data["slot"])).unit
+ 		Fx.pulse(unit, _reduced())
+@@ -142,7 +145,21 @@ func _combat(data: Dictionary) -> void:
+ 	if data["kind"] == "attack":
+ 		attack_feedback_count += 1
+ 	elif data["kind"] == "leak":
+-		show_notice("敌人漏过！基地生命 %d / 10" % int(data["hp"]))
++		show_notice(_t("敌人漏过！基地生命 %d / 10") % int(data["hp"]))
++
++func _t(source: String) -> String:
++	return Locale.text(self, source)
++
++func _action_message(data: Dictionary) -> String:
++	if not bool(data["ok"]):
++		if data.get("code", "") == "poor":
++			return _t("金币不足，需要%d金币") % int(session.core.config.economy["summon_cost"])
++		return _t(String(data["message"]))
++	match String(data["kind"]):
++		"summon": return _t("%s已召唤") % Locale.tower(self, String(data["type_id"]))
++		"merge": return _t("合成成功 · Lv%d") % int(data["level"])
++		"start": return _t("第%d波开始") % session.core.wave_index
++	return _t(String(data["message"]))
+ 
+ func show_notice(message: String) -> void:
+ 	var old: Tween = _toast.get_meta("fade_fx") if _toast.has_meta("fade_fx") else null
+@@ -177,8 +194,8 @@ func restart() -> void:
+ 	_field.reset_visuals()
+ 	attack_feedback_count = 0
+ 	session.restart()
+-	_stage.get_node("Content/Title").text = "首波完成"
+-	_stage.get_node("Content/Description").text = "强化选择尚未接入。\n本次试玩在此暂停。\n不会自动跳过强化进入下一波。"
++	_stage.get_node("Content/Title").text = _t("首波完成")
++	_stage.get_node("Content/Description").text = _t("强化选择尚未接入。\n本次试玩在此暂停。\n不会自动跳过强化进入下一波。")
+ 	refresh()
+ 
+ func _unhandled_key_input(event: InputEvent) -> void:
+@@ -187,7 +204,7 @@ func _unhandled_key_input(event: InputEvent) -> void:
+ 		if session.core.state == "PREP":
+ 			session.cancel_selection()
+ 		else:
+-			show_notice("暂停功能尚未接入，可使用返回按钮退出本次试玩")
++			show_notice(_t("暂停功能尚未接入，可使用返回按钮退出本次试玩"))
+ 
+ func _go_back() -> void:
+ 	if _leaving:
+diff --git a/godot/scripts/ui/paper_button.gd b/godot/scripts/ui/paper_button.gd
+index dc66e1a..527e50f 100644
+--- a/godot/scripts/ui/paper_button.gd
++++ b/godot/scripts/ui/paper_button.gd
+@@ -74,7 +74,7 @@ func _draw() -> void:
+ 	var font_size := get_theme_font_size("font_size")
+ 	var width := font.get_string_size(text, HORIZONTAL_ALIGNMENT_LEFT, -1, font_size).x
+ 	var glyph_size: float = float(font_size)
+-	var gap: float = 14.0 if glyph != null else 0.0
++	var gap: float = 14.0 if glyph != null and not text.is_empty() else 0.0
+ 	var group_width: float = width + (glyph_size + gap if glyph != null else 0.0)
+ 	var left: float = (size.x - group_width) / 2.0
+ 	var tint := Color("#a9afb1") if disabled else PAPER
+diff --git a/godot/scripts/ui/paper_ui.gd b/godot/scripts/ui/paper_ui.gd
+index 4271deb..1568f82 100644
+--- a/godot/scripts/ui/paper_ui.gd
++++ b/godot/scripts/ui/paper_ui.gd
+@@ -3,13 +3,15 @@ extends RefCounted
+ 
+ const PaperButton = preload("res://scripts/ui/paper_button.gd")
+ const SourcedMotion = preload("res://scripts/ui/sourced_menu_motion.gd")
++const Locale = preload("res://scripts/ui/player_locale.gd")
++const Preferences = preload("res://scripts/ui/player_preferences.gd")
+ const PAPER := Color("#e8d9bc")
+ const INK := Color("#101c29")
+ 
+ static func apply_theme(owner: Control) -> void:
+ 	var theme := Theme.new()
+ 	var font := SystemFont.new()
+-	font.font_names = PackedStringArray(["Noto Sans CJK SC", "Microsoft YaHei UI", "Microsoft YaHei"])
++	font.font_names = PackedStringArray(["Noto Sans CJK SC", "Microsoft YaHei UI", "Microsoft YaHei", "Yu Gothic", "Malgun Gothic", "Arial"])
+ 	theme.default_font = font
+ 	theme.default_font_size = 26
+ 	theme.set_color("font_color", "Label", PAPER)
+@@ -47,7 +49,8 @@ static func background(owner: Control, texture_path: String, dim: bool = false)
+ static func label(owner: Node, id: String, text: String, rect: Rect2, font_size: int = 26) -> Label:
+ 	var item := Label.new()
+ 	item.name = id
+-	item.text = text
++	item.text = Locale.text(owner, text)
++	item.set_meta("ui_source", text)
+ 	item.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
+ 	item.vertical_alignment = VERTICAL_ALIGNMENT_CENTER
+ 	item.add_theme_font_size_override("font_size", font_size)
+@@ -76,19 +79,40 @@ static func panel(owner: Control, id: String, rect: Rect2) -> PanelContainer:
+ static func button(owner: Node, id: String, text: String, rect: Rect2, action: Callable, primary: bool = false, font_size: int = 28, icon_name: String = "") -> Button:
+ 	var item := PaperButton.new()
+ 	item.name = id
+-	item.text = text
++	item.text = Locale.text(owner, text)
++	item.set_meta("ui_source", text)
+ 	item.primary = primary
+ 	item.compact = rect.size.y < 70
+ 	if not icon_name.is_empty():
+ 		item.glyph = load("res://assets/icons/lucide/" + icon_name + ".svg")
+ 	item.custom_minimum_size = Vector2(0, 64)
+ 	item.add_theme_font_size_override("font_size", font_size)
++	item.set_meta("ui_font_size", font_size)
++	item.pressed.connect(func(): Preferences.current(item.get_tree()).click())
+ 	item.pressed.connect(action)
+ 	owner.add_child(item)
+ 	place(item, rect)
++	fit_caption(item)
+ 	item.set_reduced_motion(bool(item.get_tree().get_meta("eg_reduce_motion", false)))
+ 	return item
+ 
++static func refresh_text(owner: Node) -> void:
++	for item in owner.find_children("*", "Control", true, false):
++		if item.has_meta("ui_source"):
++			item.text = Locale.text(owner, String(item.get_meta("ui_source")))
++			if item is Button:
++				fit_caption(item)
++
++static func fit_caption(button: Button) -> void:
++	var font_size: int = int(button.get_meta("ui_font_size", button.get_theme_font_size("font_size")))
++	var font: Font = button.get_theme_font("font")
++	while font_size > 24:
++		var extra: float = font_size + 14 if button.get("glyph") != null and not button.text.is_empty() else 0
++		if font.get_string_size(button.text, HORIZONTAL_ALIGNMENT_LEFT, -1, font_size).x + extra <= button.size.x - 24:
++			break
++		font_size -= 1
++	button.add_theme_font_size_override("font_size", font_size)
++
+ static func entrance(owner: Control) -> void:
+ 	if bool(owner.get_tree().get_meta("eg_reduce_motion", false)):
+ 		return
+diff --git a/godot/scripts/ui/player_field.gd b/godot/scripts/ui/player_field.gd
+index db4b7ea..83c29fc 100644
+--- a/godot/scripts/ui/player_field.gd
++++ b/godot/scripts/ui/player_field.gd
+@@ -2,8 +2,10 @@
+ extends Control
+ 
+ const Slot = preload("res://scripts/ui/board_slot.gd")
+-const Unit = preload("res://scripts/ui/paper_unit.gd")
++const Enemy = preload("res://scripts/ui/paper_enemy.gd")
+ const Fx = preload("res://scripts/ui/sourced_battle_motion.gd")
++const Locale = preload("res://scripts/ui/player_locale.gd")
++const Preferences = preload("res://scripts/ui/player_preferences.gd")
+ var session: RefCounted
+ var actors: Dictionary = {}
+ var _arrow: Texture2D = preload("res://assets/icons/lucide/chevron-right.svg")
+@@ -18,10 +20,11 @@ func _ready() -> void:
+ 		add_child(button)
+ 		button.position = session.core.map.slot_rect(index).position
+ 		button.size = Vector2(76, 76)
+-		button.tooltip_text = "选择此格；先选守卫，再点同类同级目标可合成"
++		button.tooltip_text = Locale.text(self, "选择此格；先选守卫，再点同类同级目标可合成")
+ 	refresh()
+ 
+ func _select(index: int) -> void:
++	Preferences.current(get_tree()).click()
+ 	session.select_slot(index)
+ 
+ func reduced() -> bool:
+@@ -46,15 +49,12 @@ func refresh() -> void:
+ 		var id: int = int(enemy_data["id"])
+ 		alive[id] = true
+ 		if not actors.has(id):
+-			var actor := Unit.new()
+-			actor.enemy = true
+-			actor.texture = preload("res://assets/enemies/grunt_005.png")
++			var actor := Enemy.new()
+ 			actors[id] = actor
+ 			add_child(actor)
++			actor.configure(String(enemy_data["enemy_id"]))
+ 		var actor: Node2D = actors[id]
+-		actor.position = session.core.map.position_at(float(enemy_data["progress"]))
+-		actor.hp_ratio = float(enemy_data["hp"]) / float(enemy_data["max_hp"])
+-		actor.queue_redraw()
++		actor.apply_enemy(enemy_data, session.core.map, reduced())
+ 	for id in actors.keys():
+ 		if not alive.has(id):
+ 			var actor: Node2D = actors[id]
+diff --git a/godot/tests/test_player_menu.gd b/godot/tests/test_player_menu.gd
+index e3161e5..0935cd3 100644
+--- a/godot/tests/test_player_menu.gd
++++ b/godot/tests/test_player_menu.gd
+@@ -1,5 +1,6 @@
+ ## Exercises real controls and navigation; this is automated UI, not human acceptance.
+ extends SceneTree
++const Preferences = preload("res://scripts/ui/player_preferences.gd")
+ 
+ var passed: int = 0
+ var failed: int = 0
+@@ -10,6 +11,7 @@ var input_view: Viewport
+ var menu: Control
+ 
+ func _initialize() -> void:
++	set_meta("eg_settings_test_mode", true)
+ 	for arg in OS.get_cmdline_user_args():
+ 		if arg.begins_with("--capture-dir="):
+ 			capture_dir = arg.trim_prefix("--capture-dir=")
+@@ -41,11 +43,14 @@ func _run() -> void:
+ 	await process_frame
+ 	_check("paper-background-integrated", menu.has_node("PaperBackground"))
+ 	var enter := menu.get_node_or_null("Actions/EnterButton") as Button
+-	var motion := menu.get_node_or_null("MotionButton") as Button
++	var motion := menu.get_node_or_null("SettingsButton") as Button
+ 	_check("player-controls-available", enter != null and motion != null)
+ 	if enter == null or motion == null:
+ 		_finish()
+ 		return
++	_check("no-player-animation-switch", not menu.has_node("MotionButton"))
++	_check("settings-is-icon-only-gear", motion.text.is_empty() and motion.get("glyph").resource_path.ends_with("/settings.svg"))
++	_check("animations-default-on", not bool(get_meta("eg_reduce_motion", true)))
+ 	_check("sourced-motion-face-available", enter.get("visual_scale") != null)
+ 	_check("lucide-functional-icon-available", enter.get("glyph") is Texture2D)
+ 	if enter.get("visual_scale") == null or not enter.get("glyph") is Texture2D:
+@@ -78,9 +83,12 @@ func _run() -> void:
+ 	_check("hover-actually-animates", float(enter.get("visual_scale")) > 1.0 and (enter.get("_motion") as Tween).is_running())
+ 	var hit_rect := enter.get_global_rect()
+ 	_mouse(enter.get_global_rect().get_center(), true)
+-	await create_timer(0.07).timeout
++	# SceneTree timers resume before Tween processing; a cold render frame can
++	# therefore wake the timer before the 80ms press has actually advanced.
++	# Observe the bound animation itself, preserving the exact 0.9 target.
++	await (enter.get("_motion") as Tween).finished
+ 	print("MOTION TRACE press_scale=", enter.get("visual_scale"), " target=0.9 input_rect=", enter.get_global_rect())
+-	_check("press-feedback-in-progress", float(enter.get("visual_scale")) < 1.0)
++	_check("press-feedback-reaches-source-target", is_equal_approx(float(enter.get("visual_scale")), 0.9))
+ 	_check("motion-keeps-hit-target-fixed", hit_rect == enter.get_global_rect())
+ 	await _snapshot("02-pressed")
+ 	# Release outside: cancels activation and must restore the face.
+@@ -101,17 +109,47 @@ func _run() -> void:
+ 	_check("existing-config-check-preserved", "PASS" in String(menu.get_node("Status").text))
+ 	_click(motion.get_global_rect().get_center())
+ 	await process_frame
+-	_check("reduced-motion-enabled", bool(get_meta("eg_reduce_motion", false)))
+-	_move(enter.get_global_rect().get_center())
+-	_mouse(enter.get_global_rect().get_center(), true)
+-	print("MOTION TRACE reduced_scale=", enter.get("visual_scale"), " preference=", get_meta("eg_reduce_motion", false))
+-	_check("reduced-press-has-no-moving-face", is_equal_approx(float(enter.get("visual_scale")), 1.0))
+-	_move(Vector2(10, 600))
+-	_mouse(Vector2(10, 600), false)
+-	await _snapshot("03-reduced-motion")
+-	# Turn motion back on, then navigate while the entry face is moving.
+-	_click(motion.get_global_rect().get_center())
+-	_check("reduced-motion-reversible", not bool(get_meta("eg_reduce_motion", true)))
++	var settings := menu.get_node_or_null("PlayerSettings") as Control
++	_check("settings-opens-from-real-input", settings != null)
++	if settings == null:
++		_finish()
++		return
++	_check("modal-blocks-background-actions", enter.disabled and motion.disabled)
++	var card := settings.get_node("Card") as PanelContainer
++	_check("settings-opaque-from-first-frame", card.modulate.a == 1.0 and (card.get_theme_stylebox("panel") as StyleBoxFlat).bg_color.a == 1.0)
++	_click(enter.get_global_rect().position + Vector2(8, 8))
++	_check("modal-does-not-start-game", current_scene == null)
++	var choices: Array = settings.get("choices")
++	_check("six-real-language-options", choices.size() == 6)
++	await create_timer(0.35).timeout
++	_check("settings-entrance-settles", is_equal_approx(float(settings.get_node("Card").modulate.a), 1.0))
++	await _snapshot("03-settings-zh")
++	for index in range(choices.size()):
++		_click(choices[index].get_global_rect().get_center())
++		await process_frame
++		_check("language-selection-" + str(index), Preferences.current(self).language == Preferences.LANGUAGES[index])
++		_check("localized-menu-fits-" + str(index), _copy_fits(menu))
++		_check("settings-focus-contained-" + str(index), view.gui_get_focus_owner() != null and settings.is_ancestor_of(view.gui_get_focus_owner()))
++		if not capture_dir.is_empty():
++			await _snapshot("03-language-" + Preferences.LANGUAGES[index])
++	_click(choices[2].get_global_rect().get_center())
++	_check("menu-language-really-applied", enter.text == "Prepare" and settings.get("title").text == "Language & sound")
++	var state := Preferences.current(self)
++	var sound: Button = settings.get("sound")
++	_click(sound.get_global_rect().get_center())
++	_check("sound-off-mutes-real-bus", not state.sound_enabled and AudioServer.is_bus_mute(AudioServer.get_bus_index("ElementGuardians_UI")))
++	_check("muted-lucide-icon", sound.get("glyph").resource_path.ends_with("/volume-x.svg"))
++	var count: int = state.audio.play_count
++	_click(choices[0].get_global_rect().get_center())
++	_check("muted-click-does-not-play", state.audio.play_count == count)
++	_click(sound.get_global_rect().get_center())
++	_check("sound-on-from-real-input", state.sound_enabled and state.audio.play_count > count and sound.get("glyph").resource_path.ends_with("/volume-2.svg"))
++	_click(sound.get_global_rect().get_center())
++	_check("settings-never-disables-animation", not bool(get_meta("eg_reduce_motion", true)))
++	_key(KEY_ESCAPE, true)
++	_key(KEY_ESCAPE, false)
++	await process_frame
++	_check("escape-closes-and-restores-focus", not menu.has_node("PlayerSettings") and motion.has_focus() and not enter.disabled)
+ 	_at_root(menu)
+ 	enter.grab_focus()
+ 	_key(KEY_ENTER, true)
+@@ -131,7 +169,15 @@ func _run() -> void:
+ 	await _snapshot("04-player-prep")
+ 	_at_root(preview)
+ 	var back := preview.get_node("BackButton") as Button
+-	_click(back.get_global_rect().get_center())
++	var back_bounds := back.get_global_rect()
++	_move(back_bounds.get_center())
++	await create_timer(0.15).timeout
++	_check("top-back-hover-feedback", float(back.get("visual_scale")) > 1.0)
++	_mouse(back_bounds.get_center(), true)
++	await create_timer(0.12).timeout
++	_check("top-back-press-feedback", float(back.get("visual_scale")) < 1.0)
++	_check("top-back-stable-input-bounds", back.get_global_rect() == back_bounds)
++	_mouse(back_bounds.get_center(), false)
+ 	# Repeated handler invocation before the deferred scene change must be ignored.
+ 	preview.call("_go_back")
+ 	await process_frame
+@@ -140,21 +186,42 @@ func _run() -> void:
+ 	menu = current_scene
+ 	_embed(menu)
+ 	await process_frame
+-	motion = menu.get_node("MotionButton") as Button
++	motion = menu.get_node("SettingsButton") as Button
++	_check("sound-preference-survives-return", not Preferences.current(self).sound_enabled)
+ 	_click(motion.get_global_rect().get_center())
+-	_check("reduce-during-entry-finishes-fade", menu.modulate.a == 1.0)
++	await process_frame
++	settings = menu.get_node("PlayerSettings")
++	choices = settings.get("choices")
++	_click(choices[2].get_global_rect().get_center())
++	_click((settings.get("done") as Button).get_global_rect().get_center())
++	await process_frame
++	_check("done-restores-background-actions", not motion.disabled)
++	await _snapshot("05-menu-english")
+ 	_at_root(menu)
+ 	(menu.get_node("Actions/EnterButton") as Button).pressed.emit()
+ 	await process_frame
+ 	await process_frame
+-	_check("reduced-preference-survives-navigation", bool(current_scene.get_node("BackButton").get("reduce_motion")))
++	_check("language-survives-navigation", current_scene.get_node("Label0").text == "Wave" and current_scene.get_node("StartButton").text == "Start wave 1")
++	_check("navigation-keeps-animation-on", not bool(current_scene.get_node("BackButton").get("reduce_motion")))
+ 	# Real PREP uses Esc to cancel selection; explicit Back returns to menu.
+ 	(current_scene.get_node("BackButton") as Button).pressed.emit()
+ 	await process_frame
+ 	await process_frame
+-	_check("reduced-return-focus-restored", (current_scene.get_node("Actions/EnterButton") as Button).has_focus())
++	_check("return-focus-restored", (current_scene.get_node("Actions/EnterButton") as Button).has_focus())
+ 	_finish()
+ 
++func _copy_fits(owner: Node) -> bool:
++	for item in owner.find_children("*", "Control", true, false):
++		if item is Button or (item is Label and item.autowrap_mode == TextServer.AUTOWRAP_OFF):
++			var font: Font = item.get_theme_font("font")
++			var glyph_width: float = 0.0
++			if item is Button and item.get("glyph") != null:
++				glyph_width = item.get_theme_font_size("font_size") + (14 if not item.text.is_empty() else 0)
++			if font.get_string_size(item.text, HORIZONTAL_ALIGNMENT_LEFT, -1, item.get_theme_font_size("font_size")).x + glyph_width > item.size.x - (24 if item is Button else 0):
++				print("COPY OVERFLOW ", item.name, " ", item.text, " width=", item.size.x)
++				return false
++	return true
++
+ func _embed(scene: Control) -> void:
+ 	if scene.get_parent() != view:
+ 		scene.reparent(view)
+diff --git a/godot/tests/test_player_view.gd b/godot/tests/test_player_view.gd
+index b62f091..31cd7c4 100644
+--- a/godot/tests/test_player_view.gd
++++ b/godot/tests/test_player_view.gd
+@@ -10,6 +10,7 @@ var screen: Control
+ var player: RefCounted
+ 
+ func _initialize() -> void:
++	set_meta("eg_settings_test_mode", true)
+ 	for arg in OS.get_cmdline_user_args():
+ 		if arg.begins_with("--capture-dir="):
+ 			capture_dir = arg.trim_prefix("--capture-dir=")
+@@ -55,6 +56,11 @@ func _run() -> void:
+ 		_finish()
+ 		return
+ 	player = screen.get("session")
++	var back := screen.get_node("BackButton") as Button
++	_check("back-arrow-at-top-left", back.position.x < 32 and back.position.y < 32 and back.size.x >= 88 and back.size.y >= 88)
++	_check("back-arrow-only-with-label", back.text.is_empty() and back.tooltip_text == "返回主菜单" and back.get("glyph") != null)
++	_check("back-clear-of-wave", not back.get_global_rect().intersects((screen.get_node("Wave") as Control).get_global_rect()))
++	_check("back-clear-of-entry", not back.get_global_rect().intersects((screen.get_node("EntryLabel") as Control).get_global_rect()))
+ 	_check("real-empty-player-start", _core().towers.is_empty() and _core().gold == 60 and _core().base_hp == 10)
+ 	_check("no-diagnostic-canvas", screen.find_children("*", "BattleDebugCanvas", true, false).is_empty())
+ 	await _snapshot("01-empty-prep")
+@@ -120,7 +126,16 @@ func _run() -> void:
+ 		screen.call("refresh")
+ 		if not enemy_seen and not _core().enemies.is_empty():
+ 			enemy_seen = true
++			var actor: Node2D = screen.get_node("Field").get("actors").values()[0]
++			_check("live-enemy-has-crawl-presentation", actor.has_method("apply_enemy"))
+ 			await _snapshot("05-live-enemies")
++			if actor.has_node("Artwork/Spider/Mesh"):
++				var mesh: Polygon2D = actor.get_node("Artwork/Spider/Mesh")
++				var previous_pose := mesh.polygon.duplicate()
++				player.tick(0.12)
++				screen.call("refresh")
++				_check("real-crawl-motion-observed", mesh.polygon != previous_pose)
++				await _snapshot("05b-crawl-midstride")
+ 		if not attacked and int(screen.get("attack_feedback_count")) > 0:
+ 			attacked = true
+ 			_check("attack-has-real-damage-and-visual", float(_core().stats["damage_dealt"]) > 0 and not screen.get_node("Field").find_children("*", "Line2D", true, false).is_empty())
+diff --git a/tools/verify_runtime.py b/tools/verify_runtime.py
+index 96cfa6d..8423bd1 100644
+--- a/tools/verify_runtime.py
++++ b/tools/verify_runtime.py
+@@ -25,6 +25,8 @@ SCRIPTS = [
+     ("player-menu", "test_player_menu.gd", r"MENU SUMMARY: PASS=\d+ FAIL=0 SKIP=1 COMPLETE"),
+     ("player-prep", "test_player_prep.gd", r"PREP SUMMARY: PASS=\d+ FAIL=0 SKIP=0 COMPLETE"),
+     ("player-view", "test_player_view.gd", r"PLAYERVIEW SUMMARY: PASS=\d+ FAIL=0 SKIP=1 COMPLETE"),
++    ("enemy-presentation", "test_enemy_presentation.gd", r"ENEMYART SUMMARY: PASS=\d+ FAIL=0 SKIP=0 COMPLETE"),
++    ("player-settings", "test_player_settings.gd", r"SETTINGS SUMMARY: PASS=\d+ FAIL=0 SKIP=0 COMPLETE"),
+ ]
+ 
+ 
+diff --git a/tracking/ASSET_LICENSES.csv b/tracking/ASSET_LICENSES.csv
+index f4b95aa..1462e5d 100644
+--- a/tracking/ASSET_LICENSES.csv
++++ b/tracking/ASSET_LICENSES.csv
+@@ -15,3 +15,9 @@ LUCIDE-heart,godot/assets/icons/lucide/heart.svg,https://raw.githubusercontent.c
+ LUCIDE-x,godot/assets/icons/lucide/x.svg,https://raw.githubusercontent.com/lucide-icons/lucide/20aef31db93fe4d9f398dbb15b120d99c48eef95/icons/x.svg,Lucide/Feather contributors,ISC; Feather MIT as listed upstream,https://raw.githubusercontent.com/lucide-icons/lucide/20aef31db93fe4d9f398dbb15b120d99c48eef95/LICENSE,Pinned commit; currentColor -> white only
+ LUCIDE-chevron-right,godot/assets/icons/lucide/chevron-right.svg,https://raw.githubusercontent.com/lucide-icons/lucide/20aef31db93fe4d9f398dbb15b120d99c48eef95/icons/chevron-right.svg,Lucide/Feather contributors,ISC; Feather MIT as listed upstream,https://raw.githubusercontent.com/lucide-icons/lucide/20aef31db93fe4d9f398dbb15b120d99c48eef95/LICENSE,Pinned commit; currentColor -> white only
+ LUCIDE-rotate-ccw,godot/assets/icons/lucide/rotate-ccw.svg,https://raw.githubusercontent.com/lucide-icons/lucide/20aef31db93fe4d9f398dbb15b120d99c48eef95/icons/rotate-ccw.svg,Lucide/Feather contributors,ISC; Feather MIT as listed upstream,https://raw.githubusercontent.com/lucide-icons/lucide/20aef31db93fe4d9f398dbb15b120d99c48eef95/LICENSE,Pinned commit; currentColor -> white only
++006,godot/assets/enemies/swift_006.png,repository:game_asserts/02_敌人怪物/游魂灯灵.png,Repository-provided AI asset pack v2.0,Pack notice; interview demo; redistribution rights not independently cleared,repository:game_asserts/10_说明文件/README_中文使用说明.md,Imported 2026-10-22; source bytes unchanged; sha256=1123e701cbb13485f7c9b329efc66195eb07a11f5c48aa3643ae0e57b7efed58; mapping only; first-wave roster unchanged; similarity and distribution review pending
++007,godot/assets/enemies/armor_007.png,repository:game_asserts/02_敌人怪物/缝合甲兽.png,Repository-provided AI asset pack v2.0,Pack notice; interview demo; redistribution rights not independently cleared,repository:game_asserts/10_说明文件/README_中文使用说明.md,Imported 2026-10-22; source bytes unchanged; sha256=6dd2a3044c78068b0ef0846f2cba0e74b8965c1a51c7b70d377a73b70e30e916; mapping only; first-wave roster unchanged; similarity and distribution review pending
++LUCIDE-volume-2,godot/assets/icons/lucide/volume-2.svg,https://raw.githubusercontent.com/lucide-icons/lucide/20aef31db93fe4d9f398dbb15b120d99c48eef95/icons/volume-2.svg,Lucide/Feather contributors,ISC; Feather MIT as listed upstream,https://raw.githubusercontent.com/lucide-icons/lucide/20aef31db93fe4d9f398dbb15b120d99c48eef95/LICENSE,Pinned commit; currentColor -> white only
++LUCIDE-volume-x,godot/assets/icons/lucide/volume-x.svg,https://raw.githubusercontent.com/lucide-icons/lucide/20aef31db93fe4d9f398dbb15b120d99c48eef95/icons/volume-x.svg,Lucide/Feather contributors,ISC; Feather MIT as listed upstream,https://raw.githubusercontent.com/lucide-icons/lucide/20aef31db93fe4d9f398dbb15b120d99c48eef95/LICENSE,Pinned commit; currentColor -> white only
++LUCIDE-check,godot/assets/icons/lucide/check.svg,https://raw.githubusercontent.com/lucide-icons/lucide/20aef31db93fe4d9f398dbb15b120d99c48eef95/icons/check.svg,Lucide/Feather contributors,ISC; Feather MIT as listed upstream,https://raw.githubusercontent.com/lucide-icons/lucide/20aef31db93fe4d9f398dbb15b120d99c48eef95/LICENSE,Pinned commit; currentColor -> white only
++LUCIDE-settings,godot/assets/icons/lucide/settings.svg,https://raw.githubusercontent.com/lucide-icons/lucide/20aef31db93fe4d9f398dbb15b120d99c48eef95/icons/settings.svg,Lucide/Feather contributors,ISC; Feather MIT as listed upstream,https://raw.githubusercontent.com/lucide-icons/lucide/20aef31db93fe4d9f398dbb15b120d99c48eef95/LICENSE,Pinned commit; currentColor -> white only
+diff --git a/tracking/CHANGELOG.md b/tracking/CHANGELOG.md
+index 03e0cfe..f4cbfb8 100644
+--- a/tracking/CHANGELOG.md
++++ b/tracking/CHANGELOG.md
+@@ -1,5 +1,18 @@
+ # 变更记录
+ 
++## 2026-10-22｜齿轮、语言与声音设置（未提交）
++
++- D012按用户确认移除动画开关，默认开启动画；Lucide齿轮打开不透明纸层设置，六语言与真实UI音效开关立即生效并保存。
++- 复用现有按钮动效，处理弹层遮罩/焦点/关闭导航；轻音采用独立总线、固定4声部，未引入插件、音乐或玩法数值调整。
++- 增加隔离存档/音频/六语言排版测试，更新菜单真实输入和双尺寸渲染；原始红绿及待验收项见logs/test_runs/20261022_player_settings/REPORT.md。
++
++## 2026-10-22｜首次真人试玩反馈修正（本轮未提交）
++
++- 用户反馈：返回应改为左上角波次旁的箭头；本次未观察到漏怪；敌人应区分外形并有蜘蛛式爬行。反馈仅覆盖本次体验，不代表整局验收。
++- 返回箭头移至HUD左上角并保留现成按钮交互；顶部路段血条避开状态文字。
++- 新增只读敌人表现/网格步态组件，普通蛛机按真实路程交替足部，迅捷/重甲映射006/007原图；原数值、地图、波次及Boss候选均不改。
++- 验证/红绿证据：logs/test_runs/20261022_playtest_feedback/REPORT.md；详细来源：docs/third_party/enemy-crawl-20261022。没有安装新MCP或依赖。
++
+ ## 玩家布阵与真实首波、额度收口（2026-10-22）
+ - D011经用户批准：正常菜单进入真实空棋盘；接通选格、20金币独立seed随机召唤、同类同级合成、开波、COMBAT禁操作、首波UPGRADE冻结与重开。原规则、地图、格位及XLSX/CSV未改；诊断setup调用改用明确null，保留原六波夹具。
+ - 按职责新增player会话/棋盘/玩家页及UI单位/场地/反馈；原包001–003/005与6项Lucide补登记。所有新增动效采用已核对GlobalTweens MIT函数并处理重复触发、减少动画与重开清理；真实事件驱动攻击/受伤/资源反馈，不使用预览冒充玩法。
+diff --git a/tracking/DECISIONS.md b/tracking/DECISIONS.md
+index 796a508..8e4b309 100644
+--- a/tracking/DECISIONS.md
++++ b/tracking/DECISIONS.md
+@@ -56,3 +56,9 @@
+ - 对照《从 GDD 文档到完整可玩的游戏原型》七阶段补齐文档，新增 `docs/17-DESIGN-COVERAGE.md`、`docs/18-PLAYTEST-PROTOCOL.md`、`tools/check_docs.py`。
+ - 未改动任何玩法规则与初始数值；金币溢出（R-11）与素材风格（D005）作为待拍板项记录。
+ - 发现 `MANIFEST.sha256` 在审计前已对 `AGENTS.md`、`prompts/01-FIRST-TURN.md` 失配（无 Git 基线可回溯原因）；本轮重新生成哈希并在 CHANGELOG 中披露。
++
++## D012｜2026-10-22：菜单设置（用户已确认）
++
++- 用户要求右上角为Lucide齿轮，保持纸雕风格统一，弹层选择语言并开关声音。
++- 用户再次确认：“动画始终开启，不提供开关（沿用上一条）”。不得把减少动画或动画开关放回玩家菜单。
++- 用户指出透明观感后，卡片改为完全不透明实体底，文字首帧清晰；按钮交互仍保留现成反馈。此项不改玩法、CSV、初始数值或首波UPGRADE冻结边界。

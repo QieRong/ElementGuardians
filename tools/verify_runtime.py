@@ -25,6 +25,8 @@ SCRIPTS = [
     ("player-menu", "test_player_menu.gd", r"MENU SUMMARY: PASS=\d+ FAIL=0 SKIP=1 COMPLETE"),
     ("player-prep", "test_player_prep.gd", r"PREP SUMMARY: PASS=\d+ FAIL=0 SKIP=0 COMPLETE"),
     ("player-view", "test_player_view.gd", r"PLAYERVIEW SUMMARY: PASS=\d+ FAIL=0 SKIP=1 COMPLETE"),
+    ("enemy-presentation", "test_enemy_presentation.gd", r"ENEMYART SUMMARY: PASS=\d+ FAIL=0 SKIP=0 COMPLETE"),
+    ("player-settings", "test_player_settings.gd", r"SETTINGS SUMMARY: PASS=\d+ FAIL=0 SKIP=0 COMPLETE"),
 ]
 
 

@@ -1,0 +1,74 @@
+{
+  "protected_paths_unchanged_from_HEAD": [
+    "configs",
+    "godot/configs",
+    "godot/data/map_default.json",
+    "godot/scripts/battle",
+    "godot/project.godot",
+    "godot/scenes/main.tscn"
+  ],
+  "historical_manifest_red_entries_preserved": true,
+  "changed_gd_scripts": {
+    "godot/scripts/main.gd": {
+      "lines": 96,
+      "sha256": "9f24b67575a13ec67492514f220f62bab0084a0c9bfd00a56942aa1f8d13764b"
+    },
+    "godot/scripts/player/battle_view.gd": {
+      "lines": 213,
+      "sha256": "2e993f48b4806109a2eb8de0b974de0b7e0807fbbeb82d0a06a708dd9699cfd7"
+    },
+    "godot/scripts/ui/paper_button.gd": {
+      "lines": 97,
+      "sha256": "3224b18778f4c1444176a0c4b5b407daab42f610d438b1405be8962b4b712215"
+    },
+    "godot/scripts/ui/paper_enemy.gd": {
+      "lines": 54,
+      "sha256": "da16b46914a3d964b83adedd0b6add5011e989aaa0b6b008af1918ee3c73dde7"
+    },
+    "godot/scripts/ui/paper_spider.gd": {
+      "lines": 73,
+      "sha256": "b4678c157e2dd60703e438fcd2bb569ba43998f151d0e601248c14a31e7c5d81"
+    },
+    "godot/scripts/ui/paper_ui.gd": {
+      "lines": 131,
+      "sha256": "ec8499cd0e9c99518f081e4feface1f5a3202e68c679d90f19fdf56b014cd0ad"
+    },
+    "godot/scripts/ui/player_field.gd": {
+      "lines": 96,
+      "sha256": "848b24e18f0fedb922ab1691f2fd6a14756e1011c719eda882230a486009991c"
+    },
+    "godot/scripts/ui/player_locale.gd": {
+      "lines": 18,
+      "sha256": "8cd43e8ccd10fe8b350b36a69810aca0d11acd157b9447f09264a5ad081dc79c"
+    },
+    "godot/scripts/ui/player_preferences.gd": {
+      "lines": 65,
+      "sha256": "1ff049789106fd0f38f6a537d15ae4d0ce846fefc43e509b59c53c5073fbbb44"
+    },
+    "godot/scripts/ui/player_settings_panel.gd": {
+      "lines": 84,
+      "sha256": "2c8111ea131c16e133b801d99494bd6610dede95b194806b2badb9445c143af4"
+    },
+    "godot/scripts/ui/ui_audio.gd": {
+      "lines": 60,
+      "sha256": "cd4a562e2b55b029e95b46c8ef750bb42a83b45ceabbd51a1ace6d58ff88c4c9"
+    },
+    "godot/tests/test_enemy_presentation.gd": {
+      "lines": 70,
+      "sha256": "bbc7e154a08ee9f1942b8bd8c139c1ee22f529bcf428fa40c4eb6409fd70cb87"
+    },
+    "godot/tests/test_player_menu.gd": {
+      "lines": 304,
+      "sha256": "221d555e366dc50706703ac6135fb764a8e054f1c0c5348fc9cc19732dd8bb86"
+    },
+    "godot/tests/test_player_settings.gd": {
+      "lines": 115,
+      "sha256": "c100115b78e96f3e32696630b78b77959ad26b1114a37c781cfa451438a8e78f"
+    },
+    "godot/tests/test_player_view.gd": {
+      "lines": 227,
+      "sha256": "cefeb2c252cc061d3113587fb9692c26541c8f4c0391cad9b3eae96c03e7b6ba"
+    }
+  },
+  "git_diff_check_exit": 0
+}

@@ -5,6 +5,7 @@ const Player = preload("res://scripts/player/player_session.gd")
 const Paper = preload("res://scripts/ui/paper_ui.gd")
 const Field = preload("res://scripts/ui/player_field.gd")
 const Fx = preload("res://scripts/ui/sourced_battle_motion.gd")
+const Locale = preload("res://scripts/ui/player_locale.gd")
 var seed_value: int = -1
 var session: RefCounted
 var attack_feedback_count: int = 0
@@ -52,20 +53,22 @@ func _build() -> void:
 	add_child(_field)
 	_field.size = Vector2(720, 1280)
 	Paper.panel(self, "Hud", Rect2(0, 0, 720, 116))
-	for item in [["波次", 0], ["基地", 240], ["金币", 480]]:
+	var back := Paper.button(self, "BackButton", "", Rect2(16, 14, 88, 88), _go_back, false, 40, "arrow-left")
+	back.tooltip_text = _t("返回主菜单")
+	Paper.label(self, "Label0", "波次", Rect2(104, 16, 136, 30), 24)
+	for item in [["基地", 240], ["金币", 480]]:
 		Paper.label(self, "Label%d" % int(item[1]), item[0], Rect2(int(item[1]), 16, 240, 30), 24)
-	_wave = Paper.label(self, "Wave", "", Rect2(0, 48, 240, 52), 32)
+	_wave = Paper.label(self, "Wave", "", Rect2(104, 48, 136, 52), 32)
 	_hp = Paper.label(self, "HP", "", Rect2(240, 48, 240, 52), 32)
 	_gold = Paper.label(self, "Gold", "", Rect2(480, 48, 240, 52), 32)
-	_phase = Paper.label(self, "Phase", "准备中", Rect2(214, 122, 292, 40), 26)
-	Paper.label(self, "EntryLabel", "敌人入口", Rect2(32, 126, 160, 36), 24)
+	_phase = Paper.label(self, "Phase", "准备中", Rect2(214, 120, 292, 34), 26)
+	Paper.label(self, "EntryLabel", "敌人入口", Rect2(32, 122, 160, 32), 24)
 	Paper.label(self, "BaseLabel", "守卫基地", Rect2(470, 1034, 210, 40), 24)
 	Paper.panel(self, "ActionPanel", Rect2(0, 1080, 720, 200))
-	Paper.button(self, "BackButton", "返回", Rect2(24, 1200, 154, 64), _go_back, false, 24, "arrow-left")
-	_summon = Paper.button(self, "SummonButton", "召唤 20", Rect2(24, 1100, 200, 80), _summon_pressed, true, 26, "plus")
-	_cancel = Paper.button(self, "CancelButton", "取消选择", Rect2(240, 1100, 200, 80), _cancel_pressed, false, 26)
+	_summon = Paper.button(self, "SummonButton", "召唤 20", Rect2(24, 1100, 216, 80), _summon_pressed, true, 26, "plus")
+	_cancel = Paper.button(self, "CancelButton", "取消选择", Rect2(256, 1100, 184, 80), _cancel_pressed, false, 26)
 	_start = Paper.button(self, "StartButton", "开始第1波", Rect2(456, 1100, 240, 80), _start_pressed, true, 26, "play")
-	Paper.label(self, "StageNotice", "单波试玩 · 强化尚未开放", Rect2(198, 1216, 498, 44), 22)
+	Paper.label(self, "StageNotice", "单波试玩 · 强化尚未开放", Rect2(24, 1216, 672, 44), 22)
 	# Use the gap between the two route bands; feedback must not cover the board.
 	_toast = Paper.panel(self, "Toast", Rect2(120, 276, 480, 116))
 	var message := Label.new()
@@ -104,7 +107,7 @@ func refresh() -> void:
 	_gold.text = str(core.gold)
 	_hp.text = "%d / 10" % core.base_hp
 	_wave.text = "%d / 6" % (core.wave_index - 1 if core.state == "UPGRADE" else core.wave_index)
-	_phase.text = {"PREP":"准备中", "COMBAT":"战斗中", "UPGRADE":"波次完成", "RESULT":"防守结束"}[core.state]
+	_phase.text = _t({"PREP":"准备中", "COMBAT":"战斗中", "UPGRADE":"波次完成", "RESULT":"防守结束"}[core.state])
 	if core.gold != _previous_gold:
 		Fx.flash(_gold, Color("#e58a4d") if core.gold < _previous_gold else Color("#8bcad1"), _reduced())
 	if core.base_hp != _previous_hp:
@@ -113,23 +116,23 @@ func refresh() -> void:
 	_previous_hp = core.base_hp
 	var valid: Dictionary = session.board.validate_place(session.selected_slot)
 	_summon.disabled = not bool(valid["ok"]) or core.gold < int(core.config.economy["summon_cost"])
-	_summon.tooltip_text = "金币不足" if core.gold < 20 else ("先选择空格" if session.selected_slot < 0 else "在所选空格召唤")
+	_summon.tooltip_text = _t("金币不足" if core.gold < 20 else ("先选择空格" if session.selected_slot < 0 else "在所选空格召唤"))
 	_cancel.disabled = core.state != "PREP" or session.selected_slot < 0
 	_start.disabled = core.state != "PREP"
 	_field.refresh()
 	_stage.visible = core.state == "UPGRADE" or core.state == "RESULT"
 	if core.state == "RESULT":
-		_stage.get_node("Content/Title").text = "基地失守" if not core.victory else "防守成功"
-		_stage.get_node("Content/Description").text = "击杀 %d · 漏怪 %d\n召唤 %d · 合成 %d\n用时 %.1f秒 · seed %d" % [core.stats["kills"], core.stats["leaks"], core.stats["summons"], core.stats["merges"], core.total_time, core.seed_value]
+		_stage.get_node("Content/Title").text = _t("基地失守" if not core.victory else "防守成功")
+		_stage.get_node("Content/Description").text = _t("击杀 %d · 漏怪 %d\n召唤 %d · 合成 %d\n用时 %.1f秒 · seed %d") % [core.stats["kills"], core.stats["leaks"], core.stats["summons"], core.stats["merges"], core.total_time, core.seed_value]
 
 func _action(data: Dictionary) -> void:
 	refresh()
 	if data.has("message"):
-		show_notice(String(data["message"]))
+		show_notice(_action_message(data))
 	elif data["kind"] == "select" and bool(data["ok"]):
 		var tower: Dictionary = session.board.tower_at(session.selected_slot)
 		if not tower.is_empty():
-			show_notice("%s · Lv%d\n再点同类同级守卫可合成" % [session.core.config.towers[String(tower["type_id"])]["name"], tower["level"]])
+			show_notice(_t("%s · Lv%d\n再点同类同级守卫可合成") % [Locale.tower(self, String(tower["type_id"])), tower["level"]])
 	if data["kind"] == "merge" and bool(data["ok"]):
 		var unit: Node2D = _field.get_node("Slot%d" % int(data["slot"])).unit
 		Fx.pulse(unit, _reduced())
@@ -142,7 +145,21 @@ func _combat(data: Dictionary) -> void:
 	if data["kind"] == "attack":
 		attack_feedback_count += 1
 	elif data["kind"] == "leak":
-		show_notice("敌人漏过！基地生命 %d / 10" % int(data["hp"]))
+		show_notice(_t("敌人漏过！基地生命 %d / 10") % int(data["hp"]))
+
+func _t(source: String) -> String:
+	return Locale.text(self, source)
+
+func _action_message(data: Dictionary) -> String:
+	if not bool(data["ok"]):
+		if data.get("code", "") == "poor":
+			return _t("金币不足，需要%d金币") % int(session.core.config.economy["summon_cost"])
+		return _t(String(data["message"]))
+	match String(data["kind"]):
+		"summon": return _t("%s已召唤") % Locale.tower(self, String(data["type_id"]))
+		"merge": return _t("合成成功 · Lv%d") % int(data["level"])
+		"start": return _t("第%d波开始") % session.core.wave_index
+	return _t(String(data["message"]))
 
 func show_notice(message: String) -> void:
 	var old: Tween = _toast.get_meta("fade_fx") if _toast.has_meta("fade_fx") else null
@@ -177,8 +194,8 @@ func restart() -> void:
 	_field.reset_visuals()
 	attack_feedback_count = 0
 	session.restart()
-	_stage.get_node("Content/Title").text = "首波完成"
-	_stage.get_node("Content/Description").text = "强化选择尚未接入。\n本次试玩在此暂停。\n不会自动跳过强化进入下一波。"
+	_stage.get_node("Content/Title").text = _t("首波完成")
+	_stage.get_node("Content/Description").text = _t("强化选择尚未接入。\n本次试玩在此暂停。\n不会自动跳过强化进入下一波。")
 	refresh()
 
 func _unhandled_key_input(event: InputEvent) -> void:
@@ -187,7 +204,7 @@ func _unhandled_key_input(event: InputEvent) -> void:
 		if session.core.state == "PREP":
 			session.cancel_selection()
 		else:
-			show_notice("暂停功能尚未接入，可使用返回按钮退出本次试玩")
+			show_notice(_t("暂停功能尚未接入，可使用返回按钮退出本次试玩"))
 
 func _go_back() -> void:
 	if _leaving:

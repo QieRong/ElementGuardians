@@ -1,0 +1,26 @@
+[
+  {
+    "asset_id": "005",
+    "enemy_id": "grunt",
+    "source": "game_asserts/02_敌人怪物/窥视蛛机.png",
+    "runtime": "godot/assets/enemies/grunt_005.png",
+    "sha256": "b40a48aa3564b1a58a5fb0ddc6335bda3bb19598ec997eb83c22f19d9ec220e3",
+    "pixels_unchanged": true
+  },
+  {
+    "asset_id": "006",
+    "enemy_id": "swift",
+    "source": "game_asserts/02_敌人怪物/游魂灯灵.png",
+    "runtime": "godot/assets/enemies/swift_006.png",
+    "sha256": "1123e701cbb13485f7c9b329efc66195eb07a11f5c48aa3643ae0e57b7efed58",
+    "pixels_unchanged": true
+  },
+  {
+    "asset_id": "007",
+    "enemy_id": "armor",
+    "source": "game_asserts/02_敌人怪物/缝合甲兽.png",
+    "runtime": "godot/assets/enemies/armor_007.png",
+    "sha256": "6dd2a3044c78068b0ef0846f2cba0e74b8965c1a51c7b70d377a73b70e30e916",
+    "pixels_unchanged": true
+  }
+]

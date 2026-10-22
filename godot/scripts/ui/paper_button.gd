@@ -74,7 +74,7 @@ func _draw() -> void:
 	var font_size := get_theme_font_size("font_size")
 	var width := font.get_string_size(text, HORIZONTAL_ALIGNMENT_LEFT, -1, font_size).x
 	var glyph_size: float = float(font_size)
-	var gap: float = 14.0 if glyph != null else 0.0
+	var gap: float = 14.0 if glyph != null and not text.is_empty() else 0.0
 	var group_width: float = width + (glyph_size + gap if glyph != null else 0.0)
 	var left: float = (size.x - group_width) / 2.0
 	var tint := Color("#a9afb1") if disabled else PAPER

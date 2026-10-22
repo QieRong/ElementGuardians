@@ -2,8 +2,10 @@
 extends Control
 
 const Slot = preload("res://scripts/ui/board_slot.gd")
-const Unit = preload("res://scripts/ui/paper_unit.gd")
+const Enemy = preload("res://scripts/ui/paper_enemy.gd")
 const Fx = preload("res://scripts/ui/sourced_battle_motion.gd")
+const Locale = preload("res://scripts/ui/player_locale.gd")
+const Preferences = preload("res://scripts/ui/player_preferences.gd")
 var session: RefCounted
 var actors: Dictionary = {}
 var _arrow: Texture2D = preload("res://assets/icons/lucide/chevron-right.svg")
@@ -18,10 +20,11 @@ func _ready() -> void:
 		add_child(button)
 		button.position = session.core.map.slot_rect(index).position
 		button.size = Vector2(76, 76)
-		button.tooltip_text = "选择此格；先选守卫，再点同类同级目标可合成"
+		button.tooltip_text = Locale.text(self, "选择此格；先选守卫，再点同类同级目标可合成")
 	refresh()
 
 func _select(index: int) -> void:
+	Preferences.current(get_tree()).click()
 	session.select_slot(index)
 
 func reduced() -> bool:
@@ -46,15 +49,12 @@ func refresh() -> void:
 		var id: int = int(enemy_data["id"])
 		alive[id] = true
 		if not actors.has(id):
-			var actor := Unit.new()
-			actor.enemy = true
-			actor.texture = preload("res://assets/enemies/grunt_005.png")
+			var actor := Enemy.new()
 			actors[id] = actor
 			add_child(actor)
+			actor.configure(String(enemy_data["enemy_id"]))
 		var actor: Node2D = actors[id]
-		actor.position = session.core.map.position_at(float(enemy_data["progress"]))
-		actor.hp_ratio = float(enemy_data["hp"]) / float(enemy_data["max_hp"])
-		actor.queue_redraw()
+		actor.apply_enemy(enemy_data, session.core.map, reduced())
 	for id in actors.keys():
 		if not alive.has(id):
 			var actor: Node2D = actors[id]

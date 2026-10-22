@@ -1,0 +1,43 @@
+{
+  "commit": "20aef31db93fe4d9f398dbb15b120d99c48eef95",
+  "icons": [
+    {
+      "name": "volume-2",
+      "url": "https://raw.githubusercontent.com/lucide-icons/lucide/20aef31db93fe4d9f398dbb15b120d99c48eef95/icons/volume-2.svg",
+      "source_sha256": "fb404f9c128a0579de67b399177631e5edb3502fdc247ceb30e8b15754b46071",
+      "runtime_path": "godot/assets/icons/lucide/volume-2.svg",
+      "runtime_sha256": "74f9f16db29b24d13ed7440bc70940ef6112398939c16e866559f5c0aad03448",
+      "adaptation": "currentColor -> white only"
+    },
+    {
+      "name": "volume-x",
+      "url": "https://raw.githubusercontent.com/lucide-icons/lucide/20aef31db93fe4d9f398dbb15b120d99c48eef95/icons/volume-x.svg",
+      "source_sha256": "f382e421b7aae01172989f2b749ee87e44c0c82c16970b13a9ad5a323b613be0",
+      "runtime_path": "godot/assets/icons/lucide/volume-x.svg",
+      "runtime_sha256": "8930bd03bec5e3886b003938b20a7055e9a9b2de46d721016e828c4a4040aa36",
+      "adaptation": "currentColor -> white only"
+    },
+    {
+      "name": "check",
+      "url": "https://raw.githubusercontent.com/lucide-icons/lucide/20aef31db93fe4d9f398dbb15b120d99c48eef95/icons/check.svg",
+      "source_sha256": "7f33acc9a77a61659531044525fc008edebe215bf4dcf1c789c8674ad3277db0",
+      "runtime_path": "godot/assets/icons/lucide/check.svg",
+      "runtime_sha256": "56817073aa4f0108ee172853f21df0680d48a593ae701c57b2f56034cc1296cb",
+      "adaptation": "currentColor -> white only"
+    },
+    {
+      "name": "settings",
+      "url": "https://raw.githubusercontent.com/lucide-icons/lucide/20aef31db93fe4d9f398dbb15b120d99c48eef95/icons/settings.svg",
+      "source_sha256": "0ae27fd0f81999229e3127ac96c5b32edfea448e291d509e76212b917551d66b",
+      "runtime_path": "godot/assets/icons/lucide/settings.svg",
+      "runtime_sha256": "22fd994e7a976c2d644e6b48c555576792ceaf31502fac9e34c9e24639abae24",
+      "adaptation": "currentColor -> white only"
+    }
+  ],
+  "motion": "Reuses existing pinned GlobalTweens button/entrance adaptations; no new motion library",
+  "audio": "Original 65ms PCM UI tone; no third-party audio",
+  "api_references": [
+    "https://docs.godotengine.org/en/4.4/classes/class_audiostreamwav.html",
+    "https://docs.godotengine.org/en/4.4/classes/class_audioserver.html"
+  ]
+}

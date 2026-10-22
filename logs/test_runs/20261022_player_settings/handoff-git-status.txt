@@ -1,0 +1,50 @@
+ M MANIFEST.sha256
+ M NEXT_SESSION_PROMPT.md
+ M docs/06-UI-UX.md
+ M docs/07-ASSETS.md
+ M godot/README.md
+ M godot/assets/ASSET-NOTICE.md
+ M godot/scripts/main.gd
+ M godot/scripts/player/battle_view.gd
+ M godot/scripts/ui/paper_button.gd
+ M godot/scripts/ui/paper_ui.gd
+ M godot/scripts/ui/player_field.gd
+ M godot/tests/test_player_menu.gd
+ M godot/tests/test_player_view.gd
+ M tools/verify_runtime.py
+ M tracking/ASSET_LICENSES.csv
+ M tracking/CHANGELOG.md
+ M tracking/DECISIONS.md
+?? docs/third_party/enemy-crawl-20261022/
+?? docs/third_party/player-settings-20261022/
+?? godot/assets/enemies/armor_007.png
+?? godot/assets/enemies/armor_007.png.import
+?? godot/assets/enemies/swift_006.png
+?? godot/assets/enemies/swift_006.png.import
+?? godot/assets/icons/lucide/check.svg
+?? godot/assets/icons/lucide/check.svg.import
+?? godot/assets/icons/lucide/settings.svg
+?? godot/assets/icons/lucide/settings.svg.import
+?? godot/assets/icons/lucide/volume-2.svg
+?? godot/assets/icons/lucide/volume-2.svg.import
+?? godot/assets/icons/lucide/volume-x.svg
+?? godot/assets/icons/lucide/volume-x.svg.import
+?? godot/data/ui_locales.json
+?? godot/scripts/ui/paper_enemy.gd
+?? godot/scripts/ui/paper_enemy.gd.uid
+?? godot/scripts/ui/paper_spider.gd
+?? godot/scripts/ui/paper_spider.gd.uid
+?? godot/scripts/ui/player_locale.gd
+?? godot/scripts/ui/player_locale.gd.uid
+?? godot/scripts/ui/player_preferences.gd
+?? godot/scripts/ui/player_preferences.gd.uid
+?? godot/scripts/ui/player_settings_panel.gd
+?? godot/scripts/ui/player_settings_panel.gd.uid
+?? godot/scripts/ui/ui_audio.gd
+?? godot/scripts/ui/ui_audio.gd.uid
+?? godot/tests/test_enemy_presentation.gd
+?? godot/tests/test_enemy_presentation.gd.uid
+?? godot/tests/test_player_settings.gd
+?? godot/tests/test_player_settings.gd.uid
+?? logs/test_runs/20261022_player_settings/
+?? logs/test_runs/20261022_playtest_feedback/

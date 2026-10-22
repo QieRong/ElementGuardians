@@ -1,0 +1,17 @@
+[
+  {
+    "id": "sync",
+    "exit": 0,
+    "log": "logs\\test_runs\\20261022_settings_review\\final-sync.log"
+  },
+  {
+    "id": "config",
+    "exit": 0,
+    "log": "logs\\test_runs\\20261022_settings_review\\final-config.log"
+  },
+  {
+    "id": "docs",
+    "exit": 1,
+    "log": "logs\\test_runs\\20261022_settings_review\\final-docs.log"
+  }
+]

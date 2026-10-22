@@ -1,0 +1,30 @@
+{
+  "retrieved": "2026-10-22",
+  "method": "Godot native Polygon2D cutout mesh driven by an AnimationPlayer value track; original gait weights for repository artwork 005",
+  "references": [
+    {
+      "title": "Godot 4.4 Cutout animation",
+      "url": "https://docs.godotengine.org/en/4.4/tutorials/animation/cutout_animation.html"
+    },
+    {
+      "title": "Godot 4.4 2D skeletons",
+      "url": "https://docs.godotengine.org/en/4.4/tutorials/animation/2d_skeletons.html"
+    },
+    {
+      "title": "Godot 4.4 Animation track API",
+      "url": "https://docs.godotengine.org/en/4.4/classes/class_animation.html"
+    }
+  ],
+  "license": "Official documentation references only; no external artwork, plugin, or tutorial asset copied. API track setup adapted; gait authoring is project code.",
+  "adaptations": [
+    "One original texture; 17 by 17 UV mesh; alternate foot regions, upper shell held fixed. Not an eight-leg rig or new multi-direction sprite set.",
+    "Cycle sampled from actual path distance, so slow/stopped units keep synchronized.",
+    "HP bar remains outside rotating artwork. Reduced motion samples rest pose; no gameplay changes.",
+    "Existing GlobalTweens MIT and Lucide ISC/MIT implementation reused for the relocated back arrow."
+  ],
+  "limits": [
+    "Official tutorial pages mark some content outdated; API and runtime must be checked with project-locked Godot 4.4.1.",
+    "First wave still contains only grunt. Swift/armor texture mapping is inspected using a test fixture; no extra enemy enters the first wave.",
+    "Boss 008 candidate is not adopted; existing placeholder remains."
+  ]
+}

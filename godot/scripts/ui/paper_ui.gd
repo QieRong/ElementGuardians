@@ -3,13 +3,15 @@ extends RefCounted
 
 const PaperButton = preload("res://scripts/ui/paper_button.gd")
 const SourcedMotion = preload("res://scripts/ui/sourced_menu_motion.gd")
+const Locale = preload("res://scripts/ui/player_locale.gd")
+const Preferences = preload("res://scripts/ui/player_preferences.gd")
 const PAPER := Color("#e8d9bc")
 const INK := Color("#101c29")
 
 static func apply_theme(owner: Control) -> void:
 	var theme := Theme.new()
 	var font := SystemFont.new()
-	font.font_names = PackedStringArray(["Noto Sans CJK SC", "Microsoft YaHei UI", "Microsoft YaHei"])
+	font.font_names = PackedStringArray(["Noto Sans CJK SC", "Microsoft YaHei UI", "Microsoft YaHei", "Yu Gothic", "Malgun Gothic", "Arial"])
 	theme.default_font = font
 	theme.default_font_size = 26
 	theme.set_color("font_color", "Label", PAPER)
@@ -47,7 +49,8 @@ static func background(owner: Control, texture_path: String, dim: bool = false) 
 static func label(owner: Node, id: String, text: String, rect: Rect2, font_size: int = 26) -> Label:
 	var item := Label.new()
 	item.name = id
-	item.text = text
+	item.text = Locale.text(owner, text)
+	item.set_meta("ui_source", text)
 	item.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 	item.vertical_alignment = VERTICAL_ALIGNMENT_CENTER
 	item.add_theme_font_size_override("font_size", font_size)
@@ -76,24 +79,45 @@ static func panel(owner: Control, id: String, rect: Rect2) -> PanelContainer:
 static func button(owner: Node, id: String, text: String, rect: Rect2, action: Callable, primary: bool = false, font_size: int = 28, icon_name: String = "") -> Button:
 	var item := PaperButton.new()
 	item.name = id
-	item.text = text
+	item.text = Locale.text(owner, text)
+	item.set_meta("ui_source", text)
 	item.primary = primary
 	item.compact = rect.size.y < 70
 	if not icon_name.is_empty():
 		item.glyph = load("res://assets/icons/lucide/" + icon_name + ".svg")
 	item.custom_minimum_size = Vector2(0, 64)
 	item.add_theme_font_size_override("font_size", font_size)
+	item.set_meta("ui_font_size", font_size)
+	item.pressed.connect(func(): Preferences.current(item.get_tree()).click())
 	item.pressed.connect(action)
 	owner.add_child(item)
 	place(item, rect)
+	fit_caption(item)
 	item.set_reduced_motion(bool(item.get_tree().get_meta("eg_reduce_motion", false)))
 	return item
 
-static func entrance(owner: Control) -> void:
+static func refresh_text(owner: Node) -> void:
+	for item in owner.find_children("*", "Control", true, false):
+		if item.has_meta("ui_source"):
+			item.text = Locale.text(owner, String(item.get_meta("ui_source")))
+			if item is Button:
+				fit_caption(item)
+
+static func fit_caption(button: Button) -> void:
+	var font_size: int = int(button.get_meta("ui_font_size", button.get_theme_font_size("font_size")))
+	var font: Font = button.get_theme_font("font")
+	while font_size > 24:
+		var extra: float = font_size + 14 if button.get("glyph") != null and not button.text.is_empty() else 0
+		if font.get_string_size(button.text, HORIZONTAL_ALIGNMENT_LEFT, -1, font_size).x + extra <= button.size.x - 24:
+			break
+		font_size -= 1
+	button.add_theme_font_size_override("font_size", font_size)
+
+static func entrance(owner: Control) -> Tween:
 	if bool(owner.get_tree().get_meta("eg_reduce_motion", false)):
-		return
+		return null
 	# Input remains live throughout; there is no outgoing wait or overlay.
-	SourcedMotion.entrance(owner)
+	return SourcedMotion.entrance(owner)
 
 static func set_motion(owner: Control, reduced: bool) -> void:
 	owner.get_tree().set_meta("eg_reduce_motion", reduced)

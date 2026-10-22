@@ -1,6 +1,6 @@
 # Godot 工程与战斗诊断（不是已完成游戏）
 
-使用 **Godot 4.4.1** 导入 `project.godot`。正常入口为纸雕菜单→真实玩家PREP→首波COMBAT→“强化待接入”UPGRADE边界。0塔/60金币/10HP，点击空格后20金币召唤；先选源再点目标合成，取消按钮或Esc取消选择。召唤后新单位保持选中。COMBAT禁布阵，返回按钮退出本次试玩。不会自动跳过强化进入第二波。菜单保留6份CSV检查、键盘焦点与减少动画（运行内记忆）。Godot目前仅中文，六语言HTML预览未被删除。固定三塔六波诊断不接入菜单。
+使用 **Godot 4.4.1** 导入 `project.godot`。正常入口为纸雕菜单→真实玩家PREP→首波COMBAT→“强化待接入”UPGRADE边界。返回箭头位于左上角波次旁，悬停显示“返回主菜单”；底部不再重复返回。0塔/60金币/10HP，点击空格后20金币召唤；先选源再点目标合成，取消按钮或Esc取消选择。召唤后新单位保持选中。COMBAT禁布阵，返回按钮退出本次试玩。不会自动跳过强化进入第二波。菜单保留6份CSV检查和键盘焦点。右上角为Lucide齿轮；设置弹层采用完全不透明的深蓝纸层，提供简/繁中文、英语、韩语、日语、俄语和真实UI声音开关，立即生效并写入user://player_settings.cfg；战斗继承语言与声音。动画始终开启，不提供玩家开关。六语言HTML预览保留，翻译未做母语审校。固定三塔六波诊断不接入菜单。普通蛛机已有跟随真实路程的足部交替及转向；迅捷/重甲已使用006/007不同贴图，但首波配置仍只有普通怪。该步态为单张立绘网格变形首版，不是完整逐腿骨骼。内部测试仍可调用减少动画路径，正常玩家没有此选项。
 数据来源：`../configs/ElementGuardians_策划数值配置.xlsx`，运行时 `configs/csv/*.csv` 是 `python ../tools/sync_config.py` 同步的副本，不要单独手工修改。
 
 先阅读仓库根目录 `AGENTS.md` 与 `prompts/01-FIRST-TURN.md`。正式开局仍为0塔/60金币/10HP；诊断夹具采用D008固定火5/冰4/雷3、均Lv1，只有自动测试暂时跳过尚未实现的强化。
@@ -49,6 +49,6 @@ python tools/run_godot_check.py --godot-exe E:/godot/Godot_v4.4.1-stable_win64_c
 python tools/run_godot_check.py --godot-exe E:/godot/Godot_v4.4.1-stable_win64_console.exe --log logs/test_runs/新目录/menu.log --require 'MENU SUMMARY: PASS=\d+ FAIL=0 SKIP=1 COMPLETE' -- --headless --path godot --script res://tests/test_player_menu.gd
 ```
 
-渲染测试去掉headless，追加 `-- --render-scale=0.75 --capture-dir=<绝对新目录>`，最终摘要改为SKIP=0。菜单按下与悬停由真实InputEvent经过Viewport投递；固定点击矩形，只有纸面按上游方案缩放。中途减少动画会终止入场渐变，按钮即刻改变颜色和焦点边框；场景销毁自动取消绑定Tween，连续进入/返回只接受一次导航。
+渲染测试去掉headless，追加 `-- --render-scale=0.75 --capture-dir=<绝对新目录>`，最终摘要改为SKIP=0。菜单按下与悬停由真实InputEvent经过Viewport投递；固定点击矩形，只有纸面按上游方案缩放。设置弹层不淡入卡片及文字，按钮仍保留现成悬停/按压动效；场景销毁自动取消绑定Tween，连续进入/返回只接受一次导航。
 
-资产映射见tracking/ASSET_LICENSES.csv（仓库根目录）。使用SystemFont读取本机字体，没有打包系统商业字库；清洁环境中文显示未验收。完整报告见logs/test_runs/20261022_menu_ui/REPORT.md（仓库根目录）。
+资产映射见tracking/ASSET_LICENSES.csv（仓库根目录）。使用SystemFont读取本机字体，没有打包系统商业字库；清洁环境中文显示未验收。最新设置修复与双尺寸真实输入证据见logs/test_runs/20261022_settings_review/REPORT.md（仓库根目录）；快速打开设置会先结束菜单父节点尚未完成的淡入，普通菜单入场和按钮动效仍开启。先行菜单报告保留为历史记录。

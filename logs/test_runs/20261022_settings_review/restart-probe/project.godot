@@ -1,0 +1,5 @@
+config_version=5
+[application]
+config/name="EGSettingsReview20261022-40350263ffd54da7a6f2c6f685900f62"
+[rendering]
+renderer/rendering_method="gl_compatibility"

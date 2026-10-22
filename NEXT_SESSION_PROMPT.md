@@ -1,3 +1,40 @@
+# 最新设置修复｜2026-10-22（优先于下方历史暂停记录）
+
+- 本轮用户先要求只读恢复，随后明确授权“直接检查并修复现有设置缺陷，不扩展玩法”；另授权周剩余1%时提交push，最终Git状态以现场为准，不沿用旧文档的未授权结论。
+- 修复了菜单入场期间快速点击齿轮时弹层继承父节点透明度的问题：打开设置前结束本菜单尚未完成的入场Tween并恢复alpha=1。普通菜单入场与按钮动效仍开启，没有动画开关；规则、地图、九格、RNG、XLSX/CSV不变。
+- 最新报告：logs/test_runs/20261022_settings_review/REPORT.md。完整23组22PASS/1FAIL/0SKIP，唯一红为历史MANIFEST两项；最终双尺寸菜单各108PASS/0FAIL/0SKIP、EXIT0/HARNESS=PASS，独立验证普通入场仍运行。偏好/音频/六语言排版26PASS。原始21/2整套和全部红绿日志不改写。
+- 追加三个独立进程的语言/声音保存恢复检查20PASS/0FAIL，隔离user目录，三次EXIT0/HARNESS=PASS。首次探针收尾对象警告保留，测试清理停止音频并等120ms后重跑无警告，未改生产音频。收口已实读周剩余1%，按当轮授权准备提交push，最终SHA/成功状态请现场核对，不因旧段落写未授权而重复询问。
+- 最新截图final-720/00-early-settings.png、final-540/00-early-settings.png及两档03-settings-zh.png（均在settings_review目录下）。真人鼠标/听感/母语审校、低端性能、EXE和完整玩家六波仍未验收。优先让用户体验，不扩玩法；下一任务由用户决定。
+
+# 暂停交接｜2026-10-22（历史）
+
+用户要求“修正完这一个暂停，给交接文本新开对话”。已修不透明设置卡片，未再扩展功能；下一轮先读logs/test_runs/20261022_player_settings/REPORT.md与现场Git。
+
+- master / HEAD 4d2d03c10a7994dbd3c6de120f8d805798e163c8；返回/蜘蛛与本次设置均未提交、未推送，不要reset或大范围暂存。
+- 右上角Lucide齿轮；弹层实体深蓝不透底。六语言/真实按钮及选格声音可调并持久化；用户明确动画始终开启，不给玩家开关。
+- 原始完整23组：21PASS/2FAIL/0SKIP；720按压测试改按绑定Tween完成观测0.9源目标后100PASS/0FAIL，540102PASS/0FAIL；数量差是540多两条声音UI断言。偏好/音频/六语言战斗排版26PASS。未把旧整套摘要重写为绿，未重跑整套；历史MANIFEST两红仍保留。
+- 真人听感/翻译/低端/完整六波/EXE未验收；原规则、XLSX/CSV、地图、九格、RNG不改；首波UPGRADE仍冻结。下一步先让用户F5体验，再按用户新指示继续，不自行开工。
+
+# 最新设置补充｜2026-10-22（优先于下方历史说明；未提交/未推送）
+
+- D012用户确认：右上角Lucide齿轮，设置仅语言/声音；动画始终开启，不允许玩家开关。弹层为完全不透明深蓝纸层，无卡片/文字淡入，保留按钮动效。
+- Godot接入六语言菜单与首波玩家页，战斗继承；新增原创UI/选格轻音与4声部固定池、独立总线，默认有声。只有语言/声音写入user://player_settings.cfg；无音乐、战斗音包，真人听感/母语审校/低端未验收。
+- 配置、core、地图、76px九格、RNG、首波强化冻结不变；召唤/取消按钮为多语言略调宽。网页预览和字体子集不动，未安装MCP/第三方插件。
+- 最新测试/红绿/截图/风险见logs/test_runs/20261022_player_settings/REPORT.md；上轮试玩反馈修改仍保留、整体未提交。MANIFEST原project.godot/main.tscn两项历史红仍在。下方减少动画开关和Godot仅中文均为历史，不能恢复。
+
+# 最新补充｜2026-10-22 首次试玩反馈（本轮修改未提交、未推送）
+
+以下内容优先于下方历史交接。用户要求返回改为左上角波次旁的箭头，并希望怪物区分外形、有蜘蛛式爬行；用户这次未观察到漏怪，不等于漏怪逻辑不存在或整局验收通过。
+
+- 玩家返回改为HUD左上角Lucide箭头，88×88点击区、工具提示“返回主菜单”；波次避让，移除底部重复返回。现成GlobalTweens悬停/按下/焦点/减少动画保留。
+- 005普通蛛机用Polygon2D纹理网格和AnimationPlayer属性轨道做首版足部交替，按真实行进距离采样，随道路转向，血条独立保持正向；顶部路段血条置于下方避开阶段文字。不是逐腿骨骼或新方向图集，实际精细度仍待用户验收。
+- 006游魂灯灵/007缝合甲兽原图已映射swift/armor，仅显示层变化；首波仍只有原配置6只普通怪。未采用008 Boss候选。无数值、路线、九格或玩法变化，无新插件。
+- 来源/适配：docs/third_party/enemy-crawl-20261022；原始图片像素不改。新测试test_enemy_presentation.gd纳入verify_runtime.py。最终计数/红绿日志以logs/test_runs/20261022_playtest_feedback/REPORT.md及final-suite/summary.json为准，历史结果不冒充重跑。
+- 用户询问IvanMurzak Godot-MCP；核对作者要求.NET版Godot与.NET8 SDK，当前标准版不能直接编译；未安装它。现有Godot工具试连Transport closed，未声称已连通。Blender暂不用于本轮2D贴图网格动画。
+- 当前分支master；本轮没有提交/推送授权，不沿用上轮push许可。先现场检查Git，保留新变更，后续仍先真人确认当前切片，再接强化。原MANIFEST两项历史红、完整六波玩家流程/性能/EXE待验收边界不变。
+
+---
+
 # 新对话交接｜2026-10-22 玩家布阵与首波收口
 
 请始终中文。在D:/桌面/ElementGuardians现场核对git status/log/branch及远端master；先读AGENTS、README、docs/00-START-HERE、09-ROADMAP、tracking/DECISIONS与最新logs/test_runs/20261022_player_prep/REPORT.md。不要把历史计数冒充当前重跑。

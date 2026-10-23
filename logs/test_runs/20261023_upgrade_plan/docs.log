@@ -1,0 +1,7 @@
+COMMAND: python -X utf8 -B tools/check_docs.py
+DOCS: 19 files | tests defined=36 referenced=36
+DOC CHECK: FAIL
+DOC-MANIFEST FAIL: MANIFEST 哈希不符: godot/project.godot
+DOC-MANIFEST FAIL: MANIFEST 哈希不符: godot/scenes/main.tscn
+
+EXIT: 1

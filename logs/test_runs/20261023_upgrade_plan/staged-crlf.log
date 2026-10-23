@@ -1,0 +1,6 @@
+COMMAND: git -c core.whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol diff --cached --check
+logs/test_runs/20261023_launcher/normal-launcher.engine.log:3: new blank line at EOF.
+logs/test_runs/20261023_launcher/parse.command.log:30: trailing whitespace.
++ERROR: Error saving editor settings to 
+
+EXIT: 2

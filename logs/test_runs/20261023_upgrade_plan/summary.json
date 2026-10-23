@@ -1,0 +1,32 @@
+[
+  {
+    "name": "sync",
+    "exit": 0,
+    "status": "PASS"
+  },
+  {
+    "name": "config",
+    "exit": 0,
+    "status": "PASS"
+  },
+  {
+    "name": "docs",
+    "exit": 1,
+    "status": "FAIL"
+  },
+  {
+    "name": "diff-check",
+    "exit": 0,
+    "status": "PASS"
+  },
+  {
+    "name": "staged-default",
+    "exit": 2,
+    "status": "FAIL"
+  },
+  {
+    "name": "staged-crlf",
+    "exit": 2,
+    "status": "FAIL"
+  }
+]

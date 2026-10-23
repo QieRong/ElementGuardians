@@ -1,0 +1,1016 @@
+{
+  "status": "DESIGN_ONLY_NOT_IMPLEMENTED",
+  "method": "16px candidate grid; 2px arc-length samples; 12-start greedy + up to 3 one-pad swap passes; exact line-circle interval union verification",
+  "global_optimum_proven": false,
+  "range_px": 225,
+  "coverage_definition": "Union of covered route arc length, overlap counted once; assumes every displayed position occupied. Not damage or win rate.",
+  "protected_sha256_unchanged": {
+    "output\\visuals\\proposals\\20261023-local-summon\\maps.json": "bcea5c4bbc6109729b609087ea91e6c1d46e513c6db02ac78ec1ad8f89093c8e",
+    "godot\\data\\map_default.json": "fd13fa7603929c2f456f82fb780e2807d08bd238157484525a3a8a6844822fcd",
+    "godot\\scripts\\player\\player_session.gd": "dcbfe9d89564a4d75b17bc3159d8ef0eece0292a8c38682aa691107f19945d5d",
+    "configs\\ElementGuardians_策划数值配置.xlsx": "ea798cd0693effcc3544eaa59ce9394c4fb26e5a00858229e61cf80a21f80b95",
+    "godot\\configs\\csv\\towers.csv": "cbe0e2278fc0efdb524d9f66eaef6d3c9629432b481eee862b3e1de1fa84012e"
+  },
+  "checks": {
+    "PASS": 21,
+    "FAIL": 0,
+    "SKIP": 0
+  },
+  "maps": [
+    {
+      "id": "A",
+      "title": "双湾弧道",
+      "candidate_count": 396,
+      "previous_nine_pad_coverage_pct": 100.0,
+      "counts": [
+        {
+          "slots": 3,
+          "centers": [
+            [
+              380,
+              900
+            ],
+            [
+              396,
+              324
+            ],
+            [
+              108,
+              724
+            ]
+          ],
+          "sampled_coverage_pct": 90.64,
+          "exact_min_range_union": {
+            "covered_px": 2227.71,
+            "coverage_pct": 90.73,
+            "intervals": [
+              [
+                137.0971670942212,
+                1055.9126123867334
+              ],
+              [
+                1145.016689599072,
+                2345.043197656987
+              ],
+              [
+                2346.4933459530084,
+                2455.3620735033915
+              ]
+            ],
+            "gaps": [
+              [
+                0.0,
+                137.0971670942212
+              ],
+              [
+                1055.9126123867334,
+                1145.016689599072
+              ],
+              [
+                2345.043197656987,
+                2346.4933459530084
+              ]
+            ],
+            "longest_gap_px": 137.1,
+            "entry_uncovered_px": 137.1,
+            "end_uncovered_px": 0.0
+          }
+        },
+        {
+          "slots": 4,
+          "centers": [
+            [
+              380,
+              868
+            ],
+            [
+              396,
+              324
+            ],
+            [
+              124,
+              740
+            ],
+            [
+              140,
+              308
+            ]
+          ],
+          "sampled_coverage_pct": 100.0,
+          "exact_min_range_union": {
+            "covered_px": 2455.36,
+            "coverage_pct": 100.0,
+            "intervals": [
+              [
+                0.0,
+                2455.3620735033915
+              ]
+            ],
+            "gaps": [],
+            "longest_gap_px": 0,
+            "entry_uncovered_px": 0.0,
+            "end_uncovered_px": 0.0
+          }
+        },
+        {
+          "slots": 5,
+          "centers": [
+            [
+              380,
+              868
+            ],
+            [
+              396,
+              324
+            ],
+            [
+              124,
+              740
+            ],
+            [
+              140,
+              308
+            ],
+            [
+              284,
+              372
+            ]
+          ],
+          "sampled_coverage_pct": 100.0,
+          "exact_min_range_union": {
+            "covered_px": 2455.36,
+            "coverage_pct": 100.0,
+            "intervals": [
+              [
+                0.0,
+                2455.3620735033915
+              ]
+            ],
+            "gaps": [],
+            "longest_gap_px": 0,
+            "entry_uncovered_px": 0.0,
+            "end_uncovered_px": 0.0
+          }
+        },
+        {
+          "slots": 6,
+          "centers": [
+            [
+              380,
+              868
+            ],
+            [
+              396,
+              324
+            ],
+            [
+              124,
+              740
+            ],
+            [
+              140,
+              308
+            ],
+            [
+              284,
+              372
+            ],
+            [
+              412,
+              628
+            ]
+          ],
+          "sampled_coverage_pct": 100.0,
+          "exact_min_range_union": {
+            "covered_px": 2455.36,
+            "coverage_pct": 100.0,
+            "intervals": [
+              [
+                0.0,
+                2455.3620735033915
+              ]
+            ],
+            "gaps": [],
+            "longest_gap_px": 0,
+            "entry_uncovered_px": 0.0,
+            "end_uncovered_px": 0.0
+          }
+        },
+        {
+          "slots": 7,
+          "centers": [
+            [
+              380,
+              868
+            ],
+            [
+              396,
+              324
+            ],
+            [
+              124,
+              740
+            ],
+            [
+              140,
+              308
+            ],
+            [
+              284,
+              372
+            ],
+            [
+              412,
+              628
+            ],
+            [
+              524,
+              564
+            ]
+          ],
+          "sampled_coverage_pct": 100.0,
+          "exact_min_range_union": {
+            "covered_px": 2455.36,
+            "coverage_pct": 100.0,
+            "intervals": [
+              [
+                0.0,
+                2455.3620735033915
+              ]
+            ],
+            "gaps": [],
+            "longest_gap_px": 0,
+            "entry_uncovered_px": 0.0,
+            "end_uncovered_px": 0.0
+          }
+        },
+        {
+          "slots": 8,
+          "centers": [
+            [
+              380,
+              868
+            ],
+            [
+              396,
+              324
+            ],
+            [
+              124,
+              740
+            ],
+            [
+              140,
+              308
+            ],
+            [
+              284,
+              372
+            ],
+            [
+              412,
+              628
+            ],
+            [
+              524,
+              564
+            ],
+            [
+              284,
+              580
+            ]
+          ],
+          "sampled_coverage_pct": 100.0,
+          "exact_min_range_union": {
+            "covered_px": 2455.36,
+            "coverage_pct": 100.0,
+            "intervals": [
+              [
+                0.0,
+                2455.3620735033915
+              ]
+            ],
+            "gaps": [],
+            "longest_gap_px": 0,
+            "entry_uncovered_px": 0.0,
+            "end_uncovered_px": 0.0
+          }
+        },
+        {
+          "slots": 9,
+          "centers": [
+            [
+              380,
+              868
+            ],
+            [
+              396,
+              324
+            ],
+            [
+              124,
+              740
+            ],
+            [
+              140,
+              308
+            ],
+            [
+              284,
+              372
+            ],
+            [
+              412,
+              628
+            ],
+            [
+              524,
+              564
+            ],
+            [
+              284,
+              580
+            ],
+            [
+              636,
+              708
+            ]
+          ],
+          "sampled_coverage_pct": 100.0,
+          "exact_min_range_union": {
+            "covered_px": 2455.36,
+            "coverage_pct": 100.0,
+            "intervals": [
+              [
+                0.0,
+                2455.3620735033915
+              ]
+            ],
+            "gaps": [],
+            "longest_gap_px": 0,
+            "entry_uncovered_px": 0.0,
+            "end_uncovered_px": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "B",
+      "title": "斜岭折返",
+      "candidate_count": 295,
+      "previous_nine_pad_coverage_pct": 100.0,
+      "counts": [
+        {
+          "slots": 3,
+          "centers": [
+            [
+              316,
+              772
+            ],
+            [
+              236,
+              372
+            ],
+            [
+              460,
+              564
+            ]
+          ],
+          "sampled_coverage_pct": 92.9,
+          "exact_min_range_union": {
+            "covered_px": 2170.96,
+            "coverage_pct": 92.88,
+            "intervals": [
+              [
+                0.0,
+                2170.9613122224887
+              ]
+            ],
+            "gaps": [
+              [
+                2170.9613122224887,
+                2337.3350065974373
+              ]
+            ],
+            "longest_gap_px": 166.37,
+            "entry_uncovered_px": 0.0,
+            "end_uncovered_px": 166.37
+          }
+        },
+        {
+          "slots": 4,
+          "centers": [
+            [
+              316,
+              772
+            ],
+            [
+              236,
+              372
+            ],
+            [
+              460,
+              564
+            ],
+            [
+              636,
+              836
+            ]
+          ],
+          "sampled_coverage_pct": 100.0,
+          "exact_min_range_union": {
+            "covered_px": 2337.34,
+            "coverage_pct": 100.0,
+            "intervals": [
+              [
+                0.0,
+                2337.3350065974373
+              ]
+            ],
+            "gaps": [],
+            "longest_gap_px": 0,
+            "entry_uncovered_px": 0.0,
+            "end_uncovered_px": 0.0
+          }
+        },
+        {
+          "slots": 5,
+          "centers": [
+            [
+              316,
+              772
+            ],
+            [
+              300,
+              404
+            ],
+            [
+              460,
+              564
+            ],
+            [
+              636,
+              836
+            ],
+            [
+              92,
+              324
+            ]
+          ],
+          "sampled_coverage_pct": 100.0,
+          "exact_min_range_union": {
+            "covered_px": 2337.34,
+            "coverage_pct": 100.0,
+            "intervals": [
+              [
+                0.0,
+                2337.3350065974373
+              ]
+            ],
+            "gaps": [],
+            "longest_gap_px": 0,
+            "entry_uncovered_px": 0.0,
+            "end_uncovered_px": 0.0
+          }
+        },
+        {
+          "slots": 6,
+          "centers": [
+            [
+              332,
+              772
+            ],
+            [
+              300,
+              404
+            ],
+            [
+              460,
+              564
+            ],
+            [
+              636,
+              836
+            ],
+            [
+              92,
+              324
+            ],
+            [
+              108,
+              868
+            ]
+          ],
+          "sampled_coverage_pct": 100.0,
+          "exact_min_range_union": {
+            "covered_px": 2337.34,
+            "coverage_pct": 100.0,
+            "intervals": [
+              [
+                0.0,
+                2337.3350065974373
+              ]
+            ],
+            "gaps": [],
+            "longest_gap_px": 0,
+            "entry_uncovered_px": 0.0,
+            "end_uncovered_px": 0.0
+          }
+        },
+        {
+          "slots": 7,
+          "centers": [
+            [
+              332,
+              772
+            ],
+            [
+              300,
+              404
+            ],
+            [
+              460,
+              564
+            ],
+            [
+              636,
+              836
+            ],
+            [
+              92,
+              324
+            ],
+            [
+              108,
+              868
+            ],
+            [
+              124,
+              468
+            ]
+          ],
+          "sampled_coverage_pct": 100.0,
+          "exact_min_range_union": {
+            "covered_px": 2337.34,
+            "coverage_pct": 100.0,
+            "intervals": [
+              [
+                0.0,
+                2337.3350065974373
+              ]
+            ],
+            "gaps": [],
+            "longest_gap_px": 0,
+            "entry_uncovered_px": 0.0,
+            "end_uncovered_px": 0.0
+          }
+        },
+        {
+          "slots": 8,
+          "centers": [
+            [
+              332,
+              772
+            ],
+            [
+              300,
+              404
+            ],
+            [
+              460,
+              564
+            ],
+            [
+              636,
+              836
+            ],
+            [
+              92,
+              324
+            ],
+            [
+              108,
+              868
+            ],
+            [
+              124,
+              468
+            ],
+            [
+              572,
+              516
+            ]
+          ],
+          "sampled_coverage_pct": 100.0,
+          "exact_min_range_union": {
+            "covered_px": 2337.34,
+            "coverage_pct": 100.0,
+            "intervals": [
+              [
+                0.0,
+                2337.3350065974373
+              ]
+            ],
+            "gaps": [],
+            "longest_gap_px": 0,
+            "entry_uncovered_px": 0.0,
+            "end_uncovered_px": 0.0
+          }
+        },
+        {
+          "slots": 9,
+          "centers": [
+            [
+              332,
+              772
+            ],
+            [
+              300,
+              404
+            ],
+            [
+              460,
+              564
+            ],
+            [
+              636,
+              836
+            ],
+            [
+              92,
+              324
+            ],
+            [
+              108,
+              868
+            ],
+            [
+              124,
+              468
+            ],
+            [
+              572,
+              516
+            ],
+            [
+              604,
+              644
+            ]
+          ],
+          "sampled_coverage_pct": 100.0,
+          "exact_min_range_union": {
+            "covered_px": 2337.34,
+            "coverage_pct": 100.0,
+            "intervals": [
+              [
+                0.0,
+                2337.3350065974373
+              ]
+            ],
+            "gaps": [],
+            "longest_gap_px": 0,
+            "entry_uncovered_px": 0.0,
+            "end_uncovered_px": 0.0
+          }
+        }
+      ]
+    },
+    {
+      "id": "C",
+      "title": "环庭内旋",
+      "candidate_count": 208,
+      "previous_nine_pad_coverage_pct": 100.0,
+      "counts": [
+        {
+          "slots": 3,
+          "centers": [
+            [
+              428,
+              372
+            ],
+            [
+              476,
+              708
+            ],
+            [
+              188,
+              612
+            ]
+          ],
+          "sampled_coverage_pct": 94.21,
+          "exact_min_range_union": {
+            "covered_px": 2343.63,
+            "coverage_pct": 94.24,
+            "intervals": [
+              [
+                132.856463084221,
+                738.17937249651
+              ],
+              [
+                741.3770401571685,
+                1341.3919580662996
+              ],
+              [
+                1348.4521508353141,
+                2486.74526345156
+              ]
+            ],
+            "gaps": [
+              [
+                0.0,
+                132.856463084221
+              ],
+              [
+                738.17937249651,
+                741.3770401571685
+              ],
+              [
+                1341.3919580662996,
+                1348.4521508353141
+              ]
+            ],
+            "longest_gap_px": 132.86,
+            "entry_uncovered_px": 132.86,
+            "end_uncovered_px": 0.0
+          }
+        },
+        {
+          "slots": 4,
+          "centers": [
+            [
+              460,
+              356
+            ],
+            [
+              476,
+              708
+            ],
+            [
+              188,
+              692
+            ],
+            [
+              92,
+              372
+            ]
+          ],
+          "sampled_coverage_pct": 100.0,
+          "exact_min_range_union": {
+            "covered_px": 2486.75,
+            "coverage_pct": 100.0,
+            "intervals": [
+              [
+                0.0,
+                2486.74526345156
+              ]
+            ],
+            "gaps": [],
+            "longest_gap_px": 0,
+            "entry_uncovered_px": 0.0,
+            "end_uncovered_px": 0.0
+          }
+        },
+        {
+          "slots": 5,
+          "centers": [
+            [
+              428,
+              356
+            ],
+            [
+              492,
+              692
+            ],
+            [
+              188,
+              612
+            ],
+            [
+              92,
+              372
+            ],
+            [
+              108,
+              916
+            ]
+          ],
+          "sampled_coverage_pct": 100.0,
+          "exact_min_range_union": {
+            "covered_px": 2486.75,
+            "coverage_pct": 100.0,
+            "intervals": [
+              [
+                0.0,
+                2486.74526345156
+              ]
+            ],
+            "gaps": [],
+            "longest_gap_px": 0,
+            "entry_uncovered_px": 0.0,
+            "end_uncovered_px": 0.0
+          }
+        },
+        {
+          "slots": 6,
+          "centers": [
+            [
+              396,
+              372
+            ],
+            [
+              492,
+              692
+            ],
+            [
+              188,
+              612
+            ],
+            [
+              92,
+              372
+            ],
+            [
+              108,
+              916
+            ],
+            [
+              508,
+              356
+            ]
+          ],
+          "sampled_coverage_pct": 100.0,
+          "exact_min_range_union": {
+            "covered_px": 2486.75,
+            "coverage_pct": 100.0,
+            "intervals": [
+              [
+                0.0,
+                2486.74526345156
+              ]
+            ],
+            "gaps": [],
+            "longest_gap_px": 0,
+            "entry_uncovered_px": 0.0,
+            "end_uncovered_px": 0.0
+          }
+        },
+        {
+          "slots": 7,
+          "centers": [
+            [
+              396,
+              372
+            ],
+            [
+              492,
+              692
+            ],
+            [
+              188,
+              612
+            ],
+            [
+              92,
+              372
+            ],
+            [
+              108,
+              916
+            ],
+            [
+              508,
+              356
+            ],
+            [
+              636,
+              900
+            ]
+          ],
+          "sampled_coverage_pct": 100.0,
+          "exact_min_range_union": {
+            "covered_px": 2486.75,
+            "coverage_pct": 100.0,
+            "intervals": [
+              [
+                0.0,
+                2486.74526345156
+              ]
+            ],
+            "gaps": [],
+            "longest_gap_px": 0,
+            "entry_uncovered_px": 0.0,
+            "end_uncovered_px": 0.0
+          }
+        },
+        {
+          "slots": 8,
+          "centers": [
+            [
+              396,
+              372
+            ],
+            [
+              492,
+              692
+            ],
+            [
+              188,
+              612
+            ],
+            [
+              92,
+              372
+            ],
+            [
+              108,
+              916
+            ],
+            [
+              508,
+              356
+            ],
+            [
+              636,
+              900
+            ],
+            [
+              204,
+              356
+            ]
+          ],
+          "sampled_coverage_pct": 100.0,
+          "exact_min_range_union": {
+            "covered_px": 2486.75,
+            "coverage_pct": 100.0,
+            "intervals": [
+              [
+                0.0,
+                2486.74526345156
+              ]
+            ],
+            "gaps": [],
+            "longest_gap_px": 0,
+            "entry_uncovered_px": 0.0,
+            "end_uncovered_px": 0.0
+          }
+        },
+        {
+          "slots": 9,
+          "centers": [
+            [
+              396,
+              372
+            ],
+            [
+              492,
+              692
+            ],
+            [
+              188,
+              612
+            ],
+            [
+              92,
+              372
+            ],
+            [
+              108,
+              916
+            ],
+            [
+              508,
+              356
+            ],
+            [
+              636,
+              900
+            ],
+            [
+              204,
+              356
+            ],
+            [
+              204,
+              724
+            ]
+          ],
+          "sampled_coverage_pct": 100.0,
+          "exact_min_range_union": {
+            "covered_px": 2486.75,
+            "coverage_pct": 100.0,
+            "intervals": [
+              [
+                0.0,
+                2486.74526345156
+              ]
+            ],
+            "gaps": [],
+            "longest_gap_px": 0,
+            "entry_uncovered_px": 0.0,
+            "end_uncovered_px": 0.0
+          }
+        }
+      ]
+    }
+  ]
+}

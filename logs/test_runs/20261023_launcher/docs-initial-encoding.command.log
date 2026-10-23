@@ -1,0 +1,7 @@
+{"command": ["python", "-B", "tools/check_docs.py"]}
+DOC-MANIFEST FAIL: MANIFEST ��ϣ����: godot/project.godot
+DOC-MANIFEST FAIL: MANIFEST ��ϣ����: godot/scenes/main.tscn
+DOCS: 19 files | tests defined=36 referenced=36
+DOC CHECK: FAIL
+
+EXIT=1

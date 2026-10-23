@@ -1,0 +1,40 @@
+{
+  "checks": [
+    {
+      "name": "sync",
+      "status": "PASS",
+      "exit_code": 0,
+      "log": "sync.command.log"
+    },
+    {
+      "name": "config",
+      "status": "PASS",
+      "exit_code": 0,
+      "log": "config.command.log"
+    },
+    {
+      "name": "version",
+      "status": "PASS",
+      "exit_code": 0,
+      "log": "version.command.log"
+    },
+    {
+      "name": "parse",
+      "status": "FAIL",
+      "exit_code": 0,
+      "log": "parse.command.log"
+    },
+    {
+      "name": "launcher-gui",
+      "status": "FAIL",
+      "exit_code": 0,
+      "log": "launcher-gui.command.log"
+    }
+  ],
+  "counts": {
+    "PASS": 3,
+    "FAIL": 2,
+    "SKIP": 0
+  },
+  "scope": "Launcher GUI smoke auto-exits after 120 frames; no human UI, audio, performance, or gameplay acceptance."
+}

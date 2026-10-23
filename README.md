@@ -9,6 +9,8 @@
 
 ## 0. 立刻开始
 
+**本机双击运行**：双击仓库根目录的 `启动游戏.cmd`，直接进入游戏，无需打开编辑器或输入命令。脚本使用 `E:/godot/Godot_v4.4.1-stable_win64_console.exe` 与固定 seed=42，可从其他工作目录启动；游戏关闭后控制台自动退出，启动失败则保留错误提示。移动引擎后需修改脚本中的 `EG_GODOT` 路径。当前仍为首波试玩，强化与完整六波未接通。
+
 1. 将整个 `ElementGuardians/` 文件夹解压到本地，注意不要只导入压缩包中的某个子目录。
 2. 先阅读 `AGENTS.md`、`docs/00-START-HERE.md`、`docs/01-GDD.md`、`docs/02-SYSTEM-SPEC.md`。
 3. 使用 Godot **4.4.1 标准版** 导入 `godot/project.godot`。可在编辑器内运行纸雕菜单预览，点“检查配置”查看数据加载状态。

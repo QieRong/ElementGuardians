@@ -29,12 +29,15 @@ var spawn_queues: Array[Dictionary] = []
 var wave_stats: Array[Dictionary] = []
 var combat_log: Array[String] = []
 var stats: Dictionary = {}
+var upgrade_stacks: Dictionary = {}
+var _kill_gold_bonus: int = 0
 
 var _initial_fixed: Array[Dictionary] = []
 var _next_enemy_id := 1
 var _player_mode: bool = false
 var _recorded_summons: int = 0
 var _recorded_merges: int = 0
+var _recorded_upgrades: int = 0
 
 func setup(p_config: BattleConfig, p_map: BattleMap, fixed_towers: Variant = null, p_seed: int = 20261018) -> void:
 	# restart() passes our saved array; copy before clearing any runtime data.
@@ -52,6 +55,8 @@ func setup(p_config: BattleConfig, p_map: BattleMap, fixed_towers: Variant = nul
 	wave_elapsed = 0.0
 	victory = false
 	finished = false
+	upgrade_stacks.clear()
+	_kill_gold_bonus = 0
 	towers.clear()
 	enemies.clear()
 	spawn_queues.clear()
@@ -60,10 +65,11 @@ func setup(p_config: BattleConfig, p_map: BattleMap, fixed_towers: Variant = nul
 	_next_enemy_id = 1
 	_recorded_summons = 0
 	_recorded_merges = 0
+	_recorded_upgrades = 0
 	stats = {
 		"kills": 0, "leaks": 0, "damage_dealt": 0.0,
 		"gold_earned": 0, "gold_spent": 0, "wave_rewards": 0,
-		"summons": 0, "merges": 0, "highest_level": 1,
+		"summons": 0, "merges": 0, "tower_upgrades": 0, "highest_level": 1,
 		"tower_count": 0, "board_occupancy_pct": 0.0,
 	}
 	_initial_fixed.clear()
@@ -106,8 +112,43 @@ func _build_fixed_towers(chosen: Array) -> void:
 			"chain_ratio": float(data["chain_damage_ratio"]),
 			"cooldown": 0.0,
 		})
+		refresh_tower_stats(towers.back())
 	stats["tower_count"] = towers.size()
 	stats["board_occupancy_pct"] = round(100.0 * float(towers.size()) / 9.0 * 10.0) / 10.0
+
+func apply_upgrade_stacks(stacks: Dictionary) -> void:
+	upgrade_stacks = stacks.duplicate(true)
+	_kill_gold_bonus = int(_effect_total("kill_gold_bonus"))
+	for tower in towers:
+		refresh_tower_stats(tower)
+
+func _effect_total(effect_key: String) -> float:
+	var total: float = 0.0
+	for id in upgrade_stacks:
+		if not config.upgrades.has(id):
+			continue
+		var row: Dictionary = config.upgrades[id]
+		if String(row["effect_key"]) == effect_key:
+			total += float(row["effect_value"]) * clampi(int(upgrade_stacks[id]), 0, int(row["max_stacks"]))
+	return total
+
+func refresh_tower_stats(tower: Dictionary) -> void:
+	var type_id: String = String(tower["type_id"])
+	var data: Dictionary = config.towers[type_id]
+	var level: int = int(tower["level"])
+	var multiplier: float = 1.0 if level == 1 else float(config.global_params["level%d_damage_mult" % level])
+	var bonus: float = _effect_total("global_damage_bonus")
+	if type_id == "fire":
+		bonus += _effect_total("fire_damage_bonus")
+	tower["damage"] = float(data["base_damage"]) * multiplier * (1.0 + bonus)
+	var interval: float = float(data["attack_interval_s"])
+	for id in upgrade_stacks:
+		if config.upgrades.has(id) and String(config.upgrades[id]["effect_key"]) == "attack_interval_scale":
+			var row: Dictionary = config.upgrades[id]
+			interval *= pow(float(row["effect_value"]), clampi(int(upgrade_stacks[id]), 0, int(row["max_stacks"])))
+	tower["interval"] = interval
+	tower["slow_pct"] = minf(float(config.global_params["max_ice_slow_pct"]), float(data["slow_pct"]) + (_effect_total("ice_slow_bonus") if type_id == "ice" else 0.0))
+	tower["chain_extra"] = mini(int(config.global_params["lightning_chain_max_extra_targets"]), int(data["chain_extra_targets"]) + (int(_effect_total("lightning_extra_targets")) if type_id == "lightning" else 0))
 
 func restart() -> void:
 	if _player_mode:
@@ -147,9 +188,11 @@ func start_wave() -> bool:
 		"board_occupancy_pct": stats["board_occupancy_pct"],
 		"summons": int(stats["summons"]) - _recorded_summons,
 		"merges": int(stats["merges"]) - _recorded_merges,
+		"tower_upgrades": int(stats["tower_upgrades"]) - _recorded_upgrades,
 	})
 	_recorded_summons = int(stats["summons"])
 	_recorded_merges = int(stats["merges"])
+	_recorded_upgrades = int(stats["tower_upgrades"])
 	_log("COMBAT wave=%d start gold=%d hp=%d enemies=%d" % [wave_index, gold, base_hp, wave_total(wave_index)])
 	return true
 
@@ -261,10 +304,12 @@ func _attack(tower: Dictionary, enemy: Dictionary) -> void:
 
 func _chain(tower: Dictionary, main_id: int) -> void:
 	var extra := int(tower["chain_extra"])
+	var hit_ids: Array = [main_id]
 	for i in range(extra):
-		var target: Variant = _find_target(tower, [main_id])
+		var target: Variant = _find_target(tower, hit_ids)
 		if target == null:
 			return
+		hit_ids.append(int(target["id"]))
 		_damage_enemy(target, float(tower["damage"]) * float(tower["chain_ratio"]))
 
 func _damage_enemy(enemy: Dictionary, amount: float) -> bool:
@@ -280,12 +325,13 @@ func _damage_enemy(enemy: Dictionary, amount: float) -> bool:
 		return false
 	enemy["resolved"] = true
 	stats["kills"] = int(stats["kills"]) + 1
-	stats["gold_earned"] = int(stats["gold_earned"]) + int(enemy["reward"])
-	gold += int(enemy["reward"])
+	var reward: int = int(enemy["reward"]) + _kill_gold_bonus
+	stats["gold_earned"] = int(stats["gold_earned"]) + reward
+	gold += reward
 	if not wave_stats.is_empty():
 		wave_stats[wave_stats.size() - 1]["kills"] = int(wave_stats[wave_stats.size() - 1]["kills"]) + 1
 	enemies.erase(enemy)
-	_log("KILL %s gold=%d total_gold=%d" % [String(enemy["name"]), int(enemy["reward"]), gold])
+	_log("KILL %s gold=%d total_gold=%d" % [String(enemy["name"]), reward, gold])
 	return true
 
 func _find_target(tower: Dictionary, excluded: Array) -> Variant:

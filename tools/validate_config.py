@@ -135,13 +135,13 @@ def validate() -> dict[str, int]:
         fail("upgrades: each of six defined effect types must occur exactly once")
     eco={r["key"]:r["value"] for r in data["economy_params"]}
     glob={r["key"]:r["value"] for r in data["global_params"]}
-    if set(eco) != {"initial_gold","summon_cost","wave_clear_reward","base_hp"}:
+    if set(eco) != {"initial_gold","summon_cost","wave_clear_reward","base_hp","tower_upgrade_lv2_cost","tower_upgrade_lv3_cost"}:
         fail("economy_params keys mismatch")
     required_global={"board_cols","board_rows","max_tower_level","level2_damage_mult","level3_damage_mult","max_ice_slow_pct","lightning_chain_max_extra_targets","design_width","design_height","gameplay_seed_default"}
     if set(glob) != required_global:
         fail("global_params keys mismatch")
     eco_int={k:integer(v,k,1) for k,v in eco.items()}
-    if eco_int != {"initial_gold":60,"summon_cost":20,"wave_clear_reward":20,"base_hp":10}:
+    if eco_int != {"initial_gold":60,"summon_cost":20,"wave_clear_reward":20,"base_hp":10,"tower_upgrade_lv2_cost":20,"tower_upgrade_lv3_cost":40}:
         fail("locked initial economy values modified without authorization")
     for k,v in {"board_cols":3,"board_rows":3,"max_tower_level":3,"design_width":720,"design_height":1280}.items():
         if integer(glob[k],k) != v:

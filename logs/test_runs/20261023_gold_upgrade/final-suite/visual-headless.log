@@ -1,0 +1,24 @@
+COMMAND=['E:\\godot\\Godot_v4.4.1-stable_win64.exe', '--log-file', 'D:\\桌面\\ElementGuardians\\logs\\test_runs\\20261023_gold_upgrade\\final-suite\\visual-headless.engine.log', '--headless', '--path', 'godot', '--script', 'res://tests/test_battle_visual.gd']
+CWD=D:\桌面\ElementGuardians
+Godot Engine v4.4.1.stable.official.49a5bc7b6 - https://godotengine.org
+
+PASS VISUAL-load-config-map
+PASS VISUAL-supported-render-scale
+PASS VISUAL-initial-diagnostic-fixture
+PASS VISUAL-start-first-wave
+PASS VISUAL-reject-combat-double-start
+PASS VISUAL-all-six-waves-observed
+PASS VISUAL-real-damage-slow-observed
+PASS VISUAL-real-six-wave-victory
+PASS VISUAL-exact-baseline-accounting
+PASS VISUAL-result-reject-start
+PASS VISUAL-result-freezes-simulation
+PASS VISUAL-restart-resets-state
+PASS VISUAL-restart-preserves-fixture-seed
+PASS VISUAL-legacy-defeat-retained
+PASS VISUAL-defeat-freezes-simulation
+VISUAL SUMMARY: PASS=15 FAIL=0 SKIP=1 COMPLETE
+
+EXIT=0 LIMIT=NONE PEAK_PRIVATE_BYTES=73617408
+STDIO=D:\桌面\ElementGuardians\logs\test_runs\20261023_gold_upgrade\final-suite\visual-headless.stdio.log
+HARNESS=PASS SUMMARY_FOUND=True

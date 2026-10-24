@@ -1,0 +1,149 @@
+{
+  "complete": true,
+  "counts": {
+    "PASS": 18,
+    "FAIL": 1,
+    "SKIP": 0
+  },
+  "checks": [
+    {
+      "id": "final-flow",
+      "status": "PASS",
+      "log": "final-flow.log",
+      "summaries": [
+        "UPGRADE SUMMARY: PASS=151 FAIL=0 SKIP=0 COMPLETE"
+      ]
+    },
+    {
+      "id": "effects",
+      "status": "PASS",
+      "log": "effects.log",
+      "summaries": [
+        "UPGRADE EFFECT SUMMARY: PASS=126 FAIL=0 SKIP=0 COMPLETE"
+      ]
+    },
+    {
+      "id": "core",
+      "status": "PASS",
+      "log": "core.log",
+      "summaries": [
+        "TEST SUMMARY: PASS=21 FAIL=0"
+      ]
+    },
+    {
+      "id": "repairs",
+      "status": "PASS",
+      "log": "repairs.log",
+      "summaries": [
+        "REPAIR SUMMARY: PASS=17 FAIL=0 SKIP=0"
+      ]
+    },
+    {
+      "id": "baseline",
+      "status": "PASS",
+      "log": "baseline.log",
+      "summaries": [
+        "BASELINE SUMMARY: PASS=1 FAIL=0 SKIP=0"
+      ]
+    },
+    {
+      "id": "replay",
+      "status": "PASS",
+      "log": "replay.log",
+      "summaries": [
+        "REPLAY SUMMARY: PASS=31 FAIL=0 SKIP=0 COMPLETE"
+      ]
+    },
+    {
+      "id": "prep",
+      "status": "PASS",
+      "log": "prep.log",
+      "summaries": [
+        "PREP SUMMARY: PASS=388 FAIL=0 SKIP=0 COMPLETE"
+      ]
+    },
+    {
+      "id": "player-headless",
+      "status": "PASS",
+      "log": "player-headless.log",
+      "summaries": [
+        "PLAYERVIEW SUMMARY: PASS=38 FAIL=0 SKIP=1 COMPLETE"
+      ]
+    },
+    {
+      "id": "final-upgrade720",
+      "status": "PASS",
+      "log": "final-upgrade720.log",
+      "summaries": [
+        "UPGRADEUI SUMMARY: PASS=415 FAIL=0 SKIP=0 COMPLETE"
+      ]
+    },
+    {
+      "id": "final-upgrade540",
+      "status": "PASS",
+      "log": "final-upgrade540.log",
+      "summaries": [
+        "UPGRADEUI SUMMARY: PASS=415 FAIL=0 SKIP=0 COMPLETE"
+      ]
+    },
+    {
+      "id": "player720",
+      "status": "PASS",
+      "log": "player720.log",
+      "summaries": [
+        "PLAYERVIEW SUMMARY: PASS=71 FAIL=0 SKIP=0 COMPLETE"
+      ]
+    },
+    {
+      "id": "player540",
+      "status": "PASS",
+      "log": "player540.log",
+      "summaries": [
+        "PLAYERVIEW SUMMARY: PASS=71 FAIL=0 SKIP=0 COMPLETE"
+      ]
+    },
+    {
+      "id": "local720",
+      "status": "PASS",
+      "log": "local720.log",
+      "summaries": [
+        "LOCALUI SUMMARY: PASS=567 FAIL=0 SKIP=0 COMPLETE"
+      ]
+    },
+    {
+      "id": "local540",
+      "status": "PASS",
+      "log": "local540.log",
+      "summaries": [
+        "LOCALUI SUMMARY: PASS=567 FAIL=0 SKIP=0 COMPLETE"
+      ]
+    },
+    {
+      "id": "final-parse",
+      "status": "PASS",
+      "log": "final-parse.log",
+      "summaries": []
+    },
+    {
+      "id": "sync",
+      "status": "PASS",
+      "log": "sync.log"
+    },
+    {
+      "id": "config",
+      "status": "PASS",
+      "log": "config.log"
+    },
+    {
+      "id": "docs",
+      "status": "FAIL",
+      "log": "docs.log"
+    },
+    {
+      "id": "format",
+      "status": "PASS",
+      "log": "format.log"
+    }
+  ],
+  "scope": "Targeted automated verification; not human/full-six-wave victory/performance acceptance."
+}

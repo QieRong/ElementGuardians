@@ -1,0 +1,75 @@
+COMMAND=['E:\\godot\\Godot_v4.4.1-stable_win64.exe', '--log-file', 'D:\\桌面\\ElementGuardians\\logs\\test_runs\\20261023_gold_upgrade\\final-suite\\player-render-10.engine.log', '--path', 'godot', '--script', 'res://tests/test_player_view.gd', '--', '--render-scale=1.0', '--capture-dir=D:\\桌面\\ElementGuardians\\logs\\test_runs\\20261023_gold_upgrade\\final-suite\\player-render-10']
+CWD=D:\桌面\ElementGuardians
+Godot Engine v4.4.1.stable.official.49a5bc7b6 - https://godotengine.org
+OpenGL API 3.3.0 NVIDIA 516.54 - Compatibility - Using Device: NVIDIA - NVIDIA GeForce 920MX
+
+PASS PLAYERVIEW-player-scene-available
+PASS PLAYERVIEW-supported-scale
+PASS PLAYERVIEW-renderer-required
+PASS PLAYERVIEW-fresh-captures
+PASS PLAYERVIEW-create-captures
+PASS PLAYERVIEW-controls-built
+PASS PLAYERVIEW-back-arrow-at-top-left
+PASS PLAYERVIEW-back-arrow-only-with-label
+PASS PLAYERVIEW-back-clear-of-wave
+PASS PLAYERVIEW-back-clear-of-entry
+PASS PLAYERVIEW-real-empty-player-start
+PASS PLAYERVIEW-no-diagnostic-canvas
+PASS PLAYERVIEW-capture-not-empty-01-empty-prep
+PASS PLAYERVIEW-capture-size-01-empty-prep
+PASS PLAYERVIEW-capture-write-01-empty-prep
+PASS PLAYERVIEW-selection-has-real-owner
+PASS PLAYERVIEW-spend-schedules-hud-feedback
+PASS PLAYERVIEW-real-spend-flashes-hud
+PASS PLAYERVIEW-actual-summon-consumes-20
+PASS PLAYERVIEW-summon-motion-observed
+PASS PLAYERVIEW-capture-not-empty-02-summon-in-progress
+PASS PLAYERVIEW-capture-size-02-summon-in-progress
+PASS PLAYERVIEW-capture-write-02-summon-in-progress
+PASS PLAYERVIEW-two-tower-click-only-switches
+PASS PLAYERVIEW-paid-upgrade-real
+PASS PLAYERVIEW-upgrade-motion-observed
+PASS PLAYERVIEW-capture-not-empty-03-upgraded
+PASS PLAYERVIEW-capture-size-03-upgraded
+PASS PLAYERVIEW-capture-write-03-upgraded
+PASS PLAYERVIEW-selection-no-consumption
+PASS PLAYERVIEW-poor-button-disabled
+PASS PLAYERVIEW-disabled-click-no-side-effects
+PASS PLAYERVIEW-target-sizes
+PASS PLAYERVIEW-real-combat-and-disabled-actions
+PASS PLAYERVIEW-live-enemy-has-crawl-presentation
+PASS PLAYERVIEW-capture-not-empty-05-live-enemies
+PASS PLAYERVIEW-capture-size-05-live-enemies
+PASS PLAYERVIEW-capture-write-05-live-enemies
+PASS PLAYERVIEW-real-crawl-motion-observed
+PASS PLAYERVIEW-capture-not-empty-05b-crawl-midstride
+PASS PLAYERVIEW-capture-size-05b-crawl-midstride
+PASS PLAYERVIEW-capture-write-05b-crawl-midstride
+PASS PLAYERVIEW-attack-has-real-damage-and-visual
+PASS PLAYERVIEW-capture-not-empty-06-real-attack
+PASS PLAYERVIEW-capture-size-06-real-attack
+PASS PLAYERVIEW-capture-write-06-real-attack
+PLAYER UI TRACE wave_stats=[{ "wave": 1, "gold_start": 0, "hp_start": 10, "spawned": 6, "kills": 6, "leaks": 0, "damage_dealt": 206.25, "gold_end": 50, "hp_end": 10, "duration_s": 17.8243026666668, "wave_clear_reward": 20, "tower_count": 2, "board_occupancy_pct": 22.2, "summons": 2, "merges": 0, "tower_upgrades": 1 }] attacks=20
+PASS PLAYERVIEW-real-combat-feedback
+PASS PLAYERVIEW-stops-at-unimplemented-upgrade
+PASS PLAYERVIEW-capture-not-empty-08-upgrade-boundary
+PASS PLAYERVIEW-capture-size-08-upgrade-boundary
+PASS PLAYERVIEW-capture-write-08-upgrade-boundary
+PASS PLAYERVIEW-upgrade-frozen-no-auto-next-wave
+PASS PLAYERVIEW-ui-restart-empty
+PASS PLAYERVIEW-restart-clears-old-actors-and-beams
+PASS PLAYERVIEW-leak-feedback-text
+PASS PLAYERVIEW-capture-not-empty-07-independent-empty-run-leak
+PASS PLAYERVIEW-capture-size-07-independent-empty-run-leak
+PASS PLAYERVIEW-capture-write-07-independent-empty-run-leak
+PASS PLAYERVIEW-real-empty-run-hp-feedback
+PASS PLAYERVIEW-reduced-summon-no-transform-motion
+PASS PLAYERVIEW-capture-not-empty-09-reduced-motion
+PASS PLAYERVIEW-capture-size-09-reduced-motion
+PASS PLAYERVIEW-capture-write-09-reduced-motion
+PASS PLAYERVIEW-view-exit-releases-session
+PLAYERVIEW SUMMARY: PASS=64 FAIL=0 SKIP=0 COMPLETE
+
+EXIT=0 LIMIT=NONE PEAK_PRIVATE_BYTES=246738944
+STDIO=D:\桌面\ElementGuardians\logs\test_runs\20261023_gold_upgrade\final-suite\player-render-10.stdio.log
+HARNESS=PASS SUMMARY_FOUND=True

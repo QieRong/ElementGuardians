@@ -83,34 +83,78 @@ func _fixture(p: RefCounted, source_type: String, source_level: int, target_type
 	core._build_fixed_towers([{"slot": 0, "type_id": source_type, "level": source_level}, {"slot": 1, "type_id": target_type, "level": target_level}])
 
 func _test_merge_matrix() -> void:
+	# D013: the full legacy matrix must now reject, without removing units.
 	for type_a in ["fire", "ice", "lightning"]:
 		for level_a in range(1, 4):
 			for type_b in ["fire", "ice", "lightning"]:
 				for level_b in range(1, 4):
 					var p := _new()
 					_fixture(p, type_a, level_a, type_b, level_b)
-					var core := _core(p)
 					var before := _snapshot(p)
-					var result: Dictionary = p.try_merge(0, 1)
-					var legal: bool = type_a == type_b and level_a == level_b and level_a < 3
-					var ok: bool = bool(result["ok"]) == legal
-					if legal:
-						ok = ok and core.towers.size() == 1 and int(core.towers[0]["slot"]) == 1 and int(core.towers[0]["level"]) == level_a + 1 and core.gold == 60 and int(core.stats["merges"]) == 1
-					else:
-						ok = ok and _snapshot(p) == before
-					_check("MRG-%s%d-%s%d" % [type_a, level_a, type_b, level_b], ok)
+					_check("D013-reject-%s%d-%s%d" % [type_a, level_a, type_b, level_b], not p.try_merge(0, 1)["ok"] and _snapshot(p) == before)
 	var p := _new()
 	_fixture(p, "fire", 1, "fire", 1)
-	p.select_slot(0)
-	_check("MRG-click-source-target", p.select_slot(1)["ok"] and _core(p).towers.size() == 1 and is_equal_approx(float(_core(p).towers[0]["damage"]), 21.0))
-	_fixture(p, "fire", 2, "fire", 2)
-	p.try_merge(0, 1)
-	_check("MRG-lv3-from-base-not-compounded", is_equal_approx(float(_core(p).towers[0]["damage"]), 36.0))
-	_fixture(p, "ice", 2, "ice", 2)
-	p.try_merge(0, 1)
-	_check("MRG-level-keeps-specials", is_equal_approx(float(_core(p).towers[0]["slow_pct"]), 0.2) and is_equal_approx(float(_core(p).towers[0]["interval"]), 1.2))
 	var before := _snapshot(p)
-	_check("MRG-self-and-empty-reject", not p.try_merge(1, 1)["ok"] and not p.try_merge(0, 1)["ok"] and _snapshot(p) == before)
+	p.select_slot(0)
+	p.select_slot(1)
+	_check("D013-select-only", _snapshot(p) == before and p.selected_slot == 1)
+	for type_id in ["fire", "ice", "lightning"]:
+		for level in [1, 2]:
+			for balance in [-1, 0, 1]:
+				p = _new()
+				_fixture(p, type_id, level, "fire", 1)
+				var core := _core(p)
+				var cost: int = 20 if level == 1 else 40
+				core.gold = cost + balance
+				before = _snapshot(p)
+				var tower: Dictionary = p.board.tower_at(0).duplicate(true)
+				var result: Dictionary = p.try_upgrade(0, level)
+				if balance < 0:
+					_check("UP-poor-%s-%d" % [type_id, level], not result["ok"] and _snapshot(p) == before)
+				else:
+					_check("UP-price-%s-%d-%d" % [type_id, level, balance], result["ok"] and core.gold == balance and int(core.stats["tower_upgrades"]) == 1 and core.stats["merges"] == 0 and core.stats["gold_spent"] == cost)
+					var after: Dictionary = p.board.tower_at(0).duplicate(true)
+					_check("UP-damage-%s-%d-%d" % [type_id, level, balance], is_equal_approx(after["damage"], float(cfg.towers[type_id]["base_damage"]) * float(cfg.global_params["level%d_damage_mult" % (level + 1)])))
+					after["level"] = tower["level"]
+					after["damage"] = tower["damage"]
+					_check("UP-only-level-damage-%s-%d-%d" % [type_id, level, balance], after == tower and core.towers.size() == 2 and p.summon_rng.state == before[3])
+					var committed := _snapshot(p)
+					_check("UP-stale-expected-level", not p.try_upgrade(0, level)["ok"] and _snapshot(p) == committed)
+	p = _new()
+	_fixture(p, "ice", 3, "fire", 1)
+	for slot in [-2, -1, 2, 9, 0]:
+		before = _snapshot(p)
+		_check("UP-invalid-%d" % slot, not p.try_upgrade(slot)["ok"] and _snapshot(p) == before)
+	for phase in ["COMBAT", "UPGRADE", "RESULT"]:
+		p.core.state = phase
+		before = _snapshot(p)
+		_check("UP-phase-" + phase, not p.try_upgrade(1)["ok"] and _snapshot(p) == before)
+	p.core.state = "PREP"
+	p.core.finished = true
+	before = _snapshot(p)
+	_check("UP-finished", not p.try_upgrade(1)["ok"] and _snapshot(p) == before)
+	p = _new()
+	p.core.gold = 300
+	for slot in range(9):
+		p.try_summon(slot)
+	_check("UP-full-board", p.try_upgrade(4)["ok"] and p.core.towers.size() == 9)
+	p.start_wave()
+	_check("UP-wave-stat", p.core.wave_stats[0]["tower_upgrades"] == 1)
+	p.restart()
+	_check("UP-restart", p.core.stats["tower_upgrades"] == 0 and p.core.gold == 60 and p.selected_slot == -1)
+	for seed_value in [42, 20261018, 7]:
+		var control := _new(seed_value)
+		p = _new(seed_value)
+		control.core.gold = 1000
+		p.core.gold = 1000
+		for slot in range(9):
+			var expected: Dictionary = control.try_summon(slot)
+			var actual: Dictionary = p.try_summon(slot)
+			_check("UP-rng-sequence-%d-%d" % [seed_value, slot], expected["roll"] == actual["roll"] and expected["type_id"] == actual["type_id"])
+			p.select_slot(slot)
+			p.try_upgrade(slot)
+			p.try_upgrade(-2)
+			p.cancel_selection()
 
 func _test_state_boundaries() -> void:
 	var p := _new()
@@ -121,14 +165,14 @@ func _test_state_boundaries() -> void:
 	_check("WAV-prep-summons-recorded", int(_core(p).wave_stats[0]["summons"]) == 3)
 	p.restart()
 	_fixture(p, "fire", 1, "fire", 1)
-	p.try_merge(0, 1)
+	p.try_upgrade(1)
 	p.start_wave()
-	_check("WAV-prep-merges-recorded", int(_core(p).wave_stats[0]["merges"]) == 1)
+	_check("WAV-prep-merges-recorded", int(_core(p).wave_stats[0]["tower_upgrades"]) == 1)
 	p.restart()
 	_fixture(p, "fire", 1, "fire", 1)
 	_check("WAV-start-and-reject-repeat", p.start_wave()["ok"] and not p.start_wave()["ok"] and _core(p).wave_stats.size() == 1)
 	var before := _snapshot(p)
-	_check("SES-combat-rejects-board", not p.try_summon(2)["ok"] and not p.try_merge(0, 1)["ok"] and not p.select_slot(0)["ok"] and _snapshot(p) == before)
+	_check("SES-combat-rejects-board", not p.try_summon(2)["ok"] and not p.try_merge(0, 1)["ok"] and p.select_slot(0)["ok"] and _snapshot(p) == before)
 	p.restart()
 	p.start_wave() # Real empty-board wave: six grunts leak, leaving HP4.
 	for step in range(4000):

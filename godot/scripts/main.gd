@@ -18,7 +18,7 @@ func _ready() -> void:
 	_preferences = Preferences.current(get_tree())
 	Paper.apply_theme(self)
 	Paper.background(self, "res://assets/backgrounds/menu_058.png")
-	Paper.label(self, "PreviewBadge", "开发版 · 单波试玩", Rect2(24, 22, 340, 44), 22)
+	Paper.label(self, "PreviewBadge", "开发版 · 波间强化", Rect2(24, 22, 340, 44), 22)
 	_settings_button = Paper.button(self, "SettingsButton", "", Rect2(608, 16, 88, 88), _open_settings, false, 36, "settings")
 	Paper.label(self, "Emblem", "◈", Rect2(300, 86, 120, 72), 64)
 	var brand := Paper.panel(self, "Brand", Rect2(58, 170, 604, 174))
@@ -37,7 +37,7 @@ func _ready() -> void:
 	var enter := Paper.button(actions, "EnterButton", "开始布阵", Rect2(144, 876, 432, 96), _on_enter_pressed, true, 34, "play")
 	Paper.button(actions, "QuitButton", "退出游戏", Rect2(184, 990, 352, 76), _on_quit_pressed, false, 28, "log-out")
 	Paper.button(actions, "VerifyButton", "检查配置", Rect2(232, 1080, 256, 64), _on_verify_pressed, false, 24, "list-checks")
-	_status = Paper.label(self, "Status", "召唤、合成与首波可操作 · 强化待接入", Rect2(42, 1150, 636, 66), 24)
+	_status = Paper.label(self, "Status", "召唤与金币升级 · 波间三选一强化", Rect2(42, 1150, 636, 66), 24)
 	_status.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
 	Paper.label(self, "Credit", "单机原型 · AI 协作制作", Rect2(48, 1222, 624, 40), 22)
 	var order: Array[Button] = [enter, get_node("Actions/QuitButton"), get_node("Actions/VerifyButton"), _settings_button]

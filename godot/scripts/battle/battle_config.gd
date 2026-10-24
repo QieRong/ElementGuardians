@@ -40,7 +40,10 @@ func _load_all() -> void:
 					upgrades[String(row["upgrade_id"])] = row.duplicate()
 			"economy_params":
 				for row in rows:
-					economy[String(row["key"])] = _num(row["value"])
+					var key := String(row["key"])
+					if economy.has(key) or not String(row["value"]).is_valid_float() or _num(row["value"]) < 0:
+						errors.append("非法或重复 economy key: " + key)
+					economy[key] = _num(row["value"])
 			"global_params":
 				for row in rows:
 					global_params[String(row["key"])] = _num(row["value"])
@@ -97,9 +100,12 @@ func _validate() -> void:
 		errors.append("towers 为空")
 	if enemies.is_empty():
 		errors.append("enemies 为空")
-	for key in ["initial_gold", "summon_cost", "wave_clear_reward", "base_hp"]:
+	for key in ["initial_gold", "summon_cost", "wave_clear_reward", "base_hp", "tower_upgrade_lv2_cost", "tower_upgrade_lv3_cost"]:
 		if not economy.has(key):
 			errors.append("economy 缺少 " + key)
+	for key in ["tower_upgrade_lv2_cost", "tower_upgrade_lv3_cost"]:
+		if economy.has(key) and (float(economy[key]) <= 0 or float(economy[key]) != floor(float(economy[key]))):
+			errors.append("升级费用必须为正整数: " + key)
 	for wave in range(1, 7):
 		if not waves.has(wave) or (waves[wave] as Array).is_empty():
 			errors.append("缺少波次 %d 配置" % wave)

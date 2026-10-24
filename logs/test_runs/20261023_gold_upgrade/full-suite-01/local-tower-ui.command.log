@@ -1,0 +1,67 @@
+{"command": ["E:\\PyCharm\\Python\\python.exe", "D:\\桌面\\ElementGuardians\\tools\\run_godot_check.py", "--godot-exe", "E:\\godot\\Godot_v4.4.1-stable_win64_console.exe", "--log", "D:\\桌面\\ElementGuardians\\logs\\test_runs\\20261023_gold_upgrade\\full-suite-01\\local-tower-ui.log", "--timeout", "90", "--memory-mb", "512", "--require", "LOCALUI SUMMARY: PASS=\\d+ FAIL=0 SKIP=1 COMPLETE", "--", "--headless", "--path", "godot", "--script", "res://tests/test_local_tower_ui.gd"], "cwd": "D:\\桌面\\ElementGuardians"}
+PASS LOCALUI-ja-inspection-keeps-clock-running
+PASS LOCALUI-ja-restart-cleans
+PASS LOCALUI-ru-early-selection-opaque
+PASS LOCALUI-ru-selection-free
+PASS LOCALUI-ru-panel-in-viewport
+PASS LOCALUI-ru-selected-pad-clear
+PASS LOCALUI-ru-hud-clear
+PASS LOCALUI-ru-road-and-exit-clear
+PASS LOCALUI-ru-panel-opaque
+PASS LOCALUI-ru-info-fits
+PASS LOCALUI-ru-caption-fits
+PASS LOCALUI-ru-empty-range
+PASS LOCALUI-ru-road-highlight
+PASS LOCALUI-ru-selection-free
+PASS LOCALUI-ru-panel-in-viewport
+PASS LOCALUI-ru-selected-pad-clear
+PASS LOCALUI-ru-hud-clear
+PASS LOCALUI-ru-road-and-exit-clear
+PASS LOCALUI-ru-panel-opaque
+PASS LOCALUI-ru-info-fits
+PASS LOCALUI-ru-caption-fits
+PASS LOCALUI-ru-empty-range
+PASS LOCALUI-ru-road-highlight
+PASS LOCALUI-ru-selection-free
+PASS LOCALUI-ru-panel-in-viewport
+PASS LOCALUI-ru-selected-pad-clear
+PASS LOCALUI-ru-hud-clear
+PASS LOCALUI-ru-road-and-exit-clear
+PASS LOCALUI-ru-panel-opaque
+PASS LOCALUI-ru-info-fits
+PASS LOCALUI-ru-caption-fits
+PASS LOCALUI-ru-empty-range
+PASS LOCALUI-ru-road-highlight
+PASS LOCALUI-ru-selection-free
+PASS LOCALUI-ru-panel-in-viewport
+PASS LOCALUI-ru-selected-pad-clear
+PASS LOCALUI-ru-hud-clear
+PASS LOCALUI-ru-road-and-exit-clear
+PASS LOCALUI-ru-panel-opaque
+PASS LOCALUI-ru-info-fits
+PASS LOCALUI-ru-caption-fits
+PASS LOCALUI-ru-empty-range
+PASS LOCALUI-ru-road-highlight
+PASS LOCALUI-ru-hold-no-consume
+PASS LOCALUI-ru-one-release-one-summon
+PASS LOCALUI-ru-sound-started
+PASS LOCALUI-ru-spawn-tween-real
+PASS LOCALUI-ru-spawn-transform-real
+PASS LOCALUI-ru-selected-double-click-no-consume
+PASS LOCALUI-ru-upgrade-once
+PASS LOCALUI-ru-upgrade-motion-real
+PASS LOCALUI-ru-exact-range
+PASS LOCALUI-ru-poor-disabled
+PASS LOCALUI-ru-lv3-exact-price
+PASS LOCALUI-ru-cancel-clears
+PASS LOCALUI-ru-stale-target-rejects
+PASS LOCALUI-ru-cancel-reselect-invalidates
+PASS LOCALUI-ru-wave-boundary-rejects
+PASS LOCALUI-ru-combat-read-only
+PASS LOCALUI-ru-inspection-keeps-clock-running
+PASS LOCALUI-ru-restart-cleans
+LOCALUI SUMMARY: PASS=354 FAIL=0 SKIP=1 COMPLETE
+
+EXIT=0 LIMIT=NONE PEAK_PRIVATE_BYTES=157863936
+STDIO=D:\桌面\ElementGuardians\logs\test_runs\20261023_gold_upgrade\full-suite-01\local-tower-ui.stdio.log
+HARNESS=PASS SUMMARY_FOUND=True LOG=D:\桌面\ElementGuardians\logs\test_runs\20261023_gold_upgrade\full-suite-01\local-tower-ui.log

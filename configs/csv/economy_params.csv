@@ -3,3 +3,5 @@ initial_gold,60,开局金币
 summon_cost,20,召唤费用，固定
 wave_clear_reward,20,每波完成奖励
 base_hp,10,基地初始生命
+tower_upgrade_lv2_cost,20,Lv1→Lv2费用，首版试验
+tower_upgrade_lv3_cost,40,Lv2→Lv3费用，首版试验

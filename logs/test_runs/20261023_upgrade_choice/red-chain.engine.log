@@ -1,0 +1,21 @@
+Godot Engine v4.4.1.stable.official.49a5bc7b6 - https://godotengine.org
+
+PASS UPGRADE-EFFECT-load-config-map
+PASS UPGRADE-EFFECT-chain-1-main-once
+PASS UPGRADE-EFFECT-chain-1-distinct-stable-id-1
+PASS UPGRADE-EFFECT-chain-1-distinct-stable-id-2
+PASS UPGRADE-EFFECT-chain-1-distinct-stable-id-3
+PASS UPGRADE-EFFECT-chain-1-distinct-stable-id-4
+PASS UPGRADE-EFFECT-chain-2-main-once
+FAIL UPGRADE-EFFECT-chain-2-distinct-stable-id-1
+FAIL UPGRADE-EFFECT-chain-2-distinct-stable-id-2
+PASS UPGRADE-EFFECT-chain-2-distinct-stable-id-3
+PASS UPGRADE-EFFECT-chain-2-distinct-stable-id-4
+PASS UPGRADE-EFFECT-chain-3-main-once
+FAIL UPGRADE-EFFECT-chain-3-distinct-stable-id-1
+FAIL UPGRADE-EFFECT-chain-3-distinct-stable-id-2
+FAIL UPGRADE-EFFECT-chain-3-distinct-stable-id-3
+PASS UPGRADE-EFFECT-chain-3-distinct-stable-id-4
+FAIL UPGRADE-EFFECT-chain-exhausted-does-not-repeat
+PASS UPGRADE-EFFECT-chain-main-and-three-deaths-once
+UPGRADE EFFECT SUMMARY: PASS=12 FAIL=6 SKIP=0 COMPLETE

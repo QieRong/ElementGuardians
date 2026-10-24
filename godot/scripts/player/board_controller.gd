@@ -11,11 +11,11 @@ func tower_at(slot: int) -> Dictionary:
 
 func validate_place(slot: int) -> Dictionary:
 	if core.state != "PREP" or core.finished:
-		return _error("state", "当前阶段不可召唤或合成")
+		return _error("state", "当前阶段不可召唤或升级")
 	if slot < 0 or slot >= core.map.slots.size():
 		return _error("selection", "请先选择空格")
 	if core.towers.size() >= core.map.slots.size():
-		return _error("full", "棋盘已满，请先合成腾出空格")
+		return _error("full", "棋盘已满，可升级已有守卫")
 	if not tower_at(slot).is_empty():
 		return _error("occupied", "格子已有守卫，请选择空格")
 	return {"ok": true}
@@ -60,3 +60,25 @@ func merge(source: int, target: int) -> Dictionary:
 
 func _error(code: String, message: String) -> Dictionary:
 	return {"ok": false, "code": code, "message": message}
+
+func validate_upgrade(slot: int) -> Dictionary:
+	if core.state != "PREP" or core.finished:
+		return _error("state", "当前阶段不可召唤或升级")
+	if slot < 0 or slot >= core.map.slots.size():
+		return _error("index", "无效格子")
+	var tower := tower_at(slot)
+	if tower.is_empty():
+		return _error("empty", "请先选择守卫")
+	if int(tower["level"]) < 1:
+		return _error("level", "无效等级")
+	if int(tower["level"]) >= int(core.config.global_params["max_tower_level"]):
+		return _error("max_level", "已满级")
+	return {"ok": true}
+
+func upgrade(slot: int) -> void:
+	var tower := tower_at(slot)
+	var level: int = int(tower["level"]) + 1
+	tower["level"] = level
+	tower["damage"] = float(core.config.towers[tower["type_id"]]["base_damage"]) * float(core.config.global_params["level%d_damage_mult" % level])
+	core.refresh_tower_stats(tower)
+	core.stats["highest_level"] = maxi(int(core.stats["highest_level"]), level)

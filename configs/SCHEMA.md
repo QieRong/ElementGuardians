@@ -17,7 +17,7 @@
 - 值语义：伤害和减速加数、攻速间隔乘数、连锁目标与金币整数增量。详见 `02-SYSTEM-SPEC.md`，不可把0.10误当10。
 
 ## 经济参数 → economy_params.csv
-`key:str unique`、`value:number`、`description`：initial_gold=60、summon_cost=20、wave_clear_reward=20、base_hp=10。
+`key:str unique`、`value:number`、`description`：initial_gold=60、summon_cost=20、wave_clear_reward=20、base_hp=10、tower_upgrade_lv2_cost=20、tower_upgrade_lv3_cost=40。新增升级字段为正整数金币，分别是升至Lv2/Lv3的单次价格；累计投入20/40/80，仅为D013首版试验值。
 
 ## 全局参数 → global_params.csv
 `key:str unique`、`value:number`、`description`：board_cols=3、board_rows=3、max_tower_level=3、level2_damage_mult=1.75、level3_damage_mult=3.0、max_ice_slow_pct=0.6、lightning_chain_max_extra_targets=3、design_width=720、design_height=1280、gameplay_seed_default=20261018。

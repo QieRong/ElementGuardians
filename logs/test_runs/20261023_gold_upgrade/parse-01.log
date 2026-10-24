@@ -1,0 +1,12 @@
+COMMAND=['E:\\godot\\Godot_v4.4.1-stable_win64.exe', '--log-file', 'D:\\桌面\\ElementGuardians\\logs\\test_runs\\20261023_gold_upgrade\\parse-01.engine.log', '--headless', '--path', 'godot', '--editor', '--quit']
+CWD=D:\桌面\ElementGuardians
+Godot Engine v4.4.1.stable.official.49a5bc7b6 - https://godotengine.org
+ERROR: Could not create editor data directory: C:/Users/Administrator/AppData/Roaming/Godot
+   at: EditorPaths (editor/editor_paths.cpp:198)
+ERROR: Could not create editor config directory: C:/Users/Administrator/AppData/Roaming/Godot
+   at: EditorPaths (editor/editor_paths.cpp:213)
+
+
+EXIT=1 LIMIT=MEMORY_LIMIT PEAK_PRIVATE_BYTES=405856256
+STDIO=logs\test_runs\20261023_gold_upgrade\parse-01.stdio.log
+HARNESS=FAIL SUMMARY_FOUND=True

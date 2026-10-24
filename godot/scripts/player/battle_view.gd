@@ -1,4 +1,4 @@
-## Real PREP and first-wave UI. UPGRADE is a visible, frozen implementation boundary.
+## Player PREP, combat and mandatory reinforcement choices over session state.
 extends Control
 
 const Player = preload("res://scripts/player/player_session.gd")
@@ -23,6 +23,9 @@ var _stage: PanelContainer
 var _previous_gold: int = 60
 var _previous_hp: int = 10
 var _leaving: bool = false
+var _local: Control
+var _entrance: Tween
+var _upgrades: Control
 
 func _ready() -> void:
 	Paper.apply_theme(self)
@@ -44,7 +47,7 @@ func _ready() -> void:
 	session.action_result.connect(_action)
 	session.combat_event.connect(_combat)
 	refresh()
-	Paper.entrance(self)
+	_entrance = Paper.entrance(self)
 
 func _build() -> void:
 	_field = Field.new()
@@ -68,7 +71,7 @@ func _build() -> void:
 	_summon = Paper.button(self, "SummonButton", "召唤 20", Rect2(24, 1100, 216, 80), _summon_pressed, true, 26, "plus")
 	_cancel = Paper.button(self, "CancelButton", "取消选择", Rect2(256, 1100, 184, 80), _cancel_pressed, false, 26)
 	_start = Paper.button(self, "StartButton", "开始第1波", Rect2(456, 1100, 240, 80), _start_pressed, true, 26, "play")
-	Paper.label(self, "StageNotice", "单波试玩 · 强化尚未开放", Rect2(24, 1216, 672, 44), 22)
+	Paper.label(self, "StageNotice", "波间三选一强化 · 选择后继续布阵", Rect2(24, 1216, 672, 44), 22)
 	# Use the gap between the two route bands; feedback must not cover the board.
 	_toast = Paper.panel(self, "Toast", Rect2(120, 276, 480, 116))
 	var message := Label.new()
@@ -89,11 +92,19 @@ func _build() -> void:
 	column.name = "Content"
 	column.add_theme_constant_override("separation", 22)
 	_stage.add_child(column)
-	Paper.label(column, "Title", "首波完成", Rect2(), 38)
-	var description := Paper.label(column, "Description", "强化选择尚未接入。\n本次试玩在此暂停。\n不会自动跳过强化进入下一波。", Rect2(), 26)
+	Paper.label(column, "Title", "防守结束", Rect2(), 38)
+	var description := Paper.label(column, "Description", "", Rect2(), 26)
 	description.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
 	Paper.button(column, "RestartButton", "重新布阵", Rect2(0, 0, 500, 80), restart, true, 28, "rotate-ccw")
 	_stage.hide()
+	_local = preload("res://scripts/ui/local_tower_panel.gd").new()
+	_local.name = "LocalTowerPanel"
+	_local.session = session
+	add_child(_local)
+	_upgrades = preload("res://scripts/ui/upgrade_panel.gd").new()
+	_upgrades.name = "UpgradePanel"
+	_upgrades.session = session
+	add_child(_upgrades)
 
 func _process(dt: float) -> void:
 	if session != null:
@@ -115,27 +126,36 @@ func refresh() -> void:
 	_previous_gold = core.gold
 	_previous_hp = core.base_hp
 	var valid: Dictionary = session.board.validate_place(session.selected_slot)
-	_summon.disabled = not bool(valid["ok"]) or core.gold < int(core.config.economy["summon_cost"])
+	_summon.hide() # Consumption is exclusively on the local panel.
+	_local.refresh()
 	_summon.tooltip_text = _t("金币不足" if core.gold < 20 else ("先选择空格" if session.selected_slot < 0 else "在所选空格召唤"))
-	_cancel.disabled = core.state != "PREP" or session.selected_slot < 0
+	_cancel.disabled = session.selected_slot < 0
 	_start.disabled = core.state != "PREP"
+	_start.text = _t("开始第%d波") % core.wave_index
+	Paper.fit_caption(_start)
 	_field.refresh()
-	_stage.visible = core.state == "UPGRADE" or core.state == "RESULT"
+	_stage.visible = core.state == "RESULT"
+	_upgrades.refresh()
 	if core.state == "RESULT":
 		_stage.get_node("Content/Title").text = _t("基地失守" if not core.victory else "防守成功")
-		_stage.get_node("Content/Description").text = _t("击杀 %d · 漏怪 %d\n召唤 %d · 合成 %d\n用时 %.1f秒 · seed %d") % [core.stats["kills"], core.stats["leaks"], core.stats["summons"], core.stats["merges"], core.total_time, core.seed_value]
+		_stage.get_node("Content/Description").text = _t("击杀 %d · 漏怪 %d\n召唤 %d · 升级 %d\n用时 %.1f秒 · seed %d") % [core.stats["kills"], core.stats["leaks"], core.stats["summons"], core.stats["tower_upgrades"], core.total_time, core.seed_value]
 
 func _action(data: Dictionary) -> void:
+	if bool(data["ok"]) and (data["kind"] == "select" or (data["kind"] == "phase" and data.get("state", "") == "UPGRADE")):
+		if _entrance != null and _entrance.is_valid():
+			_entrance.kill()
+		modulate.a = 1.0
+		_toast.hide()
+		_toast_timer.stop()
 	refresh()
 	if data.has("message"):
 		show_notice(_action_message(data))
-	elif data["kind"] == "select" and bool(data["ok"]):
-		var tower: Dictionary = session.board.tower_at(session.selected_slot)
-		if not tower.is_empty():
-			show_notice(_t("%s · Lv%d\n再点同类同级守卫可合成") % [Locale.tower(self, String(tower["type_id"])), tower["level"]])
-	if data["kind"] == "merge" and bool(data["ok"]):
+	if data["kind"] == "upgrade" and bool(data["ok"]):
 		var unit: Node2D = _field.get_node("Slot%d" % int(data["slot"])).unit
-		Fx.pulse(unit, _reduced())
+		Fx.pulse(unit, false)
+	if data["kind"] == "reinforce" and bool(data["ok"]):
+		Fx.flash(_phase, Color("#8bcad1"), _reduced())
+		_start.grab_focus()
 	if data["kind"] == "phase":
 		_toast.hide()
 		_toast_timer.stop()
@@ -153,12 +173,13 @@ func _t(source: String) -> String:
 func _action_message(data: Dictionary) -> String:
 	if not bool(data["ok"]):
 		if data.get("code", "") == "poor":
-			return _t("金币不足，需要%d金币") % int(session.core.config.economy["summon_cost"])
+			return _t("金币不足，需要%d金币") % int(data.get("cost", session.core.config.economy["summon_cost"]))
 		return _t(String(data["message"]))
 	match String(data["kind"]):
 		"summon": return _t("%s已召唤") % Locale.tower(self, String(data["type_id"]))
 		"merge": return _t("合成成功 · Lv%d") % int(data["level"])
 		"start": return _t("第%d波开始") % session.core.wave_index
+		"reinforce": return _t("强化已生效 · 继续布阵")
 	return _t(String(data["message"]))
 
 func show_notice(message: String) -> void:
@@ -183,7 +204,10 @@ func _summon_pressed() -> void:
 	session.try_summon()
 
 func _cancel_pressed() -> void:
+	var previous: int = session.selected_slot
 	session.cancel_selection()
+	if previous >= 0:
+		_field.get_node("Slot%d" % previous).grab_focus()
 
 func _start_pressed() -> void:
 	session.start_wave()
@@ -194,14 +218,12 @@ func restart() -> void:
 	_field.reset_visuals()
 	attack_feedback_count = 0
 	session.restart()
-	_stage.get_node("Content/Title").text = _t("首波完成")
-	_stage.get_node("Content/Description").text = _t("强化选择尚未接入。\n本次试玩在此暂停。\n不会自动跳过强化进入下一波。")
 	refresh()
 
 func _unhandled_key_input(event: InputEvent) -> void:
 	if event.is_action_pressed("ui_cancel"):
 		get_viewport().set_input_as_handled()
-		if session.core.state == "PREP":
+		if session.selected_slot >= 0:
 			session.cancel_selection()
 		else:
 			show_notice(_t("暂停功能尚未接入，可使用返回按钮退出本次试玩"))
@@ -211,3 +233,7 @@ func _go_back() -> void:
 		return
 	_leaving = true
 	get_tree().change_scene_to_file("res://scenes/main.tscn")
+
+func _gui_input(event: InputEvent) -> void:
+	if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT and event.pressed and session.selected_slot >= 0:
+		session.cancel_selection()

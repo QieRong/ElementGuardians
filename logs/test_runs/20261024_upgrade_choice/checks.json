@@ -1,0 +1,99 @@
+{
+  "complete": true,
+  "counts": {
+    "PASS": 12,
+    "FAIL": 3
+  },
+  "checks": [
+    {
+      "id": "flow",
+      "exit_code": 1,
+      "status": "FAIL",
+      "log": "flow.log"
+    },
+    {
+      "id": "effects",
+      "exit_code": 0,
+      "status": "PASS",
+      "log": "effects.log"
+    },
+    {
+      "id": "core",
+      "exit_code": 0,
+      "status": "PASS",
+      "log": "core.log"
+    },
+    {
+      "id": "repairs",
+      "exit_code": 0,
+      "status": "PASS",
+      "log": "repairs.log"
+    },
+    {
+      "id": "baseline",
+      "exit_code": 0,
+      "status": "PASS",
+      "log": "baseline.log"
+    },
+    {
+      "id": "replay",
+      "exit_code": 0,
+      "status": "PASS",
+      "log": "replay.log"
+    },
+    {
+      "id": "prep",
+      "exit_code": 0,
+      "status": "PASS",
+      "log": "prep.log"
+    },
+    {
+      "id": "player-headless",
+      "exit_code": 0,
+      "status": "PASS",
+      "log": "player-headless.log"
+    },
+    {
+      "id": "upgrade720",
+      "exit_code": 1,
+      "status": "FAIL",
+      "log": "upgrade720.log"
+    },
+    {
+      "id": "player720",
+      "exit_code": 0,
+      "status": "PASS",
+      "log": "player720.log"
+    },
+    {
+      "id": "local720",
+      "exit_code": 0,
+      "status": "PASS",
+      "log": "local720.log"
+    },
+    {
+      "id": "upgrade540",
+      "exit_code": 1,
+      "status": "FAIL",
+      "log": "upgrade540.log"
+    },
+    {
+      "id": "player540",
+      "exit_code": 0,
+      "status": "PASS",
+      "log": "player540.log"
+    },
+    {
+      "id": "local540",
+      "exit_code": 0,
+      "status": "PASS",
+      "log": "local540.log"
+    },
+    {
+      "id": "final-parse",
+      "exit_code": 0,
+      "status": "PASS",
+      "log": "final-parse.log"
+    }
+  ]
+}

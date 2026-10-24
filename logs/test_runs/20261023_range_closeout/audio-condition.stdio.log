@@ -1,0 +1,645 @@
+Godot Engine v4.4.1.stable.official.49a5bc7b6 - https://godotengine.org
+
+PASS LOCALUI-zh-Hans-early-selection-opaque
+INPUT ACTION { "ok": true, "slot": 0, "kind": "select" }
+PASS LOCALUI-zh-Hans-selection-clears-old-toast
+PASS LOCALUI-zh-Hans-selection-free
+PASS LOCALUI-zh-Hans-panel-in-viewport
+PASS LOCALUI-zh-Hans-selected-pad-clear
+PASS LOCALUI-zh-Hans-hud-clear
+PASS LOCALUI-zh-Hans-road-and-exit-clear
+PASS LOCALUI-zh-Hans-panel-opaque
+PASS LOCALUI-zh-Hans-info-fits
+PASS LOCALUI-zh-Hans-caption-fits
+PASS LOCALUI-zh-Hans-empty-range
+INPUT ACTION { "ok": true, "slot": 2, "kind": "select" }
+PASS LOCALUI-zh-Hans-selection-clears-old-toast
+PASS LOCALUI-zh-Hans-selection-free
+PASS LOCALUI-zh-Hans-panel-in-viewport
+PASS LOCALUI-zh-Hans-selected-pad-clear
+PASS LOCALUI-zh-Hans-hud-clear
+PASS LOCALUI-zh-Hans-road-and-exit-clear
+PASS LOCALUI-zh-Hans-panel-opaque
+PASS LOCALUI-zh-Hans-info-fits
+PASS LOCALUI-zh-Hans-caption-fits
+PASS LOCALUI-zh-Hans-empty-range
+INPUT ACTION { "ok": true, "slot": 6, "kind": "select" }
+PASS LOCALUI-zh-Hans-selection-clears-old-toast
+PASS LOCALUI-zh-Hans-selection-free
+PASS LOCALUI-zh-Hans-panel-in-viewport
+PASS LOCALUI-zh-Hans-selected-pad-clear
+PASS LOCALUI-zh-Hans-hud-clear
+PASS LOCALUI-zh-Hans-road-and-exit-clear
+PASS LOCALUI-zh-Hans-panel-opaque
+PASS LOCALUI-zh-Hans-info-fits
+PASS LOCALUI-zh-Hans-caption-fits
+PASS LOCALUI-zh-Hans-empty-range
+INPUT ACTION { "ok": true, "slot": 8, "kind": "select" }
+PASS LOCALUI-zh-Hans-selection-clears-old-toast
+PASS LOCALUI-zh-Hans-selection-free
+PASS LOCALUI-zh-Hans-panel-in-viewport
+PASS LOCALUI-zh-Hans-selected-pad-clear
+PASS LOCALUI-zh-Hans-hud-clear
+PASS LOCALUI-zh-Hans-road-and-exit-clear
+PASS LOCALUI-zh-Hans-panel-opaque
+PASS LOCALUI-zh-Hans-info-fits
+PASS LOCALUI-zh-Hans-caption-fits
+PASS LOCALUI-zh-Hans-empty-range
+INPUT ACTION { "ok": true, "slot": 0, "kind": "select" }
+INPUT TRACE zh-Hans-before-down rect=[P: (68.0, 330.0), S: (424.0, 76.0)] mouse=(280.0, 530.0) hovered=Slot0:<Button#37513856456> held=false armed=[] revision=8 slot=0 gold=60
+INPUT TRACE button-down rect=[P: (68.0, 330.0), S: (424.0, 76.0)] mouse=(280.0, 368.0) hovered=Consume:<Button#41506834074> held=true armed=[0, 0, 8] revision=8 slot=0 gold=60
+INPUT TRACE zh-Hans-after-down rect=[P: (68.0, 330.0), S: (424.0, 76.0)] mouse=(280.0, 368.0) hovered=Consume:<Button#41506834074> held=true armed=[0, 0, 8] revision=8 slot=0 gold=60
+INPUT AUDIO finished count=1 time_ms=1712
+INPUT AUDIO finished count=2 time_ms=1713
+INPUT AUDIO finished count=3 time_ms=1715
+PASS LOCALUI-zh-Hans-hold-no-consume
+INPUT TRACE zh-Hans-before-up rect=[P: (68.0, 330.0), S: (424.0, 76.0)] mouse=(280.0, 368.0) hovered=Consume:<Button#41506834074> held=true armed=[0, 0, 8] revision=8 slot=0 gold=60
+INPUT ACTION { "ok": true, "slot": 0, "type_id": "lightning", "level": 1, "roll": 8, "message": "雷电守卫已召唤", "kind": "summon" }
+INPUT TRACE button-pressed rect=[P: (68.0, 330.0), S: (424.0, 76.0)] mouse=(280.0, 368.0) hovered=Consume:<Button#41506834074> held=true armed=[] revision=9 slot=0 gold=40
+INPUT TRACE button-up rect=[P: (68.0, 330.0), S: (424.0, 76.0)] mouse=(280.0, 368.0) hovered=Consume:<Button#41506834074> held=false armed=[] revision=9 slot=0 gold=40
+INPUT TRACE zh-Hans-after-up rect=[P: (68.0, 330.0), S: (424.0, 76.0)] mouse=(280.0, 368.0) hovered=Consume:<Button#41506834074> held=false armed=[] revision=9 slot=0 gold=40
+PASS LOCALUI-zh-Hans-one-release-one-summon
+PASS LOCALUI-zh-Hans-sound-started
+PASS LOCALUI-zh-Hans-spawn-tween-real
+PASS LOCALUI-zh-Hans-spawn-transform-real
+PASS LOCALUI-zh-Hans-audio-voice-played
+INPUT ACTION { "ok": true, "slot": 0, "kind": "select" }
+PASS LOCALUI-zh-Hans-muted-click-silent
+INPUT ACTION { "ok": true, "slot": 0, "kind": "select" }
+PASS LOCALUI-zh-Hans-selected-double-click-no-consume
+INPUT TRACE button-down rect=[P: (68.0, 330.0), S: (424.0, 76.0)] mouse=(280.0, 368.0) hovered=Consume:<Button#41506834074> held=true armed=[0, 1, 9] revision=9 slot=0 gold=40
+INPUT ACTION { "ok": true, "slot": 0, "level": 2, "cost": 20, "kind": "upgrade" }
+INPUT TRACE button-pressed rect=[P: (68.0, 330.0), S: (424.0, 76.0)] mouse=(280.0, 368.0) hovered=Consume:<Button#41506834074> held=false armed=[] revision=10 slot=0 gold=20
+INPUT TRACE button-up rect=[P: (68.0, 330.0), S: (424.0, 76.0)] mouse=(280.0, 368.0) hovered=Consume:<Button#41506834074> held=false armed=[] revision=10 slot=0 gold=20
+PASS LOCALUI-zh-Hans-upgrade-once
+PASS LOCALUI-zh-Hans-upgrade-motion-real
+PASS LOCALUI-zh-Hans-exact-range
+PASS LOCALUI-zh-Hans-poor-disabled
+INPUT TRACE button-down rect=[P: (68.0, 330.0), S: (424.0, 76.0)] mouse=(280.0, 368.0) hovered=Consume:<Button#41506834074> held=true armed=[0, 2, 10] revision=10 slot=0 gold=40
+INPUT ACTION { "ok": true, "slot": 0, "level": 3, "cost": 40, "kind": "upgrade" }
+INPUT TRACE button-pressed rect=[P: (68.0, 330.0), S: (424.0, 76.0)] mouse=(280.0, 368.0) hovered=Consume:<Button#41506834074> held=false armed=[] revision=11 slot=0 gold=0
+INPUT TRACE button-up rect=[P: (68.0, 330.0), S: (424.0, 76.0)] mouse=(280.0, 368.0) hovered=Consume:<Button#41506834074> held=false armed=[] revision=11 slot=0 gold=0
+PASS LOCALUI-zh-Hans-lv3-exact-price
+INPUT ACTION { "ok": true, "message": "已取消选择", "kind": "cancel" }
+PASS LOCALUI-zh-Hans-cancel-clears
+INPUT ACTION { "ok": true, "slot": 0, "kind": "select" }
+INPUT ACTION { "ok": true, "message": "已取消选择", "kind": "cancel" }
+PASS LOCALUI-zh-Hans-blank-click-clears
+INPUT ACTION { "ok": true, "slot": 0, "kind": "select" }
+INPUT ACTION { "ok": true, "message": "已取消选择", "kind": "cancel" }
+PASS LOCALUI-zh-Hans-escape-clears
+INPUT ACTION { "ok": true, "message": "新对局已准备", "kind": "restart" }
+INPUT ACTION { "ok": true, "slot": 0, "kind": "select" }
+INPUT ACTION { "ok": true, "slot": 1, "kind": "select" }
+PASS LOCALUI-zh-Hans-stale-target-rejects
+INPUT ACTION { "ok": true, "message": "已取消选择", "kind": "cancel" }
+INPUT ACTION { "ok": true, "slot": 1, "kind": "select" }
+PASS LOCALUI-zh-Hans-cancel-reselect-invalidates
+INPUT ACTION { "ok": true, "message": "第1波开始", "kind": "start" }
+PASS LOCALUI-zh-Hans-wave-boundary-rejects
+INPUT ACTION { "ok": true, "slot": 0, "kind": "select" }
+PASS LOCALUI-zh-Hans-combat-read-only
+PASS LOCALUI-zh-Hans-inspection-keeps-clock-running
+INPUT ACTION { "ok": true, "message": "新对局已准备", "kind": "restart" }
+PASS LOCALUI-zh-Hans-restart-cleans
+INPUT AUDIO finished count=4 time_ms=2033
+INPUT AUDIO finished count=5 time_ms=2037
+INPUT AUDIO finished count=6 time_ms=2039
+INPUT AUDIO finished count=7 time_ms=2042
+PASS LOCALUI-zh-Hant-early-selection-opaque
+INPUT AUDIO finished count=8 time_ms=2085
+INPUT ACTION { "ok": true, "slot": 0, "kind": "select" }
+PASS LOCALUI-zh-Hant-selection-clears-old-toast
+PASS LOCALUI-zh-Hant-selection-free
+PASS LOCALUI-zh-Hant-panel-in-viewport
+PASS LOCALUI-zh-Hant-selected-pad-clear
+PASS LOCALUI-zh-Hant-hud-clear
+PASS LOCALUI-zh-Hant-road-and-exit-clear
+PASS LOCALUI-zh-Hant-panel-opaque
+PASS LOCALUI-zh-Hant-info-fits
+PASS LOCALUI-zh-Hant-caption-fits
+PASS LOCALUI-zh-Hant-empty-range
+INPUT ACTION { "ok": true, "slot": 2, "kind": "select" }
+PASS LOCALUI-zh-Hant-selection-clears-old-toast
+PASS LOCALUI-zh-Hant-selection-free
+PASS LOCALUI-zh-Hant-panel-in-viewport
+PASS LOCALUI-zh-Hant-selected-pad-clear
+PASS LOCALUI-zh-Hant-hud-clear
+PASS LOCALUI-zh-Hant-road-and-exit-clear
+PASS LOCALUI-zh-Hant-panel-opaque
+PASS LOCALUI-zh-Hant-info-fits
+PASS LOCALUI-zh-Hant-caption-fits
+PASS LOCALUI-zh-Hant-empty-range
+INPUT ACTION { "ok": true, "slot": 6, "kind": "select" }
+PASS LOCALUI-zh-Hant-selection-clears-old-toast
+PASS LOCALUI-zh-Hant-selection-free
+PASS LOCALUI-zh-Hant-panel-in-viewport
+PASS LOCALUI-zh-Hant-selected-pad-clear
+PASS LOCALUI-zh-Hant-hud-clear
+PASS LOCALUI-zh-Hant-road-and-exit-clear
+PASS LOCALUI-zh-Hant-panel-opaque
+PASS LOCALUI-zh-Hant-info-fits
+PASS LOCALUI-zh-Hant-caption-fits
+PASS LOCALUI-zh-Hant-empty-range
+INPUT ACTION { "ok": true, "slot": 8, "kind": "select" }
+PASS LOCALUI-zh-Hant-selection-clears-old-toast
+PASS LOCALUI-zh-Hant-selection-free
+PASS LOCALUI-zh-Hant-panel-in-viewport
+PASS LOCALUI-zh-Hant-selected-pad-clear
+PASS LOCALUI-zh-Hant-hud-clear
+PASS LOCALUI-zh-Hant-road-and-exit-clear
+PASS LOCALUI-zh-Hant-panel-opaque
+PASS LOCALUI-zh-Hant-info-fits
+PASS LOCALUI-zh-Hant-caption-fits
+PASS LOCALUI-zh-Hant-empty-range
+INPUT ACTION { "ok": true, "slot": 0, "kind": "select" }
+INPUT TRACE zh-Hant-before-down rect=[P: (68.0, 330.0), S: (424.0, 76.0)] mouse=(280.0, 530.0) hovered=Slot0:<Button#47479522857> held=false armed=[] revision=8 slot=0 gold=60
+INPUT TRACE button-down rect=[P: (68.0, 330.0), S: (424.0, 76.0)] mouse=(280.0, 368.0) hovered=Consume:<Button#51136956042> held=true armed=[0, 0, 8] revision=8 slot=0 gold=60
+INPUT TRACE zh-Hant-after-down rect=[P: (68.0, 330.0), S: (424.0, 76.0)] mouse=(280.0, 368.0) hovered=Consume:<Button#51136956042> held=true armed=[0, 0, 8] revision=8 slot=0 gold=60
+PASS LOCALUI-zh-Hant-hold-no-consume
+INPUT TRACE zh-Hant-before-up rect=[P: (68.0, 330.0), S: (424.0, 76.0)] mouse=(280.0, 368.0) hovered=Consume:<Button#51136956042> held=true armed=[0, 0, 8] revision=8 slot=0 gold=60
+INPUT ACTION { "ok": true, "slot": 0, "type_id": "lightning", "level": 1, "roll": 8, "message": "雷电守卫已召唤", "kind": "summon" }
+INPUT TRACE button-pressed rect=[P: (68.0, 330.0), S: (424.0, 76.0)] mouse=(280.0, 368.0) hovered=Consume:<Button#51136956042> held=true armed=[] revision=9 slot=0 gold=40
+INPUT TRACE button-up rect=[P: (68.0, 330.0), S: (424.0, 76.0)] mouse=(280.0, 368.0) hovered=Consume:<Button#51136956042> held=false armed=[] revision=9 slot=0 gold=40
+INPUT TRACE zh-Hant-after-up rect=[P: (68.0, 330.0), S: (424.0, 76.0)] mouse=(280.0, 368.0) hovered=Consume:<Button#51136956042> held=false armed=[] revision=9 slot=0 gold=40
+PASS LOCALUI-zh-Hant-one-release-one-summon
+PASS LOCALUI-zh-Hant-sound-started
+PASS LOCALUI-zh-Hant-spawn-tween-real
+PASS LOCALUI-zh-Hant-spawn-transform-real
+INPUT AUDIO finished count=9 time_ms=2484
+INPUT AUDIO finished count=10 time_ms=2485
+INPUT AUDIO finished count=11 time_ms=2487
+INPUT AUDIO finished count=12 time_ms=2489
+PASS LOCALUI-zh-Hant-audio-voice-played
+INPUT ACTION { "ok": true, "slot": 0, "kind": "select" }
+PASS LOCALUI-zh-Hant-muted-click-silent
+INPUT ACTION { "ok": true, "slot": 0, "kind": "select" }
+PASS LOCALUI-zh-Hant-selected-double-click-no-consume
+INPUT TRACE button-down rect=[P: (68.0, 330.0), S: (424.0, 76.0)] mouse=(280.0, 368.0) hovered=Consume:<Button#51136956042> held=true armed=[0, 1, 9] revision=9 slot=0 gold=40
+INPUT ACTION { "ok": true, "slot": 0, "level": 2, "cost": 20, "kind": "upgrade" }
+INPUT TRACE button-pressed rect=[P: (68.0, 330.0), S: (424.0, 76.0)] mouse=(280.0, 368.0) hovered=Consume:<Button#51136956042> held=false armed=[] revision=10 slot=0 gold=20
+INPUT TRACE button-up rect=[P: (68.0, 330.0), S: (424.0, 76.0)] mouse=(280.0, 368.0) hovered=Consume:<Button#51136956042> held=false armed=[] revision=10 slot=0 gold=20
+PASS LOCALUI-zh-Hant-upgrade-once
+PASS LOCALUI-zh-Hant-upgrade-motion-real
+PASS LOCALUI-zh-Hant-exact-range
+PASS LOCALUI-zh-Hant-poor-disabled
+INPUT TRACE button-down rect=[P: (68.0, 330.0), S: (424.0, 76.0)] mouse=(280.0, 368.0) hovered=Consume:<Button#51136956042> held=true armed=[0, 2, 10] revision=10 slot=0 gold=40
+INPUT ACTION { "ok": true, "slot": 0, "level": 3, "cost": 40, "kind": "upgrade" }
+INPUT TRACE button-pressed rect=[P: (68.0, 330.0), S: (424.0, 76.0)] mouse=(280.0, 368.0) hovered=Consume:<Button#51136956042> held=false armed=[] revision=11 slot=0 gold=0
+INPUT TRACE button-up rect=[P: (68.0, 330.0), S: (424.0, 76.0)] mouse=(280.0, 368.0) hovered=Consume:<Button#51136956042> held=false armed=[] revision=11 slot=0 gold=0
+PASS LOCALUI-zh-Hant-lv3-exact-price
+INPUT ACTION { "ok": true, "message": "已取消选择", "kind": "cancel" }
+PASS LOCALUI-zh-Hant-cancel-clears
+INPUT ACTION { "ok": true, "slot": 0, "kind": "select" }
+INPUT ACTION { "ok": true, "message": "已取消选择", "kind": "cancel" }
+PASS LOCALUI-zh-Hant-blank-click-clears
+INPUT ACTION { "ok": true, "slot": 0, "kind": "select" }
+INPUT ACTION { "ok": true, "message": "已取消选择", "kind": "cancel" }
+PASS LOCALUI-zh-Hant-escape-clears
+INPUT ACTION { "ok": true, "message": "新对局已准备", "kind": "restart" }
+INPUT ACTION { "ok": true, "slot": 0, "kind": "select" }
+INPUT ACTION { "ok": true, "slot": 1, "kind": "select" }
+PASS LOCALUI-zh-Hant-stale-target-rejects
+INPUT ACTION { "ok": true, "message": "已取消选择", "kind": "cancel" }
+INPUT ACTION { "ok": true, "slot": 1, "kind": "select" }
+PASS LOCALUI-zh-Hant-cancel-reselect-invalidates
+INPUT ACTION { "ok": true, "message": "第1波开始", "kind": "start" }
+PASS LOCALUI-zh-Hant-wave-boundary-rejects
+INPUT ACTION { "ok": true, "slot": 0, "kind": "select" }
+PASS LOCALUI-zh-Hant-combat-read-only
+PASS LOCALUI-zh-Hant-inspection-keeps-clock-running
+INPUT ACTION { "ok": true, "message": "新对局已准备", "kind": "restart" }
+PASS LOCALUI-zh-Hant-restart-cleans
+INPUT AUDIO finished count=13 time_ms=2819
+INPUT AUDIO finished count=14 time_ms=2823
+INPUT AUDIO finished count=15 time_ms=2825
+INPUT AUDIO finished count=16 time_ms=2828
+PASS LOCALUI-en-early-selection-opaque
+INPUT AUDIO finished count=17 time_ms=2918
+INPUT ACTION { "ok": true, "slot": 0, "kind": "select" }
+PASS LOCALUI-en-selection-clears-old-toast
+PASS LOCALUI-en-selection-free
+PASS LOCALUI-en-panel-in-viewport
+PASS LOCALUI-en-selected-pad-clear
+PASS LOCALUI-en-hud-clear
+PASS LOCALUI-en-road-and-exit-clear
+PASS LOCALUI-en-panel-opaque
+PASS LOCALUI-en-info-fits
+PASS LOCALUI-en-caption-fits
+PASS LOCALUI-en-empty-range
+INPUT ACTION { "ok": true, "slot": 2, "kind": "select" }
+PASS LOCALUI-en-selection-clears-old-toast
+PASS LOCALUI-en-selection-free
+PASS LOCALUI-en-panel-in-viewport
+PASS LOCALUI-en-selected-pad-clear
+PASS LOCALUI-en-hud-clear
+PASS LOCALUI-en-road-and-exit-clear
+PASS LOCALUI-en-panel-opaque
+PASS LOCALUI-en-info-fits
+PASS LOCALUI-en-caption-fits
+PASS LOCALUI-en-empty-range
+INPUT ACTION { "ok": true, "slot": 6, "kind": "select" }
+PASS LOCALUI-en-selection-clears-old-toast
+PASS LOCALUI-en-selection-free
+PASS LOCALUI-en-panel-in-viewport
+PASS LOCALUI-en-selected-pad-clear
+PASS LOCALUI-en-hud-clear
+PASS LOCALUI-en-road-and-exit-clear
+PASS LOCALUI-en-panel-opaque
+PASS LOCALUI-en-info-fits
+PASS LOCALUI-en-caption-fits
+PASS LOCALUI-en-empty-range
+INPUT ACTION { "ok": true, "slot": 8, "kind": "select" }
+PASS LOCALUI-en-selection-clears-old-toast
+PASS LOCALUI-en-selection-free
+PASS LOCALUI-en-panel-in-viewport
+PASS LOCALUI-en-selected-pad-clear
+PASS LOCALUI-en-hud-clear
+PASS LOCALUI-en-road-and-exit-clear
+PASS LOCALUI-en-panel-opaque
+PASS LOCALUI-en-info-fits
+PASS LOCALUI-en-caption-fits
+PASS LOCALUI-en-empty-range
+INPUT ACTION { "ok": true, "slot": 0, "kind": "select" }
+INPUT TRACE en-before-down rect=[P: (68.0, 330.0), S: (424.0, 76.0)] mouse=(280.0, 530.0) hovered=Slot0:<Button#57042535942> held=false armed=[] revision=8 slot=0 gold=60
+INPUT TRACE button-down rect=[P: (68.0, 330.0), S: (424.0, 76.0)] mouse=(280.0, 368.0) hovered=Consume:<Button#60699969144> held=true armed=[0, 0, 8] revision=8 slot=0 gold=60
+INPUT TRACE en-after-down rect=[P: (68.0, 330.0), S: (424.0, 76.0)] mouse=(280.0, 368.0) hovered=Consume:<Button#60699969144> held=true armed=[0, 0, 8] revision=8 slot=0 gold=60
+INPUT AUDIO finished count=18 time_ms=3195
+INPUT AUDIO finished count=19 time_ms=3196
+INPUT AUDIO finished count=20 time_ms=3198
+INPUT AUDIO finished count=21 time_ms=3200
+PASS LOCALUI-en-hold-no-consume
+INPUT TRACE en-before-up rect=[P: (68.0, 330.0), S: (424.0, 76.0)] mouse=(280.0, 368.0) hovered=Consume:<Button#60699969144> held=true armed=[0, 0, 8] revision=8 slot=0 gold=60
+INPUT ACTION { "ok": true, "slot": 0, "type_id": "lightning", "level": 1, "roll": 8, "message": "雷电守卫已召唤", "kind": "summon" }
+INPUT TRACE button-pressed rect=[P: (68.0, 330.0), S: (424.0, 76.0)] mouse=(280.0, 368.0) hovered=Consume:<Button#60699969144> held=true armed=[] revision=9 slot=0 gold=40
+INPUT TRACE button-up rect=[P: (68.0, 330.0), S: (424.0, 76.0)] mouse=(280.0, 368.0) hovered=Consume:<Button#60699969144> held=false armed=[] revision=9 slot=0 gold=40
+INPUT TRACE en-after-up rect=[P: (68.0, 330.0), S: (424.0, 76.0)] mouse=(280.0, 368.0) hovered=Consume:<Button#60699969144> held=false armed=[] revision=9 slot=0 gold=40
+PASS LOCALUI-en-one-release-one-summon
+PASS LOCALUI-en-sound-started
+PASS LOCALUI-en-spawn-tween-real
+PASS LOCALUI-en-spawn-transform-real
+PASS LOCALUI-en-audio-voice-played
+INPUT ACTION { "ok": true, "slot": 0, "kind": "select" }
+PASS LOCALUI-en-muted-click-silent
+INPUT ACTION { "ok": true, "slot": 0, "kind": "select" }
+PASS LOCALUI-en-selected-double-click-no-consume
+INPUT TRACE button-down rect=[P: (68.0, 330.0), S: (424.0, 76.0)] mouse=(280.0, 368.0) hovered=Consume:<Button#60699969144> held=true armed=[0, 1, 9] revision=9 slot=0 gold=40
+INPUT ACTION { "ok": true, "slot": 0, "level": 2, "cost": 20, "kind": "upgrade" }
+INPUT TRACE button-pressed rect=[P: (68.0, 330.0), S: (424.0, 76.0)] mouse=(280.0, 368.0) hovered=Consume:<Button#60699969144> held=false armed=[] revision=10 slot=0 gold=20
+INPUT TRACE button-up rect=[P: (68.0, 330.0), S: (424.0, 76.0)] mouse=(280.0, 368.0) hovered=Consume:<Button#60699969144> held=false armed=[] revision=10 slot=0 gold=20
+PASS LOCALUI-en-upgrade-once
+PASS LOCALUI-en-upgrade-motion-real
+PASS LOCALUI-en-exact-range
+PASS LOCALUI-en-poor-disabled
+INPUT TRACE button-down rect=[P: (68.0, 330.0), S: (424.0, 76.0)] mouse=(280.0, 368.0) hovered=Consume:<Button#60699969144> held=true armed=[0, 2, 10] revision=10 slot=0 gold=40
+INPUT ACTION { "ok": true, "slot": 0, "level": 3, "cost": 40, "kind": "upgrade" }
+INPUT TRACE button-pressed rect=[P: (68.0, 330.0), S: (424.0, 76.0)] mouse=(280.0, 368.0) hovered=Consume:<Button#60699969144> held=false armed=[] revision=11 slot=0 gold=0
+INPUT TRACE button-up rect=[P: (68.0, 330.0), S: (424.0, 76.0)] mouse=(280.0, 368.0) hovered=Consume:<Button#60699969144> held=false armed=[] revision=11 slot=0 gold=0
+PASS LOCALUI-en-lv3-exact-price
+INPUT ACTION { "ok": true, "message": "已取消选择", "kind": "cancel" }
+PASS LOCALUI-en-cancel-clears
+INPUT ACTION { "ok": true, "slot": 0, "kind": "select" }
+INPUT ACTION { "ok": true, "message": "已取消选择", "kind": "cancel" }
+PASS LOCALUI-en-blank-click-clears
+INPUT ACTION { "ok": true, "slot": 0, "kind": "select" }
+INPUT ACTION { "ok": true, "message": "已取消选择", "kind": "cancel" }
+PASS LOCALUI-en-escape-clears
+INPUT ACTION { "ok": true, "message": "新对局已准备", "kind": "restart" }
+INPUT ACTION { "ok": true, "slot": 0, "kind": "select" }
+INPUT ACTION { "ok": true, "slot": 1, "kind": "select" }
+PASS LOCALUI-en-stale-target-rejects
+INPUT ACTION { "ok": true, "message": "已取消选择", "kind": "cancel" }
+INPUT ACTION { "ok": true, "slot": 1, "kind": "select" }
+PASS LOCALUI-en-cancel-reselect-invalidates
+INPUT ACTION { "ok": true, "message": "第1波开始", "kind": "start" }
+PASS LOCALUI-en-wave-boundary-rejects
+INPUT ACTION { "ok": true, "slot": 0, "kind": "select" }
+PASS LOCALUI-en-combat-read-only
+INPUT AUDIO finished count=22 time_ms=3413
+INPUT AUDIO finished count=23 time_ms=3415
+INPUT AUDIO finished count=24 time_ms=3418
+PASS LOCALUI-en-inspection-keeps-clock-running
+INPUT ACTION { "ok": true, "message": "新对局已准备", "kind": "restart" }
+PASS LOCALUI-en-restart-cleans
+INPUT AUDIO finished count=25 time_ms=3798
+PASS LOCALUI-ko-early-selection-opaque
+INPUT AUDIO finished count=26 time_ms=3885
+INPUT ACTION { "ok": true, "slot": 0, "kind": "select" }
+PASS LOCALUI-ko-selection-clears-old-toast
+PASS LOCALUI-ko-selection-free
+PASS LOCALUI-ko-panel-in-viewport
+PASS LOCALUI-ko-selected-pad-clear
+PASS LOCALUI-ko-hud-clear
+PASS LOCALUI-ko-road-and-exit-clear
+PASS LOCALUI-ko-panel-opaque
+PASS LOCALUI-ko-info-fits
+PASS LOCALUI-ko-caption-fits
+PASS LOCALUI-ko-empty-range
+INPUT ACTION { "ok": true, "slot": 2, "kind": "select" }
+PASS LOCALUI-ko-selection-clears-old-toast
+PASS LOCALUI-ko-selection-free
+PASS LOCALUI-ko-panel-in-viewport
+PASS LOCALUI-ko-selected-pad-clear
+PASS LOCALUI-ko-hud-clear
+PASS LOCALUI-ko-road-and-exit-clear
+PASS LOCALUI-ko-panel-opaque
+PASS LOCALUI-ko-info-fits
+PASS LOCALUI-ko-caption-fits
+PASS LOCALUI-ko-empty-range
+INPUT ACTION { "ok": true, "slot": 6, "kind": "select" }
+PASS LOCALUI-ko-selection-clears-old-toast
+PASS LOCALUI-ko-selection-free
+PASS LOCALUI-ko-panel-in-viewport
+PASS LOCALUI-ko-selected-pad-clear
+PASS LOCALUI-ko-hud-clear
+PASS LOCALUI-ko-road-and-exit-clear
+PASS LOCALUI-ko-panel-opaque
+PASS LOCALUI-ko-info-fits
+PASS LOCALUI-ko-caption-fits
+PASS LOCALUI-ko-empty-range
+INPUT ACTION { "ok": true, "slot": 8, "kind": "select" }
+PASS LOCALUI-ko-selection-clears-old-toast
+PASS LOCALUI-ko-selection-free
+PASS LOCALUI-ko-panel-in-viewport
+PASS LOCALUI-ko-selected-pad-clear
+PASS LOCALUI-ko-hud-clear
+PASS LOCALUI-ko-road-and-exit-clear
+PASS LOCALUI-ko-panel-opaque
+PASS LOCALUI-ko-info-fits
+PASS LOCALUI-ko-caption-fits
+PASS LOCALUI-ko-empty-range
+INPUT ACTION { "ok": true, "slot": 0, "kind": "select" }
+INPUT TRACE ko-before-down rect=[P: (68.0, 330.0), S: (424.0, 76.0)] mouse=(280.0, 530.0) hovered=Slot0:<Button#66471331273> held=false armed=[] revision=8 slot=0 gold=60
+INPUT TRACE button-down rect=[P: (68.0, 330.0), S: (424.0, 76.0)] mouse=(280.0, 368.0) hovered=Consume:<Button#70212650561> held=true armed=[0, 0, 8] revision=8 slot=0 gold=60
+INPUT TRACE ko-after-down rect=[P: (68.0, 330.0), S: (424.0, 76.0)] mouse=(280.0, 368.0) hovered=Consume:<Button#70212650561> held=true armed=[0, 0, 8] revision=8 slot=0 gold=60
+INPUT AUDIO finished count=27 time_ms=4165
+INPUT AUDIO finished count=28 time_ms=4167
+INPUT AUDIO finished count=29 time_ms=4169
+INPUT AUDIO finished count=30 time_ms=4171
+PASS LOCALUI-ko-hold-no-consume
+INPUT TRACE ko-before-up rect=[P: (68.0, 330.0), S: (424.0, 76.0)] mouse=(280.0, 368.0) hovered=Consume:<Button#70212650561> held=true armed=[0, 0, 8] revision=8 slot=0 gold=60
+INPUT ACTION { "ok": true, "slot": 0, "type_id": "lightning", "level": 1, "roll": 8, "message": "雷电守卫已召唤", "kind": "summon" }
+INPUT TRACE button-pressed rect=[P: (68.0, 330.0), S: (424.0, 76.0)] mouse=(280.0, 368.0) hovered=Consume:<Button#70212650561> held=true armed=[] revision=9 slot=0 gold=40
+INPUT TRACE button-up rect=[P: (68.0, 330.0), S: (424.0, 76.0)] mouse=(280.0, 368.0) hovered=Consume:<Button#70212650561> held=false armed=[] revision=9 slot=0 gold=40
+INPUT TRACE ko-after-up rect=[P: (68.0, 330.0), S: (424.0, 76.0)] mouse=(280.0, 368.0) hovered=Consume:<Button#70212650561> held=false armed=[] revision=9 slot=0 gold=40
+PASS LOCALUI-ko-one-release-one-summon
+PASS LOCALUI-ko-sound-started
+PASS LOCALUI-ko-spawn-tween-real
+PASS LOCALUI-ko-spawn-transform-real
+PASS LOCALUI-ko-audio-voice-played
+INPUT ACTION { "ok": true, "slot": 0, "kind": "select" }
+PASS LOCALUI-ko-muted-click-silent
+INPUT ACTION { "ok": true, "slot": 0, "kind": "select" }
+PASS LOCALUI-ko-selected-double-click-no-consume
+INPUT TRACE button-down rect=[P: (68.0, 330.0), S: (424.0, 76.0)] mouse=(280.0, 368.0) hovered=Consume:<Button#70212650561> held=true armed=[0, 1, 9] revision=9 slot=0 gold=40
+INPUT ACTION { "ok": true, "slot": 0, "level": 2, "cost": 20, "kind": "upgrade" }
+INPUT TRACE button-pressed rect=[P: (68.0, 330.0), S: (424.0, 76.0)] mouse=(280.0, 368.0) hovered=Consume:<Button#70212650561> held=false armed=[] revision=10 slot=0 gold=20
+INPUT TRACE button-up rect=[P: (68.0, 330.0), S: (424.0, 76.0)] mouse=(280.0, 368.0) hovered=Consume:<Button#70212650561> held=false armed=[] revision=10 slot=0 gold=20
+PASS LOCALUI-ko-upgrade-once
+PASS LOCALUI-ko-upgrade-motion-real
+PASS LOCALUI-ko-exact-range
+PASS LOCALUI-ko-poor-disabled
+INPUT TRACE button-down rect=[P: (68.0, 330.0), S: (424.0, 76.0)] mouse=(280.0, 368.0) hovered=Consume:<Button#70212650561> held=true armed=[0, 2, 10] revision=10 slot=0 gold=40
+INPUT ACTION { "ok": true, "slot": 0, "level": 3, "cost": 40, "kind": "upgrade" }
+INPUT TRACE button-pressed rect=[P: (68.0, 330.0), S: (424.0, 76.0)] mouse=(280.0, 368.0) hovered=Consume:<Button#70212650561> held=false armed=[] revision=11 slot=0 gold=0
+INPUT TRACE button-up rect=[P: (68.0, 330.0), S: (424.0, 76.0)] mouse=(280.0, 368.0) hovered=Consume:<Button#70212650561> held=false armed=[] revision=11 slot=0 gold=0
+PASS LOCALUI-ko-lv3-exact-price
+INPUT ACTION { "ok": true, "message": "已取消选择", "kind": "cancel" }
+PASS LOCALUI-ko-cancel-clears
+INPUT ACTION { "ok": true, "slot": 0, "kind": "select" }
+INPUT ACTION { "ok": true, "message": "已取消选择", "kind": "cancel" }
+PASS LOCALUI-ko-blank-click-clears
+INPUT ACTION { "ok": true, "slot": 0, "kind": "select" }
+INPUT ACTION { "ok": true, "message": "已取消选择", "kind": "cancel" }
+PASS LOCALUI-ko-escape-clears
+INPUT ACTION { "ok": true, "message": "新对局已准备", "kind": "restart" }
+INPUT ACTION { "ok": true, "slot": 0, "kind": "select" }
+INPUT ACTION { "ok": true, "slot": 1, "kind": "select" }
+PASS LOCALUI-ko-stale-target-rejects
+INPUT ACTION { "ok": true, "message": "已取消选择", "kind": "cancel" }
+INPUT ACTION { "ok": true, "slot": 1, "kind": "select" }
+PASS LOCALUI-ko-cancel-reselect-invalidates
+INPUT ACTION { "ok": true, "message": "第1波开始", "kind": "start" }
+PASS LOCALUI-ko-wave-boundary-rejects
+INPUT ACTION { "ok": true, "slot": 0, "kind": "select" }
+PASS LOCALUI-ko-combat-read-only
+INPUT AUDIO finished count=31 time_ms=4383
+PASS LOCALUI-ko-inspection-keeps-clock-running
+INPUT ACTION { "ok": true, "message": "新对局已准备", "kind": "restart" }
+PASS LOCALUI-ko-restart-cleans
+INPUT AUDIO finished count=32 time_ms=4578
+INPUT AUDIO finished count=33 time_ms=4582
+INPUT AUDIO finished count=34 time_ms=4585
+PASS LOCALUI-ja-early-selection-opaque
+INPUT AUDIO finished count=35 time_ms=4630
+INPUT ACTION { "ok": true, "slot": 0, "kind": "select" }
+PASS LOCALUI-ja-selection-clears-old-toast
+PASS LOCALUI-ja-selection-free
+PASS LOCALUI-ja-panel-in-viewport
+PASS LOCALUI-ja-selected-pad-clear
+PASS LOCALUI-ja-hud-clear
+PASS LOCALUI-ja-road-and-exit-clear
+PASS LOCALUI-ja-panel-opaque
+PASS LOCALUI-ja-info-fits
+PASS LOCALUI-ja-caption-fits
+PASS LOCALUI-ja-empty-range
+INPUT ACTION { "ok": true, "slot": 2, "kind": "select" }
+PASS LOCALUI-ja-selection-clears-old-toast
+PASS LOCALUI-ja-selection-free
+PASS LOCALUI-ja-panel-in-viewport
+PASS LOCALUI-ja-selected-pad-clear
+PASS LOCALUI-ja-hud-clear
+PASS LOCALUI-ja-road-and-exit-clear
+PASS LOCALUI-ja-panel-opaque
+PASS LOCALUI-ja-info-fits
+PASS LOCALUI-ja-caption-fits
+PASS LOCALUI-ja-empty-range
+INPUT ACTION { "ok": true, "slot": 6, "kind": "select" }
+PASS LOCALUI-ja-selection-clears-old-toast
+PASS LOCALUI-ja-selection-free
+PASS LOCALUI-ja-panel-in-viewport
+PASS LOCALUI-ja-selected-pad-clear
+PASS LOCALUI-ja-hud-clear
+PASS LOCALUI-ja-road-and-exit-clear
+PASS LOCALUI-ja-panel-opaque
+PASS LOCALUI-ja-info-fits
+PASS LOCALUI-ja-caption-fits
+PASS LOCALUI-ja-empty-range
+INPUT ACTION { "ok": true, "slot": 8, "kind": "select" }
+PASS LOCALUI-ja-selection-clears-old-toast
+PASS LOCALUI-ja-selection-free
+PASS LOCALUI-ja-panel-in-viewport
+PASS LOCALUI-ja-selected-pad-clear
+PASS LOCALUI-ja-hud-clear
+PASS LOCALUI-ja-road-and-exit-clear
+PASS LOCALUI-ja-panel-opaque
+PASS LOCALUI-ja-info-fits
+PASS LOCALUI-ja-caption-fits
+PASS LOCALUI-ja-empty-range
+INPUT ACTION { "ok": true, "slot": 0, "kind": "select" }
+INPUT TRACE ja-before-down rect=[P: (68.0, 330.0), S: (424.0, 76.0)] mouse=(280.0, 530.0) hovered=Slot0:<Button#76202116742> held=false armed=[] revision=8 slot=0 gold=60
+INPUT TRACE button-down rect=[P: (68.0, 330.0), S: (424.0, 76.0)] mouse=(280.0, 368.0) hovered=Consume:<Button#79859549781> held=true armed=[0, 0, 8] revision=8 slot=0 gold=60
+INPUT TRACE ja-after-down rect=[P: (68.0, 330.0), S: (424.0, 76.0)] mouse=(280.0, 368.0) hovered=Consume:<Button#79859549781> held=true armed=[0, 0, 8] revision=8 slot=0 gold=60
+INPUT AUDIO finished count=36 time_ms=4929
+INPUT AUDIO finished count=37 time_ms=4931
+INPUT AUDIO finished count=38 time_ms=4933
+INPUT AUDIO finished count=39 time_ms=4999
+PASS LOCALUI-ja-hold-no-consume
+INPUT TRACE ja-before-up rect=[P: (68.0, 330.0), S: (424.0, 76.0)] mouse=(280.0, 368.0) hovered=Consume:<Button#79859549781> held=true armed=[0, 0, 8] revision=8 slot=0 gold=60
+INPUT ACTION { "ok": true, "slot": 0, "type_id": "lightning", "level": 1, "roll": 8, "message": "雷电守卫已召唤", "kind": "summon" }
+INPUT TRACE button-pressed rect=[P: (68.0, 330.0), S: (424.0, 76.0)] mouse=(280.0, 368.0) hovered=Consume:<Button#79859549781> held=true armed=[] revision=9 slot=0 gold=40
+INPUT TRACE button-up rect=[P: (68.0, 330.0), S: (424.0, 76.0)] mouse=(280.0, 368.0) hovered=Consume:<Button#79859549781> held=false armed=[] revision=9 slot=0 gold=40
+INPUT TRACE ja-after-up rect=[P: (68.0, 330.0), S: (424.0, 76.0)] mouse=(280.0, 368.0) hovered=Consume:<Button#79859549781> held=false armed=[] revision=9 slot=0 gold=40
+PASS LOCALUI-ja-one-release-one-summon
+PASS LOCALUI-ja-sound-started
+PASS LOCALUI-ja-spawn-tween-real
+PASS LOCALUI-ja-spawn-transform-real
+PASS LOCALUI-ja-audio-voice-played
+INPUT ACTION { "ok": true, "slot": 0, "kind": "select" }
+PASS LOCALUI-ja-muted-click-silent
+INPUT ACTION { "ok": true, "slot": 0, "kind": "select" }
+PASS LOCALUI-ja-selected-double-click-no-consume
+INPUT TRACE button-down rect=[P: (68.0, 330.0), S: (424.0, 76.0)] mouse=(280.0, 368.0) hovered=Consume:<Button#79859549781> held=true armed=[0, 1, 9] revision=9 slot=0 gold=40
+INPUT ACTION { "ok": true, "slot": 0, "level": 2, "cost": 20, "kind": "upgrade" }
+INPUT TRACE button-pressed rect=[P: (68.0, 330.0), S: (424.0, 76.0)] mouse=(280.0, 368.0) hovered=Consume:<Button#79859549781> held=false armed=[] revision=10 slot=0 gold=20
+INPUT TRACE button-up rect=[P: (68.0, 330.0), S: (424.0, 76.0)] mouse=(280.0, 368.0) hovered=Consume:<Button#79859549781> held=false armed=[] revision=10 slot=0 gold=20
+PASS LOCALUI-ja-upgrade-once
+PASS LOCALUI-ja-upgrade-motion-real
+PASS LOCALUI-ja-exact-range
+PASS LOCALUI-ja-poor-disabled
+INPUT TRACE button-down rect=[P: (68.0, 330.0), S: (424.0, 76.0)] mouse=(280.0, 368.0) hovered=Consume:<Button#79859549781> held=true armed=[0, 2, 10] revision=10 slot=0 gold=40
+INPUT ACTION { "ok": true, "slot": 0, "level": 3, "cost": 40, "kind": "upgrade" }
+INPUT TRACE button-pressed rect=[P: (68.0, 330.0), S: (424.0, 76.0)] mouse=(280.0, 368.0) hovered=Consume:<Button#79859549781> held=false armed=[] revision=11 slot=0 gold=0
+INPUT TRACE button-up rect=[P: (68.0, 330.0), S: (424.0, 76.0)] mouse=(280.0, 368.0) hovered=Consume:<Button#79859549781> held=false armed=[] revision=11 slot=0 gold=0
+PASS LOCALUI-ja-lv3-exact-price
+INPUT ACTION { "ok": true, "message": "已取消选择", "kind": "cancel" }
+PASS LOCALUI-ja-cancel-clears
+INPUT ACTION { "ok": true, "slot": 0, "kind": "select" }
+INPUT ACTION { "ok": true, "message": "已取消选择", "kind": "cancel" }
+PASS LOCALUI-ja-blank-click-clears
+INPUT ACTION { "ok": true, "slot": 0, "kind": "select" }
+INPUT ACTION { "ok": true, "message": "已取消选择", "kind": "cancel" }
+PASS LOCALUI-ja-escape-clears
+INPUT ACTION { "ok": true, "message": "新对局已准备", "kind": "restart" }
+INPUT ACTION { "ok": true, "slot": 0, "kind": "select" }
+INPUT ACTION { "ok": true, "slot": 1, "kind": "select" }
+PASS LOCALUI-ja-stale-target-rejects
+INPUT ACTION { "ok": true, "message": "已取消选择", "kind": "cancel" }
+INPUT ACTION { "ok": true, "slot": 1, "kind": "select" }
+PASS LOCALUI-ja-cancel-reselect-invalidates
+INPUT ACTION { "ok": true, "message": "第1波开始", "kind": "start" }
+PASS LOCALUI-ja-wave-boundary-rejects
+INPUT ACTION { "ok": true, "slot": 0, "kind": "select" }
+PASS LOCALUI-ja-combat-read-only
+PASS LOCALUI-ja-inspection-keeps-clock-running
+INPUT ACTION { "ok": true, "message": "新对局已准备", "kind": "restart" }
+PASS LOCALUI-ja-restart-cleans
+INPUT AUDIO finished count=40 time_ms=5303
+INPUT AUDIO finished count=41 time_ms=5306
+INPUT AUDIO finished count=42 time_ms=5309
+INPUT AUDIO finished count=43 time_ms=5311
+PASS LOCALUI-ru-early-selection-opaque
+INPUT AUDIO finished count=44 time_ms=5367
+INPUT ACTION { "ok": true, "slot": 0, "kind": "select" }
+PASS LOCALUI-ru-selection-clears-old-toast
+PASS LOCALUI-ru-selection-free
+PASS LOCALUI-ru-panel-in-viewport
+PASS LOCALUI-ru-selected-pad-clear
+PASS LOCALUI-ru-hud-clear
+PASS LOCALUI-ru-road-and-exit-clear
+PASS LOCALUI-ru-panel-opaque
+PASS LOCALUI-ru-info-fits
+PASS LOCALUI-ru-caption-fits
+PASS LOCALUI-ru-empty-range
+INPUT ACTION { "ok": true, "slot": 2, "kind": "select" }
+PASS LOCALUI-ru-selection-clears-old-toast
+PASS LOCALUI-ru-selection-free
+PASS LOCALUI-ru-panel-in-viewport
+PASS LOCALUI-ru-selected-pad-clear
+PASS LOCALUI-ru-hud-clear
+PASS LOCALUI-ru-road-and-exit-clear
+PASS LOCALUI-ru-panel-opaque
+PASS LOCALUI-ru-info-fits
+PASS LOCALUI-ru-caption-fits
+PASS LOCALUI-ru-empty-range
+INPUT ACTION { "ok": true, "slot": 6, "kind": "select" }
+PASS LOCALUI-ru-selection-clears-old-toast
+PASS LOCALUI-ru-selection-free
+PASS LOCALUI-ru-panel-in-viewport
+PASS LOCALUI-ru-selected-pad-clear
+PASS LOCALUI-ru-hud-clear
+PASS LOCALUI-ru-road-and-exit-clear
+PASS LOCALUI-ru-panel-opaque
+PASS LOCALUI-ru-info-fits
+PASS LOCALUI-ru-caption-fits
+PASS LOCALUI-ru-empty-range
+INPUT ACTION { "ok": true, "slot": 8, "kind": "select" }
+PASS LOCALUI-ru-selection-clears-old-toast
+PASS LOCALUI-ru-selection-free
+PASS LOCALUI-ru-panel-in-viewport
+PASS LOCALUI-ru-selected-pad-clear
+PASS LOCALUI-ru-hud-clear
+PASS LOCALUI-ru-road-and-exit-clear
+PASS LOCALUI-ru-panel-opaque
+PASS LOCALUI-ru-info-fits
+PASS LOCALUI-ru-caption-fits
+PASS LOCALUI-ru-empty-range
+INPUT ACTION { "ok": true, "slot": 0, "kind": "select" }
+INPUT TRACE ru-before-down rect=[P: (68.0, 330.0), S: (424.0, 76.0)] mouse=(280.0, 530.0) hovered=Slot0:<Button#85664466592> held=false armed=[] revision=8 slot=0 gold=60
+INPUT TRACE button-down rect=[P: (68.0, 330.0), S: (424.0, 76.0)] mouse=(280.0, 368.0) hovered=Consume:<Button#89355453977> held=true armed=[0, 0, 8] revision=8 slot=0 gold=60
+INPUT TRACE ru-after-down rect=[P: (68.0, 330.0), S: (424.0, 76.0)] mouse=(280.0, 368.0) hovered=Consume:<Button#89355453977> held=true armed=[0, 0, 8] revision=8 slot=0 gold=60
+PASS LOCALUI-ru-hold-no-consume
+INPUT TRACE ru-before-up rect=[P: (68.0, 330.0), S: (424.0, 76.0)] mouse=(280.0, 368.0) hovered=Consume:<Button#89355453977> held=true armed=[0, 0, 8] revision=8 slot=0 gold=60
+INPUT ACTION { "ok": true, "slot": 0, "type_id": "lightning", "level": 1, "roll": 8, "message": "雷电守卫已召唤", "kind": "summon" }
+INPUT TRACE button-pressed rect=[P: (68.0, 330.0), S: (424.0, 76.0)] mouse=(280.0, 368.0) hovered=Consume:<Button#89355453977> held=true armed=[] revision=9 slot=0 gold=40
+INPUT TRACE button-up rect=[P: (68.0, 330.0), S: (424.0, 76.0)] mouse=(280.0, 368.0) hovered=Consume:<Button#89355453977> held=false armed=[] revision=9 slot=0 gold=40
+INPUT TRACE ru-after-up rect=[P: (68.0, 330.0), S: (424.0, 76.0)] mouse=(280.0, 368.0) hovered=Consume:<Button#89355453977> held=false armed=[] revision=9 slot=0 gold=40
+PASS LOCALUI-ru-one-release-one-summon
+PASS LOCALUI-ru-sound-started
+PASS LOCALUI-ru-spawn-tween-real
+PASS LOCALUI-ru-spawn-transform-real
+INPUT AUDIO finished count=45 time_ms=5764
+INPUT AUDIO finished count=46 time_ms=5766
+INPUT AUDIO finished count=47 time_ms=5768
+INPUT AUDIO finished count=48 time_ms=5770
+PASS LOCALUI-ru-audio-voice-played
+INPUT ACTION { "ok": true, "slot": 0, "kind": "select" }
+PASS LOCALUI-ru-muted-click-silent
+INPUT ACTION { "ok": true, "slot": 0, "kind": "select" }
+PASS LOCALUI-ru-selected-double-click-no-consume
+INPUT TRACE button-down rect=[P: (68.0, 330.0), S: (424.0, 76.0)] mouse=(280.0, 368.0) hovered=Consume:<Button#89355453977> held=true armed=[0, 1, 9] revision=9 slot=0 gold=40
+INPUT ACTION { "ok": true, "slot": 0, "level": 2, "cost": 20, "kind": "upgrade" }
+INPUT TRACE button-pressed rect=[P: (68.0, 330.0), S: (424.0, 76.0)] mouse=(280.0, 368.0) hovered=Consume:<Button#89355453977> held=false armed=[] revision=10 slot=0 gold=20
+INPUT TRACE button-up rect=[P: (68.0, 330.0), S: (424.0, 76.0)] mouse=(280.0, 368.0) hovered=Consume:<Button#89355453977> held=false armed=[] revision=10 slot=0 gold=20
+PASS LOCALUI-ru-upgrade-once
+PASS LOCALUI-ru-upgrade-motion-real
+PASS LOCALUI-ru-exact-range
+PASS LOCALUI-ru-poor-disabled
+INPUT TRACE button-down rect=[P: (68.0, 330.0), S: (424.0, 76.0)] mouse=(280.0, 368.0) hovered=Consume:<Button#89355453977> held=true armed=[0, 2, 10] revision=10 slot=0 gold=40
+INPUT ACTION { "ok": true, "slot": 0, "level": 3, "cost": 40, "kind": "upgrade" }
+INPUT TRACE button-pressed rect=[P: (68.0, 330.0), S: (424.0, 76.0)] mouse=(280.0, 368.0) hovered=Consume:<Button#89355453977> held=false armed=[] revision=11 slot=0 gold=0
+INPUT TRACE button-up rect=[P: (68.0, 330.0), S: (424.0, 76.0)] mouse=(280.0, 368.0) hovered=Consume:<Button#89355453977> held=false armed=[] revision=11 slot=0 gold=0
+PASS LOCALUI-ru-lv3-exact-price
+INPUT ACTION { "ok": true, "message": "已取消选择", "kind": "cancel" }
+PASS LOCALUI-ru-cancel-clears
+INPUT ACTION { "ok": true, "slot": 0, "kind": "select" }
+INPUT ACTION { "ok": true, "message": "已取消选择", "kind": "cancel" }
+PASS LOCALUI-ru-blank-click-clears
+INPUT ACTION { "ok": true, "slot": 0, "kind": "select" }
+INPUT ACTION { "ok": true, "message": "已取消选择", "kind": "cancel" }
+PASS LOCALUI-ru-escape-clears
+INPUT ACTION { "ok": true, "message": "新对局已准备", "kind": "restart" }
+INPUT ACTION { "ok": true, "slot": 0, "kind": "select" }
+INPUT ACTION { "ok": true, "slot": 1, "kind": "select" }
+PASS LOCALUI-ru-stale-target-rejects
+INPUT ACTION { "ok": true, "message": "已取消选择", "kind": "cancel" }
+INPUT ACTION { "ok": true, "slot": 1, "kind": "select" }
+PASS LOCALUI-ru-cancel-reselect-invalidates
+INPUT ACTION { "ok": true, "message": "第1波开始", "kind": "start" }
+PASS LOCALUI-ru-wave-boundary-rejects
+INPUT ACTION { "ok": true, "slot": 0, "kind": "select" }
+PASS LOCALUI-ru-combat-read-only
+PASS LOCALUI-ru-inspection-keeps-clock-running
+INPUT ACTION { "ok": true, "message": "新对局已准备", "kind": "restart" }
+PASS LOCALUI-ru-restart-cleans
+LOCALUI SUMMARY: PASS=378 FAIL=0 SKIP=1 COMPLETE

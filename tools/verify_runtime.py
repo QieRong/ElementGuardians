@@ -16,6 +16,9 @@ import sys
 ROOT = Path(__file__).resolve().parents[1]
 ENGINE_VERSION = "4.4.1.stable.official.49a5bc7b6"
 SCRIPTS = [
+    ("upgrade-flow", "test_upgrade_flow.gd", r"UPGRADE SUMMARY: PASS=\d+ FAIL=0 SKIP=0 COMPLETE"),
+    ("upgrade-effects", "test_upgrade_effects.gd", r"UPGRADE EFFECT SUMMARY: PASS=\d+ FAIL=0 SKIP=0 COMPLETE"),
+    ("upgrade-ui", "test_upgrade_view.gd", r"UPGRADEUI SUMMARY: PASS=\d+ FAIL=0 SKIP=1 COMPLETE"),
     ("core", "test_battle_core.gd", r"TEST SUMMARY: PASS=21 FAIL=0"),
     ("repairs", "test_battle_repairs.gd", r"REPAIR SUMMARY: PASS=17 FAIL=0 SKIP=0"),
     ("map", "test_map_contract.gd", r"MAP SUMMARY: PASS=6 FAIL=0 SKIP=0"),
@@ -27,6 +30,7 @@ SCRIPTS = [
     ("player-view", "test_player_view.gd", r"PLAYERVIEW SUMMARY: PASS=\d+ FAIL=0 SKIP=1 COMPLETE"),
     ("enemy-presentation", "test_enemy_presentation.gd", r"ENEMYART SUMMARY: PASS=\d+ FAIL=0 SKIP=0 COMPLETE"),
     ("player-settings", "test_player_settings.gd", r"SETTINGS SUMMARY: PASS=\d+ FAIL=0 SKIP=0 COMPLETE"),
+    ("local-tower-ui", "test_local_tower_ui.gd", r"LOCALUI SUMMARY: PASS=\d+ FAIL=0 SKIP=1 COMPLETE"),
 ]
 
 
@@ -100,6 +104,14 @@ def main() -> int:
                                  f"--render-scale={scale}", f"--capture-dir={evidence / menu_name}"],
                       r"MENU SUMMARY: PASS=\d+ FAIL=0 SKIP=0 COMPLETE", memory=768)
                 player_name = "player-render-" + scale.replace(".", "")
+                upgrade_name = "upgrade-render-" + scale.replace(".", "")
+                godot(upgrade_name, ["--path", "godot", "--script", "res://tests/test_upgrade_view.gd", "--",
+                                    f"--render-scale={scale}", f"--capture-dir={evidence / upgrade_name}"],
+                      r"UPGRADEUI SUMMARY: PASS=\d+ FAIL=0 SKIP=0 COMPLETE", memory=768)
+                local_name = "local-tower-" + scale.replace(".", "")
+                godot(local_name, ["--path", "godot", "--script", "res://tests/test_local_tower_ui.gd", "--",
+                                   f"--render-scale={scale}", f"--capture-dir={evidence / local_name}"],
+                      r"LOCALUI SUMMARY: PASS=\d+ FAIL=0 SKIP=0 COMPLETE", memory=768)
                 godot(player_name, ["--path", "godot", "--script", "res://tests/test_player_view.gd", "--",
                                    f"--render-scale={scale}", f"--capture-dir={evidence / player_name}"],
                       r"PLAYERVIEW SUMMARY: PASS=\d+ FAIL=0 SKIP=0 COMPLETE", memory=768)

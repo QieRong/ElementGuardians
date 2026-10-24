@@ -1,0 +1,81 @@
+COMMAND=['E:\\godot\\Godot_v4.4.1-stable_win64.exe', '--log-file', 'D:\\桌面\\ElementGuardians\\logs\\test_runs\\20261023_gold_upgrade\\view-leak-diagnosis.engine.log', '--headless', '--verbose', '--path', 'godot', '--script', 'res://tests/test_player_view.gd']
+CWD=D:\桌面\ElementGuardians
+Godot Engine v4.4.1.stable.official.49a5bc7b6 - https://godotengine.org
+TextServer: Added interface "Dummy"
+TextServer: Added interface "ICU / HarfBuzz / Graphite (Built-in)"
+Using "default" pen tablet driver...
+
+TextServer: Primary interface set to: "ICU / HarfBuzz / Graphite (Built-in)".
+CORE API HASH: 4052744068
+EDITOR API HASH: 910296392
+Loading resource: res://tests/test_player_view.gd
+Loaded system CA certificates
+PASS PLAYERVIEW-player-scene-available
+PASS PLAYERVIEW-supported-scale
+Loading resource: res://scenes/player_battle.tscn
+Loading resource: res://scripts/player/battle_view.gd
+Loading resource: res://assets/icons/lucide/chevron-right.svg
+Loading resource: res://.godot/imported/chevron-right.svg-121fa436a57e1bf3c9c04fb85209215b.ctex
+Loading resource: res://assets/icons/lucide/play.svg
+Loading resource: res://.godot/imported/play.svg-e509c55c524c8717977f8d345acf137a.ctex
+Loading resource: res://assets/icons/lucide/heart.svg
+Loading resource: res://.godot/imported/heart.svg-66ea64a735ea581e38c361675d9f3462.ctex
+Loading resource: res://assets/icons/lucide/plus.svg
+Loading resource: res://.godot/imported/plus.svg-7c9fa4505e3b4bd08ac81a32ad534d07.ctex
+Loading resource: res://assets/enemies/grunt_005.png
+Loading resource: res://.godot/imported/grunt_005.png-f255ed6cd13f927824b18bc4e250cc4a.ctex
+Loading resource: res://assets/enemies/swift_006.png
+Loading resource: res://.godot/imported/swift_006.png-0d385b58e4bbee1b96cb3cc3a9c9c210.ctex
+Loading resource: res://assets/enemies/armor_007.png
+Loading resource: res://.godot/imported/armor_007.png-d9a94b5d26af2bd04f966c033a6a09b1.ctex
+Loading resource: res://assets/backgrounds/battle_056.png
+Loading resource: res://.godot/imported/battle_056.png-d7cfa992f4b0871ca06ec416bfceae03.ctex
+Loading resource: res://assets/icons/lucide/arrow-left.svg
+Loading resource: res://.godot/imported/arrow-left.svg-1e215c8d7ddccd8a89eee28ba7b2a934.ctex
+Loading resource: res://assets/icons/lucide/rotate-ccw.svg
+Loading resource: res://.godot/imported/rotate-ccw.svg-72097dc869bb37466442f5645fc6d506.ctex
+PASS PLAYERVIEW-controls-built
+PASS PLAYERVIEW-back-arrow-at-top-left
+PASS PLAYERVIEW-back-arrow-only-with-label
+PASS PLAYERVIEW-back-clear-of-wave
+PASS PLAYERVIEW-back-clear-of-entry
+PASS PLAYERVIEW-real-empty-player-start
+PASS PLAYERVIEW-no-diagnostic-canvas
+PASS PLAYERVIEW-selection-has-real-owner
+Loading resource: res://assets/characters/lightning_003.png
+Loading resource: res://.godot/imported/lightning_003.png-27d25f1d7ac02c59d4b5011c74499047.ctex
+PASS PLAYERVIEW-spend-schedules-hud-feedback
+PASS PLAYERVIEW-real-spend-flashes-hud
+PASS PLAYERVIEW-actual-summon-consumes-20
+PASS PLAYERVIEW-summon-motion-observed
+PASS PLAYERVIEW-two-tower-click-only-switches
+PASS PLAYERVIEW-paid-upgrade-real
+PASS PLAYERVIEW-upgrade-motion-observed
+PASS PLAYERVIEW-selection-no-consumption
+PASS PLAYERVIEW-poor-button-disabled
+PASS PLAYERVIEW-disabled-click-no-side-effects
+PASS PLAYERVIEW-target-sizes
+PASS PLAYERVIEW-real-combat-and-disabled-actions
+PASS PLAYERVIEW-live-enemy-has-crawl-presentation
+PASS PLAYERVIEW-real-crawl-motion-observed
+PASS PLAYERVIEW-attack-has-real-damage-and-visual
+PLAYER UI TRACE wave_stats=[{ "wave": 1, "gold_start": 0, "hp_start": 10, "spawned": 6, "kills": 6, "leaks": 0, "damage_dealt": 215.25, "gold_end": 50, "hp_end": 10, "duration_s": 18.2700000000001, "wave_clear_reward": 20, "tower_count": 2, "board_occupancy_pct": 22.2, "summons": 2, "merges": 0, "tower_upgrades": 1 }] attacks=21
+PASS PLAYERVIEW-real-combat-feedback
+PASS PLAYERVIEW-stops-at-unimplemented-upgrade
+PASS PLAYERVIEW-upgrade-frozen-no-auto-next-wave
+PASS PLAYERVIEW-ui-restart-empty
+PASS PLAYERVIEW-restart-clears-old-actors-and-beams
+PASS PLAYERVIEW-leak-feedback-text
+PASS PLAYERVIEW-real-empty-run-hp-feedback
+Loading resource: res://assets/characters/lightning_003.png
+Loading resource: res://.godot/imported/lightning_003.png-27d25f1d7ac02c59d4b5011c74499047.ctex
+PASS PLAYERVIEW-reduced-summon-no-transform-motion
+PASS PLAYERVIEW-view-exit-releases-session
+PLAYERVIEW SUMMARY: PASS=34 FAIL=0 SKIP=1 COMPLETE
+XR: Clearing primary interface
+XR: Removed interface "Native mobile"
+XR: Removed interface "OpenXR"
+
+EXIT=0 LIMIT=NONE PEAK_PRIVATE_BYTES=120586240
+STDIO=logs\test_runs\20261023_gold_upgrade\view-leak-diagnosis.stdio.log
+HARNESS=PASS SUMMARY_FOUND=True

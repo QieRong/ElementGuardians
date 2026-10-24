@@ -1,0 +1,19 @@
+{
+  "same_sheet_names": true,
+  "original_value_formula_differences": [],
+  "original_cell_style_differences": [],
+  "added_rows": [
+    [
+      "tower_upgrade_lv2_cost",
+      20,
+      "Lv1→Lv2费用，首版试验"
+    ],
+    [
+      "tower_upgrade_lv3_cost",
+      40,
+      "Lv2→Lv3费用，首版试验"
+    ]
+  ],
+  "original_formula_count": 33,
+  "final_formula_count": 33
+}

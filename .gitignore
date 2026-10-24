@@ -4,6 +4,7 @@
 **/build/
 **/temp/
 **/__pycache__/
+**/node_modules/
 *.log
 *.pyc
 .env

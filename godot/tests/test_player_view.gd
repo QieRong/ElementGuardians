@@ -84,39 +84,27 @@ func _run() -> void:
 	_click_button("CancelButton")
 	_click_slot(0)
 	_click_slot(1)
-	print("PLAYER UI TRACE merge towers=", _core().towers, " selected=", player.get("selected_slot"))
-	_check("source-target-merge-real", _core().gold == 20 and _core().towers.size() == 1 and int(_core().towers[0]["level"]) == 2 and int(_core().towers[0]["slot"]) == 1)
+	_check("two-tower-click-only-switches", _core().gold == 20 and _core().towers.size() == 2 and player.selected_slot == 1)
+	_click_button("SummonButton") # Local action on an occupied slot is an upgrade.
+	_check("paid-upgrade-real", _core().gold == 0 and _core().towers.size() == 2 and int(player.board.tower_at(1)["level"]) == 2)
 	unit = screen.get_node("Field/Slot1").get("unit")
-	# Inspect the real merge-created Tween before a slow render frame can finish
-	# its entire 300ms lifetime. Keep the same >1.0 visible-motion criterion.
 	if unit.has_meta("scale_fx"):
 		(unit.get_meta("scale_fx") as Tween).custom_step(0.08)
-	print("PLAYER UI TRACE merge feedback scale=", unit.scale)
-	_check("merge-motion-observed", unit.scale.x > 1.0)
-	await _snapshot("03-merged")
-	_click_slot(2)
-	_click_button("SummonButton")
-	_check("third-summon-zero-gold", _core().gold == 0 and _core().towers.size() == 2)
+	_check("upgrade-motion-observed", unit.scale.x > 1.0)
+	await _snapshot("03-upgraded")
 	var unchanged := _core().towers.duplicate(true)
-	_click_button("CancelButton")
+	_click_slot(0)
 	_click_slot(1)
-	_click_slot(2)
-	_check("invalid-merge-keeps-state", _core().towers == unchanged and _core().gold == 0)
-	print("PLAYER UI TRACE failure_notice=", screen.get_node("Toast/Message").text)
-	_check("failure-feedback-visible", screen.get_node("Toast").visible and "不同类型" in String(screen.get_node("Toast/Message").text))
-	_check("feedback-keeps-route-and-slots-clear", not (screen.get_node("Toast") as Control).get_global_rect().intersects((screen.get_node("Field/Slot1") as Control).get_global_rect()) and (screen.get_node("Toast") as Control).mouse_filter == Control.MOUSE_FILTER_IGNORE)
-	await _snapshot("04-invalid-merge")
-	await create_timer(2.5).timeout
-	_check("feedback-auto-disappears", is_zero_approx(screen.get_node("Toast").modulate.a))
+	_check("selection-no-consumption", _core().towers == unchanged and _core().gold == 0)
 	_click_slot(3)
-	var summon := screen.get_node("SummonButton") as Button
+	var summon := screen.get_node("LocalTowerPanel/Body/Consume") as Button
 	_check("poor-button-disabled", summon.disabled)
 	var rng_before: int = player.get("summon_rng").state
 	_click_button("SummonButton")
 	_check("disabled-click-no-side-effects", _core().gold == 0 and _core().towers == unchanged and player.get("summon_rng").state == rng_before)
 	_check("target-sizes", (screen.get_node("Field/Slot0") as Control).get_global_rect().size.y >= 48 and summon.get_global_rect().size.y >= 48)
 	_click_button("StartButton")
-	_check("real-combat-and-disabled-actions", _core().state == "COMBAT" and summon.disabled and (screen.get_node("CancelButton") as Button).disabled)
+	_check("real-combat-and-disabled-actions", _core().state == "COMBAT" and not screen.get_node("LocalTowerPanel").visible)
 	# Advance the same production session without waiting wall-clock battle time.
 	# Speedup exists only in this test, not in player controls.
 	var attacked: bool = false
@@ -144,11 +132,30 @@ func _run() -> void:
 			break
 	print("PLAYER UI TRACE wave_stats=", _core().wave_stats, " attacks=", screen.get("attack_feedback_count"))
 	_check("real-combat-feedback", enemy_seen and attacked)
-	_check("stops-at-unimplemented-upgrade", _core().state == "UPGRADE" and screen.get_node("StagePanel").visible and "尚未接入" in String(screen.get_node("StagePanel/Content/Description").text))
+	_check("mandatory-upgrade-visible", _core().state == "UPGRADE" and screen.get_node("UpgradePanel").visible and player.upgrade_options().size() == 3)
 	await _snapshot("08-upgrade-boundary")
 	var frozen_time := _core().total_time
 	await create_timer(0.2).timeout
 	_check("upgrade-frozen-no-auto-next-wave", _core().wave_stats.size() == 1 and _core().total_time == frozen_time)
+	var offer: int = player.upgrade_offer_revision
+	var offered: Array = player.upgrade_options()
+	var gold_before: int = _core().gold
+	_click_button("UpgradePanel/Card0/Choose")
+	_check("real-choice-returns-prep", _core().state == "PREP" and not screen.get_node("UpgradePanel").visible and _core().wave_index == 2)
+	_check("choice-once-free", player.upgrade_picker.stacks.get(offered[0]["upgrade_id"], 0) == 1 and _core().gold == gold_before and not player.choose_upgrade(offered[0]["upgrade_id"], offer)["ok"])
+	_click_button("StartButton")
+	_check("real-second-wave-start", _core().state == "COMBAT" and _core().wave_stats.size() == 2)
+	# Reach a real result through the same player commands, then restart through UI.
+	for step in range(30000):
+		player.tick(0.05)
+		if _core().state == "UPGRADE":
+			player.choose_upgrade(player.upgrade_options()[0]["upgrade_id"], player.upgrade_offer_revision)
+			player.start_wave()
+		if _core().state == "RESULT":
+			break
+	screen.call("refresh")
+	_check("real-result-reached", _core().state == "RESULT" and screen.get_node("StagePanel").visible)
+	await _snapshot("08b-result")
 	# Independent real player run: restart using UI, deliberately deploy nothing.
 	_click_button("StagePanel/Content/RestartButton")
 	_check("ui-restart-empty", _core().towers.is_empty() and _core().gold == 60 and _core().base_hp == 10)
@@ -191,6 +198,8 @@ func _click_slot(index: int) -> void:
 	_click((screen.get_node("Field/Slot%d" % index) as Control).get_global_rect().get_center())
 
 func _click_button(id: String) -> void:
+	if id == "SummonButton":
+		id = "LocalTowerPanel/Body/Consume"
 	_click((screen.get_node(id) as Control).get_global_rect().get_center())
 
 func _click(point: Vector2) -> void:

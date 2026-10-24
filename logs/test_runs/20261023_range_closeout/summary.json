@@ -1,0 +1,169 @@
+{
+  "complete": true,
+  "counts": {
+    "PASS": 8,
+    "FAIL": 1,
+    "SKIP": 0
+  },
+  "final_checks": [
+    {
+      "id": "final-parse",
+      "status": "PASS",
+      "log": "final-parse.log",
+      "summaries": []
+    },
+    {
+      "id": "prep",
+      "status": "PASS",
+      "log": "prep.log",
+      "summaries": [
+        "PREP SUMMARY: PASS=388 FAIL=0 SKIP=0 COMPLETE"
+      ]
+    },
+    {
+      "id": "audio-condition",
+      "status": "PASS",
+      "log": "audio-condition.log",
+      "summaries": [
+        "LOCALUI SUMMARY: PASS=378 FAIL=0 SKIP=1 COMPLETE"
+      ]
+    },
+    {
+      "id": "visible720",
+      "status": "PASS",
+      "log": "visible720.log",
+      "summaries": [
+        "LOCALUI SUMMARY: PASS=567 FAIL=0 SKIP=0 COMPLETE"
+      ]
+    },
+    {
+      "id": "visible540",
+      "status": "PASS",
+      "log": "visible540.log",
+      "summaries": [
+        "LOCALUI SUMMARY: PASS=567 FAIL=0 SKIP=0 COMPLETE"
+      ]
+    },
+    {
+      "id": "sync",
+      "status": "PASS",
+      "log": "sync.log"
+    },
+    {
+      "id": "validate",
+      "status": "PASS",
+      "log": "validate.log"
+    },
+    {
+      "id": "docs-final.log",
+      "status": "FAIL",
+      "exit_code": 1,
+      "log": "docs-final.log"
+    },
+    {
+      "id": "format-final.log",
+      "status": "PASS",
+      "exit_code": 0,
+      "log": "format-final.log"
+    }
+  ],
+  "all_godot_runs": [
+    {
+      "id": "audio-condition",
+      "status": "PASS",
+      "log": "audio-condition.log",
+      "summaries": [
+        "LOCALUI SUMMARY: PASS=378 FAIL=0 SKIP=1 COMPLETE"
+      ]
+    },
+    {
+      "id": "final-headless",
+      "status": "FAIL",
+      "log": "final-headless.log",
+      "summaries": [
+        "LOCALUI SUMMARY: PASS=377 FAIL=1 SKIP=1 COMPLETE"
+      ]
+    },
+    {
+      "id": "final-parse",
+      "status": "PASS",
+      "log": "final-parse.log",
+      "summaries": []
+    },
+    {
+      "id": "final540",
+      "status": "PASS",
+      "log": "final540.log",
+      "summaries": [
+        "LOCALUI SUMMARY: PASS=565 FAIL=0 SKIP=0 COMPLETE"
+      ]
+    },
+    {
+      "id": "final720",
+      "status": "PASS",
+      "log": "final720.log",
+      "summaries": [
+        "LOCALUI SUMMARY: PASS=565 FAIL=0 SKIP=0 COMPLETE"
+      ]
+    },
+    {
+      "id": "headless-local",
+      "status": "FAIL",
+      "log": "headless-local.log",
+      "summaries": [
+        "LOCALUI SUMMARY: PASS=377 FAIL=1 SKIP=1 COMPLETE"
+      ]
+    },
+    {
+      "id": "input-diagnosis",
+      "status": "PASS",
+      "log": "input-diagnosis.log",
+      "summaries": [
+        "LOCALUI SUMMARY: PASS=565 FAIL=0 SKIP=0 COMPLETE"
+      ]
+    },
+    {
+      "id": "parse",
+      "status": "PASS",
+      "log": "parse.log",
+      "summaries": []
+    },
+    {
+      "id": "prep",
+      "status": "PASS",
+      "log": "prep.log",
+      "summaries": [
+        "PREP SUMMARY: PASS=388 FAIL=0 SKIP=0 COMPLETE"
+      ]
+    },
+    {
+      "id": "ui540-diagnosis",
+      "status": "PASS",
+      "log": "ui540-diagnosis.log",
+      "summaries": [
+        "LOCALUI SUMMARY: PASS=565 FAIL=0 SKIP=0 COMPLETE"
+      ]
+    },
+    {
+      "id": "visible540",
+      "status": "PASS",
+      "log": "visible540.log",
+      "summaries": [
+        "LOCALUI SUMMARY: PASS=567 FAIL=0 SKIP=0 COMPLETE"
+      ]
+    },
+    {
+      "id": "visible720",
+      "status": "PASS",
+      "log": "visible720.log",
+      "summaries": [
+        "LOCALUI SUMMARY: PASS=567 FAIL=0 SKIP=0 COMPLETE"
+      ]
+    }
+  ],
+  "preserved_manifest_red": [
+    "godot/project.godot",
+    "godot/scenes/main.tscn"
+  ],
+  "scope": "Automated evidence only; old summon-release failure remains unexplained. No human/full-six-wave acceptance."
+}

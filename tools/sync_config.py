@@ -123,7 +123,7 @@ def main():
     with tempfile.TemporaryDirectory() as tmp:
         staging=Path(tmp)
         for key,txt in csv_map.items():
-            (staging/(key+".csv")).write_text(txt,encoding="utf-8")
+            (staging/(key+".csv")).write_text(txt,encoding="utf-8",newline="\n")
         # Relocate validation config root only during precheck.
         import validate_config
         old=validate_config.CFG

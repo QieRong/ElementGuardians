@@ -1,0 +1,45 @@
+{"command": ["E:\\PyCharm\\Python\\python.exe", "D:\\桌面\\ElementGuardians\\tools\\run_godot_check.py", "--godot-exe", "E:\\godot\\Godot_v4.4.1-stable_win64_console.exe", "--log", "D:\\桌面\\ElementGuardians\\logs\\test_runs\\20261023_gold_upgrade\\final-suite\\player-view.log", "--timeout", "90", "--memory-mb", "512", "--require", "PLAYERVIEW SUMMARY: PASS=\\d+ FAIL=0 SKIP=1 COMPLETE", "--", "--headless", "--path", "godot", "--script", "res://tests/test_player_view.gd"], "cwd": "D:\\桌面\\ElementGuardians"}
+COMMAND=['E:\\godot\\Godot_v4.4.1-stable_win64.exe', '--log-file', 'D:\\桌面\\ElementGuardians\\logs\\test_runs\\20261023_gold_upgrade\\final-suite\\player-view.engine.log', '--headless', '--path', 'godot', '--script', 'res://tests/test_player_view.gd']
+CWD=D:\桌面\ElementGuardians
+Godot Engine v4.4.1.stable.official.49a5bc7b6 - https://godotengine.org
+
+PASS PLAYERVIEW-player-scene-available
+PASS PLAYERVIEW-supported-scale
+PASS PLAYERVIEW-controls-built
+PASS PLAYERVIEW-back-arrow-at-top-left
+PASS PLAYERVIEW-back-arrow-only-with-label
+PASS PLAYERVIEW-back-clear-of-wave
+PASS PLAYERVIEW-back-clear-of-entry
+PASS PLAYERVIEW-real-empty-player-start
+PASS PLAYERVIEW-no-diagnostic-canvas
+PASS PLAYERVIEW-selection-has-real-owner
+PASS PLAYERVIEW-spend-schedules-hud-feedback
+PASS PLAYERVIEW-real-spend-flashes-hud
+PASS PLAYERVIEW-actual-summon-consumes-20
+PASS PLAYERVIEW-summon-motion-observed
+PASS PLAYERVIEW-two-tower-click-only-switches
+PASS PLAYERVIEW-paid-upgrade-real
+PASS PLAYERVIEW-upgrade-motion-observed
+PASS PLAYERVIEW-selection-no-consumption
+PASS PLAYERVIEW-poor-button-disabled
+PASS PLAYERVIEW-disabled-click-no-side-effects
+PASS PLAYERVIEW-target-sizes
+PASS PLAYERVIEW-real-combat-and-disabled-actions
+PASS PLAYERVIEW-live-enemy-has-crawl-presentation
+PASS PLAYERVIEW-real-crawl-motion-observed
+PASS PLAYERVIEW-attack-has-real-damage-and-visual
+PLAYER UI TRACE wave_stats=[{ "wave": 1, "gold_start": 0, "hp_start": 10, "spawned": 6, "kills": 6, "leaks": 0, "damage_dealt": 215.25, "gold_end": 50, "hp_end": 10, "duration_s": 18.2700000000001, "wave_clear_reward": 20, "tower_count": 2, "board_occupancy_pct": 22.2, "summons": 2, "merges": 0, "tower_upgrades": 1 }] attacks=21
+PASS PLAYERVIEW-real-combat-feedback
+PASS PLAYERVIEW-stops-at-unimplemented-upgrade
+PASS PLAYERVIEW-upgrade-frozen-no-auto-next-wave
+PASS PLAYERVIEW-ui-restart-empty
+PASS PLAYERVIEW-restart-clears-old-actors-and-beams
+PASS PLAYERVIEW-leak-feedback-text
+PASS PLAYERVIEW-real-empty-run-hp-feedback
+PASS PLAYERVIEW-reduced-summon-no-transform-motion
+PASS PLAYERVIEW-view-exit-releases-session
+PLAYERVIEW SUMMARY: PASS=34 FAIL=0 SKIP=1 COMPLETE
+
+EXIT=0 LIMIT=NONE PEAK_PRIVATE_BYTES=120619008
+STDIO=D:\桌面\ElementGuardians\logs\test_runs\20261023_gold_upgrade\final-suite\player-view.stdio.log
+HARNESS=PASS SUMMARY_FOUND=True LOG=D:\桌面\ElementGuardians\logs\test_runs\20261023_gold_upgrade\final-suite\player-view.log

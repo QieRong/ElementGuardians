@@ -20,7 +20,7 @@ func _ready() -> void:
 		add_child(button)
 		button.position = session.core.map.slot_rect(index).position
 		button.size = Vector2(76, 76)
-		button.tooltip_text = Locale.text(self, "选择此格；先选守卫，再点同类同级目标可合成")
+		button.tooltip_text = Locale.text(self, "选择查看")
 	refresh()
 
 func _select(index: int) -> void:
@@ -40,7 +40,7 @@ func reset_visuals() -> void:
 func refresh() -> void:
 	for index in range(9):
 		var slot := get_node("Slot%d" % index) as Button
-		slot.disabled = session.core.state != "PREP"
+		slot.disabled = session.core.state not in ["PREP", "COMBAT"] or session.core.finished
 		slot.selected = session.selected_slot == index
 		slot.show_tower(session.board.tower_at(index), reduced())
 		slot.queue_redraw()
@@ -60,6 +60,14 @@ func refresh() -> void:
 			var actor: Node2D = actors[id]
 			actors.erase(id)
 			Fx.fade_out(actor, true)
+	queue_redraw()
+
+func range_geometry() -> Dictionary:
+	var slot: int = session.selected_slot
+	if slot < 0:
+		return {}
+	var tower: Dictionary = session.board.tower_at(slot)
+	return {"center": session.core.map.slot_center(slot), "radius": float(tower.get("range", 225)), "outer": 235.0 if tower.is_empty() else float(tower["range"])}
 
 func feedback(data: Dictionary) -> void:
 	if data["kind"] == "damage" and actors.has(int(data["enemy_id"])):
@@ -84,6 +92,11 @@ func _draw() -> void:
 	var points := PackedVector2Array(session.core.map.path)
 	draw_polyline(points, Color("#101c29"), 48, true)
 	draw_polyline(points, Color("#cbbca2"), 40, true)
+	var geometry := range_geometry()
+	if not geometry.is_empty():
+		# Outline only: selection must not recolor the road beneath the range.
+		draw_arc(geometry["center"], geometry["outer"], 0, TAU, 128, Color("#8bcad166"), 2, true)
+		draw_arc(geometry["center"], geometry["radius"], 0, TAU, 128, Color("#8bcad1"), 2, true)
 	for index in range(points.size() - 1):
 		var vector: Vector2 = points[index + 1] - points[index]
 		var middle: Vector2 = (points[index + 1] + points[index]) * 0.5

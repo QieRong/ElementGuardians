@@ -1,0 +1,33 @@
+{"command": ["E:\\PyCharm\\Python\\python.exe", "-X", "utf8", "D:\\桌面\\ElementGuardians\\tools\\check_docs.py"], "cwd": "D:\\桌面\\ElementGuardians"}
+DOCS: 19 files | tests defined=36 referenced=36
+DOC CHECK: FAIL
+DOC-MANIFEST FAIL: MANIFEST 哈希不符: AGENTS.md
+DOC-MANIFEST FAIL: MANIFEST 哈希不符: README.md
+DOC-MANIFEST FAIL: MANIFEST 哈希不符: configs/ElementGuardians_策划数值配置.xlsx
+DOC-MANIFEST FAIL: MANIFEST 哈希不符: configs/SCHEMA.md
+DOC-MANIFEST FAIL: MANIFEST 哈希不符: configs/csv/economy_params.csv
+DOC-MANIFEST FAIL: MANIFEST 哈希不符: docs/00-START-HERE.md
+DOC-MANIFEST FAIL: MANIFEST 哈希不符: docs/02-SYSTEM-SPEC.md
+DOC-MANIFEST FAIL: MANIFEST 哈希不符: docs/03-BALANCE.md
+DOC-MANIFEST FAIL: MANIFEST 哈希不符: docs/06-UI-UX.md
+DOC-MANIFEST FAIL: MANIFEST 哈希不符: docs/08-TEST-PLAN.md
+DOC-MANIFEST FAIL: MANIFEST 哈希不符: docs/09-ROADMAP.md
+DOC-MANIFEST FAIL: MANIFEST 哈希不符: godot/README.md
+DOC-MANIFEST FAIL: MANIFEST 哈希不符: godot/configs/csv/economy_params.csv
+DOC-MANIFEST FAIL: MANIFEST 哈希不符: godot/project.godot
+DOC-MANIFEST FAIL: MANIFEST 哈希不符: godot/scenes/main.tscn
+DOC-MANIFEST FAIL: MANIFEST 哈希不符: tools/sync_config.py
+DOC-MANIFEST FAIL: MANIFEST 哈希不符: tools/validate_config.py
+DOC-MANIFEST FAIL: MANIFEST 哈希不符: tracking/CHANGELOG.md
+DOC-MANIFEST FAIL: MANIFEST 哈希不符: tracking/DECISIONS.md
+DOC-MANIFEST FAIL: MANIFEST 哈希不符: godot/scripts/battle/battle_config.gd
+DOC-MANIFEST FAIL: MANIFEST 哈希不符: godot/scripts/battle/battle_core.gd
+DOC-MANIFEST FAIL: MANIFEST 哈希不符: NEXT_SESSION_PROMPT.md
+DOC-MANIFEST FAIL: MANIFEST 哈希不符: tools/verify_runtime.py
+DOC-MANIFEST FAIL: MANIFEST 哈希不符: godot/scripts/player/battle_view.gd
+DOC-MANIFEST FAIL: MANIFEST 哈希不符: godot/scripts/player/board_controller.gd
+DOC-MANIFEST FAIL: MANIFEST 哈希不符: godot/scripts/player/player_session.gd
+DOC-MANIFEST FAIL: MANIFEST 哈希不符: godot/scripts/ui/player_field.gd
+DOC-MANIFEST FAIL: MANIFEST 哈希不符: godot/tests/test_player_prep.gd
+DOC-MANIFEST FAIL: MANIFEST 哈希不符: godot/tests/test_player_view.gd
+DOC-MANIFEST FAIL: MANIFEST 哈希不符: godot/data/ui_locales.json

@@ -1,0 +1,38 @@
+ M AGENTS.md
+ M MANIFEST.sha256
+ M NEXT_SESSION_PROMPT.md
+ M README.md
+ M "configs/ElementGuardians_\347\255\226\345\210\222\346\225\260\345\200\274\351\205\215\347\275\256.xlsx"
+ M configs/SCHEMA.md
+ M configs/csv/economy_params.csv
+ M docs/00-START-HERE.md
+ M docs/02-SYSTEM-SPEC.md
+ M docs/03-BALANCE.md
+ M docs/06-UI-UX.md
+ M docs/08-TEST-PLAN.md
+ M docs/09-ROADMAP.md
+ M godot/README.md
+ M godot/configs/csv/economy_params.csv
+ M godot/configs/csv/economy_params.description.translation
+ M godot/configs/csv/economy_params.value.translation
+ M godot/data/ui_locales.json
+ M godot/scripts/battle/battle_config.gd
+ M godot/scripts/battle/battle_core.gd
+ M godot/scripts/player/battle_view.gd
+ M godot/scripts/player/board_controller.gd
+ M godot/scripts/player/player_session.gd
+ M godot/scripts/ui/player_field.gd
+ M godot/tests/test_player_prep.gd
+ M godot/tests/test_player_view.gd
+ M tools/sync_config.py
+ M tools/validate_config.py
+ M tools/verify_runtime.py
+ M tracking/CHANGELOG.md
+ M tracking/DECISIONS.md
+?? godot/scripts/ui/local_tower_panel.gd
+?? godot/scripts/ui/local_tower_panel.gd.uid
+?? godot/tests/test_local_tower_ui.gd
+?? godot/tests/test_local_tower_ui.gd.uid
+?? logs/test_runs/20261023_gold_upgrade/
+
+EXIT=0

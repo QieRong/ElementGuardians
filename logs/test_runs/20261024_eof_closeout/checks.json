@@ -1,0 +1,32 @@
+[
+  {
+    "id": "sync-final",
+    "status": "PASS",
+    "exit_code": 0,
+    "log": "sync-final.log"
+  },
+  {
+    "id": "config-final",
+    "status": "PASS",
+    "exit_code": 0,
+    "log": "config-final.log"
+  },
+  {
+    "id": "docs-final",
+    "status": "FAIL",
+    "exit_code": 1,
+    "log": "docs-final.log"
+  },
+  {
+    "id": "patch-format",
+    "status": "PASS",
+    "exit_code": 0,
+    "log": "patch-format.log"
+  },
+  {
+    "id": "source-format",
+    "status": "PASS",
+    "exit_code": 0,
+    "log": "source-format.log"
+  }
+]

@@ -1,0 +1,6 @@
+Evidence capture driver failed while printing docs output; sync.log/config.log/docs.log were already written and are retained.
+Traceback (most recent call last):
+  File "<stdin>", line 18, in <module>
+UnicodeEncodeError: gbk codec cannot encode U+FFFD
+EXIT=1
+The recovery uses UTF-8 output for this child process only.

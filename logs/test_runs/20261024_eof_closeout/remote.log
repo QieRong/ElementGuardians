@@ -1,0 +1,4 @@
+COMMAND=git ls-remote origin refs/heads/master
+560afe4d911704ca00acf5a19d32f3810169d4a3	refs/heads/master
+
+EXIT=0

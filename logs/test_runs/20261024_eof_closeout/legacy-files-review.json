@@ -1,0 +1,17 @@
+[
+  {
+    "path": "logs/test_runs/20261023_gold_upgrade/.gitignore",
+    "bytes": 28,
+    "sha256": "96e2ca96ce205dff870c12562a3eee79e05263fc7c6e2e9c98987a79bea881cf"
+  },
+  {
+    "path": "logs/test_runs/20261023_gold_upgrade/edit_config.mjs",
+    "bytes": 1154,
+    "sha256": "2df366ba585642cd72e4f3cc3da8c90d6e81fd38522630a78f868c16458abd7d"
+  },
+  {
+    "path": "logs/test_runs/20261023_gold_upgrade/xlsx-inspect.ndjson",
+    "bytes": 106541,
+    "sha256": "1d59c3a7603bd9f9d172d4eee77ccc45372699cd421c2d30a00887738d79bb27"
+  }
+]

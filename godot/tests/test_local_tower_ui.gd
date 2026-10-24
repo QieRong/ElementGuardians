@@ -286,4 +286,3 @@ func _check(id: String, ok: bool) -> void:
 func _finish() -> void:
 	print("LOCALUI SUMMARY: PASS=%d FAIL=%d SKIP=%d COMPLETE" % [passed, failed, int(capture_dir.is_empty())])
 	quit(1 if failed > 0 else 0)
-

@@ -1,0 +1,9 @@
+{
+  "head": "56d025be901d0579116f5bf580138b14fa8bd2c1",
+  "status": "?? logs/test_runs/20261023_gold_upgrade/.gitignore\n?? logs/test_runs/20261023_gold_upgrade/edit_config.mjs\n?? logs/test_runs/20261023_gold_upgrade/xlsx-inspect.ndjson\n?? logs/test_runs/20261024_eof_closeout/\n",
+  "target": "godot/tests/test_local_tower_ui.gd",
+  "target_sha256": "3bdc32147c0dd089ff34f5c703bc6e503e37f27254283d353db6dc2273a66645",
+  "target_bytes": 13768,
+  "historical_files": 2908,
+  "manifest_sha256": "ccd5026910185d5fb18d81bea8a3eb2f654fef565e94981738b23144cf2ad721"
+}

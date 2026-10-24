@@ -1,0 +1,79 @@
+{
+  "scope": "EOF-only local correction, no commit/push",
+  "counts": {
+    "PASS": 8,
+    "FAIL": 1,
+    "SKIP": 0
+  },
+  "checks": [
+    {
+      "id": "sync-final",
+      "status": "PASS",
+      "exit_code": 0,
+      "log": "sync-final.log"
+    },
+    {
+      "id": "config-final",
+      "status": "PASS",
+      "exit_code": 0,
+      "log": "config-final.log"
+    },
+    {
+      "id": "docs-final",
+      "status": "FAIL",
+      "exit_code": 1,
+      "log": "docs-final.log"
+    },
+    {
+      "id": "patch-format",
+      "status": "PASS",
+      "exit_code": 0,
+      "log": "patch-format.log"
+    },
+    {
+      "id": "source-format",
+      "status": "PASS",
+      "exit_code": 0,
+      "log": "source-format.log"
+    },
+    {
+      "id": "godot-parse-normal",
+      "status": "PASS",
+      "log": "parse-normal.log",
+      "assertion_count": null,
+      "note": "Editor parse; no gameplay assertions."
+    },
+    {
+      "id": "exact-one-lf-and-one-manifest-entry",
+      "status": "PASS",
+      "log": "integrity.json"
+    },
+    {
+      "id": "historical-file-preservation",
+      "status": "PASS",
+      "files_checked": 2908,
+      "log": "integrity.json"
+    },
+    {
+      "id": "change-scope-and-empty-index",
+      "status": "PASS",
+      "log": "git-final.log"
+    }
+  ],
+  "prior_failed_attempts": [
+    {
+      "log": "before-format.log",
+      "reason": "Reproduced committed EOF blank line; EXIT=2"
+    },
+    {
+      "log": "parse.log",
+      "reason": "Sandbox AppData access errors and TIMEOUT; HARNESS=FAIL"
+    },
+    {
+      "log": "checks-driver-error.log",
+      "reason": "Evidence driver console GBK output error; individual raw logs retained"
+    }
+  ],
+  "runtime_tests": "NOT RUN",
+  "gui_acceptance": "NOT RUN"
+}

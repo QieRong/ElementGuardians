@@ -1,0 +1,3 @@
+COMMAND=['git', 'diff', 'HEAD^', '--check', '--', '.', ':(exclude)logs/**']
+
+EXIT=0

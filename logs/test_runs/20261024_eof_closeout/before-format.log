@@ -1,0 +1,4 @@
+COMMAND=git show --format= --check HEAD -- godot/tests/test_local_tower_ui.gd
+godot/tests/test_local_tower_ui.gd:289: new blank line at EOF.
+
+EXIT=2

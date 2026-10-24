@@ -1,0 +1,12 @@
+{
+  "exact_one_lf_removed": true,
+  "manifest_only_target_entry_changed": true,
+  "historical_files_checked": 2908,
+  "historical_drift": [],
+  "changed_since_previous_verification": [
+    "MANIFEST.sha256",
+    "godot/tests/test_local_tower_ui.gd"
+  ],
+  "target_sha256_before": "3bdc32147c0dd089ff34f5c703bc6e503e37f27254283d353db6dc2273a66645",
+  "target_sha256_after": "ac7d396c953b2c4c2bdb3f7bead84fd1a159ae1f9999395c218cacba57d6d68e"
+}

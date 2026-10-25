@@ -1,0 +1,82 @@
+{
+  "complete": true,
+  "full_run_counts": {
+    "PASS": 22,
+    "FAIL": 2,
+    "SKIP": 0
+  },
+  "full_run": "runtime/summary.json",
+  "targeted": [
+    {
+      "id": "final-motion",
+      "counts": {
+        "PASS": 21,
+        "FAIL": 0,
+        "SKIP": 0
+      },
+      "log": "final-motion.log"
+    },
+    {
+      "id": "grunt-regression",
+      "counts": {
+        "PASS": 29,
+        "FAIL": 0,
+        "SKIP": 0
+      },
+      "log": "grunt-regression.log"
+    },
+    {
+      "id": "render540-final",
+      "counts": {
+        "PASS": 372,
+        "FAIL": 0,
+        "SKIP": 0
+      },
+      "log": "render540-final.log"
+    },
+    {
+      "id": "render720-final",
+      "counts": {
+        "PASS": 372,
+        "FAIL": 0,
+        "SKIP": 0
+      },
+      "log": "render720-final.log"
+    },
+    {
+      "id": "ui720",
+      "counts": {
+        "PASS": 569,
+        "FAIL": 0,
+        "SKIP": 0
+      },
+      "log": "ui720.log"
+    },
+    {
+      "id": "ui540",
+      "counts": {
+        "PASS": 569,
+        "FAIL": 0,
+        "SKIP": 0
+      },
+      "log": "ui540.log"
+    },
+    {
+      "id": "settings-diagnostic",
+      "counts": {
+        "PASS": 26,
+        "FAIL": 0,
+        "SKIP": 0
+      },
+      "log": "settings-diagnostic.log"
+    }
+  ],
+  "preserved_failures": [
+    "runtime/player-settings.engine.log: rapid-input-bounded; isolated timed diagnostic passes but original cause unconfirmed",
+    "docs-final.log: historical project.godot/main.tscn manifest mismatches"
+  ],
+  "headless_render_skips": 6,
+  "committed": false,
+  "pushed": false,
+  "raw_logs": "local only"
+}

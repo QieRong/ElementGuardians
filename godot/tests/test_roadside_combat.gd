@@ -2,7 +2,7 @@
 extends SceneTree
 
 const Session = preload("res://scripts/player/player_session.gd")
-const ORDER := [1, 0, 3, 4, 6, 7, 8, 9, 2, 5]
+const ORDER := [1, 0, 3, 4, 6, 7, 8, 2, 5]
 var passed: int = 0
 var failed: int = 0
 var shots: Array[Dictionary] = []
@@ -71,7 +71,7 @@ func _simulate(seed_value: int, rear_first: bool) -> Dictionary:
 	return result
 
 func _spend(p: RefCounted, actions: Array[Dictionary], rear_first: bool) -> void:
-	var order: Array = [6, 8, 9, 4, 7, 5, 3, 1, 0, 2] if rear_first else ORDER
+	var order: Array = [6, 8, 4, 7, 5, 3, 1, 0, 2] if rear_first else ORDER
 	for slot in order:
 		if p.board.tower_at(slot).is_empty() and p.core.gold >= 20:
 			var response: Dictionary = p.try_summon(slot)

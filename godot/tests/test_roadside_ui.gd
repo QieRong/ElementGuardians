@@ -76,7 +76,7 @@ func _run() -> void:
 				clear = clear and not panel.intersects(session.core.map.slot_rect(other))
 			_check(language + "-slot%d-all-pads-accessible" % slot, clear)
 			_check(language + "-cancel-min-target", cancel.get_global_rect().size.x >= 48 and cancel.get_global_rect().size.y >= 48)
-			if language in ["zh-Hans", "ru"] and slot in [2, 5, 9]:
+			if language in ["zh-Hans", "ru"] and slot in [2, 5, 8]:
 				await _snapshot(language + "-edge%d" % slot)
 			_click(cancel.get_global_rect().get_center())
 			_check(language + "-slot%d-cancel" % slot, session.selected_slot == -1 and not local.visible and session.core.gold == 60)

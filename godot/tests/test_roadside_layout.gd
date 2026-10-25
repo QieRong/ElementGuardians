@@ -30,7 +30,8 @@ func _initialize() -> void:
 		front = front or center.distance_to(Vector2(280, 190)) < 225
 		if center.distance_to(Vector2(640, 950)) < 225:
 			rear += 1
-	_check("front-defense-and-independent-exit-support", front and rear >= 2)
+	# User explicitly removed the extra (455,970) pad; slot8 retains exit reach.
+	_check("front-defense-and-remaining-exit-reach", front and rear >= 1)
 	# An exit guard must damage an actual moving target, not just cover its circle.
 	var rear_slot: int = map.slots.size() - 1
 	_check("exit-pad-is-upstream-of-base", map.slot_center(rear_slot).y < map.base.y and map.slot_center(rear_slot).x < map.base.x)

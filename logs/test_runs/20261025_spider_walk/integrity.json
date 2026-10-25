@@ -1,0 +1,11 @@
+{
+  "tracked_protected_paths_unchanged": true,
+  "preexisting_untracked_present": {
+    "logs/test_runs/20261023_gold_upgrade/.gitignore": true,
+    "logs/test_runs/20261023_gold_upgrade/edit_config.mjs": true,
+    "logs/test_runs/20261023_gold_upgrade/xlsx-inspect.ndjson": true,
+    "logs/test_runs/20261024_roadside_footer/raw-log-audit.json": true,
+    "output/visuals/proposals/20261024-player-feedback": true
+  },
+  "staged_diff_empty": true
+}

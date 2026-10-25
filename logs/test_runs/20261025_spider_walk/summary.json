@@ -1,0 +1,304 @@
+{
+  "complete": true,
+  "counts": {
+    "PASS": 31,
+    "FAIL": 1,
+    "SKIP": 0
+  },
+  "checks": [
+    {
+      "id": "engine-version",
+      "status": "PASS",
+      "exit_code": 0,
+      "log": "runtime-final/engine-version.command.log"
+    },
+    {
+      "id": "sync",
+      "status": "PASS",
+      "exit_code": 0,
+      "log": "runtime-final/sync.command.log"
+    },
+    {
+      "id": "config",
+      "status": "PASS",
+      "exit_code": 0,
+      "log": "runtime-final/config.command.log"
+    },
+    {
+      "id": "docs",
+      "status": "FAIL",
+      "exit_code": 1,
+      "log": "docs-final-utf8.log",
+      "note": "Only historical project.godot and main.tscn hash mismatches remain. Original full-run docs log is retained."
+    },
+    {
+      "id": "map-geometry",
+      "status": "PASS",
+      "exit_code": 0,
+      "log": "runtime-final/map-geometry.command.log"
+    },
+    {
+      "id": "parse",
+      "status": "PASS",
+      "exit_code": 0,
+      "log": "runtime-final/parse.command.log"
+    },
+    {
+      "id": "roadside-layout",
+      "status": "PASS",
+      "exit_code": 0,
+      "log": "runtime-final/roadside-layout.command.log"
+    },
+    {
+      "id": "roadside-combat",
+      "status": "PASS",
+      "exit_code": 0,
+      "log": "runtime-final/roadside-combat.command.log"
+    },
+    {
+      "id": "roadside-ui",
+      "status": "PASS",
+      "exit_code": 0,
+      "log": "runtime-final/roadside-ui.command.log"
+    },
+    {
+      "id": "upgrade-flow",
+      "status": "PASS",
+      "exit_code": 0,
+      "log": "runtime-final/upgrade-flow.command.log"
+    },
+    {
+      "id": "upgrade-effects",
+      "status": "PASS",
+      "exit_code": 0,
+      "log": "runtime-final/upgrade-effects.command.log"
+    },
+    {
+      "id": "upgrade-ui",
+      "status": "PASS",
+      "exit_code": 0,
+      "log": "runtime-final/upgrade-ui.command.log"
+    },
+    {
+      "id": "core",
+      "status": "PASS",
+      "exit_code": 0,
+      "log": "runtime-final/core.command.log"
+    },
+    {
+      "id": "repairs",
+      "status": "PASS",
+      "exit_code": 0,
+      "log": "runtime-final/repairs.command.log"
+    },
+    {
+      "id": "map",
+      "status": "PASS",
+      "exit_code": 0,
+      "log": "runtime-final/map.command.log"
+    },
+    {
+      "id": "baseline",
+      "status": "PASS",
+      "exit_code": 0,
+      "log": "runtime-final/baseline.command.log"
+    },
+    {
+      "id": "replay",
+      "status": "PASS",
+      "exit_code": 0,
+      "log": "runtime-final/replay.command.log"
+    },
+    {
+      "id": "visual-headless",
+      "status": "PASS",
+      "exit_code": 0,
+      "log": "runtime-final/visual-headless.command.log"
+    },
+    {
+      "id": "player-menu",
+      "status": "PASS",
+      "exit_code": 0,
+      "log": "runtime-final/player-menu.command.log"
+    },
+    {
+      "id": "player-prep",
+      "status": "PASS",
+      "exit_code": 0,
+      "log": "runtime-final/player-prep.command.log"
+    },
+    {
+      "id": "player-view",
+      "status": "PASS",
+      "exit_code": 0,
+      "log": "runtime-final/player-view.command.log"
+    },
+    {
+      "id": "enemy-presentation",
+      "status": "PASS",
+      "exit_code": 0,
+      "log": "runtime-final/enemy-presentation.command.log"
+    },
+    {
+      "id": "player-settings",
+      "status": "PASS",
+      "exit_code": 0,
+      "log": "runtime-final/player-settings.command.log"
+    },
+    {
+      "id": "local-tower-ui",
+      "status": "PASS",
+      "exit_code": 0,
+      "log": "runtime-final/local-tower-ui.command.log"
+    },
+    {
+      "id": "spider-walk",
+      "status": "PASS",
+      "assertions": {
+        "PASS": 29,
+        "FAIL": 0,
+        "SKIP": 0
+      },
+      "log": "walk-green.log"
+    },
+    {
+      "id": "motion720",
+      "status": "PASS",
+      "assertions": {
+        "PASS": 372,
+        "FAIL": 0,
+        "SKIP": 0
+      },
+      "log": "render720-full.log"
+    },
+    {
+      "id": "motion540",
+      "status": "PASS",
+      "assertions": {
+        "PASS": 372,
+        "FAIL": 0,
+        "SKIP": 0
+      },
+      "log": "render540-full.log"
+    },
+    {
+      "id": "ui720",
+      "status": "PASS",
+      "assertions": {
+        "PASS": 617,
+        "FAIL": 0,
+        "SKIP": 0
+      },
+      "log": "final-ui720.log"
+    },
+    {
+      "id": "ui540",
+      "status": "PASS",
+      "assertions": {
+        "PASS": 617,
+        "FAIL": 0,
+        "SKIP": 0
+      },
+      "log": "final-ui540.log"
+    },
+    {
+      "id": "pixel-audit",
+      "status": "PASS",
+      "log": "render-pixel-audit.json"
+    },
+    {
+      "id": "source-format",
+      "status": "PASS",
+      "log": "source-format-final.log"
+    },
+    {
+      "id": "integrity",
+      "status": "PASS",
+      "log": "integrity.json"
+    }
+  ],
+  "original_full_suite_counts": {
+    "PASS": 23,
+    "FAIL": 1,
+    "SKIP": 0
+  },
+  "headless_assertion_summaries": [
+    {
+      "log": "runtime-final\\baseline.engine.log",
+      "summary": "BASELINE SUMMARY: PASS=1 FAIL=0 SKIP=0"
+    },
+    {
+      "log": "runtime-final\\core.engine.log",
+      "summary": "TEST SUMMARY: PASS=21 FAIL=0"
+    },
+    {
+      "log": "runtime-final\\enemy-presentation.engine.log",
+      "summary": "ENEMYART SUMMARY: PASS=13 FAIL=0 SKIP=0 COMPLETE"
+    },
+    {
+      "log": "runtime-final\\local-tower-ui.engine.log",
+      "summary": "LOCALUI SUMMARY: PASS=738 FAIL=0 SKIP=1 COMPLETE"
+    },
+    {
+      "log": "runtime-final\\map.engine.log",
+      "summary": "MAP SUMMARY: PASS=6 FAIL=0 SKIP=0"
+    },
+    {
+      "log": "runtime-final\\player-menu.engine.log",
+      "summary": "MENU SUMMARY: PASS=70 FAIL=0 SKIP=1 COMPLETE"
+    },
+    {
+      "log": "runtime-final\\player-prep.engine.log",
+      "summary": "PREP SUMMARY: PASS=388 FAIL=0 SKIP=0 COMPLETE"
+    },
+    {
+      "log": "runtime-final\\player-settings.engine.log",
+      "summary": "SETTINGS SUMMARY: PASS=26 FAIL=0 SKIP=0 COMPLETE"
+    },
+    {
+      "log": "runtime-final\\player-view.engine.log",
+      "summary": "PLAYERVIEW SUMMARY: PASS=38 FAIL=0 SKIP=1 COMPLETE"
+    },
+    {
+      "log": "runtime-final\\repairs.engine.log",
+      "summary": "REPAIR SUMMARY: PASS=17 FAIL=0 SKIP=0"
+    },
+    {
+      "log": "runtime-final\\replay.engine.log",
+      "summary": "REPLAY SUMMARY: PASS=31 FAIL=0 SKIP=0 COMPLETE"
+    },
+    {
+      "log": "runtime-final\\roadside-combat.engine.log",
+      "summary": "ROADSIDE COMBAT SUMMARY: PASS=25 FAIL=0 SKIP=0 COMPLETE"
+    },
+    {
+      "log": "runtime-final\\roadside-layout.engine.log",
+      "summary": "ROADSIDE SUMMARY: PASS=26 FAIL=0 SKIP=0 COMPLETE"
+    },
+    {
+      "log": "runtime-final\\roadside-ui.engine.log",
+      "summary": "ROADSIDEUI SUMMARY: PASS=562 FAIL=0 SKIP=1 COMPLETE"
+    },
+    {
+      "log": "runtime-final\\upgrade-effects.engine.log",
+      "summary": "UPGRADE EFFECT SUMMARY: PASS=126 FAIL=0 SKIP=0 COMPLETE"
+    },
+    {
+      "log": "runtime-final\\upgrade-flow.engine.log",
+      "summary": "UPGRADE SUMMARY: PASS=151 FAIL=0 SKIP=0 COMPLETE"
+    },
+    {
+      "log": "runtime-final\\upgrade-ui.engine.log",
+      "summary": "UPGRADEUI SUMMARY: PASS=390 FAIL=0 SKIP=1 COMPLETE"
+    },
+    {
+      "log": "runtime-final\\visual-headless.engine.log",
+      "summary": "VISUAL SUMMARY: PASS=15 FAIL=0 SKIP=1 COMPLETE"
+    }
+  ],
+  "scope": "Grouped final selection; full headless suite followed by targeted checks and docs hash maintenance. Original red logs retained. Headless rendering SKIP is not a PASS. No human, physical-mouse, audio, localization-native, balance, low-end performance or EXE acceptance.",
+  "head": "53898c53faf8a9286216638b6a1e29b16ac5071c",
+  "committed": false,
+  "pushed": false,
+  "raw_logs": "local only"
+}

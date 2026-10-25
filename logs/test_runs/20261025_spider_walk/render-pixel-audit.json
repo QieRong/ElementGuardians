@@ -1,0 +1,37 @@
+{
+  "counts": {
+    "PASS": 7,
+    "FAIL": 0
+  },
+  "checks": [
+    {
+      "id": "120-continuous-render-frames",
+      "status": "PASS"
+    },
+    {
+      "id": "full-review-canvas",
+      "status": "PASS"
+    },
+    {
+      "id": "normal-rendered-pose-changes",
+      "status": "PASS"
+    },
+    {
+      "id": "slow-rendered-pose-changes",
+      "status": "PASS"
+    },
+    {
+      "id": "stopped-rendered-pose-unchanged",
+      "status": "PASS"
+    },
+    {
+      "id": "540-field-resolution",
+      "status": "PASS"
+    },
+    {
+      "id": "720-field-resolution",
+      "status": "PASS"
+    }
+  ],
+  "source": "Actual Godot PNG frames; WebP is a lossy viewing copy, not assertion input."
+}

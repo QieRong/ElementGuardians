@@ -2,6 +2,7 @@
 extends Node2D
 
 const Spider = preload("res://scripts/ui/paper_spider.gd")
+const Wisp = preload("res://scripts/ui/paper_wisp.gd")
 const TEXTURES := {
 	"grunt": preload("res://assets/enemies/grunt_005.png"),
 	"swift": preload("res://assets/enemies/swift_006.png"),
@@ -13,6 +14,7 @@ var hp_ratio: float = 1.0
 var bar_y: float = -46.0
 var _art: Node2D
 var _spider: Node2D
+var _locomotion: Node2D
 
 func configure(kind: String) -> void:
 	type_id = kind
@@ -27,6 +29,11 @@ func configure(kind: String) -> void:
 		_spider.name = "Spider"
 		_art.add_child(_spider)
 		_spider.build(texture)
+	elif kind in ["swift", "armor"]:
+		_locomotion = Wisp.new() if kind == "swift" else Spider.new()
+		_locomotion.name = "Wisp" if kind == "swift" else "Armor"
+		_art.add_child(_locomotion)
+		_locomotion.build(texture, kind)
 	else:
 		var image := Sprite2D.new()
 		image.texture = texture
@@ -41,12 +48,17 @@ func apply_enemy(data: Dictionary, map: BattleMap, reduced: bool) -> void:
 	bar_y = 42.0 if position.y < 220.0 else -46.0
 	var direction := map.position_at(minf(progress + 1.0, map.path_length)) - map.position_at(maxf(progress - 1.0, 0.0))
 	if _spider != null:
+		# Ease only the artwork heading across a 36px corner neighborhood.
+		# The actual anchor still uses the exact unsmoothed route position.
+		direction = map.position_at(minf(progress + 18.0, map.path_length)) - map.position_at(maxf(progress - 18.0, 0.0))
 		# The cutout's feet point down in its reference pose. Only the artwork
 		# rotates around the route anchor, never the HP bar or collision state.
 		_art.rotation = direction.angle() - PI / 2.0
 		_spider.travel(progress, reduced)
 	else:
 		_art.scale.x = -1.0 if direction.x > 0.0 and type_id == "armor" else 1.0
+		if _locomotion != null:
+			_locomotion.travel(progress, reduced)
 	queue_redraw()
 
 func _draw() -> void:

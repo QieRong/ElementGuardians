@@ -1,0 +1,13 @@
+{
+  "player_capture": {
+    "PASS": 71,
+    "FAIL": 0,
+    "SKIP": 0
+  },
+  "config_sync": "PASS",
+  "config_validate": "PASS",
+  "readme_links": "PASS",
+  "whitespace": "PASS",
+  "docs": "FAIL: two historical MANIFEST hashes",
+  "raw_logs": "local only"
+}

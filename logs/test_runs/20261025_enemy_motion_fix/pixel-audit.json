@@ -1,0 +1,13 @@
+{
+  "checks": {
+    "120-frames": true,
+    "fixed-canvas": true,
+    "swift": true,
+    "armor": true,
+    "stopped-grunt": true,
+    "540-field": true,
+    "720-field": true
+  },
+  "PASS": 7,
+  "FAIL": 0
+}

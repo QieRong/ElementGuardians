@@ -1,0 +1,4 @@
+# Local runtime profile and continuous raw render frames are not publish assets.
+local-user/
+motion*/
+spider-walk.gif

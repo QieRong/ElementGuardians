@@ -114,7 +114,7 @@ func _build_fixed_towers(chosen: Array) -> void:
 		})
 		refresh_tower_stats(towers.back())
 	stats["tower_count"] = towers.size()
-	stats["board_occupancy_pct"] = round(100.0 * float(towers.size()) / 9.0 * 10.0) / 10.0
+	stats["board_occupancy_pct"] = round(1000.0 * float(towers.size()) / max(1, map.slots.size())) / 10.0
 
 func apply_upgrade_stacks(stacks: Dictionary) -> void:
 	upgrade_stacks = stacks.duplicate(true)

@@ -16,6 +16,9 @@ import sys
 ROOT = Path(__file__).resolve().parents[1]
 ENGINE_VERSION = "4.4.1.stable.official.49a5bc7b6"
 SCRIPTS = [
+    ("roadside-layout", "test_roadside_layout.gd", r"ROADSIDE SUMMARY: PASS=\d+ FAIL=0 SKIP=0 COMPLETE"),
+    ("roadside-combat", "test_roadside_combat.gd", r"ROADSIDE COMBAT SUMMARY: PASS=\d+ FAIL=0 SKIP=0 COMPLETE"),
+    ("roadside-ui", "test_roadside_ui.gd", r"ROADSIDEUI SUMMARY: PASS=\d+ FAIL=0 SKIP=1 COMPLETE"),
     ("upgrade-flow", "test_upgrade_flow.gd", r"UPGRADE SUMMARY: PASS=\d+ FAIL=0 SKIP=0 COMPLETE"),
     ("upgrade-effects", "test_upgrade_effects.gd", r"UPGRADE EFFECT SUMMARY: PASS=\d+ FAIL=0 SKIP=0 COMPLETE"),
     ("upgrade-ui", "test_upgrade_view.gd", r"UPGRADEUI SUMMARY: PASS=\d+ FAIL=0 SKIP=1 COMPLETE"),

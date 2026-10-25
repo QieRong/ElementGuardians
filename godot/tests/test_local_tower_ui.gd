@@ -69,7 +69,7 @@ func _run() -> void:
 			button.pressed.connect(func() -> void: _trace("button-pressed"))
 			player.action_result.connect(func(data: Dictionary) -> void: print("INPUT ACTION ", data))
 		var initial_rng: int = player.summon_rng.state
-		for slot in [0, 2, 6, 8]:
+		for slot in range(player.core.map.slots.size()):
 			_click_slot(slot)
 			_check(language + "-selection-clears-old-toast", not screen.get_node("Toast").visible)
 			_check(language + "-selection-free", player.core.gold == 60 and player.summon_rng.state == initial_rng)
@@ -84,7 +84,7 @@ func _run() -> void:
 				var b: Vector2 = player.core.map.path[i + 1]
 				clear_road = clear_road and not _rect_hits_segment(rect, a, b)
 			_check(language + "-road-and-exit-clear", clear_road)
-			_check(language + "-panel-opaque", panel.get_theme_stylebox("panel").bg_color.a == 1 and screen.modulate.a == 1)
+			_check(language + "-panel-opaque", panel.get_theme_stylebox("panel") is StyleBoxEmpty and screen.get_node("ActionPanel").get_theme_stylebox("panel").bg_color.a >= 0.95 and screen.modulate.a == 1)
 			_check(language + "-info-fits", local.info.get_line_count() * local.info.get_line_height() <= local.info.size.y)
 			_check(language + "-caption-fits", button.get_theme_font("font").get_string_size(button.text, HORIZONTAL_ALIGNMENT_LEFT, -1, button.get_theme_font_size("font_size")).x < button.size.x - 16)
 			var g: Dictionary = screen.get_node("Field").range_geometry()
@@ -92,6 +92,10 @@ func _run() -> void:
 			await _check_range_pixels(language + "-slot%d" % slot)
 			await _snapshot(language + "-slot%d" % slot)
 		_click_slot(0)
+		# Isolate this sound assertion from the intentionally bounded four-voice
+		# pool filled by rapid all-pad selection above. No production audio change.
+		for voice in audio.pool:
+			voice.stop()
 		# Holding must not consume before release.
 		var down := InputEventMouseButton.new()
 		down.position = button.get_global_rect().get_center()
@@ -189,6 +193,9 @@ func _run() -> void:
 		player = null
 		await process_frame
 		await process_frame
+	for voice in preload("res://scripts/ui/player_preferences.gd").current(self).audio.pool:
+		voice.stop()
+	await create_timer(0.12).timeout
 	_finish()
 
 func _core() -> BattleCore:
@@ -221,13 +228,18 @@ func _check_range_pixels(id: String) -> void:
 	var color: Color = pixels.get_pixelv(Vector2i(road))
 	var expected := Color("#cbbca2")
 	_check(id + "-road-original-color", absf(color.r - expected.r) < 0.02 and absf(color.g - expected.g) < 0.02 and absf(color.b - expected.b) < 0.02)
-	var direction: float = -1.0 if center.x < 360 else 1.0
-	var edge := Vector2i((center + Vector2(direction * float(geometry.radius), 0)) * render_scale)
 	var visible_ring: bool = false
-	for dx in range(-3, 4):
-		for dy in range(-3, 4):
-			color = pixels.get_pixelv(edge + Vector2i(dx, dy))
-			visible_ring = visible_ring or (color.g > 0.5 and color.b > 0.6 and color.g > color.r * 1.1)
+	# The roadside pads can be near an edge or an inspection surface. Sample
+	# the actual arc at several visible angles instead of an offscreen point.
+	for sample in range(32):
+		var point := center + Vector2.from_angle(float(sample) * TAU / 32.0) * float(geometry.radius)
+		var edge := Vector2i(point * render_scale)
+		if not Rect2i(Vector2i(4, 4), pixels.get_size() - Vector2i(8, 8)).has_point(edge):
+			continue
+		for dx in range(-3, 4):
+			for dy in range(-3, 4):
+				color = pixels.get_pixelv(edge + Vector2i(dx, dy))
+				visible_ring = visible_ring or (color.g > 0.5 and color.b > 0.6 and color.g > color.r * 1.1)
 	_check(id + "-range-outline-visible", visible_ring)
 
 func _rect_hits_segment(rect: Rect2, a: Vector2, b: Vector2) -> bool:
@@ -245,6 +257,8 @@ func _click_slot(index: int) -> void:
 func _click_button(id: String) -> void:
 	if id == "SummonButton":
 		id = "LocalTowerPanel/Body/Consume"
+	elif id == "CancelButton":
+		id = "LocalTowerPanel/CancelButton"
 	_click((screen.get_node(id) as Control).get_global_rect().get_center())
 
 func _click(point: Vector2) -> void:

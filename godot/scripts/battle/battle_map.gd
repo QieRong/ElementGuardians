@@ -1,8 +1,9 @@
-## D006-A 地图几何：路径、入口、基地与 3x3 部署格。数据真值在 godot/data/map_default.json。
+## Player roadside deployment and preserved D006/D008 diagnostic geometry.
 class_name BattleMap
 extends RefCounted
 
 const DEFAULT_PATH := "res://data/map_default.json"
+const PLAYER_PATH := "res://data/map_player_roadside.json"
 
 var map_id := ""
 var path: Array[Vector2] = []
@@ -13,9 +14,13 @@ var slots: Array[Dictionary] = []
 var path_length := 0.0
 var fixed_towers: Array[Dictionary] = []
 var errors: Array[String] = []
+var deployment: String = "diagnostic"
 
 static func load_default() -> BattleMap:
 	return load_from_file(DEFAULT_PATH)
+
+static func load_player() -> BattleMap:
+	return load_from_file(PLAYER_PATH)
 
 static func load_from_file(res_path: String) -> BattleMap:
 	var map := BattleMap.new()
@@ -39,6 +44,7 @@ func _load(res_path: String) -> void:
 		return
 	var data: Dictionary = parsed
 	map_id = String(data.get("map_id", ""))
+	deployment = String(data.get("deployment", "diagnostic"))
 	slot_size = float(data.get("slot_size", 84))
 	var raw_path: Array = data.get("path", [])
 	for point in raw_path:
@@ -75,6 +81,7 @@ func _slots(data: Dictionary) -> void:
 			"row": int(item.get("row", 0)),
 			"center": Vector2(float(center[0]), float(center[1])),
 			"size": float(item.get("size", slot_size)),
+			"role": String(item.get("role", "")),
 		})
 	slots.sort_custom(func(a, b): return int(a["index"]) < int(b["index"]))
 
@@ -84,8 +91,15 @@ func _compute_length() -> void:
 		path_length += path[i].distance_to(path[i + 1])
 
 func _validate() -> void:
-	if slots.size() != 9:
-		errors.append("部署格应为 9 个，实际 %d" % slots.size())
+	if deployment == "diagnostic":
+		if slots.size() != 9:
+			errors.append("部署格应为 9 个，实际 %d" % slots.size())
+		if fixed_towers.size() != 3:
+			errors.append("诊断固定塔应为 3 座，实际 %d" % fixed_towers.size())
+	elif deployment == "roadside":
+		_validate_roadside()
+	else:
+		errors.append("未知部署合同: " + deployment)
 	if path_length <= 0.0:
 		errors.append("路径长度必须为正")
 	for item in fixed_towers:
@@ -93,8 +107,39 @@ func _validate() -> void:
 			errors.append("固定塔格索引越界: %d" % int(item["slot"]))
 		if not ["fire", "ice", "lightning"].has(String(item["type_id"])):
 			errors.append("固定塔类型非法: " + String(item["type_id"]))
-	if fixed_towers.size() != 3:
-		errors.append("诊断固定塔应为 3 座，实际 %d" % fixed_towers.size())
+
+func _validate_roadside() -> void:
+	if slots.is_empty() or not fixed_towers.is_empty():
+		errors.append("玩家地图需要非空塔位且不得带诊断塔")
+	if path.is_empty() or entry != path[0] or base != path.back():
+		errors.append("入口/出口必须匹配路径端点")
+	for i in range(slots.size()):
+		var rect := slot_rect(i)
+		if int(slots[i]["index"]) != i or not rect.position.is_finite() or not rect.size.is_finite() or rect.size.x <= 0:
+			errors.append("塔位索引/尺寸/坐标非法: %d" % i)
+	# Reject invalid dimensions before calling any Rect2 geometry API.
+	if not errors.is_empty():
+		return
+	for i in range(slots.size()):
+		var rect := slot_rect(i)
+		if not Rect2(0, 120, 720, 960).encloses(rect) or intersects_path(rect, 32):
+			errors.append("塔位越界或距道路不足12px: %d" % i)
+		for j in range(i):
+			if rect.grow(6).intersects(slot_rect(j).grow(6)):
+				errors.append("塔位点击区间距不足12px: %d/%d" % [i, j])
+
+func intersects_path(rect: Rect2, margin: float = 20.0) -> bool:
+	var area := rect.grow(margin)
+	var corners := [area.position, Vector2(area.end.x, area.position.y), area.end, Vector2(area.position.x, area.end.y)]
+	for i in range(path.size() - 1):
+		var a: Vector2 = path[i]
+		var b: Vector2 = path[i + 1]
+		if area.has_point(a) or area.has_point(b):
+			return true
+		for edge in range(4):
+			if Geometry2D.segment_intersects_segment(a, b, corners[edge], corners[(edge + 1) % 4]) != null:
+				return true
+	return false
 
 func position_at(progress: float) -> Vector2:
 	if path.is_empty():

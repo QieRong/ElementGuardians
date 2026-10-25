@@ -51,8 +51,8 @@ func _run() -> void:
 	screen.size = Vector2(720, 1280)
 	screen.scale = Vector2.ONE * render_scale
 	await process_frame
-	_check("controls-built", screen.has_node("Field/Slot0") and screen.has_node("SummonButton"))
-	if not screen.has_node("Field/Slot0") or not screen.has_node("SummonButton"):
+	_check("controls-built", screen.has_node("Field/Slot0") and screen.has_node("LocalTowerPanel/Body/Consume"))
+	if not screen.has_node("Field/Slot0") or not screen.has_node("LocalTowerPanel/Body/Consume"):
 		_finish()
 		return
 	player = screen.get("session")
@@ -200,6 +200,8 @@ func _click_slot(index: int) -> void:
 func _click_button(id: String) -> void:
 	if id == "SummonButton":
 		id = "LocalTowerPanel/Body/Consume"
+	elif id == "CancelButton":
+		id = "LocalTowerPanel/CancelButton"
 	_click((screen.get_node(id) as Control).get_global_rect().get_center())
 
 func _click(point: Vector2) -> void:

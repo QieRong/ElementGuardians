@@ -1,0 +1,209 @@
+{
+  "complete": true,
+  "counts": {
+    "PASS": 29,
+    "FAIL": 4,
+    "SKIP": 0
+  },
+  "checks": [
+    {
+      "id": "engine-version",
+      "status": "PASS",
+      "exit_code": 0,
+      "log": "runtime-final/engine-version.command.log"
+    },
+    {
+      "id": "sync",
+      "status": "PASS",
+      "exit_code": 0,
+      "log": "runtime-final/sync.command.log"
+    },
+    {
+      "id": "config",
+      "status": "PASS",
+      "exit_code": 0,
+      "log": "runtime-final/config.command.log"
+    },
+    {
+      "id": "docs",
+      "status": "FAIL",
+      "exit_code": 1,
+      "log": "runtime-final/docs.command.log"
+    },
+    {
+      "id": "map-geometry",
+      "status": "PASS",
+      "exit_code": 0,
+      "log": "runtime-final/map-geometry.command.log"
+    },
+    {
+      "id": "parse",
+      "status": "PASS",
+      "exit_code": 0,
+      "log": "runtime-final/parse.command.log"
+    },
+    {
+      "id": "roadside-layout",
+      "status": "PASS",
+      "exit_code": 0,
+      "log": "runtime-final/roadside-layout.command.log"
+    },
+    {
+      "id": "roadside-combat",
+      "status": "PASS",
+      "exit_code": 0,
+      "log": "runtime-final/roadside-combat.command.log"
+    },
+    {
+      "id": "roadside-ui",
+      "status": "FAIL",
+      "exit_code": 1,
+      "log": "runtime-final/roadside-ui.command.log"
+    },
+    {
+      "id": "upgrade-flow",
+      "status": "PASS",
+      "exit_code": 0,
+      "log": "runtime-final/upgrade-flow.command.log"
+    },
+    {
+      "id": "upgrade-effects",
+      "status": "PASS",
+      "exit_code": 0,
+      "log": "runtime-final/upgrade-effects.command.log"
+    },
+    {
+      "id": "upgrade-ui",
+      "status": "PASS",
+      "exit_code": 0,
+      "log": "runtime-final/upgrade-ui.command.log"
+    },
+    {
+      "id": "core",
+      "status": "PASS",
+      "exit_code": 0,
+      "log": "runtime-final/core.command.log"
+    },
+    {
+      "id": "repairs",
+      "status": "PASS",
+      "exit_code": 0,
+      "log": "runtime-final/repairs.command.log"
+    },
+    {
+      "id": "map",
+      "status": "PASS",
+      "exit_code": 0,
+      "log": "runtime-final/map.command.log"
+    },
+    {
+      "id": "baseline",
+      "status": "PASS",
+      "exit_code": 0,
+      "log": "runtime-final/baseline.command.log"
+    },
+    {
+      "id": "replay",
+      "status": "PASS",
+      "exit_code": 0,
+      "log": "runtime-final/replay.command.log"
+    },
+    {
+      "id": "visual-headless",
+      "status": "PASS",
+      "exit_code": 0,
+      "log": "runtime-final/visual-headless.command.log"
+    },
+    {
+      "id": "player-menu",
+      "status": "FAIL",
+      "exit_code": 1,
+      "log": "runtime-final/player-menu.command.log"
+    },
+    {
+      "id": "player-prep",
+      "status": "PASS",
+      "exit_code": 0,
+      "log": "runtime-final/player-prep.command.log"
+    },
+    {
+      "id": "player-view",
+      "status": "PASS",
+      "exit_code": 0,
+      "log": "runtime-final/player-view.command.log"
+    },
+    {
+      "id": "enemy-presentation",
+      "status": "PASS",
+      "exit_code": 0,
+      "log": "runtime-final/enemy-presentation.command.log"
+    },
+    {
+      "id": "player-settings",
+      "status": "PASS",
+      "exit_code": 0,
+      "log": "runtime-final/player-settings.command.log"
+    },
+    {
+      "id": "local-tower-ui",
+      "status": "FAIL",
+      "exit_code": 1,
+      "log": "runtime-final/local-tower-ui.command.log"
+    },
+    {
+      "id": "final-contextual720",
+      "status": "PASS",
+      "exit_code": 0,
+      "log": "final-contextual720.command.log"
+    },
+    {
+      "id": "final-local720",
+      "status": "PASS",
+      "exit_code": 0,
+      "log": "final-local720.command.log"
+    },
+    {
+      "id": "final-player720",
+      "status": "PASS",
+      "exit_code": 0,
+      "log": "final-player720.command.log"
+    },
+    {
+      "id": "final-upgrade720",
+      "status": "PASS",
+      "exit_code": 0,
+      "log": "final-upgrade720.command.log"
+    },
+    {
+      "id": "final-contextual540",
+      "status": "PASS",
+      "exit_code": 0,
+      "log": "final-contextual540.command.log"
+    },
+    {
+      "id": "final-local540",
+      "status": "PASS",
+      "exit_code": 0,
+      "log": "final-local540.command.log"
+    },
+    {
+      "id": "final-player540",
+      "status": "PASS",
+      "exit_code": 0,
+      "log": "final-player540.command.log"
+    },
+    {
+      "id": "final-upgrade540",
+      "status": "PASS",
+      "exit_code": 0,
+      "log": "final-upgrade540.command.log"
+    },
+    {
+      "id": "final-format",
+      "status": "PASS",
+      "exit_code": 0,
+      "log": "final-format.command.log"
+    }
+  ],
+  "scope": "Final full headless gates plus targeted graphics at both resolutions. Individual headless rendering skips remain in raw logs. No human, performance or balance acceptance."
+}

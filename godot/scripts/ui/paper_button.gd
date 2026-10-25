@@ -4,6 +4,9 @@ extends Button
 const PAPER := Color("#e8d9bc")
 const ICE := Color("#8bcad1")
 const SourcedMotion = preload("res://scripts/ui/sourced_menu_motion.gd")
+var contextual: bool = false
+var cost_caption: String = ""
+var rotate_glyph_up: bool = false
 var primary: bool = false
 var compact: bool = false
 var reduce_motion: bool = false
@@ -57,6 +60,9 @@ func _exit_tree() -> void:
 
 func _draw() -> void:
 	draw_set_transform(size * (1.0 - visual_scale) / 2.0, 0.0, Vector2.ONE * visual_scale)
+	if contextual:
+		_draw_contextual()
+		return
 	var bounds := Rect2(Vector2(3, 2), size - Vector2(6, 8))
 	var base := Color("#a34431") if primary else Color("#1c2b38")
 	if disabled:
@@ -95,3 +101,31 @@ func _corners(rect: Rect2, closed: bool = false) -> PackedVector2Array:
 	if closed:
 		points.append(points[0])
 	return points
+
+# A single compact action over the selected tower. No enclosing property card.
+func _draw_contextual() -> void:
+	var center := Vector2(32, 30)
+	var color := Color("#a34431") if primary else Color("#1c2b38")
+	if disabled:
+		color = Color("#27333d")
+	elif _held:
+		color = color.darkened(0.15)
+	color = color.lightened(emphasis * 0.09)
+	draw_circle(center + Vector2(0, 3), 29, Color("#07101b"))
+	draw_circle(center, 29, PAPER if primary else Color("#a79a83"))
+	draw_circle(center, 27, color)
+	if has_focus() and not disabled:
+		draw_arc(center, 23, 0, TAU, 32, ICE, 1.5, true)
+	var tint := Color("#a9afb1") if disabled else PAPER
+	if glyph != null:
+		var shift := size * (1.0 - visual_scale) / 2.0
+		draw_set_transform(shift + center * visual_scale, -PI / 2 if rotate_glyph_up else 0, Vector2.ONE * visual_scale)
+		draw_texture_rect(glyph, Rect2(-13, -13, 26, 26), false, tint)
+		draw_set_transform(shift, 0, Vector2.ONE * visual_scale)
+	_polygon(Rect2(1, 65, 62, 29), Color("#a79a83"))
+	_polygon(Rect2(2, 66, 60, 27), Color("#101c29"))
+	var font := get_theme_font("font")
+	var font_size := 22
+	var width := font.get_string_size(cost_caption, HORIZONTAL_ALIGNMENT_LEFT, -1, font_size).x
+	var baseline := 66 + (27 - font.get_height(font_size)) / 2.0 + font.get_ascent(font_size)
+	draw_string(font, Vector2((64 - width) / 2, baseline), cost_caption, HORIZONTAL_ALIGNMENT_LEFT, -1, font_size, tint)

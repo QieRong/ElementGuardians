@@ -14,8 +14,6 @@ var _gold: Label
 var _hp: Label
 var _wave: Label
 var _phase: Label
-var _summon: Button
-var _cancel: Button
 var _start: Button
 var _toast: PanelContainer
 var _toast_timer: Timer
@@ -31,7 +29,7 @@ func _ready() -> void:
 	Paper.apply_theme(self)
 	Paper.background(self, "res://assets/backgrounds/battle_056.png", true)
 	var cfg := BattleConfig.load_default()
-	var map := BattleMap.load_default()
+	var map := BattleMap.load_player()
 	if seed_value < 0:
 		seed_value = int(cfg.global_params.get("gameplay_seed_default", 20261018))
 	for arg in OS.get_cmdline_user_args():
@@ -66,16 +64,24 @@ func _build() -> void:
 	_gold = Paper.label(self, "Gold", "", Rect2(480, 48, 240, 52), 32)
 	_phase = Paper.label(self, "Phase", "准备中", Rect2(214, 120, 292, 34), 26)
 	Paper.label(self, "EntryLabel", "敌人入口", Rect2(32, 122, 160, 32), 24)
-	Paper.label(self, "BaseLabel", "守卫基地", Rect2(470, 1034, 210, 40), 24)
-	Paper.panel(self, "ActionPanel", Rect2(0, 1080, 720, 200))
-	_summon = Paper.button(self, "SummonButton", "召唤 20", Rect2(24, 1100, 216, 80), _summon_pressed, true, 26, "plus")
-	_cancel = Paper.button(self, "CancelButton", "取消选择", Rect2(256, 1100, 184, 80), _cancel_pressed, false, 26)
-	_start = Paper.button(self, "StartButton", "开始第1波", Rect2(456, 1100, 240, 80), _start_pressed, true, 26, "play")
+	Paper.label(self, "BaseLabel", "基地", Rect2(594, 1034, 120, 40), 24)
+	var footer := Paper.panel(self, "ActionPanel", Rect2(0, 1080, 720, 200))
+	var footer_style: StyleBoxFlat = footer.get_theme_stylebox("panel").duplicate()
+	footer_style.border_width_left = 0
+	footer_style.border_width_right = 0
+	footer_style.border_width_bottom = 0
+	footer_style.border_color = Color("#a79a8340")
+	footer.add_theme_stylebox_override("panel", footer_style)
+	_start = Paper.button(self, "StartButton", "开始第1波", Rect2(144, 1100, 432, 88), _start_pressed, true, 26, "play")
 	Paper.label(self, "StageNotice", "波间三选一强化 · 选择后继续布阵", Rect2(24, 1216, 672, 44), 22)
-	# Use the gap between the two route bands; feedback must not cover the board.
-	_toast = Paper.panel(self, "Toast", Rect2(120, 276, 480, 116))
+	# Short notices share the footer status row, leaving all deployment pads clear.
+	_toast = Paper.panel(self, "Toast", Rect2(24, 1200, 672, 68))
+	var notice_style: StyleBoxFlat = _toast.get_theme_stylebox("panel").duplicate()
+	notice_style.set_content_margin_all(8)
+	_toast.add_theme_stylebox_override("panel", notice_style)
 	var message := Label.new()
 	message.name = "Message"
+	message.add_theme_font_size_override("font_size", 22)
 	message.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 	message.vertical_alignment = VERTICAL_ALIGNMENT_CENTER
 	message.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
@@ -125,11 +131,8 @@ func refresh() -> void:
 		Fx.flash(_hp, Color("#e58a4d"), _reduced())
 	_previous_gold = core.gold
 	_previous_hp = core.base_hp
-	var valid: Dictionary = session.board.validate_place(session.selected_slot)
-	_summon.hide() # Consumption is exclusively on the local panel.
 	_local.refresh()
-	_summon.tooltip_text = _t("金币不足" if core.gold < 20 else ("先选择空格" if session.selected_slot < 0 else "在所选空格召唤"))
-	_cancel.disabled = session.selected_slot < 0
+	get_node("StageNotice").visible = not _local.visible and (not _toast.visible or _toast.modulate.a <= 0.01)
 	_start.disabled = core.state != "PREP"
 	_start.text = _t("开始第%d波") % core.wave_index
 	Paper.fit_caption(_start)
@@ -187,8 +190,13 @@ func show_notice(message: String) -> void:
 	if old != null and old.is_valid():
 		old.kill()
 	_toast.get_node("Message").text = message
+	if _local != null and _local.visible:
+		_toast.hide()
+		Fx.flash(_local.info, Color("#8bcad1"), _reduced())
+		return
 	_toast.modulate.a = 1.0
 	_toast.show()
+	get_node("StageNotice").hide()
 	_toast_timer.start()
 
 func _hide_toast() -> void:
@@ -199,15 +207,6 @@ func _hide_toast() -> void:
 
 func _reduced() -> bool:
 	return bool(get_tree().get_meta("eg_reduce_motion", false))
-
-func _summon_pressed() -> void:
-	session.try_summon()
-
-func _cancel_pressed() -> void:
-	var previous: int = session.selected_slot
-	session.cancel_selection()
-	if previous >= 0:
-		_field.get_node("Slot%d" % previous).grab_focus()
 
 func _start_pressed() -> void:
 	session.start_wave()

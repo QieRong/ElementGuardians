@@ -1,0 +1,177 @@
+{
+  "complete": true,
+  "counts": {
+    "PASS": 27,
+    "FAIL": 1,
+    "SKIP": 0
+  },
+  "checks": [
+    {
+      "id": "engine-version",
+      "status": "PASS",
+      "exit_code": 0,
+      "log": "runtime-final/engine-version.command.log"
+    },
+    {
+      "id": "sync",
+      "status": "PASS",
+      "exit_code": 0,
+      "log": "runtime-final/sync.command.log"
+    },
+    {
+      "id": "config",
+      "status": "PASS",
+      "exit_code": 0,
+      "log": "runtime-final/config.command.log"
+    },
+    {
+      "id": "map-geometry",
+      "status": "PASS",
+      "exit_code": 0,
+      "log": "runtime-final/map-geometry.command.log"
+    },
+    {
+      "id": "parse",
+      "status": "PASS",
+      "exit_code": 0,
+      "log": "runtime-final/parse.command.log"
+    },
+    {
+      "id": "roadside-layout",
+      "status": "PASS",
+      "exit_code": 0,
+      "log": "close-roadside-layout.log"
+    },
+    {
+      "id": "roadside-combat",
+      "status": "PASS",
+      "exit_code": 0,
+      "log": "close-roadside-combat.log"
+    },
+    {
+      "id": "roadside-ui",
+      "status": "PASS",
+      "exit_code": 1,
+      "log": "publish-headless-ui.log"
+    },
+    {
+      "id": "upgrade-flow",
+      "status": "PASS",
+      "exit_code": 0,
+      "log": "runtime-final/upgrade-flow.command.log"
+    },
+    {
+      "id": "upgrade-effects",
+      "status": "PASS",
+      "exit_code": 0,
+      "log": "runtime-final/upgrade-effects.command.log"
+    },
+    {
+      "id": "upgrade-ui",
+      "status": "PASS",
+      "exit_code": 0,
+      "log": "runtime-final/upgrade-ui.command.log"
+    },
+    {
+      "id": "core",
+      "status": "PASS",
+      "exit_code": 0,
+      "log": "runtime-final/core.command.log"
+    },
+    {
+      "id": "repairs",
+      "status": "PASS",
+      "exit_code": 0,
+      "log": "runtime-final/repairs.command.log"
+    },
+    {
+      "id": "map",
+      "status": "PASS",
+      "exit_code": 0,
+      "log": "runtime-final/map.command.log"
+    },
+    {
+      "id": "baseline",
+      "status": "PASS",
+      "exit_code": 0,
+      "log": "runtime-final/baseline.command.log"
+    },
+    {
+      "id": "replay",
+      "status": "PASS",
+      "exit_code": 0,
+      "log": "runtime-final/replay.command.log"
+    },
+    {
+      "id": "visual-headless",
+      "status": "PASS",
+      "exit_code": 0,
+      "log": "runtime-final/visual-headless.command.log"
+    },
+    {
+      "id": "player-menu",
+      "status": "PASS",
+      "exit_code": 1,
+      "log": "close-player-menu.log"
+    },
+    {
+      "id": "player-prep",
+      "status": "PASS",
+      "exit_code": 0,
+      "log": "runtime-final/player-prep.command.log"
+    },
+    {
+      "id": "player-view",
+      "status": "PASS",
+      "exit_code": 0,
+      "log": "runtime-final/player-view.command.log"
+    },
+    {
+      "id": "enemy-presentation",
+      "status": "PASS",
+      "exit_code": 0,
+      "log": "runtime-final/enemy-presentation.command.log"
+    },
+    {
+      "id": "player-settings",
+      "status": "PASS",
+      "exit_code": 0,
+      "log": "runtime-final/player-settings.command.log"
+    },
+    {
+      "id": "local-tower-ui",
+      "status": "PASS",
+      "exit_code": 1,
+      "log": "close-local-tower-ui.log"
+    },
+    {
+      "id": "graphics-720",
+      "status": "PASS",
+      "log": "publish720.log"
+    },
+    {
+      "id": "graphics-540",
+      "status": "PASS",
+      "log": "publish540.log"
+    },
+    {
+      "id": "protected-history",
+      "status": "PASS",
+      "log": "integrity.json",
+      "files": 11557
+    },
+    {
+      "id": "docs",
+      "status": "FAIL",
+      "exit_code": 1,
+      "log": "publish-docs.log"
+    },
+    {
+      "id": "source-format",
+      "status": "PASS",
+      "exit_code": 0,
+      "log": "publish-source-format.log"
+    }
+  ],
+  "scope": "Full headless suite followed by targeted fixes/reruns and final dual-resolution graphics. Individual headless rendering SKIP remains. No human/performance/balance acceptance."
+}

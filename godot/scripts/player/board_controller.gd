@@ -55,7 +55,7 @@ func merge(source: int, target: int) -> Dictionary:
 	core.stats["merges"] = int(core.stats["merges"]) + 1
 	core.stats["highest_level"] = maxi(int(core.stats["highest_level"]), level)
 	core.stats["tower_count"] = core.towers.size()
-	core.stats["board_occupancy_pct"] = round(1000.0 * float(core.towers.size()) / 9.0) / 10.0
+	core.stats["board_occupancy_pct"] = round(1000.0 * float(core.towers.size()) / max(1, core.map.slots.size())) / 10.0
 	return {"ok": true, "source": source, "slot": target, "type_id": b["type_id"], "level": level}
 
 func _error(code: String, message: String) -> Dictionary:

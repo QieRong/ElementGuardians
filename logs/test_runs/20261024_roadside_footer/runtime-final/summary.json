@@ -1,0 +1,155 @@
+{
+  "complete": true,
+  "counts": {
+    "PASS": 20,
+    "FAIL": 4,
+    "SKIP": 0
+  },
+  "checks": [
+    {
+      "id": "engine-version",
+      "status": "PASS",
+      "exit_code": 0,
+      "log": "engine-version.command.log"
+    },
+    {
+      "id": "sync",
+      "status": "PASS",
+      "exit_code": 0,
+      "log": "sync.command.log"
+    },
+    {
+      "id": "config",
+      "status": "PASS",
+      "exit_code": 0,
+      "log": "config.command.log"
+    },
+    {
+      "id": "docs",
+      "status": "FAIL",
+      "exit_code": 1,
+      "log": "docs.command.log"
+    },
+    {
+      "id": "map-geometry",
+      "status": "PASS",
+      "exit_code": 0,
+      "log": "map-geometry.command.log"
+    },
+    {
+      "id": "parse",
+      "status": "PASS",
+      "exit_code": 0,
+      "log": "parse.command.log"
+    },
+    {
+      "id": "roadside-layout",
+      "status": "PASS",
+      "exit_code": 0,
+      "log": "roadside-layout.command.log"
+    },
+    {
+      "id": "roadside-combat",
+      "status": "PASS",
+      "exit_code": 0,
+      "log": "roadside-combat.command.log"
+    },
+    {
+      "id": "roadside-ui",
+      "status": "FAIL",
+      "exit_code": 1,
+      "log": "roadside-ui.command.log"
+    },
+    {
+      "id": "upgrade-flow",
+      "status": "PASS",
+      "exit_code": 0,
+      "log": "upgrade-flow.command.log"
+    },
+    {
+      "id": "upgrade-effects",
+      "status": "PASS",
+      "exit_code": 0,
+      "log": "upgrade-effects.command.log"
+    },
+    {
+      "id": "upgrade-ui",
+      "status": "PASS",
+      "exit_code": 0,
+      "log": "upgrade-ui.command.log"
+    },
+    {
+      "id": "core",
+      "status": "PASS",
+      "exit_code": 0,
+      "log": "core.command.log"
+    },
+    {
+      "id": "repairs",
+      "status": "PASS",
+      "exit_code": 0,
+      "log": "repairs.command.log"
+    },
+    {
+      "id": "map",
+      "status": "PASS",
+      "exit_code": 0,
+      "log": "map.command.log"
+    },
+    {
+      "id": "baseline",
+      "status": "PASS",
+      "exit_code": 0,
+      "log": "baseline.command.log"
+    },
+    {
+      "id": "replay",
+      "status": "PASS",
+      "exit_code": 0,
+      "log": "replay.command.log"
+    },
+    {
+      "id": "visual-headless",
+      "status": "PASS",
+      "exit_code": 0,
+      "log": "visual-headless.command.log"
+    },
+    {
+      "id": "player-menu",
+      "status": "FAIL",
+      "exit_code": 1,
+      "log": "player-menu.command.log"
+    },
+    {
+      "id": "player-prep",
+      "status": "PASS",
+      "exit_code": 0,
+      "log": "player-prep.command.log"
+    },
+    {
+      "id": "player-view",
+      "status": "PASS",
+      "exit_code": 0,
+      "log": "player-view.command.log"
+    },
+    {
+      "id": "enemy-presentation",
+      "status": "PASS",
+      "exit_code": 0,
+      "log": "enemy-presentation.command.log"
+    },
+    {
+      "id": "player-settings",
+      "status": "PASS",
+      "exit_code": 0,
+      "log": "player-settings.command.log"
+    },
+    {
+      "id": "local-tower-ui",
+      "status": "FAIL",
+      "exit_code": 1,
+      "log": "local-tower-ui.command.log"
+    }
+  ],
+  "scope": "Grouped automated gates; individual assertions are in engine logs. No human, native phone, performance, or full player acceptance."
+}

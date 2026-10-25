@@ -1,4 +1,4 @@
-## Paper battlefield over the original D006 geometry, reading real player state.
+## Paper battlefield with independent roadside deployment over the original road.
 extends Control
 
 const Slot = preload("res://scripts/ui/board_slot.gd")
@@ -19,7 +19,7 @@ func _ready() -> void:
 		button.pressed.connect(_select.bind(index))
 		add_child(button)
 		button.position = session.core.map.slot_rect(index).position
-		button.size = Vector2(76, 76)
+		button.size = session.core.map.slot_rect(index).size
 		button.tooltip_text = Locale.text(self, "选择查看")
 	refresh()
 
@@ -38,7 +38,7 @@ func reset_visuals() -> void:
 	actors.clear()
 
 func refresh() -> void:
-	for index in range(9):
+	for index in range(session.core.map.slots.size()):
 		var slot := get_node("Slot%d" % index) as Button
 		slot.disabled = session.core.state not in ["PREP", "COMBAT"] or session.core.finished
 		slot.selected = session.selected_slot == index

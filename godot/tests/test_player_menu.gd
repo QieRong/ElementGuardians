@@ -181,7 +181,7 @@ func _run() -> void:
 	_embed(preview)
 	await process_frame
 	_check("player-entry-starts-empty", (preview.get("session").core as BattleCore).towers.is_empty())
-	_check("entry-discloses-upgrade-boundary", "强化尚未开放" in String(preview.get_node("StageNotice").text))
+	_check("entry-describes-active-reinforcement", "波间三选一强化" in String(preview.get_node("StageNotice").text) and not "尚未开放" in String(preview.get_node("StageNotice").text))
 	await create_timer(0.3).timeout
 	await _snapshot("04-player-prep")
 	_at_root(preview)
@@ -191,7 +191,9 @@ func _run() -> void:
 	await create_timer(0.15).timeout
 	_check("top-back-hover-feedback", float(back.get("visual_scale")) > 1.0)
 	_mouse(back_bounds.get_center(), true)
-	await create_timer(0.12).timeout
+	_check("top-back-really-held", back.is_pressed())
+	if back.get("_motion") != null:
+		(back.get("_motion") as Tween).custom_step(0.12)
 	_check("top-back-press-feedback", float(back.get("visual_scale")) < 1.0)
 	_check("top-back-stable-input-bounds", back.get_global_rect() == back_bounds)
 	_mouse(back_bounds.get_center(), false)
